@@ -19,7 +19,7 @@
     <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
-    
+    <meta property="docfx:rel" content="../">
     
   </head>
   <body data-spy="scroll" data-target="#affix" data-offset="120">
@@ -58,6 +58,16 @@
           </div>
         </div>
       </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
       <div role="main" class="container body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
@@ -81,11 +91,35 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">CommandLineParser</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Developer.html">GDX.Developer</a></h6>
   <h6><strong>Assembly</strong>: GDX.Developer.dll</h6>
   <h5 id="GDX_Developer_CommandLineParser_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class CommandLineParser : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class CommandLineParser</code></pre>
   </div>
   <h5 id="GDX_Developer_CommandLineParser_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This does NOT support the /FLAG or /KEY=VALUE format. All FLAGs and KEYs are stored in Uppercase.</p>
@@ -95,7 +129,7 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Developer_CommandLineParser_Arguments.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.Arguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser_Arguments.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.Arguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX.Developer/Runtime/CommandLineParser.cs/#L23">View Source</a>
@@ -118,14 +152,14 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Developer_CommandLineParser_Flags.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser_Flags.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX.Developer/Runtime/CommandLineParser.cs/#L28">View Source</a>
@@ -148,7 +182,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -157,7 +191,7 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Developer_CommandLineParser_ParseArguments.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.ParseArguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser_ParseArguments.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.ParseArguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX.Developer/Runtime/CommandLineParser.cs/#L36">View Source</a>
@@ -169,14 +203,15 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void ParseArguments()</code></pre>
+    <pre><code class="lang-csharp hljs">[RuntimeInitializeOnLoadMethod]
+public static void ParseArguments()</code></pre>
   </div>
   <h5 id="GDX_Developer_CommandLineParser_ParseArguments_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This is automatically done at runtime.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Developer_CommandLineParser_ProcessArguments_System_String___System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.ProcessArguments(System.String%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser_ProcessArguments_System_String___System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.ProcessArguments(System.String%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX.Developer/Runtime/CommandLineParser.cs/#L47">View Source</a>
@@ -222,7 +257,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Developer_CommandLineParser.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
                     <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX.Developer/Runtime/CommandLineParser.cs/#L18" class="contribution-link">View Source</a>
@@ -249,8 +284,7 @@
             <span>Generated by <strong>DocFX</strong></span>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer>    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

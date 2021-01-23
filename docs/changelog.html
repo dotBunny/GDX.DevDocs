@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Changelog | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Changelog | GDX ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="changelog">Changelog</h1>
+
+<p>All notable changes to this project will be documented in this file.</p>
+<p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
+and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="120---2021-01-20">[1.2.0] - 2021-01-20</h2>
+<p><em><strong>&quot;Cisco's Birthday&quot;</strong></em></p>
+<blockquote>
+<p>A bit of refactoring around <code>BuildInfo</code> to make it a little easier to work with and some small additions to functionality by request.</p>
+</blockquote>
+<h3 id="added">Added</h3>
+<ul>
+<li>Separation of checking folders and files path structure, new <code>GDX.Platform.EnsureFileFolderHiearchyExists()</code> just for files.</li>
+<li>The ability (by default) to encompass the <code>BuildInfo</code> output folder in an assembly definition.</li>
+<li>An ability from <strong>Project Settings</strong> to output a default <code>BuildInfo</code> file.</li>
+<li><code>AssemblyInfo</code> to each assembly to support <em>internal</em> access during unit testing.</li>
+<li>Applied <code>MethodImplOptions.AggressiveInlining</code> to many methods.</li>
+<li>A bunch of split related functionality to <code>GDX.StringExtensions</code>.
+<ul>
+<li><code>GetAfterFirst()</code></li>
+<li><code>GetAfterLast()</code></li>
+<li><code>GetBeforeFirst()</code></li>
+<li><code>GetBeforeLast()</code></li>
+</ul>
+</li>
+<li><code>GDX.Vector2Extensions</code> and <code>GDX.Vector3Extensions</code> with associated unit testing.
+<ul>
+<li><code>Approximately()</code></li>
+<li><code>Midpoint()</code></li>
+</ul>
+</li>
+<li><code>GDX.StringExtensions</code>
+<ul>
+<li><code>SplitCamelCase()</code> to help with formatting of internal data.</li>
+<li><code>Encrypt()</code> and <code>Decrypt()</code> for all your string hiding needs.</li>
+</ul>
+</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>All classes/structs with unit testing will reference the class in a comments</li>
+<li><code>GDX.ListExtensions</code> renamed to <code>GDX.IListExtensions</code> (as well as its unit test class)</li>
+<li>Removed feature highlight section from <code>README.md</code>, the thought is to use the <a href="https://github.com/dotBunny/GDX/wiki">Wiki</a> for this sort of stuff.</li>
+<li>Dropped in some unsafe attributes to <code>GDX.StringExtensions.HasLowerCase()</code> and <code>GDX.StringExtensions.HasUpperCase()</code> in <code>GDX.StringExtensions</code>.</li>
+<li>Reorganized <strong>Project Settings</strong> sections to be alphabetically sorted.</li>
+<li><code>GDX.Platform.EnsureFolderHierarchyExists()</code>'s argument to be labeled <code>folderPath</code> to provide further clarity of the functional intent.</li>
+<li>Combined <code>GDX.Developer.Build.BuildInfoGenerator</code> into <code>GDX.Developer.Build.BuildInfoProvider</code>.</li>
+<li>Renamed <code>Editor.Build.BuildInfoGeneratorTests</code> to <code>Editor.Build.BuildInfoProviderTests</code></li>
+<li>Fixed issue with output folder structure was not present for <code>BuildInfo</code> generation.</li>
+<li>Renamed <code>GDX.Editor.SettingsGUILayout</code> to <code>GDX.Editor.SettingsStyles</code>, while exposing more internals for reuse.</li>
+</ul>
+<h2 id="112---2021-01-18">[1.1.2] - 2021-01-18</h2>
+<p><em><strong>&quot;EditMode Enabled&quot;</strong></em></p>
+<blockquote>
+<p>Fixes for author-time code accessing runtime only parts.</p>
+</blockquote>
+<h3 id="added-1">Added</h3>
+<ul>
+<li>Added more <code>EditMode</code> unit test coverage.
+<ul>
+<li><code>GDX.Developer.Build.BuildInfoGeneratorTests</code></li>
+<li><code>GDX.Developer.CommandLineParserTests</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="changed-1">Changed</h3>
+<ul>
+<li>Renamed <code>GDX.Editor.Config</code> to <code>GDX.Editor.ConfigProvider</code></li>
+<li>Fixed a bug where author-time calls to <code>GDXConfig.Get()</code> would return a null as it is meant for runtime only, they will now route through an editor safe path.</li>
+<li>Moved all <strong>Tests</strong> to follow the test runner naming <code>EditMode</code> for editor runnable unit tests, namespaces included inside the assembly have been stripped down as well.</li>
+<li>Exposed <code>GDX.Developer.CommandLineParser.ProcessArguments()</code> to allow for manual arguments to be added.</li>
+</ul>
+<h2 id="111---2021-01-17">[1.1.1] - 2021-01-17</h2>
+<p><em><strong>&quot;Let Us Build&quot;</strong></em></p>
+<blockquote>
+<p>A minor problem came to light after pushing the button.</p>
+</blockquote>
+<h3 id="changed-2">Changed</h3>
+<ul>
+<li><code>GDX.Developer.Build.BuildInfoGenerator</code> will now forcibly tell the <code>GDX.Developer.CommandLineParser</code> to do its thing prior to filling out the file.</li>
+</ul>
+<h2 id="110---2021-01-17">[1.1.0] - 2021-01-17</h2>
+<p><em><strong>&quot;Breaking Bad&quot;</strong></em></p>
+<blockquote>
+<p>We are breaking some rules! This should have been a <em>major release</em> as we have altered method names to be consistent across the API.</p>
+</blockquote>
+<h3 id="added-2">Added</h3>
+<ul>
+<li><code>GDX</code> assembly documentation contains <em>remarks</em> where a function or class requires the presence of Unity's CoreModule to function correctly.</li>
+<li><code>GDX.GDXConfig</code> scriptable object self creates to store persistent project-wide configurations for both runtime and author-time, editable through <strong>Project Settings</strong>.</li>
+<li><code>GDX.InspectorLabelAttribute</code> (and supporting <code>GDX.Editor.InspectorLabelPropertyDrawer</code>) to facilitate a quick way of replacing a labels content in the inspector.</li>
+<li><code>GDX.IO.Compression.TarFile</code> support for decompressing tarballs.</li>
+<li><code>GDX.SemanticVersion</code> struct for assistance with versioning.</li>
+<li><code>GDX.StringExtensions</code> gained <code>HasLowerCase()</code> and <code>HasUpperCase()</code> checks.</li>
+<li><code>GDX.Strings.Null</code> is a constant null value string</li>
+<li><code>GDX.Editor.Config</code> static utility class to help with <code>GDX.GDXConfig</code> at author-time.</li>
+<li><code>GDX.Editor.Settings</code> to drive specific <code>GDX</code> assembly settings to show up in the <strong>Project Settings</strong> window.</li>
+<li><code>GDX.Editor.SettingsGUILayout</code> to assist with creating a consistent feel for <code>GDX</code> settings.</li>
+<li><code>GDX.Editor.GDXConfigEditor</code> enforces that a selected <code>GDXConfig</code> does not allow for inspector changes.</li>
+<li><code>GDX.Editor.UpdateProvider</code>, <code>GDX.Editor.PackageProvider</code> to facilitate updating of GDX package from different installation sources.</li>
+<li><code>GDX.Editor.VersionControl</code> static utility class to help with VCS operations.</li>
+<li>Unit test coverage for extension classes.
+<ul>
+<li><code>GDX.ArrayExtensionsTests</code></li>
+<li><code>GDX.ListExtensionsTests</code></li>
+<li><code>GDX.SimpleListExtensionsTests</code></li>
+</ul>
+</li>
+<li>Additional coverage was added to <code>GDX.StringExtensionsTests</code> to cover <code>HasUpperCase()</code> and <code>HasLowerCase()</code> methods.</li>
+<li><code>GDX.Developer</code> a <strong>separate assembly</strong> with more developer specific functionality.</li>
+<li><code>GDX.Developer.CommandLineParser</code> to provide a simple, yet configurable argument parser.</li>
+<li><code>GDX.Developer.Editor.Build.BuildInfoProvider</code> to facilitate automated BuildInfo generation across different pipelines.</li>
+<li><code>GDX.Developer.Editor.Build.BuildInfoGenerator</code> to generate content for the BuildInfo file.</li>
+<li><code>GDX.Developer.Editor.Settings</code> to drive specific <code>GDX.Developer</code> assembly settings to show up in the <strong>Project Settings</strong> window.</li>
+</ul>
+<h3 id="changed-3">Changed</h3>
+<ul>
+<li>Updated the <code>README.md</code> header with logo and badges.</li>
+<li>Added release names to <code>CHANGELOG.md</code> as well as removed namespace sub-lists, settling on having full names in description instead.</li>
+<li>Altered arrangement of <code>LICENSE</code> with the hopes of appeasing the <em>GitHub</em> overlords of license type detection.</li>
+<li><code>GDX.ArrayExtensions</code> to be more specific
+<ul>
+<li>Corrected documentation of <code>Clear()</code></li>
+<li>Class based operations <code>FirstIndexOfItem()</code> and <code>LastIndexOfItem()</code></li>
+<li>Struct based operations <code>FirstIndexOfValue()</code> and <code>LastIndexOfValue()</code></li>
+<li>Correctly moved into GDX namespace.</li>
+</ul>
+</li>
+<li><code>GDX.ByteExtensions</code> to be more specific
+<ul>
+<li>Renamed hashing method to <code>GetValueHashCode()</code></li>
+</ul>
+</li>
+<li><code>GDX.ListExtensions</code> to be more specific.
+<ul>
+<li>Class based operations <code>AddUniqueItem()</code>, <code>ContainsItem()</code>, <code>RemoveItems()</code>, <code>RemoveFirstItem()</code> and <code>RemoveLastItem()</code>..</li>
+<li>Struct based operations <code>AddUniqueValue()</code>, <code>ContainsValue()</code>, <code>RemoveValues()</code>, <code>RemoveFirstValue()</code> and <code>RemoveLastValue()</code>.</li>
+</ul>
+</li>
+<li><code>GDX.SimpleListExtensions</code> to be more specific.
+<ul>
+<li>Class based operations <code>AddUncheckedUniqueItem()</code>, <code>AddWithExpandCheckUniqueItem()</code>, <code>ContainsItem()</code>, <code>RemoveItems()</code>, <code>RemoveFirstItem()</code> and <code>RemoveLastItem()</code>.</li>
+<li>Struct based operations <code>AddUncheckedUniqueValue()</code>, <code>AddWithExpandCheckUniqueValue()</code>, <code>ContainsValue()</code>, <code>RemoveValues()</code>, <code>RemoveFirstValue()</code> and <code>RemoveLastValue()</code>.</li>
+</ul>
+</li>
+<li>Moved <code>GDX.Collections.Byte2</code> to <code>GDX.Mathematics.Byte2</code> as it made more sense to alongside other similar types in <code>Unity.Mathematics</code>.</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed unused static StringBuilder from <code>GDX.Strings</code>.</li>
+</ul>
+<h2 id="100---2021-01-03">[1.0.0] - 2021-01-03</h2>
+<p><em><strong>&quot;The Beginning&quot;</strong></em></p>
+<blockquote>
+<p>Initial release containing only the GDX core library.</p>
+</blockquote>
+<h3 id="added-3">Added</h3>
+<ul>
+<li>Numerous static extension based functionality classes.
+<ul>
+<li><code>GDX.AddressablesExtensions</code></li>
+<li><code>GDX.ArrayExtensions</code></li>
+<li><code>GDX.ByteExtensions</code></li>
+<li><code>GDX.ListExtensions</code></li>
+<li><code>GDX.SimpleListExtensions</code></li>
+<li><code>GDX.StringExtensions</code></li>
+</ul>
+</li>
+<li>Numerous static utility classes.
+<ul>
+<li><code>GDX.Display</code></li>
+<li><code>GDX.Localization</code></li>
+<li><code>GDX.Memory</code></li>
+<li><code>GDX.Platform</code></li>
+<li><code>GDX.Strings</code></li>
+</ul>
+</li>
+<li>Bit array structures.
+<ul>
+<li><code>GDX.Collections.BitArray8</code></li>
+<li><code>GDX.Collections.BitArray16</code></li>
+<li><code>GDX.Collections.BitArray32</code></li>
+<li><code>GDX.Collections.BitArray64</code></li>
+<li><code>GDX.Collections.BitArray128</code></li>
+<li><code>GDX.Collections.BitArray256</code></li>
+<li><code>GDX.Collections.BitArray512</code></li>
+</ul>
+</li>
+<li>Byte vector <code>GDX.Collections.Byte2</code>.</li>
+<li>Sparse index pool structures <code>GDX.Collections.SparseSet</code> and <code>GDX.Collections.NativeSparseSet</code></li>
+<li><code>GDX.Collections.FreeList</code></li>
+<li>Revolving buffer <code>GDX.Collections.Generic.CircularBuffer</code>.</li>
+<li><code>List</code>-like structure <code>GDX.Collections.Generic.SimpleList</code>.</li>
+<li>A few <code>NativeArray</code> based structures.
+<ul>
+<li><code>GDX.Collections.Generic.NativeArray2D</code></li>
+<li><code>GDX.Collections.Generic.NativeSimpleList</code></li>
+<li><code>GDX.Collections.Generic.NativeSimpleQueue</code></li>
+<li><code>GDX.Collections.Generic.NativeUniformArray3D</code>.</li>
+</ul>
+</li>
+<li>Numerous <code>int32</code> buffer operation jobs.
+<ul>
+<li><code>GDX.Jobs.ParallelFor.IntegerBufferCopyJob</code></li>
+<li><code>GDX.Jobs.ParallelFor.IntegerBufferFillJob</code></li>
+<li><code>GDX.Jobs.ParallelFor.IntegerBufferSwapJob</code></li>
+</ul>
+</li>
+<li>Deterministic random <code>GDX.Mathematics.Random.MersenneTwister</code>.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/main/.docfx/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>
