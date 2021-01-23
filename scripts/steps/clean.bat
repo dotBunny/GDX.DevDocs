@@ -4,5 +4,4 @@
 rmdir %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\obj /s /q
 rmdir %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\_site /s /q
 
-del /s /f /q %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\gdx-data.yml
 del /s /f /q %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\changelog.md
