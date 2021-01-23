@@ -1,0 +1,888 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CircularBuffer&lt;T&gt;
+   | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CircularBuffer&lt;T&gt;
+   | GDX ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GDX.Collections.Generic.CircularBuffer`1">
+  
+  
+  <h1 id="GDX_Collections_Generic_CircularBuffer_1" data-uid="GDX.Collections.Generic.CircularBuffer`1" class="text-break">Class CircularBuffer&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A buffer which loops back over itself as locations are used.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">CircularBuffer&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T&gt;</div>
+    <div><span class="xref">System.Collections.IEnumerable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Collections.Generic.html">GDX.Collections.Generic</a></h6>
+  <h6><strong>Assembly</strong>: GDX.dll</h6>
+  <h5 id="GDX_Collections_Generic_CircularBuffer_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CircularBuffer&lt;T&gt; : IEnumerable&lt;T&gt;, IEnumerable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of <span class="xref">System.Object</span>s contained within.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L52">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1__ctor_" data-uid="GDX.Collections.Generic.CircularBuffer`1.#ctor*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1__ctor_System_Int32_" data-uid="GDX.Collections.Generic.CircularBuffer`1.#ctor(System.Int32)">CircularBuffer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a> with a <code data-dev-comment-type="paramref" class="paramref">capacity</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CircularBuffer(int capacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>The maximum number of items allowed in the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a></p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1__ctor_System_Int32__0___.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.%23ctor(System.Int32%2C%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L67">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1__ctor_" data-uid="GDX.Collections.Generic.CircularBuffer`1.#ctor*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1__ctor_System_Int32__0___" data-uid="GDX.Collections.Generic.CircularBuffer`1.#ctor(System.Int32,`0[])">CircularBuffer(Int32, T[])</h4>
+  <div class="markdown level1 summary"><p>Create a <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a> with a <code data-dev-comment-type="paramref" class="paramref">capacity</code>, filling with
+<code data-dev-comment-type="paramref" class="paramref">targetItems</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CircularBuffer(int capacity, T[] targetItems)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">capacity</span></td>
+        <td><p>The maximum number of items allowed in the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a></p>
+</td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">targetItems</span></td>
+        <td><p>An array of values to fill the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a> with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p>Invalid number of entries provided to the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a>
+constructor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>No items were provided to the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a> constructor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_Array.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.Array%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L22">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_Array" data-uid="GDX.Collections.Generic.CircularBuffer`1.Array">Array</h4>
+  <div class="markdown level1 summary"><p>Internal array of backed data for the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly T[] Array</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_Capacity.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.Capacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L27">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_Capacity" data-uid="GDX.Collections.Generic.CircularBuffer`1.Capacity">Capacity</h4>
+  <div class="markdown level1 summary"><p>The cached array length for <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Capacity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_Count.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L33">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_Count" data-uid="GDX.Collections.Generic.CircularBuffer`1.Count">Count</h4>
+  <div class="markdown level1 summary"><p>The current size of occupied elements in the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_Generic_CircularBuffer_1_Count_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>CAUTION! Changing this will alter the understanding of the data.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_EndIndex.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.EndIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L39">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_EndIndex" data-uid="GDX.Collections.Generic.CircularBuffer`1.EndIndex">EndIndex</h4>
+  <div class="markdown level1 summary"><p>The index of the last item in <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EndIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_Generic_CircularBuffer_1_EndIndex_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>CAUTION! Changing this will alter the understanding of the data.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_StartIndex.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.StartIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L45">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_StartIndex" data-uid="GDX.Collections.Generic.CircularBuffer`1.StartIndex">StartIndex</h4>
+  <div class="markdown level1 summary"><p>The index of the first item in <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StartIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_Generic_CircularBuffer_1_StartIndex_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>CAUTION! Changing this will alter the understanding of the data.</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_Item_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L100">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_Item_" data-uid="GDX.Collections.Generic.CircularBuffer`1.Item*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_Item_System_Int32_" data-uid="GDX.Collections.Generic.CircularBuffer`1.Item(System.Int32)">Item[Int32]</h4>
+  <div class="markdown level1 summary"><p>Access item at <code data-dev-comment-type="paramref" class="paramref">pseudoIndex</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int pseudoIndex] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">pseudoIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IndexOutOfRangeException</span></td>
+        <td><p>Provided index is out of buffers range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_Add__0_.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.Add(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L178">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_Add_" data-uid="GDX.Collections.Generic.CircularBuffer`1.Add*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_Add__0_" data-uid="GDX.Collections.Generic.CircularBuffer`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"><p>Add an <code data-dev-comment-type="paramref" class="paramref">item</code> to the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The typed <span class="xref">System.Object</span> to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_Clear.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L186">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_Clear_" data-uid="GDX.Collections.Generic.CircularBuffer`1.Clear*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_Clear" data-uid="GDX.Collections.Generic.CircularBuffer`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear all values of the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_GetBack.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.GetBack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L201">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_GetBack_" data-uid="GDX.Collections.Generic.CircularBuffer`1.GetBack*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_GetBack" data-uid="GDX.Collections.Generic.CircularBuffer`1.GetBack">GetBack()</h4>
+  <div class="markdown level1 summary"><p>Get the last item in the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetBack()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The last typed object in <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_GetEnumerator.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L144">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_GetEnumerator_" data-uid="GDX.Collections.Generic.CircularBuffer`1.GetEnumerator*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_GetEnumerator" data-uid="GDX.Collections.Generic.CircularBuffer`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Get <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a> Enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerator</span>&lt;T&gt;</td>
+        <td><p>A <span class="xref">System.Collections.Generic.IEnumerator&lt;T&gt;</span> for the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_GetFront.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.GetFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L215">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_GetFront_" data-uid="GDX.Collections.Generic.CircularBuffer`1.GetFront*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_GetFront" data-uid="GDX.Collections.Generic.CircularBuffer`1.GetFront">GetFront()</h4>
+  <div class="markdown level1 summary"><p>Get the first item in the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetFront()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The first typed object in <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_IsEmpty.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.IsEmpty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L230">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_IsEmpty_" data-uid="GDX.Collections.Generic.CircularBuffer`1.IsEmpty*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_IsEmpty" data-uid="GDX.Collections.Generic.CircularBuffer`1.IsEmpty">IsEmpty()</h4>
+  <div class="markdown level1 summary"><p>Does the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a> have any items in it?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true/false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_IsFull.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.IsFull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L240">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_IsFull_" data-uid="GDX.Collections.Generic.CircularBuffer`1.IsFull*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_IsFull" data-uid="GDX.Collections.Generic.CircularBuffer`1.IsFull">IsFull()</h4>
+  <div class="markdown level1 summary"><p>Is the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a> at capacity?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFull()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true/false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_PopBack.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.PopBack%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L249">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_PopBack_" data-uid="GDX.Collections.Generic.CircularBuffer`1.PopBack*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_PopBack" data-uid="GDX.Collections.Generic.CircularBuffer`1.PopBack">PopBack()</h4>
+  <div class="markdown level1 summary"><p>Remove an item from the end of the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopBack()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_PopFront.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.PopFront%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L269">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_PopFront_" data-uid="GDX.Collections.Generic.CircularBuffer`1.PopFront*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_PopFront" data-uid="GDX.Collections.Generic.CircularBuffer`1.PopFront">PopFront()</h4>
+  <div class="markdown level1 summary"><p>Remove an item from the start of the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopFront()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_PushBack__0_.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.PushBack(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L289">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_PushBack_" data-uid="GDX.Collections.Generic.CircularBuffer`1.PushBack*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_PushBack__0_" data-uid="GDX.Collections.Generic.CircularBuffer`1.PushBack(`0)">PushBack(T)</h4>
+  <div class="markdown level1 summary"><p>Add an item to the end of the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushBack(T targetItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td><p>The item to add to the end of <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_PushFront__0_.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.PushFront(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L317">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_PushFront_" data-uid="GDX.Collections.Generic.CircularBuffer`1.PushFront*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_PushFront__0_" data-uid="GDX.Collections.Generic.CircularBuffer`1.PushFront(`0)">PushFront(T)</h4>
+  <div class="markdown level1 summary"><p>Add an item to the start of the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PushFront(T targetItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td><p>The item to add to the start of <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_ToArray.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.ToArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L347">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_ToArray_" data-uid="GDX.Collections.Generic.CircularBuffer`1.ToArray*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_ToArray" data-uid="GDX.Collections.Generic.CircularBuffer`1.ToArray">ToArray()</h4>
+  <div class="markdown level1 summary"><p>Copy <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a> to an array of the same type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><p>A copied version of the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html#GDX_Collections_Generic_CircularBuffer_1_Array">Array</a> as an array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1_System_Collections_IEnumerable_GetEnumerator.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601.System%23Collections%23IEnumerable%23GetEnumerator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L166">View Source</a>
+  </span>
+  <a id="GDX_Collections_Generic_CircularBuffer_1_System_Collections_IEnumerable_GetEnumerator_" data-uid="GDX.Collections.Generic.CircularBuffer`1.System#Collections#IEnumerable#GetEnumerator*"></a>
+  <h4 id="GDX_Collections_Generic_CircularBuffer_1_System_Collections_IEnumerable_GetEnumerator" data-uid="GDX.Collections.Generic.CircularBuffer`1.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Get <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a> Enumerator.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.IEnumerator</span></td>
+        <td><p>A <span class="xref">System.Collections.Generic.IEnumerator&lt;T&gt;</span> for the <a class="xref" href="GDX.Collections.Generic.CircularBuffer-1.html">CircularBuffer&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IEnumerable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.Collections.IEnumerable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_Generic_CircularBuffer_1.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.CircularBuffer%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/Generic/CircularBuffer.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

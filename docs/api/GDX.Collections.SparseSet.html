@@ -1,0 +1,3994 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct SparseSet
+   | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct SparseSet
+   | GDX ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GDX.Collections.SparseSet">
+  
+  
+  <h1 id="GDX_Collections_SparseSet" data-uid="GDX.Collections.SparseSet" class="text-break">Struct SparseSet
+  </h1>
+  <div class="markdown level0 summary"><p>An adapter collection for external data arrays that allows constant-time insertion, deletion, and lookup by
+handle, as well as array-like iteration.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Collections.html">GDX.Collections</a></h6>
+  <h6><strong>Assembly</strong>: GDX.dll</h6>
+  <h5 id="GDX_Collections_SparseSet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct SparseSet</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet__ctor_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.%23ctor(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L46">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet__ctor_" data-uid="GDX.Collections.SparseSet.#ctor*"></a>
+  <h4 id="GDX_Collections_SparseSet__ctor_System_Int32_" data-uid="GDX.Collections.SparseSet.#ctor(System.Int32)">SparseSet(Int32)</h4>
+  <div class="markdown level1 summary"><p>Create a <a class="xref" href="GDX.Collections.SparseSet.html">SparseSet</a> with an <code data-dev-comment-type="paramref" class="paramref">initialCapacity</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SparseSet(int initialCapacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">initialCapacity</span></td>
+        <td><p>The initial capacity of the sparse and dense int arrays.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_Count.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L33">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_SparseSet_Count" data-uid="GDX.Collections.SparseSet.Count">Count</h4>
+  <div class="markdown level1 summary"><p>How many indices are being used currently?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_DenseArray.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.DenseArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L20">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_SparseSet_DenseArray" data-uid="GDX.Collections.SparseSet.DenseArray">DenseArray</h4>
+  <div class="markdown level1 summary"><p>Holds references to the sparse array for swapping indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] DenseArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_FreeIndex.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.FreeIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L38">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_SparseSet_FreeIndex" data-uid="GDX.Collections.SparseSet.FreeIndex">FreeIndex</h4>
+  <div class="markdown level1 summary"><p>The first free (currently unused) index in the sparse array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FreeIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_SparseArray.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.SparseArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L28">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_SparseSet_SparseArray" data-uid="GDX.Collections.SparseSet.SparseArray">SparseArray</h4>
+  <div class="markdown level1 summary"><p>Holds references to dense array indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int[] SparseArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_SparseSet_SparseArray_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Its own indices are claimed and freed via a free-list.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked(System.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L113">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked_System_Int32__System_Int32__" data-uid="GDX.Collections.SparseSet.AddUnchecked(System.Int32@,System.Int32@)">AddUnchecked(out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUnchecked(out int sparseIndex, out int denseIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The sparse index allocated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndex</span></td>
+        <td><p>The dense index allocated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked__1___0___0___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked%60%601(%60%600%2C%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1275">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked__1___0___0___" data-uid="GDX.Collections.SparseSet.AddUnchecked``1(``0,``0[])">AddUnchecked&lt;T0&gt;(T0, T0[])</h4>
+  <div class="markdown level1 summary"><p>Adds to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUnchecked&lt;T0&gt;(T0 obj0, T0[] array0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The sparse index allocated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked__2___0___0_____1___1___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked%60%602(%60%600%2C%60%600%5B%5D%2C%60%601%2C%60%601%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1294">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked__2___0___0_____1___1___" data-uid="GDX.Collections.SparseSet.AddUnchecked``2(``0,``0[],``1,``1[])">AddUnchecked&lt;T0, T1&gt;(T0, T0[], T1, T1[])</h4>
+  <div class="markdown level1 summary"><p>Adds to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUnchecked&lt;T0, T1&gt;(T0 obj0, T0[] array0, T1 obj1, T1[] array1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The sparse index allocated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked__3___0___0_____1___1_____2___2___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked%60%603(%60%600%2C%60%600%5B%5D%2C%60%601%2C%60%601%5B%5D%2C%60%602%2C%60%602%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1314">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked__3___0___0_____1___1_____2___2___" data-uid="GDX.Collections.SparseSet.AddUnchecked``3(``0,``0[],``1,``1[],``2,``2[])">AddUnchecked&lt;T0, T1, T2&gt;(T0, T0[], T1, T1[], T2, T2[])</h4>
+  <div class="markdown level1 summary"><p>Adds to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUnchecked&lt;T0, T1, T2&gt;(T0 obj0, T0[] array0, T1 obj1, T1[] array1, T2 obj2, T2[] array2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The sparse index allocated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked__4___0___0_____1___1_____2___2_____3___3___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked%60%604(%60%600%2C%60%600%5B%5D%2C%60%601%2C%60%601%5B%5D%2C%60%602%2C%60%602%5B%5D%2C%60%603%2C%60%603%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1335">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked__4___0___0_____1___1_____2___2_____3___3___" data-uid="GDX.Collections.SparseSet.AddUnchecked``4(``0,``0[],``1,``1[],``2,``2[],``3,``3[])">AddUnchecked&lt;T0, T1, T2, T3&gt;(T0, T0[], T1, T1[], T2, T2[], T3, T3[])</h4>
+  <div class="markdown level1 summary"><p>Adds to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUnchecked&lt;T0, T1, T2, T3&gt;(T0 obj0, T0[] array0, T1 obj1, T1[] array1, T2 obj2, T2[] array2, T3 obj3, T3[] array3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The sparse index allocated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked__5___0___0_____1___1_____2___2_____3___3_____4___4___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked%60%605(%60%600%2C%60%600%5B%5D%2C%60%601%2C%60%601%5B%5D%2C%60%602%2C%60%602%5B%5D%2C%60%603%2C%60%603%5B%5D%2C%60%604%2C%60%604%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1359">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked__5___0___0_____1___1_____2___2_____3___3_____4___4___" data-uid="GDX.Collections.SparseSet.AddUnchecked``5(``0,``0[],``1,``1[],``2,``2[],``3,``3[],``4,``4[])">AddUnchecked&lt;T0, T1, T2, T3, T4&gt;(T0, T0[], T1, T1[], T2, T2[], T3, T3[], T4, T4[])</h4>
+  <div class="markdown level1 summary"><p>Adds to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUnchecked&lt;T0, T1, T2, T3, T4&gt;(T0 obj0, T0[] array0, T1 obj1, T1[] array1, T2 obj2, T2[] array2, T3 obj3, T3[] array3, T4 obj4, T4[] array4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T4</span></td>
+        <td><span class="parametername">obj4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The sparse index allocated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked__6___0___0_____1___1_____2___2_____3___3_____4___4_____5___5___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked%60%606(%60%600%2C%60%600%5B%5D%2C%60%601%2C%60%601%5B%5D%2C%60%602%2C%60%602%5B%5D%2C%60%603%2C%60%603%5B%5D%2C%60%604%2C%60%604%5B%5D%2C%60%605%2C%60%605%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1383">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked__6___0___0_____1___1_____2___2_____3___3_____4___4_____5___5___" data-uid="GDX.Collections.SparseSet.AddUnchecked``6(``0,``0[],``1,``1[],``2,``2[],``3,``3[],``4,``4[],``5,``5[])">AddUnchecked&lt;T0, T1, T2, T3, T4, T5&gt;(T0, T0[], T1, T1[], T2, T2[], T3, T3[], T4, T4[], T5, T5[])</h4>
+  <div class="markdown level1 summary"><p>Adds to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUnchecked&lt;T0, T1, T2, T3, T4, T5&gt;(T0 obj0, T0[] array0, T1 obj1, T1[] array1, T2 obj2, T2[] array2, T3 obj3, T3[] array3, T4 obj4, T4[] array4, T5 obj5, T5[] array5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T4</span></td>
+        <td><span class="parametername">obj4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T5</span></td>
+        <td><span class="parametername">obj5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The sparse index allocated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked__7___0___0_____1___1_____2___2_____3___3_____4___4_____5___5_____6___6___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked%60%607(%60%600%2C%60%600%5B%5D%2C%60%601%2C%60%601%5B%5D%2C%60%602%2C%60%602%5B%5D%2C%60%603%2C%60%603%5B%5D%2C%60%604%2C%60%604%5B%5D%2C%60%605%2C%60%605%5B%5D%2C%60%606%2C%60%606%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1409">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked__7___0___0_____1___1_____2___2_____3___3_____4___4_____5___5_____6___6___" data-uid="GDX.Collections.SparseSet.AddUnchecked``7(``0,``0[],``1,``1[],``2,``2[],``3,``3[],``4,``4[],``5,``5[],``6,``6[])">AddUnchecked&lt;T0, T1, T2, T3, T4, T5, T6&gt;(T0, T0[], T1, T1[], T2, T2[], T3, T3[], T4, T4[], T5, T5[], T6, T6[])</h4>
+  <div class="markdown level1 summary"><p>Adds to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUnchecked&lt;T0, T1, T2, T3, T4, T5, T6&gt;(T0 obj0, T0[] array0, T1 obj1, T1[] array1, T2 obj2, T2[] array2, T3 obj3, T3[] array3, T4 obj4, T4[] array4, T5 obj5, T5[] array5, T6 obj6, T6[] array6)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T4</span></td>
+        <td><span class="parametername">obj4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T5</span></td>
+        <td><span class="parametername">obj5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T6</span></td>
+        <td><span class="parametername">obj6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T6[]</td>
+        <td><span class="parametername">array6</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The sparse index allocated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddUnchecked__8___0___0_____1___1_____2___2_____3___3_____4___4_____5___5_____6___6_____7___7___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddUnchecked%60%608(%60%600%2C%60%600%5B%5D%2C%60%601%2C%60%601%5B%5D%2C%60%602%2C%60%602%5B%5D%2C%60%603%2C%60%603%5B%5D%2C%60%604%2C%60%604%5B%5D%2C%60%605%2C%60%605%5B%5D%2C%60%606%2C%60%606%5B%5D%2C%60%607%2C%60%607%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1436">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddUnchecked_" data-uid="GDX.Collections.SparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddUnchecked__8___0___0_____1___1_____2___2_____3___3_____4___4_____5___5_____6___6_____7___7___" data-uid="GDX.Collections.SparseSet.AddUnchecked``8(``0,``0[],``1,``1[],``2,``2[],``3,``3[],``4,``4[],``5,``5[],``6,``6[],``7,``7[])">AddUnchecked&lt;T0, T1, T2, T3, T4, T5, T6, T7&gt;(T0, T0[], T1, T1[], T2, T2[], T3, T3[], T4, T4[], T5, T5[], T6, T6[], T7, T7[])</h4>
+  <div class="markdown level1 summary"><p>Adds to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AddUnchecked&lt;T0, T1, T2, T3, T4, T5, T6, T7&gt;(T0 obj0, T0[] array0, T1 obj1, T1[] array1, T2 obj2, T2[] array2, T3 obj3, T3[] array3, T4 obj4, T4[] array4, T5 obj5, T5[] array5, T6 obj6, T6[] array6, T7 obj7, T7[] array7)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T4</span></td>
+        <td><span class="parametername">obj4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T5</span></td>
+        <td><span class="parametername">obj5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T6</span></td>
+        <td><span class="parametername">obj6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T6[]</td>
+        <td><span class="parametername">array6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T7</span></td>
+        <td><span class="parametername">obj7</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T7[]</td>
+        <td><span class="parametername">array7</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The sparse index allocated</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck_System_Int32_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck(System.Int32%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L68">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck_System_Int32_System_Int32__System_Int32__" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck(System.Int32,System.Int32@,System.Int32@)">AddWithExpandCheck(Int32, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck(int expandBy, out int sparseIndex, out int denseIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">expandBy</span></td>
+        <td><p>How many indices to expand by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The sparse index allocated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndex</span></td>
+        <td><p>The dense index allocated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck__1___0___0____System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck%60%601(%60%600%2C%60%600%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L728">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck__1___0___0____System_Int32__System_Int32_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck``1(``0,``0[]@,System.Int32@,System.Int32)">AddWithExpandCheck&lt;T0&gt;(T0, ref T0[], out Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck&lt;T0&gt;(T0 obj0, ref T0[] array0, out int lookupIndex, int howMuchToExpand = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lookupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">howMuchToExpand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck__2___0___0______1___1____System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck%60%602(%60%600%2C%60%600%5B%5D%40%2C%60%601%2C%60%601%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L777">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck__2___0___0______1___1____System_Int32__System_Int32_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck``2(``0,``0[]@,``1,``1[]@,System.Int32@,System.Int32)">AddWithExpandCheck&lt;T0, T1&gt;(T0, ref T0[], T1, ref T1[], out Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck&lt;T0, T1&gt;(T0 obj0, ref T0[] array0, T1 obj1, ref T1[] array1, out int lookupIndex, int howMuchToExpand = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lookupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">howMuchToExpand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck__3___0___0______1___1______2___2____System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck%60%603(%60%600%2C%60%600%5B%5D%40%2C%60%601%2C%60%601%5B%5D%40%2C%60%602%2C%60%602%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L832">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck__3___0___0______1___1______2___2____System_Int32__System_Int32_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck``3(``0,``0[]@,``1,``1[]@,``2,``2[]@,System.Int32@,System.Int32)">AddWithExpandCheck&lt;T0, T1, T2&gt;(T0, ref T0[], T1, ref T1[], T2, ref T2[], out Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck&lt;T0, T1, T2&gt;(T0 obj0, ref T0[] array0, T1 obj1, ref T1[] array1, T2 obj2, ref T2[] array2, out int lookupIndex, int howMuchToExpand = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lookupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">howMuchToExpand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck__4___0___0______1___1______2___2______3___3____System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck%60%604(%60%600%2C%60%600%5B%5D%40%2C%60%601%2C%60%601%5B%5D%40%2C%60%602%2C%60%602%5B%5D%40%2C%60%603%2C%60%603%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L893">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck__4___0___0______1___1______2___2______3___3____System_Int32__System_Int32_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck``4(``0,``0[]@,``1,``1[]@,``2,``2[]@,``3,``3[]@,System.Int32@,System.Int32)">AddWithExpandCheck&lt;T0, T1, T2, T3&gt;(T0, ref T0[], T1, ref T1[], T2, ref T2[], T3, ref T3[], out Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck&lt;T0, T1, T2, T3&gt;(T0 obj0, ref T0[] array0, T1 obj1, ref T1[] array1, T2 obj2, ref T2[] array2, T3 obj3, ref T3[] array3, out int lookupIndex, int howMuchToExpand = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lookupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">howMuchToExpand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck__5___0___0______1___1______2___2______3___3______4___4____System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck%60%605(%60%600%2C%60%600%5B%5D%40%2C%60%601%2C%60%601%5B%5D%40%2C%60%602%2C%60%602%5B%5D%40%2C%60%603%2C%60%603%5B%5D%40%2C%60%604%2C%60%604%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L958">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck__5___0___0______1___1______2___2______3___3______4___4____System_Int32__System_Int32_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck``5(``0,``0[]@,``1,``1[]@,``2,``2[]@,``3,``3[]@,``4,``4[]@,System.Int32@,System.Int32)">AddWithExpandCheck&lt;T0, T1, T2, T3, T4&gt;(T0, ref T0[], T1, ref T1[], T2, ref T2[], T3, ref T3[], T4, ref T4[], out Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck&lt;T0, T1, T2, T3, T4&gt;(T0 obj0, ref T0[] array0, T1 obj1, ref T1[] array1, T2 obj2, ref T2[] array2, T3 obj3, ref T3[] array3, T4 obj4, ref T4[] array4, out int lookupIndex, int howMuchToExpand = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T4</span></td>
+        <td><span class="parametername">obj4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lookupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">howMuchToExpand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck__6___0___0______1___1______2___2______3___3______4___4______5___5____System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck%60%606(%60%600%2C%60%600%5B%5D%40%2C%60%601%2C%60%601%5B%5D%40%2C%60%602%2C%60%602%5B%5D%40%2C%60%603%2C%60%603%5B%5D%40%2C%60%604%2C%60%604%5B%5D%40%2C%60%605%2C%60%605%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1029">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck__6___0___0______1___1______2___2______3___3______4___4______5___5____System_Int32__System_Int32_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck``6(``0,``0[]@,``1,``1[]@,``2,``2[]@,``3,``3[]@,``4,``4[]@,``5,``5[]@,System.Int32@,System.Int32)">AddWithExpandCheck&lt;T0, T1, T2, T3, T4, T5&gt;(T0, ref T0[], T1, ref T1[], T2, ref T2[], T3, ref T3[], T4, ref T4[], T5, ref T5[], out Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck&lt;T0, T1, T2, T3, T4, T5&gt;(T0 obj0, ref T0[] array0, T1 obj1, ref T1[] array1, T2 obj2, ref T2[] array2, T3 obj3, ref T3[] array3, T4 obj4, ref T4[] array4, T5 obj5, ref T5[] array5, out int lookupIndex, int howMuchToExpand = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T4</span></td>
+        <td><span class="parametername">obj4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T5</span></td>
+        <td><span class="parametername">obj5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lookupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">howMuchToExpand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck__7___0___0______1___1______2___2______3___3______4___4______5___5______6___6____System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck%60%607(%60%600%2C%60%600%5B%5D%40%2C%60%601%2C%60%601%5B%5D%40%2C%60%602%2C%60%602%5B%5D%40%2C%60%603%2C%60%603%5B%5D%40%2C%60%604%2C%60%604%5B%5D%40%2C%60%605%2C%60%605%5B%5D%40%2C%60%606%2C%60%606%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1106">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck__7___0___0______1___1______2___2______3___3______4___4______5___5______6___6____System_Int32__System_Int32_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck``7(``0,``0[]@,``1,``1[]@,``2,``2[]@,``3,``3[]@,``4,``4[]@,``5,``5[]@,``6,``6[]@,System.Int32@,System.Int32)">AddWithExpandCheck&lt;T0, T1, T2, T3, T4, T5, T6&gt;(T0, ref T0[], T1, ref T1[], T2, ref T2[], T3, ref T3[], T4, ref T4[], T5, ref T5[], T6, ref T6[], out Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck&lt;T0, T1, T2, T3, T4, T5, T6&gt;(T0 obj0, ref T0[] array0, T1 obj1, ref T1[] array1, T2 obj2, ref T2[] array2, T3 obj3, ref T3[] array3, T4 obj4, ref T4[] array4, T5 obj5, ref T5[] array5, T6 obj6, ref T6[] array6, out int lookupIndex, int howMuchToExpand = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T4</span></td>
+        <td><span class="parametername">obj4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T5</span></td>
+        <td><span class="parametername">obj5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T6</span></td>
+        <td><span class="parametername">obj6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T6[]</td>
+        <td><span class="parametername">array6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lookupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">howMuchToExpand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_AddWithExpandCheck__8___0___0______1___1______2___2______3___3______4___4______5___5______6___6______7___7____System_Int32__System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.AddWithExpandCheck%60%608(%60%600%2C%60%600%5B%5D%40%2C%60%601%2C%60%601%5B%5D%40%2C%60%602%2C%60%602%5B%5D%40%2C%60%603%2C%60%603%5B%5D%40%2C%60%604%2C%60%604%5B%5D%40%2C%60%605%2C%60%605%5B%5D%40%2C%60%606%2C%60%606%5B%5D%40%2C%60%607%2C%60%607%5B%5D%40%2CSystem.Int32%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1188">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_AddWithExpandCheck__8___0___0______1___1______2___2______3___3______4___4______5___5______6___6______7___7____System_Int32__System_Int32_" data-uid="GDX.Collections.SparseSet.AddWithExpandCheck``8(``0,``0[]@,``1,``1[]@,``2,``2[]@,``3,``3[]@,``4,``4[]@,``5,``5[]@,``6,``6[]@,``7,``7[]@,System.Int32@,System.Int32)">AddWithExpandCheck&lt;T0, T1, T2, T3, T4, T5, T6, T7&gt;(T0, ref T0[], T1, ref T1[], T2, ref T2[], T3, ref T3[], T4, ref T4[], T5, ref T5[], T6, ref T6[], T7, ref T7[], out Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck&lt;T0, T1, T2, T3, T4, T5, T6, T7&gt;(T0 obj0, ref T0[] array0, T1 obj1, ref T1[] array1, T2 obj2, ref T2[] array2, T3 obj3, ref T3[] array3, T4 obj4, ref T4[] array4, T5 obj5, ref T5[] array5, T6 obj6, ref T6[] array6, T7 obj7, ref T7[] array7, out int lookupIndex, int howMuchToExpand = 16)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T0</span></td>
+        <td><span class="parametername">obj0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">obj1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T2</span></td>
+        <td><span class="parametername">obj2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T3</span></td>
+        <td><span class="parametername">obj3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T4</span></td>
+        <td><span class="parametername">obj4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T5</span></td>
+        <td><span class="parametername">obj5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T6</span></td>
+        <td><span class="parametername">obj6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T6[]</td>
+        <td><span class="parametername">array6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T7</span></td>
+        <td><span class="parametername">obj7</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T7[]</td>
+        <td><span class="parametername">array7</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">lookupIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">howMuchToExpand</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_Clear.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L637">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_Clear_" data-uid="GDX.Collections.SparseSet.Clear*"></a>
+  <h4 id="GDX_Collections_SparseSet_Clear" data-uid="GDX.Collections.SparseSet.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear the dense and sparse arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_Clear_System_UInt64___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.Clear(System.UInt64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L655">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_Clear_" data-uid="GDX.Collections.SparseSet.Clear*"></a>
+  <h4 id="GDX_Collections_SparseSet_Clear_System_UInt64___" data-uid="GDX.Collections.SparseSet.Clear(System.UInt64[])">Clear(UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Clear the dense and sparse arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear(ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>Array containing version numbers to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_Expand_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.Expand(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L673">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_Expand_" data-uid="GDX.Collections.SparseSet.Expand*"></a>
+  <h4 id="GDX_Collections_SparseSet_Expand_System_Int32_" data-uid="GDX.Collections.SparseSet.Expand(System.Int32)">Expand(Int32)</h4>
+  <div class="markdown level1 summary"><p>Reallocate the dense and sparse arrays with additional capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Expand(int extraCapacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">extraCapacity</span></td>
+        <td><p>How many indices to expand the dense and sparse arrays by.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_Expand_System_Int32_System_UInt64____.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.Expand(System.Int32%2CSystem.UInt64%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L698">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_Expand_" data-uid="GDX.Collections.SparseSet.Expand*"></a>
+  <h4 id="GDX_Collections_SparseSet_Expand_System_Int32_System_UInt64____" data-uid="GDX.Collections.SparseSet.Expand(System.Int32,System.UInt64[]@)">Expand(Int32, ref UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Reallocate the dense and sparse arrays with additional capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Expand(int extraCapacity, ref ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">extraCapacity</span></td>
+        <td><p>How many indices to expand the dense and sparse arrays by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>Array containing version numbers to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_GetDenseIndexUnchecked_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.GetDenseIndexUnchecked(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L132">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_GetDenseIndexUnchecked_" data-uid="GDX.Collections.SparseSet.GetDenseIndexUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_GetDenseIndexUnchecked_System_Int32_" data-uid="GDX.Collections.SparseSet.GetDenseIndexUnchecked(System.Int32)">GetDenseIndexUnchecked(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sparse array at the given index without any data validation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDenseIndexUnchecked(int sparseIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The index to check in the sparse array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dense index at the given sparse index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_GetDenseIndexWithBoundsAndVersionCheck_System_Int32_System_UInt64_System_UInt64___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.GetDenseIndexWithBoundsAndVersionCheck(System.Int32%2CSystem.UInt64%2CSystem.UInt64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L193">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_GetDenseIndexWithBoundsAndVersionCheck_" data-uid="GDX.Collections.SparseSet.GetDenseIndexWithBoundsAndVersionCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_GetDenseIndexWithBoundsAndVersionCheck_System_Int32_System_UInt64_System_UInt64___" data-uid="GDX.Collections.SparseSet.GetDenseIndexWithBoundsAndVersionCheck(System.Int32,System.UInt64,System.UInt64[])">GetDenseIndexWithBoundsAndVersionCheck(Int32, UInt64, UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sparse array at the given index,
+or -1 if the given sparse index is invalid..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDenseIndexWithBoundsAndVersionCheck(int sparseIndex, ulong version, ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The index in the sparse array to check against.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version number associated with the sparse index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array containing the version number to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dense index pointed to by the current sparse index, or -1 if invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_GetDenseIndexWithBoundsCheck_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.GetDenseIndexWithBoundsCheck(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L144">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_GetDenseIndexWithBoundsCheck_" data-uid="GDX.Collections.SparseSet.GetDenseIndexWithBoundsCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_GetDenseIndexWithBoundsCheck_System_Int32_" data-uid="GDX.Collections.SparseSet.GetDenseIndexWithBoundsCheck(System.Int32)">GetDenseIndexWithBoundsCheck(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sparse array at the given index,
+or -1 if the dense and sparse indices don't point to each other or if the dense index is outside the dense bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDenseIndexWithBoundsCheck(int sparseIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The index in the sparse array to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dense index pointed to by the current sparse index, or -1 if invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_GetDenseIndexWithVersionCheck_System_Int32_System_UInt64_System_UInt64___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.GetDenseIndexWithVersionCheck(System.Int32%2CSystem.UInt64%2CSystem.UInt64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L172">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_GetDenseIndexWithVersionCheck_" data-uid="GDX.Collections.SparseSet.GetDenseIndexWithVersionCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_GetDenseIndexWithVersionCheck_System_Int32_System_UInt64_System_UInt64___" data-uid="GDX.Collections.SparseSet.GetDenseIndexWithVersionCheck(System.Int32,System.UInt64,System.UInt64[])">GetDenseIndexWithVersionCheck(Int32, UInt64, UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sparse array at the given index,
+or -1 if the version number does not match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDenseIndexWithVersionCheck(int sparseIndex, ulong version, ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The index in the sparse array to check against.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version number associated with the sparse index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array containing the version number to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dense index pointed to by the current sparse index, or -1 if invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L312">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked_System_Int32_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked(System.Int32)">RemoveUnchecked(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked(int sparseIndexToRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked_System_Int32_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked(System.Int32%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L370">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked_System_Int32_System_Int32__System_Int32__" data-uid="GDX.Collections.SparseSet.RemoveUnchecked(System.Int32,System.Int32@,System.Int32@)">RemoveUnchecked(Int32, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.
+Out parameters used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked(int sparseIndexToRemove, out int indexToSwapTo, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapTo</span></td>
+        <td><p>Replace the data array value at this index with the data array value at indexToSwapFrom.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at indexToSwapTo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked_System_Int32_System_UInt64___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked(System.Int32%2CSystem.UInt64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L338">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked_System_Int32_System_UInt64___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked(System.Int32,System.UInt64[])">RemoveUnchecked(Int32, UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use and increments the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked(int sparseIndexToRemove, ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked_System_Int32_System_UInt64___System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked(System.Int32%2CSystem.UInt64%5B%5D%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L405">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked_System_Int32_System_UInt64___System_Int32__System_Int32__" data-uid="GDX.Collections.SparseSet.RemoveUnchecked(System.Int32,System.UInt64[],System.Int32@,System.Int32@)">RemoveUnchecked(Int32, UInt64[], out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use and increments the version.
+Out parameters used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked(int sparseIndexToRemove, ulong[] versionArray, out int indexToSwapTo, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapTo</span></td>
+        <td><p>Replace the data array value at this index with the data array value at indexToSwapFrom.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at indexToSwapTo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked__1_System_Int32___0___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked%60%601(System.Int32%2C%60%600%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1460">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked__1_System_Int32___0___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked``1(System.Int32,``0[])">RemoveUnchecked&lt;T0&gt;(Int32, T0[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked&lt;T0&gt;(int sparseIndexToRemove, T0[] array0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked__2_System_Int32___0_____1___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked%60%602(System.Int32%2C%60%600%5B%5D%2C%60%601%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1482">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked__2_System_Int32___0_____1___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked``2(System.Int32,``0[],``1[])">RemoveUnchecked&lt;T0, T1&gt;(Int32, T0[], T1[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked&lt;T0, T1&gt;(int sparseIndexToRemove, T0[] array0, T1[] array1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked__3_System_Int32___0_____1_____2___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked%60%603(System.Int32%2C%60%600%5B%5D%2C%60%601%5B%5D%2C%60%602%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1506">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked__3_System_Int32___0_____1_____2___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked``3(System.Int32,``0[],``1[],``2[])">RemoveUnchecked&lt;T0, T1, T2&gt;(Int32, T0[], T1[], T2[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked&lt;T0, T1, T2&gt;(int sparseIndexToRemove, T0[] array0, T1[] array1, T2[] array2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked__4_System_Int32___0_____1_____2_____3___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked%60%604(System.Int32%2C%60%600%5B%5D%2C%60%601%5B%5D%2C%60%602%5B%5D%2C%60%603%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1532">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked__4_System_Int32___0_____1_____2_____3___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked``4(System.Int32,``0[],``1[],``2[],``3[])">RemoveUnchecked&lt;T0, T1, T2, T3&gt;(Int32, T0[], T1[], T2[], T3[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked&lt;T0, T1, T2, T3&gt;(int sparseIndexToRemove, T0[] array0, T1[] array1, T2[] array2, T3[] array3)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked__5_System_Int32___0_____1_____2_____3_____4___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked%60%605(System.Int32%2C%60%600%5B%5D%2C%60%601%5B%5D%2C%60%602%5B%5D%2C%60%603%5B%5D%2C%60%604%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1561">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked__5_System_Int32___0_____1_____2_____3_____4___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked``5(System.Int32,``0[],``1[],``2[],``3[],``4[])">RemoveUnchecked&lt;T0, T1, T2, T3, T4&gt;(Int32, T0[], T1[], T2[], T3[], T4[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked&lt;T0, T1, T2, T3, T4&gt;(int sparseIndexToRemove, T0[] array0, T1[] array1, T2[] array2, T3[] array3, T4[] array4)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked__6_System_Int32___0_____1_____2_____3_____4_____5___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked%60%606(System.Int32%2C%60%600%5B%5D%2C%60%601%5B%5D%2C%60%602%5B%5D%2C%60%603%5B%5D%2C%60%604%5B%5D%2C%60%605%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1592">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked__6_System_Int32___0_____1_____2_____3_____4_____5___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked``6(System.Int32,``0[],``1[],``2[],``3[],``4[],``5[])">RemoveUnchecked&lt;T0, T1, T2, T3, T4, T5&gt;(Int32, T0[], T1[], T2[], T3[], T4[], T5[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked&lt;T0, T1, T2, T3, T4, T5&gt;(int sparseIndexToRemove, T0[] array0, T1[] array1, T2[] array2, T3[] array3, T4[] array4, T5[] array5)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked__7_System_Int32___0_____1_____2_____3_____4_____5_____6___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked%60%607(System.Int32%2C%60%600%5B%5D%2C%60%601%5B%5D%2C%60%602%5B%5D%2C%60%603%5B%5D%2C%60%604%5B%5D%2C%60%605%5B%5D%2C%60%606%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1626">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked__7_System_Int32___0_____1_____2_____3_____4_____5_____6___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked``7(System.Int32,``0[],``1[],``2[],``3[],``4[],``5[],``6[])">RemoveUnchecked&lt;T0, T1, T2, T3, T4, T5, T6&gt;(Int32, T0[], T1[], T2[], T3[], T4[], T5[], T6[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked&lt;T0, T1, T2, T3, T4, T5, T6&gt;(int sparseIndexToRemove, T0[] array0, T1[] array1, T2[] array2, T3[] array3, T4[] array4, T5[] array5, T6[] array6)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T6[]</td>
+        <td><span class="parametername">array6</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUnchecked__8_System_Int32___0_____1_____2_____3_____4_____5_____6_____7___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUnchecked%60%608(System.Int32%2C%60%600%5B%5D%2C%60%601%5B%5D%2C%60%602%5B%5D%2C%60%603%5B%5D%2C%60%604%5B%5D%2C%60%605%5B%5D%2C%60%606%5B%5D%2C%60%607%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L1661">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUnchecked_" data-uid="GDX.Collections.SparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUnchecked__8_System_Int32___0_____1_____2_____3_____4_____5_____6_____7___" data-uid="GDX.Collections.SparseSet.RemoveUnchecked``8(System.Int32,``0[],``1[],``2[],``3[],``4[],``5[],``6[],``7[])">RemoveUnchecked&lt;T0, T1, T2, T3, T4, T5, T6, T7&gt;(Int32, T0[], T1[], T2[], T3[], T4[], T5[], T6[], T7[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked&lt;T0, T1, T2, T3, T4, T5, T6, T7&gt;(int sparseIndexToRemove, T0[] array0, T1[] array1, T2[] array2, T3[] array3, T4[] array4, T5[] array5, T6[] array6, T7[] array7)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T0[]</td>
+        <td><span class="parametername">array0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T1[]</td>
+        <td><span class="parametername">array1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T2[]</td>
+        <td><span class="parametername">array2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T3[]</td>
+        <td><span class="parametername">array3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T4[]</td>
+        <td><span class="parametername">array4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T5[]</td>
+        <td><span class="parametername">array5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T6[]</td>
+        <td><span class="parametername">array6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T7[]</td>
+        <td><span class="parametername">array7</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T0</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T2</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T3</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T4</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T5</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T6</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">T7</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L435">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_" data-uid="GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_System_Int32_" data-uid="GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex(System.Int32)">RemoveUncheckedFromDenseIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUncheckedFromDenseIndex(int denseIndexToRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The dense index associated with the sparse index to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex(System.Int32%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L490">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_" data-uid="GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_Int32__" data-uid="GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex(System.Int32,System.Int32@)">RemoveUncheckedFromDenseIndex(Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.
+Out parameter used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUncheckedFromDenseIndex(int denseIndexToRemove, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at denseIndexToRemove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_UInt64___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex(System.Int32%2CSystem.UInt64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L460">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_" data-uid="GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_UInt64___" data-uid="GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex(System.Int32,System.UInt64[])">RemoveUncheckedFromDenseIndex(Int32, UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUncheckedFromDenseIndex(int denseIndexToRemove, ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The dense index associated with the sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_UInt64___System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex(System.Int32%2CSystem.UInt64%5B%5D%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L522">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_" data-uid="GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_UInt64___System_Int32__" data-uid="GDX.Collections.SparseSet.RemoveUncheckedFromDenseIndex(System.Int32,System.UInt64[],System.Int32@)">RemoveUncheckedFromDenseIndex(Int32, UInt64[], out Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.
+Out parameter used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUncheckedFromDenseIndex(int denseIndexToRemove, ulong[] versionArray, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at denseIndexToRemove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveWithBoundsAndVersionChecks_System_Int32__System_UInt64_System_UInt64____.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveWithBoundsAndVersionChecks(System.Int32%40%2CSystem.UInt64%2CSystem.UInt64%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L267">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveWithBoundsAndVersionChecks_" data-uid="GDX.Collections.SparseSet.RemoveWithBoundsAndVersionChecks*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveWithBoundsAndVersionChecks_System_Int32__System_UInt64_System_UInt64____" data-uid="GDX.Collections.SparseSet.RemoveWithBoundsAndVersionChecks(System.Int32@,System.UInt64,System.UInt64[]@)">RemoveWithBoundsAndVersionChecks(ref Int32, UInt64, ref UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.
+calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveWithBoundsAndVersionChecks(ref int sparseIndexToRemove, ulong version, ref ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version number of the int used to access the sparse index. Used to guard against accessing
+indices that have been removed and reused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the element was successfully removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_RemoveWithNullValueCheck_System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.RemoveWithNullValueCheck(System.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L219">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_RemoveWithNullValueCheck_" data-uid="GDX.Collections.SparseSet.RemoveWithNullValueCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_RemoveWithNullValueCheck_System_Int32__" data-uid="GDX.Collections.SparseSet.RemoveWithNullValueCheck(System.Int32@)">RemoveWithNullValueCheck(ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the element was successfully removed.
+WARNING: Will not protect against accidentally removing twice if the index in question was recycled between Remove
+calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveWithNullValueCheck(ref int sparseIndexToRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_TryRemoveFromDenseIndexWithVersionCheck_System_Int32_System_UInt64_System_UInt64___.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.TryRemoveFromDenseIndexWithVersionCheck(System.Int32%2CSystem.UInt64%2CSystem.UInt64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L605">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_TryRemoveFromDenseIndexWithVersionCheck_" data-uid="GDX.Collections.SparseSet.TryRemoveFromDenseIndexWithVersionCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_TryRemoveFromDenseIndexWithVersionCheck_System_Int32_System_UInt64_System_UInt64___" data-uid="GDX.Collections.SparseSet.TryRemoveFromDenseIndexWithVersionCheck(System.Int32,System.UInt64,System.UInt64[])">TryRemoveFromDenseIndexWithVersionCheck(Int32, UInt64, UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Attempts to remove the associated sparse/dense index pair from active use and increments the version if successful.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryRemoveFromDenseIndexWithVersionCheck(int denseIndexToRemove, ulong version, ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The dense index associated with the sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not the remove attempt succeeded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet_TryRemoveWithVersionCheck_System_Int32_System_UInt64_System_UInt64___System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet.TryRemoveWithVersionCheck(System.Int32%2CSystem.UInt64%2CSystem.UInt64%5B%5D%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L561">View Source</a>
+  </span>
+  <a id="GDX_Collections_SparseSet_TryRemoveWithVersionCheck_" data-uid="GDX.Collections.SparseSet.TryRemoveWithVersionCheck*"></a>
+  <h4 id="GDX_Collections_SparseSet_TryRemoveWithVersionCheck_System_Int32_System_UInt64_System_UInt64___System_Int32__System_Int32__" data-uid="GDX.Collections.SparseSet.TryRemoveWithVersionCheck(System.Int32,System.UInt64,System.UInt64[],System.Int32@,System.Int32@)">TryRemoveWithVersionCheck(Int32, UInt64, UInt64[], out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Attempts to remove the associated sparse/dense index pair from active use and increments the version if successful.
+Out parameters used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryRemoveWithVersionCheck(int sparseIndexToRemove, ulong version, ulong[] versionArray, out int indexToSwapTo, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version number of the int used to access the sparse index. Used to guard against accessing
+indices that have been removed and reused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapTo</span></td>
+        <td><p>Replace the data array value at this index with the data array value at indexToSwapFrom.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at indexToSwapTo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not the remove attempt succeeded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_SparseSet.md&amp;value=---%0Auid%3A%20GDX.Collections.SparseSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/SparseSet.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

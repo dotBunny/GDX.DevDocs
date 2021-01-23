@@ -1,15 +1,4 @@
-:: Working Folder
-set ScriptDirectory=%~dp0
-
-:: Define path to docfx executable.
-set DocFXExecutable=%ScriptDirectory%..\..\Tools\docfx\docfx.exe
-
-:: Define absolute path to project folder
-set ProjectFolder=%ScriptDirectory%..\docfx_project
-
-:: Force full regeneration
-rmdir %ProjectFolder%\obj /s /q
-rmdir %ProjectFolder%\_site /s /q
-
-:: Generate & Serve
-%DocFXExecutable% %ProjectFolder%\docfx.json --serve
+:: These scripts are setup to be pathed to the workspace used internally for GDX development.
+:: They almost certainly will not have the correct paths for anyone else.
+call clean.bat
+call serve.bat

@@ -1,0 +1,877 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StringExtensions
+   | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StringExtensions
+   | GDX ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GDX.StringExtensions">
+  
+  
+  <h1 id="GDX_StringExtensions" data-uid="GDX.StringExtensions" class="text-break">Class StringExtensions
+  </h1>
+  <div class="markdown level0 summary"><p><span class="xref">System.String</span> Based Extension Methods</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">StringExtensions</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.html">GDX</a></h6>
+  <h6><strong>Assembly</strong>: GDX.dll</h6>
+  <h5 id="GDX_StringExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class StringExtensions</code></pre>
+  </div>
+  <h5 id="GDX_StringExtensions_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Unit testing found in GDX.Tests.EditMode, under Runtime.StringExtensionsTests.</p>
+</div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_EncryptionDefaultKey.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.EncryptionDefaultKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L58">View Source</a>
+  </span>
+  <h4 id="GDX_StringExtensions_EncryptionDefaultKey" data-uid="GDX.StringExtensions.EncryptionDefaultKey">EncryptionDefaultKey</h4>
+  <div class="markdown level1 summary"><p>The default encryption key used when none is provided to the encryption related extensions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] EncryptionDefaultKey</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_StringExtensions_EncryptionDefaultKey_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can change this at runtime during some sort of initialization pass to being something unique to your project,
+but it is not absolutely necessary. This must be a multiple of 8 bytes.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_EncryptionInitializationVector.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.EncryptionInitializationVector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L68">View Source</a>
+  </span>
+  <h4 id="GDX_StringExtensions_EncryptionInitializationVector" data-uid="GDX.StringExtensions.EncryptionInitializationVector">EncryptionInitializationVector</h4>
+  <div class="markdown level1 summary"><p>The IV (Initialization Vector) provided to the <span class="xref">System.Security.Cryptography.DESCryptoServiceProvider</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] EncryptionInitializationVector</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_StringExtensions_EncryptionInitializationVector_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can change this at runtime during some sort of initialization pass to being something unique to your project,
+but it is not absolutely necessary. This must be a multiple of 8 bytes.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_Decrypt_System_String_System_Byte___.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.Decrypt(System.String%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L77">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_Decrypt_" data-uid="GDX.StringExtensions.Decrypt*"></a>
+  <h4 id="GDX_StringExtensions_Decrypt_System_String_System_Byte___" data-uid="GDX.StringExtensions.Decrypt(System.String,System.Byte[])">Decrypt(String, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Decrypt an encrypted <span class="xref">System.String</span> created by <a class="xref" href="GDX.StringExtensions.html#GDX_StringExtensions_Encrypt_System_String_System_Byte___">Encrypt(String, Byte[])</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Decrypt(this string encryptedString, byte[] encryptionKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encryptedString</span></td>
+        <td><p>The encrypted <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">encryptionKey</span></td>
+        <td><p>The key used to encrypt the <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The decrypted <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_StringExtensions_Decrypt_System_String_System_Byte____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will have quite a few allocations.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_Encrypt_System_String_System_Byte___.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.Encrypt(System.String%2CSystem.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L99">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_Encrypt_" data-uid="GDX.StringExtensions.Encrypt*"></a>
+  <h4 id="GDX_StringExtensions_Encrypt_System_String_System_Byte___" data-uid="GDX.StringExtensions.Encrypt(System.String,System.Byte[])">Encrypt(String, Byte[])</h4>
+  <div class="markdown level1 summary"><p>Encrypt a <span class="xref">System.String</span> utilizing a <span class="xref">System.Security.Cryptography.DESCryptoServiceProvider</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Encrypt(this string decryptedString, byte[] encryptionKey = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">decryptedString</span></td>
+        <td><p>The original <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">encryptionKey</span></td>
+        <td><p>The key to be used when encrypting the <span class="xref">System.String</span>.  This must be a multiple of 8 bytes.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The encrypted <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_StringExtensions_Encrypt_System_String_System_Byte____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will have quite a few allocations.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_GetAfterFirst_System_String_System_String_System_StringComparison_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.GetAfterFirst(System.String%2CSystem.String%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L128">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_GetAfterFirst_" data-uid="GDX.StringExtensions.GetAfterFirst*"></a>
+  <h4 id="GDX_StringExtensions_GetAfterFirst_System_String_System_String_System_StringComparison_" data-uid="GDX.StringExtensions.GetAfterFirst(System.String,System.String,System.StringComparison)">GetAfterFirst(String, String, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>Get the <span class="xref">System.String</span> after the first identified <code data-dev-comment-type="paramref" class="paramref">splitString</code> in
+<code data-dev-comment-type="paramref" class="paramref">targetString</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetAfterFirst(this string targetString, string splitString, StringComparison comparison = StringComparison.Ordinal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">splitString</span></td>
+        <td><p>The divider which the <code data-dev-comment-type="paramref" class="paramref">targetString</code> should be split on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">comparison</span></td>
+        <td><p>Specifies the culture, case, and sort rules to be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The content following the <code data-dev-comment-type="paramref" class="paramref">splitString</code>, or <code data-dev-comment-type="paramref" class="paramref">targetString</code> if none is
+found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_GetAfterLast_System_String_System_String_System_StringComparison_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.GetAfterLast(System.String%2CSystem.String%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L147">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_GetAfterLast_" data-uid="GDX.StringExtensions.GetAfterLast*"></a>
+  <h4 id="GDX_StringExtensions_GetAfterLast_System_String_System_String_System_StringComparison_" data-uid="GDX.StringExtensions.GetAfterLast(System.String,System.String,System.StringComparison)">GetAfterLast(String, String, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>Get the <span class="xref">System.String</span> after the last identified <code data-dev-comment-type="paramref" class="paramref">splitString</code> in
+<code data-dev-comment-type="paramref" class="paramref">targetString</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetAfterLast(this string targetString, string splitString, StringComparison comparison = StringComparison.Ordinal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">splitString</span></td>
+        <td><p>The divider which the <code data-dev-comment-type="paramref" class="paramref">targetString</code> should be split on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">comparison</span></td>
+        <td><p>Specifies the culture, case, and sort rules to be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The content following the <code data-dev-comment-type="paramref" class="paramref">splitString</code>, or <code data-dev-comment-type="paramref" class="paramref">targetString</code> if none is
+found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_GetBeforeFirst_System_String_System_String_System_StringComparison_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.GetBeforeFirst(System.String%2CSystem.String%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L163">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_GetBeforeFirst_" data-uid="GDX.StringExtensions.GetBeforeFirst*"></a>
+  <h4 id="GDX_StringExtensions_GetBeforeFirst_System_String_System_String_System_StringComparison_" data-uid="GDX.StringExtensions.GetBeforeFirst(System.String,System.String,System.StringComparison)">GetBeforeFirst(String, String, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>Get the <span class="xref">System.String</span> before the first identified <code data-dev-comment-type="paramref" class="paramref">splitString</code> in
+<code data-dev-comment-type="paramref" class="paramref">targetString</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBeforeFirst(this string targetString, string splitString, StringComparison comparison = StringComparison.Ordinal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">splitString</span></td>
+        <td><p>The divider which the <code data-dev-comment-type="paramref" class="paramref">targetString</code> should be split on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">comparison</span></td>
+        <td><p>Specifies the culture, case, and sort rules to be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The content before the <code data-dev-comment-type="paramref" class="paramref">splitString</code>, or <code data-dev-comment-type="paramref" class="paramref">targetString</code> if none is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_GetBeforeLast_System_String_System_String_System_StringComparison_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.GetBeforeLast(System.String%2CSystem.String%2CSystem.StringComparison)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L179">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_GetBeforeLast_" data-uid="GDX.StringExtensions.GetBeforeLast*"></a>
+  <h4 id="GDX_StringExtensions_GetBeforeLast_System_String_System_String_System_StringComparison_" data-uid="GDX.StringExtensions.GetBeforeLast(System.String,System.String,System.StringComparison)">GetBeforeLast(String, String, StringComparison)</h4>
+  <div class="markdown level1 summary"><p>Get the <span class="xref">System.String</span> before the last identified <code data-dev-comment-type="paramref" class="paramref">splitString</code> in
+<code data-dev-comment-type="paramref" class="paramref">targetString</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetBeforeLast(this string targetString, string splitString, StringComparison comparison = StringComparison.Ordinal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">splitString</span></td>
+        <td><p>The divider which the <code data-dev-comment-type="paramref" class="paramref">targetString</code> should be split on.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.StringComparison</span></td>
+        <td><span class="parametername">comparison</span></td>
+        <td><p>Specifies the culture, case, and sort rules to be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The content before the <code data-dev-comment-type="paramref" class="paramref">splitString</code>, or <code data-dev-comment-type="paramref" class="paramref">targetString</code> if none is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_GetLowerCaseHashCode_System_String_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.GetLowerCaseHashCode(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L260">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_GetLowerCaseHashCode_" data-uid="GDX.StringExtensions.GetLowerCaseHashCode*"></a>
+  <h4 id="GDX_StringExtensions_GetLowerCaseHashCode_System_String_" data-uid="GDX.StringExtensions.GetLowerCaseHashCode(System.String)">GetLowerCaseHashCode(String)</h4>
+  <div class="markdown level1 summary"><p>
+    Get the hash code value of <code data-dev-comment-type="paramref" class="paramref">targetString</code> (converted to an uppercase
+<span class="xref">System.String</span>).
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetLowerCaseHashCode(this string targetString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A <span class="xref">System.Int32</span> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_StringExtensions_GetLowerCaseHashCode_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This loosely based on the Fowler–Noll–Vo (FNV) hash function. It's value will be identical
+to the value produced natively by processing a <span class="xref">System.String</span> with
+<span class="xref">System.String.ToLower</span>.<span class="xref">System.String.GetHashCode</span>, but with no
+allocations.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_GetUpperCaseHashCode_System_String_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.GetUpperCaseHashCode(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L201">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_GetUpperCaseHashCode_" data-uid="GDX.StringExtensions.GetUpperCaseHashCode*"></a>
+  <h4 id="GDX_StringExtensions_GetUpperCaseHashCode_System_String_" data-uid="GDX.StringExtensions.GetUpperCaseHashCode(System.String)">GetUpperCaseHashCode(String)</h4>
+  <div class="markdown level1 summary"><p>
+    Get the hash code value of <code data-dev-comment-type="paramref" class="paramref">targetString</code> (converted to an uppercase
+<span class="xref">System.String</span>).
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetUpperCaseHashCode(this string targetString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A <span class="xref">System.Int32</span> value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_StringExtensions_GetUpperCaseHashCode_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This loosely based on the Fowler–Noll–Vo (FNV) hash function. It's value will be identical
+to the value produced natively by processing a <span class="xref">System.String</span> with
+<span class="xref">System.String.ToUpper</span>.<span class="xref">System.String.GetHashCode</span>, but with no
+allocations.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_HasLowerCase_System_String_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.HasLowerCase(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L310">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_HasLowerCase_" data-uid="GDX.StringExtensions.HasLowerCase*"></a>
+  <h4 id="GDX_StringExtensions_HasLowerCase_System_String_" data-uid="GDX.StringExtensions.HasLowerCase(System.String)">HasLowerCase(String)</h4>
+  <div class="markdown level1 summary"><p>Determine if there are any lowercase letters in the provided <code data-dev-comment-type="paramref" class="paramref">targetString</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasLowerCase(this string targetString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true/false if lowercase letters were found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_HasUpperCase_System_String_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.HasUpperCase(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L339">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_HasUpperCase_" data-uid="GDX.StringExtensions.HasUpperCase*"></a>
+  <h4 id="GDX_StringExtensions_HasUpperCase_System_String_" data-uid="GDX.StringExtensions.HasUpperCase(System.String)">HasUpperCase(String)</h4>
+  <div class="markdown level1 summary"><p>Determine if there are any uppercase letters in the provided <code data-dev-comment-type="paramref" class="paramref">targetString</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasUpperCase(this string targetString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true/false if uppercase letters were found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions_SplitCamelCase_System_String_System_String_.md&amp;value=---%0Auid%3A%20GDX.StringExtensions.SplitCamelCase(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L369">View Source</a>
+  </span>
+  <a id="GDX_StringExtensions_SplitCamelCase_" data-uid="GDX.StringExtensions.SplitCamelCase*"></a>
+  <h4 id="GDX_StringExtensions_SplitCamelCase_System_String_System_String_" data-uid="GDX.StringExtensions.SplitCamelCase(System.String,System.String)">SplitCamelCase(String, String)</h4>
+  <div class="markdown level1 summary"><p>Create a new string, splitting an existing string up based on camel case formatting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SplitCamelCase(this string targetString, string divider = &quot; &quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">targetString</span></td>
+        <td><p>The target <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">divider</span></td>
+        <td><p>The <span class="xref">System.String</span> to put in between the split <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A new <span class="xref">System.String</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_StringExtensions.md&amp;value=---%0Auid%3A%20GDX.StringExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/StringExtensions.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

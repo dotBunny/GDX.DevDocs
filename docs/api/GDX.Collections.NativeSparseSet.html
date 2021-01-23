@@ -1,0 +1,1410 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct NativeSparseSet
+   | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct NativeSparseSet
+   | GDX ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GDX.Collections.NativeSparseSet">
+  
+  
+  <h1 id="GDX_Collections_NativeSparseSet" data-uid="GDX.Collections.NativeSparseSet" class="text-break">Struct NativeSparseSet
+  </h1>
+  <div class="markdown level0 summary"><p>An adapter collection for external data arrays that allows constant-time insertion, deletion, and lookup by
+handle, as well as array-like iteration.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Collections.html">GDX.Collections</a></h6>
+  <h6><strong>Assembly</strong>: GDX.dll</h6>
+  <h5 id="GDX_Collections_NativeSparseSet_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct NativeSparseSet</code></pre>
+  </div>
+  <h5 id="GDX_Collections_NativeSparseSet_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The <a class="xref" href="GDX.Collections.NativeSparseSet.html">NativeSparseSet</a> is backed by a <span class="xref">Unity.Collections.NativeArray&lt;T&gt;</span> which
+requires UnityEngine.CoreModule.dll.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet__ctor_System_Int32_Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.%23ctor(System.Int32%2CUnity.Collections.Allocator%2CUnity.Collections.NativeArrayOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L50">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet__ctor_" data-uid="GDX.Collections.NativeSparseSet.#ctor*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet__ctor_System_Int32_Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_" data-uid="GDX.Collections.NativeSparseSet.#ctor(System.Int32,Unity.Collections.Allocator,Unity.Collections.NativeArrayOptions)">NativeSparseSet(Int32, Allocator, NativeArrayOptions)</h4>
+  <div class="markdown level1 summary"><p>Create a <a class="xref" href="GDX.Collections.NativeSparseSet.html">NativeSparseSet</a> with an <code data-dev-comment-type="paramref" class="paramref">initialCapacity</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeSparseSet(int initialCapacity, Allocator allocator, NativeArrayOptions nativeArrayOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">initialCapacity</span></td>
+        <td><p>The initial capacity of the sparse and dense int arrays.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.Allocator</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td><p>The <span class="xref">Unity.Collections.Allocator</span> type to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArrayOptions</span></td>
+        <td><span class="parametername">nativeArrayOptions</span></td>
+        <td><p>Should the memory be cleared on allocation?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_Count.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.Count%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L37">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_NativeSparseSet_Count" data-uid="GDX.Collections.NativeSparseSet.Count">Count</h4>
+  <div class="markdown level1 summary"><p>How many indices are being used currently?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_DenseArray.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.DenseArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L24">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_NativeSparseSet_DenseArray" data-uid="GDX.Collections.NativeSparseSet.DenseArray">DenseArray</h4>
+  <div class="markdown level1 summary"><p>Holds references to the sparse array for swapping indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;int&gt; DenseArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_FreeIndex.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.FreeIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L42">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_NativeSparseSet_FreeIndex" data-uid="GDX.Collections.NativeSparseSet.FreeIndex">FreeIndex</h4>
+  <div class="markdown level1 summary"><p>The first free (currently unused) index in the sparse array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FreeIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_SparseArray.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.SparseArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L32">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_NativeSparseSet_SparseArray" data-uid="GDX.Collections.NativeSparseSet.SparseArray">SparseArray</h4>
+  <div class="markdown level1 summary"><p>Holds references to dense array indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;int&gt; SparseArray</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_NativeSparseSet_SparseArray_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Its own indices are claimed and freed via a free-list.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_AddUnchecked_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.AddUnchecked(System.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L122">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_AddUnchecked_" data-uid="GDX.Collections.NativeSparseSet.AddUnchecked*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_AddUnchecked_System_Int32__System_Int32__" data-uid="GDX.Collections.NativeSparseSet.AddUnchecked(System.Int32@,System.Int32@)">AddUnchecked(out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set without checking if the set needs to expand.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUnchecked(out int sparseIndex, out int denseIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The sparse index allocated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndex</span></td>
+        <td><p>The dense index allocated.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_AddWithExpandCheck_System_Int32_System_Int32__System_Int32__Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.AddWithExpandCheck(System.Int32%2CSystem.Int32%40%2CSystem.Int32%40%2CUnity.Collections.Allocator%2CUnity.Collections.NativeArrayOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L74">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_AddWithExpandCheck_" data-uid="GDX.Collections.NativeSparseSet.AddWithExpandCheck*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_AddWithExpandCheck_System_Int32_System_Int32__System_Int32__Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_" data-uid="GDX.Collections.NativeSparseSet.AddWithExpandCheck(System.Int32,System.Int32@,System.Int32@,Unity.Collections.Allocator,Unity.Collections.NativeArrayOptions)">AddWithExpandCheck(Int32, out Int32, out Int32, Allocator, NativeArrayOptions)</h4>
+  <div class="markdown level1 summary"><p>Adds a sparse/dense index pair to the set and expands the arrays if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddWithExpandCheck(int expandBy, out int sparseIndex, out int denseIndex, Allocator allocator, NativeArrayOptions nativeArrayOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">expandBy</span></td>
+        <td><p>How many indices to expand by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The sparse index allocated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndex</span></td>
+        <td><p>The dense index allocated.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.Allocator</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td><p>The <span class="xref">Unity.Collections.Allocator</span> type to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArrayOptions</span></td>
+        <td><span class="parametername">nativeArrayOptions</span></td>
+        <td><p>Should the memory be cleared on allocation?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the index pool expanded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_Clear.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L649">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_Clear_" data-uid="GDX.Collections.NativeSparseSet.Clear*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_Clear" data-uid="GDX.Collections.NativeSparseSet.Clear">Clear()</h4>
+  <div class="markdown level1 summary"><p>Clear the dense and sparse arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_Clear_Unity_Collections_NativeArray_System_UInt64__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.Clear(Unity.Collections.NativeArray%7BSystem.UInt64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L666">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_Clear_" data-uid="GDX.Collections.NativeSparseSet.Clear*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_Clear_Unity_Collections_NativeArray_System_UInt64__" data-uid="GDX.Collections.NativeSparseSet.Clear(Unity.Collections.NativeArray{System.UInt64})">Clear(NativeArray&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Clear the dense and sparse arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear(NativeArray&lt;ulong&gt; versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>Array containing version numbers to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_Expand_System_Int32_Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.Expand(System.Int32%2CUnity.Collections.Allocator%2CUnity.Collections.NativeArrayOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L686">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_Expand_" data-uid="GDX.Collections.NativeSparseSet.Expand*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_Expand_System_Int32_Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_" data-uid="GDX.Collections.NativeSparseSet.Expand(System.Int32,Unity.Collections.Allocator,Unity.Collections.NativeArrayOptions)">Expand(Int32, Allocator, NativeArrayOptions)</h4>
+  <div class="markdown level1 summary"><p>Reallocate the dense and sparse arrays with additional capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Expand(int extraCapacity, Allocator allocator, NativeArrayOptions nativeArrayOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">extraCapacity</span></td>
+        <td><p>How many indices to expand the dense and sparse arrays by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.Allocator</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td><p>The <span class="xref">Unity.Collections.Allocator</span> type to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArrayOptions</span></td>
+        <td><span class="parametername">nativeArrayOptions</span></td>
+        <td><p>Should the memory be cleared on allocation?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_Expand_System_Int32_Unity_Collections_NativeArray_System_UInt64___Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.Expand(System.Int32%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D%40%2CUnity.Collections.Allocator%2CUnity.Collections.NativeArrayOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L715">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_Expand_" data-uid="GDX.Collections.NativeSparseSet.Expand*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_Expand_System_Int32_Unity_Collections_NativeArray_System_UInt64___Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_" data-uid="GDX.Collections.NativeSparseSet.Expand(System.Int32,Unity.Collections.NativeArray{System.UInt64}@,Unity.Collections.Allocator,Unity.Collections.NativeArrayOptions)">Expand(Int32, ref NativeArray&lt;UInt64&gt;, Allocator, NativeArrayOptions)</h4>
+  <div class="markdown level1 summary"><p>Reallocate the dense and sparse arrays with additional capacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Expand(int extraCapacity, ref NativeArray&lt;ulong&gt; versionArray, Allocator allocator, NativeArrayOptions nativeArrayOptions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">extraCapacity</span></td>
+        <td><p>How many indices to expand the dense and sparse arrays by.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>Array containing version numbers to check against.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.Allocator</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td><p>The <span class="xref">Unity.Collections.Allocator</span> type to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArrayOptions</span></td>
+        <td><span class="parametername">nativeArrayOptions</span></td>
+        <td><p>Should the memory be cleared on allocation?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_GetDenseIndexUnchecked_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.GetDenseIndexUnchecked(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L141">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_GetDenseIndexUnchecked_" data-uid="GDX.Collections.NativeSparseSet.GetDenseIndexUnchecked*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_GetDenseIndexUnchecked_System_Int32_" data-uid="GDX.Collections.NativeSparseSet.GetDenseIndexUnchecked(System.Int32)">GetDenseIndexUnchecked(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sparse array at the given index without any data validation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDenseIndexUnchecked(int sparseIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The index to check in the sparse array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dense index at the given sparse index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_GetDenseIndexWithBoundsAndVersionCheck_System_Int32_System_UInt64_Unity_Collections_NativeArray_System_UInt64__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.GetDenseIndexWithBoundsAndVersionCheck(System.Int32%2CSystem.UInt64%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L202">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_GetDenseIndexWithBoundsAndVersionCheck_" data-uid="GDX.Collections.NativeSparseSet.GetDenseIndexWithBoundsAndVersionCheck*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_GetDenseIndexWithBoundsAndVersionCheck_System_Int32_System_UInt64_Unity_Collections_NativeArray_System_UInt64__" data-uid="GDX.Collections.NativeSparseSet.GetDenseIndexWithBoundsAndVersionCheck(System.Int32,System.UInt64,Unity.Collections.NativeArray{System.UInt64})">GetDenseIndexWithBoundsAndVersionCheck(Int32, UInt64, NativeArray&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sparse array at the given index,
+or -1 if the given sparse index is invalid..</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDenseIndexWithBoundsAndVersionCheck(int sparseIndex, ulong version, NativeArray&lt;ulong&gt; versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The index in the sparse array to check against.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version number associated with the sparse index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array containing the version number to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dense index pointed to by the current sparse index, or -1 if invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_GetDenseIndexWithBoundsCheck_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.GetDenseIndexWithBoundsCheck(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L153">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_GetDenseIndexWithBoundsCheck_" data-uid="GDX.Collections.NativeSparseSet.GetDenseIndexWithBoundsCheck*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_GetDenseIndexWithBoundsCheck_System_Int32_" data-uid="GDX.Collections.NativeSparseSet.GetDenseIndexWithBoundsCheck(System.Int32)">GetDenseIndexWithBoundsCheck(Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sparse array at the given index,
+or -1 if the dense and sparse indices don't point to each other or if the dense index is outside the dense bounds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDenseIndexWithBoundsCheck(int sparseIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The index in the sparse array to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dense index pointed to by the current sparse index, or -1 if invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_GetDenseIndexWithVersionCheck_System_Int32_System_UInt64_Unity_Collections_NativeArray_System_UInt64__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.GetDenseIndexWithVersionCheck(System.Int32%2CSystem.UInt64%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L181">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_GetDenseIndexWithVersionCheck_" data-uid="GDX.Collections.NativeSparseSet.GetDenseIndexWithVersionCheck*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_GetDenseIndexWithVersionCheck_System_Int32_System_UInt64_Unity_Collections_NativeArray_System_UInt64__" data-uid="GDX.Collections.NativeSparseSet.GetDenseIndexWithVersionCheck(System.Int32,System.UInt64,Unity.Collections.NativeArray{System.UInt64})">GetDenseIndexWithVersionCheck(Int32, UInt64, NativeArray&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the sparse array at the given index,
+or -1 if the version number does not match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetDenseIndexWithVersionCheck(int sparseIndex, ulong version, NativeArray&lt;ulong&gt; versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndex</span></td>
+        <td><p>The index in the sparse array to check against.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version number associated with the sparse index.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array containing the version number to check against.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The dense index pointed to by the current sparse index, or -1 if invalid.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveUnchecked_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveUnchecked(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L322">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveUnchecked_" data-uid="GDX.Collections.NativeSparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveUnchecked_System_Int32_" data-uid="GDX.Collections.NativeSparseSet.RemoveUnchecked(System.Int32)">RemoveUnchecked(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked(int sparseIndexToRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveUnchecked_System_Int32_System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveUnchecked(System.Int32%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L380">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveUnchecked_" data-uid="GDX.Collections.NativeSparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveUnchecked_System_Int32_System_Int32__System_Int32__" data-uid="GDX.Collections.NativeSparseSet.RemoveUnchecked(System.Int32,System.Int32@,System.Int32@)">RemoveUnchecked(Int32, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.
+Out parameters used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked(int sparseIndexToRemove, out int indexToSwapTo, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapTo</span></td>
+        <td><p>Replace the data array value at this index with the data array value at indexToSwapFrom.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at indexToSwapTo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveUnchecked_System_Int32_Unity_Collections_NativeArray_System_UInt64__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveUnchecked(System.Int32%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L348">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveUnchecked_" data-uid="GDX.Collections.NativeSparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveUnchecked_System_Int32_Unity_Collections_NativeArray_System_UInt64__" data-uid="GDX.Collections.NativeSparseSet.RemoveUnchecked(System.Int32,Unity.Collections.NativeArray{System.UInt64})">RemoveUnchecked(Int32, NativeArray&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use and increments the version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked(int sparseIndexToRemove, NativeArray&lt;ulong&gt; versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveUnchecked_System_Int32_Unity_Collections_NativeArray_System_UInt64__System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveUnchecked(System.Int32%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L415">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveUnchecked_" data-uid="GDX.Collections.NativeSparseSet.RemoveUnchecked*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveUnchecked_System_Int32_Unity_Collections_NativeArray_System_UInt64__System_Int32__System_Int32__" data-uid="GDX.Collections.NativeSparseSet.RemoveUnchecked(System.Int32,Unity.Collections.NativeArray{System.UInt64},System.Int32@,System.Int32@)">RemoveUnchecked(Int32, NativeArray&lt;UInt64&gt;, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use and increments the version.
+Out parameters used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUnchecked(int sparseIndexToRemove, NativeArray&lt;ulong&gt; versionArray, out int indexToSwapTo, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapTo</span></td>
+        <td><p>Replace the data array value at this index with the data array value at indexToSwapFrom.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at indexToSwapTo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L445">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_" data-uid="GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_System_Int32_" data-uid="GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex(System.Int32)">RemoveUncheckedFromDenseIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUncheckedFromDenseIndex(int denseIndexToRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The dense index associated with the sparse index to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex(System.Int32%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L500">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_" data-uid="GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_Int32__" data-uid="GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex(System.Int32,System.Int32@)">RemoveUncheckedFromDenseIndex(Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.
+Out parameter used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUncheckedFromDenseIndex(int denseIndexToRemove, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at denseIndexToRemove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_UInt64___.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex(System.Int32%2CSystem.UInt64%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L470">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_" data-uid="GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_System_Int32_System_UInt64___" data-uid="GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex(System.Int32,System.UInt64[])">RemoveUncheckedFromDenseIndex(Int32, UInt64[])</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUncheckedFromDenseIndex(int denseIndexToRemove, ulong[] versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The dense index associated with the sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span>[]</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_System_Int32_Unity_Collections_NativeArray_System_UInt64__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex(System.Int32%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L532">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_" data-uid="GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveUncheckedFromDenseIndex_System_Int32_Unity_Collections_NativeArray_System_UInt64__System_Int32__" data-uid="GDX.Collections.NativeSparseSet.RemoveUncheckedFromDenseIndex(System.Int32,Unity.Collections.NativeArray{System.UInt64},System.Int32@)">RemoveUncheckedFromDenseIndex(Int32, NativeArray&lt;UInt64&gt;, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.
+Out parameter used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveUncheckedFromDenseIndex(int denseIndexToRemove, NativeArray&lt;ulong&gt; versionArray, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at denseIndexToRemove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveWithBoundsAndVersionChecks_System_Int32__System_UInt64_Unity_Collections_NativeArray_System_UInt64__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveWithBoundsAndVersionChecks(System.Int32%40%2CSystem.UInt64%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L277">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveWithBoundsAndVersionChecks_" data-uid="GDX.Collections.NativeSparseSet.RemoveWithBoundsAndVersionChecks*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveWithBoundsAndVersionChecks_System_Int32__System_UInt64_Unity_Collections_NativeArray_System_UInt64__" data-uid="GDX.Collections.NativeSparseSet.RemoveWithBoundsAndVersionChecks(System.Int32@,System.UInt64,Unity.Collections.NativeArray{System.UInt64})">RemoveWithBoundsAndVersionChecks(ref Int32, UInt64, NativeArray&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Removes the associated sparse/dense index pair from active use.
+calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveWithBoundsAndVersionChecks(ref int sparseIndexToRemove, ulong version, NativeArray&lt;ulong&gt; versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version number of the int used to access the sparse index. Used to guard against accessing
+indices that have been removed and reused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the element was successfully removed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_RemoveWithNullValueCheck_System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.RemoveWithNullValueCheck(System.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L229">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_RemoveWithNullValueCheck_" data-uid="GDX.Collections.NativeSparseSet.RemoveWithNullValueCheck*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_RemoveWithNullValueCheck_System_Int32__" data-uid="GDX.Collections.NativeSparseSet.RemoveWithNullValueCheck(System.Int32@)">RemoveWithNullValueCheck(ref Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns true if the element was successfully removed.
+WARNING: Will not protect against accidentally removing twice if the index in question was recycled between Remove
+calls.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveWithNullValueCheck(ref int sparseIndexToRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_TryRemoveFromDenseIndexWithVersionCheck_System_Int32_System_UInt64_Unity_Collections_NativeArray_System_UInt64__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.TryRemoveFromDenseIndexWithVersionCheck(System.Int32%2CSystem.UInt64%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L616">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_TryRemoveFromDenseIndexWithVersionCheck_" data-uid="GDX.Collections.NativeSparseSet.TryRemoveFromDenseIndexWithVersionCheck*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_TryRemoveFromDenseIndexWithVersionCheck_System_Int32_System_UInt64_Unity_Collections_NativeArray_System_UInt64__" data-uid="GDX.Collections.NativeSparseSet.TryRemoveFromDenseIndexWithVersionCheck(System.Int32,System.UInt64,Unity.Collections.NativeArray{System.UInt64})">TryRemoveFromDenseIndexWithVersionCheck(Int32, UInt64, NativeArray&lt;UInt64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Attempts to remove the associated sparse/dense index pair from active use and increments the version if successful.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryRemoveFromDenseIndexWithVersionCheck(int denseIndexToRemove, ulong version, NativeArray&lt;ulong&gt; versionArray)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">denseIndexToRemove</span></td>
+        <td><p>The dense index associated with the sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not the remove attempt succeeded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet_TryRemoveWithVersionCheck_System_Int32_System_UInt64_Unity_Collections_NativeArray_System_UInt64__System_Int32__System_Int32__.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet.TryRemoveWithVersionCheck(System.Int32%2CSystem.UInt64%2CUnity.Collections.NativeArray%7BSystem.UInt64%7D%2CSystem.Int32%40%2CSystem.Int32%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L572">View Source</a>
+  </span>
+  <a id="GDX_Collections_NativeSparseSet_TryRemoveWithVersionCheck_" data-uid="GDX.Collections.NativeSparseSet.TryRemoveWithVersionCheck*"></a>
+  <h4 id="GDX_Collections_NativeSparseSet_TryRemoveWithVersionCheck_System_Int32_System_UInt64_Unity_Collections_NativeArray_System_UInt64__System_Int32__System_Int32__" data-uid="GDX.Collections.NativeSparseSet.TryRemoveWithVersionCheck(System.Int32,System.UInt64,Unity.Collections.NativeArray{System.UInt64},System.Int32@,System.Int32@)">TryRemoveWithVersionCheck(Int32, UInt64, NativeArray&lt;UInt64&gt;, out Int32, out Int32)</h4>
+  <div class="markdown level1 summary"><p>Attempts to remove the associated sparse/dense index pair from active use and increments the version if successful.
+Out parameters used to manage parallel data arrays.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryRemoveWithVersionCheck(int sparseIndexToRemove, ulong version, NativeArray&lt;ulong&gt; versionArray, out int indexToSwapTo, out int indexToSwapFrom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">sparseIndexToRemove</span></td>
+        <td><p>The sparse index to remove.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version number of the int used to access the sparse index. Used to guard against accessing
+indices that have been removed and reused.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Unity.Collections.NativeArray</span>&lt;<span class="xref">System.UInt64</span>&gt;</td>
+        <td><span class="parametername">versionArray</span></td>
+        <td><p>The array where version numbers to check against are stored.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapTo</span></td>
+        <td><p>Replace the data array value at this index with the data array value at indexToSwapFrom.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">indexToSwapFrom</span></td>
+        <td><p>Set the data array value at this index to default after swapping with the data array
+value at indexToSwapTo.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Whether or not the remove attempt succeeded.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apiSpec/new?filename=GDX_Collections_NativeSparseSet.md&amp;value=---%0Auid%3A%20GDX.Collections.NativeSparseSet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Runtime/Collections/NativeSparseSet.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
