@@ -1,1 +1,0 @@
-robocopy /E /PURGE %~dp0..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\_site %~dp0..\..\Documentation\docs
