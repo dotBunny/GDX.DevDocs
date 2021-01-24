@@ -91,36 +91,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">UpdateProvider</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Editor.html">GDX.Editor</a></h6>
   <h6><strong>Assembly</strong>: GDX.Editor.dll</h6>
   <h5 id="GDX_Editor_UpdateProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[InitializeOnLoad]
-public static class UpdateProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public static class UpdateProvider : object</code></pre>
   </div>
   <h3 id="fields">Fields
   </h3>
@@ -129,7 +104,7 @@ public static class UpdateProvider</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider_GitHubChangelogUri.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider.GitHubChangelogUri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L34">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L34">View Source</a>
   </span>
   <h4 id="GDX_Editor_UpdateProvider_GitHubChangelogUri" data-uid="GDX.Editor.UpdateProvider.GitHubChangelogUri">GitHubChangelogUri</h4>
   <div class="markdown level1 summary"><p>The public URI of the latest changes, as Markdown.</p>
@@ -137,7 +112,7 @@ public static class UpdateProvider</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public const string GitHubChangelogUri = &quot;https://github.com/dotBunny/GDX/blob/main/CHANGELOG.md&quot;</code></pre>
+    <pre><code class="lang-csharp hljs">public const string GitHubChangelogUri = null</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -162,7 +137,7 @@ public static class UpdateProvider</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider_LocalPackage.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider.LocalPackage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L44">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L44">View Source</a>
   </span>
   <h4 id="GDX_Editor_UpdateProvider_LocalPackage" data-uid="GDX.Editor.UpdateProvider.LocalPackage">LocalPackage</h4>
   <div class="markdown level1 summary"><p>A collection of information about the locally installed GDX package.</p>
@@ -192,7 +167,7 @@ public static class UpdateProvider</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider_UpdatePackageDefinition.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider.UpdatePackageDefinition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L50">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L50">View Source</a>
   </span>
   <h4 id="GDX_Editor_UpdateProvider_UpdatePackageDefinition" data-uid="GDX.Editor.UpdateProvider.UpdatePackageDefinition">UpdatePackageDefinition</h4>
   <div class="markdown level1 summary"><p>If an update check has occured, this will be filled with its <a class="xref" href="GDX.Editor.PackageProvider.PackageDefinition.html">PackageProvider.PackageDefinition</a>.</p>
@@ -224,7 +199,7 @@ public static class UpdateProvider</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider_AttemptUpgrade.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider.AttemptUpgrade%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L104">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L104">View Source</a>
   </span>
   <a id="GDX_Editor_UpdateProvider_AttemptUpgrade_" data-uid="GDX.Editor.UpdateProvider.AttemptUpgrade*"></a>
   <h4 id="GDX_Editor_UpdateProvider_AttemptUpgrade" data-uid="GDX.Editor.UpdateProvider.AttemptUpgrade">AttemptUpgrade()</h4>
@@ -240,7 +215,7 @@ public static class UpdateProvider</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider_CheckForUpdates.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider.CheckForUpdates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L276">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L283">View Source</a>
   </span>
   <a id="GDX_Editor_UpdateProvider_CheckForUpdates_" data-uid="GDX.Editor.UpdateProvider.CheckForUpdates*"></a>
   <h4 id="GDX_Editor_UpdateProvider_CheckForUpdates" data-uid="GDX.Editor.UpdateProvider.CheckForUpdates">CheckForUpdates()</h4>
@@ -256,7 +231,7 @@ public static class UpdateProvider</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider_GetLastChecked.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider.GetLastChecked%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L293">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L300">View Source</a>
   </span>
   <a id="GDX_Editor_UpdateProvider_GetLastChecked_" data-uid="GDX.Editor.UpdateProvider.GetLastChecked*"></a>
   <h4 id="GDX_Editor_UpdateProvider_GetLastChecked" data-uid="GDX.Editor.UpdateProvider.GetLastChecked">GetLastChecked()</h4>
@@ -277,7 +252,7 @@ public static class UpdateProvider</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.DateTime</span></td>
+        <td><span class="xref">DateTime</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -287,7 +262,7 @@ public static class UpdateProvider</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider_GetLastNotifiedVersion.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider.GetLastNotifiedVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L317">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L324">View Source</a>
   </span>
   <a id="GDX_Editor_UpdateProvider_GetLastNotifiedVersion_" data-uid="GDX.Editor.UpdateProvider.GetLastNotifiedVersion*"></a>
   <h4 id="GDX_Editor_UpdateProvider_GetLastNotifiedVersion" data-uid="GDX.Editor.UpdateProvider.GetLastNotifiedVersion">GetLastNotifiedVersion()</h4>
@@ -319,7 +294,7 @@ public static class UpdateProvider</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider_HasUpdate_GDX_Editor_PackageProvider_PackageDefinition_.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider.HasUpdate(GDX.Editor.PackageProvider.PackageDefinition)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L81">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L81">View Source</a>
   </span>
   <a id="GDX_Editor_UpdateProvider_HasUpdate_" data-uid="GDX.Editor.UpdateProvider.HasUpdate*"></a>
   <h4 id="GDX_Editor_UpdateProvider_HasUpdate_GDX_Editor_PackageProvider_PackageDefinition_" data-uid="GDX.Editor.UpdateProvider.HasUpdate(GDX.Editor.PackageProvider.PackageDefinition)">HasUpdate(PackageProvider.PackageDefinition)</h4>
@@ -376,7 +351,7 @@ public static class UpdateProvider</code></pre>
                     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_UpdateProvider.md&amp;value=---%0Auid%3A%20GDX.Editor.UpdateProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/1.3/GDX/Editor/UpdateProvider.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/main/GDX/Editor/UpdateProvider.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -388,19 +363,19 @@ public static class UpdateProvider</code></pre>
           </div>
         </div>
       </div>
-      
       <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>    </div>
+       <div class="grad-bottom"></div>
+       <div class="footer">
+         <div class="container">
+           <span class="pull-right">
+             <a href="#top">Back to top</a>
+           </span>
+           
+           <span>Built on 2021-01-24 against <a href="https://github.com/dotBunny/GDX/releases/tag/v1.2.1"><strong>v1.2.1</strong></a>.<br>Generated by <strong>DocFX</strong></span>
+         </div>
+       </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

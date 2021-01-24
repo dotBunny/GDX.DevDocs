@@ -75,12 +75,29 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="121---2021-01-24">[1.2.1] - 2021-01-24</h2>
+<p><em><strong>&quot;Old Is New&quot;</strong></em></p>
+<blockquote>
+<p>A DocFX generated <a href="https://gdx.dotbunny.com/">site</a> is now being stood up by our internal CI when a new commit is made to the <code>main</code> branch.</p>
+</blockquote>
+<h3 id="added">Added</h3>
+<ul>
+<li>A proper <a href="https://gdx.dotbunny.com/manual/getting-started.html"><strong>Getting Started</strong></a> section to the manual</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li>Fixes to compilation of code requiring C# 8 using <code>UNITY_2020_2_OR_NEWER</code> preprocessor in <code>GDX.IO.Compression.TarFile</code>, <code>GDX.StringExtensions</code> and <code>GDX.Editor.UpdateProvider</code>.</li>
+</ul>
+<h3 id="removed">Removed</h3>
+<ul>
+<li>Removed the Wiki links and entries on GitHub, favoring discussions and content additions to the <a href="https://gdx.dotbunny.com/">documentation</a>.</li>
+</ul>
 <h2 id="120---2021-01-20">[1.2.0] - 2021-01-20</h2>
 <p><em><strong>&quot;Cisco's Birthday&quot;</strong></em></p>
 <blockquote>
 <p>A bit of refactoring around <code>BuildInfo</code> to make it a little easier to work with and some small additions to functionality by request.</p>
 </blockquote>
-<h3 id="added">Added</h3>
+<h3 id="added-1">Added</h3>
 <ul>
 <li>Separation of checking folders and files path structure, new <code>GDX.Platform.EnsureFileFolderHiearchyExists()</code> just for files.</li>
 <li>The ability (by default) to encompass the <code>BuildInfo</code> output folder in an assembly definition.</li>
@@ -108,11 +125,11 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 </li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>All classes/structs with unit testing will reference the class in a comments</li>
 <li><code>GDX.ListExtensions</code> renamed to <code>GDX.IListExtensions</code> (as well as its unit test class)</li>
-<li>Removed feature highlight section from <code>README.md</code>, the thought is to use the <a href="https://github.com/dotBunny/GDX/wiki">Wiki</a> for this sort of stuff.</li>
+<li>Removed feature highlight section from <code>README.md</code>.</li>
 <li>Dropped in some unsafe attributes to <code>GDX.StringExtensions.HasLowerCase()</code> and <code>GDX.StringExtensions.HasUpperCase()</code> in <code>GDX.StringExtensions</code>.</li>
 <li>Reorganized <strong>Project Settings</strong> sections to be alphabetically sorted.</li>
 <li><code>GDX.Platform.EnsureFolderHierarchyExists()</code>'s argument to be labeled <code>folderPath</code> to provide further clarity of the functional intent.</li>
@@ -126,7 +143,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>Fixes for author-time code accessing runtime only parts.</p>
 </blockquote>
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 <ul>
 <li>Added more <code>EditMode</code> unit test coverage.
 <ul>
@@ -135,7 +152,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 </li>
 </ul>
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 <ul>
 <li>Renamed <code>GDX.Editor.Config</code> to <code>GDX.Editor.ConfigProvider</code></li>
 <li>Fixed a bug where author-time calls to <code>GDXConfig.Get()</code> would return a null as it is meant for runtime only, they will now route through an editor safe path.</li>
@@ -147,7 +164,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>A minor problem came to light after pushing the button.</p>
 </blockquote>
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 <ul>
 <li><code>GDX.Developer.Build.BuildInfoGenerator</code> will now forcibly tell the <code>GDX.Developer.CommandLineParser</code> to do its thing prior to filling out the file.</li>
 </ul>
@@ -156,7 +173,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>We are breaking some rules! This should have been a <em>major release</em> as we have altered method names to be consistent across the API.</p>
 </blockquote>
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 <ul>
 <li><code>GDX</code> assembly documentation contains <em>remarks</em> where a function or class requires the presence of Unity's CoreModule to function correctly.</li>
 <li><code>GDX.GDXConfig</code> scriptable object self creates to store persistent project-wide configurations for both runtime and author-time, editable through <strong>Project Settings</strong>.</li>
@@ -185,7 +202,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li><code>GDX.Developer.Editor.Build.BuildInfoGenerator</code> to generate content for the BuildInfo file.</li>
 <li><code>GDX.Developer.Editor.Settings</code> to drive specific <code>GDX.Developer</code> assembly settings to show up in the <strong>Project Settings</strong> window.</li>
 </ul>
-<h3 id="changed-3">Changed</h3>
+<h3 id="changed-4">Changed</h3>
 <ul>
 <li>Updated the <code>README.md</code> header with logo and badges.</li>
 <li>Added release names to <code>CHANGELOG.md</code> as well as removed namespace sub-lists, settling on having full names in description instead.</li>
@@ -217,7 +234,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </li>
 <li>Moved <code>GDX.Collections.Byte2</code> to <code>GDX.Mathematics.Byte2</code> as it made more sense to alongside other similar types in <code>Unity.Mathematics</code>.</li>
 </ul>
-<h3 id="removed">Removed</h3>
+<h3 id="removed-1">Removed</h3>
 <ul>
 <li>Removed unused static StringBuilder from <code>GDX.Strings</code>.</li>
 </ul>
@@ -226,7 +243,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>Initial release containing only the GDX core library.</p>
 </blockquote>
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 <ul>
 <li>Numerous static extension based functionality classes.
 <ul>
@@ -300,19 +317,19 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
           </div>
         </div>
       </div>
-      
       <footer>
-        <div class="grad-bottom"></div>
-        <div class="footer">
-          <div class="container">
-            <span class="pull-right">
-              <a href="#top">Back to top</a>
-            </span>
-            
-            <span>Generated by <strong>DocFX</strong></span>
-          </div>
-        </div>
-      </footer>    </div>
+       <div class="grad-bottom"></div>
+       <div class="footer">
+         <div class="container">
+           <span class="pull-right">
+             <a href="#top">Back to top</a>
+           </span>
+           
+           <span>Built on 2021-01-24 against <a href="https://github.com/dotBunny/GDX/releases/tag/v1.2.1"><strong>v1.2.1</strong></a>.<br>Generated by <strong>DocFX</strong></span>
+         </div>
+       </div>
+      </footer>
+    </div>
     
     <script type="text/javascript" src="styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="styles/docfx.js"></script>
