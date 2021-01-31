@@ -4,6 +4,7 @@ call %~dp0steps\step-clean.bat
 call %~dp0steps\step-changelog.bat
 call %~dp0steps\step-securitypolicy.bat
 call %~dp0steps\step-codeofconduct.bat
+call %~dp0steps\step-license.bat
 call %~dp0steps\step-footer.bat
 call %~dp0steps\step-build.bat
 call %~dp0steps\step-deploy.bat
