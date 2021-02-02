@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Features | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Features | GDX ">
+    <meta name="generator" content="docfx 2.56.6.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="features">
+<h1 id="features">Features</h1>
+
+<p>This is an overview of <em>some of</em> the notable features contained within the <code>GDX</code> package. For a more thorough list of functionality make sure to explore the <a href="/api/index.html">API documentation</a> directly.</p>
+<h2 id="extensions">Extensions</h2>
+<p>A set of functionality, aggressively  inlined where appropriate to augment workflows with existing or provided types and collections.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>There are some extensions based on <code>GDX</code> types which are not listed below, but are included in the package.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.AddressablesExtensions.html">Addressables</a></td>
+<td style="text-align: left;">A collection of useful spawning and management functionality built on top of the <code>com.unity.addressables</code> package. For example identifying if a <code>AssetReference</code> is valid and able to be instantiated.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.ArrayExtensions.html">Array</a></td>
+<td style="text-align: left;">A bunch of <code>Array</code> operations which are commonly used by other methods. For example getting the last or first index of an item or value in an <code>Array</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.BoxColliderExtensions.html">BoxCollider</a></td>
+<td style="text-align: left;">Find out if a position is contained within a <code>BoxCollider</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.ByteExtensions.html">Byte</a></td>
+<td style="text-align: left;">Contains a simple non-allocating extension method to get a stable hash code from an array of <code>bytes</code>, maybe more someday.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.CapsuleColliderExtensions.html">CapsuleCollider</a></td>
+<td style="text-align: left;">Simple helper for finding out which way a <code>CapsuleCollider</code> is oriented.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.GameObjectExtensions.html">GameObject</a></td>
+<td style="text-align: left;">After this long, even Unity can use a little help with some of its fundamental component based systems.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.IListExtensions.html">IList</a></td>
+<td style="text-align: left;">A common set of methods for collections allowing for optimized value and item checks, as well as some extras.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.RigidbodyExtensions.html">Rigidbody</a></td>
+<td style="text-align: left;">A method for determining the moment of inertia.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.StringExtensions.html">String</a></td>
+<td style="text-align: left;">The thing that started it all, a vast collection of extension methods covering a wide range from encryption to hash codes, to simply finding content an existing <code>string</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Vector2Extensions.html">Vector2</a></td>
+<td style="text-align: left;">Additional functionality for common calculations done with <code>Vector2</code>. For example, determining approximately if two <code>Vector2</code> are the same efficiently, or finding the midpoint between two <code>Vector2</code>. This automatically switches to using <code>com.unity.mathematics</code> functionality if available.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Vector3Extensions.html">Vector3</a></td>
+<td style="text-align: left;">Additional functionality for common calculations done with <code>Vector3</code>. For example, determining approximately if two <code>Vector3</code> are the same efficiently, or finding the midpoint between two <code>Vector3</code>. This automatically switches to using <code>com.unity.mathematics</code> functionality if available.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="types--collections">Types &amp; Collections</h2>
+<p>An extensive group of <code>struct</code> and <code>class</code> designed with performance-sensitive environments in mind. Useful to avoid reinventing the wheel over and over again!</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>It's important to note that many of the structures backing data, indices, counts, etc., are publicly accessible. This is meant for advanced usage, change at runtime at your own risk.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Bit Arrays</td>
+<td style="text-align: left;">A selection of sized <a class="xref" href="../api/GDX.Collections.BitArray8.html">8</a>, <a class="xref" href="../api/GDX.Collections.BitArray16.html">16</a>, <a class="xref" href="../api/GDX.Collections.BitArray32.html">32</a>, <a class="xref" href="../api/GDX.Collections.BitArray64.html">64</a>, <a class="xref" href="../api/GDX.Collections.BitArray128.html">128</a>, <a class="xref" href="../api/GDX.Collections.BitArray256.html">256</a> and <a class="xref" href="../api/GDX.Collections.BitArray512.html">512</a> index accessed bit arrays.</td>
+<td><code>struct</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Mathematics.Byte2.html">Byte2</a></td>
+<td style="text-align: left;">A fully implemented <code>byte</code> vector.</td>
+<td><code>struct</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Collections.FreeList.html">Free List</a></td>
+<td style="text-align: left;">An array where indices are allocated from and stored in an in-place linked list.</td>
+<td><code>struct</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Collections.NativeSparseSet.html">Native Sparse Set</a></td>
+<td style="text-align: left;">A <a class="xref" href="../api/GDX.Collections.NativeSparseSet.html">Sparse Set</a>, backed by two <code>NativeArray</code>.</td>
+<td><code>struct</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Collections.NativeSparseSet.html">Sparse Set</a></td>
+<td style="text-align: left;">An adapter collection for external data arrays that allows constant-time insertion, deletion, and lookup by handle, as well as array-like iteration.</td>
+<td><code>struct</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="generics">Generics</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Collections.Generic.CircularBuffer-1.html">Circular Buffer</a></td>
+<td style="text-align: left;">A sized buffer which loops back over itself as elements are filled.</td>
+<td><code>class</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Collections.Generic.NativeArray2D-1.html">Native 2D Array</a></td>
+<td style="text-align: left;">A 2-dimension <code>NativeArray</code> with a <code>xy</code> based accessor.</td>
+<td><code>struct</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Collections.Generic.NativeSimpleList-1.html">Native Simple List</a></td>
+<td style="text-align: left;">A <a class="xref" href="../api/GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>, backed by a <code>NativeArray</code>.</td>
+<td><code>struct</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Collections.Generic.NativeSimpleQueue-1.html">Native Simple Queue</a></td>
+<td style="text-align: left;">A simple queue, backed by a <code>NativeArray</code>.</td>
+<td><code>struct</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Collections.Generic.NativeUniformArray3D-1.html">Native Uniform 3D Array</a></td>
+<td style="text-align: left;">A 3-dimension <code>NativeArray</code> where all axis are the same length. Numerous accessors available, including a <code>xyz</code> based.</td>
+<td><code>struct</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="utilities">Utilities</h2>
+<p>Everyone loves static utility classes, and naturally <code>GDX</code> has a bunch of them to help fill out some commonly used functionality.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Display.html">Display</a></td>
+<td style="text-align: left;">Simplified querying of display capabilities.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Localization.html">Localization</a></td>
+<td style="text-align: left;">ISO language based formatting functionality.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Memory.html">Memory</a></td>
+<td style="text-align: left;">Specific functionality to ensure the heap is kept as small as possible.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Platform.html">Platform</a></td>
+<td style="text-align: left;">A bunch of Hardware and I/O related methods.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Mathematics.Smooth.html">Smooth</a></td>
+<td style="text-align: left;">Some fancy smoothing functions.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="developer-tools">Developer Tools</h2>
+<p>The missing or upgraded development process functionality.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Editor.Build.BuildInfoProvider.html">Build Info Writer</a></td>
+<td style="text-align: left;">A system which latches on to the build pipeline to write a configurable <code>BuildInfo</code> class containing a passed set of parameters from commandline arguments.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Developer.CommandLineParser.html">Command Line Parser</a></td>
+<td style="text-align: left;">A configurable command line parameter parsing system which can be queried at runtime (and in special cases during editor automation) for flags and key-value-pair data.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="miscellaneous">Miscellaneous</h2>
+<p>A few other notable inclusions which have been found useful.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.Mathematics.Random.MersenneTwister.html">Mersenne Twister</a></td>
+<td style="text-align: left;">A deterministic random number generator.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../api/GDX.IO.Compression.TarFile.html">Tarball Support</a></td>
+<td style="text-align: left;">A native method to inflate <code>.tar</code> and <code>.tar.gz</code> files. Used internally in the <code>GDX</code> package to handle upgrades from <a href="https://github.com/dotBunny/GDX/releases">GitHub</a>.</td>
+</tr>
+</tbody>
+</table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/main/.docfx/manual/features.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+       <div class="grad-bottom"></div>
+       <div class="footer">
+         <div class="container">
+           <span class="pull-right">
+             <a href="#top">Back to top</a>
+           </span>
+           
+           <span>Built on 2021-02-01 against <a href="https://github.com/dotBunny/GDX/releases/tag/v1.2.2"><strong>v1.2.2</strong></a>.<br>Generated by <strong>DocFX</strong></span>
+         </div>
+       </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -83,15 +83,16 @@
 <p>There are many options to getting <code>GDX</code> into your project; each comes with its benefits and drawbacks.</p>
 <h3 id="unity-package-manager">Unity Package Manager</h3>
 <p>Installing via the package manager system (UPM) in Unity will provide an immutable (unable to be modified) copy of the package inside of your project.</p>
-<blockquote>
-<p>There is two available methods available for this option, pick one!</p>
-</blockquote>
+<div class="TIP">
+<h5>Tip</h5>
+<p>There are two available UPM methods. You only need to <strong>pick one</strong>!</p>
+</div>
 <h4 id="upm-package-manager-window">UPM: Package Manager Window</h4>
 <p><img src="/images/manual/getting-started/upm-gdx-github.gif" alt="UPM Git">
-The simplest and most straight forward method is to use Unity's built in workflow, once you have found and opened the <strong>Package Manager</strong> window (Window -&gt; Package Manager), follow these steps:</p>
+The simplest and most straight forward method is to use Unity's built in workflow, once you have found and opened the <strong>Package Manager</strong> window (<strong>Window &gt; Package Manager</strong>), follow these steps:</p>
 <ol>
 <li>Find the <strong>+</strong> button in the upper left portion of the <strong>Package Manager</strong> window, clicking it should reveal a dropdown menu.</li>
-<li>Select <code>Add package from git URL...</code></li>
+<li>Select <strong>Add package from git URL...</strong></li>
 <li>In the presented text field, enter: <code>https://github.com/dotBunny/GDX.git</code></li>
 <li>After entering the URL, click <strong>Add</strong>.</li>
 </ol>
@@ -103,8 +104,15 @@ The simplest and most straight forward method is to use Unity's built in workflo
   }
 }
 </code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>You can also include branches or releases with this method by appending <code>#branch</code> to the end of the definition. Check out Unity's <a href="https://docs.unity3d.com/Manual/upm-git.html">UPM</a> page for more details.</p>
+</div>
 <h3 id="asset-store">Asset Store</h3>
-<p><em>Discussions to bring the package to the Asset Store are ongoing, we are looking to do this in the near future (1.5).</em></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Discussions to bring the package to the Asset Store are ongoing, we are looking to do this in the near future.</p>
+</div>
 <h3 id="openupm">OpenUPM</h3>
 <p>The <code>GDX</code> package is registered with <a href="https://openupm.com/">OpenUPM</a>, and releases are automatically reflected in that registry. The package is registered as <code>com.dotbunny.gdx</code>.</p>
 <p>For detailed instructions on how to use the <a href="https://openupm.com/">OpenUPM</a> system and it's limitations, please consult their &quot;<a href="https://openupm.com/docs/getting-started.html#installing-a-upm-package">Installing a UPM package</a>&quot; documentation.</p>
@@ -113,6 +121,14 @@ The simplest and most straight forward method is to use Unity's built in workflo
 <pre><code class="lang-bash">git clone https://github.com/dotBunny/GDX.git
 </code></pre>
 <p>This method is how typical development is done on <code>GDX</code>.</p>
+<h2 id="project-settings">Project Settings</h2>
+<p>Upon installation, <code>GDX</code> <em>should</em> work out of the box.</p>
+<p>Furhter configuration of <code>GDX</code> is done by opening the <strong>Project Settings</strong> window (<strong>Edit &gt; Project Settings...</strong>), and selecting the <code>GDX</code> section. You will be presented with a view similar to the image below, with numerous configuration options sorted by feature.</p>
+<p><img src="/images/manual/getting-started/gdx-config.png" alt="Project Settings"></p>
+<p>Each feature has a collapsable section (<strong>A</strong>) that is expandable and collapsable by clicking the <strong>+</strong>/<strong>-</strong> buttons to the header's left. Features dynamically activate based on the Unity version and packages found in the project (<strong>B</strong>).</p>
+<p>A section header's background can inform you of the status of the feature. A green background indicates that the feature is active, where a yellow background means that it is currently disabled. Not all features are enabled by default and require an opt-in (<strong>C</strong>). A blue background indicates an always-on feature, most commonly just functionality that has some level of configuration.</p>
+<h3 id="persitent-storage">Persitent Storage</h3>
+<p>Project-specific configuration values are stored in <a class="xref" href="../api/GDX.GDXConfig.html">GDXConfig</a>, a <code>ScriptableObject</code> placed at <code>/Resources/GDX/GDXConfig.asset</code>. This allows access to configured values at both author and runtime and to be persistent across the project.</p>
 </article>
           </div>
           
@@ -141,7 +157,7 @@ The simplest and most straight forward method is to use Unity's built in workflo
              <a href="#top">Back to top</a>
            </span>
            
-           <span>Built on 2021-01-24 against <a href="https://github.com/dotBunny/GDX/releases/tag/v1.2.1"><strong>v1.2.1</strong></a>.<br>Generated by <strong>DocFX</strong></span>
+           <span>Built on 2021-02-01 against <a href="https://github.com/dotBunny/GDX/releases/tag/v1.2.2"><strong>v1.2.2</strong></a>.<br>Generated by <strong>DocFX</strong></span>
          </div>
        </div>
       </footer>

@@ -47,14 +47,6 @@
             </div>
           </div>
         </nav>
-        
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
-            <ul class="breadcrumb">
-              <li></li>
-            </ul>
-          </div>
-        </div>
       </header>
       <div class="container body-content">
         
@@ -75,16 +67,63 @@
 <p>All notable changes to this project will be documented in this file.</p>
 <p>The format is based on <a href="https://keepachangelog.com/en/1.0.0/">Keep a Changelog</a>,
 and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.</p>
+<h2 id="122---2021-02-1">[1.2.2] - 2021-02-1</h2>
+<p><em><strong>&quot;Cookie Monster&quot;</strong></em></p>
+<blockquote>
+<p>A whole lot of work went into trying to solidify what documentation is going to look like, as well as get foundational work in place to make sure anyone can contribute.</p>
+</blockquote>
+<h3 id="added">Added</h3>
+<ul>
+<li>Moved all static <code>GUIContent</code> from settings window into new <code>SettingsContent</code>.</li>
+<li>Moved all static layout functionality from <code>SettingsStyles</code> into <code>SettingsLayout</code>.</li>
+<li><code>GDX.Developer.Conditionals</code> contains constant status indicators of packages used by <code>GDX</code>. Useful for determine if a certain feature set is available.</li>
+<li>Properly set define GDX_PLATFORMS based on the <code>com.unity.platforms</code> package.</li>
+<li>The<code>GDX.Localization.GetHumanReadableFileSize()</code> method to create more readable file size outputs.</li>
+<li>More functionality in <code>GDX.Vector2Extensions</code>
+<ul>
+<li><code>NearestIndex()</code> to find the closest position in an array.</li>
+<li><code>Slope()</code></li>
+</ul>
+</li>
+<li>Additional functionality in <code>GDX.Vector3Extensions</code>
+<ul>
+<li><code>HorizontalDistance()</code> to get a horizontal distance ignoring vertically.</li>
+<li><code>NearestIndex()</code> to find the closest position in an array of positions.</li>
+</ul>
+</li>
+<li><code>GDX.StringExtensions.TryParseVector2()</code> and <code>GDX.StringExtensions.TryParseVector3()</code> will rehydrate <code>0,0</code> and <code>0,0,0</code> formatted strings.</li>
+<li>A more complex version of <code>GetComponentInChildren()</code> has been included with <code>GDX.GameObjectExtensions.GetFirstComponentInChildrenComplex()</code> and <code>GDX.MonoBehaviourExtensions.GetFirstComponentInChildrenComplex()</code> allowing for recursion limits.</li>
+<li><code>GDX.BoxColliderExtensions.ContainsPosition()</code> as a quick method to determine if a world space position is inside of a <code>BoxCollider</code>.</li>
+<li><code>GDX.CapsuleColliderExtensions.Direction()</code> to get a <code>Vector3</code> based direction for a <code>CapsuleCollider</code>.</li>
+<li><code>GDX.RigidbodyExtensions.MomentOfInertia()</code> for an inertia calculation based on axis.</li>
+<li><code>GDX.Mathematics.Smooth</code> adds <code>Exponential()</code> smoothing functionality.</li>
+<li><code>GDX.Mathematics.Rotate</code> adds <code>Towards()</code> calculations.</li>
+</ul>
+<h3 id="changed">Changed</h3>
+<ul>
+<li><a href="https://gdx.dotbunny.com/">Generated documentation</a> now includes <code>private</code> and <code>internal</code> classes.</li>
+<li>Lowered feature requirement of <code>com.unity.jobs</code> to <code>0.2.7</code>, and <code>com.unity.burst</code> to <code>1.0.0</code>.</li>
+<li><code>GDX.Developer</code> assembly collapsed back into main <code>GDX</code> assembly.</li>
+<li>Modified settings framework to be in a single <code>GDX</code> category in the <strong>Project Settings</strong> window, with collapsable sections contained within.</li>
+<li><code>GDX.StringExtensions.GetLowerCaseHashCode()</code> renamed to <code>GDX.StringExtensions.GetStableLowerCaseHashCode()</code>.</li>
+<li><code>GDX.StringExtensions.GetUpperCaseHashCode()</code> renamed to <code>GDX.StringExtensions.GetStableUpperCaseHashCode()</code>.</li>
+<li><code>GDX.ByteExtensions.GetValueHashCode()</code> renamed to <code>GDX.ByteExtensions.GetStableHashCode()</code>.</li>
+<li>Better package installation type detection and handling of upgrades.
+<ul>
+<li>This has cut down the possibilities of automatic upgrades, however efforts will continue to expand on this functionality.</li>
+</ul>
+</li>
+</ul>
 <h2 id="121---2021-01-24">[1.2.1] - 2021-01-24</h2>
 <p><em><strong>&quot;Old Is New&quot;</strong></em></p>
 <blockquote>
 <p>A DocFX generated <a href="https://gdx.dotbunny.com/">site</a> is now being stood up by our internal CI when a new commit is made to the <code>main</code> branch.</p>
 </blockquote>
-<h3 id="added">Added</h3>
+<h3 id="added-1">Added</h3>
 <ul>
 <li>A proper <a href="https://gdx.dotbunny.com/manual/getting-started.html"><strong>Getting Started</strong></a> section to the manual</li>
 </ul>
-<h3 id="changed">Changed</h3>
+<h3 id="changed-1">Changed</h3>
 <ul>
 <li>Fixes to compilation of code requiring C# 8 using <code>UNITY_2020_2_OR_NEWER</code> preprocessor in <code>GDX.IO.Compression.TarFile</code>, <code>GDX.StringExtensions</code> and <code>GDX.Editor.UpdateProvider</code>.</li>
 </ul>
@@ -97,7 +136,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>A bit of refactoring around <code>BuildInfo</code> to make it a little easier to work with and some small additions to functionality by request.</p>
 </blockquote>
-<h3 id="added-1">Added</h3>
+<h3 id="added-2">Added</h3>
 <ul>
 <li>Separation of checking folders and files path structure, new <code>GDX.Platform.EnsureFileFolderHiearchyExists()</code> just for files.</li>
 <li>The ability (by default) to encompass the <code>BuildInfo</code> output folder in an assembly definition.</li>
@@ -125,7 +164,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 </li>
 </ul>
-<h3 id="changed-1">Changed</h3>
+<h3 id="changed-2">Changed</h3>
 <ul>
 <li>All classes/structs with unit testing will reference the class in a comments</li>
 <li><code>GDX.ListExtensions</code> renamed to <code>GDX.IListExtensions</code> (as well as its unit test class)</li>
@@ -143,7 +182,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>Fixes for author-time code accessing runtime only parts.</p>
 </blockquote>
-<h3 id="added-2">Added</h3>
+<h3 id="added-3">Added</h3>
 <ul>
 <li>Added more <code>EditMode</code> unit test coverage.
 <ul>
@@ -152,7 +191,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 </li>
 </ul>
-<h3 id="changed-2">Changed</h3>
+<h3 id="changed-3">Changed</h3>
 <ul>
 <li>Renamed <code>GDX.Editor.Config</code> to <code>GDX.Editor.ConfigProvider</code></li>
 <li>Fixed a bug where author-time calls to <code>GDXConfig.Get()</code> would return a null as it is meant for runtime only, they will now route through an editor safe path.</li>
@@ -164,7 +203,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>A minor problem came to light after pushing the button.</p>
 </blockquote>
-<h3 id="changed-3">Changed</h3>
+<h3 id="changed-4">Changed</h3>
 <ul>
 <li><code>GDX.Developer.Build.BuildInfoGenerator</code> will now forcibly tell the <code>GDX.Developer.CommandLineParser</code> to do its thing prior to filling out the file.</li>
 </ul>
@@ -173,7 +212,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>We are breaking some rules! This should have been a <em>major release</em> as we have altered method names to be consistent across the API.</p>
 </blockquote>
-<h3 id="added-3">Added</h3>
+<h3 id="added-4">Added</h3>
 <ul>
 <li><code>GDX</code> assembly documentation contains <em>remarks</em> where a function or class requires the presence of Unity's CoreModule to function correctly.</li>
 <li><code>GDX.GDXConfig</code> scriptable object self creates to store persistent project-wide configurations for both runtime and author-time, editable through <strong>Project Settings</strong>.</li>
@@ -202,7 +241,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <li><code>GDX.Developer.Editor.Build.BuildInfoGenerator</code> to generate content for the BuildInfo file.</li>
 <li><code>GDX.Developer.Editor.Settings</code> to drive specific <code>GDX.Developer</code> assembly settings to show up in the <strong>Project Settings</strong> window.</li>
 </ul>
-<h3 id="changed-4">Changed</h3>
+<h3 id="changed-5">Changed</h3>
 <ul>
 <li>Updated the <code>README.md</code> header with logo and badges.</li>
 <li>Added release names to <code>CHANGELOG.md</code> as well as removed namespace sub-lists, settling on having full names in description instead.</li>
@@ -243,7 +282,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <blockquote>
 <p>Initial release containing only the GDX core library.</p>
 </blockquote>
-<h3 id="added-4">Added</h3>
+<h3 id="added-5">Added</h3>
 <ul>
 <li>Numerous static extension based functionality classes.
 <ul>
@@ -302,13 +341,6 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/main/.docfx/changelog.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>
@@ -325,7 +357,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
              <a href="#top">Back to top</a>
            </span>
            
-           <span>Built on 2021-01-24 against <a href="https://github.com/dotBunny/GDX/releases/tag/v1.2.1"><strong>v1.2.1</strong></a>.<br>Generated by <strong>DocFX</strong></span>
+           <span>Built on 2021-02-01 against <a href="https://github.com/dotBunny/GDX/releases/tag/v1.2.2"><strong>v1.2.2</strong></a>.<br>Generated by <strong>DocFX</strong></span>
          </div>
        </div>
       </footer>
