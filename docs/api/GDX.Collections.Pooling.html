@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Namespace GDX.Collections
+    <title>Namespace GDX.Collections.Pooling
    | GDX </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Namespace GDX.Collections
+    <meta name="title" content="Namespace GDX.Collections.Pooling
    | GDX ">
     <meta name="generator" content="docfx 2.56.6.0">
     
@@ -78,49 +78,37 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GDX.Collections">
+            <article class="content wrap" id="_content" data-uid="GDX.Collections.Pooling">
   
-  <h1 id="GDX_Collections" data-uid="GDX.Collections" class="text-break">Namespace GDX.Collections
+  <h1 id="GDX_Collections_Pooling" data-uid="GDX.Collections.Pooling" class="text-break">Namespace GDX.Collections.Pooling
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
-    <h3 id="structs">Structs
+    <h3 id="classes">Classes
   </h3>
-      <h4><a class="xref" href="GDX.Collections.BitArray128.html">BitArray128</a></h4>
-      <section><p>A 128-bit array.</p>
+      <h4><a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a></h4>
+      <section><p><span class="xref">UnityEngine.GameObject</span> based functionality extending the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> to better support
+<span class="xref">UnityEngine.GameObject</span> patterns.</p>
 </section>
-      <h4><a class="xref" href="GDX.Collections.BitArray16.html">BitArray16</a></h4>
-      <section><p>A 16-bit array.</p>
+      <h4><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></h4>
+      <section><p>A <span class="xref">System.Object</span> <span class="xref">System.Collections.Generic.List&lt;T&gt;</span> backed pool implementation.</p>
 </section>
-      <h4><a class="xref" href="GDX.Collections.BitArray256.html">BitArray256</a></h4>
-      <section><p>A 256-bit array.</p>
+      <h4><a class="xref" href="GDX.Collections.Pooling.ManagedPoolBuilder.html">ManagedPoolBuilder</a></h4>
+      <section><p>A time-slicing builder behaviour for <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
 </section>
-      <h4><a class="xref" href="GDX.Collections.BitArray32.html">BitArray32</a></h4>
-      <section><p>A 32-bit array.</p>
+      <h4><a class="xref" href="GDX.Collections.Pooling.ManagedPools.html">ManagedPools</a></h4>
+      <section><p>A managed pooling system implementation primarily meant for the object oriented patterns, based on the C# base
+object.</p>
 </section>
-      <h4><a class="xref" href="GDX.Collections.BitArray512.html">BitArray512</a></h4>
-      <section><p>A 512-bit array.</p>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="GDX.Collections.Pooling.IGameObjectPoolItem.html">IGameObjectPoolItem</a></h4>
+      <section><p>An interface describing the functionality needed for an item to be understood by <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a>,
+if callbacks are to be made.</p>
 </section>
-      <h4><a class="xref" href="GDX.Collections.BitArray64.html">BitArray64</a></h4>
-      <section><p>A 64-bit array.</p>
-</section>
-      <h4><a class="xref" href="GDX.Collections.BitArray8.html">BitArray8</a></h4>
-      <section><p>A 8-bit array.</p>
-</section>
-      <h4><a class="xref" href="GDX.Collections.FreeList.html">FreeList</a></h4>
-      <section><p>An array where indices are allocated from and stored in an in-place linked list.
-Allocating or deallocating a single int from this array is very fast, as is single datum lookup,
-but neither the allocated indices nor the free indices can be reliably iterated without an external data structure.
-This structure can be adapted to an arbitrary of external, parallel arrays.</p>
-</section>
-      <h4><a class="xref" href="GDX.Collections.NativeSparseSet.html">NativeSparseSet</a></h4>
-      <section><p>An adapter collection for external data arrays that allows constant-time insertion, deletion, and lookup by
-handle, as well as array-like iteration.</p>
-</section>
-      <h4><a class="xref" href="GDX.Collections.SparseSet.html">SparseSet</a></h4>
-      <section><p>An adapter collection for external data arrays that allows constant-time insertion, deletion, and lookup by
-handle, as well as array-like iteration.</p>
+      <h4><a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a></h4>
+      <section><p>An interface describing the functionality needed for a pool to be understood by <a class="xref" href="GDX.Collections.Pooling.ManagedPools.html">ManagedPools</a>.</p>
 </section>
 </article>
           </div>
