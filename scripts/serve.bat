@@ -4,5 +4,6 @@ call %~dp0steps\step-changelog.bat
 call %~dp0steps\step-securitypolicy.bat
 call %~dp0steps\step-codeofconduct.bat
 call %~dp0steps\step-license.bat
+call %~dp0steps\step-notices.bat
 call %~dp0steps\step-footer.bat
 call %~dp0steps\step-serve.bat
