@@ -2,4 +2,9 @@
 :: They almost certainly will not have the correct paths for anyone else.
 
 :: Build content
+
+%~dp0..\..\..\External\docfx\docfx.exe %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\docfx.json --metadata
+
+%~dp0..\..\tools\DocFxNestedNamespaces\DocFxNestedNamespaces.exe %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\api\toc.yml
+
 %~dp0..\..\..\External\docfx\docfx.exe %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\docfx.json --build
