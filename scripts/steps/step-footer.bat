@@ -2,7 +2,7 @@
 :: They almost certainly will not have the correct paths for anyone else.
 
 :: Get GIT Information
-pushd %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\
+pushd %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\
 for /f %%a in ('git describe --tags --abbrev^=0 origin/main') do (
    set RELEASE=%%a
 )
@@ -31,7 +31,7 @@ for /f "tokens=1-7 delims=:/-, " %%i in ('echo exit^|cmd /q /k"prompt $d $t"') d
 @echo off
 
 :: Make sure folder exists
-md %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\templates\gdx\partials\
+md %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\templates\gdx\partials\
 
 :: Generate file
 (
@@ -47,4 +47,4 @@ echo      {{^^_appFooter}}^<span^>Built on %yy%-%mm%-%dd% against ^<a href="http
 echo    ^</div^>
 echo  ^</div^>
 echo ^</footer^>
-) > %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\templates\gdx\partials\footer.tmpl.partial
+) > %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\templates\gdx\partials\footer.tmpl.partial

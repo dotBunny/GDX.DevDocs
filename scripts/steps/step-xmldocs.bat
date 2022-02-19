@@ -7,7 +7,7 @@
  /p:GenerateDocumentation=true^
  /p:WarningLevel=0^
  /p:DefineConstants="GDX_LICENSED;GDX_ADDRESSABLES;GDX_BURST;GDX_MATHEMATICS;GDX_PLATFORMS;GDX_VISUALSCRIPTING"^
- /p:DocumentationFile="%~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\GDX.xml"^
+ /p:DocumentationFile="%~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\GDX.xml"^
   %~dp0..\..\..\Projects\000_Development\GDX.csproj
 
-%~dp0..\..\tools\XmlDocForBolt\XmlDocForBolt.exe %~dp0..\..\..\Projects\000_Development\Assets\com.dotbunny.gdx\.docfx\GDX.xml
+%~dp0..\..\tools\XmlDocForBolt\XmlDocForBolt.exe %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\GDX.xml
