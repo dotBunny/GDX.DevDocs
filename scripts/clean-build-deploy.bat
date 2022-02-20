@@ -1,3 +1,13 @@
+:: Turn off output to CLI
+@echo off
+
+call %~dp0steps\step-set.bat
+
+:: Because this is meant for deploying we are going to ask for the tag
+echo Release tag:
+echo.
+set /p RELEASE=">"
+
 :: These scripts are setup to be pathed to the workspace used internally for GDX development.
 :: They almost certainly will not have the correct paths for anyone else.
 call %~dp0steps\step-clean.bat

@@ -1,0 +1,2 @@
+:: Setup Environment
+set RELEASE=""
