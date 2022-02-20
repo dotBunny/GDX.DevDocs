@@ -1,5 +1,6 @@
 :: Turn off output to CLI
 @echo off
+echo ^> CLEAN BUILD DEPLOY
 
 call %~dp0steps\step-set.bat
 
