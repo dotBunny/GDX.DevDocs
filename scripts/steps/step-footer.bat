@@ -10,7 +10,7 @@ goto EndRelease
 
 :DevelopmentBuild
 echo ^> Development Build
-pushd %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\
+pushd %~dp0..\..\..\Package\
 
 for /f %%a in ('git rev-parse HEAD') do (
    set COMMIT_LONG=%%a
@@ -41,7 +41,7 @@ for /f "tokens=1-7 delims=:/-, " %%i in ('echo exit^|cmd /q /k"prompt $d $t"') d
 )
 
 :: Make sure folder exists
-md %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\templates\gdx\partials\
+md %~dp0..\..\..\Package\.docfx\templates\gdx\partials\
 
 :: Generate file
 (
@@ -57,4 +57,4 @@ echo      {{^^_appFooter}}^<span^>Built on %yy%-%mm%-%dd% against ^<a href="%REL
 echo    ^</div^>
 echo  ^</div^>
 echo ^</footer^>
-) > %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\templates\gdx\partials\footer.tmpl.partial
+) > %~dp0..\..\..\Package\.docfx\templates\gdx\partials\footer.tmpl.partial
