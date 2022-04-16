@@ -1,1 +1,1 @@
-robocopy /E /PURGE %~dp0..\..\..\Package\.docfx\_site %~dp0..\..\..\Documentation\docs /XF CNAME
+robocopy /E /PURGE %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\_site %~dp0..\..\..\Documentation\docs /XF CNAME
