@@ -1,6 +1,6 @@
 :: Turn off output to CLI
 @echo off
-echo ^> CLEAN BUILD
+echo [1;4;96mClean/Build Documentation[0m
 
 :: These scripts are setup to be pathed to the workspace used internally for GDX development.
 :: They almost certainly will not have the correct paths for anyone else.

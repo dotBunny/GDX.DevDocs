@@ -1,6 +1,6 @@
 :: Turn off output to CLI
 @echo off
-echo ^> CLEAN BUILD DEPLOY
+echo [1;4;96mClean/Build/Deploy Documentation[0m
 
 call %~dp0steps\step-set.bat
 

@@ -1,24 +1,28 @@
 :: These scripts are setup to be pathed to the workspace used internally for GDX development.
 :: They almost certainly will not have the correct paths for anyone else.
 
+echo [1m[36m^> XML Documentation for GDX[0m
+
 :: Build content
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe"^
+"%MSBUILD%"^
  /p:Configuration=Debug^
  /p:GenerateDocumentation=true^
  /p:WarningLevel=0^
- /p:DefineConstants="GDX_LICENSED;GDX_ADDRESSABLES;GDX_BURST;GDX_MATHEMATICS;GDX_PLATFORMS;GDX_VISUALSCRIPTING"^
+ /p:DefineConstants=%DEFINES%^
  /p:DocumentationFile="%~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\GDX.xml"^
-  %~dp0..\..\..\Projects\000_Development\GDX.csproj
+  %~dp0..\..\..\Projects\GDX_Development\GDX.csproj
 
 %~dp0..\..\tools\XmlDocForBolt\XmlDocForBolt.exe %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\GDX.xml
 
+echo [1m[36m^> XML Documentation for GDX.Editor[0m
+
 :: Build XML for editor
-"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\MSBuild.exe"^
+"%MSBUILD%"^
  /p:Configuration=Debug^
  /p:GenerateDocumentation=true^
  /p:WarningLevel=0^
- /p:DefineConstants="GDX_LICENSED;GDX_ADDRESSABLES;GDX_BURST;GDX_MATHEMATICS;GDX_PLATFORMS;GDX_VISUALSCRIPTING"^
- /p:DocumentationFile="%~dp0..\..\..\Package\.docfx\GDX.Editor.xml"^
-  %~dp0..\..\..\Projects\000_Development\GDX.Editor.csproj
+ /p:DefineConstants=%DEFINES%^
+ /p:DocumentationFile="%~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\GDX.Editor.xml"^
+  %~dp0..\..\..\Projects\GDX_Development\GDX.Editor.csproj
 
   %~dp0..\..\tools\XmlDocForBolt\XmlDocForBolt.exe %~dp0..\..\..\Projects\GDX_Development\Packages\com.dotbunny.gdx\.docfx\GDX.Editor.xml
