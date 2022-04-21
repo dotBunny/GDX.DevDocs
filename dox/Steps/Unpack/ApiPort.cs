@@ -9,23 +9,23 @@ using Dox.Utils;
 namespace Dox.Steps.Unpack
 {
     // ReSharper disable once ClassNeverInstantiated.Global
-    public class DocFx : IStep
+    public class ApiPort : IStep
     {
         public void Clean()
         {
 
         }
 
-        public const string Key = "unpack-docfx";
-        const string k_PackageName = "docfx-2.59.2.zip";
-        const string k_InstallPathKey = "docfx-path";
+        public const string Key = "unpack-apiport";
+        const string k_PackageName = "apiport-2.8.10.zip";
+        const string k_InstallPathKey = "apiport-path";
         public static string InstallPath;
 
 
-        public DocFx()
+        public ApiPort()
         {
-            Program.Args.RegisterHelp("DocFX Install", $"{k_InstallPathKey} <value>",
-                "\t\tPath to existing DocFX install.");
+            Program.Args.RegisterHelp("ApiPort Install", $"{k_InstallPathKey} <value>",
+                "\t\tPath to existing ApiPort install.");
         }
 
         /// <inheritdoc />
@@ -37,7 +37,7 @@ namespace Dox.Steps.Unpack
         /// <inheritdoc />
         public string GetHeader()
         {
-            return "Unpack DocFX";
+            return "Unpack ApiPort";
         }
 
         public string[] GetRequiredStepIdentifiers()
@@ -49,7 +49,7 @@ namespace Dox.Steps.Unpack
         public void Process()
         {
             Program.GetParameter(k_InstallPathKey,
-                Path.Combine(Program.ProcessDirectory, "docfx"), out InstallPath,
+                Path.Combine(Program.ProcessDirectory, "apiport"), out InstallPath,
                 s =>
                 {
                     if (Path.IsPathFullyQualified(s))
@@ -61,9 +61,9 @@ namespace Dox.Steps.Unpack
                 }
             );
 
-            if (Directory.Exists(InstallPath) && File.Exists(Path.Combine(InstallPath, "docfx.exe")))
+            if (Directory.Exists(InstallPath) && File.Exists(Path.Combine(InstallPath, "ApiPort.exe")))
             {
-                Output.LogLine("Found existing DocFX.");
+                Output.LogLine("Found existing ApiPort.");
                 return;
             }
 
@@ -72,7 +72,7 @@ namespace Dox.Steps.Unpack
             // Check package existence
             if (!File.Exists(zipPath))
             {
-                Output.Error("Unable to find packaged DocFX.", -1, true);
+                Output.Error("Unable to find packaged ApiPort.", -1, true);
                 return;
             }
 

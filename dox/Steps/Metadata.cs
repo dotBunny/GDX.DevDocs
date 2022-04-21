@@ -29,6 +29,11 @@ namespace Dox.Steps
             return "Metadata Extraction";
         }
 
+        public string[] GetRequiredStepIdentifiers()
+        {
+            return null;
+        }
+
         /// <inheritdoc />
         public void Process()
         {

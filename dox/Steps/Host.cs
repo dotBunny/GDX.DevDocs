@@ -29,9 +29,19 @@ namespace Dox.Steps
             return "Host";
         }
 
+        public string[] GetRequiredStepIdentifiers()
+        {
+            return null;
+        }
+
         /// <inheritdoc />
         public void Process()
         {
+            if (Program.IsTeamCityAgent)
+            {
+                Output.LogLine("Hosting was skipped due to running in TeamCity");
+                return;
+            }
             string docfxJsonPath = Path.Combine(Config.InputDirectory, ".docfx", "docfx.json");
             if (!File.Exists(docfxJsonPath))
             {

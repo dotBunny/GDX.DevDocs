@@ -10,11 +10,12 @@ using Dox.Utils;
 
 namespace Dox.Steps
 {
-    public class XmlDocs : IStep
+    public class MsBuild : IStep
     {
         //TODO: these update the xml in teh main repo? should that be pushed if changes?
 
-        public const string Key = "xmldocs";
+        public const string Key = "msbuild";
+
         /// <inheritdoc />
         public void Clean()
         {
@@ -28,9 +29,15 @@ namespace Dox.Steps
         }
 
         /// <inheritdoc />
+        public string[] GetRequiredStepIdentifiers()
+        {
+            return null;
+        }
+
+        /// <inheritdoc />
         public string GetHeader()
         {
-            return "Generate XML Documentation";
+            return "MSBuild: Build Projects w/ Documentation";
         }
 
         /// <inheritdoc />
@@ -39,7 +46,7 @@ namespace Dox.Steps
             string gdxProjectPath = Path.GetFullPath(Path.Combine(Config.InputDirectory, "..", "..", "GDX.csproj"));
             string gdxXmlPath = Path.Combine(Config.InputDirectory, ".docfx", "GDX.xml");
 
-            if (GenerateXmlDocs(gdxProjectPath, gdxXmlPath))
+            if (Build(gdxProjectPath, gdxXmlPath))
             {
                 FixXmlDocs(gdxXmlPath);
             }
@@ -48,13 +55,13 @@ namespace Dox.Steps
             // string gdxEditorProjectPath = Path.GetFullPath(Path.Combine(Config.InputDirectory, "..", "..", "GDX.Editor.csproj"));
             // string gdxEditorXmlPath = Path.Combine(Config.InputDirectory, ".docfx", "GDX.Editor.xml");
             //
-            // if (GenerateXmlDocs(gdxEditorProjectPath, gdxEditorXmlPath))
+            // if (Build(gdxEditorProjectPath, gdxEditorXmlPath))
             // {
             //     FixXmlDocs(gdxEditorXmlPath);
             // }
         }
 
-        bool GenerateXmlDocs(string projectPath, string outputPath)
+        bool Build(string projectPath, string outputPath)
         {
             string[] defines = Config.Defines.Split(';');
 

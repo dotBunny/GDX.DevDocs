@@ -32,6 +32,11 @@ namespace Dox.Steps
             return "Clean Previous";
         }
 
+        public string[] GetRequiredStepIdentifiers()
+        {
+            return null;
+        }
+
         /// <inheritdoc />
         public void Process()
         {

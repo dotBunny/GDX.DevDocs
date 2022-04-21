@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.NetworkInformation;
 using System.Reflection;
+using Dox.Steps;
 using Dox.Utils;
 
 namespace Dox
@@ -25,6 +26,11 @@ namespace Dox
         ///     Is an internet connection present and able to ping an outside host?
         /// </summary>
         public static bool IsOnline;
+
+        /// <summary>
+        ///     Is the execution occuring inside of our CI
+        /// </summary>
+        public static bool IsTeamCityAgent;
 
         /// <summary>
         ///     A cached absolute path to the process directory.
@@ -90,7 +96,7 @@ namespace Dox
             Output.Value("Config.InputDirectory", Config.InputDirectory);
 
             // Output Directory
-            GetParameter(Arguments.OutputKey, Path.Combine(Config.InputDirectory, ".docfx", "_site"), out Config.OutputDirectory,
+            GetParameter(Arguments.OutputKey, Build.GetDefaultOutputFolder(), out Config.OutputDirectory,
                 s =>
                 {
                     if (Path.IsPathFullyQualified(s))
@@ -130,12 +136,8 @@ namespace Dox
                 Output.Value("Program.IsOnline", IsOnline.ToString());
             }
 
-
-            // Determine where MSBuild? - If were on PC?
-
-
-
-
+            // Establish if this is a TeamCity
+            IsTeamCityAgent = Environment.GetEnvironmentVariable("TEAMCITY_VERSION") != null;
 
             // Search the assemblies for included IStep's and create an instance of each, using the system activator.
             Type stepInterface = typeof(IStep);

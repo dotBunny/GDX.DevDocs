@@ -20,6 +20,12 @@ namespace Dox
         public string GetIdentifier();
 
         /// <summary>
+        ///     Get an array of identifiers required to occur prior to the execution of this step.
+        /// </summary>
+        /// <returns>An array of string keys.</returns>
+        public string[] GetRequiredStepIdentifiers();
+
+        /// <summary>
         ///     Get the header text used in the console log to identify this sections output.
         /// </summary>
         /// <returns>A string name.</returns>

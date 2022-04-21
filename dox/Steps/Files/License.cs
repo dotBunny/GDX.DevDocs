@@ -30,6 +30,11 @@ namespace Dox.Steps.Files
             return Key;
         }
 
+        public string[] GetRequiredStepIdentifiers()
+        {
+            return null;
+        }
+
         /// <inheritdoc />
         public string GetHeader()
         {

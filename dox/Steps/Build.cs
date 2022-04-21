@@ -13,6 +13,10 @@ namespace Dox.Steps
 
 
 
+        public static string GetDefaultOutputFolder()
+        {
+            return Path.Combine(Config.InputDirectory, ".docfx", "_site");
+        }
         /// <inheritdoc />
         public void Clean()
         {
@@ -35,6 +39,11 @@ namespace Dox.Steps
             return "Build Documentation";
         }
 
+        public string[] GetRequiredStepIdentifiers()
+        {
+            return null;
+        }
+
         /// <inheritdoc />
         public void Process()
         {
@@ -52,6 +61,12 @@ namespace Dox.Steps
             if (!execute)
             {
                 Output.Error("An error occured while building the documentation.", -1, true);
+            }
+
+            // We need to move this somewhere
+            if (Config.OutputDirectory != GetDefaultOutputFolder())
+            {
+
             }
         }
     }

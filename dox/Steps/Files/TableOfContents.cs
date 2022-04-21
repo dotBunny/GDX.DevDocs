@@ -43,6 +43,11 @@ namespace Dox.Steps.Files
             return "API: Table of Contents";
         }
 
+        public string[] GetRequiredStepIdentifiers()
+        {
+            return new [] { Metadata.Key };
+        }
+
         /// <inheritdoc />
         public void Process()
         {

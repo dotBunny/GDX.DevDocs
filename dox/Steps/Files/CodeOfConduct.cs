@@ -36,6 +36,11 @@ namespace Dox.Steps.Files
             return "Code Of Conduct";
         }
 
+        public string[] GetRequiredStepIdentifiers()
+        {
+            return null;
+        }
+
         /// <inheritdoc />
         public void Process()
         {

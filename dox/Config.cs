@@ -6,16 +6,28 @@ using System;
 using Dox.Steps;
 using Dox.Steps.Files;
 using Dox.Steps.Templates;
+using Dox.Utils;
 
 namespace Dox
 {
     public static class Config
     {
+        public const string DoxUri = "https://github.com/dotBunny/GDX.Documentation/";
+        public const string DocFxUri = "https://dotnet.github.io/docfx/";
+
         public const string GitCommit = "https://github.com/dotBunny/GDX/commit/";
+
         public static string ShortDate = DateTime.Now.ToString("yyyy-MM-dd");
 
-        public static readonly string CleanBuildSteps =
-            $"{Dox.Steps.Unpack.DocFx.Key},{Clean.Key},{Changelog.Key},{SecurityPolicy.Key},{CodeOfConduct.Key},{License.Key},{Footer.Key},{XmlDocs.Key},{Metadata.Key},{Dox.Steps.Files.TableOfContents.Key},{Build.Key},{Host.Key}";
+        public static readonly string[] AllSteps = new[]
+        {
+            Dox.Steps.Unpack.DocFx.Key, Dox.Steps.Unpack.ApiPort.Key, Clean.Key, Changelog.Key, SecurityPolicy.Key,
+            CodeOfConduct.Key, License.Key, Footer.Key, MsBuild.Key, Metadata.Key,
+            Dox.Steps.Files.TableOfContents.Key, Portability.Key, Build.Key, Host.Key
+        };
+
+
+        public static readonly string CleanBuildSteps = AllSteps.Concatenate( ",", false);
 
         /// <summary>
         ///     Relative to the
