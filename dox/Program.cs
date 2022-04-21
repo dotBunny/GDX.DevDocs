@@ -35,7 +35,7 @@ namespace Dox
         /// <summary>
         ///     A cached absolute path to the process directory.
         /// </summary>
-        public static readonly string ProcessDirectory = Directory.GetCurrentDirectory();
+        public static readonly string ProcessDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
         /// <summary>
         ///     An ordered list of the steps to be processed as defined.
