@@ -7,35 +7,24 @@ using Dox.Utils;
 
 namespace Dox.Steps
 {
-    public class Metadata : IStep
+    public class Metadata : StepBase
     {
         public const string Key = "metadata";
 
         /// <inheritdoc />
-        public void Clean()
-        {
-
-        }
-
-        /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "Metadata Extraction";
         }
 
-        public string[] GetRequiredStepIdentifiers()
-        {
-            return null;
-        }
-
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             string docfxJsonPath = Path.Combine(Config.InputDirectory, ".docfx", "docfx.json");
             if (!File.Exists(docfxJsonPath))

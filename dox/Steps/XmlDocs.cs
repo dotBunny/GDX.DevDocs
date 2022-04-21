@@ -10,41 +10,35 @@ using Dox.Utils;
 
 namespace Dox.Steps
 {
-    public class MsBuild : IStep
+    public class XmlDocs : StepBase
     {
         //TODO: these update the xml in teh main repo? should that be pushed if changes?
 
         public const string Key = "msbuild";
 
         /// <inheritdoc />
-        public void Clean()
-        {
-
-        }
-
-        /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string[] GetRequiredStepIdentifiers()
+        public override string GetHeader()
         {
-            return null;
+            return "XML API Documentation";
         }
 
         /// <inheritdoc />
-        public string GetHeader()
-        {
-            return "MSBuild: Build Projects w/ Documentation";
-        }
-
-        /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             string gdxProjectPath = Path.GetFullPath(Path.Combine(Config.InputDirectory, "..", "..", "GDX.csproj"));
             string gdxXmlPath = Path.Combine(Config.InputDirectory, ".docfx", "GDX.xml");
+
+            if (!File.Exists(gdxProjectPath))
+            {
+                Output.Warning("Skipping building the project as no project file was found.");
+                return;
+            }
 
             if (Build(gdxProjectPath, gdxXmlPath))
             {

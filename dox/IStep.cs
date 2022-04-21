@@ -35,5 +35,10 @@ namespace Dox
         ///     Process the given step.
         /// </summary>
         public void Process();
+
+        /// <summary>
+        ///     Setup necessary pieces for the execution of the step
+        /// </summary>
+        public void Setup();
     }
 }

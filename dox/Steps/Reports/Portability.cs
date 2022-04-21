@@ -3,79 +3,75 @@
 // See the LICENSE file in the project root for more information.
 
 using System.IO;
-using System.Runtime.CompilerServices;
 using Dox.Utils;
 
-namespace Dox.Steps
+namespace Dox.Steps.Reports
 {
-    public class Portability : IStep
+    // ReSharper disable once ClassNeverInstantiated.Global
+    public class Portability : StepBase
     {
         public const string Key = "portability";
 
-        public string[] GetRequiredStepIdentifiers()
+        public override string[] GetRequiredStepIdentifiers()
         {
             // Generates project
-            return new []{ MsBuild.Key};
+            return new []{ XmlDocs.Key};
         }
 
         /// <inheritdoc />
-        public void Clean()
+        public override void Clean()
         {
-            string dgml = GetDgmlPath();
-            if (File.Exists(dgml))
+            string folder = GetPath();
+            if (Directory.Exists(folder))
             {
-                Output.LogLine($"Cleaning up previous DGML portability report.");
-                File.Delete(dgml);
-            }
-            string html = GetHtmlPath();
-            if (File.Exists(html))
-            {
-                Output.LogLine($"Cleaning up previous HTML portability report.");
-                File.Delete(html);
-            }
-            string json = GetJsonPath();
-            if (File.Exists(json))
-            {
-                Output.LogLine($"Cleaning up previous JSON portability report.");
-                File.Delete(json);
+                Directory.Delete(folder, true);
+                Output.LogLine($"Removed previous portability report.");
             }
         }
 
         /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "API Portability";
         }
 
-        public string GetJsonPath()
+        static string GetPath()
         {
-            return Path.Combine(Config.InputDirectory, ".docfx", "reports", "portability", "portability.json");
+            return Path.Combine(Config.InputDirectory, ".docfx", "reports", "portability");
         }
-        public string GetHtmlPath()
+
+        string GetJsonPath()
         {
-            return Path.Combine(Config.InputDirectory, ".docfx", "reports", "portability", "index.html");
+            return Path.Combine(GetPath(), "portability.json");
         }
-        public string GetDgmlPath()
+
+        string GetHtmlPath()
         {
-            return Path.Combine(Config.InputDirectory, ".docfx", "reports","portability",  "portability.dgml");
+            return Path.Combine(GetPath(), "index.html");
+        }
+
+        string GetDgmlPath()
+        {
+            return Path.Combine(GetPath(),  "portability.dgml");
         }
 
 
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             string gdxLibraryPath =
                 Path.GetFullPath(Path.Combine(Config.InputDirectory, "..", "..", "Library", "ScriptAssemblies", "GDX.dll"));
 
             if (!File.Exists(gdxLibraryPath))
             {
-                Output.Error($"Unable to find GDX library at {gdxLibraryPath}", -1, true);
+                Output.Warning($"Unable to find GDX library at {gdxLibraryPath}");
+                return;
             }
 
             string gdxEditorLibraryPath =
@@ -83,7 +79,8 @@ namespace Dox.Steps
 
             if (!File.Exists(gdxLibraryPath))
             {
-                Output.Error($"Unable to find GDX library at {gdxLibraryPath}", -1, true);
+                Output.Warning($"Unable to find GDX library at {gdxLibraryPath}");
+                return;
             }
 
             bool jsonExecute = ChildProcess.WaitFor(

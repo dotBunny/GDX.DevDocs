@@ -8,10 +8,15 @@ using Dox.Utils;
 namespace Dox.Steps.Files
 {
     // ReSharper disable once ClassNeverInstantiated.Global
-    public class CodeOfConduct : IStep
+    public class CodeOfConduct : StepBase
     {
         public const string Key = "files-conduct";
-        public void Clean()
+        static string GetPath()
+        {
+            return Path.Combine(Config.InputDirectory, ".docfx", "manual", "contributing", "code-of-conduct.md");
+        }
+
+        public override void Clean()
         {
             string path = GetPath();
             if (File.Exists(path))
@@ -20,29 +25,21 @@ namespace Dox.Steps.Files
                 File.Delete(path);
             }
         }
-        static string GetPath()
-        {
-            return Path.Combine(Config.InputDirectory, ".docfx", "manual", "contributing", "code-of-conduct.md");
-        }
+
         /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "Code Of Conduct";
         }
 
-        public string[] GetRequiredStepIdentifiers()
-        {
-            return null;
-        }
-
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             string path = GetPath();
             string contentPath = Path.Combine(Config.InputDirectory, "CODE_OF_CONDUCT.md");

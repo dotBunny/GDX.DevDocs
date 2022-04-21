@@ -9,18 +9,12 @@ using Dox.Utils;
 namespace Dox.Steps.Unpack
 {
     // ReSharper disable once ClassNeverInstantiated.Global
-    public class DocFx : IStep
+    public class DocFx : StepBase
     {
-        public void Clean()
-        {
-
-        }
-
         public const string Key = "unpack-docfx";
         const string k_PackageName = "docfx-2.59.2.zip";
         const string k_InstallPathKey = "docfx-path";
         public static string InstallPath;
-
 
         public DocFx()
         {
@@ -29,24 +23,19 @@ namespace Dox.Steps.Unpack
         }
 
         /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "Unpack DocFX";
         }
 
-        public string[] GetRequiredStepIdentifiers()
-        {
-            return null;
-        }
-
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             Program.GetParameter(k_InstallPathKey,
                 Path.Combine(Program.ProcessDirectory, "docfx"), out InstallPath,

@@ -7,35 +7,25 @@ using Dox.Utils;
 
 namespace Dox.Steps
 {
-    public class Host : IStep
+    // ReSharper disable once ClassNeverInstantiated.Global
+    public class Host : StepBase
     {
         public const string Key = "host";
 
         /// <inheritdoc />
-        public void Clean()
-        {
-
-        }
-
-        /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "Host";
         }
 
-        public string[] GetRequiredStepIdentifiers()
-        {
-            return null;
-        }
-
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             if (Program.IsTeamCityAgent)
             {
@@ -57,6 +47,7 @@ namespace Dox.Steps
             {
                 Output.Error("An error occured while building the documentation.", -1, true);
             }
+
         }
     }
 }

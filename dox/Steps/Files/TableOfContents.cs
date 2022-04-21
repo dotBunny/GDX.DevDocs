@@ -12,7 +12,7 @@ using YamlDotNet.Serialization;
 
 namespace Dox.Steps.Files
 {
-    public class TableOfContents : IStep
+    public class TableOfContents : StepBase
     {
         public const string Key = "files-toc";
         public static string WorkingFolder = null;
@@ -21,7 +21,7 @@ namespace Dox.Steps.Files
             return Path.Combine(Config.InputDirectory, ".docfx", "api", "toc.yml");
         }
         /// <inheritdoc />
-        public void Clean()
+        public override void Clean()
         {
             string path = GetPath();
             if (File.Exists(path))
@@ -32,24 +32,24 @@ namespace Dox.Steps.Files
         }
 
         /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "API: Table of Contents";
         }
 
-        public string[] GetRequiredStepIdentifiers()
+        public override string[] GetRequiredStepIdentifiers()
         {
             return new [] { Metadata.Key };
         }
 
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             string path = GetPath();
             if (!File.Exists(path))

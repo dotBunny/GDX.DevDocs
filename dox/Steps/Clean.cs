@@ -10,35 +10,24 @@ using Dox.Utils;
 namespace Dox.Steps
 {
     // ReSharper disable once ClassNeverInstantiated.Global
-    public class Clean : IStep
+    public class Clean : StepBase
     {
-
         public const string Key = "clean";
 
         /// <inheritdoc />
-        void IStep.Clean()
-        {
-        }
-
-        /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "Clean Previous";
         }
 
-        public string[] GetRequiredStepIdentifiers()
-        {
-            return null;
-        }
-
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             string objFolder = Path.Combine(Config.InputDirectory, ".docfx", "obj");
             if (Directory.Exists(objFolder))

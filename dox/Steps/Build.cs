@@ -7,18 +7,16 @@ using Dox.Utils;
 
 namespace Dox.Steps
 {
-    public class Build : IStep
+    public class Build : StepBase
     {
         public const string Key = "build";
-
-
 
         public static string GetDefaultOutputFolder()
         {
             return Path.Combine(Config.InputDirectory, ".docfx", "_site");
         }
         /// <inheritdoc />
-        public void Clean()
+        public override void Clean()
         {
             if (Directory.Exists(Config.OutputDirectory))
             {
@@ -28,24 +26,19 @@ namespace Dox.Steps
         }
 
         /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "Build Documentation";
         }
 
-        public string[] GetRequiredStepIdentifiers()
-        {
-            return null;
-        }
-
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             string docfxJsonPath = Path.Combine(Config.InputDirectory, ".docfx", "docfx.json");
             if (!File.Exists(docfxJsonPath))

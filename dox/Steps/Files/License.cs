@@ -8,10 +8,14 @@ using Dox.Utils;
 namespace Dox.Steps.Files
 {
     // ReSharper disable once ClassNeverInstantiated.Global
-    public class License : IStep
+    public class License : StepBase
     {
         public const string Key = "files-license";
-        public void Clean()
+        static string GetPath()
+        {
+            return Path.Combine(Config.InputDirectory, ".docfx", "license.md");
+        }
+        public override void Clean()
         {
             string path = GetPath();
             if (File.Exists(path))
@@ -20,29 +24,21 @@ namespace Dox.Steps.Files
                 File.Delete(path);
             }
         }
-        static string GetPath()
-        {
-            return Path.Combine(Config.InputDirectory, ".docfx", "license.md");
-        }
+
         /// <inheritdoc />
-        public string GetIdentifier()
+        public override string GetIdentifier()
         {
             return Key;
         }
 
-        public string[] GetRequiredStepIdentifiers()
-        {
-            return null;
-        }
-
         /// <inheritdoc />
-        public string GetHeader()
+        public override string GetHeader()
         {
             return "License";
         }
 
         /// <inheritdoc />
-        public void Process()
+        public override void Process()
         {
             string path = GetPath();
             string contentPath = Path.Combine(Config.InputDirectory, "LICENSE");

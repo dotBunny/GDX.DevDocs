@@ -144,7 +144,7 @@ namespace Dox
             Type[] types = s_Assembly.GetTypes();
             foreach (Type t in types)
             {
-                if (t == stepInterface || !stepInterface.IsAssignableFrom(t))
+                if (t == stepInterface || !stepInterface.IsAssignableFrom(t) || t.IsAbstract)
                 {
                     continue;
                 }

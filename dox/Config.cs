@@ -5,6 +5,8 @@
 using System;
 using Dox.Steps;
 using Dox.Steps.Files;
+using Dox.Steps.Reports;
+using Dox.Steps.TeamCity;
 using Dox.Steps.Templates;
 using Dox.Utils;
 
@@ -21,9 +23,27 @@ namespace Dox
 
         public static readonly string[] AllSteps = new[]
         {
-            Dox.Steps.Unpack.DocFx.Key, Dox.Steps.Unpack.ApiPort.Key, Clean.Key, Changelog.Key, SecurityPolicy.Key,
-            CodeOfConduct.Key, License.Key, Footer.Key, MsBuild.Key, Metadata.Key,
-            Dox.Steps.Files.TableOfContents.Key, Portability.Key, Build.Key, Host.Key
+            Dox.Steps.Unpack.DocFx.Key, Dox.Steps.Unpack.ApiPort.Key,
+            Clean.Key,
+
+            Changelog.Key,
+            SecurityPolicy.Key,
+            CodeOfConduct.Key,
+            License.Key,
+            Footer.Key,
+
+            XmlDocs.Key,
+
+            Metadata.Key,
+            Dox.Steps.Files.TableOfContents.Key,
+
+            Portability.Key,
+            CodeInspection.Key,
+            Duplicates.Key,
+            CodeCoverage.Key,
+
+            Build.Key,
+            Host.Key
         };
 
 
@@ -46,8 +66,5 @@ namespace Dox
 
         public static string InputDirectory = "input";
         public static string OutputDirectory = "output";
-
-        public static string MSBuild = null;
-
     }
 }
