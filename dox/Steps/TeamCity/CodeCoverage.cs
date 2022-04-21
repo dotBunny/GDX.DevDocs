@@ -54,6 +54,10 @@ namespace Dox.Steps.TeamCity
 
             if (Directory.Exists(teamCityArtifact))
             {
+                if (!Directory.Exists(GetPath()))
+                {
+                    Directory.CreateDirectory(GetPath());
+                }
                 Platform.CopyFilesRecursively(teamCityArtifact, GetPath());
             }
             else

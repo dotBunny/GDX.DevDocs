@@ -53,6 +53,10 @@ namespace Dox.Steps.TeamCity
            if (File.Exists(teamCityArtifact))
            {
                Output.Log("Copying code duplication artifacts.");
+               if (!Directory.Exists(GetPath()))
+               {
+                   Directory.CreateDirectory(GetPath());
+               }
                File.Copy(teamCityArtifact, Path.Combine(GetPath(), "duplicates.xml"));
            }
            else
