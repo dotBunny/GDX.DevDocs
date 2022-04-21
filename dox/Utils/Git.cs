@@ -13,7 +13,16 @@ namespace Dox.Utils
         public static string GetHeadCommit(string repositoryDirectory)
         {
             TextGenerator generator = new();
-            ChildProcess.WaitFor("git.exe", repositoryDirectory, "rev-parse HEAD", s => { generator.AppendLine(s); });
+            if (Platform.IsWindows())
+            {
+                ChildProcess.WaitFor("git.exe", repositoryDirectory, "rev-parse HEAD",
+                    s => { generator.AppendLine(s); });
+            }
+            else
+            {
+                ChildProcess.WaitFor("git", repositoryDirectory, "rev-parse HEAD",
+                    s => { generator.AppendLine(s); });
+            }
             return generator.ToString();
         }
         public static void GetOrUpdate(string name, string repositoryDirectory, string repositoryUri,
@@ -32,13 +41,27 @@ namespace Dox.Utils
                 // Check if repository is behind
                 Output.LogLine("Checking repository status ...");
                 bool isBehind = false;
-                bool gitStatus = ChildProcess.WaitFor("git.exe", repositoryDirectory, "status -sb", line =>
+                bool gitStatus = false;
+                if (Platform.IsWindows())
                 {
-                    if (line.Contains("behind"))
+                    gitStatus = ChildProcess.WaitFor("git.exe", repositoryDirectory, "status -sb", line =>
                     {
-                        isBehind = true;
-                    }
-                });
+                        if (line.Contains("behind"))
+                        {
+                            isBehind = true;
+                        }
+                    });
+                }
+                else
+                {
+                    gitStatus = ChildProcess.WaitFor("git", repositoryDirectory, "status -sb", line =>
+                    {
+                        if (line.Contains("behind"))
+                        {
+                            isBehind = true;
+                        }
+                    });
+                }
 
                 if (!gitStatus)
                 {
