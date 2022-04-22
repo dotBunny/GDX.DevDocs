@@ -50,7 +50,7 @@ namespace Dox.Steps.TeamCity
             }
 
             string teamCityArtifact =
-                Path.Combine(Program.ProcessDirectory, "..", "Staging", "CodeCoverage");
+                Path.GetFullPath(Path.Combine(Program.ProcessDirectory, "..", "..", "..", "Staging", "CodeCoverage"));
 
             if (Directory.Exists(teamCityArtifact))
             {
@@ -62,7 +62,7 @@ namespace Dox.Steps.TeamCity
             }
             else
             {
-                Output.Error("Unable to find code coverage artifacts.", -1, true);
+                Output.Error($"Unable to find code coverage artifacts at {teamCityArtifact}.", -1, true);
             }
         }
     }

@@ -49,7 +49,7 @@ namespace Dox.Steps.TeamCity
            }
 
            string teamCityArtifact =
-               Path.Combine(Program.ProcessDirectory, "..", "Staging", "ResharperDuplicates.xml");
+               Path.GetFullPath(Path.Combine(Program.ProcessDirectory, "..", "..", "..", "Staging", "ResharperDuplicates.xml"));
            if (File.Exists(teamCityArtifact))
            {
                Output.Log("Copying code duplication artifacts.");
@@ -61,7 +61,7 @@ namespace Dox.Steps.TeamCity
            }
            else
            {
-               Output.Warning("Unable to find code duplication artifacts.");
+               Output.Warning($"Unable to find code duplication artifacts at {teamCityArtifact}.");
            }
        }
     }
