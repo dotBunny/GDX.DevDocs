@@ -29,7 +29,9 @@ public class Platform
         //Copy all the files & Replaces any files with the same name
         foreach (string newPath in Directory.GetFiles(sourcePath, "*.*",SearchOption.AllDirectories))
         {
-            File.Copy(newPath, newPath.Replace(sourcePath, targetPath), true);
+            string destination = newPath.Replace(sourcePath, targetPath);
+            Output.LogLine($"Copying {newPath} => {destination}");
+            File.Copy(newPath, destination, true);
         }
     }
 

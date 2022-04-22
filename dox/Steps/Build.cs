@@ -59,7 +59,13 @@ namespace Dox.Steps
             // We need to move this somewhere
             if (Config.OutputDirectory != GetDefaultOutputFolder())
             {
+                if (!Directory.Exists(Config.OutputDirectory))
+                {
+                    Directory.CreateDirectory(Config.OutputDirectory);
+                }
 
+                Output.LogLine($"Copying output to destination {Config.OutputDirectory}.");
+                Platform.CopyFilesRecursively(GetDefaultOutputFolder(), Config.OutputDirectory);
             }
         }
     }
