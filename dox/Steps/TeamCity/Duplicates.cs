@@ -61,7 +61,7 @@ namespace Dox.Steps.TeamCity
            }
            else
            {
-               Output.Error("Unable to find code duplication artifacts.", -1, true);
+               Output.Warning("Unable to find code duplication artifacts.");
            }
        }
     }
