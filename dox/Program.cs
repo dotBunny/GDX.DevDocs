@@ -40,7 +40,7 @@ namespace Dox
         /// <summary>
         ///     An ordered list of the steps to be processed as defined.
         /// </summary>
-        static readonly List<IStep> k_OrderedSteps = new();
+        public static readonly List<IStep> OrderedSteps = new();
 
         /// <summary>
         ///     An instantiated dictionary (by <see cref="IStep.GetIdentifier"/>) of possible steps.
@@ -138,6 +138,7 @@ namespace Dox
 
             // Establish if this is a TeamCity
             IsTeamCityAgent = Environment.GetEnvironmentVariable("TEAMCITY_VERSION") != null;
+            Output.Value("Program.IsTeamCityAgent", IsTeamCityAgent.ToString());
 
             // Search the assemblies for included IStep's and create an instance of each, using the system activator.
             Type stepInterface = typeof(IStep);
@@ -162,31 +163,14 @@ namespace Dox
                 return;
             }
 
-            // Build out ordered steps
-            GetParameter(Arguments.StepsKey, Config.Steps, out Config.Steps);
-            string[] stepSplit = Config.Steps.Split(',', StringSplitOptions.TrimEntries);
-            foreach (string targetStep in stepSplit)
+            if (Args.Has(Generate.Argument) )
             {
-                string targetStepLower = targetStep.ToLower();
-                if(RegisteredSteps.ContainsKey(targetStepLower))
-                {
-                    k_OrderedSteps.Add(RegisteredSteps[targetStepLower]);
-                }
-                else
-                {
-                    Output.Log($"Unable to find '{targetStepLower}' step.", ConsoleColor.Yellow);
-                }
-            }
-            if (k_OrderedSteps.Count == 0)
-            {
-                Output.Error("No steps defined.", -1, true);
+                Generate.Process();
             }
 
-            // Process steps
-            foreach (IStep step in k_OrderedSteps)
+            if (Args.Has(Deploy.Argument))
             {
-                Output.SectionHeader(step.GetHeader());
-                step.Process();
+                Deploy.Process();
             }
         }
 
