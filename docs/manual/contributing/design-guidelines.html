@@ -8,7 +8,7 @@
     <title>Design Guidelines | GDX </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Design Guidelines | GDX ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
     <link rel="stylesheet" href="../../styles/docfx.vendor.css">
@@ -97,15 +97,120 @@
 <ul>
 <li>Typically sections of classes are ordered alphabetically.</li>
 </ul>
+<h2 id="code-inspection">Code Inspection</h2>
+<p>We strive to not add to the problem of noise in code inspection, thus we try our best to markup our code in a manner which will let code analyzers know specifically that we have made choices about the way something is written and that it is by design.</p>
+<p>For example, in the <code>GDX.Core</code> we deploy a pattern to create a dispose sentinal pattern allowing for a destruction like behaviour to happen with a static class.</p>
+<pre><code class="lang-csharp">#pragma warning disable IDE0052, IDE0090
+        // ReSharper disable UnusedMember.Local, ArrangeObjectCreationWhenTypeEvident
+        static readonly CoreSentinel k_DisposeSentinel = new CoreSentinel();
+        // ReSharper restore UnusedMember.Local, ArrangeObjectCreationWhenTypeEvident
+#pragma warning restore IDE0052, IDE0090
+</code></pre>
+<p>Below is a list and explanation of some of the markup used in <code>GDX</code>.</p>
+<h3 id="compiler-warnings">Compiler Warnings</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Code</th>
+<th>Description</th>
+<th style="text-align: left;">Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0168">CS0168</a></td>
+<td>The variable 'var' is declared but never used.</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0169">CS0169</a></td>
+<td>The private field 'class member' is never used.</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0414">CS0414</a></td>
+<td>The private field 'field' is assigned but its value is never used.</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-messages/cs0429">CS0429</a></td>
+<td>Unreachable expression code detected.</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/misc/cs0649">CS0649</a></td>
+<td>Field 'field' is never assigned to, and will always have its default value 'value'.</td>
+<td style="text-align: left;">4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="code-quality">Code Quality</h3>
+<h3 id="code-style">Code Style</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pragma</th>
+<th style="text-align: left;">Resharper</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide1006">IDE1006</a></td>
+<td style="text-align: left;">InconsistentNaming</td>
+<td>Naming rule violation.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0052">IDE0051</a></td>
+<td style="text-align: left;">?</td>
+<td>Remove unused private member.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0052">IDE0052</a></td>
+<td style="text-align: left;">UnusedMember.Local</td>
+<td>Remove unread private member.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://docs.microsoft.com/en-us/dotnet/fundamentals/code-analysis/style-rules/ide0090">IDE0090</a></td>
+<td style="text-align: left;">ArrangeObjectCreationWhenTypeEvident</td>
+<td>Simplify new expression.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="editorconfig-support">EditorConfig Support</h2>
 <ul>
 <li>Embedded in the project is an <a href="https://editorconfig.org/">EditorConfig</a>, which should standardize much of the formatting.
 <ul>
 <li>It is based on the .NET Roslyn repositories <code>.editorconfig</code>.</li>
+<li>Don't use anything that would break Unity 2020.3 (hybrid C# 8)</li>
 <li>Warns of non-explicit type definitions everywhere (we're not going to use var to promote better readability).</li>
 </ul>
 </li>
 </ul>
+<h2 id="naming-convensions">Naming Convensions</h2>
+<p>Just like every developer in history, the hardest part of our jobs is naming conventions. There are some basic conventions taht we try to use which make naming ever so slightly easier.</p>
+<table>
+<thead>
+<tr>
+<th>Suffix</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extensions</td>
+<td style="text-align: left;">A reserved name for base classes in GDX which build upon a concenpt. TBD</td>
+</tr>
+<tr>
+<td>Generator</td>
+<td style="text-align: left;">Something which produces consumable content. This varies in degree from things like file content to UI panels. These are meant to be single time usages ?</td>
+</tr>
+<tr>
+<td>Provider</td>
+<td style="text-align: left;">TBD</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -127,18 +232,17 @@
         </div>
       </div>
       <footer>
-       <div class="grad-bottom"></div>
-       <div class="footer">
-         <div class="container">
-           <span class="pull-right">
-             <a href="#top">Back to top</a>
-           </span>
-           
-           <span>Built on 11-02-21 against <a href="https://github.com/dotBunny/GDX/releases/tag/v2.0.1"><strong>v2.0.1</strong></a>.<br>Generated by <strong>DocFX</strong></span>
-         </div>
-       </div>
-      </footer>
-    </div>
+      	<div class="grad-bottom"></div>
+      	<div class="footer">
+      		<div class="container">
+      			<span class="pull-right">
+      				<a href="#top">Back to top</a>
+      			</span>
+      			
+      			<span>Built on 2022-04-24 against <a href="https://github.com/dotBunny/GDX/commit/12c0db49adac102eabb44dda7bcd6d8fc2a52112"><strong>12c0db4</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Documentation/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      		</div>
+      	</div>
+      </footer></div>
     
     <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../../styles/docfx.js"></script>

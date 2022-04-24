@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class CommandLineParser
    | GDX ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -100,7 +100,7 @@ use cases as well.</p>
   </div>
   <h5 id="GDX_Developer_CommandLineParser_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
-    The prefix and divider are configurable via the <span class="xref">GDX.GDXConfig</span>, however the always, the <code>FLAG</code>
+    The prefix and divider are configurable via the <a class="xref" href="GDX.Config.html">Config</a>, however the always, the <code>FLAG</code>
     and <code>KEY</code> will be Uppercase.
 </p>
 </div>
@@ -111,7 +111,7 @@ use cases as well.</p>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser_Arguments.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.Arguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Developer/CommandLineParser.cs/#L28">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/CommandLineParser.cs/#L23">View Source</a>
   </span>
   <h4 id="GDX_Developer_CommandLineParser_Arguments" data-uid="GDX.Developer.CommandLineParser.Arguments">Arguments</h4>
   <div class="markdown level1 summary"><p>The processed arguments found after parsing the arguments</p>
@@ -119,7 +119,7 @@ use cases as well.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static readonly Dictionary&lt;string, string&gt; Arguments</code></pre>
+    <pre><code class="lang-csharp hljs">public static StringKeyDictionary&lt;string&gt; Arguments</code></pre>
   </div>
   <h5 class="fieldValue">Field Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -131,7 +131,7 @@ use cases as well.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><a class="xref" href="GDX.Collections.Generic.StringKeyDictionary-1.html">StringKeyDictionary</a>&lt;<span class="xref">System.String</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -141,7 +141,7 @@ use cases as well.</p>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser_Flags.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Developer/CommandLineParser.cs/#L33">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/CommandLineParser.cs/#L28">View Source</a>
   </span>
   <h4 id="GDX_Developer_CommandLineParser_Flags" data-uid="GDX.Developer.CommandLineParser.Flags">Flags</h4>
   <div class="markdown level1 summary"><p>The processed flags found in the arguments.</p>
@@ -170,30 +170,10 @@ use cases as well.</p>
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser_ParseArguments.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.ParseArguments%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Developer/CommandLineParser.cs/#L44">View Source</a>
-  </span>
-  <a id="GDX_Developer_CommandLineParser_ParseArguments_" data-uid="GDX.Developer.CommandLineParser.ParseArguments*"></a>
-  <h4 id="GDX_Developer_CommandLineParser_ParseArguments" data-uid="GDX.Developer.CommandLineParser.ParseArguments">ParseArguments()</h4>
-  <div class="markdown level1 summary"><p>Process the environment's commandline arguments into <a class="xref" href="GDX.Developer.CommandLineParser.html#GDX_Developer_CommandLineParser_Arguments">Arguments</a> and <a class="xref" href="GDX.Developer.CommandLineParser.html#GDX_Developer_CommandLineParser_Flags">Flags</a>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[RuntimeInitializeOnLoadMethod]
-public static void ParseArguments()</code></pre>
-  </div>
-  <h5 id="GDX_Developer_CommandLineParser_ParseArguments_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This is automatically executed during runtime.</p>
-</div>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser_ProcessArguments_System_String___System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser.ProcessArguments(System.String%5B%5D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Developer/CommandLineParser.cs/#L57">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/CommandLineParser.cs/#L40">View Source</a>
   </span>
   <a id="GDX_Developer_CommandLineParser_ProcessArguments_" data-uid="GDX.Developer.CommandLineParser.ProcessArguments*"></a>
   <h4 id="GDX_Developer_CommandLineParser_ProcessArguments_System_String___System_Boolean_" data-uid="GDX.Developer.CommandLineParser.ProcessArguments(System.String[],System.Boolean)">ProcessArguments(String[], Boolean)</h4>
@@ -239,7 +219,7 @@ public static void ParseArguments()</code></pre>
                     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_CommandLineParser.md&amp;value=---%0Auid%3A%20GDX.Developer.CommandLineParser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Developer/CommandLineParser.cs/#L23" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/CommandLineParser.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -252,18 +232,17 @@ public static void ParseArguments()</code></pre>
         </div>
       </div>
       <footer>
-       <div class="grad-bottom"></div>
-       <div class="footer">
-         <div class="container">
-           <span class="pull-right">
-             <a href="#top">Back to top</a>
-           </span>
-           
-           <span>Built on 11-02-21 against <a href="https://github.com/dotBunny/GDX/releases/tag/v2.0.1"><strong>v2.0.1</strong></a>.<br>Generated by <strong>DocFX</strong></span>
-         </div>
-       </div>
-      </footer>
-    </div>
+      	<div class="grad-bottom"></div>
+      	<div class="footer">
+      		<div class="container">
+      			<span class="pull-right">
+      				<a href="#top">Back to top</a>
+      			</span>
+      			
+      			<span>Built on 2022-04-24 against <a href="https://github.com/dotBunny/GDX/commit/12c0db49adac102eabb44dda7bcd6d8fc2a52112"><strong>12c0db4</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Documentation/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      		</div>
+      	</div>
+      </footer></div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class GameObjectPool
    | GDX ">
-    <meta name="generator" content="docfx 2.57.2.0">
+    <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -83,7 +83,7 @@
   
   <h1 id="GDX_Collections_Pooling_GameObjectPool" data-uid="GDX.Collections.Pooling.GameObjectPool" class="text-break">Class GameObjectPool
   </h1>
-  <div class="markdown level0 summary"><p><span class="xref">UnityEngine.GameObject</span> based functionality extending the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> to better support
+  <div class="markdown level0 summary"><p><span class="xref">UnityEngine.GameObject</span> based functionality extending the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> to better support
 <span class="xref">UnityEngine.GameObject</span> patterns.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
@@ -105,11 +105,11 @@ public static class GameObjectPool</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_CreatePool_UnityEngine_GameObject_UnityEngine_Transform_System_Int32_System_Int32_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.CreatePool(UnityEngine.GameObject%2CUnityEngine.Transform%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L34">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L37">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_CreatePool_" data-uid="GDX.Collections.Pooling.GameObjectPool.CreatePool*"></a>
   <h4 id="GDX_Collections_Pooling_GameObjectPool_CreatePool_UnityEngine_GameObject_UnityEngine_Transform_System_Int32_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.CreatePool(UnityEngine.GameObject,UnityEngine.Transform,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)">CreatePool(GameObject, Transform, Int32, Int32, Boolean, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Create a <span class="xref">UnityEngine.GameObject</span> based <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> for the provided
+  <div class="markdown level1 summary"><p>Create a <span class="xref">UnityEngine.GameObject</span> based <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> for the provided
 <code data-dev-comment-type="paramref" class="paramref">gameObject</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -186,21 +186,37 @@ public static class GameObjectPool</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L77">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L80">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_Get_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get*"></a>
-  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool,System.Boolean)">Get(ListManagedPool, Boolean)</h4>
+  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool,System.Boolean)">Get(SimpleListManagedPool, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the next available item from the <code data-dev-comment-type="paramref" class="paramref">pool</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject Get(ListManagedPool pool, bool triggerOnSpawnedFromPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GameObject Get(SimpleListManagedPool pool, bool triggerOnSpawnedFromPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -213,15 +229,15 @@ public static class GameObjectPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></td>
+        <td><a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a></td>
         <td><span class="parametername">pool</span></td>
-        <td><p>The <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
+        <td><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
-        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.ListManagedPool,System.Object)</span> be called when getting this item.</p>
+        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.SimpleListManagedPool,System.Object)</span> be called when getting this item.</p>
 </td>
       </tr>
     </tbody>
@@ -237,26 +253,42 @@ public static class GameObjectPool</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>, or null if no item is available.</p>
+        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, or null if no item is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Transform_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool%2CUnityEngine.Transform%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Transform_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool%2CUnityEngine.Transform%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L106">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L109">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_Get_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get*"></a>
-  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Transform_System_Boolean_System_Boolean_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool,UnityEngine.Transform,System.Boolean,System.Boolean,System.Boolean)">Get(ListManagedPool, Transform, Boolean, Boolean, Boolean)</h4>
+  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Transform_System_Boolean_System_Boolean_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool,UnityEngine.Transform,System.Boolean,System.Boolean,System.Boolean)">Get(SimpleListManagedPool, Transform, Boolean, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the next available item from the <code data-dev-comment-type="paramref" class="paramref">pool</code> and parent it to a <span class="xref">UnityEngine.Transform</span>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject Get(ListManagedPool pool, Transform parent, bool worldPositionStays = false, bool zeroLocalPosition = true, bool triggerOnSpawnedFromPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GameObject Get(SimpleListManagedPool pool, Transform parent, bool worldPositionStays = false, bool zeroLocalPosition = true, bool triggerOnSpawnedFromPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -269,33 +301,33 @@ public static class GameObjectPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></td>
+        <td><a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a></td>
         <td><span class="parametername">pool</span></td>
-        <td><p>The <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
+        <td><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Transform</span></td>
         <td><span class="parametername">parent</span></td>
-        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>.</p>
+        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">worldPositionStays</span></td>
-        <td><p>Ensure that the world position of the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> remains the same through parenting.</p>
+        <td><p>Ensure that the world position of the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> remains the same through parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">zeroLocalPosition</span></td>
-        <td><p>Set the local position of the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> to being <span class="xref">UnityEngine.Vector3.zero</span> after parenting.</p>
+        <td><p>Set the local position of the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> to being <span class="xref">UnityEngine.Vector3.zero</span> after parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
-        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.ListManagedPool,System.Object)</span> be called when getting this item.</p>
+        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.SimpleListManagedPool,System.Object)</span> be called when getting this item.</p>
 </td>
       </tr>
     </tbody>
@@ -311,26 +343,42 @@ public static class GameObjectPool</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>, or null if no item is available.</p>
+        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, or null if no item is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool%2CUnityEngine.Transform%2CUnityEngine.Vector3%2CUnityEngine.Quaternion%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool%2CUnityEngine.Transform%2CUnityEngine.Vector3%2CUnityEngine.Quaternion%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L148">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L151">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_Get_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get*"></a>
-  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)">Get(ListManagedPool, Transform, Vector3, Quaternion, Boolean)</h4>
+  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)">Get(SimpleListManagedPool, Transform, Vector3, Quaternion, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the next available item from the <code data-dev-comment-type="paramref" class="paramref">pool</code>, parent it to a <span class="xref">UnityEngine.Transform</span>, and then set it's local position and rotation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject Get(ListManagedPool pool, Transform parent, Vector3 localPosition, Quaternion localRotation, bool triggerOnSpawnedFromPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GameObject Get(SimpleListManagedPool pool, Transform parent, Vector3 localPosition, Quaternion localRotation, bool triggerOnSpawnedFromPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -343,33 +391,33 @@ public static class GameObjectPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></td>
+        <td><a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a></td>
         <td><span class="parametername">pool</span></td>
-        <td><p>The <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
+        <td><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Transform</span></td>
         <td><span class="parametername">parent</span></td>
-        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>.</p>
+        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">localPosition</span></td>
-        <td><p>The local position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> after parenting.</p>
+        <td><p>The local position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> after parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Quaternion</span></td>
         <td><span class="parametername">localRotation</span></td>
-        <td><p>The local rotation to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> after parenting.</p>
+        <td><p>The local rotation to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> after parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
-        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.ListManagedPool,System.Object)</span> be called when getting this item.</p>
+        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.SimpleListManagedPool,System.Object)</span> be called when getting this item.</p>
 </td>
       </tr>
     </tbody>
@@ -385,26 +433,42 @@ public static class GameObjectPool</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>, or null if no item is available.</p>
+        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, or null if no item is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool%2CUnityEngine.Transform%2CUnityEngine.Vector3%2CUnityEngine.Vector3%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool%2CUnityEngine.Transform%2CUnityEngine.Vector3%2CUnityEngine.Vector3%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L188">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L191">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_Get_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get*"></a>
-  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)">Get(ListManagedPool, Transform, Vector3, Vector3, Boolean)</h4>
+  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Vector3_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool,UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)">Get(SimpleListManagedPool, Transform, Vector3, Vector3, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the next available item from the <code data-dev-comment-type="paramref" class="paramref">pool</code>, parent it to a <span class="xref">UnityEngine.Transform</span>, and then setting it's local position and where it is looking.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject Get(ListManagedPool pool, Transform parent, Vector3 localPosition, Vector3 worldLookAtPosition, bool triggerOnSpawnedFromPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GameObject Get(SimpleListManagedPool pool, Transform parent, Vector3 localPosition, Vector3 worldLookAtPosition, bool triggerOnSpawnedFromPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -417,33 +481,33 @@ public static class GameObjectPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></td>
+        <td><a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a></td>
         <td><span class="parametername">pool</span></td>
-        <td><p>The <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
+        <td><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Transform</span></td>
         <td><span class="parametername">parent</span></td>
-        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>.</p>
+        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">localPosition</span></td>
-        <td><p>The local position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> after parenting.</p>
+        <td><p>The local position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> after parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">worldLookAtPosition</span></td>
-        <td><p>The world position to have the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> look at</p>
+        <td><p>The world position to have the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> look at</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
-        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.ListManagedPool,System.Object)</span> be called when getting this item.</p>
+        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.SimpleListManagedPool,System.Object)</span> be called when getting this item.</p>
 </td>
       </tr>
     </tbody>
@@ -459,26 +523,42 @@ public static class GameObjectPool</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>, or null if no item is available.</p>
+        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, or null if no item is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool%2CUnityEngine.Vector3%2CUnityEngine.Quaternion%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool%2CUnityEngine.Vector3%2CUnityEngine.Quaternion%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L265">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L268">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_Get_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get*"></a>
-  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool,UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)">Get(ListManagedPool, Vector3, Quaternion, Boolean)</h4>
+  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Vector3_UnityEngine_Quaternion_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool,UnityEngine.Vector3,UnityEngine.Quaternion,System.Boolean)">Get(SimpleListManagedPool, Vector3, Quaternion, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the next available item from the <code data-dev-comment-type="paramref" class="paramref">pool</code>, and set its world position and rotation.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject Get(ListManagedPool pool, Vector3 worldPosition, Quaternion worldRotation, bool triggerOnSpawnedFromPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GameObject Get(SimpleListManagedPool pool, Vector3 worldPosition, Quaternion worldRotation, bool triggerOnSpawnedFromPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -491,27 +571,27 @@ public static class GameObjectPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></td>
+        <td><a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a></td>
         <td><span class="parametername">pool</span></td>
-        <td><p>The <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
+        <td><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">worldPosition</span></td>
-        <td><p>The world position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>.</p>
+        <td><p>The world position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Quaternion</span></td>
         <td><span class="parametername">worldRotation</span></td>
-        <td><p>The world rotation to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>.</p>
+        <td><p>The world rotation to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
-        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.ListManagedPool,System.Object)</span> be called when getting this item.</p>
+        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.SimpleListManagedPool,System.Object)</span> be called when getting this item.</p>
 </td>
       </tr>
     </tbody>
@@ -527,26 +607,42 @@ public static class GameObjectPool</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>, or null if no item is available.</p>
+        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, or null if no item is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool%2CUnityEngine.Vector3%2CUnityEngine.Quaternion%2CUnityEngine.Transform%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool%2CUnityEngine.Vector3%2CUnityEngine.Quaternion%2CUnityEngine.Transform%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L303">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L306">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_Get_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get*"></a>
-  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Boolean)">Get(ListManagedPool, Vector3, Quaternion, Transform, Boolean)</h4>
+  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool,UnityEngine.Vector3,UnityEngine.Quaternion,UnityEngine.Transform,System.Boolean)">Get(SimpleListManagedPool, Vector3, Quaternion, Transform, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the next available item from the <code data-dev-comment-type="paramref" class="paramref">pool</code>, and set its world position and rotation after parenting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject Get(ListManagedPool pool, Vector3 worldPosition, Quaternion worldRotation, Transform parent, bool triggerOnSpawnedFromPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GameObject Get(SimpleListManagedPool pool, Vector3 worldPosition, Quaternion worldRotation, Transform parent, bool triggerOnSpawnedFromPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -559,33 +655,33 @@ public static class GameObjectPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></td>
+        <td><a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a></td>
         <td><span class="parametername">pool</span></td>
-        <td><p>The <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
+        <td><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">worldPosition</span></td>
-        <td><p>The world position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> after parenting.</p>
+        <td><p>The world position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> after parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Quaternion</span></td>
         <td><span class="parametername">worldRotation</span></td>
-        <td><p>The world rotation to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> after parenting.</p>
+        <td><p>The world rotation to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> after parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Transform</span></td>
         <td><span class="parametername">parent</span></td>
-        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>.</p>
+        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
-        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.ListManagedPool,System.Object)</span> be called when getting this item.</p>
+        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.SimpleListManagedPool,System.Object)</span> be called when getting this item.</p>
 </td>
       </tr>
     </tbody>
@@ -601,26 +697,42 @@ public static class GameObjectPool</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>, or null if no item is available.</p>
+        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, or null if no item is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Vector3_UnityEngine_Vector3_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool%2CUnityEngine.Vector3%2CUnityEngine.Vector3%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Vector3_UnityEngine_Vector3_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool%2CUnityEngine.Vector3%2CUnityEngine.Vector3%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L227">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L230">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_Get_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get*"></a>
-  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Vector3_UnityEngine_Vector3_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)">Get(ListManagedPool, Vector3, Vector3, Boolean)</h4>
+  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Vector3_UnityEngine_Vector3_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool,UnityEngine.Vector3,UnityEngine.Vector3,System.Boolean)">Get(SimpleListManagedPool, Vector3, Vector3, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the next available item from the <code data-dev-comment-type="paramref" class="paramref">pool</code>, and set its world position and where it is looking.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject Get(ListManagedPool pool, Vector3 worldPosition, Vector3 worldLookAtPosition, bool triggerOnSpawnedFromPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GameObject Get(SimpleListManagedPool pool, Vector3 worldPosition, Vector3 worldLookAtPosition, bool triggerOnSpawnedFromPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -633,27 +745,27 @@ public static class GameObjectPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></td>
+        <td><a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a></td>
         <td><span class="parametername">pool</span></td>
-        <td><p>The <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
+        <td><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">worldPosition</span></td>
-        <td><p>The world position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>.</p>
+        <td><p>The world position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">worldLookAtPosition</span></td>
-        <td><p>The world position to have the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> look at</p>
+        <td><p>The world position to have the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> look at</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
-        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.ListManagedPool,System.Object)</span> be called when getting this item.</p>
+        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.SimpleListManagedPool,System.Object)</span> be called when getting this item.</p>
 </td>
       </tr>
     </tbody>
@@ -669,26 +781,42 @@ public static class GameObjectPool</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>, or null if no item is available.</p>
+        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, or null if no item is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Transform_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool%2CUnityEngine.Vector3%2CUnityEngine.Vector3%2CUnityEngine.Transform%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Transform_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool%2CUnityEngine.Vector3%2CUnityEngine.Vector3%2CUnityEngine.Transform%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L342">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L345">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_Get_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get*"></a>
-  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_ListManagedPool_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Transform_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.ListManagedPool,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Transform,System.Boolean)">Get(ListManagedPool, Vector3, Vector3, Transform, Boolean)</h4>
+  <h4 id="GDX_Collections_Pooling_GameObjectPool_Get_GDX_Collections_Pooling_SimpleListManagedPool_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Transform_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.Get(GDX.Collections.Pooling.SimpleListManagedPool,UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Transform,System.Boolean)">Get(SimpleListManagedPool, Vector3, Vector3, Transform, Boolean)</h4>
   <div class="markdown level1 summary"><p>Get the next available item from the <code data-dev-comment-type="paramref" class="paramref">pool</code>, and set its world position and look at position after parenting.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static GameObject Get(ListManagedPool pool, Vector3 worldPosition, Vector3 worldLookAtPosition, Transform parent, bool triggerOnSpawnedFromPool = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static GameObject Get(SimpleListManagedPool pool, Vector3 worldPosition, Vector3 worldLookAtPosition, Transform parent, bool triggerOnSpawnedFromPool = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -701,33 +829,33 @@ public static class GameObjectPool</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a></td>
+        <td><a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a></td>
         <td><span class="parametername">pool</span></td>
-        <td><p>The <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
+        <td><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> created with <a class="xref" href="GDX.Collections.Pooling.GameObjectPool.html">GameObjectPool</a> to pull an item from.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">worldPosition</span></td>
-        <td><p>The world position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> after parenting.</p>
+        <td><p>The world position to set on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> after parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">worldLookAtPosition</span></td>
-        <td><p>The world position to have the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> look at after parenting.</p>
+        <td><p>The world position to have the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> look at after parenting.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Transform</span></td>
         <td><span class="parametername">parent</span></td>
-        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>.</p>
+        <td><p>The transform parent on the item pulled from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
-        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.ListManagedPool,System.Object)</span> be called when getting this item.</p>
+        <td><p>Should the <span class="xref">GDX.Collections.Pooling.GameObjectPool.OnSpawnedFromPoolAction(GDX.Collections.Pooling.SimpleListManagedPool,System.Object)</span> be called when getting this item.</p>
 </td>
       </tr>
     </tbody>
@@ -743,7 +871,23 @@ public static class GameObjectPool</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">UnityEngine.GameObject</span></td>
-        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a>, or null if no item is available.</p>
+        <td><p>A <span class="xref">UnityEngine.GameObject</span> from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, or null if no item is available.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
 </td>
       </tr>
     </tbody>
@@ -753,11 +897,11 @@ public static class GameObjectPool</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool_GetOrCreatePool_UnityEngine_GameObject_UnityEngine_Transform_System_Int32_System_Int32_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool.GetOrCreatePool(UnityEngine.GameObject%2CUnityEngine.Transform%2CSystem.Int32%2CSystem.Int32%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L383">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L386">View Source</a>
   </span>
   <a id="GDX_Collections_Pooling_GameObjectPool_GetOrCreatePool_" data-uid="GDX.Collections.Pooling.GameObjectPool.GetOrCreatePool*"></a>
   <h4 id="GDX_Collections_Pooling_GameObjectPool_GetOrCreatePool_UnityEngine_GameObject_UnityEngine_Transform_System_Int32_System_Int32_System_Boolean_System_Boolean_System_Boolean_" data-uid="GDX.Collections.Pooling.GameObjectPool.GetOrCreatePool(UnityEngine.GameObject,UnityEngine.Transform,System.Int32,System.Int32,System.Boolean,System.Boolean,System.Boolean)">GetOrCreatePool(GameObject, Transform, Int32, Int32, Boolean, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"><p>Gets a pool for the <code data-dev-comment-type="paramref" class="paramref">gameObject</code>, or creates a new <a class="xref" href="GDX.Collections.Pooling.ListManagedPool.html">ListManagedPool</a> for it.</p>
+  <div class="markdown level1 summary"><p>Gets a pool for the <code data-dev-comment-type="paramref" class="paramref">gameObject</code>, or creates a new <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> for it.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -833,6 +977,22 @@ public static class GameObjectPool</code></pre>
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
+        <td><p>Not supported on DOTS Runtime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -844,7 +1004,7 @@ public static class GameObjectPool</code></pre>
                     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_GameObjectPool.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.GameObjectPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/main/Runtime/Collections/Pooling/GameObjectPool.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/GameObjectPool.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -857,18 +1017,17 @@ public static class GameObjectPool</code></pre>
         </div>
       </div>
       <footer>
-       <div class="grad-bottom"></div>
-       <div class="footer">
-         <div class="container">
-           <span class="pull-right">
-             <a href="#top">Back to top</a>
-           </span>
-           
-           <span>Built on 11-02-21 against <a href="https://github.com/dotBunny/GDX/releases/tag/v2.0.1"><strong>v2.0.1</strong></a>.<br>Generated by <strong>DocFX</strong></span>
-         </div>
-       </div>
-      </footer>
-    </div>
+      	<div class="grad-bottom"></div>
+      	<div class="footer">
+      		<div class="container">
+      			<span class="pull-right">
+      				<a href="#top">Back to top</a>
+      			</span>
+      			
+      			<span>Built on 2022-04-24 against <a href="https://github.com/dotBunny/GDX/commit/12c0db49adac102eabb44dda7bcd6d8fc2a52112"><strong>12c0db4</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Documentation/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      		</div>
+      	</div>
+      </footer></div>
     
     <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
     <script type="text/javascript" src="../styles/docfx.js"></script>

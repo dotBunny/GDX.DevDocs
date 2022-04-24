@@ -1,0 +1,974 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SimpleListManagedPool
+   | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SimpleListManagedPool
+   | GDX ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GDX.Collections.Pooling.SimpleListManagedPool">
+  
+  
+  <h1 id="GDX_Collections_Pooling_SimpleListManagedPool" data-uid="GDX.Collections.Pooling.SimpleListManagedPool" class="text-break">Class SimpleListManagedPool
+  </h1>
+  <div class="markdown level0 summary"><p>A <span class="xref">System.Object</span> <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a> backed pool implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SimpleListManagedPool</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Collections.Pooling.html">GDX.Collections.Pooling</a></h6>
+  <h5 id="GDX_Collections_Pooling_SimpleListManagedPool_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SimpleListManagedPool : IManagedPool</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool__ctor_System_Object_System_Func_GDX_Collections_Pooling_SimpleListManagedPool_System_Object__System_Int32_System_Int32_System_Object_System_Boolean_System_Boolean_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.%23ctor(System.Object%2CSystem.Func%7BGDX.Collections.Pooling.SimpleListManagedPool%2CSystem.Object%7D%2CSystem.Int32%2CSystem.Int32%2CSystem.Object%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L129">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool__ctor_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.#ctor*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool__ctor_System_Object_System_Func_GDX_Collections_Pooling_SimpleListManagedPool_System_Object__System_Int32_System_Int32_System_Object_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.#ctor(System.Object,System.Func{GDX.Collections.Pooling.SimpleListManagedPool,System.Object},System.Int32,System.Int32,System.Object,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">SimpleListManagedPool(Object, Func&lt;SimpleListManagedPool, Object&gt;, Int32, Int32, Object, Boolean, Boolean, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Create a <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleListManagedPool(object baseObject, Func&lt;SimpleListManagedPool, object&gt; createItemFunc, int minimumObjects = 10, int maximumObjects = 50, object containerObject = null, bool prewarmPool = true, bool allowCreateMore = true, bool allowReuseWhenCapped = false, bool allowManagedTearDown = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">baseObject</span></td>
+        <td><p>The object which going to be cloned.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="parametername">createItemFunc</span></td>
+        <td><p>The function used to create new items for the pool.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">minimumObjects</span></td>
+        <td><p>The minimum number of objects to be managed by the pool.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">maximumObjects</span></td>
+        <td><p>The maximum number of objects to be managed by the pool.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">containerObject</span></td>
+        <td><p>A reference to an object which should be used as the container for created items.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">prewarmPool</span></td>
+        <td><p>Should this pool create its items during the constructor?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowCreateMore</span></td>
+        <td><p>Can more items be created as needed when starved for items?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowReuseWhenCapped</span></td>
+        <td><p>Should we reuse oldest items when starving for items?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">allowManagedTearDown</span></td>
+        <td><p>Does the pool allow a managed tear down event call?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_BaseObject.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.BaseObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L74">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_BaseObject" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.BaseObject">BaseObject</h4>
+  <div class="markdown level1 summary"><p>The object which the pool is based off of, used as a model when creating new items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly object BaseObject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_ContainerObject.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.ContainerObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L80">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_ContainerObject" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.ContainerObject">ContainerObject</h4>
+  <div class="markdown level1 summary"><p>The object which serves as a container for all objects of the pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly object ContainerObject</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_Pooling_SimpleListManagedPool_ContainerObject_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Used more by implementations of pools, then this base class.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_Flags.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.Flags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L95">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_Flags" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.Flags">Flags</h4>
+  <div class="markdown level1 summary"><p>A <a class="xref" href="GDX.Collections.BitArray8.html">BitArray8</a> used to store pool based flags, as well as provide additional spots for implementations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BitArray8 Flags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.BitArray8.html">BitArray8</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_Pooling_SimpleListManagedPool_Flags_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Index 0-3 (<span class="xref">GDX.Collections.Pooling.SimpleListManagedPool.k_AllowCreateMoreFlag</span>, <span class="xref">GDX.Collections.Pooling.SimpleListManagedPool.k_AllowManagedTeardownFlag</span>,
+<span class="xref">GDX.Collections.Pooling.SimpleListManagedPool.k_AllowReuseFlag</span>, and <span class="xref">GDX.Collections.Pooling.SimpleListManagedPool.k_PrewarmPoolFlag</span>) are used by the
+<a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> itself, leaving 4-7 for additional use.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_InCachedCount.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.InCachedCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L64">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_InCachedCount" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.InCachedCount">InCachedCount</h4>
+  <div class="markdown level1 summary"><p>A cached count of the number of items contained in <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html#GDX_Collections_Pooling_SimpleListManagedPool_InItems">InItems</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int InCachedCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_InItems.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.InItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L85">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_InItems" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.InItems">InItems</h4>
+  <div class="markdown level1 summary"><p>A collection of items that are currently contained in the pool for use when spawning items upon request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleList&lt;object&gt; InItems</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_OnDestroyItem.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.OnDestroyItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L100">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_OnDestroyItem" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.OnDestroyItem">OnDestroyItem</h4>
+  <div class="markdown level1 summary"><p>A <code>delegate</code> call made when an item is destroyed by the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt; OnDestroyItem</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_OnReturnedToPool.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.OnReturnedToPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L105">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_OnReturnedToPool" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.OnReturnedToPool">OnReturnedToPool</h4>
+  <div class="markdown level1 summary"><p>A <code>delegate</code> call made when an item is returned to the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;SimpleListManagedPool, object&gt; OnReturnedToPool</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_OnSpawnedFromPool.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.OnSpawnedFromPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L110">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_OnSpawnedFromPool" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.OnSpawnedFromPool">OnSpawnedFromPool</h4>
+  <div class="markdown level1 summary"><p>A <code>delegate</code> call made when an item is spawned from the <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;SimpleListManagedPool, object&gt; OnSpawnedFromPool</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>, <span class="xref">System.Object</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_OnTearDown.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.OnTearDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L115">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_OnTearDown" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.OnTearDown">OnTearDown</h4>
+  <div class="markdown level1 summary"><p>A <code>delegate</code> call made when a pool is tearing down, before the items are pooled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;SimpleListManagedPool&gt; OnTearDown</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_OutCachedCount.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.OutCachedCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L69">View Source</a>
+  </span>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_OutCachedCount" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.OutCachedCount">OutCachedCount</h4>
+  <div class="markdown level1 summary"><p>A cached count of the number of items contained in <span class="xref">GDX.Collections.Pooling.SimpleListManagedPool.m_OutItems</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OutCachedCount</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_CreateItem.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.CreateItem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L172">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_CreateItem_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.CreateItem*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_CreateItem" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.CreateItem">CreateItem()</h4>
+  <div class="markdown level1 summary"><p>Create a pooled item and add it to the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateItem()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_Finalize.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L421">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_Finalize_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.Finalize*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_Finalize" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleListManagedPool</a> destructor which unregisters itself from <a class="xref" href="GDX.Collections.Pooling.ManagedPools.html">ManagedPools</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_ForceRemove_System_Object_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.ForceRemove(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L178">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_ForceRemove_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.ForceRemove*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_ForceRemove_System_Object_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.ForceRemove(System.Object)">ForceRemove(Object)</h4>
+  <div class="markdown level1 summary"><p>Remove an <code data-dev-comment-type="paramref" class="paramref">item</code> from an <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a> immediately, removing it from tracking and
+not calling any actions on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceRemove(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The target <span class="xref">System.Object</span> to attempt to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_Get_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.Get(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L207">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_Get_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.Get*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_Get_System_Boolean_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.Get(System.Boolean)">Get(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Get the next available item from an <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Get(bool triggerOnSpawnedFromPool = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">triggerOnSpawnedFromPool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An item if available, otherwise null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_GetBaseObject.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.GetBaseObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L268">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_GetBaseObject_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.GetBaseObject*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_GetBaseObject" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.GetBaseObject">GetBaseObject()</h4>
+  <div class="markdown level1 summary"><p>Return the <span class="xref">System.Object</span> which the pool is built from.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetBaseObject()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The <span class="xref">System.Object</span> the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a> is modelled around.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_GetKey.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.GetKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L274">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_GetKey_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.GetKey*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_GetKey" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.GetKey">GetKey()</h4>
+  <div class="markdown level1 summary"><p>Get the unique identifier for the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint GetKey()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><p>A unique identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_HasMinimumPooledItems.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.HasMinimumPooledItems%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L280">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_HasMinimumPooledItems_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.HasMinimumPooledItems*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_HasMinimumPooledItems" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.HasMinimumPooledItems">HasMinimumPooledItems()</h4>
+  <div class="markdown level1 summary"><p>Does the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a> contain the minimum number of items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMinimumPooledItems()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true/false if enough items are found contained in the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_IsAllowedManagedTearDown.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.IsAllowedManagedTearDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L286">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_IsAllowedManagedTearDown_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.IsAllowedManagedTearDown*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_IsAllowedManagedTearDown" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.IsAllowedManagedTearDown">IsAllowedManagedTearDown()</h4>
+  <div class="markdown level1 summary"><p>Should the<a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a> destroy itself when <a class="xref" href="GDX.Collections.Pooling.ManagedPools.html">ManagedPools</a> requests a tear down?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAllowedManagedTearDown()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true/false if flagged to allow for managed tear down / clean up.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_IsManaged_System_Object_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.IsManaged(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L292">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_IsManaged_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.IsManaged*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_IsManaged_System_Object_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.IsManaged(System.Object)">IsManaged(Object)</h4>
+  <div class="markdown level1 summary"><p>Is the <code data-dev-comment-type="paramref" class="paramref">item</code> managed by this <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsManaged(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <span class="xref">System.Object</span> to evaluate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true/false if the <code data-dev-comment-type="paramref" class="paramref">item</code> is managed by the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_IsPooled_System_Object_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.IsPooled(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L315">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_IsPooled_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.IsPooled*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_IsPooled_System_Object_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.IsPooled(System.Object)">IsPooled(Object)</h4>
+  <div class="markdown level1 summary"><p>Is the provided <code data-dev-comment-type="paramref" class="paramref">item</code> found in the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>'s internal available pool of
+objects?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPooled(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">item</code> to evaluate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_Return_System_Object_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.Return(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L329">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_Return_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.Return*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_Return_System_Object_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.Return(System.Object)">Return(Object)</h4>
+  <div class="markdown level1 summary"><p>Return the <code data-dev-comment-type="paramref" class="paramref">item</code> to the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>'s internal collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Return(object item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The <code data-dev-comment-type="paramref" class="paramref">item</code> to return to the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_ReturnAll_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.ReturnAll(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L361">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_ReturnAll_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.ReturnAll*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_ReturnAll_System_Boolean_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.ReturnAll(System.Boolean)">ReturnAll(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Return all spawned <span class="xref">System.Object</span>s to the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReturnAll(bool shouldShrink = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">shouldShrink</span></td>
+        <td><p>Should the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a> be shrunk to its original maximum size?</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_Pooling_SimpleListManagedPool_ReturnAll_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Shrinking the pools helps with pools that have grown out of necessity past their maximum size</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool_TearDown.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool.TearDown%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L386">View Source</a>
+  </span>
+  <a id="GDX_Collections_Pooling_SimpleListManagedPool_TearDown_" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.TearDown*"></a>
+  <h4 id="GDX_Collections_Pooling_SimpleListManagedPool_TearDown" data-uid="GDX.Collections.Pooling.SimpleListManagedPool.TearDown">TearDown()</h4>
+  <div class="markdown level1 summary"><p>Destroy all <span class="xref">System.Object</span>s associated with the <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TearDown()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Pooling_SimpleListManagedPool.md&amp;value=---%0Auid%3A%20GDX.Collections.Pooling.SimpleListManagedPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+      	<div class="grad-bottom"></div>
+      	<div class="footer">
+      		<div class="container">
+      			<span class="pull-right">
+      				<a href="#top">Back to top</a>
+      			</span>
+      			
+      			<span>Built on 2022-04-24 against <a href="https://github.com/dotBunny/GDX/commit/12c0db49adac102eabb44dda7bcd6d8fc2a52112"><strong>12c0db4</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Documentation/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      		</div>
+      	</div>
+      </footer></div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
