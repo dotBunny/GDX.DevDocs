@@ -11,6 +11,7 @@
     </InspectionScope>
   </Information>
   <IssueTypes>
+    <IssueType Id="CSharpErrors" Category="C# Compiler Errors" CategoryId="CSharpErrors" Description="" Severity="ERROR" />
     <IssueType Id="CheckNamespace" Category="Constraints Violations" CategoryId="ConstraintViolation" Description="Namespace does not correspond to file location" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CheckNamespace" />
     <IssueType Id="ClassNeverInstantiated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ClassNeverInstantiated.Global" />
     <IssueType Id="ClassNeverInstantiated.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Private accessibility" Severity="SUGGESTION" />
@@ -23,6 +24,7 @@
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="MustUseReturnValue" Category="Potential Code Quality Issues" CategoryId="CodeSmell" Description="Return value of [MustUseReturnValue] annotated method is not used" Severity="WARNING" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
+    <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
     <IssueType Id="RedundantNameQualifier" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant name qualifier" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantNameQualifier" />
     <IssueType Id="RedundantStringInterpolation" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant string interpolation" Severity="SUGGESTION" />
     <IssueType Id="RedundantUsingDirective" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant using directive" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantUsingDirective" />
@@ -42,18 +44,22 @@
   </IssueTypes>
   <Issues>
     <Project Name="GDX">
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="388-391" Line="12" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="743-765" Line="22" Message="Class 'AddressablesExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="1558-1572" Line="36" Message="Method 'CanInstantiate' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="2396-2406" Line="52" Message="Method 'CanRelease' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="3929-3935" Line="92" Message="Method 'HasRuntimeKey' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="4517-4523" Line="107" Message="Method 'IsEmpty' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\ArrayExtensions.cs" Offset="2550-2567" Line="60" Message="Method 'ContainsReference' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\BoxColliderExtensions.cs" Offset="235-238" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\BoxColliderExtensions.cs" Offset="516-537" Line="16" Message="Class 'BoxColliderExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\BoxColliderExtensions.cs" Offset="1057-1073" Line="24" Message="Method 'ContainsPosition' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\CameraExtensions.cs" Offset="235-238" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\CameraExtensions.cs" Offset="511-527" Line="16" Message="Class 'CameraExtensions' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\CameraExtensions.cs" Offset="1170-1176" Line="27" Message="Method 'RenderToTexture' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CameraExtensions.cs" Offset="3234-3245" Line="63" Message="Method 'RenderToPNG' is never used" />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\CameraExtensions.cs" Offset="3234-3245" Line="63" Message="Name 'RenderToPNG' does not match rule 'All methods'. Suggested name is 'RenderToPng'." />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\CameraExtensions.cs" Offset="3234-3245" Line="63" Message="Name 'RenderToPNG' does not match rule 'members_should_be_pascal_case'. Suggested name is 'RenderToPng'." />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\CapsuleColliderExtensions.cs" Offset="275-278" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\CapsuleColliderExtensions.cs" Offset="560-585" Line="17" Message="Class 'CapsuleColliderExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CapsuleColliderExtensions.cs" Offset="1023-1032" Line="25" Message="Method 'Direction' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CapsuleColliderExtensions.cs" Offset="1887-1903" Line="38" Message="Method 'OutSphereCenters' is never used" />
@@ -162,6 +168,7 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\NativeUniformArray3D.cs" Offset="2096-2100" Line="54" Message="Indexer 'this' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\NativeUniformArray3D.cs" Offset="2603-2607" Line="68" Message="Indexer 'this' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\NativeUniformArray3D.cs" Offset="3543-3555" Line="98" Message="Method 'GetFromIndex' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\SerializableDictionary.cs" Offset="319-342" Line="12" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Collections.Generic'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\SimpleList.cs" Offset="8931-8946" Line="225" Message="Method 'InsertUnchecked' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\SimpleList.cs" Offset="9514-9535" Line="237" Message="Method 'InsertWithExpandCheck' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\SimpleList.cs" Offset="10473-10494" Line="257" Message="Method 'InsertWithExpandCheck' is never used" />
@@ -207,13 +214,16 @@
       <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\ArrayPool.cs" Offset="509-519" Line="15" Message="Field can be made readonly" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\ArrayPool.cs" Offset="530-536" Line="16" Message="Field 'MaxPoolCapacities' can be made private" />
       <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\ArrayPool.cs" Offset="543-560" Line="16" Message="Field can be made readonly" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\GameObjectPool.cs" Offset="275-298" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Collections.Pooling'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\GameObjectPool.cs" Offset="1901-1907" Line="37" Message="Method 'CreatePool' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\IGameObjectPoolItem.cs" Offset="235-258" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Collections.Pooling'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\IGameObjectPoolItem.cs" Offset="1160-1173" Line="28" Message="Method 'GetParentPool' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\IGameObjectPoolItem.cs" Offset="2476-2488" Line="59" Message="Method 'ReturnToPool' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\IManagedPool.cs" Offset="914-925" Line="22" Message="Method 'ForceRemove' is never used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\IManagedPool.cs" Offset="1157-1160" Line="28" Message="Only implementations of method 'Get' are used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\IManagedPool.cs" Offset="2643-2652" Line="59" Message="Method 'IsManaged' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\IManagedPool.cs" Offset="2966-2974" Line="66" Message="Method 'IsPooled' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\ManagedPoolBuilder.cs" Offset="270-293" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Collections.Pooling'" />
       <Issue TypeId="ClassNeverInstantiated.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\ManagedPoolBuilder.cs" Offset="631-649" Line="17" Message="Class 'ManagedPoolBuilder' is never instantiated" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\ManagedPoolBuilder.cs" Offset="1020-1026" Line="26" Message="Field 'InstantiatesPerFrame' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Pooling\ManagedPoolBuilder.cs" Offset="1214-1220" Line="31" Message="Field 'DestroyBuilderOnFinish' can be made private" />
@@ -277,8 +287,11 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\SparseSet.cs" Offset="72537-72552" Line="1674" Message="Method 'RemoveUnchecked' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\SparseSet.cs" Offset="74167-74182" Line="1709" Message="Method 'RemoveUnchecked' is never used" />
       <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="313-316" Line="12" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="1008-1014" Line="30" Message="Field 'StartTicks' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="3147-3169" Line="94" Message="Method 'InitializeOnMainThread' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="1322-1328" Line="36" Message="Field 'StartTicks' can be made private" />
+      <Issue TypeId="CSharpErrors" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="3051-3052" Line="83" Message="Duplicate parameter '_'" />
+      <Issue TypeId="CSharpErrors" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="3054-3055" Line="83" Message="Duplicate parameter '_'" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="3629-3651" Line="104" Message="Method 'InitializeOnMainThread' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="363-376" Line="13" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="657-666" Line="19" Message="Class 'Profiling' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="2323-2341" Line="50" Message="Method 'TakeMemorySnapshot' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="4139-4153" Line="82" Message="Method 'StartProfiling' is never used" />
@@ -339,43 +352,55 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnitReport.cs" Offset="2232-2246" Line="69" Message="Method 'GetResultCount' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnitReport.cs" Offset="2539-2551" Line="83" Message="Method 'GetRootSuite' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnitReport.cs" Offset="2640-2647" Line="88" Message="Method 'Process' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\IntegerDiff.cs" Offset="213-243" Line="7" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\IntegerDiff.cs" Offset="324-330" Line="12" Message="Field 'Percentage' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\IntegerDiff.cs" Offset="367-373" Line="13" Message="Field 'Change' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\IntegerDiff.cs" Offset="404-410" Line="14" Message="Field 'LeftHandSide' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\IntegerDiff.cs" Offset="447-453" Line="15" Message="Field 'RightHandSide' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\LongDiff.cs" Offset="235-265" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\LongDiff.cs" Offset="343-349" Line="14" Message="Field 'Percentage' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\LongDiff.cs" Offset="386-392" Line="15" Message="Field 'Change' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\LongDiff.cs" Offset="424-430" Line="16" Message="Field 'LeftHandSide' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\LongDiff.cs" Offset="468-474" Line="17" Message="Field 'RightHandSide' can be made private" />
       <Issue TypeId="SimplifyStringInterpolation" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\LongDiff.cs" Offset="1397-1455" Line="47" Message="Simplify string interpolation" />
       <Issue TypeId="SimplifyStringInterpolation" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\LongDiff.cs" Offset="1618-1648" Line="48" Message="Simplify string interpolation" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\AssetBundleObjectInfo.cs" Offset="235-273" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Objects'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\AssetBundleObjectInfo.cs" Offset="475-489" Line="14" Message="Constant 'TypeDefinition' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\AssetBundleObjectInfo.cs" Offset="571-577" Line="16" Message="Field 'IsStreamedSceneAssetBundle' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\AssetBundleObjectInfo.cs" Offset="620-626" Line="17" Message="Field 'AssetCount' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\MeshObjectInfo.cs" Offset="235-273" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Objects'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\MeshObjectInfo.cs" Offset="468-482" Line="14" Message="Constant 'TypeDefinition' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\MeshObjectInfo.cs" Offset="555-561" Line="15" Message="Field 'IsReadable' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\MeshObjectInfo.cs" Offset="588-594" Line="16" Message="Field 'SubMeshCount' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\MeshObjectInfo.cs" Offset="622-628" Line="17" Message="Field 'Triangles' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\MeshObjectInfo.cs" Offset="1286-1292" Line="39" Message="Field 'VertexCount' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ObjectInfo.cs" Offset="316-354" Line="12" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Objects'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ObjectInfo.cs" Offset="793-807" Line="23" Message="Constant 'TypeDefinition' is never used" />
       <Issue TypeId="MemberCanBeProtected.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ObjectInfo.cs" Offset="1340-1346" Line="38" Message="Field 'Name' can be made protected" />
       <Issue TypeId="MemberCanBeProtected.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ObjectInfo.cs" Offset="1493-1499" Line="43" Message="Field 'Reference' can be made protected" />
       <Issue TypeId="MemberCanBeProtected.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ObjectInfo.cs" Offset="1855-1861" Line="53" Message="Field 'Type' can be made protected" />
       <Issue TypeId="MemberCanBeProtected.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ObjectInfo.cs" Offset="2599-2605" Line="76" Message="Method 'GetDetailedInformation' can be made protected" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ObjectInfoFactory.cs" Offset="250-288" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Objects'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ObjectInfoFactory.cs" Offset="474-487" Line="15" Message="Method 'GetObjectInfo' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ShaderObjectInfo.cs" Offset="235-273" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Objects'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ShaderObjectInfo.cs" Offset="470-484" Line="14" Message="Constant 'TypeDefinition' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ShaderObjectInfo.cs" Offset="559-565" Line="15" Message="Field 'IsSupported' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\ShaderObjectInfo.cs" Offset="593-599" Line="16" Message="Field 'PassCount' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\TextureObjectInfo.cs" Offset="278-316" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Objects'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\TextureObjectInfo.cs" Offset="604-610" Line="16" Message="Field 'Format' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\TextureObjectInfo.cs" Offset="643-649" Line="17" Message="Field 'Height' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\TextureObjectInfo.cs" Offset="673-679" Line="19" Message="Field 'IsReadable' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Objects\TextureObjectInfo.cs" Offset="706-712" Line="20" Message="Field 'Width' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\ResourceReport.cs" Offset="308-338" Line="12" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource'" />
       <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\ResourceReport.cs" Offset="2065-2069" Line="44" Message="Method 'Output' return value is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\ResourceReport.cs" Offset="6220-6231" Line="134" Message="Method 'CreateYesNo' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\ResourceReportContext.cs" Offset="213-243" Line="7" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource'" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\ApplicationSection.cs" Offset="306-345" Line="12" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Sections'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\ApplicationSection.cs" Offset="761-767" Line="21" Message="Field 'ActiveScene' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\ApplicationSection.cs" Offset="936-942" Line="26" Message="Field 'Created' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\ApplicationSection.cs" Offset="1117-1123" Line="31" Message="Field 'Platform' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\ApplicationSection.cs" Offset="1170-1176" Line="33" Message="Constructor 'ApplicationSection' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemoryDiffSection.cs" Offset="235-274" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Sections'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemoryDiffSection.cs" Offset="438-444" Line="14" Message="Field 'MonoHeapSize' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemoryDiffSection.cs" Offset="486-492" Line="15" Message="Field 'MonoUsedSize' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemoryDiffSection.cs" Offset="534-540" Line="16" Message="Field 'UnityGraphicsDriverAllocated' can be made private" />
@@ -383,11 +408,14 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemoryDiffSection.cs" Offset="659-665" Line="18" Message="Field 'UnityTotalReservedMemory' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemoryDiffSection.cs" Offset="719-725" Line="19" Message="Field 'UnityTotalUnusedReservedMemory' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemoryDiffSection.cs" Offset="787-793" Line="21" Message="Constructor 'MemoryDiffSection' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemorySection.cs" Offset="265-304" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports.Resource.Sections'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\Sections\MemorySection.cs" Offset="1812-1818" Line="47" Message="Constructor 'MemorySection' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesAuditReport.cs" Offset="531-552" Line="18" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesAuditReport.cs" Offset="1076-1082" Line="30" Message="Field 'ApplicationContext' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesAuditReport.cs" Offset="1986-1992" Line="48" Message="Field 'LastTouched' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesAuditReport.cs" Offset="5405-5411" Line="129" Message="Method 'Query' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesAuditReport.cs" Offset="10090-10096" Line="241" Message="Method 'Remove' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesDiffReport.cs" Offset="419-440" Line="14" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Developer.Reports'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesDiffReport.cs" Offset="613-619" Line="19" Message="Field 'AddedObjects' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesDiffReport.cs" Offset="797-803" Line="22" Message="Field 'CommonObjects' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesDiffReport.cs" Offset="982-988" Line="25" Message="Field 'KnownUsage' can be made private" />
@@ -400,13 +428,15 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\WaitForMilliseconds.cs" Offset="612-621" Line="22" Message="Method 'WaitAsync' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\WaitForMilliseconds.cs" Offset="783-787" Line="30" Message="Method 'Wait' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\WaitForMilliseconds.cs" Offset="1252-1257" Line="51" Message="Method 'Reset' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="249-252" Line="8" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="419-426" Line="14" Message="Class 'Display' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="949-964" Line="24" Message="Method 'GetScreenHeight' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="1532-1546" Line="36" Message="Method 'GetScreenWidth' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="1974-1988" Line="47" Message="Method 'IsHDRSupported' is never used" />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="1974-1988" Line="47" Message="Name 'IsHDRSupported' does not match rule 'All methods'. Suggested name is 'IsHdrSupported'." />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="1974-1988" Line="47" Message="Name 'IsHDRSupported' does not match rule 'members_should_be_pascal_case'. Suggested name is 'IsHdrSupported'." />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="2701-2713" Line="63" Message="Method 'IsHDREnabled' is never used" />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="2701-2713" Line="63" Message="Name 'IsHDREnabled' does not match rule 'All methods'. Suggested name is 'IsHdrEnabled'." />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="2701-2713" Line="63" Message="Name 'IsHDREnabled' does not match rule 'members_should_be_pascal_case'. Suggested name is 'IsHdrEnabled'." />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="275-278" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="1289-1304" Line="29" Message="Method 'DestroyChildren' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="4958-4975" Line="99" Message="Method 'GetOrAddComponent' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="5605-5617" Line="111" Message="Method 'GetScenePath' is never used" />
@@ -416,10 +446,11 @@
       <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\IListExtensions.cs" Offset="6575-6579" Line="137" Message="Method 'RemoveItems' return value is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\InspectorMessageBoxAttribute.cs" Offset="656-660" Line="22" Message="Enum member 'None' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\IO\CoalesceStream.cs" Offset="285-299" Line="11" Message="Class 'CoalesceStream' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\IO\Compression\TarFile.cs" Offset="272-290" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.IO.Compression'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\IO\Compression\TarFile.cs" Offset="3182-3188" Line="67" Message="Method 'ExtractStream' can be made private" />
-      <Issue TypeId="MustUseReturnValue" File="Packages\com.dotbunny.gdx\GDX\IO\Compression\TarFile.cs" Offset="3505-3509" Line="74" Message="Return value of method is not used. Fewer bytes can be read than requested" />
-      <Issue TypeId="MustUseReturnValue" File="Packages\com.dotbunny.gdx\GDX\IO\Compression\TarFile.cs" Offset="3951-3955" Line="84" Message="Return value of method is not used. Fewer bytes can be read than requested" />
-      <Issue TypeId="MustUseReturnValue" File="Packages\com.dotbunny.gdx\GDX\IO\Compression\TarFile.cs" Offset="5185-5189" Line="105" Message="Return value of method is not used. Fewer bytes can be read than requested" />
+      <Issue TypeId="TooWideLocalVariableScope" File="Packages\com.dotbunny.gdx\GDX\IO\Compression\TarFile.cs" Offset="3451-3464" Line="72" Message="Local variable 'readByteCount' can be declared in inner scope" />
+      <Issue TypeId="RedundantAssignment" File="Packages\com.dotbunny.gdx\GDX\IO\Compression\TarFile.cs" Offset="3524-3539" Line="75" Message="Value assigned is not used in any execution path" />
+      <Issue TypeId="MustUseReturnValue" File="Packages\com.dotbunny.gdx\GDX\IO\Compression\TarFile.cs" Offset="5517-5521" Line="112" Message="Return value of method is not used. Fewer bytes can be read than requested" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Jobs\ParallelFor\Color32MatchJob.cs" Offset="538-553" Line="17" Message="Struct 'Color32MatchJob' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Jobs\ParallelFor\Color32MatchJob.cs" Offset="760-766" Line="22" Message="Field 'A' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Jobs\ParallelFor\Color32MatchJob.cs" Offset="975-981" Line="27" Message="Field 'B' can be made private" />
@@ -466,30 +497,34 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\IRandomProvider.cs" Offset="5739-5767" Line="105" Message="Method 'NextUnsignedIntegerExclusive' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\RandomWrapper.cs" Offset="330-343" Line="11" Message="Constructor 'RandomWrapper' is never used" />
       <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\WELL1024a.cs" Offset="336-358" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Mathematics.Random'" />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\WELL1024a.cs" Offset="987-996" Line="23" Message="Name 'WELL1024a' does not match rule 'members_should_be_pascal_case'. Suggested name is 'Well1024A'." />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\WELL1024a.cs" Offset="10450-10456" Line="271" Message="Method 'Equals' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\WELL1024a.cs" Offset="10500-10506" Line="272" Message="Method 'Equals' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Rotate.cs" Offset="275-290" Line="9" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX.Mathematics'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Rotate.cs" Offset="471-477" Line="15" Message="Class 'Rotate' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Rotate.cs" Offset="1299-1306" Line="28" Message="Method 'Towards' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Smooth.cs" Offset="429-435" Line="14" Message="Class 'Smooth' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Smooth.cs" Offset="1428-1439" Line="32" Message="Method 'Exponential' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Smooth.cs" Offset="2347-2353" Line="48" Message="Method 'HalfLifeToSmoothingFactor' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Memory.cs" Offset="295-298" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Memory.cs" Offset="464-470" Line="16" Message="Class 'Memory' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Memory.cs" Offset="1022-1029" Line="30" Message="Method 'CleanUp' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Memory.cs" Offset="1684-1696" Line="49" Message="Method 'CleanUpAsync' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\MeshExtensions.cs" Offset="261-264" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\MeshExtensions.cs" Offset="535-549" Line="17" Message="Class 'MeshExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\MeshExtensions.cs" Offset="939-954" Line="27" Message="Method 'CalculateVolume' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\MonoBehaviourExtensions.cs" Offset="275-278" Line="10" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\MonoBehaviourExtensions.cs" Offset="558-581" Line="17" Message="Class 'MonoBehaviourExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\MonoBehaviourExtensions.cs" Offset="2412-2446" Line="49" Message="Method 'GetFirstComponentInChildrenComplex' is never used" />
       <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="318-321" Line="11" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="783-802" Line="23" Message="Constant 'CharacterPoolLength' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="2455-2473" Line="60" Message="Method 'EnsureFileWritable' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="3921-3942" Line="96" Message="Method 'GetHardwareGeneration' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="6785-6791" Line="166" Message="Method 'GetRandomSafeCharacter' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="9147-9156" Line="219" Message="Method 'IsFocused' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="9734-9748" Line="236" Message="Method 'IsFileWritable' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="10706-10716" Line="258" Message="Method 'IsHeadless' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="6806-6812" Line="167" Message="Method 'GetRandomSafeCharacter' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="9168-9177" Line="220" Message="Method 'IsFocused' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="9733-9747" Line="237" Message="Method 'IsFileWritable' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="230-233" Line="8" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="509-515" Line="16" Message="Constant 'PrivateFieldFlags' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="715-721" Line="18" Message="Constant 'PublicStaticFlags' can be made private" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="233-236" Line="8" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="512-531" Line="15" Message="Class 'RigidbodyExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="1148-1163" Line="26" Message="Method 'MomentOfInertia' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\SegmentedString.cs" Offset="2026-2037" Line="59" Message="Method 'AsCharArray' is never used" />
@@ -511,8 +546,11 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\StringExtensions.cs" Offset="1597-1617" Line="51" Message="Constant 'AsciiNumberSeparator' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\StringExtensions.cs" Offset="3789-3800" Line="98" Message="Method 'Concatenate' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\StringExtensions.cs" Offset="28276-28288" Line="677" Message="Method 'PartialMatch' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\TransformExtensions.cs" Offset="295-298" Line="11" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\TransformExtensions.cs" Offset="2275-2294" Line="52" Message="Method 'GetActiveChildCount' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\UnsupportedRuntimeException.cs" Offset="182-209" Line="8" Message="Class 'UnsupportedRuntimeException' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Vector2Extensions.cs" Offset="301-304" Line="11" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX\Vector3Extensions.cs" Offset="301-304" Line="11" Message="Namespace does not correspond to file location, should be: 'GDX.Packages.com.dotbunny.gdx.GDX'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Vector3Extensions.cs" Offset="3222-3240" Line="69" Message="Method 'HorizontalDistance' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Vector3Extensions.cs" Offset="3845-3858" Line="82" Message="Method 'DistanceToRay' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\VisualScriptingCompatibleAttribute.cs" Offset="1362-1396" Line="39" Message="Constructor 'VisualScriptingCompatibleAttribute' is never used" />
@@ -522,18 +560,19 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\AssemblyProvider.cs" Offset="739-745" Line="25" Message="Field 'RuntimeAssembly' can be made private" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="369-399" Line="13" Message="Using directive is not required by the code and can be safely removed" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="401-423" Line="14" Message="Using directive is not required by the code and can be safely removed" />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="2403-2427" Line="62" Message="Name 'CaptureEditorWindowToPNG' does not match rule 'All methods'. Suggested name is 'CaptureEditorWindowToPng'." />
-      <Issue TypeId="RedundantStringInterpolation" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="3310-3311" Line="86" Message="Redundant string interpolation" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="4858-4864" Line="126" Message="Method 'CaptureEditorWindowToPNG' can be made private" />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="4877-4901" Line="126" Message="Name 'CaptureEditorWindowToPNG' does not match rule 'All methods'. Suggested name is 'CaptureEditorWindowToPng'." />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="5576-5607" Line="143" Message="Name 'CaptureFocusedEditorWindowToPNG' does not match rule 'All methods'. Suggested name is 'CaptureFocusedEditorWindowToPng'." />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="8669-8682" Line="218" Message="Method 'FinishProfile' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="9712-9732" Line="245" Message="Method 'GenerateProjectFiles' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16149-16160" Line="384" Message="Method 'ResetEditor' is never used" />
-      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16315-16322" Line="391" Message="Qualifier is redundant" />
-      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16342-16349" Line="391" Message="Qualifier is redundant" />
-      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16944-16951" Line="407" Message="Qualifier is redundant" />
-      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16971-16978" Line="407" Message="Qualifier is redundant" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="483-493" Line="17" Message="Namespace does not correspond to file location, should be: 'GDX.Editor.Packages.com.dotbunny.gdx.GDX.Editor'" />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="2324-2348" Line="60" Message="Name 'CaptureEditorWindowToPNG' does not match rule 'members_should_be_pascal_case'. Suggested name is 'CaptureEditorWindowToPng'." />
+      <Issue TypeId="RedundantStringInterpolation" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="3231-3232" Line="84" Message="Redundant string interpolation" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="4779-4785" Line="124" Message="Method 'CaptureEditorWindowToPNG' can be made private" />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="4798-4822" Line="124" Message="Name 'CaptureEditorWindowToPNG' does not match rule 'members_should_be_pascal_case'. Suggested name is 'CaptureEditorWindowToPng'." />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="5497-5528" Line="141" Message="Name 'CaptureFocusedEditorWindowToPNG' does not match rule 'members_should_be_pascal_case'. Suggested name is 'CaptureFocusedEditorWindowToPng'." />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="8590-8603" Line="216" Message="Method 'FinishProfile' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="9633-9653" Line="243" Message="Method 'GenerateProjectFiles' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16012-16023" Line="382" Message="Method 'ResetEditor' is never used" />
+      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16178-16185" Line="389" Message="Qualifier is redundant" />
+      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16205-16212" Line="389" Message="Qualifier is redundant" />
+      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16807-16814" Line="405" Message="Qualifier is redundant" />
+      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16834-16841" Line="405" Message="Qualifier is redundant" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\BuildInfoBuildProcessor.cs" Offset="2996-3019" Line="67" Message="Class 'BuildInfoBuildProcessor' is never used" />
       <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\BuildInfoBuildProcessor.cs" Offset="3799-3816" Line="90" Message="Qualifier is redundant" />
       <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\BuildInfoBuildProcessor.cs" Offset="4486-4503" Line="108" Message="Qualifier is redundant" />
@@ -566,14 +605,16 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="10300-10311" Line="266" Message="Method 'GetPriority' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="345-360" Line="12" Message="Method 'GetSectionIndex' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="806-823" Line="24" Message="Method 'GetSearchKeywords' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="518-528" Line="17" Message="Namespace does not correspond to file location, should be: 'GDX.Editor.Packages.com.dotbunny.gdx.GDX.Editor.ProjectSettings'" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="8911-8914" Line="228" Message="Method 'Get' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="18719-18724" Line="455" Message="Method 'Reset' is never used" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\DisableInInspectorAttributePropertyDrawer.cs" Offset="197-226" Line="6" Message="Using directive is not required by the code and can be safely removed" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\DisableInInspectorAttributePropertyDrawer.cs" Offset="248-277" Line="8" Message="Using directive is not required by the code and can be safely removed" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\DisableInInspectorAttributePropertyDrawer.cs" Offset="529-570" Line="16" Message="Class 'DisableInInspectorAttributePropertyDrawer' is never used" />
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="339-365" Line="12" Message="Namespace does not correspond to file location, should be: 'GDX.Editor.Packages.com.dotbunny.gdx.GDX.Editor.PropertyDrawers'" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="1229-1265" Line="30" Message="Class 'SerializableDictionaryPropertyDrawer' is never used" />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="1834-1849" Line="44" Message="Name 'm_AddKeyFieldID' does not match rule 'Non-public instance fields'. Suggested name is 'm_AddKeyFieldId'." />
-      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="29267-29286" Line="669" Message="Name 'AddKeyFieldIDPrefix' does not match rule 'non_private_constants_should_be_pascal_case'. Suggested name is 'AddKeyFieldIdPrefix'." />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="1834-1849" Line="44" Message="Name 'm_AddKeyFieldID' does not match rule 'instance_fields_should_be_camel_case'. Suggested name is 'm_AddKeyFieldId'." />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="29252-29271" Line="668" Message="Name 'AddKeyFieldIDPrefix' does not match rule 'non_private_constants_should_be_pascal_case'. Suggested name is 'AddKeyFieldIdPrefix'." />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\SerializedProperties.cs" Offset="175-200" Line="4" Message="Using directive is not required by the code and can be safely removed" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\SerializedStopwatch.cs" Offset="1205-1217" Line="41" Message="Property 'ElapsedTicks' is never used (except inside its declaration)" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\SerializedStopwatch.cs" Offset="1370-1387" Line="49" Message="Property 'SerializationSpan' is never used (except inside its declaration)" />
@@ -583,6 +624,7 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\VersionControl.cs" Offset="1691-1697" Line="39" Message="Method 'GetAssetListFromFolder' can be made private" />
     </Project>
     <Project Name="GDX.Editor.Tests.EditMode">
+      <Issue TypeId="CheckNamespace" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\AutomationTests.cs" Offset="402-412" Line="15" Message="Namespace does not correspond to file location, should be: 'GDX.Editor.Packages.com.dotbunny.gdx.GDX.Editor.Tests.EditMode'" />
       <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\DomainReloadTests.cs" Offset="621-641" Line="21" Message="Name 'LeakDetectionModeKey' does not match rule 'Non-public const'. Suggested name is 'k_LeakDetectionModeKey'." />
       <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\DomainReloadTests.cs" Offset="768-780" Line="24" Message="Qualifier is redundant" />
       <Issue TypeId="RedundantStringInterpolation" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\DomainReloadTests.cs" Offset="2415-2416" Line="58" Message="Redundant string interpolation" />
