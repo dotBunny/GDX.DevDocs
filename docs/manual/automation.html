@@ -79,17 +79,44 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="automation">Automation</h1>
 
+<p>Every commit to the <a href="https://github.com/dotBunny/GDX/tree/dev"><code>dev</code></a> branch runs through a barrage of automated testing to validate the expected behaviour and quality of the code being written inside of a private TeamCity installation. The results of all of the ran tests / build configurations are published as they complete back to GitHub and are viewable via the little indicator next to a commit.</p>
 <h2 id="automated-tests">Automated Tests</h2>
-<p>Every commit triggers an assortment of automated tests that validate the GDX package. You can see the status of those tests registered against every commit in the <strong>dev</strong> branch on <a href="https://github.com/dotBunny/GDX/tree/dev">GitHub</a>. It starts with a simple &quot;can we generate project files&quot;. This tests if any API usage is invalid across different package arrangements and Unity versions. If those are successful, each version will respectively trigger a subsequent set of unit tests (powered by UTR) further validating expected outcomes of direct API calls. Finally, assuming all of the above has passed successfully, a version will trigger a build that will then be ran to evaluate our Build Verification Tests.</p>
-<h2 id="coverage"><a href="/reports/coverage/Report/index.html">Coverage</a></h2>
-<p>How much of the codebase is covered by unit tests.
-<a href="/reports/coverage/Report/index.html"><img src="/reports/coverage/Report/badge_linecoverage.svg" alt="Code Coverage"></a></p>
-<h2 id="duplication"><a href="/reports/duplicates/duplicates.xml">Duplication</a></h2>
-<p>Are we duplicating code?</p>
-<h2 id="inspection"><a href="/reports/inspection/inspection.xml">Inspection</a></h2>
-<p>Static code analysis of numerous resharper-esque corrections.</p>
-<h2 id="portability"><a href="/reports/portability/index.html">Portability</a></h2>
-<p>A quick series of tests to identify what versions of .NET is required for GDX to function fully.</p>
+<p>All test that run inside of TeamCity are named in a very descriptive manner, GDX-<code>Test</code>-<code>UnityVersion</code>-<code>Variant</code>.</p>
+<h3 id="gdx-generateproject">GDX-GenerateProject</h3>
+<p>The first set of automated tests triggered are used to ensure that any API usage does not cause any compilation issues against the different versions of Unity supported. They additionally also try different inclusions of packages to ensure the <code>#ifdef</code> are exercised; this is the empty/packages variant definition. The run ends with the generation of the projects solution files via <a class="xref" href="../api/GDX.Editor.Automation.html#GDX_Editor_Automation_GenerateProjectFiles"><code>GDX.Editor.Automation.GenerateProjectFiles</code></a> which are stored as artifacts for future use.</p>
+<h3 id="gdx-editmode">GDX-EditMode</h3>
+<p>Next, assuming the previous test in the series has been successful, an associated <em>GDX-EditMode</em> test will run. These perform author-time unit testing (powered by UTR) validating expected outcomes from direct API usage calls.</p>
+<h3 id="gdx-bvt">GDX-BVT</h3>
+<p>Finally, assuming the previous test in the series has been successful, multiple builds will be made to run build verification tests. Currently Windows and macOS are covered at this point, with both Mono and IL2CPP backends being exercised. This works out to 8 builds per supported Unity version.</p>
+<h2 id="documentation">Documentation</h2>
+<p>In parallel to all of the automated testing, documentation is generated for the <a href="https://github.com/dotBunny/GDX/tree/dev"><code>dev</code></a> and gets posted to <a href="https://gdx-dev.dotbunny.com/">https://gdx-dev.dotbunny.com/</a>. Additionally, when a commit is made to the <a href="https://github.com/dotBunny/GDX/tree/main"><code>main</code></a> branch, documentation is likewise generated and posted to <a href="https://gdx.dotbunny.com/">https://gdx.dotbunny.com/</a>.</p>
+<p>Some of the generated content which is more for developer reference can be found below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Artifact</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="/reports/coverage/Report/index.html" title="Code Coverage">Code Coverage</a></td>
+<td style="text-align: left;">How much of the codebase is covered by unit testing? This is what drives the badge on the front page.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/reports/inspection/inspection.xml" title="Inspection">Inspection</a></td>
+<td style="text-align: left;">The results from static analysis of the codebase, including violations of its predetermined style guide.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/reports/duplicates/duplicates.xml" title="Duplication">Duplication</a></td>
+<td style="text-align: left;">How much duplication of code is there? This one is tricky as we don't shy away from writing boilerplate code to enable performance.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="/reports/portability/index.html" title="Portability">Portability</a></td>
+<td style="text-align: left;">A quick series of tests to identify what versions of .NET is required for GDX to function fully.</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -118,7 +145,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-05-06 against <a href="https://github.com/dotBunny/GDX/commit/6490a35a442aa5274d22867bcb0e8975fa632cd5"><strong>6490a35</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Documentation/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-05-07 against <a href="https://github.com/dotBunny/GDX/commit/3223b25baa87ea1d5186bbd1dd0388b4f27b4f22"><strong>3223b25</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
