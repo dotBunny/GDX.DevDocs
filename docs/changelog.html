@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
   
@@ -93,13 +93,13 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <h3 id="added">Added</h3>
 <ul>
 <li>Dependencies on <code>com.unity.mathematics</code>, <code>com.unity.burst</code>, <code>com.unity.jobs</code> and <code>com.unity.collections</code> packages.</li>
-<li>Support for <code>com.unity.runtime.dots</code> (UNITY_DOTSRUNTIME) builds. Unsupported functionality will cause compilation errors during builds for immediate feedback on unsupported usage. Additionally, unsupported methods are flagged with an <code>UnsupportedRuntimeException</code> which is visible in <a href="https://gdx.dotbunny.com/api">documentation</a> as well as IDE intelli-sense.</li>
+<li>Support for <code>com.unity.runtime.dots</code> (UNITY_DOTSRUNTIME) builds. Unsupported functionality will cause compilation errors during builds for immediate feedback on unsupported usage. Additionally, unsupported methods are flagged with an <code>UnsupportedRuntimeException</code> which is visible in <a href="https://gdx-dev.dotbunny.com/api">documentation</a> as well as IDE intelli-sense.</li>
 <li>Support for <code>com.unity.entities</code> programming patterns.</li>
 <li><code>BuildVerificationReport</code> structure for quick validation of builds, including a <code>TestBehaviour</code>.</li>
 <li><code>StringKeyDictionary</code> to optimize one of the most common use cases for dictionaries.</li>
 <li><code>SegmentedString</code> to support string search patterns.</li>
 <li>Unity editor non-pro (light) theme.</li>
-<li>Additional information around naming conventions and <a href="https://gdx.dotbunny.com/manual/contributing/design-guidelines.html">design guidelines</a> to documentation.</li>
+<li>Additional information around naming conventions and <a href="https://gdx-dev.dotbunny.com/manual/contributing/design-guidelines.html">design guidelines</a> to documentation.</li>
 </ul>
 <h3 id="changed">Changed</h3>
 <ul>
@@ -211,7 +211,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </blockquote>
 <h3 id="added-4">Added</h3>
 <ul>
-<li>New <a href="https://gdx.dotbunny.com/manual/faq.html">FAQ</a> section of the website, addressing some of the more frequently asked questions.</li>
+<li>New <a href="https://gdx-dev.dotbunny.com/manual/faq.html">FAQ</a> section of the website, addressing some of the more frequently asked questions.</li>
 <li><code>WELL1024a</code> implementation to replace removed <code>MersenneTwister</code> in GDX .</li>
 <li><code>IRandomProvider</code> and <code>RandomAdaptor</code> to allow for some interchange with existing usages; these are slow and should be used as a last resort.</li>
 <li><code>StringExtensions::GetStableHashCode()</code> for generating hashcode of strings identical to <code>GetHashCode()</code>, without the virtual call.</li>
@@ -230,7 +230,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="removed-1">Removed</h3>
 <ul>
-<li>Removed some supporting types and methods used by GDX's project settings from <a href="https://gdx.dotbunny.com">documentation</a>.</li>
+<li>Removed some supporting types and methods used by GDX's project settings from <a href="https://gdx-dev.dotbunny.com">documentation</a>.</li>
 <li>Removed <code>MersenneTwister</code> to allow for our new licensing model (functionally replaced with <code>WELL1024a</code> implementation).</li>
 </ul>
 <h2 id="130---2021-04-06">[1.3.0] - 2021-04-06</h2>
@@ -445,7 +445,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="changed-9">Changed</h3>
 <ul>
-<li><a href="https://gdx.dotbunny.com/">Generated documentation</a> now includes <code>private</code> and <code>internal</code> classes.</li>
+<li><a href="https://gdx-dev.dotbunny.com/">Generated documentation</a> now includes <code>private</code> and <code>internal</code> classes.</li>
 <li>Lowered feature requirement of <code>com.unity.jobs</code> to <code>0.2.7</code>, and <code>com.unity.burst</code> to <code>1.0.0</code>.</li>
 <li><code>GDX.Developer</code> assembly collapsed back into main <code>GDX</code> assembly.</li>
 <li>Modified settings framework to be in a single <code>GDX</code> category in the <strong>Project Settings</strong> window, with collapsable sections contained within.</li>
@@ -461,11 +461,11 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 <h2 id="121---2021-01-24">[1.2.1] - 2021-01-24</h2>
 <p><em><strong>&quot;Old Is New&quot;</strong></em></p>
 <blockquote>
-<p>A DocFX generated <a href="https://gdx.dotbunny.com/">site</a> is now being stood up by our internal CI when a new commit is made to the <code>main</code> branch.</p>
+<p>A DocFX generated <a href="https://gdx-dev.dotbunny.com/">site</a> is now being stood up by our internal CI when a new commit is made to the <code>main</code> branch.</p>
 </blockquote>
 <h3 id="added-12">Added</h3>
 <ul>
-<li>A proper <a href="https://gdx.dotbunny.com/manual/getting-started.html"><strong>Getting Started</strong></a> section to the manual</li>
+<li>A proper <a href="https://gdx-dev.dotbunny.com/manual/getting-started.html"><strong>Getting Started</strong></a> section to the manual</li>
 </ul>
 <h3 id="changed-10">Changed</h3>
 <ul>
@@ -473,7 +473,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
 </ul>
 <h3 id="removed-5">Removed</h3>
 <ul>
-<li>Removed the Wiki links and entries on GitHub, favoring discussions and content additions to the <a href="https://gdx.dotbunny.com/">documentation</a>.</li>
+<li>Removed the Wiki links and entries on GitHub, favoring discussions and content additions to the <a href="https://gdx-dev.dotbunny.com/">documentation</a>.</li>
 </ul>
 <h2 id="120---2021-01-20">[1.2.0] - 2021-01-20</h2>
 <p><em><strong>&quot;Cisco's Birthday&quot;</strong></em></p>
@@ -701,7 +701,7 @@ and this project adheres to <a href="https://semver.org/spec/v2.0.0.html">Semant
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-05-09 against <a href="https://github.com/dotBunny/GDX/commit/b532e00a6498f92527f5fa07ce0fd2acb9c709e6"><strong>b532e00</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-05-09 against <a href="https://github.com/dotBunny/GDX/commit/880d404b8a02fc1cc225b3fdcac383c75d528519"><strong>880d404</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
