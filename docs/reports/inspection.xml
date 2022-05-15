@@ -20,6 +20,7 @@
     <IssueType Id="MemberCanBePrivate.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made private" Description="Member can be made private: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBePrivate.Global" />
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
+    <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
     <IssueType Id="UnassignedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Unassigned field" Description="Unassigned field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnassignedGetOnlyAutoProperty" Category="Common Practices and Code Improvements" CategoryId="BestPractice" Description="Get-only auto-property is never assigned" Severity="WARNING" />
     <IssueType Id="UnusedAutoPropertyAccessor.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Auto-property accessor is never used" Description="Auto-property accessor is never used: Non-private accessibility" Severity="WARNING" Global="True" />
@@ -500,7 +501,7 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="4951-4957" Line="127" Message="Method 'CaptureEditorWindowToPNG' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="9201-9214" Line="231" Message="Method 'FinishProfile' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="10244-10264" Line="258" Message="Method 'GenerateProjectFiles' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16843-16854" Line="403" Message="Method 'ResetEditor' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16794-16805" Line="402" Message="Method 'ResetEditor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\BuildInfoBuildProcessor.cs" Offset="2996-3019" Line="67" Message="Class 'BuildInfoBuildProcessor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\ScriptingDefinesBuildProcessor.cs" Offset="525-555" Line="15" Message="Class 'ScriptingDefinesBuildProcessor' is never used" />
       <Issue TypeId="UnassignedGetOnlyAutoProperty" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\ScriptingDefinesBuildProcessor.cs" Offset="832-845" Line="21" Message="Get-only auto-property 'callbackOrder' is never assigned" />
@@ -546,6 +547,7 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\VersionControl.cs" Offset="1691-1697" Line="39" Message="Method 'GetAssetListFromFolder' can be made private" />
     </Project>
     <Project Name="GDX.Editor.Tests.EditMode">
+      <Issue TypeId="RedundantAssignment" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\AutomationTests.cs" Offset="1507-1513" Line="44" Message="Value assigned is not used in any execution path" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\DomainReloadTests.cs" Offset="2642-2647" Line="66" Message="Method 'Setup' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\DomainReloadTests.cs" Offset="4108-4116" Line="102" Message="Method 'TearDown' is never used" />
     </Project>
