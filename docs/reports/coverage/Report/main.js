@@ -322,7 +322,6 @@ var assemblies = [
       { "name": "GDX.UnsupportedRuntimeException", "rp": "GDX_UnsupportedRuntimeException.html", "cl": 0, "ucl": 9, "cal": 9, "tl": 24, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Vector2Extensions", "rp": "GDX_Vector2Extensions.html", "cl": 50, "ucl": 0, "cal": 50, "tl": 152, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Vector3Extensions", "rp": "GDX_Vector3Extensions.html", "cl": 60, "ucl": 8, "cal": 68, "tl": 197, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GDX.VisualScriptingCompatibleAttribute", "rp": "GDX_VisualScriptingCompatibleAttribute.html", "cl": 0, "ucl": 12, "cal": 12, "tl": 61, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 
