@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Serializable Dictionary | GDX </title>
+    <title>Contributing | GDX </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Serializable Dictionary | GDX ">
+    <meta name="title" content="Contributing | GDX ">
     <meta name="generator" content="docfx 2.59.2.0">
     
     <link rel="shortcut icon" href="../../favicon.ico">
@@ -87,34 +87,18 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="serializable-dictionary">Serializable Dictionary</h1>
+<h1 id="contributing">Contributing</h1>
 
-<h2 id="a-new-beginning">A New Beginning</h2>
-<p>A typical piece of feedback we've heard repeatedly is that Unity needs to have a Dictionary collection capable of being serialized. With the introduction of template-based property drawers in <code>Unity 2020.1</code>, the final piece to solving that puzzle landed. While the core functionality backing the SerializableDictionary is compatible across all supported versions of Unity. The real power comes from the freshly acquired property drawer features.</p>
-<div class="WARNING">
-<h5>Warning</h5>
-<p>Unity's internal serializer cannot serialize <code>System.Object</code>, objects must inherit from <code>UnityEngine.Object</code> instead.</p>
-</div>
-<h2 id="familiar-workflow">Familiar Workflow</h2>
-<p><img src="/images/manual/features/serializable-dictionary/string-prefab.png" alt="Property Drawer"></p>
-<p>One of the pillars of design for the <code>SerializableDictionary</code> was making sure that its workflow in editor kept in line with Unity's <code>OrderedList</code> inspector, with some obvious contextual tweaks. The left side (<strong>A</strong>) contains the entry's key, with its value (<strong>B</strong>) being listed directly beside it. Clicking on that row selects it, making the subtraction (<strong>-</strong>) button on the right available.</p>
-<div class="NOTE">
-<h5>Note</h5>
-<p>The addition button (<strong>+</strong>) only becomes available when a valid and unique key is provided.</p>
-</div>
-<p>The ability to edit the number of elements in the collection (<strong>C</strong>) is disabled due to the difficulty of predetermining valid keys for various types effectively.</p>
-<h2 id="code-example">Code Example</h2>
-<pre><code class="lang-csharp">using GDX.Collections.Generic;
-
-public class SerializableDictionaryExamples
-{
-    // An integer keyed collection of strings
-    public SerializableDictionary&lt;int, string&gt; IntegerStringKVP = new SerializableDictionary&lt;int, string&gt;();
-
-    // A string keyed collection of GameObjects (works with Prefabs!)
-    public SerializableDictionary&lt;string, GameObject&gt; StringGameObjectKVP = new SerializableDictionary&lt;string, GameObject&gt;();
-}
-</code></pre>
+<p>Thank you for your interest in contributing to GDX! ❤️</p>
+<blockquote>
+<p>While the <code>GDX</code> package has Unity employees amongst its contributors, it is <strong>not officially supported by Unity</strong>, and it is not on Unity's roadmap.</p>
+</blockquote>
+<h2 id="automation"><a href="/manual/contributing/automation.html">Automation</a></h2>
+<p>An overview of the automation that is ran in TeamCity against all commits to <code>GDX</code>.</p>
+<h2 id="coding-standard"><a href="/manual/contributing/coding-standard.html">Coding Standard</a></h2>
+<p>We try and keep some semblance of order to the <code>GDX</code> codebase. Building on the shoulders of the .NET team.</p>
+<h2 id="assisting-with-documentation"><a href="/manual/contributing/documentation.html">Assisting with Documentation</a></h2>
+<p>We aim to put documentation first. If a developer fails to grasp why to utilize a feature or component in <code>GDX</code>, we have not done our job effectively. Creating good documentation is important; please help us!</p>
 </article>
           </div>
           
@@ -123,7 +107,7 @@ public class SerializableDictionaryExamples
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/dev/.docfx/manual/features/serializable-dictionary.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/.docfx/manual/contributing/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>
