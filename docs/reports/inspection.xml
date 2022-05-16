@@ -21,7 +21,6 @@
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
-    <IssueType Id="RedundantNameQualifier" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant name qualifier" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantNameQualifier" />
     <IssueType Id="RedundantStringInterpolation" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant string interpolation" Severity="SUGGESTION" />
     <IssueType Id="UnassignedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Unassigned field" Description="Unassigned field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnassignedGetOnlyAutoProperty" Category="Common Practices and Code Improvements" CategoryId="BestPractice" Description="Get-only auto-property is never assigned" Severity="WARNING" />
@@ -555,8 +554,7 @@
     </Project>
     <Project Name="GDX.Tests.EditMode">
       <Issue TypeId="ClassNeverInstantiated.Local" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs" Offset="10795-10817" Line="279" Message="Class 'GameObjectPoolItemTest' is never instantiated" />
-      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="594-606" Line="20" Message="Qualifier is redundant" />
-      <Issue TypeId="RedundantStringInterpolation" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="2830-2831" Line="68" Message="Redundant string interpolation" />
+      <Issue TypeId="RedundantStringInterpolation" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="3952-3953" Line="94" Message="Redundant string interpolation" />
     </Project>
   </Issues>
 </Report>

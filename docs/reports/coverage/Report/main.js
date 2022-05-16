@@ -310,7 +310,7 @@ var assemblies = [
       { "name": "GDX.MeshExtensions", "rp": "GDX_MeshExtensions.html", "cl": 0, "ucl": 14, "cal": 14, "tl": 45, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.MonoBehaviourExtensions", "rp": "GDX_MonoBehaviourExtensions.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 57, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Platform", "rp": "GDX_Platform.html", "cl": 50, "ucl": 48, "cal": 98, "tl": 265, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GDX.Reflection", "rp": "GDX_Reflection.html", "cl": 51, "ucl": 7, "cal": 58, "tl": 138, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "GDX.Reflection", "rp": "GDX_Reflection.html", "cl": 54, "ucl": 4, "cal": 58, "tl": 138, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.RigidbodyExtensions", "rp": "GDX_RigidbodyExtensions.html", "cl": 0, "ucl": 4, "cal": 4, "tl": 39, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.SegmentedString", "rp": "GDX_SegmentedString.html", "cl": 72, "ucl": 56, "cal": 128, "tl": 276, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.SemanticVersion", "rp": "GDX_SemanticVersion.html", "cl": 0, "ucl": 86, "cal": 86, "tl": 243, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
