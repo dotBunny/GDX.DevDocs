@@ -317,10 +317,10 @@ var assemblies = [
       { "name": "GDX.SimpleListExtensions", "rp": "GDX_SimpleListExtensions.html", "cl": 126, "ucl": 22, "cal": 148, "tl": 391, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.StringExtensions", "rp": "GDX_StringExtensions.html", "cl": 264, "ucl": 0, "cal": 264, "tl": 739, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Trace", "rp": "GDX_Trace.html", "cl": 0, "ucl": 29, "cal": 29, "tl": 152, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GDX.TransformExtensions", "rp": "GDX_TransformExtensions.html", "cl": 0, "ucl": 49, "cal": 49, "tl": 142, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "GDX.TransformExtensions", "rp": "GDX_TransformExtensions.html", "cl": 45, "ucl": 10, "cal": 55, "tl": 150, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.TransientReference", "rp": "GDX_TransientReference.html", "cl": 10, "ucl": 53, "cal": 63, "tl": 185, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Vector2Extensions", "rp": "GDX_Vector2Extensions.html", "cl": 50, "ucl": 0, "cal": 50, "tl": 152, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GDX.Vector3Extensions", "rp": "GDX_Vector3Extensions.html", "cl": 60, "ucl": 8, "cal": 68, "tl": 197, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "GDX.Vector3Extensions", "rp": "GDX_Vector3Extensions.html", "cl": 68, "ucl": 0, "cal": 68, "tl": 197, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
     ]},
 ];
 
