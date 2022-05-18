@@ -21,6 +21,7 @@
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
+    <IssueType Id="RedundantUsingDirective" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant using directive" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantUsingDirective" />
     <IssueType Id="UnassignedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Unassigned field" Description="Unassigned field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnassignedGetOnlyAutoProperty" Category="Common Practices and Code Improvements" CategoryId="BestPractice" Description="Get-only auto-property is never assigned" Severity="WARNING" />
     <IssueType Id="UnusedAutoPropertyAccessor.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Auto-property accessor is never used" Description="Auto-property accessor is never used: Non-private accessibility" Severity="WARNING" Global="True" />
@@ -437,7 +438,6 @@
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\IRandomProvider.cs" Offset="4133-4143" Line="78" Message="Only implementations of method 'NextSingle' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\IRandomProvider.cs" Offset="4943-4962" Line="92" Message="Only implementations of method 'NextUnsignedInteger' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\IRandomProvider.cs" Offset="5739-5767" Line="105" Message="Only implementations of method 'NextUnsignedIntegerExclusive' are used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Random\RandomWrapper.cs" Offset="330-343" Line="11" Message="Constructor 'RandomWrapper' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Rotate.cs" Offset="471-477" Line="15" Message="Class 'Rotate' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Rotate.cs" Offset="1299-1306" Line="28" Message="Method 'Towards' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Smooth.cs" Offset="429-435" Line="14" Message="Class 'Smooth' is never used" />
@@ -539,6 +539,7 @@
     </Project>
     <Project Name="GDX.Tests.EditMode">
       <Issue TypeId="ClassNeverInstantiated.Local" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs" Offset="10795-10817" Line="279" Message="Class 'GameObjectPoolItemTest' is never instantiated" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Mathematics\Random\RandomWrapperTests.cs" Offset="177-190" Line="5" Message="Using directive is not required by the code and can be safely removed" />
     </Project>
   </Issues>
 </Report>

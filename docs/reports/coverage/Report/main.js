@@ -302,7 +302,7 @@ var assemblies = [
       { "name": "GDX.Mathematics.Byte2", "rp": "GDX_Byte2.html", "cl": 0, "ucl": 260, "cal": 260, "tl": 1061, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Mathematics.FibonacciHash", "rp": "GDX_FibonacciHash.html", "cl": 0, "ucl": 20, "cal": 20, "tl": 65, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Mathematics.Random.RandomAdaptor", "rp": "GDX_RandomAdaptor.html", "cl": 30, "ucl": 0, "cal": 30, "tl": 85, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GDX.Mathematics.Random.RandomWrapper", "rp": "GDX_RandomWrapper.html", "cl": 10, "ucl": 25, "cal": 35, "tl": 74, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "GDX.Mathematics.Random.RandomWrapper", "rp": "GDX_RandomWrapper.html", "cl": 35, "ucl": 0, "cal": 35, "tl": 74, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Mathematics.Random.WELL1024a", "rp": "GDX_WELL1024a.html", "cl": 118, "ucl": 0, "cal": 118, "tl": 328, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Mathematics.Range", "rp": "GDX_Range.html", "cl": 12, "ucl": 0, "cal": 12, "tl": 72, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Mathematics.Rotate", "rp": "GDX_Rotate.html", "cl": 0, "ucl": 7, "cal": 7, "tl": 38, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
