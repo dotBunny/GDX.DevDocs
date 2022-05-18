@@ -254,7 +254,7 @@ var assemblies = [
       { "name": "GDX.Collections.Pooling.ManagedPools", "rp": "GDX_ManagedPools.html", "cl": 28, "ucl": 50, "cal": 78, "tl": 221, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Collections.Pooling.SimpleListManagedPool", "rp": "GDX_SimpleListManagedPool.html", "cl": 78, "ucl": 108, "cal": 186, "tl": 428, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Collections.SparseSet", "rp": "GDX_SparseSet.html", "cl": 0, "ucl": 1012, "cal": 1012, "tl": 1748, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
-      { "name": "GDX.Config", "rp": "GDX_Config.html", "cl": 0, "ucl": 23, "cal": 23, "tl": 135, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
+      { "name": "GDX.Config", "rp": "GDX_Config.html", "cl": 0, "ucl": 23, "cal": 23, "tl": 163, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Core", "rp": "GDX_Core.html", "cl": 5, "ucl": 2, "cal": 7, "tl": 91, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Developer.CommandLineParser", "rp": "GDX_CommandLineParser.html", "cl": 39, "ucl": 0, "cal": 39, "tl": 88, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
       { "name": "GDX.Developer.Profiling", "rp": "GDX_Profiling.html", "cl": 0, "ucl": 50, "cal": 50, "tl": 125, "ct": "LineCoverage", "mc": "-", "cb": 0, "tb": 0, "lch": [], "bch": [], "hc": [] },
