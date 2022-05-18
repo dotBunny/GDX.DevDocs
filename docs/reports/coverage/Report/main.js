@@ -327,9 +327,229 @@ var assemblies = [
 var historicCoverageExecutionTimes = [];
 
 var riskHotspotMetrics = [
+      { "name": "Cyclomatic complexity", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" },
+      { "name": "NPath complexity", "explanationUrl": "https://modess.io/npath-complexity-cyclomatic-complexity-explained" },
+      { "name": "Crap Score", "explanationUrl": "https://googletesting.blogspot.de/2011/02/this-code-is-crap.html" },
 ];
 
 var riskHotspots = [
+  {
+    "assembly": "GDX", "class": "GDX.Localization", "reportPath": "GDX_Localization.html", "methodName": "static System.String GDX.Localization::GetISO639_1(GDX.Localization/Language)", "methodShortName": "GetISO639_1(...)", "fileIndex": 0, "line": 82,
+    "metrics": [
+      { "value": 12, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 156, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Localization", "reportPath": "GDX_Localization.html", "methodName": "static System.String GDX.Localization::GetIETF_BCP47(GDX.Localization/Language)", "methodShortName": "GetIETF_BCP47(...)", "fileIndex": 0, "line": 114,
+    "metrics": [
+      { "value": 12, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 156, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Localization", "reportPath": "GDX_Localization.html", "methodName": "static System.String GDX.Localization::GetTimestampFormat(GDX.Localization/Language)", "methodShortName": "GetTimestampFormat(...)", "fileIndex": 0, "line": 202,
+    "metrics": [
+      { "value": 12, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 156, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Reports.BuildVerification.TestRunner", "reportPath": "GDX_TestRunner.html", "methodName": "EvaluateTestScene()", "methodShortName": "EvaluateTestScene()", "fileIndex": 0, "line": 39,
+    "metrics": [
+      { "value": 11, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 132, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.IO.Compression.TarFile", "reportPath": "GDX_TarFile.html", "methodName": "static System.Void GDX.IO.Compression.TarFile::ExtractStream(System.IO.Stream, System.String)", "methodShortName": "ExtractStream(...)", "fileIndex": 0, "line": 68,
+    "metrics": [
+      { "value": 11, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 132, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Trace", "reportPath": "GDX_Trace.html", "methodName": "static System.Void GDX.Trace::Output(GDX.Trace/TraceLevel, System.Object, UnityEngine.Object, System.String, System.String, System.Int32)", "methodShortName": "Output(...)", "fileIndex": 0, "line": 75,
+    "metrics": [
+      { "value": 11, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 132, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Reports.Resource.Objects.ObjectInfoFactory", "reportPath": "GDX_ObjectInfoFactory.html", "methodName": "static GDX.Developer.Reports.Resource.Objects.ObjectInfo GDX.Developer.Reports.Resource.Objects.ObjectInfoFactory::GetObjectInfo(System.Type)", "methodShortName": "GetObjectInfo(...)", "fileIndex": 0, "line": 16,
+    "metrics": [
+      { "value": 10, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 110, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Reports.NUnitReport", "reportPath": "GDX_NUnitReport.html", "methodName": "static System.Void GDX.Developer.Reports.NUnitReport::AddToGenerator(GDX.Developer.TextGenerator, GDX.Developer.Reports.NUnit.TestCase)", "methodShortName": "AddToGenerator(...)", "fileIndex": 0, "line": 128,
+    "metrics": [
+      { "value": 9, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 90, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.NativeSparseSet", "reportPath": "GDX_NativeSparseSet.html", "methodName": "System.Boolean GDX.Collections.NativeSparseSet::RemoveWithBoundsAndVersionChecks(System.Int32&, System.UInt64, Unity.Collections.NativeArray[UInt64])", "methodShortName": "RemoveWithBoundsAndVersionChecks(...)", "fileIndex": 0, "line": 273,
+    "metrics": [
+      { "value": 8, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 72, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.SparseSet", "reportPath": "GDX_SparseSet.html", "methodName": "System.Boolean GDX.Collections.SparseSet::RemoveWithBoundsAndVersionChecks(System.Int32&, System.UInt64, System.UInt64[]&)", "methodShortName": "RemoveWithBoundsAndVersionChecks(...)", "fileIndex": 0, "line": 265,
+    "metrics": [
+      { "value": 8, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 72, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.IO.Compression.TarFile", "reportPath": "GDX_TarFile.html", "methodName": "static System.Void GDX.IO.Compression.TarFile::ExtractToDirectory(System.String, System.String, System.Boolean)", "methodShortName": "ExtractToDirectory(...)", "fileIndex": 0, "line": 32,
+    "metrics": [
+      { "value": 8, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 72, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Localization", "reportPath": "GDX_Localization.html", "methodName": "static GDX.Localization/Language GDX.Localization::GetSystemLanguage()", "methodShortName": "GetSystemLanguage()", "fileIndex": 0, "line": 143,
+    "metrics": [
+      { "value": 8, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 72, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.NativeSparseSet", "reportPath": "GDX_NativeSparseSet.html", "methodName": "System.Int32 GDX.Collections.NativeSparseSet::GetDenseIndexWithBoundsAndVersionCheck(System.Int32, System.UInt64, Unity.Collections.NativeArray[UInt64])", "methodShortName": "GetDenseIndexWithBoundsAndVersionCheck(...)", "fileIndex": 0, "line": 198,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.NativeSparseSet", "reportPath": "GDX_NativeSparseSet.html", "methodName": "System.Boolean GDX.Collections.NativeSparseSet::RemoveWithNullValueCheck(System.Int32&)", "methodShortName": "RemoveWithNullValueCheck(...)", "fileIndex": 0, "line": 224,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.SparseSet", "reportPath": "GDX_SparseSet.html", "methodName": "System.Int32 GDX.Collections.SparseSet::GetDenseIndexWithBoundsAndVersionCheck(System.Int32, System.UInt64, System.UInt64[])", "methodShortName": "GetDenseIndexWithBoundsAndVersionCheck(...)", "fileIndex": 0, "line": 190,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.SparseSet", "reportPath": "GDX_SparseSet.html", "methodName": "System.Boolean GDX.Collections.SparseSet::RemoveWithNullValueCheck(System.Int32&)", "methodShortName": "RemoveWithNullValueCheck(...)", "fileIndex": 0, "line": 216,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Profiling", "reportPath": "GDX_Profiling.html", "methodName": "static System.Void GDX.Developer.Profiling::StartProfiling(System.String, System.Boolean)", "methodShortName": "StartProfiling(...)", "fileIndex": 0, "line": 83,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Reports.NUnit.TestSuite", "reportPath": "GDX_TestSuite.html", "methodName": "System.Void GDX.Developer.Reports.NUnit.TestSuite::Process(System.String, System.String, System.String, System.String)", "methodShortName": "Process(...)", "fileIndex": 0, "line": 36,
+    "metrics": [
+      { "value": 7, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 56, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.Pooling.SimpleListManagedPool", "reportPath": "GDX_SimpleListManagedPool.html", "methodName": "System.Object GDX.Collections.Pooling.SimpleListManagedPool::Get(System.Boolean)", "methodShortName": "Get(...)", "fileIndex": 0, "line": 209,
+    "metrics": [
+      { "value": 15, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 55.39, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.AddressablesExtensions", "reportPath": "GDX_AddressablesExtensions.html", "methodName": "static System.Boolean GDX.AddressablesExtensions::CanRelease(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle[GameObject], System.Boolean)", "methodShortName": "CanRelease(...)", "fileIndex": 0, "line": 55,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.BoxColliderExtensions", "reportPath": "GDX_BoxColliderExtensions.html", "methodName": "static System.Boolean GDX.BoxColliderExtensions::ContainsPosition(UnityEngine.BoxCollider, UnityEngine.Vector3)", "methodShortName": "ContainsPosition(...)", "fileIndex": 0, "line": 25,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.Generic.CircularBuffer[T]", "reportPath": "GDX_CircularBuffer_T_.html", "methodName": "GDX.Collections.Generic.CircularBuffer[T]::CircularBuffer(System.Int32, )", "methodShortName": "CircularBuffer(...)", "fileIndex": 0, "line": 77,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.Generic.StringKeyDictionary[TValue]", "reportPath": "GDX_StringKeyDictionary_TValue_.html", "methodName": "System.Boolean GDX.Collections.Generic.StringKeyDictionary[TValue]::TryRemoveNoValueClear(System.String)", "methodShortName": "TryRemoveNoValueClear(...)", "fileIndex": 0, "line": 414,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.NativeSparseSet", "reportPath": "GDX_NativeSparseSet.html", "methodName": "System.Int32 GDX.Collections.NativeSparseSet::GetDenseIndexWithBoundsCheck(System.Int32)", "methodShortName": "GetDenseIndexWithBoundsCheck(...)", "fileIndex": 0, "line": 148,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.Pooling.SimpleListManagedPool", "reportPath": "GDX_SimpleListManagedPool.html", "methodName": "System.Void GDX.Collections.Pooling.SimpleListManagedPool::ReturnAll(System.Boolean)", "methodShortName": "ReturnAll(...)", "fileIndex": 0, "line": 363,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Collections.SparseSet", "reportPath": "GDX_SparseSet.html", "methodName": "System.Int32 GDX.Collections.SparseSet::GetDenseIndexWithBoundsCheck(System.Int32)", "methodShortName": "GetDenseIndexWithBoundsCheck(...)", "fileIndex": 0, "line": 141,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Profiling", "reportPath": "GDX_Profiling.html", "methodName": "static System.Void GDX.Developer.Profiling::TakeMemorySnapshot(System.String, System.Action[String,Boolean], UnityEngine.Profiling.Memory.Experimental.CaptureFlags, System.Boolean)", "methodShortName": "TakeMemorySnapshot(...)", "fileIndex": 0, "line": 51,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Reports.NUnitReport", "reportPath": "GDX_NUnitReport.html", "methodName": "GDX.Developer.Reports.NUnit.TestCase GDX.Developer.Reports.NUnitReport::AddDurationResult(System.String, System.Single, System.Boolean, System.String, GDX.Developer.Reports.NUnit.TestSuite)", "methodShortName": "AddDurationResult(...)", "fileIndex": 0, "line": 27,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.IO.CoalesceStream", "reportPath": "GDX_CoalesceStream.html", "methodName": "System.Int32 GDX.IO.CoalesceStream::Read(System.Byte[], System.Int32, System.Int32)", "methodShortName": "Read(...)", "fileIndex": 0, "line": 79,
+    "metrics": [
+      { "value": 6, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 42, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Reports.Resource.Objects.ObjectInfoFactory", "reportPath": "GDX_ObjectInfoFactory.html", "methodName": "static System.Type GDX.Developer.Reports.Resource.Objects.ObjectInfoFactory::GetObjectInfoType(System.Type)", "methodShortName": "GetObjectInfoType(...)", "fileIndex": 0, "line": 45,
+    "metrics": [
+      { "value": 10, "exceeded": false },
+      { "value": 0, "exceeded": false },
+      { "value": 39.63, "exceeded": true },
+    ]},
+  {
+    "assembly": "GDX", "class": "GDX.Developer.Reports.ResourcesDiffReport", "reportPath": "GDX_ResourcesDiffReport.html", "methodName": "GDX.Developer.Reports.ResourcesDiffReport::ResourcesDiffReport(GDX.Developer.Reports.ResourcesAuditReport, GDX.Developer.Reports.ResourcesAuditReport)", "methodShortName": "ResourcesDiffReport(...)", "fileIndex": 0, "line": 19,
+    "metrics": [
+      { "value": 25, "exceeded": true },
+      { "value": 0, "exceeded": false },
+      { "value": 25.61, "exceeded": false },
+    ]},
 ];
 
 var branchCoverageAvailable = true;

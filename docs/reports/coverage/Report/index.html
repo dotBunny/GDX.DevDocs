@@ -14,7 +14,7 @@
 <col />
 </colgroup>
 <tbody>
-<tr><th>Generated on:</th><td>2022-05-17 - 9:03:49 PM</td></tr>
+<tr><th>Generated on:</th><td>2022-05-17 - 10:05:54 PM</td></tr>
 <tr><th>Parser:</th><td>MultiReportParser (3x OpenCoverParser)</td></tr>
 <tr><th>Assemblies:</th><td>1</td></tr>
 <tr><th>Classes:</th><td>97</td></tr>
@@ -31,7 +31,167 @@
 <tr><th>Method coverage:</th><td>38.6% (305 of 789)</td></tr>
 </tbody>
 </table>
+<h1>Risk Hotspots</h1>
 <risk-hotspots>
+<table class="overview table-fixed stripped">
+<colgroup>
+<col />
+<col />
+<col />
+<col class="column105" />
+<col class="column105" />
+<col class="column105" />
+</colgroup>
+<thead><tr><th>Assembly</th>
+<th>Class</th>
+<th>Method</th>
+<th>Cyclomatic complexity <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity"><i class="icon-info-circled"></i></a></th>
+<th>NPath complexity <a href="https://modess.io/npath-complexity-cyclomatic-complexity-explained"><i class="icon-info-circled"></i></a></th>
+<th>Crap Score <a href="https://googletesting.blogspot.de/2011/02/this-code-is-crap.html"><i class="icon-info-circled"></i></a></th>
+</tr></thead>
+<tbody>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_Localization.html">GDX.Localization</a></td>
+<td title="static System.String GDX.Localization::GetISO639_1(GDX.Localization/Language)"><a href="GDX_Localization.html#file0_line82">GetISO639_1(...)</a></td><td class="lightgreen right">12</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">156</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_Localization.html">GDX.Localization</a></td>
+<td title="static System.String GDX.Localization::GetIETF_BCP47(GDX.Localization/Language)"><a href="GDX_Localization.html#file0_line114">GetIETF_BCP47(...)</a></td><td class="lightgreen right">12</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">156</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_Localization.html">GDX.Localization</a></td>
+<td title="static System.String GDX.Localization::GetTimestampFormat(GDX.Localization/Language)"><a href="GDX_Localization.html#file0_line202">GetTimestampFormat(...)</a></td><td class="lightgreen right">12</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">156</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_TestRunner.html">GDX.Developer.Reports.BuildVerification.TestRunner</a></td>
+<td title="EvaluateTestScene()"><a href="GDX_TestRunner.html#file0_line39">EvaluateTestScene()</a></td><td class="lightgreen right">11</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">132</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_TarFile.html">GDX.IO.Compression.TarFile</a></td>
+<td title="static System.Void GDX.IO.Compression.TarFile::ExtractStream(System.IO.Stream, System.String)"><a href="GDX_TarFile.html#file0_line68">ExtractStream(...)</a></td><td class="lightgreen right">11</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">132</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_Trace.html">GDX.Trace</a></td>
+<td title="static System.Void GDX.Trace::Output(GDX.Trace/TraceLevel, System.Object, UnityEngine.Object, System.String, System.String, System.Int32)"><a href="GDX_Trace.html#file0_line75">Output(...)</a></td><td class="lightgreen right">11</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">132</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_ObjectInfoFactory.html">GDX.Developer.Reports.Resource.Objects.ObjectInfoFactory</a></td>
+<td title="static GDX.Developer.Reports.Resource.Objects.ObjectInfo GDX.Developer.Reports.Resource.Objects.ObjectInfoFactory::GetObjectInfo(System.Type)"><a href="GDX_ObjectInfoFactory.html#file0_line16">GetObjectInfo(...)</a></td><td class="lightgreen right">10</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">110</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_NUnitReport.html">GDX.Developer.Reports.NUnitReport</a></td>
+<td title="static System.Void GDX.Developer.Reports.NUnitReport::AddToGenerator(GDX.Developer.TextGenerator, GDX.Developer.Reports.NUnit.TestCase)"><a href="GDX_NUnitReport.html#file0_line128">AddToGenerator(...)</a></td><td class="lightgreen right">9</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">90</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_NativeSparseSet.html">GDX.Collections.NativeSparseSet</a></td>
+<td title="System.Boolean GDX.Collections.NativeSparseSet::RemoveWithBoundsAndVersionChecks(System.Int32&amp;, System.UInt64, Unity.Collections.NativeArray[UInt64])"><a href="GDX_NativeSparseSet.html#file0_line273">RemoveWithBoundsAndVersionChecks(...)</a></td><td class="lightgreen right">8</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">72</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_SparseSet.html">GDX.Collections.SparseSet</a></td>
+<td title="System.Boolean GDX.Collections.SparseSet::RemoveWithBoundsAndVersionChecks(System.Int32&amp;, System.UInt64, System.UInt64[]&amp;)"><a href="GDX_SparseSet.html#file0_line265">RemoveWithBoundsAndVersionChecks(...)</a></td><td class="lightgreen right">8</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">72</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_TarFile.html">GDX.IO.Compression.TarFile</a></td>
+<td title="static System.Void GDX.IO.Compression.TarFile::ExtractToDirectory(System.String, System.String, System.Boolean)"><a href="GDX_TarFile.html#file0_line32">ExtractToDirectory(...)</a></td><td class="lightgreen right">8</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">72</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_Localization.html">GDX.Localization</a></td>
+<td title="static GDX.Localization/Language GDX.Localization::GetSystemLanguage()"><a href="GDX_Localization.html#file0_line143">GetSystemLanguage()</a></td><td class="lightgreen right">8</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">72</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_NativeSparseSet.html">GDX.Collections.NativeSparseSet</a></td>
+<td title="System.Int32 GDX.Collections.NativeSparseSet::GetDenseIndexWithBoundsAndVersionCheck(System.Int32, System.UInt64, Unity.Collections.NativeArray[UInt64])"><a href="GDX_NativeSparseSet.html#file0_line198">GetDenseIndexWithBoundsAndVersionCheck(...)</a></td><td class="lightgreen right">7</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">56</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_NativeSparseSet.html">GDX.Collections.NativeSparseSet</a></td>
+<td title="System.Boolean GDX.Collections.NativeSparseSet::RemoveWithNullValueCheck(System.Int32&amp;)"><a href="GDX_NativeSparseSet.html#file0_line224">RemoveWithNullValueCheck(...)</a></td><td class="lightgreen right">7</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">56</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_SparseSet.html">GDX.Collections.SparseSet</a></td>
+<td title="System.Int32 GDX.Collections.SparseSet::GetDenseIndexWithBoundsAndVersionCheck(System.Int32, System.UInt64, System.UInt64[])"><a href="GDX_SparseSet.html#file0_line190">GetDenseIndexWithBoundsAndVersionCheck(...)</a></td><td class="lightgreen right">7</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">56</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_SparseSet.html">GDX.Collections.SparseSet</a></td>
+<td title="System.Boolean GDX.Collections.SparseSet::RemoveWithNullValueCheck(System.Int32&amp;)"><a href="GDX_SparseSet.html#file0_line216">RemoveWithNullValueCheck(...)</a></td><td class="lightgreen right">7</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">56</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_Profiling.html">GDX.Developer.Profiling</a></td>
+<td title="static System.Void GDX.Developer.Profiling::StartProfiling(System.String, System.Boolean)"><a href="GDX_Profiling.html#file0_line83">StartProfiling(...)</a></td><td class="lightgreen right">7</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">56</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_TestSuite.html">GDX.Developer.Reports.NUnit.TestSuite</a></td>
+<td title="System.Void GDX.Developer.Reports.NUnit.TestSuite::Process(System.String, System.String, System.String, System.String)"><a href="GDX_TestSuite.html#file0_line36">Process(...)</a></td><td class="lightgreen right">7</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">56</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_SimpleListManagedPool.html">GDX.Collections.Pooling.SimpleListManagedPool</a></td>
+<td title="System.Object GDX.Collections.Pooling.SimpleListManagedPool::Get(System.Boolean)"><a href="GDX_SimpleListManagedPool.html#file0_line209">Get(...)</a></td><td class="lightgreen right">15</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">55.39</td>
+</tr>
+<tr>
+<td>GDX</td>
+<td><a href="GDX_AddressablesExtensions.html">GDX.AddressablesExtensions</a></td>
+<td title="static System.Boolean GDX.AddressablesExtensions::CanRelease(UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationHandle[GameObject], System.Boolean)"><a href="GDX_AddressablesExtensions.html#file0_line55">CanRelease(...)</a></td><td class="lightgreen right">6</td>
+<td class="lightgreen right">0</td>
+<td class="lightred right">42</td>
+</tr>
+</tbody>
+</table>
 </risk-hotspots>
 <h1>Coverage</h1>
 <coverage-info>
@@ -152,7 +312,7 @@
 </tbody>
 </table>
 </coverage-info>
-<div class="footer">Generated by: ReportGenerator 4.8.13.0<br />2022-05-17 - 9:03:49 PM<br /><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="http://www.palmmedia.de">www.palmmedia.de</a></div></div></div>
+<div class="footer">Generated by: ReportGenerator 4.8.13.0<br />2022-05-17 - 10:05:54 PM<br /><a href="https://github.com/danielpalme/ReportGenerator">GitHub</a> | <a href="http://www.palmmedia.de">www.palmmedia.de</a></div></div></div>
 <script type="text/javascript">
 /* <![CDATA[ */
 (function() {
