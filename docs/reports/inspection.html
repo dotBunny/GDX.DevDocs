@@ -156,21 +156,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="redundant-using-directive">Redundant using directive</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Mathematics/Random/RandomWrapperTests.cs#L5" title="GDX.Tests\EditMode\Mathematics\Random\RandomWrapperTests.cs:5">RandomWrapperTests.cs:5</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-</tbody>
-</table>
 <h3 id="get-only-auto-property-is-never-assigned">Get-only auto-property is never assigned</h3>
 <table>
 <thead>
@@ -690,18 +675,6 @@
 <td>Field <code>Bits0</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L20" title="GDX\Collections\FreeList.cs:20">FreeList.cs:20</a></td>
-<td>Field <code>Indices</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L25" title="GDX\Collections\FreeList.cs:25">FreeList.cs:25</a></td>
-<td>Field <code>CurrentFreeIndex</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L30" title="GDX\Collections\FreeList.cs:30">FreeList.cs:30</a></td>
-<td>Field <code>Count</code> can be made private</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/CircularBuffer.cs#L25" title="GDX\Collections\Generic\CircularBuffer.cs:25">CircularBuffer.cs:25</a></td>
 <td>Field <code>Capacity</code> can be made private</td>
 </tr>
@@ -1074,6 +1047,10 @@
 <td>Method <code>HalfLifeToSmoothingFactor</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/OriginalValueAttribute.cs#L26" title="GDX\OriginalValueAttribute.cs:26">OriginalValueAttribute.cs:26</a></td>
+<td>Method <code>As</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Platform.cs#L167" title="GDX\Platform.cs:167">Platform.cs:167</a></td>
 <td>Method <code>GetRandomSafeCharacter</code> can be made private</td>
 </tr>
@@ -1150,10 +1127,6 @@
 <td>Constant <code>SectionKey</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L22" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:22">VisualScriptingSettings.cs:22</a></td>
-<td>Constant <code>SectionIndex</code> can be made private</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L26" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:26">VisualScriptingSettings.cs:26</a></td>
 <td>Constant <code>SectionKey</code> can be made private</td>
 </tr>
@@ -1203,10 +1176,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L30" title="GDX\Collections\FreeList.cs:30">FreeList.cs:30</a></td>
-<td>Field <code>Count</code> is assigned but its value is never used</td>
-</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Mathematics/Byte2.cs#L737" title="GDX\Mathematics\Byte2.cs:737">Byte2.cs:737</a></td>
 <td>Field <code>X</code> is assigned but its value is never used</td>
@@ -1308,30 +1277,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/BitArray8.cs#L33" title="GDX\Collections\BitArray8.cs:33">BitArray8.cs:33</a></td>
 <td>Constructor <code>BitArray8</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L50" title="GDX\Collections\FreeList.cs:50">FreeList.cs:50</a></td>
-<td>Method <code>Clear</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L69" title="GDX\Collections\FreeList.cs:69">FreeList.cs:69</a></td>
-<td>Method <code>AddWithExpandCheck</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L104" title="GDX\Collections\FreeList.cs:104">FreeList.cs:104</a></td>
-<td>Method <code>AddWithExpandCheck</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L137" title="GDX\Collections\FreeList.cs:137">FreeList.cs:137</a></td>
-<td>Method <code>AddUnchecked</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L152" title="GDX\Collections\FreeList.cs:152">FreeList.cs:152</a></td>
-<td>Method <code>RemoveAt</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L164" title="GDX\Collections\FreeList.cs:164">FreeList.cs:164</a></td>
-<td>Method <code>GetAndRemoveAt</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/Array2D.cs#L52" title="GDX\Collections\Generic\Array2D.cs:52">Array2D.cs:52</a></td>
@@ -1758,8 +1703,88 @@
 <td>Method <code>RemoveUnchecked</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Conditionals.cs#L37" title="GDX\Developer\Conditionals.cs:37">Conditionals.cs:37</a></td>
-<td>Constant <code>HasVisualScriptingPackage</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L29" title="GDX\Config.cs:29">Config.cs:29</a></td>
+<td>Field <code>DeveloperBuildInfoAssemblyDefinition</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L36" title="GDX\Config.cs:36">Config.cs:36</a></td>
+<td>Field <code>DeveloperBuildInfoBuildChangelistArgument</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L44" title="GDX\Config.cs:44">Config.cs:44</a></td>
+<td>Field <code>DeveloperBuildInfoBuildDescriptionArgument</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L52" title="GDX\Config.cs:52">Config.cs:52</a></td>
+<td>Field <code>DeveloperBuildInfoBuildNumberArgument</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L59" title="GDX\Config.cs:59">Config.cs:59</a></td>
+<td>Field <code>DeveloperBuildInfoBuildStreamArgument</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L66" title="GDX\Config.cs:66">Config.cs:66</a></td>
+<td>Field <code>DeveloperBuildInfoBuildTaskArgument</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L73" title="GDX\Config.cs:73">Config.cs:73</a></td>
+<td>Field <code>DeveloperBuildInfoEnabled</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L80" title="GDX\Config.cs:80">Config.cs:80</a></td>
+<td>Field <code>DeveloperBuildInfoNamespace</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L87" title="GDX\Config.cs:87">Config.cs:87</a></td>
+<td>Field <code>DeveloperBuildInfoPath</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L94" title="GDX\Config.cs:94">Config.cs:94</a></td>
+<td>Field <code>DeveloperCommandLineParserArgumentPrefix</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L102" title="GDX\Config.cs:102">Config.cs:102</a></td>
+<td>Field <code>DeveloperCommandLineParserArgumentSplit</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L109" title="GDX\Config.cs:109">Config.cs:109</a></td>
+<td>Field <code>EnvironmentScriptingDefineSymbol</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L116" title="GDX\Config.cs:116">Config.cs:116</a></td>
+<td>Field <code>LocalizationDefaultCulture</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L123" title="GDX\Config.cs:123">Config.cs:123</a></td>
+<td>Field <code>LocalizationSetDefaultCulture</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L137" title="GDX\Config.cs:137">Config.cs:137</a></td>
+<td>Field <code>PlatformCacheFolder</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L144" title="GDX\Config.cs:144">Config.cs:144</a></td>
+<td>Field <code>TraceDebugLevels</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L154" title="GDX\Config.cs:154">Config.cs:154</a></td>
+<td>Field <code>TraceDebugOutputToUnityConsole</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L161" title="GDX\Config.cs:161">Config.cs:161</a></td>
+<td>Field <code>TraceDevelopmentLevels</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L173" title="GDX\Config.cs:173">Config.cs:173</a></td>
+<td>Field <code>TraceDevelopmentOutputToUnityConsole</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L180" title="GDX\Config.cs:180">Config.cs:180</a></td>
+<td>Field <code>TraceReleaseLevels</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L187" title="GDX\Config.cs:187">Config.cs:187</a></td>
+<td>Field <code>UpdateProviderCheckForUpdates</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Profiling.cs#L50" title="GDX\Developer\Profiling.cs:50">Profiling.cs:50</a></td>
@@ -1954,6 +1979,10 @@
 <td>Method <code>GetFirstComponentInChildrenComplex</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/OriginalValueAttribute.cs#L53" title="GDX\OriginalValueAttribute.cs:53">OriginalValueAttribute.cs:53</a></td>
+<td>Method <code>GetValue</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Platform.cs#L23" title="GDX\Platform.cs:23">Platform.cs:23</a></td>
 <td>Constant <code>CharacterPoolLength</code> is never used</td>
 </tr>
@@ -1972,6 +2001,14 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Platform.cs#L237" title="GDX\Platform.cs:237">Platform.cs:237</a></td>
 <td>Method <code>IsFileWritable</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Reflection.cs#L100" title="GDX\Reflection.cs:100">Reflection.cs:100</a></td>
+<td>Method <code>GetPropertyValue</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Reflection.cs#L220" title="GDX\Reflection.cs:220">Reflection.cs:220</a></td>
+<td>Method <code>SetPropertyValue</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/RigidbodyExtensions.cs#L26" title="GDX\RigidbodyExtensions.cs:26">RigidbodyExtensions.cs:26</a></td>
@@ -2191,10 +2228,6 @@
 <td>Struct <code>BitArray64</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/FreeList.cs#L15" title="GDX\Collections\FreeList.cs:15">FreeList.cs:15</a></td>
-<td>Struct <code>FreeList</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray2D.cs#L16" title="GDX\Collections\Generic\NativeArray2D.cs:16">NativeArray2D.cs:16</a></td>
 <td>Struct <code>NativeArray2D</code> is never used</td>
 </tr>
@@ -2299,10 +2332,6 @@
 <td>Class <code>MenuItems</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L20" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:20">VisualScriptingSettings.cs:20</a></td>
-<td>Class <code>VisualScriptingSettings</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PropertyDrawers/DisableInInspectorAttributePropertyDrawer.cs#L18" title="GDX.Editor\PropertyDrawers\DisableInInspectorAttributePropertyDrawer.cs:18">DisableInInspectorAttributePropertyDrawer.cs:18</a></td>
 <td>Class <code>DisableInInspectorAttributePropertyDrawer</code> is never used</td>
 </tr>
@@ -2337,7 +2366,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-05-18 against <a href="https://github.com/dotBunny/GDX/commit/0b62205d67d9241d1591d54ade347e23fde24eb0"><strong>0b62205</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-05-18 against <a href="https://github.com/dotBunny/GDX/commit/2fba6cb4405469d23c2bc19882a6060f69611b1f"><strong>2fba6cb</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>

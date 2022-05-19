@@ -21,7 +21,6 @@
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
-    <IssueType Id="RedundantUsingDirective" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant using directive" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantUsingDirective" />
     <IssueType Id="UnassignedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Unassigned field" Description="Unassigned field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnassignedGetOnlyAutoProperty" Category="Common Practices and Code Improvements" CategoryId="BestPractice" Description="Get-only auto-property is never assigned" Severity="WARNING" />
     <IssueType Id="UnusedAutoPropertyAccessor.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Auto-property accessor is never used" Description="Auto-property accessor is never used: Non-private accessibility" Severity="WARNING" Global="True" />
@@ -117,17 +116,6 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\BitArray64.cs" Offset="1349-1353" Line="42" Message="Indexer 'this' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\BitArray8.cs" Offset="790-796" Line="27" Message="Field 'Bits0' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\BitArray8.cs" Offset="1102-1111" Line="33" Message="Constructor 'BitArray8' is never used" />
-      <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="703-711" Line="15" Message="Struct 'FreeList' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="862-868" Line="20" Message="Field 'Indices' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="1002-1008" Line="25" Message="Field 'CurrentFreeIndex' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="1155-1161" Line="30" Message="Field 'Count' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="1166-1171" Line="30" Message="Field 'Count' is assigned but its value is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="1750-1755" Line="50" Message="Method 'Clear' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="2524-2542" Line="69" Message="Method 'AddWithExpandCheck' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="3883-3901" Line="104" Message="Method 'AddWithExpandCheck' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="5097-5109" Line="137" Message="Method 'AddUnchecked' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="5571-5579" Line="152" Message="Method 'RemoveAt' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\FreeList.cs" Offset="6054-6068" Line="164" Message="Method 'GetAndRemoveAt' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\Array2D.cs" Offset="2036-2043" Line="52" Message="Constructor 'Array2D' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\CircularBuffer.cs" Offset="860-866" Line="25" Message="Field 'Capacity' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\Generic\CircularBuffer.cs" Offset="3152-3166" Line="76" Message="Constructor 'CircularBuffer' is never used" />
@@ -262,8 +250,28 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\SparseSet.cs" Offset="71014-71029" Line="1640" Message="Method 'RemoveUnchecked' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\SparseSet.cs" Offset="72537-72552" Line="1674" Message="Method 'RemoveUnchecked' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\SparseSet.cs" Offset="74167-74182" Line="1709" Message="Method 'RemoveUnchecked' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="1125-1161" Line="29" Message="Field 'DeveloperBuildInfoAssemblyDefinition' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="1542-1583" Line="36" Message="Field 'DeveloperBuildInfoBuildChangelistArgument' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="2003-2045" Line="44" Message="Field 'DeveloperBuildInfoBuildDescriptionArgument' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="2451-2488" Line="52" Message="Field 'DeveloperBuildInfoBuildNumberArgument' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="2868-2905" Line="59" Message="Field 'DeveloperBuildInfoBuildStreamArgument' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="3288-3323" Line="66" Message="Field 'DeveloperBuildInfoBuildTaskArgument' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="3662-3687" Line="73" Message="Field 'DeveloperBuildInfoEnabled' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="4001-4028" Line="80" Message="Field 'DeveloperBuildInfoNamespace' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="4342-4364" Line="87" Message="Field 'DeveloperBuildInfoPath' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="4721-4761" Line="94" Message="Field 'DeveloperCommandLineParserArgumentPrefix' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="5157-5196" Line="102" Message="Field 'DeveloperCommandLineParserArgumentSplit' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="5563-5595" Line="109" Message="Field 'EnvironmentScriptingDefineSymbol' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="5937-5963" Line="116" Message="Field 'LocalizationDefaultCulture' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="6310-6339" Line="123" Message="Field 'LocalizationSetDefaultCulture' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="7010-7029" Line="137" Message="Field 'PlatformCacheFolder' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="7375-7391" Line="144" Message="Field 'TraceDebugLevels' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="7999-8029" Line="154" Message="Field 'TraceDebugOutputToUnityConsole' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="8414-8436" Line="161" Message="Field 'TraceDevelopmentLevels' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="9280-9316" Line="173" Message="Field 'TraceDevelopmentOutputToUnityConsole' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="9691-9709" Line="180" Message="Field 'TraceReleaseLevels' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Config.cs" Offset="10024-10053" Line="187" Message="Field 'UpdateProviderCheckForUpdates' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="1362-1368" Line="37" Message="Field 'StartTicks' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Conditionals.cs" Offset="1293-1318" Line="37" Message="Constant 'HasVisualScriptingPackage' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="657-666" Line="19" Message="Class 'Profiling' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="2323-2341" Line="50" Message="Method 'TakeMemorySnapshot' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="4139-4153" Line="82" Message="Method 'StartProfiling' is never used" />
@@ -450,6 +458,8 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\MeshExtensions.cs" Offset="939-954" Line="27" Message="Method 'CalculateVolume' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\MonoBehaviourExtensions.cs" Offset="558-581" Line="17" Message="Class 'MonoBehaviourExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\MonoBehaviourExtensions.cs" Offset="2412-2446" Line="49" Message="Method 'GetFirstComponentInChildrenComplex' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\OriginalValueAttribute.cs" Offset="781-787" Line="26" Message="Method 'As' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\OriginalValueAttribute.cs" Offset="1849-1857" Line="53" Message="Method 'GetValue' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="783-802" Line="23" Message="Constant 'CharacterPoolLength' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="2455-2473" Line="60" Message="Method 'EnsureFileWritable' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="3921-3942" Line="96" Message="Method 'GetHardwareGeneration' is never used" />
@@ -457,7 +467,9 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="9168-9177" Line="220" Message="Method 'IsFocused' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="9733-9747" Line="237" Message="Method 'IsFileWritable' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="621-627" Line="19" Message="Constant 'PrivateFieldFlags' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="1054-1060" Line="27" Message="Constant 'PublicStaticFlags' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="1051-1057" Line="27" Message="Constant 'PublicStaticFlags' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="4803-4819" Line="100" Message="Method 'GetPropertyValue' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="10388-10404" Line="220" Message="Method 'SetPropertyValue' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="512-531" Line="15" Message="Class 'RigidbodyExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="1148-1163" Line="26" Message="Method 'MomentOfInertia' is never used" />
       <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="4821-4825" Line="94" Message="Method 'AddWithExpandCheckUniqueValue' return value is never used" />
@@ -487,7 +499,7 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="4951-4957" Line="127" Message="Method 'CaptureEditorWindowToPNG' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="9201-9214" Line="231" Message="Method 'FinishProfile' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="10244-10264" Line="258" Message="Method 'GenerateProjectFiles' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16794-16805" Line="402" Message="Method 'ResetEditor' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16793-16804" Line="402" Message="Method 'ResetEditor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\BuildInfoBuildProcessor.cs" Offset="2996-3019" Line="67" Message="Class 'BuildInfoBuildProcessor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\ScriptingDefinesBuildProcessor.cs" Offset="525-555" Line="15" Message="Class 'ScriptingDefinesBuildProcessor' is never used" />
       <Issue TypeId="UnassignedGetOnlyAutoProperty" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\ScriptingDefinesBuildProcessor.cs" Offset="832-845" Line="21" Message="Get-only auto-property 'callbackOrder' is never assigned" />
@@ -508,8 +520,6 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\EnvironmentSettings.cs" Offset="621-627" Line="22" Message="Constant 'SectionKey' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\LocaleSettings.cs" Offset="492-498" Line="20" Message="Constant 'SectionKey' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\PlatformSettings.cs" Offset="426-432" Line="15" Message="Constant 'SectionKey' can be made private" />
-      <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="494-517" Line="20" Message="Class 'VisualScriptingSettings' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="551-557" Line="22" Message="Constant 'SectionIndex' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="688-694" Line="26" Message="Constant 'SectionKey' can be made private" />
       <Issue TypeId="UnusedMember.Local" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="7880-7905" Line="192" Message="Method 'AddTypesToVisualScripting' is never used" />
       <Issue TypeId="UnusedParameter.Local" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="7917-7922" Line="192" Message="Parameter 'types' is never used" />
@@ -522,7 +532,7 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="345-360" Line="12" Message="Method 'GetSectionIndex' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="806-823" Line="24" Message="Method 'GetSearchKeywords' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="8887-8890" Line="228" Message="Method 'Get' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="19069-19074" Line="465" Message="Method 'Reset' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="19089-19094" Line="465" Message="Method 'Reset' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\DisableInInspectorAttributePropertyDrawer.cs" Offset="564-605" Line="18" Message="Class 'DisableInInspectorAttributePropertyDrawer' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="1229-1265" Line="30" Message="Class 'SerializableDictionaryPropertyDrawer' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\SerializedStopwatch.cs" Offset="1371-1383" Line="46" Message="Property 'ElapsedTicks' is never used (except inside its declaration)" />
@@ -539,7 +549,6 @@
     </Project>
     <Project Name="GDX.Tests.EditMode">
       <Issue TypeId="ClassNeverInstantiated.Local" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs" Offset="10795-10817" Line="279" Message="Class 'GameObjectPoolItemTest' is never instantiated" />
-      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Mathematics\Random\RandomWrapperTests.cs" Offset="177-190" Line="5" Message="Using directive is not required by the code and can be safely removed" />
     </Project>
   </Issues>
 </Report>
