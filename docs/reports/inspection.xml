@@ -21,6 +21,7 @@
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
+    <IssueType Id="RedundantTypeArgumentsOfMethod" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant type arguments of method" Severity="WARNING" />
     <IssueType Id="UnassignedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Unassigned field" Description="Unassigned field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnassignedGetOnlyAutoProperty" Category="Common Practices and Code Improvements" CategoryId="BestPractice" Description="Get-only auto-property is never assigned" Severity="WARNING" />
     <IssueType Id="UnusedAutoPropertyAccessor.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Auto-property accessor is never used" Description="Auto-property accessor is never used: Non-private accessibility" Severity="WARNING" Global="True" />
@@ -468,8 +469,6 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Platform.cs" Offset="9733-9747" Line="237" Message="Method 'IsFileWritable' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="621-627" Line="19" Message="Constant 'PrivateFieldFlags' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="1051-1057" Line="27" Message="Constant 'PublicStaticFlags' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="4803-4819" Line="100" Message="Method 'GetPropertyValue' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Reflection.cs" Offset="10388-10404" Line="220" Message="Method 'SetPropertyValue' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="512-531" Line="15" Message="Class 'RigidbodyExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="1148-1163" Line="26" Message="Method 'MomentOfInertia' is never used" />
       <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="4821-4825" Line="94" Message="Method 'AddWithExpandCheckUniqueValue' return value is never used" />
@@ -532,7 +531,8 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="345-360" Line="12" Message="Method 'GetSectionIndex' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="806-823" Line="24" Message="Method 'GetSearchKeywords' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="8887-8890" Line="228" Message="Method 'Get' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="19089-19094" Line="465" Message="Method 'Reset' is never used" />
+      <Issue TypeId="RedundantTypeArgumentsOfMethod" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="15842-15850" Line="382" Message="Type argument specification is redundant" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="19120-19125" Line="466" Message="Method 'Reset' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\DisableInInspectorAttributePropertyDrawer.cs" Offset="564-605" Line="18" Message="Class 'DisableInInspectorAttributePropertyDrawer' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="1229-1265" Line="30" Message="Class 'SerializableDictionaryPropertyDrawer' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\SerializedStopwatch.cs" Offset="1371-1383" Line="46" Message="Property 'ElapsedTicks' is never used (except inside its declaration)" />
@@ -549,6 +549,8 @@
     </Project>
     <Project Name="GDX.Tests.EditMode">
       <Issue TypeId="ClassNeverInstantiated.Local" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs" Offset="10795-10817" Line="279" Message="Class 'GameObjectPoolItemTest' is never instantiated" />
+      <Issue TypeId="RedundantTypeArgumentsOfMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="4503-4511" Line="110" Message="Type argument specification is redundant" />
+      <Issue TypeId="RedundantTypeArgumentsOfMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="6603-6611" Line="154" Message="Type argument specification is redundant" />
     </Project>
   </Issues>
 </Report>
