@@ -22,6 +22,7 @@
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
     <IssueType Id="RedundantTypeArgumentsOfMethod" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant type arguments of method" Severity="WARNING" />
+    <IssueType Id="RedundantUsingDirective" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant using directive" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantUsingDirective" />
     <IssueType Id="UnassignedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Unassigned field" Description="Unassigned field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnassignedGetOnlyAutoProperty" Category="Common Practices and Code Improvements" CategoryId="BestPractice" Description="Get-only auto-property is never assigned" Severity="WARNING" />
     <IssueType Id="UnusedAutoPropertyAccessor.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Auto-property accessor is never used" Description="Auto-property accessor is never used: Non-private accessibility" Severity="WARNING" Global="True" />
@@ -384,8 +385,7 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesDiffReport.cs" Offset="1096-1102" Line="28" Message="Field 'MemoryContext' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesDiffReport.cs" Offset="1156-1162" Line="30" Message="Field 'ObjectCount' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\ResourcesDiffReport.cs" Offset="1208-1214" Line="32" Message="Field 'RemovedObjects' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\TransientReference.cs" Offset="1712-1730" Line="36" Message="Constructor 'TransientReference' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\TransientReference.cs" Offset="2224-2242" Line="45" Message="Constructor 'TransientReference' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\TransientReference.cs" Offset="2234-2252" Line="45" Message="Constructor 'TransientReference' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\WaitForMilliseconds.cs" Offset="612-621" Line="22" Message="Method 'WaitAsync' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\WaitForMilliseconds.cs" Offset="783-787" Line="30" Message="Method 'Wait' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\WaitForMilliseconds.cs" Offset="1252-1257" Line="51" Message="Method 'Reset' is never used" />
@@ -548,8 +548,10 @@
     </Project>
     <Project Name="GDX.Tests.EditMode">
       <Issue TypeId="ClassNeverInstantiated.Local" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs" Offset="10795-10817" Line="279" Message="Class 'GameObjectPoolItemTest' is never instantiated" />
-      <Issue TypeId="RedundantTypeArgumentsOfMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="4503-4511" Line="110" Message="Type argument specification is redundant" />
-      <Issue TypeId="RedundantTypeArgumentsOfMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="6603-6611" Line="154" Message="Type argument specification is redundant" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\TransientReferenceTests.cs" Offset="192-227" Line="6" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="RedundantTypeArgumentsOfMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="4236-4244" Line="113" Message="Type argument specification is redundant" />
+      <Issue TypeId="RedundantTypeArgumentsOfMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\ReflectionTests.cs" Offset="5995-6003" Line="155" Message="Type argument specification is redundant" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Vector3ExtensionsTests.cs" Offset="192-219" Line="6" Message="Using directive is not required by the code and can be safely removed" />
     </Project>
   </Issues>
 </Report>
