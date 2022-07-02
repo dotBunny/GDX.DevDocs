@@ -24,6 +24,7 @@
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="NotAccessedVariable" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" Description="Non-accessed local variable" Severity="WARNING" />
+    <IssueType Id="PossibleNullReferenceException" Category="Potential Code Quality Issues" CategoryId="CodeSmell" Description="Possible 'System.NullReferenceException'" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=PossibleNullReferenceException" />
     <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
     <IssueType Id="RedundantBoolCompare" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant boolean comparison" Severity="WARNING" />
     <IssueType Id="RedundantTypeArgumentsOfMethod" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant type arguments of method" Severity="WARNING" />
@@ -476,7 +477,9 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\DomainReloadTests.cs" Offset="4108-4116" Line="102" Message="Method 'TearDown' is never used" />
     </Project>
     <Project Name="GDX.Tests.EditMode">
-      <Issue TypeId="UseObjectOrCollectionInitializer" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\IntKeyDictionaryTests.cs" Offset="2058-2061" Line="59" Message="Use object initializer" />
+      <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\IntKeyDictionaryTests.cs" Offset="525-545" Line="17" Message="Local variable 'areArraysInitialized' is never used" />
+      <Issue TypeId="PossibleNullReferenceException" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\IntKeyDictionaryTests.cs" Offset="715-733" Line="18" Message="Possible 'System.NullReferenceException'" />
+      <Issue TypeId="UseObjectOrCollectionInitializer" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\IntKeyDictionaryTests.cs" Offset="2114-2117" Line="57" Message="Use object initializer" />
       <Issue TypeId="InlineOutVariableDeclaration" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\NativeArraySparseSetTests.cs" Offset="911-923" Line="28" Message="Inline 'out' variable declaration" />
       <Issue TypeId="InlineOutVariableDeclaration" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\NativeArraySparseSetTests.cs" Offset="1537-1549" Line="42" Message="Inline 'out' variable declaration" />
       <Issue TypeId="InlineOutVariableDeclaration" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\NativeArraySparseSetTests.cs" Offset="1551-1563" Line="42" Message="Inline 'out' variable declaration" />
