@@ -26,8 +26,10 @@
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="NotAccessedVariable" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" Description="Non-accessed local variable" Severity="WARNING" />
     <IssueType Id="PossibleNullReferenceException" Category="Potential Code Quality Issues" CategoryId="CodeSmell" Description="Possible 'System.NullReferenceException'" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=PossibleNullReferenceException" />
+    <IssueType Id="RedundantArgumentDefaultValue" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant argument with default value" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantArgumentDefaultValue" />
     <IssueType Id="RedundantAssignment" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Assignment is not used" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantAssignment" />
     <IssueType Id="RedundantBoolCompare" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant boolean comparison" Severity="WARNING" />
+    <IssueType Id="RedundantNameQualifier" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant name qualifier" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantNameQualifier" />
     <IssueType Id="RedundantTypeArgumentsOfMethod" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant type arguments of method" Severity="WARNING" />
     <IssueType Id="RedundantUsingDirective" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant using directive" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantUsingDirective" />
     <IssueType Id="UnassignedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Unassigned field" Description="Unassigned field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
@@ -242,7 +244,7 @@
       <Issue TypeId="UnusedAutoPropertyAccessor.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestCase.cs" Offset="917-921" Line="23" Message="Auto-property accessor 'Properties.set' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestCase.cs" Offset="999-1010" Line="27" Message="Method 'GetCategory' is never used" />
       <Issue TypeId="UnusedAutoPropertyAccessor.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestRun.cs" Offset="281-285" Line="9" Message="Auto-property accessor 'Id.set' is never used" />
-      <Issue TypeId="UnusedAutoPropertyAccessor.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestRun.cs" Offset="329-333" Line="10" Message="Auto-property accessor 'TestCaseCount.set' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestRun.cs" Offset="329-332" Line="10" Message="Accessor 'TestCaseCount.set' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestRun.cs" Offset="749-752" Line="18" Message="Accessor 'EngineVersion.set' can be made private" />
       <Issue TypeId="UnusedAutoPropertyAccessor.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestRun.cs" Offset="884-888" Line="21" Message="Auto-property accessor 'CLRVersion.set' is never used" />
       <Issue TypeId="UnusedAutoPropertyAccessor.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestRun.cs" Offset="964-968" Line="23" Message="Auto-property accessor 'StartTime.set' is never used" />
@@ -266,10 +268,6 @@
       <Issue TypeId="CollectionNeverUpdated.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestSuite.cs" Offset="1280-1290" Line="33" Message="Content of collection 'TestSuites' is never updated" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestSuite.cs" Offset="2593-2599" Line="75" Message="Method 'GetPassCount' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnit\TestSuite.cs" Offset="3091-3103" Line="92" Message="Method 'GetFailCount' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnitReport.cs" Offset="336-342" Line="12" Message="Constant 'SkippedString' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnitReport.cs" Offset="2232-2246" Line="69" Message="Method 'GetResultCount' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnitReport.cs" Offset="2539-2551" Line="83" Message="Method 'GetRootSuite' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\NUnitReport.cs" Offset="2640-2647" Line="88" Message="Method 'Process' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\IntegerDiff.cs" Offset="324-330" Line="12" Message="Field 'Percentage' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\IntegerDiff.cs" Offset="367-373" Line="13" Message="Field 'Change' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Reports\Resource\IntegerDiff.cs" Offset="404-410" Line="14" Message="Field 'LeftHandSide' can be made private" />
@@ -773,6 +771,13 @@
       <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\UnsafeSparseSetTests.cs" Offset="25462-25472" Line="523" Message="Local variable 'denseIndex' is never used" />
       <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Generic\UnsafeSparseSetTests.cs" Offset="25498-25505" Line="523" Message="Local variable 'version' is never used" />
       <Issue TypeId="ClassNeverInstantiated.Local" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs" Offset="10795-10817" Line="279" Message="Class 'GameObjectPoolItemTest' is never instantiated" />
+      <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1449-1453" Line="43" Message="The parameter 'passed' has the same default value" />
+      <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1455-1459" Line="43" Message="The parameter 'failMessage' has the same default value" />
+      <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1461-1465" Line="43" Message="The parameter 'testSuite' has the same default value" />
+      <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="3062-3066" Line="81" Message="The parameter 'failMessage' has the same default value" />
+      <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="3068-3072" Line="81" Message="The parameter 'testSuite' has the same default value" />
+      <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="3888-3892" Line="100" Message="The parameter 'testSuite' has the same default value" />
+      <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\ResourcesAuditReportTests.cs" Offset="881-903" Line="23" Message="Qualifier is redundant" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\TransientReferenceTests.cs" Offset="192-227" Line="6" Message="Using directive is not required by the code and can be safely removed" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Mathematics\Random\RandomWrapperTests.cs" Offset="177-204" Line="5" Message="Using directive is not required by the code and can be safely removed" />
       <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="1682-1695" Line="44" Message="Invoke as extension method" />
@@ -794,7 +799,6 @@
       <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="9915-9941" Line="300" Message="Invoke as extension method" />
       <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="10185-10202" Line="303" Message="Invoke as extension method" />
       <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="10281-10307" Line="304" Message="Invoke as extension method" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\TestLiterals.cs" Offset="450-460" Line="14" Message="Constant 'HelloWorld' is never used" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Vector3ExtensionsTests.cs" Offset="192-219" Line="6" Message="Using directive is not required by the code and can be safely removed" />
     </Project>
   </Issues>
