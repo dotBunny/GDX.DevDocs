@@ -141,6 +141,21 @@
 </tr>
 </tbody>
 </table>
+<h3 id="inconsistent-naming">Inconsistent Naming</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L39" title="GDX\Collections\Generic\NativeArray3D.cs:39">NativeArray3D.cs:39</a></td>
+<td>Name <code>BackStride</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_BackStride</code>.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="redundant-argument-with-default-value">Redundant argument with default value</h3>
 <table>
 <thead>
@@ -866,6 +881,26 @@
 <td>Field <code>RowCount</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L21" title="GDX\Collections\Generic\NativeArray3D.cs:21">NativeArray3D.cs:21</a></td>
+<td>Field <code>Array</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L26" title="GDX\Collections\Generic\NativeArray3D.cs:26">NativeArray3D.cs:26</a></td>
+<td>Field <code>Length</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L31" title="GDX\Collections\Generic\NativeArray3D.cs:31">NativeArray3D.cs:31</a></td>
+<td>Field <code>Width</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L36" title="GDX\Collections\Generic\NativeArray3D.cs:36">NativeArray3D.cs:36</a></td>
+<td>Field <code>Height</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L44" title="GDX\Collections\Generic\NativeArray3D.cs:44">NativeArray3D.cs:44</a></td>
+<td>Field <code>Depth</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L21" title="GDX\Collections\Generic\NativeUniformArray3D.cs:21">NativeUniformArray3D.cs:21</a></td>
 <td>Field <code>Array</code> can be made private</td>
 </tr>
@@ -1352,6 +1387,10 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L36" title="GDX\Collections\Generic\NativeArray3D.cs:36">NativeArray3D.cs:36</a></td>
+<td>Field <code>Height</code> is assigned but its value is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Mathematics/Byte2.cs#L770" title="GDX\Mathematics\Byte2.cs:770">Byte2.cs:770</a></td>
 <td>Field <code>X</code> is assigned but its value is never used</td>
 </tr>
@@ -1531,6 +1570,18 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray2D.cs#L176" title="GDX\Collections\Generic\NativeArray2D.cs:176">NativeArray2D.cs:176</a></td>
 <td>Method <code>ToMultiDimensionalArray</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L72" title="GDX\Collections\Generic\NativeArray3D.cs:72">NativeArray3D.cs:72</a></td>
+<td>Indexer <code>this</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L87" title="GDX\Collections\Generic\NativeArray3D.cs:87">NativeArray3D.cs:87</a></td>
+<td>Indexer <code>this</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L116" title="GDX\Collections\Generic\NativeArray3D.cs:116">NativeArray3D.cs:116</a></td>
+<td>Method <code>GetFromIndex</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L60" title="GDX\Collections\Generic\NativeUniformArray3D.cs:60">NativeUniformArray3D.cs:60</a></td>
@@ -2086,6 +2137,10 @@
 <td>Struct <code>NativeArray2D</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L16" title="GDX\Collections\Generic\NativeArray3D.cs:16">NativeArray3D.cs:16</a></td>
+<td>Struct <code>NativeArray3D</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L16" title="GDX\Collections\Generic\NativeUniformArray3D.cs:16">NativeUniformArray3D.cs:16</a></td>
 <td>Struct <code>NativeUniformArray3D</code> is never used</td>
 </tr>
@@ -2214,6 +2269,22 @@
 </tr>
 </tbody>
 </table>
+<h2 id="hints">Hints</h2>
+<h3 id="use-explicit-or-implicit-modifier-definition-for-type-members">Use explicit or implicit modifier definition for type members</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L39" title="GDX\Collections\Generic\NativeArray3D.cs:39">NativeArray3D.cs:39</a></td>
+<td>Inconsistent modifiers style: redundant <code>private</code> modifier</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -2235,7 +2306,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-07-05 against <a href="https://github.com/dotBunny/GDX/commit/0be3da40a41295787463cab6fd014d6d23172e50"><strong>0be3da4</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-07-08 against <a href="https://github.com/dotBunny/GDX/commit/1854429f1d45e5695d2632320a6653a6aa52513d"><strong>1854429</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
