@@ -141,21 +141,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="inconsistent-naming">Inconsistent Naming</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L39" title="GDX\Collections\Generic\NativeArray3D.cs:39">NativeArray3D.cs:39</a></td>
-<td>Name <code>BackStride</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_BackStride</code>.</td>
-</tr>
-</tbody>
-</table>
 <h3 id="redundant-argument-with-default-value">Redundant argument with default value</h3>
 <table>
 <thead>
@@ -245,6 +230,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/Array3D.cs#L7" title="GDX\Collections\Generic\Array3D.cs:7">Array3D.cs:7</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/TransientReferenceTests.cs#L6" title="GDX.Tests\EditMode\Developer\TransientReferenceTests.cs:6">TransientReferenceTests.cs:6</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
@@ -861,6 +850,10 @@
 <td>Field <code>Bits0</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/Array3D.cs#L31" title="GDX\Collections\Generic\Array3D.cs:31">Array3D.cs:31</a></td>
+<td>Field <code>DepthLength</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/CircularBuffer.cs#L25" title="GDX\Collections\Generic\CircularBuffer.cs:25">CircularBuffer.cs:25</a></td>
 <td>Field <code>Capacity</code> can be made private</td>
 </tr>
@@ -881,52 +874,12 @@
 <td>Field <code>RowCount</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L21" title="GDX\Collections\Generic\NativeArray3D.cs:21">NativeArray3D.cs:21</a></td>
-<td>Field <code>Array</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L26" title="GDX\Collections\Generic\NativeArray3D.cs:26">NativeArray3D.cs:26</a></td>
-<td>Field <code>Length</code> can be made private</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L31" title="GDX\Collections\Generic\NativeArray3D.cs:31">NativeArray3D.cs:31</a></td>
-<td>Field <code>Width</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L36" title="GDX\Collections\Generic\NativeArray3D.cs:36">NativeArray3D.cs:36</a></td>
-<td>Field <code>Height</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L44" title="GDX\Collections\Generic\NativeArray3D.cs:44">NativeArray3D.cs:44</a></td>
-<td>Field <code>Depth</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L21" title="GDX\Collections\Generic\NativeUniformArray3D.cs:21">NativeUniformArray3D.cs:21</a></td>
-<td>Field <code>Array</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L26" title="GDX\Collections\Generic\NativeUniformArray3D.cs:26">NativeUniformArray3D.cs:26</a></td>
-<td>Field <code>Length</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L31" title="GDX\Collections\Generic\NativeUniformArray3D.cs:31">NativeUniformArray3D.cs:31</a></td>
-<td>Field <code>Stride</code> can be made private</td>
+<td>Field <code>DepthLength</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L36" title="GDX\Collections\Generic\NativeUniformArray3D.cs:36">NativeUniformArray3D.cs:36</a></td>
 <td>Field <code>StrideSquared</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L20" title="GDX\Collections\Generic\UniformArray3D.cs:20">UniformArray3D.cs:20</a></td>
-<td>Field <code>Array</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L25" title="GDX\Collections\Generic\UniformArray3D.cs:25">UniformArray3D.cs:25</a></td>
-<td>Field <code>Length</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L30" title="GDX\Collections\Generic\UniformArray3D.cs:30">UniformArray3D.cs:30</a></td>
-<td>Field <code>Stride</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L35" title="GDX\Collections\Generic\UniformArray3D.cs:35">UniformArray3D.cs:35</a></td>
@@ -1387,10 +1340,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L36" title="GDX\Collections\Generic\NativeArray3D.cs:36">NativeArray3D.cs:36</a></td>
-<td>Field <code>Height</code> is assigned but its value is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Mathematics/Byte2.cs#L770" title="GDX\Mathematics\Byte2.cs:770">Byte2.cs:770</a></td>
 <td>Field <code>X</code> is assigned but its value is never used</td>
 </tr>
@@ -1536,7 +1485,7 @@
 <td>Constructor <code>BitArray8</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/Array2D.cs#L52" title="GDX\Collections\Generic\Array2D.cs:52">Array2D.cs:52</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/Array2D.cs#L53" title="GDX\Collections\Generic\Array2D.cs:53">Array2D.cs:53</a></td>
 <td>Constructor <code>Array2D</code> is never used</td>
 </tr>
 <tr>
@@ -1572,20 +1521,8 @@
 <td>Method <code>ToMultiDimensionalArray</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L72" title="GDX\Collections\Generic\NativeArray3D.cs:72">NativeArray3D.cs:72</a></td>
-<td>Indexer <code>this</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L87" title="GDX\Collections\Generic\NativeArray3D.cs:87">NativeArray3D.cs:87</a></td>
-<td>Indexer <code>this</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L116" title="GDX\Collections\Generic\NativeArray3D.cs:116">NativeArray3D.cs:116</a></td>
-<td>Method <code>GetFromIndex</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L60" title="GDX\Collections\Generic\NativeUniformArray3D.cs:60">NativeUniformArray3D.cs:60</a></td>
-<td>Indexer <code>this</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L66" title="GDX\Collections\Generic\NativeUniformArray3D.cs:66">NativeUniformArray3D.cs:66</a></td>
+<td>Accessor <code>Item.set</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L74" title="GDX\Collections\Generic\NativeUniformArray3D.cs:74">NativeUniformArray3D.cs:74</a></td>
@@ -1596,19 +1533,19 @@
 <td>Method <code>GetFromIndex</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L58" title="GDX\Collections\Generic\UniformArray3D.cs:58">UniformArray3D.cs:58</a></td>
-<td>Indexer <code>this</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L64" title="GDX\Collections\Generic\UniformArray3D.cs:64">UniformArray3D.cs:64</a></td>
+<td>Accessor <code>Item.set</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L72" title="GDX\Collections\Generic\UniformArray3D.cs:72">UniformArray3D.cs:72</a></td>
 <td>Indexer <code>this</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L95" title="GDX\Collections\Generic\UniformArray3D.cs:95">UniformArray3D.cs:95</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L94" title="GDX\Collections\Generic\UniformArray3D.cs:94">UniformArray3D.cs:94</a></td>
 <td>Method <code>GetFromIndex</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L110" title="GDX\Collections\Generic\UniformArray3D.cs:110">UniformArray3D.cs:110</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L109" title="GDX\Collections\Generic\UniformArray3D.cs:109">UniformArray3D.cs:109</a></td>
 <td>Method <code>GetFromIndex</code> is never used</td>
 </tr>
 <tr>
@@ -2137,18 +2074,6 @@
 <td>Struct <code>NativeArray2D</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L16" title="GDX\Collections\Generic\NativeArray3D.cs:16">NativeArray3D.cs:16</a></td>
-<td>Struct <code>NativeArray3D</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeUniformArray3D.cs#L16" title="GDX\Collections\Generic\NativeUniformArray3D.cs:16">NativeUniformArray3D.cs:16</a></td>
-<td>Struct <code>NativeUniformArray3D</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/UniformArray3D.cs#L15" title="GDX\Collections\Generic\UniformArray3D.cs:15">UniformArray3D.cs:15</a></td>
-<td>Struct <code>UniformArray3D</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Profiling.cs#L19" title="GDX\Developer\Profiling.cs:19">Profiling.cs:19</a></td>
 <td>Class <code>Profiling</code> is never used</td>
 </tr>
@@ -2269,22 +2194,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="hints">Hints</h2>
-<h3 id="use-explicit-or-implicit-modifier-definition-for-type-members">Use explicit or implicit modifier definition for type members</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/NativeArray3D.cs#L39" title="GDX\Collections\Generic\NativeArray3D.cs:39">NativeArray3D.cs:39</a></td>
-<td>Inconsistent modifiers style: redundant <code>private</code> modifier</td>
-</tr>
-</tbody>
-</table>
 </article>
           </div>
           
@@ -2306,7 +2215,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-07-08 against <a href="https://github.com/dotBunny/GDX/commit/1854429f1d45e5695d2632320a6653a6aa52513d"><strong>1854429</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-07-09 against <a href="https://github.com/dotBunny/GDX/commit/4c251dd7760bda608931bf55dfb4044b83157300"><strong>4c251dd</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
