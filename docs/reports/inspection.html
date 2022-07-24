@@ -151,7 +151,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ShaderProvider.cs#L27" title="GDX\ShaderProvider.cs:27">ShaderProvider.cs:27</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/ShaderProvider.cs#L27" title="GDX\Rendering\ShaderProvider.cs:27">ShaderProvider.cs:27</a></td>
 <td>Name <code>ColorPropertyID</code> does not match rule <code>non_private_readonly_fields_should_be_pascal_case</code>. Suggested name is <code>ColorPropertyId</code>.</td>
 </tr>
 </tbody>
@@ -266,6 +266,18 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Mathematics/Random/RandomWrapperTests.cs#L5" title="GDX.Tests\EditMode\Mathematics\Random\RandomWrapperTests.cs:5">RandomWrapperTests.cs:5</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Rendering/ShaderProviderTests.cs#L5" title="GDX.Tests\EditMode\Rendering\ShaderProviderTests.cs:5">ShaderProviderTests.cs:5</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Rendering/ShaderProviderTests.cs#L6" title="GDX.Tests\EditMode\Rendering\ShaderProviderTests.cs:6">ShaderProviderTests.cs:6</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Rendering/ShaderProviderTests.cs#L8" title="GDX.Tests\EditMode\Rendering\ShaderProviderTests.cs:8">ShaderProviderTests.cs:8</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -1236,12 +1248,52 @@
 <td>Constant <code>PublicStaticFlags</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ShaderProvider.cs#L32" title="GDX\ShaderProvider.cs:32">ShaderProvider.cs:32</a></td>
-<td>Property <code>DottedLine</code> can be made private</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L24" title="GDX\Rendering\DrawCommandBuffer.cs:24">DrawCommandBuffer.cs:24</a></td>
+<td>Field <code>CubeSegmentIndices</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ShaderProvider.cs#L48" title="GDX\ShaderProvider.cs:48">ShaderProvider.cs:48</a></td>
-<td>Property <code>UnlitColor</code> can be made private</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L45" title="GDX\Rendering\DrawCommandBuffer.cs:45">DrawCommandBuffer.cs:45</a></td>
+<td>Field <code>Key</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L49" title="GDX\Rendering\DrawCommandBuffer.cs:49">DrawCommandBuffer.cs:49</a></td>
+<td>Field <code>MaximumVerticesPerMesh</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L87" title="GDX\Rendering\DrawCommandBuffer.cs:87">DrawCommandBuffer.cs:87</a></td>
+<td>Property <code>Finalized</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L110" title="GDX\Rendering\DrawCommandBuffer.cs:110">DrawCommandBuffer.cs:110</a></td>
+<td>Method <code>RemoveInstance</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L149" title="GDX\Rendering\DrawCommandBuffer.cs:149">DrawCommandBuffer.cs:149</a></td>
+<td>Method <code>DrawDottedLine</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L156" title="GDX\Rendering\DrawCommandBuffer.cs:156">DrawCommandBuffer.cs:156</a></td>
+<td>Method <code>DrawDottedLine</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L164" title="GDX\Rendering\DrawCommandBuffer.cs:164">DrawCommandBuffer.cs:164</a></td>
+<td>Method <code>DrawLine</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L171" title="GDX\Rendering\DrawCommandBuffer.cs:171">DrawCommandBuffer.cs:171</a></td>
+<td>Method <code>DrawLine</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L179" title="GDX\Rendering\DrawCommandBuffer.cs:179">DrawCommandBuffer.cs:179</a></td>
+<td>Method <code>DrawLine</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L251" title="GDX\Rendering\DrawCommandBuffer.cs:251">DrawCommandBuffer.cs:251</a></td>
+<td>Method <code>DrawMesh</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L374" title="GDX\Rendering\DrawCommandBuffer.cs:374">DrawCommandBuffer.cs:374</a></td>
+<td>Method <code>Converge</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/StringExtensions.cs#L41" title="GDX\StringExtensions.cs:41">StringExtensions.cs:41</a></td>
@@ -1803,12 +1855,40 @@
 <td>Method <code>IsFileWritable</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/RigidbodyExtensions.cs#L26" title="GDX\RigidbodyExtensions.cs:26">RigidbodyExtensions.cs:26</a></td>
-<td>Method <code>MomentOfInertia</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L93" title="GDX\Rendering\DrawCommandBuffer.cs:93">DrawCommandBuffer.cs:93</a></td>
+<td>Method <code>GetInstance</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ShaderProvider.cs#L27" title="GDX\ShaderProvider.cs:27">ShaderProvider.cs:27</a></td>
-<td>Field <code>ColorPropertyID</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L105" title="GDX\Rendering\DrawCommandBuffer.cs:105">DrawCommandBuffer.cs:105</a></td>
+<td>Method <code>HasInstance</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L115" title="GDX\Rendering\DrawCommandBuffer.cs:115">DrawCommandBuffer.cs:115</a></td>
+<td>Method <code>RemoveInstance</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L120" title="GDX\Rendering\DrawCommandBuffer.cs:120">DrawCommandBuffer.cs:120</a></td>
+<td>Method <code>AppendSegmentsToArray</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L131" title="GDX\Rendering\DrawCommandBuffer.cs:131">DrawCommandBuffer.cs:131</a></td>
+<td>Method <code>DrawDottedCube</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L274" title="GDX\Rendering\DrawCommandBuffer.cs:274">DrawCommandBuffer.cs:274</a></td>
+<td>Method <code>DrawWireCube</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L352" title="GDX\Rendering\DrawCommandBuffer.cs:352">DrawCommandBuffer.cs:352</a></td>
+<td>Method <code>Reset</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L365" title="GDX\Rendering\DrawCommandBuffer.cs:365">DrawCommandBuffer.cs:365</a></td>
+<td>Method <code>Execute</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/RigidbodyExtensions.cs#L26" title="GDX\RigidbodyExtensions.cs:26">RigidbodyExtensions.cs:26</a></td>
+<td>Method <code>MomentOfInertia</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/StringExtensions.cs#L51" title="GDX\StringExtensions.cs:51">StringExtensions.cs:51</a></td>
@@ -1961,6 +2041,10 @@
 <td>Method <code>RemoveItems</code> return value is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L251" title="GDX\Rendering\DrawCommandBuffer.cs:251">DrawCommandBuffer.cs:251</a></td>
+<td>Method <code>DrawMesh</code> return value is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L94" title="GDX\SimpleListExtensions.cs:94">SimpleListExtensions.cs:94</a></td>
 <td>Method <code>AddWithExpandCheckUniqueValue</code> return value is never used</td>
 </tr>
@@ -2076,6 +2160,10 @@
 <td>Class <code>MonoBehaviourExtensions</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L14" title="GDX\Rendering\DrawCommandBuffer.cs:14">DrawCommandBuffer.cs:14</a></td>
+<td>Class <code>DrawCommandBuffer</code> is never used (except inside its declaration)</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/RigidbodyExtensions.cs#L15" title="GDX\RigidbodyExtensions.cs:15">RigidbodyExtensions.cs:15</a></td>
 <td>Class <code>RigidbodyExtensions</code> is never used</td>
 </tr>
@@ -2127,6 +2215,10 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs#L254" title="GDX\Rendering\DrawCommandBuffer.cs:254">DrawCommandBuffer.cs:254</a></td>
+<td>Use object initializer</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Collections/Generic/IntKeyDictionaryTests.cs#L57" title="GDX.Tests\EditMode\Collections\Generic\IntKeyDictionaryTests.cs:57">IntKeyDictionaryTests.cs:57</a></td>
 <td>Use object initializer</td>
 </tr>
@@ -2157,7 +2249,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-07-24 against <a href="https://github.com/dotBunny/GDX/commit/eb00613093c869e861e5885b23349d846fa6172c"><strong>eb00613</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-07-24 against <a href="https://github.com/dotBunny/GDX/commit/5c999cf8e704742bdd1b1723356126ed02a1b440"><strong>5c999cf</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
