@@ -141,6 +141,36 @@
 </tr>
 </tbody>
 </table>
+<h3 id="inconsistent-naming">Inconsistent Naming</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ShaderProvider.cs#L27" title="GDX\ShaderProvider.cs:27">ShaderProvider.cs:27</a></td>
+<td>Name <code>ColorPropertyID</code> does not match rule <code>non_private_readonly_fields_should_be_pascal_case</code>. Suggested name is <code>ColorPropertyId</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="invalid-xml-documentation-comment">Invalid XML documentation comment</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L174" title="GDX.Editor\PackageProvider.cs:174">PackageProvider.cs:174</a></td>
+<td>Cannot resolve symbol <code>DrawCommandBuffer</code></td>
+</tr>
+</tbody>
+</table>
 <h3 id="redundant-argument-with-default-value">Redundant argument with default value</h3>
 <table>
 <thead>
@@ -1206,6 +1236,14 @@
 <td>Constant <code>PublicStaticFlags</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ShaderProvider.cs#L32" title="GDX\ShaderProvider.cs:32">ShaderProvider.cs:32</a></td>
+<td>Property <code>DottedLine</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ShaderProvider.cs#L48" title="GDX\ShaderProvider.cs:48">ShaderProvider.cs:48</a></td>
+<td>Property <code>UnlitColor</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/StringExtensions.cs#L41" title="GDX\StringExtensions.cs:41">StringExtensions.cs:41</a></td>
 <td>Constant <code>AsciiNumberSign</code> can be made private</td>
 </tr>
@@ -1240,6 +1278,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L127" title="GDX.Editor\Automation.cs:127">Automation.cs:127</a></td>
 <td>Method <code>CaptureEditorWindowToPNG</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L177" title="GDX.Editor\PackageProvider.cs:177">PackageProvider.cs:177</a></td>
+<td>Method <code>EnsureAlwaysIncludeShaders</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/AutomaticUpdatesSettings.cs#L17" title="GDX.Editor\ProjectSettings\ConfigSections\AutomaticUpdatesSettings.cs:17">AutomaticUpdatesSettings.cs:17</a></td>
@@ -1394,11 +1436,11 @@
 <td>Field <code>version</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L416" title="GDX.Editor\PackageProvider.cs:416">PackageProvider.cs:416</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L473" title="GDX.Editor\PackageProvider.cs:473">PackageProvider.cs:473</a></td>
 <td>Field <code>version</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L417" title="GDX.Editor\PackageProvider.cs:417">PackageProvider.cs:417</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L474" title="GDX.Editor\PackageProvider.cs:474">PackageProvider.cs:474</a></td>
 <td>Field <code>unity</code> is never assigned</td>
 </tr>
 </tbody>
@@ -1585,74 +1627,6 @@
 <td>Method <code>Reserve</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L29" title="GDX\Config.cs:29">Config.cs:29</a></td>
-<td>Field <code>DeveloperBuildInfoAssemblyDefinition</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L36" title="GDX\Config.cs:36">Config.cs:36</a></td>
-<td>Field <code>DeveloperBuildInfoBuildChangelistArgument</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L44" title="GDX\Config.cs:44">Config.cs:44</a></td>
-<td>Field <code>DeveloperBuildInfoBuildDescriptionArgument</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L52" title="GDX\Config.cs:52">Config.cs:52</a></td>
-<td>Field <code>DeveloperBuildInfoBuildNumberArgument</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L59" title="GDX\Config.cs:59">Config.cs:59</a></td>
-<td>Field <code>DeveloperBuildInfoBuildStreamArgument</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L66" title="GDX\Config.cs:66">Config.cs:66</a></td>
-<td>Field <code>DeveloperBuildInfoBuildTaskArgument</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L73" title="GDX\Config.cs:73">Config.cs:73</a></td>
-<td>Field <code>DeveloperBuildInfoEnabled</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L80" title="GDX\Config.cs:80">Config.cs:80</a></td>
-<td>Field <code>DeveloperBuildInfoNamespace</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L87" title="GDX\Config.cs:87">Config.cs:87</a></td>
-<td>Field <code>DeveloperBuildInfoPath</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L109" title="GDX\Config.cs:109">Config.cs:109</a></td>
-<td>Field <code>EnvironmentScriptingDefineSymbol</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L137" title="GDX\Config.cs:137">Config.cs:137</a></td>
-<td>Field <code>PlatformCacheFolder</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L144" title="GDX\Config.cs:144">Config.cs:144</a></td>
-<td>Field <code>TraceDebugLevels</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L154" title="GDX\Config.cs:154">Config.cs:154</a></td>
-<td>Field <code>TraceDebugOutputToUnityConsole</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L161" title="GDX\Config.cs:161">Config.cs:161</a></td>
-<td>Field <code>TraceDevelopmentLevels</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L173" title="GDX\Config.cs:173">Config.cs:173</a></td>
-<td>Field <code>TraceDevelopmentOutputToUnityConsole</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L180" title="GDX\Config.cs:180">Config.cs:180</a></td>
-<td>Field <code>TraceReleaseLevels</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L187" title="GDX\Config.cs:187">Config.cs:187</a></td>
-<td>Field <code>UpdateProviderCheckForUpdates</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Profiling.cs#L50" title="GDX\Developer\Profiling.cs:50">Profiling.cs:50</a></td>
 <td>Method <code>TakeMemorySnapshot</code> is never used</td>
 </tr>
@@ -1831,6 +1805,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/RigidbodyExtensions.cs#L26" title="GDX\RigidbodyExtensions.cs:26">RigidbodyExtensions.cs:26</a></td>
 <td>Method <code>MomentOfInertia</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ShaderProvider.cs#L27" title="GDX\ShaderProvider.cs:27">ShaderProvider.cs:27</a></td>
+<td>Field <code>ColorPropertyID</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/StringExtensions.cs#L51" title="GDX\StringExtensions.cs:51">StringExtensions.cs:51</a></td>
@@ -2179,7 +2157,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-07-12 against <a href="https://github.com/dotBunny/GDX/commit/84bbda47e5d904f4a84e89dc4a0bb54b3c838f62"><strong>84bbda4</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-07-24 against <a href="https://github.com/dotBunny/GDX/commit/eb00613093c869e861e5885b23349d846fa6172c"><strong>eb00613</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
