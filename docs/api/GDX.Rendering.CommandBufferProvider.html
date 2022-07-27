@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CameraExtensions
+    <title>CommandBufferProvider
    | GDX </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CameraExtensions
+    <meta name="title" content="CommandBufferProvider
    | GDX ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -88,43 +88,41 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GDX.CameraExtensions">
+            <article class="content wrap" id="_content" data-uid="GDX.Rendering.CommandBufferProvider">
   
   
-  <h1 id="GDX_CameraExtensions" data-uid="GDX.CameraExtensions" class="text-break"><span class="type" type="class">Class</span> 
-                                                        CameraExtensions
+  <h1 id="GDX_Rendering_CommandBufferProvider" data-uid="GDX.Rendering.CommandBufferProvider" class="text-break"><span class="type" type="class">Class</span> 
+                                                        CommandBufferProvider
   </h1>
-  <div class="markdown level0 summary"><p><span class="xref">UnityEngine.Camera</span> Based Extension Methods</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">CameraExtensions</span></div>
+    <div class="level1"><span class="xref">CommandBufferProvider</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.html">GDX</a></h6>
-  <h5 id="GDX_CameraExtensions_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Rendering.html">GDX.Rendering</a></h6>
+  <h5 id="GDX_Rendering_CommandBufferProvider_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[VisualScriptingCompatible((short)2)]
-public static class CameraExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class CommandBufferProvider</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_CameraExtensions_RenderToPNG_UnityEngine_Camera_System_String_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.CameraExtensions.RenderToPNG(UnityEngine.Camera%2CSystem.String%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_CommandBufferProvider_GetDrawCommandBuffer_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.CommandBufferProvider.GetDrawCommandBuffer(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CameraExtensions.cs/#L65">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/CommandBufferProvider.cs/#L29">View Source</a>
   </span>
-  <a id="GDX_CameraExtensions_RenderToPNG_" data-uid="GDX.CameraExtensions.RenderToPNG*"></a>
-  <h4 id="GDX_CameraExtensions_RenderToPNG_UnityEngine_Camera_System_String_System_Int32_System_Int32_System_Int32_" data-uid="GDX.CameraExtensions.RenderToPNG(UnityEngine.Camera,System.String,System.Int32,System.Int32,System.Int32)">RenderToPNG(Camera, String, Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Forces a <span class="xref">UnityEngine.Camera</span> through <a class="xref" href="GDX.CameraExtensions.html#GDX_CameraExtensions_RenderToTexture_UnityEngine_Camera_System_Int32_System_Int32_System_Int32_">RenderToTexture(Camera, Int32, Int32, Int32)</a> encoding to PNG.</p>
+  <a id="GDX_Rendering_CommandBufferProvider_GetDrawCommandBuffer_" data-uid="GDX.Rendering.CommandBufferProvider.GetDrawCommandBuffer*"></a>
+  <h4 id="GDX_Rendering_CommandBufferProvider_GetDrawCommandBuffer_System_Int32_System_Int32_System_Int32_" data-uid="GDX.Rendering.CommandBufferProvider.GetDrawCommandBuffer(System.Int32,System.Int32,System.Int32)">GetDrawCommandBuffer(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get an instance of <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> based on the provided <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool RenderToPNG(this Camera targetCamera, string outputPath, int width = 1920, int height = 1080, int depthBuffer = 24)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DrawCommandBuffer GetDrawCommandBuffer(int key, int initialColorCount = 5, int verticesPerMesh = 512)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,33 +135,73 @@ public static class CameraExtensions</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Camera</span></td>
-        <td><span class="parametername">targetCamera</span></td>
-        <td><p>The target <span class="xref">UnityEngine.Camera</span> to use.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">outputPath</span></td>
-        <td><p>The full path to output the PNG bytes.</p>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>A value based key used to reference a <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> in a
+<a class="xref" href="GDX.Collections.Generic.IntKeyDictionary-1.html">IntKeyDictionary&lt;TValue&gt;</a>.</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">width</span></td>
-        <td><p>The desired width of the rendered texture.</p>
+        <td><span class="parametername">initialColorCount</span></td>
+        <td><p>Initial number of internal materials to allocate (x2).</p>
 </td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">height</span></td>
-        <td><p>The desired height of the rendered texture.</p>
+        <td><span class="parametername">verticesPerMesh</span></td>
+        <td><p>The number of vertices to split batched meshes on.</p>
 </td>
       </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a></td>
+        <td><p>A newly created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> if the provided key is not found, or the previously
+created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> identified by the <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_CommandBufferProvider_HasDrawCommandBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.CommandBufferProvider.HasDrawCommandBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/CommandBufferProvider.cs/#L49">View Source</a>
+  </span>
+  <a id="GDX_Rendering_CommandBufferProvider_HasDrawCommandBuffer_" data-uid="GDX.Rendering.CommandBufferProvider.HasDrawCommandBuffer*"></a>
+  <h4 id="GDX_Rendering_CommandBufferProvider_HasDrawCommandBuffer_System_Int32_" data-uid="GDX.Rendering.CommandBufferProvider.HasDrawCommandBuffer(System.Int32)">HasDrawCommandBuffer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns if the provided key has a <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> referenced.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasDrawCommandBuffer(int key)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">depthBuffer</span></td>
-        <td><p>The desired depth of the rendered texture.</p>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key used to reference the <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -179,45 +217,26 @@ public static class CameraExtensions</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>true/false if the capture was successful.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="GDX_CameraExtensions_RenderToPNG_UnityEngine_Camera_System_String_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This does not indicate if the writing of the PNG was successful.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
-        <td><p>Not supported on DOTS Runtime.</p>
+        <td><p>true/false if the key has a <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> associated with it.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_CameraExtensions_RenderToTexture_UnityEngine_Camera_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.CameraExtensions.RenderToTexture(UnityEngine.Camera%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_CommandBufferProvider_RemoveDrawCommandBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.CommandBufferProvider.RemoveDrawCommandBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CameraExtensions.cs/#L27">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/CommandBufferProvider.cs/#L60">View Source</a>
   </span>
-  <a id="GDX_CameraExtensions_RenderToTexture_" data-uid="GDX.CameraExtensions.RenderToTexture*"></a>
-  <h4 id="GDX_CameraExtensions_RenderToTexture_UnityEngine_Camera_System_Int32_System_Int32_System_Int32_" data-uid="GDX.CameraExtensions.RenderToTexture(UnityEngine.Camera,System.Int32,System.Int32,System.Int32)">RenderToTexture(Camera, Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Forces a <span class="xref">UnityEngine.Camera</span> to render it's view into a texture.</p>
+  <a id="GDX_Rendering_CommandBufferProvider_RemoveDrawCommandBuffer_" data-uid="GDX.Rendering.CommandBufferProvider.RemoveDrawCommandBuffer*"></a>
+  <h4 id="GDX_Rendering_CommandBufferProvider_RemoveDrawCommandBuffer_System_Int32_" data-uid="GDX.Rendering.CommandBufferProvider.RemoveDrawCommandBuffer(System.Int32)">RemoveDrawCommandBuffer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Dereference the indicated <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> from the provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Texture2D RenderToTexture(this Camera targetCamera, int width = 1920, int height = 1080, int depthBuffer = 24)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveDrawCommandBuffer(int key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -230,62 +249,9 @@ public static class CameraExtensions</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityEngine.Camera</span></td>
-        <td><span class="parametername">targetCamera</span></td>
-        <td><p>The target <span class="xref">UnityEngine.Camera</span> to use.</p>
-</td>
-      </tr>
-      <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">width</span></td>
-        <td><p>The desired width of the rendered texture.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">height</span></td>
-        <td><p>The desired height of the rendered texture.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">depthBuffer</span></td>
-        <td><p>The desired depth of the rendered texture.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEngine.Texture2D</span></td>
-        <td><p>The rendered view.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="GDX_CameraExtensions_RenderToTexture_UnityEngine_Camera_System_Int32_System_Int32_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This behaves differently then using <span class="xref">UnityEngine.ScreenCapture</span>.</p>
-</div>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GDX.UnsupportedRuntimeException.html">UnsupportedRuntimeException</a></td>
-        <td><p>Not supported on DOTS Runtime.</p>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key used to reference the <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -298,10 +264,10 @@ public static class CameraExtensions</code></pre>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_CameraExtensions.md&amp;value=---%0Auid%3A%20GDX.CameraExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_CommandBufferProvider.md&amp;value=---%0Auid%3A%20GDX.Rendering.CommandBufferProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CameraExtensions.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/CommandBufferProvider.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
