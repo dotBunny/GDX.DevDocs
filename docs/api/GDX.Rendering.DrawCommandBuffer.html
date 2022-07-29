@@ -222,7 +222,7 @@
   </table>
   <h5 id="GDX_Rendering_DrawCommandBuffer_DefaultMaximumVerticesPerMesh_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>When using a mesh is manually added via
-<a class="xref" href="GDX.Rendering.DrawCommandBuffer.html#GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Mesh_System_Boolean_">DrawMesh(Material, Mesh, Boolean)</a> this value is ignored.</p>
+<see cref="!:DrawMesh(UnityEngine.Material,UnityEngine.Mesh,bool)"></see> this value is ignored.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -301,7 +301,7 @@
   </table>
   <h5 id="GDX_Rendering_DrawCommandBuffer_Finalized_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>A finalized <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> has had its command buffer filled with the fixed draw calls
-based on the meshes/materials outlined. If a mesh is invalidated by <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html#GDX_Rendering_DrawCommandBuffer_InvalidateMesh_System_Int32_">InvalidateMesh(Int32)</a>, the
+based on the meshes/materials outlined. If a mesh is invalidated by <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html#GDX_Rendering_DrawCommandBuffer_Invalidate_System_Int32_">Invalidate(Int32)</a>, the
 <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> will become not finalized and will re-converge itself next
 <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html#GDX_Rendering_DrawCommandBuffer_Execute">Execute()</a>.</p>
 </div>
@@ -329,11 +329,12 @@ buffer with the appropriate data.</p>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawDottedCube_UnityEngine_Color_UnityEngine_Vector3_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawDottedCube(UnityEngine.Color%2CUnityEngine.Vector3%2CUnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L240">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L247">View Source</a>
   </span>
   <a id="GDX_Rendering_DrawCommandBuffer_DrawDottedCube_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedCube*"></a>
   <h4 id="GDX_Rendering_DrawCommandBuffer_DrawDottedCube_UnityEngine_Color_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedCube(UnityEngine.Color,UnityEngine.Vector3,UnityEngine.Vector3)">DrawDottedCube(Color, Vector3, Vector3)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw a dotted line cube of a specific color to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,17 +353,20 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Color</span></td>
         <td><span class="parametername">color</span></td>
-        <td></td>
+        <td><p>The color which to draw the dotted line cube with.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">center</span></td>
-        <td></td>
+        <td><p>The center world position of the cube.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
+        <td><p>The unit size of the cube</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -377,24 +381,26 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The created cube's invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawDottedLine_UnityEngine_Color_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawDottedLine(UnityEngine.Color%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawDottedLines_UnityEngine_Color_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawDottedLines(UnityEngine.Color%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L265">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L290">View Source</a>
   </span>
-  <a id="GDX_Rendering_DrawCommandBuffer_DrawDottedLine_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedLine*"></a>
-  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawDottedLine_UnityEngine_Color_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedLine(UnityEngine.Color,UnityEngine.Vector3[]@,System.Int32,System.Int32,System.Int32[]@,System.Int32,System.Int32)">DrawDottedLine(Color, ref Vector3[], Int32, Int32, ref Int32[], Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GDX_Rendering_DrawCommandBuffer_DrawDottedLines_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedLines*"></a>
+  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawDottedLines_UnityEngine_Color_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedLines(UnityEngine.Color,UnityEngine.Vector3[]@,System.Int32,System.Int32,System.Int32[]@,System.Int32,System.Int32)">DrawDottedLines(Color, ref Vector3[], Int32, Int32, ref Int32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Draw dotted lines of a specific color as defined to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DrawDottedLine(Color color, ref Vector3[] vertices, int verticesStartIndex, int verticesLength, ref int[] segments, int segmentsStartIndex, int segmentsLength)</code></pre>
+    <pre><code class="lang-csharp hljs">public int DrawDottedLines(Color color, ref Vector3[] vertices, int verticesStartIndex, int verticesLength, ref int[] segments, int segmentsStartIndex, int segmentsLength)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -409,37 +415,44 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Color</span></td>
         <td><span class="parametername">color</span></td>
-        <td></td>
+        <td><p>The color which to draw the dotted lines with.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span>[]</td>
         <td><span class="parametername">vertices</span></td>
-        <td></td>
+        <td><p>The vertices of the dotted lines.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">verticesStartIndex</span></td>
-        <td></td>
+        <td><p>The index to start at in the <code data-dev-comment-type="paramref" class="paramref">vertices</code> array.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">verticesLength</span></td>
-        <td></td>
+        <td><p>The number of elements in the <code data-dev-comment-type="paramref" class="paramref">vertices</code> array to use.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span>[]</td>
         <td><span class="parametername">segments</span></td>
-        <td></td>
+        <td><p>The segment pairs based on <code data-dev-comment-type="paramref" class="paramref">vertices</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">segmentsStartIndex</span></td>
-        <td></td>
+        <td><p>The index to start at in the <code data-dev-comment-type="paramref" class="paramref">segments</code> array.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">segmentsLength</span></td>
-        <td></td>
+        <td><p>The number of elements in the <code data-dev-comment-type="paramref" class="paramref">segments</code> array to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -454,24 +467,26 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The dotted lines' invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawDottedLine_UnityEngine_Color_UnityEngine_Vector3____System_Int32____.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawDottedLine(UnityEngine.Color%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawDottedLines_UnityEngine_Color_UnityEngine_Vector3____System_Int32____.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawDottedLines(UnityEngine.Color%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L258">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L272">View Source</a>
   </span>
-  <a id="GDX_Rendering_DrawCommandBuffer_DrawDottedLine_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedLine*"></a>
-  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawDottedLine_UnityEngine_Color_UnityEngine_Vector3____System_Int32____" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedLine(UnityEngine.Color,UnityEngine.Vector3[]@,System.Int32[]@)">DrawDottedLine(Color, ref Vector3[], ref Int32[])</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GDX_Rendering_DrawCommandBuffer_DrawDottedLines_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedLines*"></a>
+  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawDottedLines_UnityEngine_Color_UnityEngine_Vector3____System_Int32____" data-uid="GDX.Rendering.DrawCommandBuffer.DrawDottedLines(UnityEngine.Color,UnityEngine.Vector3[]@,System.Int32[]@)">DrawDottedLines(Color, ref Vector3[], ref Int32[])</h4>
+  <div class="markdown level1 summary"><p>Draw dotted lines of a specific color as defined to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DrawDottedLine(Color color, ref Vector3[] vertices, ref int[] segments)</code></pre>
+    <pre><code class="lang-csharp hljs">public int DrawDottedLines(Color color, ref Vector3[] vertices, ref int[] segments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -486,17 +501,20 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Color</span></td>
         <td><span class="parametername">color</span></td>
-        <td></td>
+        <td><p>The color which to draw the dotted lines with.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span>[]</td>
         <td><span class="parametername">vertices</span></td>
-        <td></td>
+        <td><p>The vertices of the dotted lines.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span>[]</td>
         <td><span class="parametername">segments</span></td>
-        <td></td>
+        <td><p>The segment pairs based on <code data-dev-comment-type="paramref" class="paramref">vertices</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -511,24 +529,26 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The dotted lines' invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawLine_UnityEngine_Color_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawLine(UnityEngine.Color%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawLines_UnityEngine_Color_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawLines(UnityEngine.Color%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L280">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L323">View Source</a>
   </span>
-  <a id="GDX_Rendering_DrawCommandBuffer_DrawLine_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLine*"></a>
-  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawLine_UnityEngine_Color_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLine(UnityEngine.Color,UnityEngine.Vector3[]@,System.Int32,System.Int32,System.Int32[]@,System.Int32,System.Int32)">DrawLine(Color, ref Vector3[], Int32, Int32, ref Int32[], Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GDX_Rendering_DrawCommandBuffer_DrawLines_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLines*"></a>
+  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawLines_UnityEngine_Color_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLines(UnityEngine.Color,UnityEngine.Vector3[]@,System.Int32,System.Int32,System.Int32[]@,System.Int32,System.Int32)">DrawLines(Color, ref Vector3[], Int32, Int32, ref Int32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Draw lines of a specific color as defined to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DrawLine(Color color, ref Vector3[] vertices, int verticesStartIndex, int verticesLength, ref int[] segments, int segmentsStartIndex, int segmentsLength)</code></pre>
+    <pre><code class="lang-csharp hljs">public int DrawLines(Color color, ref Vector3[] vertices, int verticesStartIndex, int verticesLength, ref int[] segments, int segmentsStartIndex, int segmentsLength)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -543,37 +563,44 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Color</span></td>
         <td><span class="parametername">color</span></td>
-        <td></td>
+        <td><p>The color which to draw the lines with.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span>[]</td>
         <td><span class="parametername">vertices</span></td>
-        <td></td>
+        <td><p>The vertices of the lines.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">verticesStartIndex</span></td>
-        <td></td>
+        <td><p>The index to start at in the <code data-dev-comment-type="paramref" class="paramref">vertices</code> array.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">verticesLength</span></td>
-        <td></td>
+        <td><p>The number of elements in the <code data-dev-comment-type="paramref" class="paramref">vertices</code> array to use.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span>[]</td>
         <td><span class="parametername">segments</span></td>
-        <td></td>
+        <td><p>The segment pairs based on <code data-dev-comment-type="paramref" class="paramref">vertices</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">segmentsStartIndex</span></td>
-        <td></td>
+        <td><p>The index to start at in the <code data-dev-comment-type="paramref" class="paramref">segments</code> array.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">segmentsLength</span></td>
-        <td></td>
+        <td><p>The number of elements in the <code data-dev-comment-type="paramref" class="paramref">segments</code> array to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -588,24 +615,26 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The lines' invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawLine_UnityEngine_Color_UnityEngine_Vector3____System_Int32____.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawLine(UnityEngine.Color%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawLines_UnityEngine_Color_UnityEngine_Vector3____System_Int32____.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawLines(UnityEngine.Color%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%5B%5D%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L273">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L305">View Source</a>
   </span>
-  <a id="GDX_Rendering_DrawCommandBuffer_DrawLine_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLine*"></a>
-  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawLine_UnityEngine_Color_UnityEngine_Vector3____System_Int32____" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLine(UnityEngine.Color,UnityEngine.Vector3[]@,System.Int32[]@)">DrawLine(Color, ref Vector3[], ref Int32[])</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GDX_Rendering_DrawCommandBuffer_DrawLines_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLines*"></a>
+  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawLines_UnityEngine_Color_UnityEngine_Vector3____System_Int32____" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLines(UnityEngine.Color,UnityEngine.Vector3[]@,System.Int32[]@)">DrawLines(Color, ref Vector3[], ref Int32[])</h4>
+  <div class="markdown level1 summary"><p>Draw lines of a specific color as defined to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DrawLine(Color color, ref Vector3[] vertices, ref int[] segments)</code></pre>
+    <pre><code class="lang-csharp hljs">public int DrawLines(Color color, ref Vector3[] vertices, ref int[] segments)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -620,17 +649,20 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Color</span></td>
         <td><span class="parametername">color</span></td>
-        <td></td>
+        <td><p>The color which to draw the lines with.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span>[]</td>
         <td><span class="parametername">vertices</span></td>
-        <td></td>
+        <td><p>The vertices of the lines.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span>[]</td>
         <td><span class="parametername">segments</span></td>
-        <td></td>
+        <td><p>The segment pairs based on <code data-dev-comment-type="paramref" class="paramref">vertices</code>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -645,24 +677,26 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The lines' invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawLine_UnityEngine_Material_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawLine(UnityEngine.Material%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawLines_UnityEngine_Material_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawLines(UnityEngine.Material%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%2CSystem.Int32%2CSystem.Int32%5B%5D%40%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L288">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L342">View Source</a>
   </span>
-  <a id="GDX_Rendering_DrawCommandBuffer_DrawLine_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLine*"></a>
-  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawLine_UnityEngine_Material_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLine(UnityEngine.Material,UnityEngine.Vector3[]@,System.Int32,System.Int32,System.Int32[]@,System.Int32,System.Int32)">DrawLine(Material, ref Vector3[], Int32, Int32, ref Int32[], Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GDX_Rendering_DrawCommandBuffer_DrawLines_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLines*"></a>
+  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawLines_UnityEngine_Material_UnityEngine_Vector3____System_Int32_System_Int32_System_Int32____System_Int32_System_Int32_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawLines(UnityEngine.Material,UnityEngine.Vector3[]@,System.Int32,System.Int32,System.Int32[]@,System.Int32,System.Int32)">DrawLines(Material, ref Vector3[], Int32, Int32, ref Int32[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Draw lines with a specific material to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DrawLine(Material material, ref Vector3[] vertices, int verticesStartIndex, int verticesLength, ref int[] segments, int segmentsStartIndex, int segmentsLength)</code></pre>
+    <pre><code class="lang-csharp hljs">public int DrawLines(Material material, ref Vector3[] vertices, int verticesStartIndex, int verticesLength, ref int[] segments, int segmentsStartIndex, int segmentsLength)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -677,37 +711,44 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Material</span></td>
         <td><span class="parametername">material</span></td>
-        <td></td>
+        <td><p>The material which to draw the lines with.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span>[]</td>
         <td><span class="parametername">vertices</span></td>
-        <td></td>
+        <td><p>The vertices of the lines.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">verticesStartIndex</span></td>
-        <td></td>
+        <td><p>The index to start at in the <code data-dev-comment-type="paramref" class="paramref">vertices</code> array.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">verticesLength</span></td>
-        <td></td>
+        <td><p>The number of elements in the <code data-dev-comment-type="paramref" class="paramref">vertices</code> array to use.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span>[]</td>
         <td><span class="parametername">segments</span></td>
-        <td></td>
+        <td><p>The segment pairs based on <code data-dev-comment-type="paramref" class="paramref">vertices</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">segmentsStartIndex</span></td>
-        <td></td>
+        <td><p>The index to start at in the <code data-dev-comment-type="paramref" class="paramref">segments</code> array.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">segmentsLength</span></td>
-        <td></td>
+        <td><p>The number of elements in the <code data-dev-comment-type="paramref" class="paramref">segments</code> array to use.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -722,24 +763,26 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The lines' invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Mesh_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawMesh(UnityEngine.Material%2CUnityEngine.Mesh%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Mesh_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawMesh(UnityEngine.Material%2CUnityEngine.Mesh)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L356">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L416">View Source</a>
   </span>
   <a id="GDX_Rendering_DrawCommandBuffer_DrawMesh_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawMesh*"></a>
-  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Mesh_System_Boolean_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawMesh(UnityEngine.Material,UnityEngine.Mesh,System.Boolean)">DrawMesh(Material, Mesh, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Mesh_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawMesh(UnityEngine.Material,UnityEngine.Mesh)">DrawMesh(Material, Mesh)</h4>
+  <div class="markdown level1 summary"><p>Draw a given mesh to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DrawMesh(Material material, Mesh mesh, bool shouldOptimizeMesh = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public int DrawMesh(Material material, Mesh mesh)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -754,17 +797,14 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Material</span></td>
         <td><span class="parametername">material</span></td>
-        <td></td>
+        <td><p>The material to use when drawing the mesh.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Mesh</span></td>
         <td><span class="parametername">mesh</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">shouldOptimizeMesh</span></td>
-        <td></td>
+        <td><p>The mesh to draw to the buffer.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -779,24 +819,26 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The mesh's invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Vector3____System_Int32____UnityEngine_MeshTopology_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawMesh(UnityEngine.Material%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%5B%5D%40%2CUnityEngine.MeshTopology%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Vector3____System_Int32____UnityEngine_MeshTopology_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawMesh(UnityEngine.Material%2CUnityEngine.Vector3%5B%5D%40%2CSystem.Int32%5B%5D%40%2CUnityEngine.MeshTopology)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L366">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L434">View Source</a>
   </span>
   <a id="GDX_Rendering_DrawCommandBuffer_DrawMesh_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawMesh*"></a>
-  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Vector3____System_Int32____UnityEngine_MeshTopology_System_Boolean_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawMesh(UnityEngine.Material,UnityEngine.Vector3[]@,System.Int32[]@,UnityEngine.MeshTopology,System.Boolean)">DrawMesh(Material, ref Vector3[], ref Int32[], MeshTopology, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Rendering_DrawCommandBuffer_DrawMesh_UnityEngine_Material_UnityEngine_Vector3____System_Int32____UnityEngine_MeshTopology_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawMesh(UnityEngine.Material,UnityEngine.Vector3[]@,System.Int32[]@,UnityEngine.MeshTopology)">DrawMesh(Material, ref Vector3[], ref Int32[], MeshTopology)</h4>
+  <div class="markdown level1 summary"><p>Draw a given mesh (as defined) to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int DrawMesh(Material material, ref Vector3[] vertices, ref int[] segments, MeshTopology topology = MeshTopology.Lines, bool shouldOptimizeMesh = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public int DrawMesh(Material material, ref Vector3[] vertices, ref int[] segments, MeshTopology topology = MeshTopology.Lines)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -811,27 +853,26 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Material</span></td>
         <td><span class="parametername">material</span></td>
-        <td></td>
+        <td><p>The material to use when drawing the created mesh.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span>[]</td>
         <td><span class="parametername">vertices</span></td>
-        <td></td>
+        <td><p>The vertices of the created mesh.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span>[]</td>
         <td><span class="parametername">segments</span></td>
-        <td></td>
+        <td><p>The segment pairs based on <code data-dev-comment-type="paramref" class="paramref">vertices</code>.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.MeshTopology</span></td>
         <td><span class="parametername">topology</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td><span class="parametername">shouldOptimizeMesh</span></td>
-        <td></td>
+        <td><p>The <span class="xref">UnityEngine.MeshTopology</span> mode to use when drawing the created mesh.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -846,7 +887,8 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The created mesh's invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -855,11 +897,12 @@ buffer with the appropriate data.</p>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_DrawWireCube_UnityEngine_Color_UnityEngine_Vector3_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.DrawWireCube(UnityEngine.Color%2CUnityEngine.Vector3%2CUnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L391">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L460">View Source</a>
   </span>
   <a id="GDX_Rendering_DrawCommandBuffer_DrawWireCube_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawWireCube*"></a>
   <h4 id="GDX_Rendering_DrawCommandBuffer_DrawWireCube_UnityEngine_Color_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="GDX.Rendering.DrawCommandBuffer.DrawWireCube(UnityEngine.Color,UnityEngine.Vector3,UnityEngine.Vector3)">DrawWireCube(Color, Vector3, Vector3)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Draw a wireframe cube of a specific color to the buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -878,17 +921,20 @@ buffer with the appropriate data.</p>
       <tr>
         <td><span class="xref">UnityEngine.Color</span></td>
         <td><span class="parametername">color</span></td>
-        <td></td>
+        <td><p>The color which to draw the wire cube with.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">center</span></td>
-        <td></td>
+        <td><p>The center world position of the cube.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Vector3</span></td>
         <td><span class="parametername">size</span></td>
-        <td></td>
+        <td><p>The unit size of the cube</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -903,7 +949,8 @@ buffer with the appropriate data.</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td></td>
+        <td><p>The created cube's invalidation token.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -912,7 +959,7 @@ buffer with the appropriate data.</p>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_Execute.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.Execute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L416">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L493">View Source</a>
   </span>
   <a id="GDX_Rendering_DrawCommandBuffer_Execute_" data-uid="GDX.Rendering.DrawCommandBuffer.Execute*"></a>
   <h4 id="GDX_Rendering_DrawCommandBuffer_Execute" data-uid="GDX.Rendering.DrawCommandBuffer.Execute">Execute()</h4>
@@ -945,19 +992,19 @@ buffer, you will need to</p>
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_InvalidateMesh_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.InvalidateMesh(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_Invalidate_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.Invalidate(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L430">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L507">View Source</a>
   </span>
-  <a id="GDX_Rendering_DrawCommandBuffer_InvalidateMesh_" data-uid="GDX.Rendering.DrawCommandBuffer.InvalidateMesh*"></a>
-  <h4 id="GDX_Rendering_DrawCommandBuffer_InvalidateMesh_System_Int32_" data-uid="GDX.Rendering.DrawCommandBuffer.InvalidateMesh(System.Int32)">InvalidateMesh(Int32)</h4>
-  <div class="markdown level1 summary"><p>Invalidates a specific mesh and forces the buffer to be refilled.</p>
+  <a id="GDX_Rendering_DrawCommandBuffer_Invalidate_" data-uid="GDX.Rendering.DrawCommandBuffer.Invalidate*"></a>
+  <h4 id="GDX_Rendering_DrawCommandBuffer_Invalidate_System_Int32_" data-uid="GDX.Rendering.DrawCommandBuffer.Invalidate(System.Int32)">Invalidate(Int32)</h4>
+  <div class="markdown level1 summary"><p>Invalidates a <span class="xref">GDX.Rendering.DrawCommandBuffer.DrawCommand</span> based on the provided token, forcing the buffer to be refilled.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void InvalidateMesh(int meshID)</code></pre>
+    <pre><code class="lang-csharp hljs">public void Invalidate(int token)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -971,8 +1018,9 @@ buffer, you will need to</p>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">meshID</span></td>
-        <td></td>
+        <td><span class="parametername">token</span></td>
+        <td><p>The token of the draw commands to invalidate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -981,7 +1029,7 @@ buffer, you will need to</p>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_DrawCommandBuffer_Reset.md&amp;value=---%0Auid%3A%20GDX.Rendering.DrawCommandBuffer.Reset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L442">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/DrawCommandBuffer.cs/#L519">View Source</a>
   </span>
   <a id="GDX_Rendering_DrawCommandBuffer_Reset_" data-uid="GDX.Rendering.DrawCommandBuffer.Reset*"></a>
   <h4 id="GDX_Rendering_DrawCommandBuffer_Reset" data-uid="GDX.Rendering.DrawCommandBuffer.Reset">Reset()</h4>
@@ -1024,7 +1072,7 @@ allocating their previous sizes.</p>
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-07-29 against <a href="https://github.com/dotBunny/GDX/commit/371957ead015e47d29eb556c2b72f242566e80dd"><strong>371957e</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-07-29 against <a href="https://github.com/dotBunny/GDX/commit/09cbffa962917d269b9a0a9847e83e1daa41a3f1"><strong>09cbffa</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
