@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>CommandBufferProvider
+    <title>DebugDraw
    | GDX </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="CommandBufferProvider
+    <meta name="title" content="DebugDraw
    | GDX ">
     <meta name="generator" content="docfx 2.59.2.0">
     
@@ -88,42 +88,42 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GDX.Rendering.CommandBufferProvider">
+            <article class="content wrap" id="_content" data-uid="GDX.Developer.DebugDraw">
   
   
-  <h1 id="GDX_Rendering_CommandBufferProvider" data-uid="GDX.Rendering.CommandBufferProvider" class="text-break"><span class="type" type="class">Class</span> 
-                                                        CommandBufferProvider
+  <h1 id="GDX_Developer_DebugDraw" data-uid="GDX.Developer.DebugDraw" class="text-break"><span class="type" type="class">Class</span> 
+                                                        DebugDraw
   </h1>
-  <div class="markdown level0 summary"><p>A provider of GDX specific command buffers, indexed for reuse.</p>
+  <div class="markdown level0 summary"><p>A debug draw system useful in both the editor and at runtime.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">CommandBufferProvider</span></div>
+    <div class="level1"><span class="xref">DebugDraw</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Rendering.html">GDX.Rendering</a></h6>
-  <h5 id="GDX_Rendering_CommandBufferProvider_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Developer.html">GDX.Developer</a></h6>
+  <h5 id="GDX_Developer_DebugDraw_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class CommandBufferProvider</code></pre>
+    <pre><code class="lang-csharp hljs">public static class DebugDraw</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_CommandBufferProvider_GetDrawCommandBuffer_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.CommandBufferProvider.GetDrawCommandBuffer(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_DebugDraw_GetLineBuffer_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Developer.DebugDraw.GetLineBuffer(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/CommandBufferProvider.cs/#L44">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDraw.cs/#L44">View Source</a>
   </span>
-  <a id="GDX_Rendering_CommandBufferProvider_GetDrawCommandBuffer_" data-uid="GDX.Rendering.CommandBufferProvider.GetDrawCommandBuffer*"></a>
-  <h4 id="GDX_Rendering_CommandBufferProvider_GetDrawCommandBuffer_System_Int32_System_Int32_System_Int32_" data-uid="GDX.Rendering.CommandBufferProvider.GetDrawCommandBuffer(System.Int32,System.Int32,System.Int32)">GetDrawCommandBuffer(Int32, Int32, Int32)</h4>
-  <div class="markdown level1 summary"><p>Get an instance of <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> based on the provided <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+  <a id="GDX_Developer_DebugDraw_GetLineBuffer_" data-uid="GDX.Developer.DebugDraw.GetLineBuffer*"></a>
+  <h4 id="GDX_Developer_DebugDraw_GetLineBuffer_System_Int32_System_Int32_System_Int32_" data-uid="GDX.Developer.DebugDraw.GetLineBuffer(System.Int32,System.Int32,System.Int32)">GetLineBuffer(Int32, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Get an instance of <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a> based on the provided <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DrawCommandBuffer GetDrawCommandBuffer(int key, int initialColorCount = 5, int verticesPerMesh = 512)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DebugLineBuffer GetLineBuffer(int key, int initialColorCount = 5, int verticesPerMesh = 512)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -138,7 +138,7 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>A value based key used to reference a <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> in a
+        <td><p>A value based key used to reference a <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a> in a
 <a class="xref" href="GDX.Collections.Generic.IntKeyDictionary-1.html">IntKeyDictionary&lt;TValue&gt;</a>.</p>
 </td>
       </tr>
@@ -166,16 +166,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a></td>
-        <td><p>A newly created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> if the provided key is not found, or the previously
-created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> identified by the <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
+        <td><a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a></td>
+        <td><p>A newly created <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a> if the provided key is not found, or the previously
+created <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a> identified by the <code data-dev-comment-type="paramref" class="paramref">key</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="GDX_Rendering_CommandBufferProvider_GetDrawCommandBuffer_System_Int32_System_Int32_System_Int32__examples">Examples</h5>
-  <p>By checking the <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html#GDX_Rendering_DrawCommandBuffer_Finalized">Finalized</a> property we can skip over the expensive building step.</p>
-<pre><code>    DrawCommandBuffer buffer = CommandBufferProvider.GetDrawCommandBuffer(gameObjet.GetInstanceID());
+  <h5 id="GDX_Developer_DebugDraw_GetLineBuffer_System_Int32_System_Int32_System_Int32__examples">Examples</h5>
+  <p>By checking the <a class="xref" href="GDX.Developer.DebugLineBuffer.html#GDX_Developer_DebugLineBuffer_Finalized">Finalized</a> property we can skip over the expensive building step.</p>
+<pre><code>    DebugLineBuffer buffer = DebugDraw.GetLineBuffer(gameObjet.GetInstanceID());
     if (!buffer.Finalized)
     {
         /// Draw lots of stuff ...
@@ -185,19 +185,19 @@ created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandB
 
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_CommandBufferProvider_HasDrawCommandBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.CommandBufferProvider.HasDrawCommandBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_DebugDraw_HasLineBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Developer.DebugDraw.HasLineBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/CommandBufferProvider.cs/#L64">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDraw.cs/#L64">View Source</a>
   </span>
-  <a id="GDX_Rendering_CommandBufferProvider_HasDrawCommandBuffer_" data-uid="GDX.Rendering.CommandBufferProvider.HasDrawCommandBuffer*"></a>
-  <h4 id="GDX_Rendering_CommandBufferProvider_HasDrawCommandBuffer_System_Int32_" data-uid="GDX.Rendering.CommandBufferProvider.HasDrawCommandBuffer(System.Int32)">HasDrawCommandBuffer(Int32)</h4>
-  <div class="markdown level1 summary"><p>Returns if the provided key has a <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> referenced.</p>
+  <a id="GDX_Developer_DebugDraw_HasLineBuffer_" data-uid="GDX.Developer.DebugDraw.HasLineBuffer*"></a>
+  <h4 id="GDX_Developer_DebugDraw_HasLineBuffer_System_Int32_" data-uid="GDX.Developer.DebugDraw.HasLineBuffer(System.Int32)">HasLineBuffer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns if the provided key has a <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a> referenced.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool HasDrawCommandBuffer(int key)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool HasLineBuffer(int key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,7 +212,7 @@ created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandB
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The key used to reference the <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a>.</p>
+        <td><p>The key used to reference the <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -228,26 +228,26 @@ created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandB
     <tbody>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
-        <td><p>true/false if the key has a <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> associated with it.</p>
+        <td><p>true/false if the key has a <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a> associated with it.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_CommandBufferProvider_RemoveDrawCommandBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Rendering.CommandBufferProvider.RemoveDrawCommandBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_DebugDraw_RemoveLineBuffer_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Developer.DebugDraw.RemoveLineBuffer(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/CommandBufferProvider.cs/#L75">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDraw.cs/#L75">View Source</a>
   </span>
-  <a id="GDX_Rendering_CommandBufferProvider_RemoveDrawCommandBuffer_" data-uid="GDX.Rendering.CommandBufferProvider.RemoveDrawCommandBuffer*"></a>
-  <h4 id="GDX_Rendering_CommandBufferProvider_RemoveDrawCommandBuffer_System_Int32_" data-uid="GDX.Rendering.CommandBufferProvider.RemoveDrawCommandBuffer(System.Int32)">RemoveDrawCommandBuffer(Int32)</h4>
-  <div class="markdown level1 summary"><p>Dereference the indicated <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a> from the provider.</p>
+  <a id="GDX_Developer_DebugDraw_RemoveLineBuffer_" data-uid="GDX.Developer.DebugDraw.RemoveLineBuffer*"></a>
+  <h4 id="GDX_Developer_DebugDraw_RemoveLineBuffer_System_Int32_" data-uid="GDX.Developer.DebugDraw.RemoveLineBuffer(System.Int32)">RemoveLineBuffer(Int32)</h4>
+  <div class="markdown level1 summary"><p>Dereference the indicated <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a> from the provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RemoveDrawCommandBuffer(int key)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RemoveLineBuffer(int key)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -262,7 +262,7 @@ created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandB
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">key</span></td>
-        <td><p>The key used to reference the <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandBuffer</a>.</p>
+        <td><p>The key used to reference the <a class="xref" href="GDX.Developer.DebugLineBuffer.html">DebugLineBuffer</a>.</p>
 </td>
       </tr>
     </tbody>
@@ -275,10 +275,10 @@ created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandB
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Rendering_CommandBufferProvider.md&amp;value=---%0Auid%3A%20GDX.Rendering.CommandBufferProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_DebugDraw.md&amp;value=---%0Auid%3A%20GDX.Developer.DebugDraw%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/CommandBufferProvider.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDraw.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -298,7 +298,7 @@ created <a class="xref" href="GDX.Rendering.DrawCommandBuffer.html">DrawCommandB
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-08-02 against <a href="https://github.com/dotBunny/GDX/commit/385b850e75f4311292534fe117710ffabecfacd8"><strong>385b850</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-08-03 against <a href="https://github.com/dotBunny/GDX/commit/d393407abdd4e56a095bc4851491657e27361a6b"><strong>d393407</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
