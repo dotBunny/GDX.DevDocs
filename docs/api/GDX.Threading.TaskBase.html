@@ -1,0 +1,862 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TaskBase
+   | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="TaskBase
+   | GDX ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div id="branch" class="container">
+            <div id="branch-select">
+              <select name="environment" id="environment">
+                <optgroup label="Branch">
+                  <option value="main">main
+                  <option value="dev">dev
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GDX.Threading.TaskBase">
+  
+  
+  <h1 id="GDX_Threading_TaskBase" data-uid="GDX.Threading.TaskBase" class="text-break"><span class="type" type="class">Class</span> 
+                                                        TaskBase
+  </h1>
+  <div class="markdown level0 summary"><p>The base of a task used by <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TaskBase</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Threading.html">GDX.Threading</a></h6>
+  <h5 id="GDX_Threading_TaskBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class TaskBase</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_completed.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.completed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L43">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskBase_completed" data-uid="GDX.Threading.TaskBase.completed">completed</h4>
+  <div class="markdown level1 summary"><p>An event that is triggered when the <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> has finished its execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;TaskBase&gt; completed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_completed_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is <strong>super important</strong> to remember that subscribed actions will invoke off of the main thread.
+Any logic that requires the main thread will not work. Many of Unity's APIs are not safe for this.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_completedMainThread.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.completedMainThread%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L52">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskBase_completedMainThread" data-uid="GDX.Threading.TaskBase.completedMainThread">completedMainThread</h4>
+  <div class="markdown level1 summary"><p>An event that is triggered once the <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> has finished, during the next tick of the
+<a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;TaskBase&gt; completedMainThread</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_completedMainThread_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is a safe way to do work which requires being executed on the main thread.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_m_Bits.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.m_Bits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L57">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskBase_m_Bits" data-uid="GDX.Threading.TaskBase.m_Bits">m_Bits</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a>'s descriptive bits.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BitArray16 m_Bits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.BitArray16.html">BitArray16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_m_BlockingBits.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.m_BlockingBits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L65">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskBase_m_BlockingBits" data-uid="GDX.Threading.TaskBase.m_BlockingBits">m_BlockingBits</h4>
+  <div class="markdown level1 summary"><p>A quick set of bits used to describe tasks that should be blocked when
+<a class="xref" href="GDX.Threading.TaskBase.html#GDX_Threading_TaskBase_m_BlockingModes">m_BlockingModes</a> contains <a class="xref" href="GDX.Threading.TaskBase.BlockingModeFlags.html#GDX_Threading_TaskBase_BlockingModeFlags_Bits">Bits</a>. The opposing
+<a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> will have its <a class="xref" href="GDX.Threading.TaskBase.html#GDX_Threading_TaskBase_m_Bits">m_Bits</a> checked for positives that match.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BitArray16 m_BlockingBits</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.BitArray16.html">BitArray16</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_m_BlockingBits_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If any of them are the sam</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_m_BlockingModes.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.m_BlockingModes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L70">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskBase_m_BlockingModes" data-uid="GDX.Threading.TaskBase.m_BlockingModes">m_BlockingModes</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a>'s blocking modes for other tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TaskBase.BlockingModeFlags m_BlockingModes</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Threading.TaskBase.BlockingModeFlags.html">TaskBase.BlockingModeFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_m_Exception.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.m_Exception%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L76">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskBase_m_Exception" data-uid="GDX.Threading.TaskBase.m_Exception">m_Exception</h4>
+  <div class="markdown level1 summary"><p>The exception that occured.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Exception m_Exception</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_m_Exception_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="GDX.Threading.TaskBase.html#GDX_Threading_TaskBase_IsFaulted">IsFaulted()</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_m_IsLogging.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.m_IsLogging%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L81">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskBase_m_IsLogging" data-uid="GDX.Threading.TaskBase.m_IsLogging">m_IsLogging</h4>
+  <div class="markdown level1 summary"><p>Should the task report information to the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a> log.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_IsLogging</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_m_Name.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.m_Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L87">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskBase_m_Name" data-uid="GDX.Threading.TaskBase.m_Name">m_Name</h4>
+  <div class="markdown level1 summary"><p>The user-friendly name of the task, used by different feedback systems.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string m_Name</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_m_Name_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It's important to set this in inherited constructors.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_DoWork.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.DoWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L107">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_DoWork_" data-uid="GDX.Threading.TaskBase.DoWork*"></a>
+  <h4 id="GDX_Threading_TaskBase_DoWork" data-uid="GDX.Threading.TaskBase.DoWork">DoWork()</h4>
+  <div class="markdown level1 summary"><p>The core logic to be defined for a task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void DoWork()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_Enqueue.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.Enqueue%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L112">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_Enqueue_" data-uid="GDX.Threading.TaskBase.Enqueue*"></a>
+  <h4 id="GDX_Threading_TaskBase_Enqueue" data-uid="GDX.Threading.TaskBase.Enqueue">Enqueue()</h4>
+  <div class="markdown level1 summary"><p>Enqueue the current <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> with the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a> for execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Enqueue()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_GetBits.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.GetBits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L121">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_GetBits_" data-uid="GDX.Threading.TaskBase.GetBits*"></a>
+  <h4 id="GDX_Threading_TaskBase_GetBits" data-uid="GDX.Threading.TaskBase.GetBits">GetBits()</h4>
+  <div class="markdown level1 summary"><p>Gets the associated <a class="xref" href="GDX.Collections.BitArray16.html">BitArray16</a> with this task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BitArray16 GetBits()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.BitArray16.html">BitArray16</a></td>
+        <td><p>The defined flags.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_GetBlockedBits.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.GetBlockedBits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L130">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_GetBlockedBits_" data-uid="GDX.Threading.TaskBase.GetBlockedBits*"></a>
+  <h4 id="GDX_Threading_TaskBase_GetBlockedBits" data-uid="GDX.Threading.TaskBase.GetBlockedBits">GetBlockedBits()</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="GDX.Collections.BitArray16.html">BitArray16</a> to evaluate other tasks against.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BitArray16 GetBlockedBits()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.BitArray16.html">BitArray16</a></td>
+        <td><p>The defined bits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_GetBlockingModes.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.GetBlockingModes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L139">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_GetBlockingModes_" data-uid="GDX.Threading.TaskBase.GetBlockingModes*"></a>
+  <h4 id="GDX_Threading_TaskBase_GetBlockingModes" data-uid="GDX.Threading.TaskBase.GetBlockingModes">GetBlockingModes()</h4>
+  <div class="markdown level1 summary"><p>Returns the <a class="xref" href="GDX.Threading.TaskBase.BlockingModeFlags.html">TaskBase.BlockingModeFlags</a> used to determine other task execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TaskBase.BlockingModeFlags GetBlockingModes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Threading.TaskBase.BlockingModeFlags.html">TaskBase.BlockingModeFlags</a></td>
+        <td><p>A set of flags indicating if other tasks should be able to start execution.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_GetException.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.GetException%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L149">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_GetException_" data-uid="GDX.Threading.TaskBase.GetException*"></a>
+  <h4 id="GDX_Threading_TaskBase_GetException" data-uid="GDX.Threading.TaskBase.GetException">GetException()</h4>
+  <div class="markdown level1 summary"><p>Returns the <span class="xref">System.Exception</span> that was created when the task faulted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception GetException()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><p>An <span class="xref">System.Exception</span> object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_GetException_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>See <a class="xref" href="GDX.Threading.TaskBase.html#GDX_Threading_TaskBase_IsFaulted">IsFaulted()</a>.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_GetName.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.GetName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L158">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_GetName_" data-uid="GDX.Threading.TaskBase.GetName*"></a>
+  <h4 id="GDX_Threading_TaskBase_GetName" data-uid="GDX.Threading.TaskBase.GetName">GetName()</h4>
+  <div class="markdown level1 summary"><p>Gets the user-friendly name of the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The defined <span class="xref">System.String</span> name of the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_IsBlockingAllTasks.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.IsBlockingAllTasks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L170">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_IsBlockingAllTasks_" data-uid="GDX.Threading.TaskBase.IsBlockingAllTasks*"></a>
+  <h4 id="GDX_Threading_TaskBase_IsBlockingAllTasks" data-uid="GDX.Threading.TaskBase.IsBlockingAllTasks">IsBlockingAllTasks()</h4>
+  <div class="markdown level1 summary"><p>Does this <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> block all other tasks after it from starting execution?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBlockingAllTasks()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if this task blocks all after it, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_IsBlockingAllTasks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will keep all tasks after it sitting waiting for this task to complete.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_IsBlockingBits.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.IsBlockingBits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L180">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_IsBlockingBits_" data-uid="GDX.Threading.TaskBase.IsBlockingBits*"></a>
+  <h4 id="GDX_Threading_TaskBase_IsBlockingBits" data-uid="GDX.Threading.TaskBase.IsBlockingBits">IsBlockingBits()</h4>
+  <div class="markdown level1 summary"><p>Does this <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> block other tasks from executing based on its
+<a class="xref" href="GDX.Threading.TaskBase.html#GDX_Threading_TaskBase_m_BlockingBits">m_BlockingBits</a>?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBlockingBits()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if this tasks blocks based on bits, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_IsBlockingSameName.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.IsBlockingSameName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L190">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_IsBlockingSameName_" data-uid="GDX.Threading.TaskBase.IsBlockingSameName*"></a>
+  <h4 id="GDX_Threading_TaskBase_IsBlockingSameName" data-uid="GDX.Threading.TaskBase.IsBlockingSameName">IsBlockingSameName()</h4>
+  <div class="markdown level1 summary"><p>Does this <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> block all other tasks of the same name from starting during
+its execution?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBlockingSameName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if this tasks blocks same named tasks, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_IsBlockingUserInterface.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.IsBlockingUserInterface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L204">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_IsBlockingUserInterface_" data-uid="GDX.Threading.TaskBase.IsBlockingUserInterface*"></a>
+  <h4 id="GDX_Threading_TaskBase_IsBlockingUserInterface" data-uid="GDX.Threading.TaskBase.IsBlockingUserInterface">IsBlockingUserInterface()</h4>
+  <div class="markdown level1 summary"><p>Should the execution of this <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> prevent the user from providing input to the
+user interface?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBlockingUserInterface()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if this task should prevent user input, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_IsBlockingUserInterface_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This directly relates to the <a class="xref" href="GDX.Threading.TaskDirector.html#GDX_Threading_TaskDirector_inputBlocked">inputBlocked</a>, altering the count used
+to trigger that particular event.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_IsDone.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.IsDone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L216">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_IsDone_" data-uid="GDX.Threading.TaskBase.IsDone*"></a>
+  <h4 id="GDX_Threading_TaskBase_IsDone" data-uid="GDX.Threading.TaskBase.IsDone">IsDone()</h4>
+  <div class="markdown level1 summary"><p>Is the <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> finished executing?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDone()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if the execution phase of the task has been completed. This will be
+true if an exception has occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_IsExecuting.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.IsExecuting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L225">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_IsExecuting_" data-uid="GDX.Threading.TaskBase.IsExecuting*"></a>
+  <h4 id="GDX_Threading_TaskBase_IsExecuting" data-uid="GDX.Threading.TaskBase.IsExecuting">IsExecuting()</h4>
+  <div class="markdown level1 summary"><p>Is the <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> currently executing on the thread pool?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsExecuting()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if the task is executing, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_IsFaulted.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.IsFaulted%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L237">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_IsFaulted_" data-uid="GDX.Threading.TaskBase.IsFaulted*"></a>
+  <h4 id="GDX_Threading_TaskBase_IsFaulted" data-uid="GDX.Threading.TaskBase.IsFaulted">IsFaulted()</h4>
+  <div class="markdown level1 summary"><p>Did an exception occur while executing off thread?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFaulted()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>Returns true if an exception occured.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskBase_IsFaulted_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p><see cref="!:GetStatusMessage"></see> for more details.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase_Run.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase.Run%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L245">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskBase_Run_" data-uid="GDX.Threading.TaskBase.Run*"></a>
+  <h4 id="GDX_Threading_TaskBase_Run" data-uid="GDX.Threading.TaskBase.Run">Run()</h4>
+  <div class="markdown level1 summary"><p>Execute task logic.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Run()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskBase.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+      	<div class="grad-bottom"></div>
+      	<div class="footer">
+      		<div class="container">
+      			<span class="pull-right">
+      				<a href="#top">Back to top</a>
+      			</span>
+      			
+      			<span>Built on 2022-08-23 against <a href="https://github.com/dotBunny/GDX/commit/cf98e6331b9f91ee1d4b59e09f251e4c14601806"><strong>cf98e63</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      		</div>
+      	</div>
+      </footer></div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

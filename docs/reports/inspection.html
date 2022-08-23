@@ -95,33 +95,6 @@
 <p>A significant portion of the suggestions found by code inspection are based on the exposure of fields that could be marked private or internal. As additional unit tests get implemented, this should start to go down.</p>
 </div>
 <h2 id="warnings">Warnings</h2>
-<h3 id="collections-content-is-never-queried-non-private-accessibility">Collection's content is never queried: Non-private accessibility</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L30" title="GDX.Editor\AssemblyProvider.cs:30">AssemblyProvider.cs:30</a></td>
-<td>Content of collection <code>VisualScriptingCollections</code> is only updated but never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L35" title="GDX.Editor\AssemblyProvider.cs:35">AssemblyProvider.cs:35</a></td>
-<td>Content of collection <code>VisualScriptingExtensions</code> is only updated but never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L40" title="GDX.Editor\AssemblyProvider.cs:40">AssemblyProvider.cs:40</a></td>
-<td>Content of collection <code>VisualScriptingTypes</code> is only updated but never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L45" title="GDX.Editor\AssemblyProvider.cs:45">AssemblyProvider.cs:45</a></td>
-<td>Content of collection <code>VisualScriptingUtilities</code> is only updated but never used</td>
-</tr>
-</tbody>
-</table>
 <h3 id="collection-is-never-updated-non-private-accessibility">Collection is never updated: Non-private accessibility</h3>
 <table>
 <thead>
@@ -151,8 +124,48 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs#L85" title="GDX\Collections\Pooling\SimpleListManagedPool.cs:85">SimpleListManagedPool.cs:85</a></td>
+<td>Name <code>destroyedItem</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>DestroyedItem</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs#L105" title="GDX\Collections\Pooling\SimpleListManagedPool.cs:105">SimpleListManagedPool.cs:105</a></td>
+<td>Name <code>returnedItem</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>ReturnedItem</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs#L110" title="GDX\Collections\Pooling\SimpleListManagedPool.cs:110">SimpleListManagedPool.cs:110</a></td>
+<td>Name <code>spawnedItem</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>SpawnedItem</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/SimpleListManagedPool.cs#L115" title="GDX\Collections\Pooling\SimpleListManagedPool.cs:115">SimpleListManagedPool.cs:115</a></td>
+<td>Name <code>tearingDown</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>TearingDown</code>.</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/ShaderProvider.cs#L27" title="GDX\Rendering\ShaderProvider.cs:27">ShaderProvider.cs:27</a></td>
 <td>Name <code>ColorPropertyID</code> does not match rule <code>non_private_readonly_fields_should_be_pascal_case</code>. Suggested name is <code>ColorPropertyId</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs#L43" title="GDX\Threading\TaskBase.cs:43">TaskBase.cs:43</a></td>
+<td>Name <code>completed</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>Completed</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs#L52" title="GDX\Threading\TaskBase.cs:52">TaskBase.cs:52</a></td>
+<td>Name <code>completedMainThread</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>CompletedMainThread</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs#L22" title="GDX\Threading\TaskDirector.cs:22">TaskDirector.cs:22</a></td>
+<td>Name <code>exceptionOccured</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>ExceptionOccured</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs#L27" title="GDX\Threading\TaskDirector.cs:27">TaskDirector.cs:27</a></td>
+<td>Name <code>inputBlocked</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>InputBlocked</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs#L32" title="GDX\Threading\TaskDirector.cs:32">TaskDirector.cs:32</a></td>
+<td>Name <code>logAdded</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>LogAdded</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirector.cs#L26" title="GDX.Editor\EditorTaskDirector.cs:26">EditorTaskDirector.cs:26</a></td>
+<td>Name <code>s_ProgressID</code> does not match rule <code>static_fields_should_be_camel_case</code>. Suggested name is <code>s_ProgressId</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -166,12 +179,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L174" title="GDX.Editor\PackageProvider.cs:174">PackageProvider.cs:174</a></td>
-<td>Cannot resolve symbol <code>DrawCommandBuffer</code></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs#L234" title="GDX\Threading\TaskBase.cs:234">TaskBase.cs:234</a></td>
+<td>Cannot resolve symbol <code>GetStatusMessage</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugLineBufferTests.cs#L10" title="GDX.Tests\EditMode\Developer\DebugLineBufferTests.cs:10">DebugLineBufferTests.cs:10</a></td>
-<td>Cannot resolve symbol <code>DebugLineBuffer</code></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L174" title="GDX.Editor\PackageProvider.cs:174">PackageProvider.cs:174</a></td>
+<td>Cannot resolve symbol <code>DrawCommandBuffer</code></td>
 </tr>
 </tbody>
 </table>
@@ -184,6 +197,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L163" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:163">EditorTaskDirectorTests.cs:163</a></td>
+<td>The parameter <code>expectDomainReload</code> has the same default value</td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/Reports/NUnitReportTests.cs#L43" title="GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs:43">NUnitReportTests.cs:43</a></td>
 <td>The parameter <code>passed</code> has the same default value</td>
@@ -220,8 +237,23 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/AutomationTests.cs#L44" title="GDX.Editor.Tests\EditMode\AutomationTests.cs:44">AutomationTests.cs:44</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/AutomationTests.cs#L47" title="GDX.Editor.Tests\EditMode\AutomationTests.cs:47">AutomationTests.cs:47</a></td>
 <td>Value assigned is not used in any execution path</td>
+</tr>
+</tbody>
+</table>
+<h3 id="redundant-member-initializer">Redundant member initializer</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L30" title="GDX\Threading\TaskDirectorSystem.cs:30">TaskDirectorSystem.cs:30</a></td>
+<td>Initializing field by default value is redundant</td>
 </tr>
 </tbody>
 </table>
@@ -265,7 +297,19 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugLineBufferTests.cs#L5" title="GDX.Tests\EditMode\Developer\DebugLineBufferTests.cs:5">DebugLineBufferTests.cs:5</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L7" title="GDX\Core.cs:7">Core.cs:7</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/DomainReloadTests.cs#L11" title="GDX.Editor.Tests\EditMode\DomainReloadTests.cs:11">DomainReloadTests.cs:11</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L5" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:5">EditorTaskDirectorTests.cs:5</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugDrawBufferTests.cs#L5" title="GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs:5">DebugDrawBufferTests.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -430,24 +474,16 @@
 <td>Method <code>Awake</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L82" title="GDX\Threading\TaskDirectorSystem.cs:82">TaskDirectorSystem.cs:82</a></td>
+<td>Method <code>Initialize</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirector.cs#L67" title="GDX.Editor\EditorTaskDirector.cs:67">EditorTaskDirector.cs:67</a></td>
+<td>Method <code>Initialize</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/MenuItems.cs#L14" title="GDX.Editor\MenuItems.cs:14">MenuItems.cs:14</a></td>
 <td>Method <code>ManagedMemoryReport</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L192" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:192">VisualScriptingSettings.cs:192</a></td>
-<td>Method <code>AddTypesToVisualScripting</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L208" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:208">VisualScriptingSettings.cs:208</a></td>
-<td>Method <code>EnsureAssemblyReferenced</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L228" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:228">VisualScriptingSettings.cs:228</a></td>
-<td>Method <code>HasAllTypesInConfiguration</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L249" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:249">VisualScriptingSettings.cs:249</a></td>
-<td>Method <code>RemoveTypesFromVisualScripting</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -461,31 +497,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L659" title="GDX\Developer\DebugLineBuffer.cs:659">DebugLineBuffer.cs:659</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L694" title="GDX\Developer\DebugDrawBuffer.cs:694">DebugDrawBuffer.cs:694</a></td>
 <td>Method <code>AddLineDrawCommand</code> return value is never used</td>
-</tr>
-</tbody>
-</table>
-<h3 id="unused-parameter-private-accessibility">Unused parameter: Private accessibility</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L192" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:192">VisualScriptingSettings.cs:192</a></td>
-<td>Parameter <code>types</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L228" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:228">VisualScriptingSettings.cs:228</a></td>
-<td>Parameter <code>types</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L249" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:249">VisualScriptingSettings.cs:249</a></td>
-<td>Parameter <code>types</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -525,6 +538,36 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Collections/Pooling/GameObjectPoolTests.cs#L279" title="GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs:279">GameObjectPoolTests.cs:279</a></td>
 <td>Class <code>GameObjectPoolItemTest</code> is never instantiated</td>
+</tr>
+</tbody>
+</table>
+<h3 id="if-statement-can-be-re-written-as--expression">'if' statement can be re-written as '?:' expression</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L82" title="GDX\PlayerLoopSystemExtensions.cs:82">PlayerLoopSystemExtensions.cs:82</a></td>
+<td>Convert to method call with <code>?:</code> expression inside</td>
+</tr>
+</tbody>
+</table>
+<h3 id="if-statement-can-be-re-written-as--assignment">'if' statement can be re-written as '??=' assignment</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L71" title="GDX\PlayerLoopSystemExtensions.cs:71">PlayerLoopSystemExtensions.cs:71</a></td>
+<td>Convert to <code>??=</code></td>
 </tr>
 </tbody>
 </table>
@@ -891,7 +934,11 @@
 <td>Field <code>Capacity</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/DictionaryPrimes.cs#L94" title="GDX\Collections\Generic\DictionaryPrimes.cs:94">DictionaryPrimes.cs:94</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/DictionaryPrimes.cs#L84" title="GDX\Collections\Generic\DictionaryPrimes.cs:84">DictionaryPrimes.cs:84</a></td>
+<td>Method <code>SetDefaultPrimes</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/DictionaryPrimes.cs#L99" title="GDX\Collections\Generic\DictionaryPrimes.cs:99">DictionaryPrimes.cs:99</a></td>
 <td>Method <code>SetPrimes</code> can be made private</td>
 </tr>
 <tr>
@@ -959,43 +1006,43 @@
 <td>Field <code>StartTicks</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L34" title="GDX\Developer\DebugLineBuffer.cs:34">DebugLineBuffer.cs:34</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L34" title="GDX\Developer\DebugDrawBuffer.cs:34">DebugDrawBuffer.cs:34</a></td>
 <td>Field <code>CubeSegmentIndices</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L199" title="GDX\Developer\DebugLineBuffer.cs:199">DebugLineBuffer.cs:199</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L199" title="GDX\Developer\DebugDrawBuffer.cs:199">DebugDrawBuffer.cs:199</a></td>
 <td>Property <code>Finalized</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L217" title="GDX\Developer\DebugLineBuffer.cs:217">DebugLineBuffer.cs:217</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L209" title="GDX\Developer\DebugDrawBuffer.cs:209">DebugDrawBuffer.cs:209</a></td>
 <td>Method <code>Converge</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L297" title="GDX\Developer\DebugLineBuffer.cs:297">DebugLineBuffer.cs:297</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L289" title="GDX\Developer\DebugDrawBuffer.cs:289">DebugDrawBuffer.cs:289</a></td>
 <td>Method <code>DrawDottedLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L315" title="GDX\Developer\DebugLineBuffer.cs:315">DebugLineBuffer.cs:315</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L307" title="GDX\Developer\DebugDrawBuffer.cs:307">DebugDrawBuffer.cs:307</a></td>
 <td>Method <code>DrawDottedLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L348" title="GDX\Developer\DebugLineBuffer.cs:348">DebugLineBuffer.cs:348</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L340" title="GDX\Developer\DebugDrawBuffer.cs:340">DebugDrawBuffer.cs:340</a></td>
 <td>Method <code>DrawLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L366" title="GDX\Developer\DebugLineBuffer.cs:366">DebugLineBuffer.cs:366</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L358" title="GDX\Developer\DebugDrawBuffer.cs:358">DebugDrawBuffer.cs:358</a></td>
 <td>Method <code>DrawLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L385" title="GDX\Developer\DebugLineBuffer.cs:385">DebugLineBuffer.cs:385</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L377" title="GDX\Developer\DebugDrawBuffer.cs:377">DebugDrawBuffer.cs:377</a></td>
 <td>Method <code>DrawLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L467" title="GDX\Developer\DebugLineBuffer.cs:467">DebugLineBuffer.cs:467</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L459" title="GDX\Developer\DebugDrawBuffer.cs:459">DebugDrawBuffer.cs:459</a></td>
 <td>Method <code>DrawMesh</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L568" title="GDX\Developer\DebugLineBuffer.cs:568">DebugLineBuffer.cs:568</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L603" title="GDX\Developer\DebugDrawBuffer.cs:603">DebugDrawBuffer.cs:603</a></td>
 <td>Method <code>NextLineBatch</code> can be made private</td>
 </tr>
 <tr>
@@ -1291,6 +1338,22 @@
 <td>Method <code>GetRandomSafeCharacter</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L21" title="GDX\PlayerLoopSystemExtensions.cs:21">PlayerLoopSystemExtensions.cs:21</a></td>
+<td>Method <code>AddSubSystem</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L126" title="GDX\PlayerLoopSystemExtensions.cs:126">PlayerLoopSystemExtensions.cs:126</a></td>
+<td>Method <code>RemoveSubSystemsOfType</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L255" title="GDX\PlayerLoopSystemExtensions.cs:255">PlayerLoopSystemExtensions.cs:255</a></td>
+<td>Method <code>TryGetFirstSubSystemOfType</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L302" title="GDX\PlayerLoopSystemExtensions.cs:302">PlayerLoopSystemExtensions.cs:302</a></td>
+<td>Method <code>TryGetFirstSystemWithSubSystemOfType</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Reflection.cs#L19" title="GDX\Reflection.cs:19">Reflection.cs:19</a></td>
 <td>Constant <code>PrivateFieldFlags</code> can be made private</td>
 </tr>
@@ -1307,28 +1370,12 @@
 <td>Constant <code>AsciiNumberDecimal</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L20" title="GDX.Editor\AssemblyProvider.cs:20">AssemblyProvider.cs:20</a></td>
-<td>Field <code>IsPopulated</code> can be made private</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs#L76" title="GDX\Threading\TaskBase.cs:76">TaskBase.cs:76</a></td>
+<td>Field <code>m_Exception</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L25" title="GDX.Editor\AssemblyProvider.cs:25">AssemblyProvider.cs:25</a></td>
 <td>Field <code>RuntimeAssembly</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L30" title="GDX.Editor\AssemblyProvider.cs:30">AssemblyProvider.cs:30</a></td>
-<td>Field <code>VisualScriptingCollections</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L35" title="GDX.Editor\AssemblyProvider.cs:35">AssemblyProvider.cs:35</a></td>
-<td>Field <code>VisualScriptingExtensions</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L40" title="GDX.Editor\AssemblyProvider.cs:40">AssemblyProvider.cs:40</a></td>
-<td>Field <code>VisualScriptingTypes</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L45" title="GDX.Editor\AssemblyProvider.cs:45">AssemblyProvider.cs:45</a></td>
-<td>Field <code>VisualScriptingUtilities</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L127" title="GDX.Editor\Automation.cs:127">Automation.cs:127</a></td>
@@ -1405,6 +1452,14 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/Resource/Objects/ObjectInfo.cs#L76" title="GDX\Developer\Reports\Resource\Objects\ObjectInfo.cs:76">ObjectInfo.cs:76</a></td>
 <td>Method <code>GetDetailedInformation</code> can be made protected</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs#L43" title="GDX\Threading\TaskBase.cs:43">TaskBase.cs:43</a></td>
+<td>Field <code>completed</code> can be made protected</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskBase.cs#L107" title="GDX\Threading\TaskBase.cs:107">TaskBase.cs:107</a></td>
+<td>Method <code>DoWork</code> can be made protected</td>
+</tr>
 </tbody>
 </table>
 <h3 id="non-accessed-field-non-private-accessibility">Non-accessed field: Non-private accessibility</h3>
@@ -1423,10 +1478,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Mathematics/Byte2.cs#L775" title="GDX\Mathematics\Byte2.cs:775">Byte2.cs:775</a></td>
 <td>Field <code>Y</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L20" title="GDX.Editor\AssemblyProvider.cs:20">AssemblyProvider.cs:20</a></td>
-<td>Field <code>IsPopulated</code> is assigned but its value is never used</td>
 </tr>
 </tbody>
 </table>
@@ -1538,10 +1589,6 @@
 <td>Indexer <code>this</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/BitArray16.cs#L44" title="GDX\Collections\BitArray16.cs:44">BitArray16.cs:44</a></td>
-<td>Indexer <code>this</code> is never used (except inside its declaration)</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/BitArray256.cs#L77" title="GDX\Collections\BitArray256.cs:77">BitArray256.cs:77</a></td>
 <td>Indexer <code>this</code> is never used</td>
 </tr>
@@ -1570,7 +1617,7 @@
 <td>Constructor <code>CircularBuffer</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/DictionaryPrimes.cs#L47" title="GDX\Collections\Generic\DictionaryPrimes.cs:47">DictionaryPrimes.cs:47</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/DictionaryPrimes.cs#L52" title="GDX\Collections\Generic\DictionaryPrimes.cs:52">DictionaryPrimes.cs:52</a></td>
 <td>Method <code>GetPrimesLength</code> is never used</td>
 </tr>
 <tr>
@@ -1682,55 +1729,67 @@
 <td>Method <code>Reserve</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L266" title="GDX\Developer\DebugLineBuffer.cs:266">DebugLineBuffer.cs:266</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Config.cs#L130" title="GDX\Config.cs:130">Config.cs:130</a></td>
+<td>Field <code>EnvironmentEditorTaskDirectorTickInPlayMode</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L258" title="GDX\Developer\DebugDrawBuffer.cs:258">DebugDrawBuffer.cs:258</a></td>
 <td>Method <code>DrawDottedCube</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L283" title="GDX\Developer\DebugLineBuffer.cs:283">DebugLineBuffer.cs:283</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L275" title="GDX\Developer\DebugDrawBuffer.cs:275">DebugDrawBuffer.cs:275</a></td>
 <td>Method <code>DrawDottedLine</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L334" title="GDX\Developer\DebugLineBuffer.cs:334">DebugLineBuffer.cs:334</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L326" title="GDX\Developer\DebugDrawBuffer.cs:326">DebugDrawBuffer.cs:326</a></td>
 <td>Method <code>DrawLine</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L460" title="GDX\Developer\DebugLineBuffer.cs:460">DebugLineBuffer.cs:460</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L452" title="GDX\Developer\DebugDrawBuffer.cs:452">DebugDrawBuffer.cs:452</a></td>
 <td>Method <code>DrawRenderer</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L483" title="GDX\Developer\DebugLineBuffer.cs:483">DebugLineBuffer.cs:483</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L475" title="GDX\Developer\DebugDrawBuffer.cs:475">DebugDrawBuffer.cs:475</a></td>
 <td>Method <code>DrawWireCube</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L496" title="GDX\Developer\DebugLineBuffer.cs:496">DebugLineBuffer.cs:496</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L481" title="GDX\Developer\DebugDrawBuffer.cs:481">DebugDrawBuffer.cs:481</a></td>
+<td>Method <code>DrawWireCapsule</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L526" title="GDX\Developer\DebugDrawBuffer.cs:526">DebugDrawBuffer.cs:526</a></td>
 <td>Method <code>Execute</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L510" title="GDX\Developer\DebugLineBuffer.cs:510">DebugLineBuffer.cs:510</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L540" title="GDX\Developer\DebugDrawBuffer.cs:540">DebugDrawBuffer.cs:540</a></td>
 <td>Method <code>GetBuffer</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L520" title="GDX\Developer\DebugLineBuffer.cs:520">DebugLineBuffer.cs:520</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L550" title="GDX\Developer\DebugDrawBuffer.cs:550">DebugDrawBuffer.cs:550</a></td>
 <td>Method <code>HasToken</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L529" title="GDX\Developer\DebugLineBuffer.cs:529">DebugLineBuffer.cs:529</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L555" title="GDX\Developer\DebugDrawBuffer.cs:555">DebugDrawBuffer.cs:555</a></td>
+<td>Method <code>Unlock</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L564" title="GDX\Developer\DebugDrawBuffer.cs:564">DebugDrawBuffer.cs:564</a></td>
 <td>Method <code>Invalidate</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L540" title="GDX\Developer\DebugLineBuffer.cs:540">DebugLineBuffer.cs:540</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L575" title="GDX\Developer\DebugDrawBuffer.cs:575">DebugDrawBuffer.cs:575</a></td>
 <td>Method <code>InvalidateAll</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L550" title="GDX\Developer\DebugLineBuffer.cs:550">DebugLineBuffer.cs:550</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L585" title="GDX\Developer\DebugDrawBuffer.cs:585">DebugDrawBuffer.cs:585</a></td>
 <td>Method <code>NextDottedLineBatch</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L559" title="GDX\Developer\DebugLineBuffer.cs:559">DebugLineBuffer.cs:559</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L594" title="GDX\Developer\DebugDrawBuffer.cs:594">DebugDrawBuffer.cs:594</a></td>
 <td>Method <code>NextLineBatch</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugLineBuffer.cs#L598" title="GDX\Developer\DebugLineBuffer.cs:598">DebugLineBuffer.cs:598</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L633" title="GDX\Developer\DebugDrawBuffer.cs:633">DebugDrawBuffer.cs:633</a></td>
 <td>Method <code>Reset</code> is never used</td>
 </tr>
 <tr>
@@ -1794,16 +1853,44 @@
 <td>Constructor <code>TransientReference</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L22" title="GDX\Developer\WaitForMilliseconds.cs:22">WaitForMilliseconds.cs:22</a></td>
-<td>Method <code>WaitAsync</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L15" title="GDX\Developer\WaitForMilliseconds.cs:15">WaitForMilliseconds.cs:15</a></td>
+<td>Constant <code>FiveSeconds</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L16" title="GDX\Developer\WaitForMilliseconds.cs:16">WaitForMilliseconds.cs:16</a></td>
+<td>Constant <code>TenSeconds</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L17" title="GDX\Developer\WaitForMilliseconds.cs:17">WaitForMilliseconds.cs:17</a></td>
+<td>Constant <code>ThirtySeconds</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L18" title="GDX\Developer\WaitForMilliseconds.cs:18">WaitForMilliseconds.cs:18</a></td>
+<td>Constant <code>OneMinute</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L19" title="GDX\Developer\WaitForMilliseconds.cs:19">WaitForMilliseconds.cs:19</a></td>
+<td>Constant <code>TenMinutes</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L30" title="GDX\Developer\WaitForMilliseconds.cs:30">WaitForMilliseconds.cs:30</a></td>
 <td>Method <code>Wait</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L51" title="GDX\Developer\WaitForMilliseconds.cs:51">WaitForMilliseconds.cs:51</a></td>
-<td>Method <code>Reset</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L41" title="GDX\Developer\WaitForMilliseconds.cs:41">WaitForMilliseconds.cs:41</a></td>
+<td>Method <code>WaitAsync</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitWhile.cs#L19" title="GDX\Developer\WaitWhile.cs:19">WaitWhile.cs:19</a></td>
+<td>Method <code>Wait</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitWhile.cs#L24" title="GDX\Developer\WaitWhile.cs:24">WaitWhile.cs:24</a></td>
+<td>Method <code>WaitAsync</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitWhile.cs#L35" title="GDX\Developer\WaitWhile.cs:35">WaitWhile.cs:35</a></td>
+<td>Method <code>While</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L24" title="GDX\Display.cs:24">Display.cs:24</a></td>
@@ -1910,6 +1997,14 @@
 <td>Method <code>IsFileWritable</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L195" title="GDX\PlayerLoopSystemExtensions.cs:195">PlayerLoopSystemExtensions.cs:195</a></td>
+<td>Method <code>ReplaceFirstSubSystemOfType</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L219" title="GDX\PlayerLoopSystemExtensions.cs:219">PlayerLoopSystemExtensions.cs:219</a></td>
+<td>Method <code>ReplaceSubSystemsOfType</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/RigidbodyExtensions.cs#L26" title="GDX\RigidbodyExtensions.cs:26">RigidbodyExtensions.cs:26</a></td>
 <td>Method <code>MomentOfInertia</code> is never used</td>
 </tr>
@@ -1924,10 +2019,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/VisualScriptingCompatibleAttribute.cs#L58" title="GDX\VisualScriptingCompatibleAttribute.cs:58">VisualScriptingCompatibleAttribute.cs:58</a></td>
 <td>Constructor <code>VisualScriptingCompatibleAttribute</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L47" title="GDX.Editor\AssemblyProvider.cs:47">AssemblyProvider.cs:47</a></td>
-<td>Method <code>Populate</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L231" title="GDX.Editor\Automation.cs:231">Automation.cs:231</a></td>
@@ -1990,7 +2081,7 @@
 <td>Field <code>hash</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L266" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:266">VisualScriptingSettings.cs:266</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ConfigSections/VisualScriptingSettings.cs#L272" title="GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs:272">VisualScriptingSettings.cs:272</a></td>
 <td>Method <code>GetPriority</code> is never used</td>
 </tr>
 <tr>
@@ -2018,15 +2109,23 @@
 <td>Property <code>SerializationSpan</code> is never used (except inside its declaration)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TestFramework.cs#L17" title="GDX.Editor\TestFramework.cs:17">TestFramework.cs:17</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TestFramework.cs#L19" title="GDX.Editor\TestFramework.cs:19">TestFramework.cs:19</a></td>
 <td>Method <code>Initialize</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/DomainReloadTests.cs#L66" title="GDX.Editor.Tests\EditMode\DomainReloadTests.cs:66">DomainReloadTests.cs:66</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/DomainReloadTests.cs#L68" title="GDX.Editor.Tests\EditMode\DomainReloadTests.cs:68">DomainReloadTests.cs:68</a></td>
 <td>Method <code>Setup</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/DomainReloadTests.cs#L102" title="GDX.Editor.Tests\EditMode\DomainReloadTests.cs:102">DomainReloadTests.cs:102</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/DomainReloadTests.cs#L111" title="GDX.Editor.Tests\EditMode\DomainReloadTests.cs:111">DomainReloadTests.cs:111</a></td>
+<td>Method <code>TearDown</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L33" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:33">EditorTaskDirectorTests.cs:33</a></td>
+<td>Method <code>Setup</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L61" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:61">EditorTaskDirectorTests.cs:61</a></td>
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 </tbody>
@@ -2096,6 +2195,14 @@
 <td>Method <code>RemoveItems</code> return value is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L49" title="GDX\PlayerLoopSystemExtensions.cs:49">PlayerLoopSystemExtensions.cs:49</a></td>
+<td>Method <code>AddSubSystemToFirstSubSystemOfType</code> return value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L175" title="GDX\PlayerLoopSystemExtensions.cs:175">PlayerLoopSystemExtensions.cs:175</a></td>
+<td>Method <code>RemoveSubSystemsOfTypeFromFirstSubSystemOfType</code> return value is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L94" title="GDX\SimpleListExtensions.cs:94">SimpleListExtensions.cs:94</a></td>
 <td>Method <code>AddWithExpandCheckUniqueValue</code> return value is never used</td>
 </tr>
@@ -2106,6 +2213,21 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L311" title="GDX\SimpleListExtensions.cs:311">SimpleListExtensions.cs:311</a></td>
 <td>Method <code>RemoveReferences</code> return value is never used</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unused-parameter-non-private-accessibility">Unused parameter: Non-private accessibility</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L481" title="GDX\Developer\DebugDrawBuffer.cs:481">DebugDrawBuffer.cs:481</a></td>
+<td>Parameter <code>direction</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -2153,6 +2275,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Profiling.cs#L19" title="GDX\Developer\Profiling.cs:19">Profiling.cs:19</a></td>
 <td>Class <code>Profiling</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitWhile.cs#L11" title="GDX\Developer\WaitWhile.cs:11">WaitWhile.cs:11</a></td>
+<td>Class <code>WaitWhile</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L14" title="GDX\Display.cs:14">Display.cs:14</a></td>
@@ -2219,10 +2345,6 @@
 <td>Class <code>UnsupportedRuntimeException</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L15" title="GDX.Editor\AssemblyProvider.cs:15">AssemblyProvider.cs:15</a></td>
-<td>Class <code>AssemblyProvider</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/Legacy/BuildInfoBuildProcessor.cs#L67" title="GDX.Editor\Build\Legacy\BuildInfoBuildProcessor.cs:67">BuildInfoBuildProcessor.cs:67</a></td>
 <td>Class <code>BuildInfoBuildProcessor</code> is never used</td>
 </tr>
@@ -2247,12 +2369,8 @@
 <td>Class <code>SerializableDictionaryPropertyDrawer</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TestFramework.cs#L11" title="GDX.Editor\TestFramework.cs:11">TestFramework.cs:11</a></td>
-<td>Class <code>TestFramework</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugLineBufferTests.cs#L13" title="GDX.Tests\EditMode\Developer\DebugLineBufferTests.cs:13">DebugLineBufferTests.cs:13</a></td>
-<td>Class <code>DebugLineBufferTests</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugDrawBufferTests.cs#L13" title="GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs:13">DebugDrawBufferTests.cs:13</a></td>
+<td>Class <code>DebugDrawBufferTests</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -2296,7 +2414,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-08-03 against <a href="https://github.com/dotBunny/GDX/commit/c23f9504a9736882b71463f20325907745dc2a21"><strong>c23f950</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-08-23 against <a href="https://github.com/dotBunny/GDX/commit/cf98e6331b9f91ee1d4b59e09f251e4c14601806"><strong>cf98e63</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>

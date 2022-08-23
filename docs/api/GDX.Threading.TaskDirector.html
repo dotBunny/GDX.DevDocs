@@ -1,0 +1,611 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TaskDirector
+   | GDX </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="TaskDirector
+   | GDX ">
+    <meta name="generator" content="docfx 2.59.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div id="branch" class="container">
+            <div id="branch-select">
+              <select name="environment" id="environment">
+                <optgroup label="Branch">
+                  <option value="main">main
+                  <option value="dev">dev
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="GDX.Threading.TaskDirector">
+  
+  
+  <h1 id="GDX_Threading_TaskDirector" data-uid="GDX.Threading.TaskDirector" class="text-break"><span class="type" type="class">Class</span> 
+                                                        TaskDirector
+  </h1>
+  <div class="markdown level0 summary"><p>A simple control mechanism for distributed <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> work across the
+thread pool. Tasks should be short-lived and can queue up additional work.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">TaskDirector</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Threading.html">GDX.Threading</a></h6>
+  <h5 id="GDX_Threading_TaskDirector_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class TaskDirector</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_exceptionOccured.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.exceptionOccured%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L22">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskDirector_exceptionOccured" data-uid="GDX.Threading.TaskDirector.exceptionOccured">exceptionOccured</h4>
+  <div class="markdown level1 summary"><p>An event invoked when a <a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a> throws an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;Exception&gt; exceptionOccured</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Exception</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_inputBlocked.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.inputBlocked%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L27">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskDirector_inputBlocked" data-uid="GDX.Threading.TaskDirector.inputBlocked">inputBlocked</h4>
+  <div class="markdown level1 summary"><p>An event invoked during <a class="xref" href="GDX.Threading.TaskDirector.html#GDX_Threading_TaskDirector_Tick">Tick()</a> when user input should be blocked.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;bool&gt; inputBlocked</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_logAdded.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.logAdded%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L32">View Source</a>
+  </span>
+  <h4 id="GDX_Threading_TaskDirector_logAdded" data-uid="GDX.Threading.TaskDirector.logAdded">logAdded</h4>
+  <div class="markdown level1 summary"><p>An event invoked during <a class="xref" href="GDX.Threading.TaskDirector.html#GDX_Threading_TaskDirector_Tick">Tick()</a> with new log content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Action&lt;string[]&gt; logAdded</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<span class="xref">System.String</span>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_GetBusyCount.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.GetBusyCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L116">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_GetBusyCount_" data-uid="GDX.Threading.TaskDirector.GetBusyCount*"></a>
+  <h4 id="GDX_Threading_TaskDirector_GetBusyCount" data-uid="GDX.Threading.TaskDirector.GetBusyCount">GetBusyCount()</h4>
+  <div class="markdown level1 summary"><p>The number of tasks currently in process or awaiting execution by the thread pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetBusyCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of tasks sitting in <span class="xref">GDX.Threading.TaskDirector.k_TasksBusy</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_GetQueueCount.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.GetQueueCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L125">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_GetQueueCount_" data-uid="GDX.Threading.TaskDirector.GetQueueCount*"></a>
+  <h4 id="GDX_Threading_TaskDirector_GetQueueCount" data-uid="GDX.Threading.TaskDirector.GetQueueCount">GetQueueCount()</h4>
+  <div class="markdown level1 summary"><p>The number of tasks waiting in the queue.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetQueueCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The number of tasks sitting in <span class="xref">GDX.Threading.TaskDirector.k_TasksQueue</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_GetStatus.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.GetStatus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L134">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_GetStatus_" data-uid="GDX.Threading.TaskDirector.GetStatus*"></a>
+  <h4 id="GDX_Threading_TaskDirector_GetStatus" data-uid="GDX.Threading.TaskDirector.GetStatus">GetStatus()</h4>
+  <div class="markdown level1 summary"><p>Get the status message for the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetStatus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>A pre-formatted status message.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_HasTasks.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.HasTasks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L150">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_HasTasks_" data-uid="GDX.Threading.TaskDirector.HasTasks*"></a>
+  <h4 id="GDX_Threading_TaskDirector_HasTasks" data-uid="GDX.Threading.TaskDirector.HasTasks">HasTasks()</h4>
+  <div class="markdown level1 summary"><p>Does the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a> have any known busy or queued tasks?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasTasks()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A true/false value indicating tasks.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskDirector_HasTasks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It's not performant to poll this.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_IsBlockingBit_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.IsBlockingBit(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L163">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_IsBlockingBit_" data-uid="GDX.Threading.TaskDirector.IsBlockingBit*"></a>
+  <h4 id="GDX_Threading_TaskDirector_IsBlockingBit_System_Int32_" data-uid="GDX.Threading.TaskDirector.IsBlockingBit(System.Int32)">IsBlockingBit(Int32)</h4>
+  <div class="markdown level1 summary"><p>Is the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a> blocking tasks with a specific bit?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBlockingBit(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>A true/false value indicating if a <a class="xref" href="GDX.Collections.BitArray16.html">BitArray16</a> index is being blocked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskDirector_IsBlockingBit_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It isn't ideal to constantly poll this method, ideally this could be used to block things outside of
+the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a>'s control based on tasks running.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_Log_System_String_.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.Log(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L173">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_Log_" data-uid="GDX.Threading.TaskDirector.Log*"></a>
+  <h4 id="GDX_Threading_TaskDirector_Log_System_String_" data-uid="GDX.Threading.TaskDirector.Log(System.String)">Log(String)</h4>
+  <div class="markdown level1 summary"><p>Adds a thread-safe log entry to a queue which will be dispatched to <a class="xref" href="GDX.Threading.TaskDirector.html#GDX_Threading_TaskDirector_logAdded">logAdded</a> on
+the <a class="xref" href="GDX.Threading.TaskDirector.html#GDX_Threading_TaskDirector_Tick">Tick()</a> invoking thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Log(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The log content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_QueueTask_GDX_Threading_TaskBase_.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.QueueTask(GDX.Threading.TaskBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L188">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_QueueTask_" data-uid="GDX.Threading.TaskDirector.QueueTask*"></a>
+  <h4 id="GDX_Threading_TaskDirector_QueueTask_GDX_Threading_TaskBase_" data-uid="GDX.Threading.TaskDirector.QueueTask(GDX.Threading.TaskBase)">QueueTask(TaskBase)</h4>
+  <div class="markdown level1 summary"><p>Add a task to the queue, to be later started when possible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void QueueTask(TaskBase task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a></td>
+        <td><span class="parametername">task</span></td>
+        <td><p>An established task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskDirector_QueueTask_GDX_Threading_TaskBase__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the <code data-dev-comment-type="paramref" class="paramref">task</code> is already executing it will be added to the known busy list.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_Tick.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.Tick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L216">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_Tick_" data-uid="GDX.Threading.TaskDirector.Tick*"></a>
+  <h4 id="GDX_Threading_TaskDirector_Tick" data-uid="GDX.Threading.TaskDirector.Tick">Tick()</h4>
+  <div class="markdown level1 summary"><p>Update the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a>, evaluating known tasks for work eligibility and execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Tick()</code></pre>
+  </div>
+  <h5 id="GDX_Threading_TaskDirector_Tick_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This should occur on the main thread. If the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a> is used during play mode,
+something needs to call this every global tick. While in edit mode the EditorTaskDirector triggers this
+method.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_UpdateTask_GDX_Threading_TaskBase_.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.UpdateTask(GDX.Threading.TaskBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L305">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_UpdateTask_" data-uid="GDX.Threading.TaskDirector.UpdateTask*"></a>
+  <h4 id="GDX_Threading_TaskDirector_UpdateTask_GDX_Threading_TaskBase_" data-uid="GDX.Threading.TaskDirector.UpdateTask(GDX.Threading.TaskBase)">UpdateTask(TaskBase)</h4>
+  <div class="markdown level1 summary"><p>Evaluate the provided task and update its state inside of the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UpdateTask(TaskBase task)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Threading.TaskBase.html">TaskBase</a></td>
+        <td><span class="parametername">task</span></td>
+        <td><p>An established task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Threading_TaskDirector_UpdateTask_GDX_Threading_TaskBase__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will add a task to the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a> if it does not already know about it, regardless
+of the current blocking mode status. Do not use this method to add non executing tasks, they will not
+be added to the <a class="xref" href="GDX.Threading.TaskDirector.html">TaskDirector</a> in this way.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_Wait.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.Wait%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L323">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_Wait_" data-uid="GDX.Threading.TaskDirector.Wait*"></a>
+  <h4 id="GDX_Threading_TaskDirector_Wait" data-uid="GDX.Threading.TaskDirector.Wait">Wait()</h4>
+  <div class="markdown level1 summary"><p>Wait on the completion of all known tasks, blocking the invoking thread.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Wait()</code></pre>
+  </div>
+  <h5 id="GDX_Threading_TaskDirector_Wait_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Useful to force the main thread to wait for completion of tasks.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector_WaitAsync.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector.WaitAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L336">View Source</a>
+  </span>
+  <a id="GDX_Threading_TaskDirector_WaitAsync_" data-uid="GDX.Threading.TaskDirector.WaitAsync*"></a>
+  <h4 id="GDX_Threading_TaskDirector_WaitAsync" data-uid="GDX.Threading.TaskDirector.WaitAsync">WaitAsync()</h4>
+  <div class="markdown level1 summary"><p>Asynchronously wait on the completion of all known tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static async Task WaitAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Threading_TaskDirector.md&amp;value=---%0Auid%3A%20GDX.Threading.TaskDirector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirector.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+      	<div class="grad-bottom"></div>
+      	<div class="footer">
+      		<div class="container">
+      			<span class="pull-right">
+      				<a href="#top">Back to top</a>
+      			</span>
+      			
+      			<span>Built on 2022-08-23 against <a href="https://github.com/dotBunny/GDX/commit/cf98e6331b9f91ee1d4b59e09f251e4c14601806"><strong>cf98e63</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      		</div>
+      	</div>
+      </footer></div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
