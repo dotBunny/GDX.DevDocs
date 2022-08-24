@@ -164,8 +164,16 @@
 <td>Name <code>logAdded</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>LogAdded</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirector.cs#L26" title="GDX.Editor\EditorTaskDirector.cs:26">EditorTaskDirector.cs:26</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L36" title="GDX\Threading\TaskDirectorSystem.cs:36">TaskDirectorSystem.cs:36</a></td>
+<td>Name <code>ticked</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>Ticked</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L26" title="GDX.Editor\EditorTaskDirectorSystem.cs:26">EditorTaskDirectorSystem.cs:26</a></td>
 <td>Name <code>s_ProgressID</code> does not match rule <code>static_fields_should_be_camel_case</code>. Suggested name is <code>s_ProgressId</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L45" title="GDX.Editor\EditorTaskDirectorSystem.cs:45">EditorTaskDirectorSystem.cs:45</a></td>
+<td>Name <code>ticked</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>Ticked</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -198,10 +206,6 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L163" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:163">EditorTaskDirectorTests.cs:163</a></td>
-<td>The parameter <code>expectDomainReload</code> has the same default value</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/Reports/NUnitReportTests.cs#L43" title="GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs:43">NUnitReportTests.cs:43</a></td>
 <td>The parameter <code>passed</code> has the same default value</td>
 </tr>
@@ -224,6 +228,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/Reports/NUnitReportTests.cs#L100" title="GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs:100">NUnitReportTests.cs:100</a></td>
 <td>The parameter <code>testSuite</code> has the same default value</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L104" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:104">TaskDirectorSystemTests.cs:104</a></td>
+<td>The parameter <code>expectDomainReload</code> has the same default value</td>
 </tr>
 </tbody>
 </table>
@@ -252,7 +260,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L30" title="GDX\Threading\TaskDirectorSystem.cs:30">TaskDirectorSystem.cs:30</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L31" title="GDX\Threading\TaskDirectorSystem.cs:31">TaskDirectorSystem.cs:31</a></td>
 <td>Initializing field by default value is redundant</td>
 </tr>
 </tbody>
@@ -305,10 +313,6 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L5" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:5">EditorTaskDirectorTests.cs:5</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugDrawBufferTests.cs#L5" title="GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs:5">DebugDrawBufferTests.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
@@ -318,6 +322,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Mathematics/Random/RandomWrapperTests.cs#L5" title="GDX.Tests\EditMode\Mathematics\Random\RandomWrapperTests.cs:5">RandomWrapperTests.cs:5</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/PlayerLoopSystemExtensionsTests.cs#L5" title="GDX.Tests\EditMode\PlayerLoopSystemExtensionsTests.cs:5">PlayerLoopSystemExtensionsTests.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -474,11 +482,11 @@
 <td>Method <code>Awake</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L82" title="GDX\Threading\TaskDirectorSystem.cs:82">TaskDirectorSystem.cs:82</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L105" title="GDX\Threading\TaskDirectorSystem.cs:105">TaskDirectorSystem.cs:105</a></td>
 <td>Method <code>Initialize</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirector.cs#L67" title="GDX.Editor\EditorTaskDirector.cs:67">EditorTaskDirector.cs:67</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L83" title="GDX.Editor\EditorTaskDirectorSystem.cs:83">EditorTaskDirectorSystem.cs:83</a></td>
 <td>Method <code>Initialize</code> is never used</td>
 </tr>
 <tr>
@@ -551,7 +559,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L82" title="GDX\PlayerLoopSystemExtensions.cs:82">PlayerLoopSystemExtensions.cs:82</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L115" title="GDX\PlayerLoopSystemExtensions.cs:115">PlayerLoopSystemExtensions.cs:115</a></td>
 <td>Convert to method call with <code>?:</code> expression inside</td>
 </tr>
 </tbody>
@@ -566,7 +574,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L71" title="GDX\PlayerLoopSystemExtensions.cs:71">PlayerLoopSystemExtensions.cs:71</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L104" title="GDX\PlayerLoopSystemExtensions.cs:104">PlayerLoopSystemExtensions.cs:104</a></td>
 <td>Convert to <code>??=</code></td>
 </tr>
 </tbody>
@@ -1342,15 +1350,15 @@
 <td>Method <code>AddSubSystem</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L126" title="GDX\PlayerLoopSystemExtensions.cs:126">PlayerLoopSystemExtensions.cs:126</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L159" title="GDX\PlayerLoopSystemExtensions.cs:159">PlayerLoopSystemExtensions.cs:159</a></td>
 <td>Method <code>RemoveSubSystemsOfType</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L255" title="GDX\PlayerLoopSystemExtensions.cs:255">PlayerLoopSystemExtensions.cs:255</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L288" title="GDX\PlayerLoopSystemExtensions.cs:288">PlayerLoopSystemExtensions.cs:288</a></td>
 <td>Method <code>TryGetFirstSubSystemOfType</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L302" title="GDX\PlayerLoopSystemExtensions.cs:302">PlayerLoopSystemExtensions.cs:302</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L335" title="GDX\PlayerLoopSystemExtensions.cs:335">PlayerLoopSystemExtensions.cs:335</a></td>
 <td>Method <code>TryGetFirstSystemWithSubSystemOfType</code> can be made private</td>
 </tr>
 <tr>
@@ -1374,12 +1382,20 @@
 <td>Field <code>m_Exception</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L36" title="GDX\Threading\TaskDirectorSystem.cs:36">TaskDirectorSystem.cs:36</a></td>
+<td>Field <code>ticked</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssemblyProvider.cs#L25" title="GDX.Editor\AssemblyProvider.cs:25">AssemblyProvider.cs:25</a></td>
 <td>Field <code>RuntimeAssembly</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L127" title="GDX.Editor\Automation.cs:127">Automation.cs:127</a></td>
 <td>Method <code>CaptureEditorWindowToPNG</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L45" title="GDX.Editor\EditorTaskDirectorSystem.cs:45">EditorTaskDirectorSystem.cs:45</a></td>
+<td>Field <code>ticked</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L177" title="GDX.Editor\PackageProvider.cs:177">PackageProvider.cs:177</a></td>
@@ -1536,6 +1552,14 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Jobs/ParallelFor/IntegerBufferFillJob.cs#L28" title="GDX\Jobs\ParallelFor\IntegerBufferFillJob.cs:28">IntegerBufferFillJob.cs:28</a></td>
 <td>Field <code>FillValue</code> is never assigned</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskDirectorSystem.cs#L36" title="GDX\Threading\TaskDirectorSystem.cs:36">TaskDirectorSystem.cs:36</a></td>
+<td>Field <code>ticked</code> is never assigned</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L45" title="GDX.Editor\EditorTaskDirectorSystem.cs:45">EditorTaskDirectorSystem.cs:45</a></td>
+<td>Field <code>ticked</code> is never assigned</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ManifestEntry.cs#L18" title="GDX.Editor\ManifestEntry.cs:18">ManifestEntry.cs:18</a></td>
@@ -1993,11 +2017,11 @@
 <td>Method <code>IsFileWritable</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L195" title="GDX\PlayerLoopSystemExtensions.cs:195">PlayerLoopSystemExtensions.cs:195</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L228" title="GDX\PlayerLoopSystemExtensions.cs:228">PlayerLoopSystemExtensions.cs:228</a></td>
 <td>Method <code>ReplaceFirstSubSystemOfType</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L219" title="GDX\PlayerLoopSystemExtensions.cs:219">PlayerLoopSystemExtensions.cs:219</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L252" title="GDX\PlayerLoopSystemExtensions.cs:252">PlayerLoopSystemExtensions.cs:252</a></td>
 <td>Method <code>ReplaceSubSystemsOfType</code> is never used</td>
 </tr>
 <tr>
@@ -2117,11 +2141,19 @@
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L33" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:33">EditorTaskDirectorTests.cs:33</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L25" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:25">EditorTaskDirectorTests.cs:25</a></td>
 <td>Method <code>Setup</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L61" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:61">EditorTaskDirectorTests.cs:61</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L42" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:42">EditorTaskDirectorTests.cs:42</a></td>
+<td>Method <code>TearDown</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L32" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:32">TaskDirectorSystemTests.cs:32</a></td>
+<td>Method <code>Setup</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L65" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:65">TaskDirectorSystemTests.cs:65</a></td>
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 </tbody>
@@ -2191,11 +2223,15 @@
 <td>Method <code>RemoveItems</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L49" title="GDX\PlayerLoopSystemExtensions.cs:49">PlayerLoopSystemExtensions.cs:49</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L50" title="GDX\PlayerLoopSystemExtensions.cs:50">PlayerLoopSystemExtensions.cs:50</a></td>
 <td>Method <code>AddSubSystemToFirstSubSystemOfType</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L175" title="GDX\PlayerLoopSystemExtensions.cs:175">PlayerLoopSystemExtensions.cs:175</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L82" title="GDX\PlayerLoopSystemExtensions.cs:82">PlayerLoopSystemExtensions.cs:82</a></td>
+<td>Method <code>AddSubSystemToFirstSubSystemOfType</code> return value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/PlayerLoopSystemExtensions.cs#L208" title="GDX\PlayerLoopSystemExtensions.cs:208">PlayerLoopSystemExtensions.cs:208</a></td>
 <td>Method <code>RemoveSubSystemsOfTypeFromFirstSubSystemOfType</code> return value is never used</td>
 </tr>
 <tr>
@@ -2410,7 +2446,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-08-23 against <a href="https://github.com/dotBunny/GDX/commit/fca2dd4f235b3a6a8ac133a7ae726f5013737e1e"><strong>fca2dd4</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-08-24 against <a href="https://github.com/dotBunny/GDX/commit/fd9abb0c7306912f3fc74fd183d5af61eb52d650"><strong>fd9abb0</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
