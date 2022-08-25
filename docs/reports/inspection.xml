@@ -41,6 +41,7 @@
     <IssueType Id="UnusedMethodReturnValue.Local" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Method return value is never used" Description="Method return value is never used: Private accessibility" Severity="WARNING" />
     <IssueType Id="UnusedParameter.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Unused parameter" Description="Unused parameter: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedType.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Type is never used" Description="Type is never used: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UnusedType.Global" />
+    <IssueType Id="UnusedVariable" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" Description="Unused local variable" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UnusedVariable" />
     <IssueType Id="UseObjectOrCollectionInitializer" Category="Language Usage Opportunities" CategoryId="LanguageUsage" Description="Use object or collection initializer when possible" Severity="SUGGESTION" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UseObjectOrCollectionInitializer" />
   </IssueTypes>
   <Issues>
@@ -454,6 +455,7 @@
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\BuildInfoBuildProcessor.cs" Offset="2996-3019" Line="67" Message="Class 'BuildInfoBuildProcessor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\ScriptingDefinesBuildProcessor.cs" Offset="525-555" Line="15" Message="Class 'ScriptingDefinesBuildProcessor' is never used" />
       <Issue TypeId="UnassignedGetOnlyAutoProperty" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\Legacy\ScriptingDefinesBuildProcessor.cs" Offset="832-845" Line="21" Message="Get-only auto-property 'callbackOrder' is never assigned" />
+      <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX.Editor\ConfigGenerator.cs" Offset="6526-6527" Line="123" Message="Local variable 'f' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\DecoratorDrawers\InspectorMessageBoxAttributeDecoratorDrawer.cs" Offset="491-534" Line="15" Message="Class 'InspectorMessageBoxAttributeDecoratorDrawer' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorPrefsCache.cs" Offset="2751-2759" Line="67" Message="Method 'GetColor' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorPrefsCache.cs" Offset="3781-3789" Line="93" Message="Method 'GetFloat' is never used" />
