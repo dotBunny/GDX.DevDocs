@@ -210,10 +210,6 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/Reports/NUnitReportTests.cs#L100" title="GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs:100">NUnitReportTests.cs:100</a></td>
 <td>The parameter <code>testSuite</code> has the same default value</td>
 </tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L104" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:104">TaskDirectorSystemTests.cs:104</a></td>
-<td>The parameter <code>expectDomainReload</code> has the same default value</td>
-</tr>
 </tbody>
 </table>
 <h3 id="redundant-name-qualifier">Redundant name qualifier</h3>
@@ -240,6 +236,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L7" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:7">EditorTaskDirectorTests.cs:7</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugDrawBufferTests.cs#L5" title="GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs:5">DebugDrawBufferTests.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
@@ -899,15 +899,15 @@
 <td>Field <code>FreeIndex</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L18" title="GDX\Collections\UnsafeSparseSet.cs:18">UnsafeSparseSet.cs:18</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L19" title="GDX\Collections\UnsafeSparseSet.cs:19">UnsafeSparseSet.cs:19</a></td>
 <td>Constant <code>MinimumCapacity</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L50" title="GDX\Collections\UnsafeSparseSet.cs:50">UnsafeSparseSet.cs:50</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L51" title="GDX\Collections\UnsafeSparseSet.cs:51">UnsafeSparseSet.cs:51</a></td>
 <td>Field <code>FreeIndex</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L57" title="GDX\Collections\UnsafeSparseSet.cs:57">UnsafeSparseSet.cs:57</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L58" title="GDX\Collections\UnsafeSparseSet.cs:58">UnsafeSparseSet.cs:58</a></td>
 <td>Field <code>Allocator</code> can be made private</td>
 </tr>
 <tr>
@@ -1782,46 +1782,6 @@
 <td>Constructor <code>TransientReference</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L15" title="GDX\Developer\WaitForMilliseconds.cs:15">WaitForMilliseconds.cs:15</a></td>
-<td>Constant <code>FiveSeconds</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L16" title="GDX\Developer\WaitForMilliseconds.cs:16">WaitForMilliseconds.cs:16</a></td>
-<td>Constant <code>TenSeconds</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L17" title="GDX\Developer\WaitForMilliseconds.cs:17">WaitForMilliseconds.cs:17</a></td>
-<td>Constant <code>ThirtySeconds</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L18" title="GDX\Developer\WaitForMilliseconds.cs:18">WaitForMilliseconds.cs:18</a></td>
-<td>Constant <code>OneMinute</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L19" title="GDX\Developer\WaitForMilliseconds.cs:19">WaitForMilliseconds.cs:19</a></td>
-<td>Constant <code>TenMinutes</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L30" title="GDX\Developer\WaitForMilliseconds.cs:30">WaitForMilliseconds.cs:30</a></td>
-<td>Method <code>Wait</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitForMilliseconds.cs#L41" title="GDX\Developer\WaitForMilliseconds.cs:41">WaitForMilliseconds.cs:41</a></td>
-<td>Method <code>WaitAsync</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitWhile.cs#L19" title="GDX\Developer\WaitWhile.cs:19">WaitWhile.cs:19</a></td>
-<td>Method <code>Wait</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitWhile.cs#L24" title="GDX\Developer\WaitWhile.cs:24">WaitWhile.cs:24</a></td>
-<td>Method <code>WaitAsync</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitWhile.cs#L35" title="GDX\Developer\WaitWhile.cs:35">WaitWhile.cs:35</a></td>
-<td>Method <code>While</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L24" title="GDX\Display.cs:24">Display.cs:24</a></td>
 <td>Method <code>GetScreenHeight</code> is never used</td>
 </tr>
@@ -1950,6 +1910,26 @@
 <td>Constant <code>AsciiNumberSeparator</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/WaitFor.cs#L29" title="GDX\Threading\WaitFor.cs:29">WaitFor.cs:29</a></td>
+<td>Constant <code>FiveSeconds</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/WaitFor.cs#L34" title="GDX\Threading\WaitFor.cs:34">WaitFor.cs:34</a></td>
+<td>Constant <code>TenSeconds</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/WaitFor.cs#L39" title="GDX\Threading\WaitFor.cs:39">WaitFor.cs:39</a></td>
+<td>Constant <code>ThirtySeconds</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/WaitFor.cs#L44" title="GDX\Threading\WaitFor.cs:44">WaitFor.cs:44</a></td>
+<td>Constant <code>OneMinute</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/WaitFor.cs#L49" title="GDX\Threading\WaitFor.cs:49">WaitFor.cs:49</a></td>
+<td>Constant <code>TenMinutes</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/VisualScriptingCompatibleAttribute.cs#L41" title="GDX\VisualScriptingCompatibleAttribute.cs:41">VisualScriptingCompatibleAttribute.cs:41</a></td>
 <td>Constructor <code>VisualScriptingCompatibleAttribute</code> is never used</td>
 </tr>
@@ -2066,11 +2046,11 @@
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L32" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:32">TaskDirectorSystemTests.cs:32</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L30" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:30">TaskDirectorSystemTests.cs:30</a></td>
 <td>Method <code>Setup</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L65" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:65">TaskDirectorSystemTests.cs:65</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L62" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:62">TaskDirectorSystemTests.cs:62</a></td>
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 </tbody>
@@ -2152,10 +2132,6 @@
 <td>Method <code>RemoveSubSystemsOfTypeFromFirstSubSystemOfType</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L94" title="GDX\SimpleListExtensions.cs:94">SimpleListExtensions.cs:94</a></td>
-<td>Method <code>AddWithExpandCheckUniqueValue</code> return value is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L280" title="GDX\SimpleListExtensions.cs:280">SimpleListExtensions.cs:280</a></td>
 <td>Method <code>RemoveItems</code> return value is never used</td>
 </tr>
@@ -2224,10 +2200,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Profiling.cs#L19" title="GDX\Developer\Profiling.cs:19">Profiling.cs:19</a></td>
 <td>Class <code>Profiling</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WaitWhile.cs#L11" title="GDX\Developer\WaitWhile.cs:11">WaitWhile.cs:11</a></td>
-<td>Class <code>WaitWhile</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L14" title="GDX\Display.cs:14">Display.cs:14</a></td>
@@ -2340,7 +2312,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-08-28 against <a href="https://github.com/dotBunny/GDX/commit/5b1fd9b6b5c8729bfd63741a855b4b59308445e8"><strong>5b1fd9b</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-08-30 against <a href="https://github.com/dotBunny/GDX/commit/dacfab29d3a03d2160b180d55562ecd7de3f6cde"><strong>dacfab2</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
