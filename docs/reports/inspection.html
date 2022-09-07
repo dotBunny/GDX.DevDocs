@@ -210,6 +210,10 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/Reports/NUnitReportTests.cs#L100" title="GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs:100">NUnitReportTests.cs:100</a></td>
 <td>The parameter <code>testSuite</code> has the same default value</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/TransformExtensionsTests.cs#L107" title="GDX.Tests\EditMode\TransformExtensionsTests.cs:107">TransformExtensionsTests.cs:107</a></td>
+<td>The parameter <code>expectDomainReload</code> has the same default value</td>
+</tr>
 </tbody>
 </table>
 <h3 id="redundant-name-qualifier">Redundant name qualifier</h3>
@@ -447,10 +451,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/NUnit/Property.cs#L7" title="GDX\Developer\Reports\NUnit\Property.cs:7">Property.cs:7</a></td>
 <td>Class <code>Property</code> is never instantiated</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/IO/CoalesceStream.cs#L18" title="GDX\IO\CoalesceStream.cs:18">CoalesceStream.cs:18</a></td>
-<td>Class <code>CoalesceStream</code> is never instantiated</td>
 </tr>
 </tbody>
 </table>
@@ -1354,6 +1354,10 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VersionControl.cs#L39" title="GDX.Editor\VersionControl.cs:39">VersionControl.cs:39</a></td>
 <td>Method <code>GetAssetListFromFolder</code> can be made private</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/TransformExtensionsTests.cs#L25" title="GDX.Tests\EditMode\TransformExtensionsTests.cs:25">TransformExtensionsTests.cs:25</a></td>
+<td>Method <code>Setup</code> can be made private</td>
+</tr>
 </tbody>
 </table>
 <h3 id="member-can-be-made-protected-non-private-accessibility">Member can be made protected: Non-private accessibility</h3>
@@ -1818,15 +1822,15 @@
 <td>Method <code>IsHDREnabled</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/GameObjectExtensions.cs#L29" title="GDX\GameObjectExtensions.cs:29">GameObjectExtensions.cs:29</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/GameObjectExtensions.cs#L31" title="GDX\GameObjectExtensions.cs:31">GameObjectExtensions.cs:31</a></td>
 <td>Method <code>DestroyChildren</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/GameObjectExtensions.cs#L99" title="GDX\GameObjectExtensions.cs:99">GameObjectExtensions.cs:99</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/GameObjectExtensions.cs#L102" title="GDX\GameObjectExtensions.cs:102">GameObjectExtensions.cs:102</a></td>
 <td>Method <code>GetOrAddComponent</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/GameObjectExtensions.cs#L111" title="GDX\GameObjectExtensions.cs:111">GameObjectExtensions.cs:111</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/GameObjectExtensions.cs#L115" title="GDX\GameObjectExtensions.cs:115">GameObjectExtensions.cs:115</a></td>
 <td>Method <code>GetScenePath</code> is never used</td>
 </tr>
 <tr>
@@ -1840,14 +1844,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/InspectorMessageBoxAttribute.cs#L22" title="GDX\InspectorMessageBoxAttribute.cs:22">InspectorMessageBoxAttribute.cs:22</a></td>
 <td>Enum member <code>None</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/IO/CoalesceStream.cs#L45" title="GDX\IO\CoalesceStream.cs:45">CoalesceStream.cs:45</a></td>
-<td>Constructor <code>CoalesceStream</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/IO/CoalesceStream.cs#L56" title="GDX\IO\CoalesceStream.cs:56">CoalesceStream.cs:56</a></td>
-<td>Constructor <code>CoalesceStream</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/IO/CoalesceStream.cs#L68" title="GDX\IO\CoalesceStream.cs:68">CoalesceStream.cs:68</a></td>
@@ -1894,7 +1890,7 @@
 <td>Method <code>CalculateVolume</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MonoBehaviourExtensions.cs#L49" title="GDX\MonoBehaviourExtensions.cs:49">MonoBehaviourExtensions.cs:49</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MonoBehaviourExtensions.cs#L51" title="GDX\MonoBehaviourExtensions.cs:51">MonoBehaviourExtensions.cs:51</a></td>
 <td>Method <code>GetFirstComponentInChildrenComplex</code> is never used</td>
 </tr>
 <tr>
@@ -2079,6 +2075,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L65" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:65">TaskDirectorSystemTests.cs:65</a></td>
+<td>Method <code>TearDown</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/TransformExtensionsTests.cs#L51" title="GDX.Tests\EditMode\TransformExtensionsTests.cs:51">TransformExtensionsTests.cs:51</a></td>
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 </tbody>
@@ -2282,7 +2282,7 @@
 <td>Class <code>MeshExtensions</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MonoBehaviourExtensions.cs#L17" title="GDX\MonoBehaviourExtensions.cs:17">MonoBehaviourExtensions.cs:17</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MonoBehaviourExtensions.cs#L18" title="GDX\MonoBehaviourExtensions.cs:18">MonoBehaviourExtensions.cs:18</a></td>
 <td>Class <code>MonoBehaviourExtensions</code> is never used</td>
 </tr>
 <tr>
@@ -2344,7 +2344,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-09-03 against <a href="https://github.com/dotBunny/GDX/commit/502708006dc73b0be7317bb31bcf69a1ced44659"><strong>5027080</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-09-06 against <a href="https://github.com/dotBunny/GDX/commit/a0cb2cd0184e80565889a8dd10d959b88ab6411e"><strong>a0cb2cd</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
