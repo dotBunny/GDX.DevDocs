@@ -488,10 +488,83 @@ making sure that the item is not already contained in the <a class="xref" href="
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_Contains__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.Contains%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L139">View Source</a>
+  </span>
+  <a id="GDX_SimpleListExtensions_Contains_" data-uid="GDX.SimpleListExtensions.Contains*"></a>
+  <h4 id="GDX_SimpleListExtensions_Contains__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.Contains``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">Contains&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Does <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code> contain <code data-dev-comment-type="paramref" class="paramref">targetItem</code>?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains&lt;T&gt;(this ref SimpleList&lt;T&gt; targetSimpleList, T targetItem)
+    where T : IEquatable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>&lt;T&gt;</td>
+        <td><span class="parametername">targetSimpleList</span></td>
+        <td><p>The <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td><p>The target class object to look for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true/false</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_ContainsItem__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.ContainsItem%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L140">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L164">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_ContainsItem_" data-uid="GDX.SimpleListExtensions.ContainsItem*"></a>
   <h4 id="GDX_SimpleListExtensions_ContainsItem__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.ContainsItem``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">ContainsItem&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -567,7 +640,7 @@ making sure that the item is not already contained in the <a class="xref" href="
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_ContainsReference__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.ContainsReference%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L190">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L214">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_ContainsReference_" data-uid="GDX.SimpleListExtensions.ContainsReference*"></a>
   <h4 id="GDX_SimpleListExtensions_ContainsReference__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.ContainsReference``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">ContainsReference&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -643,7 +716,7 @@ making sure that the item is not already contained in the <a class="xref" href="
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_ContainsValue__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.ContainsValue%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L165">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L189">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_ContainsValue_" data-uid="GDX.SimpleListExtensions.ContainsValue*"></a>
   <h4 id="GDX_SimpleListExtensions_ContainsValue__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.ContainsValue``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">ContainsValue&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -719,7 +792,7 @@ making sure that the item is not already contained in the <a class="xref" href="
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveFirstItem__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveFirstItem%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L219">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L243">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveFirstItem_" data-uid="GDX.SimpleListExtensions.RemoveFirstItem*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveFirstItem__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveFirstItem``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveFirstItem&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -795,7 +868,7 @@ making sure that the item is not already contained in the <a class="xref" href="
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveFirstReference__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveFirstReference%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L249">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L273">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveFirstReference_" data-uid="GDX.SimpleListExtensions.RemoveFirstReference*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveFirstReference__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveFirstReference``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveFirstReference&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -872,7 +945,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveItems__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveItems%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L280">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L304">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveItems_" data-uid="GDX.SimpleListExtensions.RemoveItems*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveItems__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveItems``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveItems&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -948,7 +1021,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveLastItem__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveLastItem%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L341">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L365">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveLastItem_" data-uid="GDX.SimpleListExtensions.RemoveLastItem*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveLastItem__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveLastItem``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveLastItem&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -1024,7 +1097,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveLastReference__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveLastReference%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L370">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L394">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveLastReference_" data-uid="GDX.SimpleListExtensions.RemoveLastReference*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveLastReference__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveLastReference``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveLastReference&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -1101,7 +1174,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveReferences__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveReferences%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L311">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L335">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveReferences_" data-uid="GDX.SimpleListExtensions.RemoveReferences*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveReferences__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveReferences``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveReferences&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -1204,7 +1277,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-09-17 against <a href="https://github.com/dotBunny/GDX/commit/32d63038acd49050647efca4a80cce86c4650894"><strong>32d6303</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-09-17 against <a href="https://github.com/dotBunny/GDX/commit/b2c6000f663fe2a4c2db19ea86b6132d0ee2b3ec"><strong>b2c6000</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
