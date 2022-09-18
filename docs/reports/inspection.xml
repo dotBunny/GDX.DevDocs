@@ -11,6 +11,7 @@
     </InspectionScope>
   </Information>
   <IssueTypes>
+    <IssueType Id="AssignNullToNotNullAttribute" Category="Constraints Violations" CategoryId="ConstraintViolation" Description="Possible 'null' assignment to non-nullable entity" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=AssignNullToNotNullAttribute" />
     <IssueType Id="ClassNeverInstantiated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ClassNeverInstantiated.Global" />
     <IssueType Id="ClassNeverInstantiated.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Private accessibility" Severity="SUGGESTION" />
     <IssueType Id="CollectionNeverUpdated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Collection is never updated" Description="Collection is never updated: Non-private accessibility" Severity="WARNING" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CollectionNeverUpdated.Global" />
@@ -44,6 +45,7 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="2446-2456" Line="53" Message="Method 'CanRelease' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="3979-3985" Line="93" Message="Method 'HasRuntimeKey' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\AddressablesExtensions.cs" Offset="4567-4573" Line="108" Message="Method 'IsEmpty' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\ArrayExtensions.cs" Offset="4615-4627" Line="106" Message="Method 'FirstIndexOf' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\ArrayExtensions.cs" Offset="7529-7540" Line="169" Message="Method 'LastIndexOf' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\BoxColliderExtensions.cs" Offset="516-537" Line="16" Message="Class 'BoxColliderExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\BoxColliderExtensions.cs" Offset="1057-1073" Line="24" Message="Method 'ContainsPosition' is never used" />
@@ -411,8 +413,13 @@
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="512-531" Line="15" Message="Class 'RigidbodyExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\RigidbodyExtensions.cs" Offset="1148-1163" Line="26" Message="Method 'MomentOfInertia' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="7122-7130" Line="140" Message="Method 'Contains' is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="14615-14619" Line="304" Message="Method 'RemoveItems' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="16118-16122" Line="335" Message="Method 'RemoveReferences' return value is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="12819-12835" Line="264" Message="Method 'FirstIndexOfItem' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="13790-13807" Line="284" Message="Method 'FirstIndexOfValue' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="14856-14867" Line="307" Message="Method 'LastIndexOf' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="15839-15854" Line="328" Message="Method 'LastIndexOfItem' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="16815-16831" Line="349" Message="Method 'LastIndexOfValue' is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="20799-20803" Line="432" Message="Method 'RemoveItems' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\SimpleListExtensions.cs" Offset="22302-22306" Line="463" Message="Method 'RemoveReferences' return value is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\StringExtensions.cs" Offset="1259-1265" Line="41" Message="Constant 'AsciiNumberSign' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\StringExtensions.cs" Offset="1418-1424" Line="46" Message="Constant 'AsciiNumberDecimal' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\StringExtensions.cs" Offset="1597-1617" Line="51" Message="Constant 'AsciiNumberSeparator' is never used" />
@@ -465,10 +472,12 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ManifestEntry.cs" Offset="645-649" Line="22" Message="Field 'hash' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\MenuItems.cs" Offset="268-277" Line="11" Message="Class 'MenuItems' is never used" />
       <Issue TypeId="UnusedMember.Local" File="Packages\com.dotbunny.gdx\GDX.Editor\MenuItems.cs" Offset="418-437" Line="16" Message="Method 'ManagedMemoryReport' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="3785-3791" Line="104" Message="Field 'PackageManagerInfo' can be made private" />
       <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="3804-3822" Line="104" Message="Field can be made readonly" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="5904-5910" Line="160" Message="Method 'EnsureAlwaysIncludeShaders' can be made private" />
-      <Issue TypeId="UnassignedField.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="19599-19606" Line="478" Message="Field 'version' is never assigned" />
-      <Issue TypeId="UnassignedField.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="19635-19640" Line="479" Message="Field 'unity' is never assigned" />
+      <Issue TypeId="AssignNullToNotNullAttribute" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="6003-6022" Line="159" Message="Possible 'null' assignment to non-nullable entity" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="6986-6992" Line="186" Message="Method 'EnsureAlwaysIncludeShaders' can be made private" />
+      <Issue TypeId="UnassignedField.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="20957-20964" Line="515" Message="Field 'version' is never assigned" />
+      <Issue TypeId="UnassignedField.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PackageProvider.cs" Offset="20993-20998" Line="516" Message="Field 'unity' is never assigned" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\AutomaticUpdatesSettings.cs" Offset="482-488" Line="17" Message="Constant 'SectionKey' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\BuildInfoSettings.cs" Offset="580-586" Line="20" Message="Constant 'SectionKey' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\CommandLineProcessorSettings.cs" Offset="451-457" Line="15" Message="Constant 'SectionKey' can be made private" />
@@ -479,7 +488,7 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\TaskDirectorSettings.cs" Offset="492-498" Line="16" Message="Constant 'SectionKey' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\TracesSettings.cs" Offset="616-622" Line="22" Message="Constant 'SectionKey' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="688-694" Line="26" Message="Constant 'SectionKey' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="10499-10510" Line="272" Message="Method 'GetPriority' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ConfigSections\VisualScriptingSettings.cs" Offset="10487-10498" Line="272" Message="Method 'GetPriority' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="345-360" Line="12" Message="Method 'GetSectionIndex' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="806-823" Line="24" Message="Method 'GetSearchKeywords' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="8905-8908" Line="232" Message="Method 'Get' is never used" />

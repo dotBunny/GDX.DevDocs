@@ -95,6 +95,21 @@
 <p>A significant portion of the suggestions found by code inspection are based on the exposure of fields that could be marked private or internal. As additional unit tests get implemented, this should start to go down.</p>
 </div>
 <h2 id="warnings">Warnings</h2>
+<h3 id="possible-null-assignment-to-non-nullable-entity">Possible 'null' assignment to non-nullable entity</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L159" title="GDX.Editor\PackageProvider.cs:159">PackageProvider.cs:159</a></td>
+<td>Possible <code>null</code> assignment to non-nullable entity</td>
+</tr>
+</tbody>
+</table>
 <h3 id="collection-is-never-updated-non-private-accessibility">Collection is never updated: Non-private accessibility</h3>
 <table>
 <thead>
@@ -1311,7 +1326,11 @@
 <td>Field <code>ticked</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L160" title="GDX.Editor\PackageProvider.cs:160">PackageProvider.cs:160</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L104" title="GDX.Editor\PackageProvider.cs:104">PackageProvider.cs:104</a></td>
+<td>Field <code>PackageManagerInfo</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L186" title="GDX.Editor\PackageProvider.cs:186">PackageProvider.cs:186</a></td>
 <td>Method <code>EnsureAlwaysIncludeShaders</code> can be made private</td>
 </tr>
 <tr>
@@ -1487,11 +1506,11 @@
 <td>Field <code>version</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L478" title="GDX.Editor\PackageProvider.cs:478">PackageProvider.cs:478</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L515" title="GDX.Editor\PackageProvider.cs:515">PackageProvider.cs:515</a></td>
 <td>Field <code>version</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L479" title="GDX.Editor\PackageProvider.cs:479">PackageProvider.cs:479</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L516" title="GDX.Editor\PackageProvider.cs:516">PackageProvider.cs:516</a></td>
 <td>Field <code>unity</code> is never assigned</td>
 </tr>
 </tbody>
@@ -1512,6 +1531,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/AddressablesExtensions.cs#L53" title="GDX\AddressablesExtensions.cs:53">AddressablesExtensions.cs:53</a></td>
 <td>Method <code>CanRelease</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ArrayExtensions.cs#L106" title="GDX\ArrayExtensions.cs:106">ArrayExtensions.cs:106</a></td>
+<td>Method <code>FirstIndexOf</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ArrayExtensions.cs#L169" title="GDX\ArrayExtensions.cs:169">ArrayExtensions.cs:169</a></td>
@@ -1946,6 +1969,26 @@
 <td>Method <code>Contains</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L264" title="GDX\SimpleListExtensions.cs:264">SimpleListExtensions.cs:264</a></td>
+<td>Method <code>FirstIndexOfItem</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L284" title="GDX\SimpleListExtensions.cs:284">SimpleListExtensions.cs:284</a></td>
+<td>Method <code>FirstIndexOfValue</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L307" title="GDX\SimpleListExtensions.cs:307">SimpleListExtensions.cs:307</a></td>
+<td>Method <code>LastIndexOf</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L328" title="GDX\SimpleListExtensions.cs:328">SimpleListExtensions.cs:328</a></td>
+<td>Method <code>LastIndexOfItem</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L349" title="GDX\SimpleListExtensions.cs:349">SimpleListExtensions.cs:349</a></td>
+<td>Method <code>LastIndexOfValue</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/StringExtensions.cs#L51" title="GDX\StringExtensions.cs:51">StringExtensions.cs:51</a></td>
 <td>Constant <code>AsciiNumberSeparator</code> is never used</td>
 </tr>
@@ -2176,11 +2219,11 @@
 <td>Method <code>RemoveSubSystemsOfTypeFromFirstSubSystemOfType</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L304" title="GDX\SimpleListExtensions.cs:304">SimpleListExtensions.cs:304</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L432" title="GDX\SimpleListExtensions.cs:432">SimpleListExtensions.cs:432</a></td>
 <td>Method <code>RemoveItems</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L335" title="GDX\SimpleListExtensions.cs:335">SimpleListExtensions.cs:335</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L463" title="GDX\SimpleListExtensions.cs:463">SimpleListExtensions.cs:463</a></td>
 <td>Method <code>RemoveReferences</code> return value is never used</td>
 </tr>
 </tbody>
@@ -2360,7 +2403,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-09-17 against <a href="https://github.com/dotBunny/GDX/commit/b2c6000f663fe2a4c2db19ea86b6132d0ee2b3ec"><strong>b2c6000</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-09-18 against <a href="https://github.com/dotBunny/GDX/commit/6df127180da1ad850372fb86e9b0250237888c26"><strong>6df1271</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>

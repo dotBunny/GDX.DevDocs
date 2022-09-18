@@ -789,10 +789,457 @@ making sure that the item is not already contained in the <a class="xref" href="
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveFirstItem__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveFirstItem%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_FirstIndexOf__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.FirstIndexOf%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L243">View Source</a>
+  </span>
+  <a id="GDX_SimpleListExtensions_FirstIndexOf_" data-uid="GDX.SimpleListExtensions.FirstIndexOf*"></a>
+  <h4 id="GDX_SimpleListExtensions_FirstIndexOf__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.FirstIndexOf``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">FirstIndexOf&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Find the first index of <code data-dev-comment-type="paramref" class="paramref">targetItem</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FirstIndexOf&lt;T&gt;(this ref SimpleList&lt;T&gt; targetSimpleList, T targetItem)
+    where T : IEquatable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>&lt;T&gt;</td>
+        <td><span class="parametername">targetSimpleList</span></td>
+        <td><p>The <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td><p>The object to be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of <code data-dev-comment-type="paramref" class="paramref">targetItem</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code> backing array, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_SimpleListExtensions_FirstIndexOf__1_GDX_Collections_Generic_SimpleList___0_____0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will work for <span class="xref">System.String</span> comparisons.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_FirstIndexOfItem__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.FirstIndexOfItem%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L264">View Source</a>
+  </span>
+  <a id="GDX_SimpleListExtensions_FirstIndexOfItem_" data-uid="GDX.SimpleListExtensions.FirstIndexOfItem*"></a>
+  <h4 id="GDX_SimpleListExtensions_FirstIndexOfItem__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.FirstIndexOfItem``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">FirstIndexOfItem&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Find the first index of <code data-dev-comment-type="paramref" class="paramref">targetItem</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FirstIndexOfItem&lt;T&gt;(this ref SimpleList&lt;T&gt; targetSimpleList, T targetItem)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>&lt;T&gt;</td>
+        <td><span class="parametername">targetSimpleList</span></td>
+        <td><p>The <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td><p>The object to be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of <code data-dev-comment-type="paramref" class="paramref">targetItem</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code> backing array, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_SimpleListExtensions_FirstIndexOfItem__1_GDX_Collections_Generic_SimpleList___0_____0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Ignores equality check and end up comparing object pointers. Do NOT use this for <span class="xref">System.String</span> types.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_FirstIndexOfValue__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.FirstIndexOfValue%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L284">View Source</a>
+  </span>
+  <a id="GDX_SimpleListExtensions_FirstIndexOfValue_" data-uid="GDX.SimpleListExtensions.FirstIndexOfValue*"></a>
+  <h4 id="GDX_SimpleListExtensions_FirstIndexOfValue__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.FirstIndexOfValue``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">FirstIndexOfValue&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Find the first index of <code data-dev-comment-type="paramref" class="paramref">targetValue</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FirstIndexOfValue&lt;T&gt;(this ref SimpleList&lt;T&gt; targetSimpleList, T targetValue)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>&lt;T&gt;</td>
+        <td><span class="parametername">targetSimpleList</span></td>
+        <td><p>The <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetValue</span></td>
+        <td><p>The value to be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of <code data-dev-comment-type="paramref" class="paramref">targetValue</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code> backing array, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_LastIndexOf__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.LastIndexOf%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L307">View Source</a>
+  </span>
+  <a id="GDX_SimpleListExtensions_LastIndexOf_" data-uid="GDX.SimpleListExtensions.LastIndexOf*"></a>
+  <h4 id="GDX_SimpleListExtensions_LastIndexOf__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.LastIndexOf``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">LastIndexOf&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Find the last index of <code data-dev-comment-type="paramref" class="paramref">targetItem</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LastIndexOf&lt;T&gt;(this ref SimpleList&lt;T&gt; targetSimpleList, T targetItem)
+    where T : IEquatable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>&lt;T&gt;</td>
+        <td><span class="parametername">targetSimpleList</span></td>
+        <td><p>The <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td><p>The object to be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of <code data-dev-comment-type="paramref" class="paramref">targetItem</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code> backing array, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_SimpleListExtensions_LastIndexOf__1_GDX_Collections_Generic_SimpleList___0_____0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This will work for <span class="xref">System.String</span> comparisons.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_LastIndexOfItem__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.LastIndexOfItem%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L328">View Source</a>
+  </span>
+  <a id="GDX_SimpleListExtensions_LastIndexOfItem_" data-uid="GDX.SimpleListExtensions.LastIndexOfItem*"></a>
+  <h4 id="GDX_SimpleListExtensions_LastIndexOfItem__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.LastIndexOfItem``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">LastIndexOfItem&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Find the last index of <code data-dev-comment-type="paramref" class="paramref">targetItem</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LastIndexOfItem&lt;T&gt;(this ref SimpleList&lt;T&gt; targetSimpleList, T targetItem)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>&lt;T&gt;</td>
+        <td><span class="parametername">targetSimpleList</span></td>
+        <td><p>The <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetItem</span></td>
+        <td><p>The object to be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of <code data-dev-comment-type="paramref" class="paramref">targetItem</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code> backing array, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_LastIndexOfValue__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.LastIndexOfValue%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L349">View Source</a>
+  </span>
+  <a id="GDX_SimpleListExtensions_LastIndexOfValue_" data-uid="GDX.SimpleListExtensions.LastIndexOfValue*"></a>
+  <h4 id="GDX_SimpleListExtensions_LastIndexOfValue__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.LastIndexOfValue``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">LastIndexOfValue&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"><p>Find the last index of <code data-dev-comment-type="paramref" class="paramref">targetValue</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int LastIndexOfValue&lt;T&gt;(this ref SimpleList&lt;T&gt; targetSimpleList, T targetValue)
+    where T : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList</a>&lt;T&gt;</td>
+        <td><span class="parametername">targetSimpleList</span></td>
+        <td><p>The <a class="xref" href="GDX.Collections.Generic.SimpleList-1.html">SimpleList&lt;T&gt;</a> to look in.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">targetValue</span></td>
+        <td><p>The value to be found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of <code data-dev-comment-type="paramref" class="paramref">targetValue</code> in <code data-dev-comment-type="paramref" class="paramref">targetSimpleList</code> backing array, or -1 if not found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the array.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveFirstItem__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveFirstItem%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L371">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveFirstItem_" data-uid="GDX.SimpleListExtensions.RemoveFirstItem*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveFirstItem__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveFirstItem``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveFirstItem&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -868,7 +1315,7 @@ making sure that the item is not already contained in the <a class="xref" href="
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveFirstReference__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveFirstReference%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L273">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L401">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveFirstReference_" data-uid="GDX.SimpleListExtensions.RemoveFirstReference*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveFirstReference__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveFirstReference``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveFirstReference&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -945,7 +1392,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveItems__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveItems%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L304">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L432">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveItems_" data-uid="GDX.SimpleListExtensions.RemoveItems*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveItems__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveItems``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveItems&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -1021,7 +1468,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveLastItem__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveLastItem%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L365">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L493">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveLastItem_" data-uid="GDX.SimpleListExtensions.RemoveLastItem*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveLastItem__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveLastItem``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveLastItem&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -1097,7 +1544,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveLastReference__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveLastReference%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L394">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L522">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveLastReference_" data-uid="GDX.SimpleListExtensions.RemoveLastReference*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveLastReference__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveLastReference``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveLastReference&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -1174,7 +1621,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_SimpleListExtensions_RemoveReferences__1_GDX_Collections_Generic_SimpleList___0_____0_.md&amp;value=---%0Auid%3A%20GDX.SimpleListExtensions.RemoveReferences%60%601(GDX.Collections.Generic.SimpleList%7B%60%600%7D%40%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L335">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs/#L463">View Source</a>
   </span>
   <a id="GDX_SimpleListExtensions_RemoveReferences_" data-uid="GDX.SimpleListExtensions.RemoveReferences*"></a>
   <h4 id="GDX_SimpleListExtensions_RemoveReferences__1_GDX_Collections_Generic_SimpleList___0_____0_" data-uid="GDX.SimpleListExtensions.RemoveReferences``1(GDX.Collections.Generic.SimpleList{``0}@,``0)">RemoveReferences&lt;T&gt;(ref SimpleList&lt;T&gt;, T)</h4>
@@ -1277,7 +1724,7 @@ Only removes direct object references, i.e. equivalent strings at different memo
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-09-17 against <a href="https://github.com/dotBunny/GDX/commit/b2c6000f663fe2a4c2db19ea86b6132d0ee2b3ec"><strong>b2c6000</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-09-18 against <a href="https://github.com/dotBunny/GDX/commit/6df127180da1ad850372fb86e9b0250237888c26"><strong>6df1271</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
