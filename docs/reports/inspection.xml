@@ -17,7 +17,6 @@
     <IssueType Id="FieldCanBeMadeReadOnly.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Field can be made readonly" Description="Field can be made readonly: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=FieldCanBeMadeReadOnly.Global" />
     <IssueType Id="FieldCanBeMadeReadOnly.Local" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Field can be made readonly" Description="Field can be made readonly: Private accessibility" Severity="SUGGESTION" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=FieldCanBeMadeReadOnly.Local" />
     <IssueType Id="InconsistentNaming" Category="Constraints Violations" CategoryId="ConstraintViolation" Description="Inconsistent Naming" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=InconsistentNaming" />
-    <IssueType Id="InvokeAsExtensionMethod" Category="Language Usage Opportunities" CategoryId="LanguageUsage" Description="Convert static method invocation to extension method call" Severity="SUGGESTION" />
     <IssueType Id="MemberCanBePrivate.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made private" Description="Member can be made private: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBePrivate.Global" />
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
@@ -33,7 +32,6 @@
     <IssueType Id="UnusedMemberInSuper.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Type member is never accessed via base type" Description="Type member is never accessed via base type: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedMethodReturnValue.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Method return value is never used" Description="Method return value is never used: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedMethodReturnValue.Local" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Method return value is never used" Description="Method return value is never used: Private accessibility" Severity="WARNING" />
-    <IssueType Id="UnusedParameter.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Unused parameter" Description="Unused parameter: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedType.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Type is never used" Description="Type is never used: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UnusedType.Global" />
   </IssueTypes>
   <Issues>
@@ -204,18 +202,17 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="21632-21638" Line="459" Message="Method 'DrawMesh' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22414-22426" Line="475" Message="Method 'DrawWireCube' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22655-22670" Line="481" Message="Method 'DrawWireCapsule' is never used" />
-      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22735-22744" Line="481" Message="Parameter 'direction' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="24260-24267" Line="526" Message="Method 'Execute' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="24684-24693" Line="540" Message="Method 'GetBuffer' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25097-25105" Line="550" Message="Method 'HasToken' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25217-25223" Line="555" Message="Method 'Unlock' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25558-25568" Line="564" Message="Method 'Invalidate' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25859-25872" Line="575" Message="Method 'InvalidateAll' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26193-26212" Line="585" Message="Method 'NextDottedLineBatch' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26526-26539" Line="594" Message="Method 'NextLineBatch' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26835-26841" Line="603" Message="Method 'NextLineBatch' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="28107-28112" Line="633" Message="Method 'Reset' is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Local" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="31022-31025" Line="694" Message="Method 'AddLineDrawCommand' return value is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="24241-24248" Line="526" Message="Method 'Execute' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="24665-24674" Line="540" Message="Method 'GetBuffer' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25078-25086" Line="550" Message="Method 'HasToken' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25198-25204" Line="555" Message="Method 'Unlock' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25539-25549" Line="564" Message="Method 'Invalidate' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25840-25853" Line="575" Message="Method 'InvalidateAll' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26174-26193" Line="585" Message="Method 'NextDottedLineBatch' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26507-26520" Line="594" Message="Method 'NextLineBatch' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26816-26822" Line="603" Message="Method 'NextLineBatch' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="28088-28093" Line="633" Message="Method 'Reset' is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Local" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="31003-31006" Line="694" Message="Method 'AddLineDrawCommand' return value is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="730-739" Line="23" Message="Class 'Profiling' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="2396-2414" Line="54" Message="Method 'TakeMemorySnapshot' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="4212-4226" Line="86" Message="Method 'StartProfiling' is never used" />
@@ -514,25 +511,6 @@
       <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="3068-3072" Line="81" Message="The parameter 'testSuite' has the same default value" />
       <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="3888-3892" Line="100" Message="The parameter 'testSuite' has the same default value" />
       <Issue TypeId="RedundantNameQualifier" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\ResourcesAuditReportTests.cs" Offset="881-903" Line="23" Message="Qualifier is redundant" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="1682-1695" Line="44" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="2000-2012" Line="55" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="2314-2328" Line="66" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="2624-2637" Line="77" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="2949-2961" Line="88" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="3167-3179" Line="95" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="7789-7796" Line="257" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="8615-8632" Line="278" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="8711-8737" Line="279" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="8806-8823" Line="280" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="8902-8928" Line="281" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="8995-9012" Line="282" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="9084-9110" Line="283" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="9640-9657" Line="297" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="9729-9755" Line="298" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="9819-9836" Line="299" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="9915-9941" Line="300" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="10185-10202" Line="303" Message="Invoke as extension method" />
-      <Issue TypeId="InvokeAsExtensionMethod" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\StringExtensionsTests.cs" Offset="10281-10307" Line="304" Message="Invoke as extension method" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs" Offset="870-875" Line="32" Message="Method 'Setup' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs" Offset="2455-2463" Line="65" Message="Method 'TearDown' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\TransformExtensionsTests.cs" Offset="705-711" Line="25" Message="Method 'Setup' can be made private" />
