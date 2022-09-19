@@ -95,21 +95,6 @@
 <p>A significant portion of the suggestions found by code inspection are based on the exposure of fields that could be marked private or internal. As additional unit tests get implemented, this should start to go down.</p>
 </div>
 <h2 id="warnings">Warnings</h2>
-<h3 id="possible-null-assignment-to-non-nullable-entity">Possible 'null' assignment to non-nullable entity</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L159" title="GDX.Editor\PackageProvider.cs:159">PackageProvider.cs:159</a></td>
-<td>Possible <code>null</code> assignment to non-nullable entity</td>
-</tr>
-</tbody>
-</table>
 <h3 id="collection-is-never-updated-non-private-accessibility">Collection is never updated: Non-private accessibility</h3>
 <table>
 <thead>
@@ -255,14 +240,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ResourcesProvider.cs#L5" title="GDX.Editor\ResourcesProvider.cs:5">ResourcesProvider.cs:5</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L7" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:7">EditorTaskDirectorTests.cs:7</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugDrawBufferTests.cs#L5" title="GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs:5">DebugDrawBufferTests.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
@@ -428,10 +405,6 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/MenuItems.cs#L16" title="GDX.Editor\MenuItems.cs:16">MenuItems.cs:16</a></td>
 <td>Method <code>ManagedMemoryReport</code> is never used</td>
 </tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ProjectSettingsProvider.cs#L502" title="GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs:502">ProjectSettingsProvider.cs:502</a></td>
-<td>Method <code>GetPackageStatus</code> is never used</td>
-</tr>
 </tbody>
 </table>
 <h3 id="method-return-value-is-never-used-private-accessibility">Method return value is never used: Private accessibility</h3>
@@ -485,21 +458,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Collections/Pooling/GameObjectPoolTests.cs#L279" title="GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs:279">GameObjectPoolTests.cs:279</a></td>
 <td>Class <code>GameObjectPoolItemTest</code> is never instantiated</td>
-</tr>
-</tbody>
-</table>
-<h3 id="convert-lambda-expression-to-method-group">Convert lambda expression to method group</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ProjectSettingsProvider.cs#L344" title="GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs:344">ProjectSettingsProvider.cs:344</a></td>
-<td>Convert to method group</td>
 </tr>
 </tbody>
 </table>
@@ -618,10 +576,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/ArrayPool.cs#L16" title="GDX\Collections\Pooling\ArrayPool.cs:16">ArrayPool.cs:16</a></td>
-<td>Field can be made readonly</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L104" title="GDX.Editor\PackageProvider.cs:104">PackageProvider.cs:104</a></td>
 <td>Field can be made readonly</td>
 </tr>
 </tbody>
@@ -2097,7 +2051,7 @@
 <td>Method <code>Get</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ProjectSettingsProvider.cs#L521" title="GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs:521">ProjectSettingsProvider.cs:521</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ProjectSettingsProvider.cs#L499" title="GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs:499">ProjectSettingsProvider.cs:499</a></td>
 <td>Method <code>Reset</code> is never used</td>
 </tr>
 <tr>
@@ -2121,11 +2075,11 @@
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L25" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:25">EditorTaskDirectorTests.cs:25</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L24" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:24">EditorTaskDirectorTests.cs:24</a></td>
 <td>Method <code>Setup</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L42" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:42">EditorTaskDirectorTests.cs:42</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/EditorTaskDirectorTests.cs#L41" title="GDX.Editor.Tests\EditMode\EditorTaskDirectorTests.cs:41">EditorTaskDirectorTests.cs:41</a></td>
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 <tr>
@@ -2403,7 +2357,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-09-18 against <a href="https://github.com/dotBunny/GDX/commit/6df127180da1ad850372fb86e9b0250237888c26"><strong>6df1271</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-09-19 against <a href="https://github.com/dotBunny/GDX/commit/90d7db9efa1d6efd784650bebc2dace4e9cfb0b3"><strong>90d7db9</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
