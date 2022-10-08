@@ -32,6 +32,7 @@
     <IssueType Id="UnusedMemberInSuper.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Type member is never accessed via base type" Description="Type member is never accessed via base type: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedMethodReturnValue.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Method return value is never used" Description="Method return value is never used: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedMethodReturnValue.Local" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Method return value is never used" Description="Method return value is never used: Private accessibility" Severity="WARNING" />
+    <IssueType Id="UnusedParameter.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Unused parameter" Description="Unused parameter: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedType.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Type is never used" Description="Type is never used: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UnusedType.Global" />
   </IssueTypes>
   <Issues>
@@ -187,32 +188,36 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\UnsafeSparseSet.cs" Offset="1715-1721" Line="51" Message="Field 'FreeIndex' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\UnsafeSparseSet.cs" Offset="1900-1906" Line="58" Message="Field 'Allocator' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="1332-1338" Line="37" Message="Field 'StartTicks' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="1255-1261" Line="34" Message="Field 'CubeSegmentIndices' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="8665-8671" Line="199" Message="Property 'Finalized' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="8986-8992" Line="209" Message="Method 'Converge' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="11073-11087" Line="258" Message="Method 'DrawDottedCube' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="12007-12021" Line="275" Message="Method 'DrawDottedLine' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="12753-12759" Line="289" Message="Method 'DrawDottedLines' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="13960-13966" Line="307" Message="Method 'DrawDottedLines' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="15045-15053" Line="326" Message="Method 'DrawLine' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="15751-15757" Line="340" Message="Method 'DrawLines' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="16918-16924" Line="358" Message="Method 'DrawLines' can be made private" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="18287-18293" Line="377" Message="Method 'DrawLines' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="21395-21407" Line="452" Message="Method 'DrawRenderer' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="21632-21638" Line="459" Message="Method 'DrawMesh' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22414-22426" Line="475" Message="Method 'DrawWireCube' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22655-22670" Line="481" Message="Method 'DrawWireCapsule' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="24241-24248" Line="526" Message="Method 'Execute' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="24665-24674" Line="540" Message="Method 'GetBuffer' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25078-25086" Line="550" Message="Method 'HasToken' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25198-25204" Line="555" Message="Method 'Unlock' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25539-25549" Line="564" Message="Method 'Invalidate' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="25840-25853" Line="575" Message="Method 'InvalidateAll' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26174-26193" Line="585" Message="Method 'NextDottedLineBatch' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26507-26520" Line="594" Message="Method 'NextLineBatch' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26816-26822" Line="603" Message="Method 'NextLineBatch' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="28088-28093" Line="633" Message="Method 'Reset' is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Local" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="31003-31006" Line="694" Message="Method 'AddLineDrawCommand' return value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="1279-1285" Line="34" Message="Field 'CubeSegmentIndices' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="8689-8695" Line="199" Message="Property 'Finalized' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="9010-9016" Line="209" Message="Method 'Converge' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="11097-11111" Line="258" Message="Method 'DrawDottedCube' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="12031-12045" Line="275" Message="Method 'DrawDottedLine' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="12777-12783" Line="289" Message="Method 'DrawDottedLines' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="13984-13990" Line="307" Message="Method 'DrawDottedLines' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="15069-15077" Line="326" Message="Method 'DrawLine' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="15775-15781" Line="340" Message="Method 'DrawLines' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="16942-16948" Line="358" Message="Method 'DrawLines' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="18311-18317" Line="377" Message="Method 'DrawLines' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="21419-21431" Line="452" Message="Method 'DrawRenderer' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="21656-21662" Line="459" Message="Method 'DrawMesh' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22438-22450" Line="475" Message="Method 'DrawWireCube' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22807-22813" Line="485" Message="Method 'GetCircleVertices' can be made private" />
+      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22850-22856" Line="485" Message="Parameter 'center' is never used" />
+      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="22880-22889" Line="485" Message="Parameter 'direction' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="23479-23493" Line="505" Message="Method 'DrawWireCircle' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="24427-24442" Line="530" Message="Method 'DrawWireCapsule' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26013-26020" Line="575" Message="Method 'Execute' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26437-26446" Line="589" Message="Method 'GetBuffer' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26850-26858" Line="599" Message="Method 'HasToken' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="26970-26976" Line="604" Message="Method 'Unlock' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="27311-27321" Line="613" Message="Method 'Invalidate' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="27612-27625" Line="624" Message="Method 'InvalidateAll' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="27946-27965" Line="634" Message="Method 'NextDottedLineBatch' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="28279-28292" Line="643" Message="Method 'NextLineBatch' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="28588-28594" Line="652" Message="Method 'NextLineBatch' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="29860-29865" Line="682" Message="Method 'Reset' is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Local" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawBuffer.cs" Offset="32775-32778" Line="743" Message="Method 'AddLineDrawCommand' return value is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="730-739" Line="23" Message="Class 'Profiling' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="2396-2414" Line="54" Message="Method 'TakeMemorySnapshot' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="4212-4226" Line="86" Message="Method 'StartProfiling' is never used" />
