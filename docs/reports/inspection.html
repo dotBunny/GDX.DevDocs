@@ -140,6 +140,10 @@
 <td>Name <code>tearingDown</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>TearingDown</code>.</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1213" title="GDX\Collections\UnsafeSparseSet.cs:1213">UnsafeSparseSet.cs:1213</a></td>
+<td>Name <code>Data</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_Data</code>.</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/ShaderProvider.cs#L27" title="GDX\Rendering\ShaderProvider.cs:27">ShaderProvider.cs:27</a></td>
 <td>Name <code>ColorPropertyID</code> does not match rule <code>non_private_readonly_fields_should_be_pascal_case</code>. Suggested name is <code>ColorPropertyId</code>.</td>
 </tr>
@@ -174,6 +178,25 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L45" title="GDX.Editor\EditorTaskDirectorSystem.cs:45">EditorTaskDirectorSystem.cs:45</a></td>
 <td>Name <code>ticked</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>Ticked</code>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="invalid-xml-documentation-comment">Invalid XML documentation comment</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1101" title="GDX\Collections\UnsafeSparseSet.cs:1101">UnsafeSparseSet.cs:1101</a></td>
+<td>Parameter <code>versionArray</code> has no matching param tag in the XML comment for GDX.Collections.UnsafeSparseSet.Dispose (but other parameters do)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1143" title="GDX\Collections\UnsafeSparseSet.cs:1143">UnsafeSparseSet.cs:1143</a></td>
+<td>Parameter <code>versionArray</code> has no matching param tag in the XML comment for GDX.Collections.UnsafeSparseSet.DisposeVersionArray (but other parameters do)</td>
 </tr>
 </tbody>
 </table>
@@ -797,15 +820,19 @@
 <td>Field <code>FreeIndex</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L19" title="GDX\Collections\UnsafeSparseSet.cs:19">UnsafeSparseSet.cs:19</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L27" title="GDX\Collections\UnsafeSparseSet.cs:27">UnsafeSparseSet.cs:27</a></td>
 <td>Constant <code>MinimumCapacity</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L51" title="GDX\Collections\UnsafeSparseSet.cs:51">UnsafeSparseSet.cs:51</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L30" title="GDX\Collections\UnsafeSparseSet.cs:30">UnsafeSparseSet.cs:30</a></td>
+<td>Field <code>Data</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L60" title="GDX\Collections\UnsafeSparseSet.cs:60">UnsafeSparseSet.cs:60</a></td>
 <td>Field <code>FreeIndex</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L58" title="GDX\Collections\UnsafeSparseSet.cs:58">UnsafeSparseSet.cs:58</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L67" title="GDX\Collections\UnsafeSparseSet.cs:67">UnsafeSparseSet.cs:67</a></td>
 <td>Field <code>Allocator</code> can be made private</td>
 </tr>
 <tr>
@@ -1303,6 +1330,14 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1207" title="GDX\Collections\UnsafeSparseSet.cs:1207">UnsafeSparseSet.cs:1207</a></td>
+<td>Field <code>SparseIndex</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1208" title="GDX\Collections\UnsafeSparseSet.cs:1208">UnsafeSparseSet.cs:1208</a></td>
+<td>Field <code>DenseIndex</code> is assigned but its value is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Mathematics/Byte2.cs#L770" title="GDX\Mathematics\Byte2.cs:770">Byte2.cs:770</a></td>
 <td>Field <code>X</code> is assigned but its value is never used</td>
 </tr>
@@ -1590,6 +1625,18 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/SparseSet.cs#L818" title="GDX\Collections\SparseSet.cs:818">SparseSet.cs:818</a></td>
 <td>Method <code>Reserve</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1101" title="GDX\Collections\UnsafeSparseSet.cs:1101">UnsafeSparseSet.cs:1101</a></td>
+<td>Method <code>Dispose</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1143" title="GDX\Collections\UnsafeSparseSet.cs:1143">UnsafeSparseSet.cs:1143</a></td>
+<td>Method <code>DisposeVersionArray</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1220" title="GDX\Collections\UnsafeSparseSet.cs:1220">UnsafeSparseSet.cs:1220</a></td>
+<td>Property <code>Items</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L258" title="GDX\Developer\DebugDrawBuffer.cs:258">DebugDrawBuffer.cs:258</a></td>
@@ -2261,6 +2308,72 @@
 </tr>
 </tbody>
 </table>
+<h2 id="hints">Hints</h2>
+<h3 id="use-explicit-or-implicit-modifier-definition-for-types">Use explicit or implicit modifier definition for types</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1161" title="GDX\Collections\UnsafeSparseSet.cs:1161">UnsafeSparseSet.cs:1161</a></td>
+<td>Inconsistent modifiers style: redundant <code>internal</code> modifier</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1175" title="GDX\Collections\UnsafeSparseSet.cs:1175">UnsafeSparseSet.cs:1175</a></td>
+<td>Inconsistent modifiers style: redundant <code>internal</code> modifier</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1189" title="GDX\Collections\UnsafeSparseSet.cs:1189">UnsafeSparseSet.cs:1189</a></td>
+<td>Inconsistent modifiers style: redundant <code>internal</code> modifier</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1211" title="GDX\Collections\UnsafeSparseSet.cs:1211">UnsafeSparseSet.cs:1211</a></td>
+<td>Inconsistent modifiers style: redundant <code>internal</code> modifier</td>
+</tr>
+</tbody>
+</table>
+<h3 id="use-preferred-var-style-for-built-in-types">Use preferred 'var' style: For built-in types</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1226" title="GDX\Collections\UnsafeSparseSet.cs:1226">UnsafeSparseSet.cs:1226</a></td>
+<td>Use explicit type (built-in types)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="use-preferred-var-style-when-type-is-simple">Use preferred 'var' style: When type is simple</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1075" title="GDX\Collections\UnsafeSparseSet.cs:1075">UnsafeSparseSet.cs:1075</a></td>
+<td>Use explicit type (simple types)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1105" title="GDX\Collections\UnsafeSparseSet.cs:1105">UnsafeSparseSet.cs:1105</a></td>
+<td>Use explicit type (simple types)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1147" title="GDX\Collections\UnsafeSparseSet.cs:1147">UnsafeSparseSet.cs:1147</a></td>
+<td>Use explicit type (simple types)</td>
+</tr>
+</tbody>
+</table>
 </article>
           </div>
           
@@ -2282,7 +2395,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2022-10-08 against <a href="https://github.com/dotBunny/GDX/commit/0aa0a812c2270042373e7ad257a339d980f59af0"><strong>0aa0a81</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2022-10-20 against <a href="https://github.com/dotBunny/GDX/commit/9e3e5055bb54417125276f6c71fde565143c3e88"><strong>9e3e505</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
