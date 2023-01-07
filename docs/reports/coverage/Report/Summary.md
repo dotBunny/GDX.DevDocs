@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-01-07 - 11:45:27 AM |
+| Generated on: | 2023-01-07 - 1:16:34 PM |
 | Parser: | MultiReportParser (508x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 110 |
 | Files: | 106 |
-| Covered lines: | 4371 |
-| Uncovered lines: | 4674 |
-| Coverable lines: | 9045 |
-| Total lines: | 22439 |
-| Line coverage: | 48.3% (4371 of 9045) |
+| Covered lines: | 4368 |
+| Uncovered lines: | 4683 |
+| Coverable lines: | 9051 |
+| Total lines: | 22443 |
+| Line coverage: | 48.2% (4368 of 9051) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 449 |
+| Covered methods: | 448 |
 | Total methods: | 882 |
-| Method coverage: | 50.9% (449 of 882) |
+| Method coverage: | 50.7% (448 of 882) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4371**|**4674**|**9045**|**27383**|**48.3%**|**0**|**0**|****|**449**|**882**|**50.9%**|
+|**GDX**|**4368**|**4683**|**9051**|**27387**|**48.2%**|**0**|**0**|****|**448**|**882**|**50.7%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
@@ -67,7 +67,7 @@
 |GDX.Developer.DebugDrawBuffer|24|325|349|894|6.8%|0|0||2|39|5.1%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
 |GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|31|31|75|0%|0|0||0|5|0%|
-|GDX.Developer.Reports.BuildVerification.TestRunner|0|52|52|96|0%|0|0||0|7|0%|
+|GDX.Developer.Reports.BuildVerification.TestRunner|0|58|58|100|0%|0|0||0|7|0%|
 |GDX.Developer.Reports.BuildVerificationReport|0|35|35|58|0%|0|0||0|6|0%|
 |GDX.Developer.Reports.NUnitReport|143|49|192|277|74.4%|0|0||15|17|88.2%|
 |GDX.Developer.Reports.Resource.IntegerDiff|23|13|36|79|63.8%|0|0||4|4|100%|
@@ -83,7 +83,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|56|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|86|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|88|54|142|384|61.9%|0|0||8|10|80%|
+|GDX.Developer.Reports.ResourcesAuditReport|85|57|142|384|59.8%|0|0||7|10|70%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|223|90.2%|0|0||3|3|100%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|55|0|55|148|100%|0|0||10|10|100%|
