@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 1/7/2023 - 2:56:37 PM |
+| Generated on: | 2023-01-07 - 6:07:37 PM |
 | Parser: | MultiReportParser (508x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 110 |
 | Files: | 106 |
 | Covered lines: | 4371 |
-| Uncovered lines: | 4696 |
-| Coverable lines: | 9067 |
-| Total lines: | 22465 |
-| Line coverage: | 48.2% (4371 of 9067) |
+| Uncovered lines: | 4699 |
+| Coverable lines: | 9070 |
+| Total lines: | 22466 |
+| Line coverage: | 48.1% (4371 of 9070) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 449 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4371**|**4696**|**9067**|**27409**|**48.2%**|**0**|**0**|****|**449**|**882**|**50.9%**|
+|**GDX**|**4371**|**4699**|**9070**|**27410**|**48.1%**|**0**|**0**|****|**449**|**882**|**50.9%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
@@ -66,8 +66,8 @@
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|
 |GDX.Developer.DebugDrawBuffer|24|325|349|894|6.8%|0|0||2|39|5.1%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
-|GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|31|31|75|0%|0|0||0|5|0%|
-|GDX.Developer.Reports.BuildVerification.TestRunner|0|74|74|122|0%|0|0||0|7|0%|
+|GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|31|31|73|0%|0|0||0|5|0%|
+|GDX.Developer.Reports.BuildVerification.TestRunner|0|77|77|125|0%|0|0||0|7|0%|
 |GDX.Developer.Reports.BuildVerificationReport|0|35|35|58|0%|0|0||0|6|0%|
 |GDX.Developer.Reports.NUnitReport|143|49|192|277|74.4%|0|0||15|17|88.2%|
 |GDX.Developer.Reports.Resource.IntegerDiff|23|13|36|79|63.8%|0|0||4|4|100%|
