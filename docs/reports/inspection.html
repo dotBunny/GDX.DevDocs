@@ -95,6 +95,21 @@
 <p>A significant portion of the suggestions found by code inspection are based on the exposure of fields that could be marked private or internal. As additional unit tests get implemented, this should start to go down.</p>
 </div>
 <h2 id="warnings">Warnings</h2>
+<h3 id="possible-null-assignment-to-non-nullable-entity">Possible 'null' assignment to non-nullable entity</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Threading/TaskExtensions.cs#L31" title="GDX\Threading\TaskExtensions.cs:31">TaskExtensions.cs:31</a></td>
+<td>Possible <code>null</code> assignment to non-nullable entity</td>
+</tr>
+</tbody>
+</table>
 <h3 id="collection-is-never-updated-non-private-accessibility">Collection is never updated: Non-private accessibility</h3>
 <table>
 <thead>
@@ -142,6 +157,14 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1213" title="GDX\Collections\UnsafeSparseSet.cs:1213">UnsafeSparseSet.cs:1213</a></td>
 <td>Name <code>Data</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_Data</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L28" title="GDX\Core.cs:28">Core.cs:28</a></td>
+<td>Name <code>MainThreadID</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>MainThreadId</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/TestRunner.cs#L41" title="GDX\Developer\Reports\BuildVerification\TestRunner.cs:41">TestRunner.cs:41</a></td>
+<td>Name <code>s_Timer</code> does not match rule <code>private_static_readonly</code>. Suggested name is <code>k_Timer</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Rendering/ShaderProvider.cs#L27" title="GDX\Rendering\ShaderProvider.cs:27">ShaderProvider.cs:27</a></td>
@@ -199,7 +222,7 @@
 <td>Parameter <code>versionArray</code> has no matching param tag in the XML comment for GDX.Collections.UnsafeSparseSet.DisposeVersionArray (but other parameters do)</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L77" title="GDX\Core.cs:77">Core.cs:77</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L79" title="GDX\Core.cs:79">Core.cs:79</a></td>
 <td>Cannot resolve symbol <code>RuntimeInitializeOnLoadMethod</code></td>
 </tr>
 </tbody>
@@ -270,25 +293,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/DebugDrawBufferTests.cs#L5" title="GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs:5">DebugDrawBufferTests.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-</tbody>
-</table>
-<h3 id="specify-string-culture-explicitly">Specify string culture explicitly</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/TestRunner.cs#L57" title="GDX\Developer\Reports\BuildVerification\TestRunner.cs:57">TestRunner.cs:57</a></td>
-<td>Specify string culture explicitly</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/TestRunner.cs#L97" title="GDX\Developer\Reports\BuildVerification\TestRunner.cs:97">TestRunner.cs:97</a></td>
-<td>Specify string culture explicitly</td>
 </tr>
 </tbody>
 </table>
@@ -645,7 +649,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="field-can-be-made-readonly-private-accessibility">Field can be made readonly: Private accessibility</h3>
+<h3 id="for-loop-can-be-converted-into-foreach-loop">For-loop can be converted into foreach-loop</h3>
 <table>
 <thead>
 <tr>
@@ -655,8 +659,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/TestRunner.cs#L17" title="GDX\Developer\Reports\BuildVerification\TestRunner.cs:17">TestRunner.cs:17</a></td>
-<td>Field can be made readonly</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/TestRunner.cs#L53" title="GDX\Developer\Reports\BuildVerification\TestRunner.cs:53">TestRunner.cs:53</a></td>
+<td>For-loop can be converted into foreach-loop</td>
 </tr>
 </tbody>
 </table>
@@ -866,6 +870,10 @@
 <td>Constant <code>MinimumCapacity</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L30" title="GDX\Collections\UnsafeSparseSet.cs:30">UnsafeSparseSet.cs:30</a></td>
+<td>Field <code>Data</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L60" title="GDX\Collections\UnsafeSparseSet.cs:60">UnsafeSparseSet.cs:60</a></td>
 <td>Field <code>FreeIndex</code> can be made private</td>
 </tr>
@@ -874,7 +882,11 @@
 <td>Field <code>Allocator</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L37" title="GDX\Core.cs:37">Core.cs:37</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L28" title="GDX\Core.cs:28">Core.cs:28</a></td>
+<td>Field <code>MainThreadID</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L39" title="GDX\Core.cs:39">Core.cs:39</a></td>
 <td>Field <code>StartTicks</code> can be made private</td>
 </tr>
 <tr>
@@ -922,7 +934,11 @@
 <td>Method <code>NextLineBatch</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/TestRunner.cs#L119" title="GDX\Developer\Reports\BuildVerification\TestRunner.cs:119">TestRunner.cs:119</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/TestRunner.cs#L59" title="GDX\Developer\Reports\BuildVerification\TestRunner.cs:59">TestRunner.cs:59</a></td>
+<td>Method <code>Process</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/TestRunner.cs#L134" title="GDX\Developer\Reports\BuildVerification\TestRunner.cs:134">TestRunner.cs:134</a></td>
 <td>Method <code>Reset</code> can be made private</td>
 </tr>
 <tr>
@@ -1372,6 +1388,10 @@
 <td>Field <code>DenseIndex</code> is assigned but its value is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L28" title="GDX\Core.cs:28">Core.cs:28</a></td>
+<td>Field <code>MainThreadID</code> is assigned but its value is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Mathematics/Byte2.cs#L770" title="GDX\Mathematics\Byte2.cs:770">Byte2.cs:770</a></td>
 <td>Field <code>X</code> is assigned but its value is never used</td>
 </tr>
@@ -1755,6 +1775,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerificationReport.cs#L45" title="GDX\Developer\Reports\BuildVerificationReport.cs:45">BuildVerificationReport.cs:45</a></td>
 <td>Method <code>Skip</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerificationReport.cs#L52" title="GDX\Developer\Reports\BuildVerificationReport.cs:52">BuildVerificationReport.cs:52</a></td>
+<td>Method <code>Panic</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/NUnit/TestCase.cs#L30" title="GDX\Developer\Reports\NUnit\TestCase.cs:30">TestCase.cs:30</a></td>
@@ -2429,7 +2453,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-01-07 against <a href="https://github.com/dotBunny/GDX/commit/c06a70153524a4dfb6c116089aadba193d53d5f0"><strong>c06a701</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-01-07 against <a href="https://github.com/dotBunny/GDX/commit/8fc9a279133c409e95273e3e2a1729e0ec4dc382"><strong>8fc9a27</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
