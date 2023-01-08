@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 1/8/2023 - 2:27:49 PM |
+| Generated on: | 1/8/2023 - 3:01:58 PM |
 | Parser: | MultiReportParser (508x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 111 |
 | Files: | 107 |
 | Covered lines: | 4369 |
-| Uncovered lines: | 4724 |
-| Coverable lines: | 9093 |
-| Total lines: | 22518 |
-| Line coverage: | 48% (4369 of 9093) |
+| Uncovered lines: | 4727 |
+| Coverable lines: | 9096 |
+| Total lines: | 22524 |
+| Line coverage: | 48% (4369 of 9096) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 448 |
-| Total methods: | 884 |
-| Method coverage: | 50.6% (448 of 884) |
+| Total methods: | 885 |
+| Method coverage: | 50.6% (448 of 885) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4369**|**4724**|**9093**|**27462**|**48%**|**0**|**0**|****|**448**|**884**|**50.6%**|
+|**GDX**|**4369**|**4727**|**9096**|**27468**|**48%**|**0**|**0**|****|**448**|**885**|**50.6%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
@@ -66,8 +66,8 @@
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|
 |GDX.Developer.DebugDrawBuffer|24|325|349|894|6.8%|0|0||2|39|5.1%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
-|GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|31|31|73|0%|0|0||0|5|0%|
-|GDX.Developer.Reports.BuildVerification.TestRunner|0|89|89|141|0%|0|0||0|7|0%|
+|GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|34|34|78|0%|0|0||0|6|0%|
+|GDX.Developer.Reports.BuildVerification.TestRunner|0|89|89|142|0%|0|0||0|7|0%|
 |GDX.Developer.Reports.BuildVerification.TestScene|0|10|10|32|0%|0|0||0|2|0%|
 |GDX.Developer.Reports.BuildVerificationReport|0|35|35|58|0%|0|0||0|6|0%|
 |GDX.Developer.Reports.NUnitReport|143|49|192|277|74.4%|0|0||15|17|88.2%|
