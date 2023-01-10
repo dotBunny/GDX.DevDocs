@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-01-09 - 8:18:48 PM |
+| Generated on: | 1/9/2023 - 8:46:14 PM |
 | Parser: | MultiReportParser (508x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 111 |
 | Files: | 107 |
 | Covered lines: | 4372 |
-| Uncovered lines: | 4737 |
-| Coverable lines: | 9109 |
-| Total lines: | 22541 |
-| Line coverage: | 47.9% (4372 of 9109) |
+| Uncovered lines: | 4753 |
+| Coverable lines: | 9125 |
+| Total lines: | 22563 |
+| Line coverage: | 47.9% (4372 of 9125) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 449 |
-| Total methods: | 884 |
-| Method coverage: | 50.7% (449 of 884) |
+| Total methods: | 885 |
+| Method coverage: | 50.7% (449 of 885) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4372**|**4737**|**9109**|**27485**|**47.9%**|**0**|**0**|****|**449**|**884**|**50.7%**|
+|**GDX**|**4372**|**4753**|**9125**|**27507**|**47.9%**|**0**|**0**|****|**449**|**885**|**50.7%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
@@ -66,8 +66,8 @@
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|
 |GDX.Developer.DebugDrawBuffer|24|325|349|894|6.8%|0|0||2|39|5.1%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
-|GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|31|31|74|0%|0|0||0|5|0%|
-|GDX.Developer.Reports.BuildVerification.TestRunner|0|105|105|163|0%|0|0||0|7|0%|
+|GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|38|38|85|0%|0|0||0|6|0%|
+|GDX.Developer.Reports.BuildVerification.TestRunner|0|114|114|174|0%|0|0||0|7|0%|
 |GDX.Developer.Reports.BuildVerification.TestScene|0|10|10|32|0%|0|0||0|2|0%|
 |GDX.Developer.Reports.BuildVerificationReport|0|35|35|58|0%|0|0||0|6|0%|
 |GDX.Developer.Reports.NUnitReport|143|49|192|277|74.4%|0|0||15|17|88.2%|
