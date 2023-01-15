@@ -241,6 +241,26 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L79" title="GDX\Core.cs:79">Core.cs:79</a></td>
 <td>Cannot resolve symbol <code>RuntimeInitializeOnLoadMethod</code></td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L492" title="GDX\Developer\DebugDrawBuffer.cs:492">DebugDrawBuffer.cs:492</a></td>
+<td>Cannot resolve parameter <code>normal</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L495" title="GDX\Developer\DebugDrawBuffer.cs:495">DebugDrawBuffer.cs:495</a></td>
+<td>XML comment on <code>GDX.Developer.DebugDrawBuffer.GetCircleVertices</code> has a duplicate param tag for <code>startAngle</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L496" title="GDX\Developer\DebugDrawBuffer.cs:496">DebugDrawBuffer.cs:496</a></td>
+<td>XML comment on <code>GDX.Developer.DebugDrawBuffer.GetCircleVertices</code> has a duplicate param tag for <code>startAngle</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L498" title="GDX\Developer\DebugDrawBuffer.cs:498">DebugDrawBuffer.cs:498</a></td>
+<td>Parameter <code>rotation</code> has no matching param tag in the XML comment for GDX.Developer.DebugDrawBuffer.GetCircleVertices (but other parameters do)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L498" title="GDX\Developer\DebugDrawBuffer.cs:498">DebugDrawBuffer.cs:498</a></td>
+<td>Parameter <code>endAngle</code> has no matching param tag in the XML comment for GDX.Developer.DebugDrawBuffer.GetCircleVertices (but other parameters do)</td>
+</tr>
 </tbody>
 </table>
 <h3 id="redundant-argument-with-default-value">Redundant argument with default value</h3>
@@ -252,6 +272,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L533" title="GDX\Developer\DebugDrawBuffer.cs:533">DebugDrawBuffer.cs:533</a></td>
+<td>The parameter <code>count</code> has the same default value</td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/Reports/NUnitReportTests.cs#L43" title="GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs:43">NUnitReportTests.cs:43</a></td>
 <td>The parameter <code>passed</code> has the same default value</td>
@@ -308,6 +332,10 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/SerializableDictionary.cs#L10" title="GDX\Collections\Generic\SerializableDictionary.cs:10">SerializableDictionary.cs:10</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L6" title="GDX\Developer\DebugDrawBuffer.cs:6">DebugDrawBuffer.cs:6</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -487,7 +515,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L753" title="GDX\Developer\DebugDrawBuffer.cs:753">DebugDrawBuffer.cs:753</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L769" title="GDX\Developer\DebugDrawBuffer.cs:769">DebugDrawBuffer.cs:769</a></td>
 <td>Method <code>AddLineDrawCommand</code> return value is never used</td>
 </tr>
 </tbody>
@@ -502,12 +530,8 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L493" title="GDX\Developer\DebugDrawBuffer.cs:493">DebugDrawBuffer.cs:493</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L504" title="GDX\Developer\DebugDrawBuffer.cs:504">DebugDrawBuffer.cs:504</a></td>
 <td>Local variable <code>degreeInterval</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L495" title="GDX\Developer\DebugDrawBuffer.cs:495">DebugDrawBuffer.cs:495</a></td>
-<td>Local variable <code>rotation</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -910,47 +934,51 @@
 <td>Field <code>StartTicks</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L34" title="GDX\Developer\DebugDrawBuffer.cs:34">DebugDrawBuffer.cs:34</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L35" title="GDX\Developer\DebugDrawBuffer.cs:35">DebugDrawBuffer.cs:35</a></td>
 <td>Field <code>CubeSegmentIndices</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L199" title="GDX\Developer\DebugDrawBuffer.cs:199">DebugDrawBuffer.cs:199</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L200" title="GDX\Developer\DebugDrawBuffer.cs:200">DebugDrawBuffer.cs:200</a></td>
 <td>Property <code>Finalized</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L209" title="GDX\Developer\DebugDrawBuffer.cs:209">DebugDrawBuffer.cs:209</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L210" title="GDX\Developer\DebugDrawBuffer.cs:210">DebugDrawBuffer.cs:210</a></td>
 <td>Method <code>Converge</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L289" title="GDX\Developer\DebugDrawBuffer.cs:289">DebugDrawBuffer.cs:289</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L290" title="GDX\Developer\DebugDrawBuffer.cs:290">DebugDrawBuffer.cs:290</a></td>
 <td>Method <code>DrawDottedLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L307" title="GDX\Developer\DebugDrawBuffer.cs:307">DebugDrawBuffer.cs:307</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L308" title="GDX\Developer\DebugDrawBuffer.cs:308">DebugDrawBuffer.cs:308</a></td>
 <td>Method <code>DrawDottedLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L340" title="GDX\Developer\DebugDrawBuffer.cs:340">DebugDrawBuffer.cs:340</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L341" title="GDX\Developer\DebugDrawBuffer.cs:341">DebugDrawBuffer.cs:341</a></td>
 <td>Method <code>DrawLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L358" title="GDX\Developer\DebugDrawBuffer.cs:358">DebugDrawBuffer.cs:358</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L359" title="GDX\Developer\DebugDrawBuffer.cs:359">DebugDrawBuffer.cs:359</a></td>
 <td>Method <code>DrawLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L377" title="GDX\Developer\DebugDrawBuffer.cs:377">DebugDrawBuffer.cs:377</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L378" title="GDX\Developer\DebugDrawBuffer.cs:378">DebugDrawBuffer.cs:378</a></td>
 <td>Method <code>DrawLines</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L459" title="GDX\Developer\DebugDrawBuffer.cs:459">DebugDrawBuffer.cs:459</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L460" title="GDX\Developer\DebugDrawBuffer.cs:460">DebugDrawBuffer.cs:460</a></td>
 <td>Method <code>DrawMesh</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L487" title="GDX\Developer\DebugDrawBuffer.cs:487">DebugDrawBuffer.cs:487</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L498" title="GDX\Developer\DebugDrawBuffer.cs:498">DebugDrawBuffer.cs:498</a></td>
 <td>Method <code>GetCircleVertices</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L662" title="GDX\Developer\DebugDrawBuffer.cs:662">DebugDrawBuffer.cs:662</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L531" title="GDX\Developer\DebugDrawBuffer.cs:531">DebugDrawBuffer.cs:531</a></td>
+<td>Method <code>DrawWireCircle</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L678" title="GDX\Developer\DebugDrawBuffer.cs:678">DebugDrawBuffer.cs:678</a></td>
 <td>Method <code>NextLineBatch</code> can be made private</td>
 </tr>
 <tr>
@@ -1709,67 +1737,67 @@
 <td>Property <code>Items</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L258" title="GDX\Developer\DebugDrawBuffer.cs:258">DebugDrawBuffer.cs:258</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L259" title="GDX\Developer\DebugDrawBuffer.cs:259">DebugDrawBuffer.cs:259</a></td>
 <td>Method <code>DrawDottedCube</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L275" title="GDX\Developer\DebugDrawBuffer.cs:275">DebugDrawBuffer.cs:275</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L276" title="GDX\Developer\DebugDrawBuffer.cs:276">DebugDrawBuffer.cs:276</a></td>
 <td>Method <code>DrawDottedLine</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L326" title="GDX\Developer\DebugDrawBuffer.cs:326">DebugDrawBuffer.cs:326</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L327" title="GDX\Developer\DebugDrawBuffer.cs:327">DebugDrawBuffer.cs:327</a></td>
 <td>Method <code>DrawLine</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L452" title="GDX\Developer\DebugDrawBuffer.cs:452">DebugDrawBuffer.cs:452</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L453" title="GDX\Developer\DebugDrawBuffer.cs:453">DebugDrawBuffer.cs:453</a></td>
 <td>Method <code>DrawRenderer</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L475" title="GDX\Developer\DebugDrawBuffer.cs:475">DebugDrawBuffer.cs:475</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L476" title="GDX\Developer\DebugDrawBuffer.cs:476">DebugDrawBuffer.cs:476</a></td>
 <td>Method <code>DrawWireCube</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L515" title="GDX\Developer\DebugDrawBuffer.cs:515">DebugDrawBuffer.cs:515</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L522" title="GDX\Developer\DebugDrawBuffer.cs:522">DebugDrawBuffer.cs:522</a></td>
 <td>Method <code>DrawWireCircle</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L540" title="GDX\Developer\DebugDrawBuffer.cs:540">DebugDrawBuffer.cs:540</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L556" title="GDX\Developer\DebugDrawBuffer.cs:556">DebugDrawBuffer.cs:556</a></td>
 <td>Method <code>DrawWireCapsule</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L585" title="GDX\Developer\DebugDrawBuffer.cs:585">DebugDrawBuffer.cs:585</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L601" title="GDX\Developer\DebugDrawBuffer.cs:601">DebugDrawBuffer.cs:601</a></td>
 <td>Method <code>Execute</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L599" title="GDX\Developer\DebugDrawBuffer.cs:599">DebugDrawBuffer.cs:599</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L615" title="GDX\Developer\DebugDrawBuffer.cs:615">DebugDrawBuffer.cs:615</a></td>
 <td>Method <code>GetBuffer</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L609" title="GDX\Developer\DebugDrawBuffer.cs:609">DebugDrawBuffer.cs:609</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L625" title="GDX\Developer\DebugDrawBuffer.cs:625">DebugDrawBuffer.cs:625</a></td>
 <td>Method <code>HasToken</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L614" title="GDX\Developer\DebugDrawBuffer.cs:614">DebugDrawBuffer.cs:614</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L630" title="GDX\Developer\DebugDrawBuffer.cs:630">DebugDrawBuffer.cs:630</a></td>
 <td>Method <code>Unlock</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L623" title="GDX\Developer\DebugDrawBuffer.cs:623">DebugDrawBuffer.cs:623</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L639" title="GDX\Developer\DebugDrawBuffer.cs:639">DebugDrawBuffer.cs:639</a></td>
 <td>Method <code>Invalidate</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L634" title="GDX\Developer\DebugDrawBuffer.cs:634">DebugDrawBuffer.cs:634</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L650" title="GDX\Developer\DebugDrawBuffer.cs:650">DebugDrawBuffer.cs:650</a></td>
 <td>Method <code>InvalidateAll</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L644" title="GDX\Developer\DebugDrawBuffer.cs:644">DebugDrawBuffer.cs:644</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L660" title="GDX\Developer\DebugDrawBuffer.cs:660">DebugDrawBuffer.cs:660</a></td>
 <td>Method <code>NextDottedLineBatch</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L653" title="GDX\Developer\DebugDrawBuffer.cs:653">DebugDrawBuffer.cs:653</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L669" title="GDX\Developer\DebugDrawBuffer.cs:669">DebugDrawBuffer.cs:669</a></td>
 <td>Method <code>NextLineBatch</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L692" title="GDX\Developer\DebugDrawBuffer.cs:692">DebugDrawBuffer.cs:692</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L708" title="GDX\Developer\DebugDrawBuffer.cs:708">DebugDrawBuffer.cs:708</a></td>
 <td>Method <code>Reset</code> is never used</td>
 </tr>
 <tr>
@@ -2226,8 +2254,16 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L487" title="GDX\Developer\DebugDrawBuffer.cs:487">DebugDrawBuffer.cs:487</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L498" title="GDX\Developer\DebugDrawBuffer.cs:498">DebugDrawBuffer.cs:498</a></td>
 <td>Parameter <code>center</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L498" title="GDX\Developer\DebugDrawBuffer.cs:498">DebugDrawBuffer.cs:498</a></td>
+<td>Parameter <code>startAngle</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L498" title="GDX\Developer\DebugDrawBuffer.cs:498">DebugDrawBuffer.cs:498</a></td>
+<td>Parameter <code>endAngle</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Trace.cs#L72" title="GDX\Trace.cs:72">Trace.cs:72</a></td>
@@ -2461,7 +2497,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-01-14 against <a href="https://github.com/dotBunny/GDX/commit/590f74d2a81deaf27599c83ac753f827382c5459"><strong>590f74d</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-01-15 against <a href="https://github.com/dotBunny/GDX/commit/3f8410b529e6db66b2d7484ab370ea603a73cfe4"><strong>3f8410b</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
