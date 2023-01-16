@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-01-15 - 2:48:30 PM |
+| Generated on: | 2023-01-15 - 9:21:00 PM |
 | Parser: | MultiReportParser (509x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 111 |
-| Files: | 107 |
-| Covered lines: | 4369 |
-| Uncovered lines: | 4759 |
-| Coverable lines: | 9128 |
-| Total lines: | 22579 |
-| Line coverage: | 47.8% (4369 of 9128) |
+| Classes: | 113 |
+| Files: | 109 |
+| Covered lines: | 4371 |
+| Uncovered lines: | 4876 |
+| Coverable lines: | 9247 |
+| Total lines: | 22800 |
+| Line coverage: | 47.2% (4371 of 9247) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 448 |
-| Total methods: | 886 |
-| Method coverage: | 50.5% (448 of 886) |
+| Covered methods: | 449 |
+| Total methods: | 895 |
+| Method coverage: | 50.1% (449 of 895) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4369**|**4759**|**9128**|**27523**|**47.8%**|**0**|**0**|****|**448**|**886**|**50.5%**|
+|**GDX**|**4371**|**4876**|**9247**|**27744**|**47.2%**|**0**|**0**|****|**449**|**895**|**50.1%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
@@ -56,7 +56,7 @@
 |GDX.Collections.Pooling.GameObjectPool|175|35|210|510|83.3%|0|0||15|15|100%|
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
 |GDX.Collections.Pooling.ManagedPools|28|50|78|221|35.8%|0|0||6|12|50%|
-|GDX.Collections.Pooling.SimpleListManagedPool|78|108|186|428|41.9%|0|0||6|14|42.8%|
+|GDX.Collections.Pooling.SimpleListManagedPool|81|105|186|428|43.5%|0|0||7|14|50%|
 |GDX.Collections.SparseSet|365|695|1060|1825|34.4%|0|0||25|51|49%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1236|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1236|0%|0|0||0|2|0%|
@@ -64,7 +64,8 @@
 |GDX.Core|8|0|8|105|100%|0|0||1|1|100%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|
-|GDX.Developer.DebugDrawBuffer|24|328|352|910|6.8%|0|0||2|40|5%|
+|GDX.Developer.DebugDrawBuffer|23|248|271|725|8.4%|0|0||2|33|6%|
+|GDX.Developer.DebugDrawShapes|0|145|145|272|0%|0|0||0|12|0%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
 |GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|38|38|85|0%|0|0||0|6|0%|
 |GDX.Developer.Reports.BuildVerification.TestRunner|0|114|114|174|0%|0|0||0|7|0%|
@@ -120,6 +121,7 @@
 |GDX.RigidbodyExtensions|0|4|4|39|0%|0|0||0|1|0%|
 |GDX.SegmentedString|128|0|128|276|100%|0|0||11|11|100%|
 |GDX.SimpleListExtensions|0|219|219|543|0%|0|0||0|21|0%|
+|GDX.Space|0|55|55|134|0%|0|0||0|4|0%|
 |GDX.StringExtensions|264|0|264|739|100%|0|0||22|22|100%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|
 |GDX.Threading.TaskDirector|213|0|213|465|100%|0|0||15|15|100%|
