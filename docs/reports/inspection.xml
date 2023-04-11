@@ -12,7 +12,7 @@
   </Information>
   <IssueTypes>
     <IssueType Id="ArrangeTypeModifiers" Category="Syntax Style" CategoryId="CodeStyleIssues" Description="Use explicit or implicit modifier definition for types" Severity="HINT" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ArrangeTypeModifiers" />
-    <IssueType Id="CSharpErrors" Category="C# Compiler Errors" CategoryId="CSharpErrors" Description="" Severity="ERROR" />
+    <IssueType Id="BadControlBracesIndent" Category="Formatting" CategoryId="FormattingIssues" SubCategory="Incorrect indent" Description="Incorrect indent: Around statement braces" Severity="SUGGESTION" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=BadControlBracesIndent" />
     <IssueType Id="ClassNeverInstantiated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ClassNeverInstantiated.Global" />
     <IssueType Id="ClassNeverInstantiated.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Private accessibility" Severity="SUGGESTION" />
     <IssueType Id="CollectionNeverUpdated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Collection is never updated" Description="Collection is never updated: Non-private accessibility" Severity="WARNING" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CollectionNeverUpdated.Global" />
@@ -24,6 +24,7 @@
     <IssueType Id="MemberCanBePrivate.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made private" Description="Member can be made private: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBePrivate.Global" />
     <IssueType Id="MemberCanBeProtected.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Member can be made protected" Description="Member can be made protected: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=MemberCanBeProtected.Global" />
     <IssueType Id="NotAccessedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
+    <IssueType Id="NotAccessedField.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Non-accessed field" Description="Non-accessed field: Private accessibility" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=NotAccessedField.Local" />
     <IssueType Id="OutParameterValueIsAlwaysDiscarded.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Parameter output value is always discarded" Description="Parameter output value is always discarded: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=OutParameterValueIsAlwaysDiscarded.Global" />
     <IssueType Id="PrivateFieldCanBeConvertedToLocalVariable" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Private field can be converted to local variable" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=PrivateFieldCanBeConvertedToLocalVariable" />
     <IssueType Id="RedundantArgumentDefaultValue" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant argument with default value" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantArgumentDefaultValue" />
@@ -259,144 +260,137 @@
       <Issue TypeId="InvalidXmlDocComment" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawShapes.cs" Offset="15985-15991" Line="302" Message="Parameter 'buffer' has no matching param tag in the XML comment for GDX.Developer.DebugDrawShapes.DrawWireCube (but other parameters do)" />
       <Issue TypeId="InvalidXmlDocComment" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawShapes.cs" Offset="16033-16041" Line="302" Message="Parameter 'rotation' has no matching param tag in the XML comment for GDX.Developer.DebugDrawShapes.DrawWireCube (but other parameters do)" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\DebugDrawShapes.cs" Offset="16266-16280" Line="308" Message="Method 'DrawWireSphere' is never used" />
-      <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="414-424" Line="14" Message="Class 'InputProxy' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1074-1081" Line="34" Message="Enum member 'Unicode' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1105-1113" Line="35" Message="Enum member 'ScanCode' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1388-1397" Line="44" Message="Enum member 'Backspace' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1419-1422" Line="45" Message="Enum member 'Tab' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1444-1449" Line="46" Message="Enum member 'Clear' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1471-1477" Line="47" Message="Enum member 'Return' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1499-1504" Line="48" Message="Enum member 'Shift' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1555-1558" Line="50" Message="Enum member 'Alt' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1580-1585" Line="51" Message="Enum member 'Pause' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1607-1615" Line="52" Message="Enum member 'CapsLock' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1637-1643" Line="53" Message="Enum member 'Escape' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1665-1670" Line="54" Message="Enum member 'Space' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1692-1698" Line="55" Message="Enum member 'PageUp' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1720-1728" Line="56" Message="Enum member 'PageDown' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1904-1915" Line="63" Message="Enum member 'PrintScreen' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1993-2000" Line="66" Message="Enum member 'Number0' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2022-2029" Line="67" Message="Enum member 'Number1' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2051-2058" Line="68" Message="Enum member 'Number2' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2080-2087" Line="69" Message="Enum member 'Number3' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2109-2116" Line="70" Message="Enum member 'Number4' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2138-2145" Line="71" Message="Enum member 'Number5' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2167-2174" Line="72" Message="Enum member 'Number6' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2196-2203" Line="73" Message="Enum member 'Number7' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2225-2232" Line="74" Message="Enum member 'Number8' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2254-2261" Line="75" Message="Enum member 'Number9' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2283-2284" Line="76" Message="Enum member 'A' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2306-2307" Line="77" Message="Enum member 'B' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2329-2330" Line="78" Message="Enum member 'C' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2352-2353" Line="79" Message="Enum member 'D' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2375-2376" Line="80" Message="Enum member 'E' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2398-2399" Line="81" Message="Enum member 'F' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2421-2422" Line="82" Message="Enum member 'G' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2444-2445" Line="83" Message="Enum member 'H' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2467-2468" Line="84" Message="Enum member 'I' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2490-2491" Line="85" Message="Enum member 'J' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2513-2514" Line="86" Message="Enum member 'K' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2536-2537" Line="87" Message="Enum member 'L' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2559-2560" Line="88" Message="Enum member 'M' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2582-2583" Line="89" Message="Enum member 'N' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2605-2606" Line="90" Message="Enum member 'O' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2628-2629" Line="91" Message="Enum member 'P' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2651-2652" Line="92" Message="Enum member 'Q' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2674-2675" Line="93" Message="Enum member 'R' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2697-2698" Line="94" Message="Enum member 'S' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2720-2721" Line="95" Message="Enum member 'T' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2743-2744" Line="96" Message="Enum member 'U' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2766-2767" Line="97" Message="Enum member 'V' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2789-2790" Line="98" Message="Enum member 'W' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2812-2813" Line="99" Message="Enum member 'X' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2835-2836" Line="100" Message="Enum member 'Y' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2858-2859" Line="101" Message="Enum member 'Z' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2881-2892" Line="102" Message="Enum member 'LeftWindows' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2914-2926" Line="103" Message="Enum member 'RightWindows' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2948-2960" Line="104" Message="Enum member 'Applications' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2982-2987" Line="105" Message="Enum member 'Sleep' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3009-3016" Line="106" Message="Enum member 'NumPad0' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3038-3045" Line="107" Message="Enum member 'NumPad1' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3067-3074" Line="108" Message="Enum member 'NumPad2' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3096-3103" Line="109" Message="Enum member 'NumPad3' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3125-3132" Line="110" Message="Enum member 'NumPad4' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3154-3161" Line="111" Message="Enum member 'NumPad5' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3183-3190" Line="112" Message="Enum member 'NumPad6' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3212-3219" Line="113" Message="Enum member 'NumPad7' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3241-3248" Line="114" Message="Enum member 'NumPad8' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3270-3277" Line="115" Message="Enum member 'NumPad9' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3299-3313" Line="116" Message="Enum member 'NumPadMultiply' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3335-3344" Line="117" Message="Enum member 'NumPadAdd' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3366-3380" Line="118" Message="Enum member 'NumPadSubtract' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3402-3415" Line="119" Message="Enum member 'NumPadDecimal' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3471-3473" Line="121" Message="Enum member 'F1' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3495-3497" Line="122" Message="Enum member 'F2' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3519-3521" Line="123" Message="Enum member 'F3' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3543-3545" Line="124" Message="Enum member 'F4' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3567-3569" Line="125" Message="Enum member 'F5' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3591-3593" Line="126" Message="Enum member 'F6' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3615-3617" Line="127" Message="Enum member 'F7' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3639-3641" Line="128" Message="Enum member 'F8' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3663-3665" Line="129" Message="Enum member 'F9' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3687-3690" Line="130" Message="Enum member 'F10' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3712-3715" Line="131" Message="Enum member 'F11' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3737-3740" Line="132" Message="Enum member 'F12' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3791-3801" Line="134" Message="Enum member 'ScrollLock' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3823-3832" Line="135" Message="Enum member 'LeftShift' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3854-3864" Line="136" Message="Enum member 'RightShift' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3886-3897" Line="137" Message="Enum member 'LeftControl' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="4195-4201" Line="146" Message="Method 'IsExtendedKey' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5319-5328" Line="177" Message="Enum member 'RightDown' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5352-5359" Line="178" Message="Enum member 'RightUp' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5383-5393" Line="179" Message="Enum member 'MiddleDown' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5417-5425" Line="180" Message="Enum member 'MiddleUp' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5449-5462" Line="181" Message="Enum member 'VerticalWheel' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5486-5501" Line="182" Message="Enum member 'HorizontalWheel' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5772-5783" Line="188" Message="Enum member 'VirtualDesk' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="6845-6855" Line="215" Message="Method 'Synthesize' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="6982-6988" Line="221" Message="Method 'Synthesize' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="7677-7687" Line="242" Message="Method 'Synthesize' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="7803-7809" Line="247" Message="Method 'Synthesize' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="8483-8493" Line="268" Message="Method 'Synthesize' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="8618-8624" Line="273" Message="Method 'Synthesize' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="9253-9261" Line="293" Message="Method 'KeyPress' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="9568-9578" Line="302" Message="Method 'MouseClick' is never used" />
-      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="9598-9609" Line="302" Message="Parameter 'virtualMode' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10562-10568" Line="329" Message="Field 'Key' can be made private" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10577-10580" Line="329" Message="Field can be made readonly" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10595-10601" Line="330" Message="Field 'ScanCode' can be made private" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10609-10617" Line="330" Message="Field can be made readonly" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10632-10638" Line="331" Message="Field 'Flags' can be made private" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10652-10657" Line="331" Message="Field can be made readonly" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10912-10918" Line="337" Message="Field 'Timestamp' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10924-10933" Line="337" Message="Field 'Timestamp' is assigned but its value is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10950-10956" Line="339" Message="Field 'ExtraInfo' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10964-10973" Line="339" Message="Field 'ExtraInfo' is assigned but its value is never used" />
-      <Issue TypeId="CSharpErrors" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="11984-11987" Line="368" Message="Feature 'target-typed object creation' is not available. Please use language version 9.0 or greater." />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12520-12526" Line="382" Message="Field 'Message' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12532-12539" Line="382" Message="Field 'Message' is assigned but its value is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12680-12686" Line="387" Message="Field 'ParamL' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12694-12700" Line="387" Message="Field 'ParamL' is assigned but its value is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12847-12853" Line="392" Message="Field 'ParamH' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12861-12867" Line="392" Message="Field 'ParamH' is assigned but its value is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12891-12904" Line="394" Message="Constructor 'HardwareInput' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13643-13649" Line="414" Message="Field 'X' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13654-13655" Line="414" Message="Field 'X' is assigned but its value is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13829-13835" Line="419" Message="Field 'Y' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13840-13841" Line="419" Message="Field 'Y' is assigned but its value is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13858-13864" Line="421" Message="Field 'Data' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13870-13874" Line="421" Message="Field 'Data' is assigned but its value is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13889-13895" Line="422" Message="Field 'Flags' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13906-13911" Line="422" Message="Field 'Flags' is assigned but its value is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14166-14172" Line="428" Message="Field 'Timestamp' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14178-14187" Line="428" Message="Field 'Timestamp' is assigned but its value is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14204-14210" Line="430" Message="Field 'ExtraInfo' can be made private" />
-      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14218-14227" Line="430" Message="Field 'ExtraInfo' is assigned but its value is never used" />
-      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14847-14852" Line="449" Message="The field is always assigned before being used and can be converted to local variable" />
-      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14909-14917" Line="451" Message="The field is always assigned before being used and can be converted to local variable" />
-      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14974-14982" Line="453" Message="The field is always assigned before being used and can be converted to local variable" />
-      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="15878-15882" Line="483" Message="The field is always assigned before being used and can be converted to local variable" />
-      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="15933-15937" Line="484" Message="The field is always assigned before being used and can be converted to local variable" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1201-1208" Line="39" Message="Enum member 'Unicode' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1232-1240" Line="40" Message="Enum member 'ScanCode' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1515-1524" Line="49" Message="Enum member 'Backspace' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1546-1549" Line="50" Message="Enum member 'Tab' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1571-1576" Line="51" Message="Enum member 'Clear' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1598-1604" Line="52" Message="Enum member 'Return' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1682-1685" Line="55" Message="Enum member 'Alt' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1707-1712" Line="56" Message="Enum member 'Pause' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1734-1742" Line="57" Message="Enum member 'CapsLock' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1764-1770" Line="58" Message="Enum member 'Escape' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1792-1797" Line="59" Message="Enum member 'Space' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1819-1825" Line="60" Message="Enum member 'PageUp' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="1847-1855" Line="61" Message="Enum member 'PageDown' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2031-2042" Line="68" Message="Enum member 'PrintScreen' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2120-2127" Line="71" Message="Enum member 'Number0' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2149-2156" Line="72" Message="Enum member 'Number1' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2178-2185" Line="73" Message="Enum member 'Number2' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2207-2214" Line="74" Message="Enum member 'Number3' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2236-2243" Line="75" Message="Enum member 'Number4' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2265-2272" Line="76" Message="Enum member 'Number5' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2294-2301" Line="77" Message="Enum member 'Number6' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2323-2330" Line="78" Message="Enum member 'Number7' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2352-2359" Line="79" Message="Enum member 'Number8' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2381-2388" Line="80" Message="Enum member 'Number9' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2410-2411" Line="81" Message="Enum member 'A' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2433-2434" Line="82" Message="Enum member 'B' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2456-2457" Line="83" Message="Enum member 'C' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2479-2480" Line="84" Message="Enum member 'D' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2502-2503" Line="85" Message="Enum member 'E' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2525-2526" Line="86" Message="Enum member 'F' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2548-2549" Line="87" Message="Enum member 'G' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2571-2572" Line="88" Message="Enum member 'H' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2594-2595" Line="89" Message="Enum member 'I' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2617-2618" Line="90" Message="Enum member 'J' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2640-2641" Line="91" Message="Enum member 'K' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2663-2664" Line="92" Message="Enum member 'L' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2686-2687" Line="93" Message="Enum member 'M' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2732-2733" Line="95" Message="Enum member 'O' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2755-2756" Line="96" Message="Enum member 'P' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2778-2779" Line="97" Message="Enum member 'Q' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2801-2802" Line="98" Message="Enum member 'R' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2824-2825" Line="99" Message="Enum member 'S' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2847-2848" Line="100" Message="Enum member 'T' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2870-2871" Line="101" Message="Enum member 'U' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2893-2894" Line="102" Message="Enum member 'V' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2916-2917" Line="103" Message="Enum member 'W' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2939-2940" Line="104" Message="Enum member 'X' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2962-2963" Line="105" Message="Enum member 'Y' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="2985-2986" Line="106" Message="Enum member 'Z' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3008-3019" Line="107" Message="Enum member 'LeftWindows' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3041-3053" Line="108" Message="Enum member 'RightWindows' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3075-3087" Line="109" Message="Enum member 'Applications' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3109-3114" Line="110" Message="Enum member 'Sleep' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3136-3143" Line="111" Message="Enum member 'NumPad0' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3165-3172" Line="112" Message="Enum member 'NumPad1' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3194-3201" Line="113" Message="Enum member 'NumPad2' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3223-3230" Line="114" Message="Enum member 'NumPad3' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3252-3259" Line="115" Message="Enum member 'NumPad4' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3281-3288" Line="116" Message="Enum member 'NumPad5' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3310-3317" Line="117" Message="Enum member 'NumPad6' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3339-3346" Line="118" Message="Enum member 'NumPad7' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3368-3375" Line="119" Message="Enum member 'NumPad8' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3397-3404" Line="120" Message="Enum member 'NumPad9' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3426-3440" Line="121" Message="Enum member 'NumPadMultiply' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3462-3471" Line="122" Message="Enum member 'NumPadAdd' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3493-3507" Line="123" Message="Enum member 'NumPadSubtract' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3529-3542" Line="124" Message="Enum member 'NumPadDecimal' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3598-3600" Line="126" Message="Enum member 'F1' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3622-3624" Line="127" Message="Enum member 'F2' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3646-3648" Line="128" Message="Enum member 'F3' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3670-3672" Line="129" Message="Enum member 'F4' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3694-3696" Line="130" Message="Enum member 'F5' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3718-3720" Line="131" Message="Enum member 'F6' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3742-3744" Line="132" Message="Enum member 'F7' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3766-3768" Line="133" Message="Enum member 'F8' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3790-3792" Line="134" Message="Enum member 'F9' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3814-3817" Line="135" Message="Enum member 'F10' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3839-3842" Line="136" Message="Enum member 'F11' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3864-3867" Line="137" Message="Enum member 'F12' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3918-3928" Line="139" Message="Enum member 'ScrollLock' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3950-3959" Line="140" Message="Enum member 'LeftShift' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="3981-3991" Line="141" Message="Enum member 'RightShift' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="4013-4024" Line="142" Message="Enum member 'LeftControl' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="4322-4328" Line="151" Message="Method 'IsExtendedKey' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5446-5455" Line="182" Message="Enum member 'RightDown' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5479-5486" Line="183" Message="Enum member 'RightUp' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5510-5520" Line="184" Message="Enum member 'MiddleDown' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5544-5552" Line="185" Message="Enum member 'MiddleUp' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5576-5589" Line="186" Message="Enum member 'VerticalWheel' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="5613-5628" Line="187" Message="Enum member 'HorizontalWheel' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="7416-7426" Line="231" Message="Method 'Synthesize' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="8166-8176" Line="255" Message="Method 'Synthesize' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="8890-8900" Line="278" Message="Method 'Synthesize' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="9025-9031" Line="283" Message="Method 'Synthesize' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="9578-9586" Line="300" Message="Method 'KeyPress' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="9893-9903" Line="309" Message="Method 'MouseClick' is never used" />
+      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="9923-9934" Line="309" Message="Parameter 'virtualMode' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10887-10893" Line="336" Message="Field 'Key' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10928-10934" Line="337" Message="Field 'ScanCode' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10974-10980" Line="338" Message="Field 'Flags' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="10995-11000" Line="338" Message="Field 'Flags' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="11255-11261" Line="344" Message="Field 'Timestamp' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="11267-11276" Line="344" Message="Field 'Timestamp' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="11293-11299" Line="346" Message="Field 'ExtraInfo' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="11307-11316" Line="346" Message="Field 'ExtraInfo' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12917-12923" Line="392" Message="Field 'Message' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="12929-12936" Line="392" Message="Field 'Message' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13077-13083" Line="397" Message="Field 'ParamL' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13091-13097" Line="397" Message="Field 'ParamL' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13244-13250" Line="402" Message="Field 'ParamH' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13258-13264" Line="402" Message="Field 'ParamH' is assigned but its value is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="13288-13301" Line="404" Message="Constructor 'HardwareInput' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14040-14046" Line="424" Message="Field 'X' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14060-14061" Line="424" Message="Field 'X' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14235-14241" Line="429" Message="Field 'Y' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14255-14256" Line="429" Message="Field 'Y' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14273-14279" Line="431" Message="Field 'Data' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14285-14289" Line="431" Message="Field 'Data' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14304-14310" Line="432" Message="Field 'Flags' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14325-14330" Line="432" Message="Field 'Flags' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14585-14591" Line="438" Message="Field 'Timestamp' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14597-14606" Line="438" Message="Field 'Timestamp' is assigned but its value is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14623-14629" Line="440" Message="Field 'ExtraInfo' can be made private" />
+      <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="14637-14646" Line="440" Message="Field 'ExtraInfo' is assigned but its value is never used" />
+      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="15810-15815" Line="473" Message="The field is always assigned before being used and can be converted to local variable" />
+      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="15872-15880" Line="475" Message="The field is always assigned before being used and can be converted to local variable" />
+      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="15937-15945" Line="477" Message="The field is always assigned before being used and can be converted to local variable" />
+      <Issue TypeId="NotAccessedField.Local" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="16779-16783" Line="506" Message="Field 'Type' is assigned but its value is never used" />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="16779-16783" Line="506" Message="Name 'Type' does not match rule 'instance_fields_should_be_camel_case'. Suggested name is 'm_Type'." />
+      <Issue TypeId="NotAccessedField.Local" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="16817-16821" Line="507" Message="Field 'Data' is assigned but its value is never used" />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Developer\InputProxy.cs" Offset="16817-16821" Line="507" Message="Name 'Data' does not match rule 'instance_fields_should_be_camel_case'. Suggested name is 'm_Data'." />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="730-739" Line="23" Message="Class 'Profiling' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="2396-2414" Line="54" Message="Method 'TakeMemorySnapshot' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Developer\Profiling.cs" Offset="4212-4226" Line="86" Message="Method 'StartProfiling' is never used" />
@@ -634,7 +628,16 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="9201-9214" Line="231" Message="Method 'FinishProfile' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="10103-10109" Line="255" Message="Method 'ForceWindowRepaint' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="11199-11219" Line="277" Message="Method 'GenerateProjectFiles' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="16930-16941" Line="407" Message="Method 'ResetEditor' is never used" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15304-15315" Line="375" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15342-15351" Line="376" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15378-15383" Line="377" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15412-15419" Line="379" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15445-15450" Line="380" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15477-15483" Line="381" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15510-15521" Line="382" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15547-15548" Line="383" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15574-15575" Line="384" Message="Field can be made readonly" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="18643-18654" Line="465" Message="Method 'ResetEditor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\BuildInfoBuildProcessor.cs" Offset="2989-3012" Line="67" Message="Class 'BuildInfoBuildProcessor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\ScriptingDefinesBuildProcessor.cs" Offset="498-528" Line="14" Message="Class 'ScriptingDefinesBuildProcessor' is never used" />
       <Issue TypeId="UnassignedGetOnlyAutoProperty" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\ScriptingDefinesBuildProcessor.cs" Offset="805-818" Line="20" Message="Get-only auto-property 'callbackOrder' is never assigned" />
@@ -696,6 +699,7 @@
       <Issue TypeId="ClassNeverInstantiated.Local" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs" Offset="10795-10817" Line="279" Message="Class 'GameObjectPoolItemTest' is never instantiated" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs" Offset="177-199" Line="5" Message="Using directive is not required by the code and can be safely removed" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs" Offset="411-431" Line="13" Message="Class 'DebugDrawBufferTests' is never used" />
+      <Issue TypeId="BadControlBracesIndent" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\InputProxyTests.cs" Offset="3084-3095" Line="69" Message="Unexpected line indent change around statement braces" />
       <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1449-1453" Line="43" Message="The parameter 'passed' has the same default value" />
       <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1455-1459" Line="43" Message="The parameter 'failMessage' has the same default value" />
       <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1461-1465" Line="43" Message="The parameter 'testSuite' has the same default value" />

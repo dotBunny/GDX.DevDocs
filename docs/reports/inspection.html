@@ -94,22 +94,6 @@
 <h5>Note</h5>
 <p>A significant portion of the suggestions found by code inspection are based on the exposure of fields that could be marked private or internal. As additional unit tests get implemented, this should start to go down.</p>
 </div>
-<h2 id="errors">Errors</h2>
-<h3 id="section"></h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L368" title="GDX\Developer\InputProxy.cs:368">InputProxy.cs:368</a></td>
-<td>Feature <code>target-typed object creation</code> is not available. Please use language version 9.0 or greater.</td>
-</tr>
-</tbody>
-</table>
 <h2 id="warnings">Warnings</h2>
 <h3 id="collection-is-never-updated-non-private-accessibility">Collection is never updated: Non-private accessibility</h3>
 <table>
@@ -197,6 +181,14 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawShapes.cs#L14" title="GDX\Developer\DebugDrawShapes.cs:14">DebugDrawShapes.cs:14</a></td>
 <td>Name <code>DefaultCircleVertexCount</code> does not match rule <code>constants_should_be_pascal_case</code>. Suggested name is <code>k_DefaultCircleVertexCount</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L506" title="GDX\Developer\InputProxy.cs:506">InputProxy.cs:506</a></td>
+<td>Name <code>Type</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_Type</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L507" title="GDX\Developer\InputProxy.cs:507">InputProxy.cs:507</a></td>
+<td>Name <code>Data</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_Data</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/SimpleTestBehaviour.cs#L10" title="GDX\Developer\Reports\BuildVerification\SimpleTestBehaviour.cs:10">SimpleTestBehaviour.cs:10</a></td>
@@ -291,6 +283,25 @@
 </tr>
 </tbody>
 </table>
+<h3 id="non-accessed-field-private-accessibility">Non-accessed field: Private accessibility</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L506" title="GDX\Developer\InputProxy.cs:506">InputProxy.cs:506</a></td>
+<td>Field <code>Type</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L507" title="GDX\Developer\InputProxy.cs:507">InputProxy.cs:507</a></td>
+<td>Field <code>Data</code> is assigned but its value is never used</td>
+</tr>
+</tbody>
+</table>
 <h3 id="private-field-can-be-converted-to-local-variable">Private field can be converted to local variable</h3>
 <table>
 <thead>
@@ -301,23 +312,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L449" title="GDX\Developer\InputProxy.cs:449">InputProxy.cs:449</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L473" title="GDX\Developer\InputProxy.cs:473">InputProxy.cs:473</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L451" title="GDX\Developer\InputProxy.cs:451">InputProxy.cs:451</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L475" title="GDX\Developer\InputProxy.cs:475">InputProxy.cs:475</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L453" title="GDX\Developer\InputProxy.cs:453">InputProxy.cs:453</a></td>
-<td>The field is always assigned before being used and can be converted to local variable</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L483" title="GDX\Developer\InputProxy.cs:483">InputProxy.cs:483</a></td>
-<td>The field is always assigned before being used and can be converted to local variable</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L484" title="GDX\Developer\InputProxy.cs:484">InputProxy.cs:484</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L477" title="GDX\Developer\InputProxy.cs:477">InputProxy.cs:477</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 </tbody>
@@ -603,6 +606,21 @@
 </tbody>
 </table>
 <h2 id="suggestions">Suggestions</h2>
+<h3 id="incorrect-indent-around-statement-braces">Incorrect indent: Around statement braces</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/InputProxyTests.cs#L69" title="GDX.Tests\EditMode\Developer\InputProxyTests.cs:69">InputProxyTests.cs:69</a></td>
+<td>Unexpected line indent change around statement braces</td>
+</tr>
+</tbody>
+</table>
 <h3 id="class-is-never-instantiated-non-private-accessibility">Class is never instantiated: Non-private accessibility</h3>
 <table>
 <thead>
@@ -759,15 +777,39 @@
 <td>Field can be made readonly</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L329" title="GDX\Developer\InputProxy.cs:329">InputProxy.cs:329</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L375" title="GDX.Editor\Automation.cs:375">Automation.cs:375</a></td>
 <td>Field can be made readonly</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L330" title="GDX\Developer\InputProxy.cs:330">InputProxy.cs:330</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L376" title="GDX.Editor\Automation.cs:376">Automation.cs:376</a></td>
 <td>Field can be made readonly</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L331" title="GDX\Developer\InputProxy.cs:331">InputProxy.cs:331</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L377" title="GDX.Editor\Automation.cs:377">Automation.cs:377</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L379" title="GDX.Editor\Automation.cs:379">Automation.cs:379</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L380" title="GDX.Editor\Automation.cs:380">Automation.cs:380</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L381" title="GDX.Editor\Automation.cs:381">Automation.cs:381</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L382" title="GDX.Editor\Automation.cs:382">Automation.cs:382</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L383" title="GDX.Editor\Automation.cs:383">Automation.cs:383</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L384" title="GDX.Editor\Automation.cs:384">Automation.cs:384</a></td>
 <td>Field can be made readonly</td>
 </tr>
 </tbody>
@@ -1045,75 +1087,67 @@
 <td>Field <code>CubeSegmentIndices</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L146" title="GDX\Developer\InputProxy.cs:146">InputProxy.cs:146</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L151" title="GDX\Developer\InputProxy.cs:151">InputProxy.cs:151</a></td>
 <td>Method <code>IsExtendedKey</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L221" title="GDX\Developer\InputProxy.cs:221">InputProxy.cs:221</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L283" title="GDX\Developer\InputProxy.cs:283">InputProxy.cs:283</a></td>
 <td>Method <code>Synthesize</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L247" title="GDX\Developer\InputProxy.cs:247">InputProxy.cs:247</a></td>
-<td>Method <code>Synthesize</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L273" title="GDX\Developer\InputProxy.cs:273">InputProxy.cs:273</a></td>
-<td>Method <code>Synthesize</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L329" title="GDX\Developer\InputProxy.cs:329">InputProxy.cs:329</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L336" title="GDX\Developer\InputProxy.cs:336">InputProxy.cs:336</a></td>
 <td>Field <code>Key</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L330" title="GDX\Developer\InputProxy.cs:330">InputProxy.cs:330</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L337" title="GDX\Developer\InputProxy.cs:337">InputProxy.cs:337</a></td>
 <td>Field <code>ScanCode</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L331" title="GDX\Developer\InputProxy.cs:331">InputProxy.cs:331</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L338" title="GDX\Developer\InputProxy.cs:338">InputProxy.cs:338</a></td>
 <td>Field <code>Flags</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L337" title="GDX\Developer\InputProxy.cs:337">InputProxy.cs:337</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L344" title="GDX\Developer\InputProxy.cs:344">InputProxy.cs:344</a></td>
 <td>Field <code>Timestamp</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L339" title="GDX\Developer\InputProxy.cs:339">InputProxy.cs:339</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L346" title="GDX\Developer\InputProxy.cs:346">InputProxy.cs:346</a></td>
 <td>Field <code>ExtraInfo</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L382" title="GDX\Developer\InputProxy.cs:382">InputProxy.cs:382</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L392" title="GDX\Developer\InputProxy.cs:392">InputProxy.cs:392</a></td>
 <td>Field <code>Message</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L387" title="GDX\Developer\InputProxy.cs:387">InputProxy.cs:387</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L397" title="GDX\Developer\InputProxy.cs:397">InputProxy.cs:397</a></td>
 <td>Field <code>ParamL</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L392" title="GDX\Developer\InputProxy.cs:392">InputProxy.cs:392</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L402" title="GDX\Developer\InputProxy.cs:402">InputProxy.cs:402</a></td>
 <td>Field <code>ParamH</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L414" title="GDX\Developer\InputProxy.cs:414">InputProxy.cs:414</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L424" title="GDX\Developer\InputProxy.cs:424">InputProxy.cs:424</a></td>
 <td>Field <code>X</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L419" title="GDX\Developer\InputProxy.cs:419">InputProxy.cs:419</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L429" title="GDX\Developer\InputProxy.cs:429">InputProxy.cs:429</a></td>
 <td>Field <code>Y</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L421" title="GDX\Developer\InputProxy.cs:421">InputProxy.cs:421</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L431" title="GDX\Developer\InputProxy.cs:431">InputProxy.cs:431</a></td>
 <td>Field <code>Data</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L422" title="GDX\Developer\InputProxy.cs:422">InputProxy.cs:422</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L432" title="GDX\Developer\InputProxy.cs:432">InputProxy.cs:432</a></td>
 <td>Field <code>Flags</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L428" title="GDX\Developer\InputProxy.cs:428">InputProxy.cs:428</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L438" title="GDX\Developer\InputProxy.cs:438">InputProxy.cs:438</a></td>
 <td>Field <code>Timestamp</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L430" title="GDX\Developer\InputProxy.cs:430">InputProxy.cs:430</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L440" title="GDX\Developer\InputProxy.cs:440">InputProxy.cs:440</a></td>
 <td>Field <code>ExtraInfo</code> can be made private</td>
 </tr>
 <tr>
@@ -1575,47 +1609,51 @@
 <td>Field <code>MainThreadID</code> is assigned but its value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L337" title="GDX\Developer\InputProxy.cs:337">InputProxy.cs:337</a></td>
-<td>Field <code>Timestamp</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L339" title="GDX\Developer\InputProxy.cs:339">InputProxy.cs:339</a></td>
-<td>Field <code>ExtraInfo</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L382" title="GDX\Developer\InputProxy.cs:382">InputProxy.cs:382</a></td>
-<td>Field <code>Message</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L387" title="GDX\Developer\InputProxy.cs:387">InputProxy.cs:387</a></td>
-<td>Field <code>ParamL</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L392" title="GDX\Developer\InputProxy.cs:392">InputProxy.cs:392</a></td>
-<td>Field <code>ParamH</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L414" title="GDX\Developer\InputProxy.cs:414">InputProxy.cs:414</a></td>
-<td>Field <code>X</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L419" title="GDX\Developer\InputProxy.cs:419">InputProxy.cs:419</a></td>
-<td>Field <code>Y</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L421" title="GDX\Developer\InputProxy.cs:421">InputProxy.cs:421</a></td>
-<td>Field <code>Data</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L422" title="GDX\Developer\InputProxy.cs:422">InputProxy.cs:422</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L338" title="GDX\Developer\InputProxy.cs:338">InputProxy.cs:338</a></td>
 <td>Field <code>Flags</code> is assigned but its value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L428" title="GDX\Developer\InputProxy.cs:428">InputProxy.cs:428</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L344" title="GDX\Developer\InputProxy.cs:344">InputProxy.cs:344</a></td>
 <td>Field <code>Timestamp</code> is assigned but its value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L430" title="GDX\Developer\InputProxy.cs:430">InputProxy.cs:430</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L346" title="GDX\Developer\InputProxy.cs:346">InputProxy.cs:346</a></td>
+<td>Field <code>ExtraInfo</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L392" title="GDX\Developer\InputProxy.cs:392">InputProxy.cs:392</a></td>
+<td>Field <code>Message</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L397" title="GDX\Developer\InputProxy.cs:397">InputProxy.cs:397</a></td>
+<td>Field <code>ParamL</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L402" title="GDX\Developer\InputProxy.cs:402">InputProxy.cs:402</a></td>
+<td>Field <code>ParamH</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L424" title="GDX\Developer\InputProxy.cs:424">InputProxy.cs:424</a></td>
+<td>Field <code>X</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L429" title="GDX\Developer\InputProxy.cs:429">InputProxy.cs:429</a></td>
+<td>Field <code>Y</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L431" title="GDX\Developer\InputProxy.cs:431">InputProxy.cs:431</a></td>
+<td>Field <code>Data</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L432" title="GDX\Developer\InputProxy.cs:432">InputProxy.cs:432</a></td>
+<td>Field <code>Flags</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L438" title="GDX\Developer\InputProxy.cs:438">InputProxy.cs:438</a></td>
+<td>Field <code>Timestamp</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L440" title="GDX\Developer\InputProxy.cs:440">InputProxy.cs:440</a></td>
 <td>Field <code>ExtraInfo</code> is assigned but its value is never used</td>
 </tr>
 <tr>
@@ -1992,395 +2030,383 @@
 <td>Method <code>DrawWireSphere</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L34" title="GDX\Developer\InputProxy.cs:34">InputProxy.cs:34</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L39" title="GDX\Developer\InputProxy.cs:39">InputProxy.cs:39</a></td>
 <td>Enum member <code>Unicode</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L35" title="GDX\Developer\InputProxy.cs:35">InputProxy.cs:35</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L40" title="GDX\Developer\InputProxy.cs:40">InputProxy.cs:40</a></td>
 <td>Enum member <code>ScanCode</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L44" title="GDX\Developer\InputProxy.cs:44">InputProxy.cs:44</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L49" title="GDX\Developer\InputProxy.cs:49">InputProxy.cs:49</a></td>
 <td>Enum member <code>Backspace</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L45" title="GDX\Developer\InputProxy.cs:45">InputProxy.cs:45</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L50" title="GDX\Developer\InputProxy.cs:50">InputProxy.cs:50</a></td>
 <td>Enum member <code>Tab</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L46" title="GDX\Developer\InputProxy.cs:46">InputProxy.cs:46</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L51" title="GDX\Developer\InputProxy.cs:51">InputProxy.cs:51</a></td>
 <td>Enum member <code>Clear</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L47" title="GDX\Developer\InputProxy.cs:47">InputProxy.cs:47</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L52" title="GDX\Developer\InputProxy.cs:52">InputProxy.cs:52</a></td>
 <td>Enum member <code>Return</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L48" title="GDX\Developer\InputProxy.cs:48">InputProxy.cs:48</a></td>
-<td>Enum member <code>Shift</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L50" title="GDX\Developer\InputProxy.cs:50">InputProxy.cs:50</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L55" title="GDX\Developer\InputProxy.cs:55">InputProxy.cs:55</a></td>
 <td>Enum member <code>Alt</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L51" title="GDX\Developer\InputProxy.cs:51">InputProxy.cs:51</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L56" title="GDX\Developer\InputProxy.cs:56">InputProxy.cs:56</a></td>
 <td>Enum member <code>Pause</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L52" title="GDX\Developer\InputProxy.cs:52">InputProxy.cs:52</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L57" title="GDX\Developer\InputProxy.cs:57">InputProxy.cs:57</a></td>
 <td>Enum member <code>CapsLock</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L53" title="GDX\Developer\InputProxy.cs:53">InputProxy.cs:53</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L58" title="GDX\Developer\InputProxy.cs:58">InputProxy.cs:58</a></td>
 <td>Enum member <code>Escape</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L54" title="GDX\Developer\InputProxy.cs:54">InputProxy.cs:54</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L59" title="GDX\Developer\InputProxy.cs:59">InputProxy.cs:59</a></td>
 <td>Enum member <code>Space</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L55" title="GDX\Developer\InputProxy.cs:55">InputProxy.cs:55</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L60" title="GDX\Developer\InputProxy.cs:60">InputProxy.cs:60</a></td>
 <td>Enum member <code>PageUp</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L56" title="GDX\Developer\InputProxy.cs:56">InputProxy.cs:56</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L61" title="GDX\Developer\InputProxy.cs:61">InputProxy.cs:61</a></td>
 <td>Enum member <code>PageDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L63" title="GDX\Developer\InputProxy.cs:63">InputProxy.cs:63</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L68" title="GDX\Developer\InputProxy.cs:68">InputProxy.cs:68</a></td>
 <td>Enum member <code>PrintScreen</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L66" title="GDX\Developer\InputProxy.cs:66">InputProxy.cs:66</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L71" title="GDX\Developer\InputProxy.cs:71">InputProxy.cs:71</a></td>
 <td>Enum member <code>Number0</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L67" title="GDX\Developer\InputProxy.cs:67">InputProxy.cs:67</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L72" title="GDX\Developer\InputProxy.cs:72">InputProxy.cs:72</a></td>
 <td>Enum member <code>Number1</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L68" title="GDX\Developer\InputProxy.cs:68">InputProxy.cs:68</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L73" title="GDX\Developer\InputProxy.cs:73">InputProxy.cs:73</a></td>
 <td>Enum member <code>Number2</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L69" title="GDX\Developer\InputProxy.cs:69">InputProxy.cs:69</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L74" title="GDX\Developer\InputProxy.cs:74">InputProxy.cs:74</a></td>
 <td>Enum member <code>Number3</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L70" title="GDX\Developer\InputProxy.cs:70">InputProxy.cs:70</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L75" title="GDX\Developer\InputProxy.cs:75">InputProxy.cs:75</a></td>
 <td>Enum member <code>Number4</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L71" title="GDX\Developer\InputProxy.cs:71">InputProxy.cs:71</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L76" title="GDX\Developer\InputProxy.cs:76">InputProxy.cs:76</a></td>
 <td>Enum member <code>Number5</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L72" title="GDX\Developer\InputProxy.cs:72">InputProxy.cs:72</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L77" title="GDX\Developer\InputProxy.cs:77">InputProxy.cs:77</a></td>
 <td>Enum member <code>Number6</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L73" title="GDX\Developer\InputProxy.cs:73">InputProxy.cs:73</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L78" title="GDX\Developer\InputProxy.cs:78">InputProxy.cs:78</a></td>
 <td>Enum member <code>Number7</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L74" title="GDX\Developer\InputProxy.cs:74">InputProxy.cs:74</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L79" title="GDX\Developer\InputProxy.cs:79">InputProxy.cs:79</a></td>
 <td>Enum member <code>Number8</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L75" title="GDX\Developer\InputProxy.cs:75">InputProxy.cs:75</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L80" title="GDX\Developer\InputProxy.cs:80">InputProxy.cs:80</a></td>
 <td>Enum member <code>Number9</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L76" title="GDX\Developer\InputProxy.cs:76">InputProxy.cs:76</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L81" title="GDX\Developer\InputProxy.cs:81">InputProxy.cs:81</a></td>
 <td>Enum member <code>A</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L77" title="GDX\Developer\InputProxy.cs:77">InputProxy.cs:77</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L82" title="GDX\Developer\InputProxy.cs:82">InputProxy.cs:82</a></td>
 <td>Enum member <code>B</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L78" title="GDX\Developer\InputProxy.cs:78">InputProxy.cs:78</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L83" title="GDX\Developer\InputProxy.cs:83">InputProxy.cs:83</a></td>
 <td>Enum member <code>C</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L79" title="GDX\Developer\InputProxy.cs:79">InputProxy.cs:79</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L84" title="GDX\Developer\InputProxy.cs:84">InputProxy.cs:84</a></td>
 <td>Enum member <code>D</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L80" title="GDX\Developer\InputProxy.cs:80">InputProxy.cs:80</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L85" title="GDX\Developer\InputProxy.cs:85">InputProxy.cs:85</a></td>
 <td>Enum member <code>E</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L81" title="GDX\Developer\InputProxy.cs:81">InputProxy.cs:81</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L86" title="GDX\Developer\InputProxy.cs:86">InputProxy.cs:86</a></td>
 <td>Enum member <code>F</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L82" title="GDX\Developer\InputProxy.cs:82">InputProxy.cs:82</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L87" title="GDX\Developer\InputProxy.cs:87">InputProxy.cs:87</a></td>
 <td>Enum member <code>G</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L83" title="GDX\Developer\InputProxy.cs:83">InputProxy.cs:83</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L88" title="GDX\Developer\InputProxy.cs:88">InputProxy.cs:88</a></td>
 <td>Enum member <code>H</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L84" title="GDX\Developer\InputProxy.cs:84">InputProxy.cs:84</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L89" title="GDX\Developer\InputProxy.cs:89">InputProxy.cs:89</a></td>
 <td>Enum member <code>I</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L85" title="GDX\Developer\InputProxy.cs:85">InputProxy.cs:85</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L90" title="GDX\Developer\InputProxy.cs:90">InputProxy.cs:90</a></td>
 <td>Enum member <code>J</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L86" title="GDX\Developer\InputProxy.cs:86">InputProxy.cs:86</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L91" title="GDX\Developer\InputProxy.cs:91">InputProxy.cs:91</a></td>
 <td>Enum member <code>K</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L87" title="GDX\Developer\InputProxy.cs:87">InputProxy.cs:87</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L92" title="GDX\Developer\InputProxy.cs:92">InputProxy.cs:92</a></td>
 <td>Enum member <code>L</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L88" title="GDX\Developer\InputProxy.cs:88">InputProxy.cs:88</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L93" title="GDX\Developer\InputProxy.cs:93">InputProxy.cs:93</a></td>
 <td>Enum member <code>M</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L89" title="GDX\Developer\InputProxy.cs:89">InputProxy.cs:89</a></td>
-<td>Enum member <code>N</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L90" title="GDX\Developer\InputProxy.cs:90">InputProxy.cs:90</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L95" title="GDX\Developer\InputProxy.cs:95">InputProxy.cs:95</a></td>
 <td>Enum member <code>O</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L91" title="GDX\Developer\InputProxy.cs:91">InputProxy.cs:91</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L96" title="GDX\Developer\InputProxy.cs:96">InputProxy.cs:96</a></td>
 <td>Enum member <code>P</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L92" title="GDX\Developer\InputProxy.cs:92">InputProxy.cs:92</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L97" title="GDX\Developer\InputProxy.cs:97">InputProxy.cs:97</a></td>
 <td>Enum member <code>Q</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L93" title="GDX\Developer\InputProxy.cs:93">InputProxy.cs:93</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L98" title="GDX\Developer\InputProxy.cs:98">InputProxy.cs:98</a></td>
 <td>Enum member <code>R</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L94" title="GDX\Developer\InputProxy.cs:94">InputProxy.cs:94</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L99" title="GDX\Developer\InputProxy.cs:99">InputProxy.cs:99</a></td>
 <td>Enum member <code>S</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L95" title="GDX\Developer\InputProxy.cs:95">InputProxy.cs:95</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L100" title="GDX\Developer\InputProxy.cs:100">InputProxy.cs:100</a></td>
 <td>Enum member <code>T</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L96" title="GDX\Developer\InputProxy.cs:96">InputProxy.cs:96</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L101" title="GDX\Developer\InputProxy.cs:101">InputProxy.cs:101</a></td>
 <td>Enum member <code>U</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L97" title="GDX\Developer\InputProxy.cs:97">InputProxy.cs:97</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L102" title="GDX\Developer\InputProxy.cs:102">InputProxy.cs:102</a></td>
 <td>Enum member <code>V</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L98" title="GDX\Developer\InputProxy.cs:98">InputProxy.cs:98</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L103" title="GDX\Developer\InputProxy.cs:103">InputProxy.cs:103</a></td>
 <td>Enum member <code>W</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L99" title="GDX\Developer\InputProxy.cs:99">InputProxy.cs:99</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L104" title="GDX\Developer\InputProxy.cs:104">InputProxy.cs:104</a></td>
 <td>Enum member <code>X</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L100" title="GDX\Developer\InputProxy.cs:100">InputProxy.cs:100</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L105" title="GDX\Developer\InputProxy.cs:105">InputProxy.cs:105</a></td>
 <td>Enum member <code>Y</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L101" title="GDX\Developer\InputProxy.cs:101">InputProxy.cs:101</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L106" title="GDX\Developer\InputProxy.cs:106">InputProxy.cs:106</a></td>
 <td>Enum member <code>Z</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L102" title="GDX\Developer\InputProxy.cs:102">InputProxy.cs:102</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L107" title="GDX\Developer\InputProxy.cs:107">InputProxy.cs:107</a></td>
 <td>Enum member <code>LeftWindows</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L103" title="GDX\Developer\InputProxy.cs:103">InputProxy.cs:103</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L108" title="GDX\Developer\InputProxy.cs:108">InputProxy.cs:108</a></td>
 <td>Enum member <code>RightWindows</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L104" title="GDX\Developer\InputProxy.cs:104">InputProxy.cs:104</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L109" title="GDX\Developer\InputProxy.cs:109">InputProxy.cs:109</a></td>
 <td>Enum member <code>Applications</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L105" title="GDX\Developer\InputProxy.cs:105">InputProxy.cs:105</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L110" title="GDX\Developer\InputProxy.cs:110">InputProxy.cs:110</a></td>
 <td>Enum member <code>Sleep</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L106" title="GDX\Developer\InputProxy.cs:106">InputProxy.cs:106</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L111" title="GDX\Developer\InputProxy.cs:111">InputProxy.cs:111</a></td>
 <td>Enum member <code>NumPad0</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L107" title="GDX\Developer\InputProxy.cs:107">InputProxy.cs:107</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L112" title="GDX\Developer\InputProxy.cs:112">InputProxy.cs:112</a></td>
 <td>Enum member <code>NumPad1</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L108" title="GDX\Developer\InputProxy.cs:108">InputProxy.cs:108</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L113" title="GDX\Developer\InputProxy.cs:113">InputProxy.cs:113</a></td>
 <td>Enum member <code>NumPad2</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L109" title="GDX\Developer\InputProxy.cs:109">InputProxy.cs:109</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L114" title="GDX\Developer\InputProxy.cs:114">InputProxy.cs:114</a></td>
 <td>Enum member <code>NumPad3</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L110" title="GDX\Developer\InputProxy.cs:110">InputProxy.cs:110</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L115" title="GDX\Developer\InputProxy.cs:115">InputProxy.cs:115</a></td>
 <td>Enum member <code>NumPad4</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L111" title="GDX\Developer\InputProxy.cs:111">InputProxy.cs:111</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L116" title="GDX\Developer\InputProxy.cs:116">InputProxy.cs:116</a></td>
 <td>Enum member <code>NumPad5</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L112" title="GDX\Developer\InputProxy.cs:112">InputProxy.cs:112</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L117" title="GDX\Developer\InputProxy.cs:117">InputProxy.cs:117</a></td>
 <td>Enum member <code>NumPad6</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L113" title="GDX\Developer\InputProxy.cs:113">InputProxy.cs:113</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L118" title="GDX\Developer\InputProxy.cs:118">InputProxy.cs:118</a></td>
 <td>Enum member <code>NumPad7</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L114" title="GDX\Developer\InputProxy.cs:114">InputProxy.cs:114</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L119" title="GDX\Developer\InputProxy.cs:119">InputProxy.cs:119</a></td>
 <td>Enum member <code>NumPad8</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L115" title="GDX\Developer\InputProxy.cs:115">InputProxy.cs:115</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L120" title="GDX\Developer\InputProxy.cs:120">InputProxy.cs:120</a></td>
 <td>Enum member <code>NumPad9</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L116" title="GDX\Developer\InputProxy.cs:116">InputProxy.cs:116</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L121" title="GDX\Developer\InputProxy.cs:121">InputProxy.cs:121</a></td>
 <td>Enum member <code>NumPadMultiply</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L117" title="GDX\Developer\InputProxy.cs:117">InputProxy.cs:117</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L122" title="GDX\Developer\InputProxy.cs:122">InputProxy.cs:122</a></td>
 <td>Enum member <code>NumPadAdd</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L118" title="GDX\Developer\InputProxy.cs:118">InputProxy.cs:118</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L123" title="GDX\Developer\InputProxy.cs:123">InputProxy.cs:123</a></td>
 <td>Enum member <code>NumPadSubtract</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L119" title="GDX\Developer\InputProxy.cs:119">InputProxy.cs:119</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L124" title="GDX\Developer\InputProxy.cs:124">InputProxy.cs:124</a></td>
 <td>Enum member <code>NumPadDecimal</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L121" title="GDX\Developer\InputProxy.cs:121">InputProxy.cs:121</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L126" title="GDX\Developer\InputProxy.cs:126">InputProxy.cs:126</a></td>
 <td>Enum member <code>F1</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L122" title="GDX\Developer\InputProxy.cs:122">InputProxy.cs:122</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L127" title="GDX\Developer\InputProxy.cs:127">InputProxy.cs:127</a></td>
 <td>Enum member <code>F2</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L123" title="GDX\Developer\InputProxy.cs:123">InputProxy.cs:123</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L128" title="GDX\Developer\InputProxy.cs:128">InputProxy.cs:128</a></td>
 <td>Enum member <code>F3</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L124" title="GDX\Developer\InputProxy.cs:124">InputProxy.cs:124</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L129" title="GDX\Developer\InputProxy.cs:129">InputProxy.cs:129</a></td>
 <td>Enum member <code>F4</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L125" title="GDX\Developer\InputProxy.cs:125">InputProxy.cs:125</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L130" title="GDX\Developer\InputProxy.cs:130">InputProxy.cs:130</a></td>
 <td>Enum member <code>F5</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L126" title="GDX\Developer\InputProxy.cs:126">InputProxy.cs:126</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L131" title="GDX\Developer\InputProxy.cs:131">InputProxy.cs:131</a></td>
 <td>Enum member <code>F6</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L127" title="GDX\Developer\InputProxy.cs:127">InputProxy.cs:127</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L132" title="GDX\Developer\InputProxy.cs:132">InputProxy.cs:132</a></td>
 <td>Enum member <code>F7</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L128" title="GDX\Developer\InputProxy.cs:128">InputProxy.cs:128</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L133" title="GDX\Developer\InputProxy.cs:133">InputProxy.cs:133</a></td>
 <td>Enum member <code>F8</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L129" title="GDX\Developer\InputProxy.cs:129">InputProxy.cs:129</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L134" title="GDX\Developer\InputProxy.cs:134">InputProxy.cs:134</a></td>
 <td>Enum member <code>F9</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L130" title="GDX\Developer\InputProxy.cs:130">InputProxy.cs:130</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L135" title="GDX\Developer\InputProxy.cs:135">InputProxy.cs:135</a></td>
 <td>Enum member <code>F10</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L131" title="GDX\Developer\InputProxy.cs:131">InputProxy.cs:131</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L136" title="GDX\Developer\InputProxy.cs:136">InputProxy.cs:136</a></td>
 <td>Enum member <code>F11</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L132" title="GDX\Developer\InputProxy.cs:132">InputProxy.cs:132</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L137" title="GDX\Developer\InputProxy.cs:137">InputProxy.cs:137</a></td>
 <td>Enum member <code>F12</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L134" title="GDX\Developer\InputProxy.cs:134">InputProxy.cs:134</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L139" title="GDX\Developer\InputProxy.cs:139">InputProxy.cs:139</a></td>
 <td>Enum member <code>ScrollLock</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L135" title="GDX\Developer\InputProxy.cs:135">InputProxy.cs:135</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L140" title="GDX\Developer\InputProxy.cs:140">InputProxy.cs:140</a></td>
 <td>Enum member <code>LeftShift</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L136" title="GDX\Developer\InputProxy.cs:136">InputProxy.cs:136</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L141" title="GDX\Developer\InputProxy.cs:141">InputProxy.cs:141</a></td>
 <td>Enum member <code>RightShift</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L137" title="GDX\Developer\InputProxy.cs:137">InputProxy.cs:137</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L142" title="GDX\Developer\InputProxy.cs:142">InputProxy.cs:142</a></td>
 <td>Enum member <code>LeftControl</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L177" title="GDX\Developer\InputProxy.cs:177">InputProxy.cs:177</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L182" title="GDX\Developer\InputProxy.cs:182">InputProxy.cs:182</a></td>
 <td>Enum member <code>RightDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L178" title="GDX\Developer\InputProxy.cs:178">InputProxy.cs:178</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L183" title="GDX\Developer\InputProxy.cs:183">InputProxy.cs:183</a></td>
 <td>Enum member <code>RightUp</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L179" title="GDX\Developer\InputProxy.cs:179">InputProxy.cs:179</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L184" title="GDX\Developer\InputProxy.cs:184">InputProxy.cs:184</a></td>
 <td>Enum member <code>MiddleDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L180" title="GDX\Developer\InputProxy.cs:180">InputProxy.cs:180</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L185" title="GDX\Developer\InputProxy.cs:185">InputProxy.cs:185</a></td>
 <td>Enum member <code>MiddleUp</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L181" title="GDX\Developer\InputProxy.cs:181">InputProxy.cs:181</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L186" title="GDX\Developer\InputProxy.cs:186">InputProxy.cs:186</a></td>
 <td>Enum member <code>VerticalWheel</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L182" title="GDX\Developer\InputProxy.cs:182">InputProxy.cs:182</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L187" title="GDX\Developer\InputProxy.cs:187">InputProxy.cs:187</a></td>
 <td>Enum member <code>HorizontalWheel</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L188" title="GDX\Developer\InputProxy.cs:188">InputProxy.cs:188</a></td>
-<td>Enum member <code>VirtualDesk</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L215" title="GDX\Developer\InputProxy.cs:215">InputProxy.cs:215</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L231" title="GDX\Developer\InputProxy.cs:231">InputProxy.cs:231</a></td>
 <td>Method <code>Synthesize</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L242" title="GDX\Developer\InputProxy.cs:242">InputProxy.cs:242</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L255" title="GDX\Developer\InputProxy.cs:255">InputProxy.cs:255</a></td>
 <td>Method <code>Synthesize</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L268" title="GDX\Developer\InputProxy.cs:268">InputProxy.cs:268</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L278" title="GDX\Developer\InputProxy.cs:278">InputProxy.cs:278</a></td>
 <td>Method <code>Synthesize</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L293" title="GDX\Developer\InputProxy.cs:293">InputProxy.cs:293</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L300" title="GDX\Developer\InputProxy.cs:300">InputProxy.cs:300</a></td>
 <td>Method <code>KeyPress</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L302" title="GDX\Developer\InputProxy.cs:302">InputProxy.cs:302</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L309" title="GDX\Developer\InputProxy.cs:309">InputProxy.cs:309</a></td>
 <td>Method <code>MouseClick</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L394" title="GDX\Developer\InputProxy.cs:394">InputProxy.cs:394</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L404" title="GDX\Developer\InputProxy.cs:404">InputProxy.cs:404</a></td>
 <td>Constructor <code>HardwareInput</code> is never used</td>
 </tr>
 <tr>
@@ -2636,7 +2662,7 @@
 <td>Method <code>GenerateProjectFiles</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L407" title="GDX.Editor\Automation.cs:407">Automation.cs:407</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Automation.cs#L465" title="GDX.Editor\Automation.cs:465">Automation.cs:465</a></td>
 <td>Method <code>ResetEditor</code> is never used</td>
 </tr>
 <tr>
@@ -2845,7 +2871,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L302" title="GDX\Developer\InputProxy.cs:302">InputProxy.cs:302</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L309" title="GDX\Developer\InputProxy.cs:309">InputProxy.cs:309</a></td>
 <td>Parameter <code>virtualMode</code> is never used</td>
 </tr>
 <tr>
@@ -2902,10 +2928,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawShapes.cs#L10" title="GDX\Developer\DebugDrawShapes.cs:10">DebugDrawShapes.cs:10</a></td>
 <td>Class <code>DebugDrawShapes</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L14" title="GDX\Developer\InputProxy.cs:14">InputProxy.cs:14</a></td>
-<td>Class <code>InputProxy</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Profiling.cs#L23" title="GDX\Developer\Profiling.cs:23">Profiling.cs:23</a></td>
@@ -3088,7 +3110,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-04-08 against <a href="https://github.com/dotBunny/GDX/commit/259a9d42a33dba84438ade32ddfbbe03edafd43b"><strong>259a9d4</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-04-10 against <a href="https://github.com/dotBunny/GDX/commit/4896ee81f8e24b7446e451e34f91f195e73a8d79"><strong>4896ee8</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
