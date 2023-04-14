@@ -12,7 +12,6 @@
   </Information>
   <IssueTypes>
     <IssueType Id="ArrangeTypeModifiers" Category="Syntax Style" CategoryId="CodeStyleIssues" Description="Use explicit or implicit modifier definition for types" Severity="HINT" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ArrangeTypeModifiers" />
-    <IssueType Id="BadControlBracesIndent" Category="Formatting" CategoryId="FormattingIssues" SubCategory="Incorrect indent" Description="Incorrect indent: Around statement braces" Severity="SUGGESTION" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=BadControlBracesIndent" />
     <IssueType Id="ClassNeverInstantiated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ClassNeverInstantiated.Global" />
     <IssueType Id="ClassNeverInstantiated.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Private accessibility" Severity="SUGGESTION" />
     <IssueType Id="CollectionNeverUpdated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Collection is never updated" Description="Collection is never updated: Non-private accessibility" Severity="WARNING" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CollectionNeverUpdated.Global" />
@@ -43,6 +42,7 @@
     <IssueType Id="UnusedMethodReturnValue.Local" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Method return value is never used" Description="Method return value is never used: Private accessibility" Severity="WARNING" />
     <IssueType Id="UnusedParameter.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Unused parameter" Description="Unused parameter: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedType.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Type is never used" Description="Type is never used: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UnusedType.Global" />
+    <IssueType Id="UnusedVariable" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" Description="Unused local variable" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UnusedVariable" />
   </IssueTypes>
   <Issues>
     <Project Name="GDX">
@@ -626,18 +626,8 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\AssemblyProvider.cs" Offset="739-745" Line="25" Message="Field 'RuntimeAssembly' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="4951-4957" Line="127" Message="Method 'CaptureEditorWindowToPNG' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="9201-9214" Line="231" Message="Method 'FinishProfile' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="10103-10109" Line="255" Message="Method 'ForceWindowRepaint' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="11199-11219" Line="277" Message="Method 'GenerateProjectFiles' is never used" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15304-15315" Line="375" Message="Field can be made readonly" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15342-15351" Line="376" Message="Field can be made readonly" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15378-15383" Line="377" Message="Field can be made readonly" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15412-15419" Line="379" Message="Field can be made readonly" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15445-15450" Line="380" Message="Field can be made readonly" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15477-15483" Line="381" Message="Field can be made readonly" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15510-15521" Line="382" Message="Field can be made readonly" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15547-15548" Line="383" Message="Field can be made readonly" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15574-15575" Line="384" Message="Field can be made readonly" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="18643-18654" Line="465" Message="Method 'ResetEditor' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="10244-10264" Line="258" Message="Method 'GenerateProjectFiles' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Automation.cs" Offset="15945-15956" Line="388" Message="Method 'ResetEditor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\BuildInfoBuildProcessor.cs" Offset="2989-3012" Line="67" Message="Class 'BuildInfoBuildProcessor' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\ScriptingDefinesBuildProcessor.cs" Offset="498-528" Line="14" Message="Class 'ScriptingDefinesBuildProcessor' is never used" />
       <Issue TypeId="UnassignedGetOnlyAutoProperty" File="Packages\com.dotbunny.gdx\GDX.Editor\Build\ScriptingDefinesBuildProcessor.cs" Offset="805-818" Line="20" Message="Get-only auto-property 'callbackOrder' is never assigned" />
@@ -655,6 +645,16 @@
       <Issue TypeId="UnassignedField.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorTaskDirectorSystem.cs" Offset="1653-1659" Line="45" Message="Field 'ticked' is never assigned" />
       <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorTaskDirectorSystem.cs" Offset="1653-1659" Line="45" Message="Name 'ticked' does not match rule 'non_private_static_fields_should_be_pascal_case'. Suggested name is 'Ticked'." />
       <Issue TypeId="UnusedMember.Local" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorTaskDirectorSystem.cs" Offset="3152-3162" Line="83" Message="Method 'Initialize' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="636-642" Line="20" Message="Method 'ForceRepaint' can be made private" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="3860-3871" Line="98" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="4018-4027" Line="103" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="4292-4297" Line="111" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="4488-4500" Line="116" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="4789-4794" Line="124" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="5084-5090" Line="132" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="5119-5130" Line="134" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="5183-5184" Line="135" Message="Field can be made readonly" />
+      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="5210-5211" Line="136" Message="Field can be made readonly" />
       <Issue TypeId="UnassignedField.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ManifestEntry.cs" Offset="516-523" Line="18" Message="Field 'version' is never assigned" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ManifestEntry.cs" Offset="545-550" Line="19" Message="Field 'depth' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ManifestEntry.cs" Offset="575-581" Line="20" Message="Field 'source' is never used" />
@@ -699,7 +699,7 @@
       <Issue TypeId="ClassNeverInstantiated.Local" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs" Offset="10795-10817" Line="279" Message="Class 'GameObjectPoolItemTest' is never instantiated" />
       <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs" Offset="177-199" Line="5" Message="Using directive is not required by the code and can be safely removed" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\DebugDrawBufferTests.cs" Offset="411-431" Line="13" Message="Class 'DebugDrawBufferTests' is never used" />
-      <Issue TypeId="BadControlBracesIndent" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\InputProxyTests.cs" Offset="3084-3095" Line="69" Message="Unexpected line indent change around statement braces" />
+      <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\InputProxyTests.cs" Offset="3738-3743" Line="81" Message="Local variable 'count' is never used" />
       <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1449-1453" Line="43" Message="The parameter 'passed' has the same default value" />
       <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1455-1459" Line="43" Message="The parameter 'failMessage' has the same default value" />
       <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX.Tests\EditMode\Developer\Reports\NUnitReportTests.cs" Offset="1461-1465" Line="43" Message="The parameter 'testSuite' has the same default value" />

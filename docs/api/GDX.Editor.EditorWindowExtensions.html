@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Properties
+    <title>EditorWindowExtensions
    | GDX </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Properties
+    <meta name="title" content="EditorWindowExtensions
    | GDX ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -88,53 +88,98 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GDX.Developer.Reports.NUnit.Properties">
+            <article class="content wrap" id="_content" data-uid="GDX.Editor.EditorWindowExtensions">
   
   
-  <h1 id="GDX_Developer_Reports_NUnit_Properties" data-uid="GDX.Developer.Reports.NUnit.Properties" class="text-break"><span class="type" type="class">Class</span> 
-                                                        Properties
+  <h1 id="GDX_Editor_EditorWindowExtensions" data-uid="GDX.Editor.EditorWindowExtensions" class="text-break"><span class="type" type="class">Class</span> 
+                                                        EditorWindowExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p><span class="xref">UnityEditor.EditorWindow</span> Based Extension Methods</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">Properties</span></div>
+    <div class="level1"><span class="xref">EditorWindowExtensions</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Developer.Reports.NUnit.html">GDX.Developer.Reports.NUnit</a></h6>
-  <h5 id="GDX_Developer_Reports_NUnit_Properties_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Editor.html">GDX.Editor</a></h6>
+  <h5 id="GDX_Editor_EditorWindowExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Properties</code></pre>
+    <pre><code class="lang-csharp hljs">public static class EditorWindowExtensions</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_Reports_NUnit_Properties_Property.md&amp;value=---%0Auid%3A%20GDX.Developer.Reports.NUnit.Properties.Property%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_EditorWindowExtensions_ApplySetup_UnityEditor_EditorWindow_GDX_Editor_EditorWindowExtensions_EditorWindowSetup_.md&amp;value=---%0Auid%3A%20GDX.Editor.EditorWindowExtensions.ApplySetup(UnityEditor.EditorWindow%2CGDX.Editor.EditorWindowExtensions.EditorWindowSetup)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/NUnit/Properties.cs/#L13">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorWindowExtensions.cs/#L41">View Source</a>
   </span>
-  <a id="GDX_Developer_Reports_NUnit_Properties_Property_" data-uid="GDX.Developer.Reports.NUnit.Properties.Property*"></a>
-  <h4 id="GDX_Developer_Reports_NUnit_Properties_Property" data-uid="GDX.Developer.Reports.NUnit.Properties.Property">Property</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GDX_Editor_EditorWindowExtensions_ApplySetup_" data-uid="GDX.Editor.EditorWindowExtensions.ApplySetup*"></a>
+  <h4 id="GDX_Editor_EditorWindowExtensions_ApplySetup_UnityEditor_EditorWindow_GDX_Editor_EditorWindowExtensions_EditorWindowSetup_" data-uid="GDX.Editor.EditorWindowExtensions.ApplySetup(UnityEditor.EditorWindow,GDX.Editor.EditorWindowExtensions.EditorWindowSetup)">ApplySetup(EditorWindow, EditorWindowExtensions.EditorWindowSetup)</h4>
+  <div class="markdown level1 summary"><p>Apply the settings found in a <a class="xref" href="GDX.Editor.EditorWindowExtensions.EditorWindowSetup.html">EditorWindowExtensions.EditorWindowSetup</a> to a given <span class="xref">UnityEditor.EditorWindow</span>.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public List&lt;Property&gt; Property { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public static void ApplySetup(this EditorWindow window, EditorWindowExtensions.EditorWindowSetup setup)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="GDX.Developer.Reports.NUnit.Property.html">Property</a>&gt;</td>
-        <td></td>
+        <td><span class="xref">UnityEditor.EditorWindow</span></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The target <span class="xref">UnityEditor.EditorWindow</span>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="GDX.Editor.EditorWindowExtensions.EditorWindowSetup.html">EditorWindowExtensions.EditorWindowSetup</a></td>
+        <td><span class="parametername">setup</span></td>
+        <td><p>The settings data to be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_EditorWindowExtensions_ForceRepaint_UnityEditor_EditorWindow_.md&amp;value=---%0Auid%3A%20GDX.Editor.EditorWindowExtensions.ForceRepaint(UnityEditor.EditorWindow)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorWindowExtensions.cs/#L20">View Source</a>
+  </span>
+  <a id="GDX_Editor_EditorWindowExtensions_ForceRepaint_" data-uid="GDX.Editor.EditorWindowExtensions.ForceRepaint*"></a>
+  <h4 id="GDX_Editor_EditorWindowExtensions_ForceRepaint_UnityEditor_EditorWindow_" data-uid="GDX.Editor.EditorWindowExtensions.ForceRepaint(UnityEditor.EditorWindow)">ForceRepaint(EditorWindow)</h4>
+  <div class="markdown level1 summary"><p>Force a window to repaint immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForceRepaint(this EditorWindow window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEditor.EditorWindow</span></td>
+        <td><span class="parametername">window</span></td>
+        <td><p>The <span class="xref">UnityEditor.EditorWindow</span> to target.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,10 +191,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Developer_Reports_NUnit_Properties.md&amp;value=---%0Auid%3A%20GDX.Developer.Reports.NUnit.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_EditorWindowExtensions.md&amp;value=---%0Auid%3A%20GDX.Editor.EditorWindowExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/NUnit/Properties.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorWindowExtensions.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
