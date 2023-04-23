@@ -16,6 +16,7 @@
     <IssueType Id="ClassNeverInstantiated.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Private accessibility" Severity="SUGGESTION" />
     <IssueType Id="CollectionNeverUpdated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Collection is never updated" Description="Collection is never updated: Non-private accessibility" Severity="WARNING" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CollectionNeverUpdated.Global" />
     <IssueType Id="CompareOfFloatsByEqualityOperator" Category="Potential Code Quality Issues" CategoryId="CodeSmell" Description="Equality comparison of floating point numbers" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CompareOfFloatsByEqualityOperator" />
+    <IssueType Id="EmptyForStatement" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Empty 'for' loop is redundant" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=EmptyForStatement" />
     <IssueType Id="FieldCanBeMadeReadOnly.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Field can be made readonly" Description="Field can be made readonly: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=FieldCanBeMadeReadOnly.Global" />
     <IssueType Id="ForCanBeConvertedToForeach" Category="Language Usage Opportunities" CategoryId="LanguageUsage" Description="For-loop can be converted into foreach-loop" Severity="SUGGESTION" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ForCanBeConvertedToForeach" />
     <IssueType Id="InconsistentNaming" Category="Constraints Violations" CategoryId="ConstraintViolation" Description="Inconsistent Naming" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=InconsistentNaming" />
@@ -214,6 +215,16 @@
       <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Collections\UnsafeSparseSet.cs" Offset="53736-53740" Line="1213" Message="Name 'Data' does not match rule 'instance_fields_should_be_camel_case'. Suggested name is 'm_Data'." />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\UnsafeSparseSet.cs" Offset="53903-53908" Line="1220" Message="Property 'Items' is never used" />
       <Issue TypeId="SuggestVarOrType_BuiltInTypes" Severity="WARNING" File="Packages\com.dotbunny.gdx\GDX\Collections\UnsafeSparseSet.cs" Offset="54063-54066" Line="1226" Message="Use explicit type (built-in types)" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="192-225" Line="6" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="284-300" Line="11" Message="Class 'CompoundCollider' is never used (except inside its declaration)" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="333-339" Line="13" Message="Constant 'GameObjectName' can be made private" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="726-733" Line="24" Message="Enum member 'Spheres' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="892-898" Line="28" Message="Enum member 'Simple' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1067-1075" Line="32" Message="Enum member 'Advanced' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1118-1127" Line="34" Message="Field 'Colliders' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1197-1203" Line="36" Message="Method 'Create' is never used" />
+      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1251-1259" Line="36" Message="Parameter 'strategy' is never used" />
+      <Issue TypeId="EmptyForStatement" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="2924-3053" Line="75" Message="Empty 'for' loop is redundant" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="934-940" Line="28" Message="Field 'MainThreadID' can be made private" />
       <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="952-964" Line="28" Message="Field 'MainThreadID' is assigned but its value is never used" />
       <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="952-964" Line="28" Message="Name 'MainThreadID' does not match rule 'non_private_static_fields_should_be_pascal_case'. Suggested name is 'MainThreadId'." />
@@ -509,7 +520,6 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="2061-2075" Line="49" Message="Method 'IsHDRSupported' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="2908-2920" Line="68" Message="Method 'IsHDREnabled' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="1364-1379" Line="31" Message="Method 'DestroyChildren' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="5066-5083" Line="102" Message="Method 'GetOrAddComponent' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="5748-5760" Line="115" Message="Method 'GetScenePath' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\IListExtensions.cs" Offset="2008-2022" Line="44" Message="Method 'AddUniqueRange' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\IListExtensions.cs" Offset="4038-4055" Line="85" Message="Method 'ContainsReference' is never used" />

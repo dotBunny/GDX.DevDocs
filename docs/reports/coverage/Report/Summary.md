@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-04-13 - 10:00:25 PM |
+| Generated on: | 2023-04-22 - 10:06:14 PM |
 | Parser: | MultiReportParser (509x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 114 |
-| Files: | 110 |
-| Covered lines: | 4372 |
-| Uncovered lines: | 5047 |
-| Coverable lines: | 9419 |
-| Total lines: | 23387 |
-| Line coverage: | 46.4% (4372 of 9419) |
+| Classes: | 115 |
+| Files: | 111 |
+| Covered lines: | 4369 |
+| Uncovered lines: | 5085 |
+| Coverable lines: | 9454 |
+| Total lines: | 23472 |
+| Line coverage: | 46.2% (4369 of 9454) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 449 |
-| Total methods: | 912 |
-| Method coverage: | 49.2% (449 of 912) |
+| Covered methods: | 448 |
+| Total methods: | 914 |
+| Method coverage: | 49% (448 of 914) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4372**|**5047**|**9419**|**28331**|**46.4%**|**0**|**0**|****|**449**|**912**|**49.2%**|
+|**GDX**|**4369**|**5085**|**9454**|**28416**|**46.2%**|**0**|**0**|****|**448**|**914**|**49%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
@@ -56,10 +56,11 @@
 |GDX.Collections.Pooling.GameObjectPool|175|35|210|510|83.3%|0|0||15|15|100%|
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
 |GDX.Collections.Pooling.ManagedPools|28|50|78|221|35.8%|0|0||6|12|50%|
-|GDX.Collections.Pooling.SimpleListManagedPool|81|105|186|428|43.5%|0|0||7|14|50%|
+|GDX.Collections.Pooling.SimpleListManagedPool|78|108|186|428|41.9%|0|0||6|14|42.8%|
 |GDX.Collections.SparseSet|365|695|1060|1825|34.4%|0|0||25|51|49%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1236|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1236|0%|0|0||0|2|0%|
+|GDX.CompoundCollider|0|35|35|85|0%|0|0||0|2|0%|
 |GDX.Config|29|0|29|235|100%|0|0||1|1|100%|
 |GDX.Core|8|0|8|105|100%|0|0||1|1|100%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
