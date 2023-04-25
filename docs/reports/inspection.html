@@ -137,21 +137,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="empty-for-loop-is-redundant">Empty 'for' loop is redundant</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L75" title="GDX\CompoundCollider.cs:75">CompoundCollider.cs:75</a></td>
-<td>Empty <code>for</code> loop is redundant</td>
-</tr>
-</tbody>
-</table>
 <h3 id="inconsistent-naming">Inconsistent Naming</h3>
 <table>
 <thead>
@@ -394,6 +379,21 @@
 </tr>
 </tbody>
 </table>
+<h3 id="redundant-control-flow-jump-statement">Redundant control flow jump statement</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L123" title="GDX\CompoundCollider.cs:123">CompoundCollider.cs:123</a></td>
+<td>Redundant control flow jump statement</td>
+</tr>
+</tbody>
+</table>
 <h3 id="redundant-name-qualifier">Redundant name qualifier</h3>
 <table>
 <thead>
@@ -423,7 +423,7 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L6" title="GDX\CompoundCollider.cs:6">CompoundCollider.cs:6</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L5" title="GDX\CompoundCollider.cs:5">CompoundCollider.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -796,6 +796,14 @@
 <td>Field can be made readonly</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L38" title="GDX\CompoundCollider.cs:38">CompoundCollider.cs:38</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L39" title="GDX\CompoundCollider.cs:39">CompoundCollider.cs:39</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorWindowExtensions.cs#L98" title="GDX.Editor\EditorWindowExtensions.cs:98">EditorWindowExtensions.cs:98</a></td>
 <td>Field can be made readonly</td>
 </tr>
@@ -1066,8 +1074,20 @@
 <td>Field <code>Allocator</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L13" title="GDX\CompoundCollider.cs:13">CompoundCollider.cs:13</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L91" title="GDX\ColliderExtensions.cs:91">ColliderExtensions.cs:91</a></td>
+<td>Method <code>Copy</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L15" title="GDX\CompoundCollider.cs:15">CompoundCollider.cs:15</a></td>
 <td>Constant <code>GameObjectName</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L38" title="GDX\CompoundCollider.cs:38">CompoundCollider.cs:38</a></td>
+<td>Field <code>Colliders</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L39" title="GDX\CompoundCollider.cs:39">CompoundCollider.cs:39</a></td>
+<td>Field <code>Mappings</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L28" title="GDX\Core.cs:28">Core.cs:28</a></td>
@@ -1981,23 +2001,19 @@
 <td>Property <code>Items</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L24" title="GDX\CompoundCollider.cs:24">CompoundCollider.cs:24</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L26" title="GDX\CompoundCollider.cs:26">CompoundCollider.cs:26</a></td>
 <td>Enum member <code>Spheres</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L28" title="GDX\CompoundCollider.cs:28">CompoundCollider.cs:28</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L30" title="GDX\CompoundCollider.cs:30">CompoundCollider.cs:30</a></td>
 <td>Enum member <code>Simple</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L32" title="GDX\CompoundCollider.cs:32">CompoundCollider.cs:32</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L34" title="GDX\CompoundCollider.cs:34">CompoundCollider.cs:34</a></td>
 <td>Enum member <code>Advanced</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L34" title="GDX\CompoundCollider.cs:34">CompoundCollider.cs:34</a></td>
-<td>Field <code>Colliders</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L36" title="GDX\CompoundCollider.cs:36">CompoundCollider.cs:36</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L41" title="GDX\CompoundCollider.cs:41">CompoundCollider.cs:41</a></td>
 <td>Method <code>Create</code> is never used</td>
 </tr>
 <tr>
@@ -2910,7 +2926,11 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L36" title="GDX\CompoundCollider.cs:36">CompoundCollider.cs:36</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L91" title="GDX\ColliderExtensions.cs:91">ColliderExtensions.cs:91</a></td>
+<td>Parameter <code>keepWorldPosition</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L41" title="GDX\CompoundCollider.cs:41">CompoundCollider.cs:41</a></td>
 <td>Parameter <code>strategy</code> is never used</td>
 </tr>
 <tr>
@@ -2969,7 +2989,7 @@
 <td>Struct <code>NativeArray2D</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L11" title="GDX\CompoundCollider.cs:11">CompoundCollider.cs:11</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/CompoundCollider.cs#L12" title="GDX\CompoundCollider.cs:12">CompoundCollider.cs:12</a></td>
 <td>Class <code>CompoundCollider</code> is never used (except inside its declaration)</td>
 </tr>
 <tr>
@@ -3157,7 +3177,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-04-22 against <a href="https://github.com/dotBunny/GDX/commit/570d9c12a800d4675ab09c3bab5ad9d43601a21a"><strong>570d9c1</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-04-24 against <a href="https://github.com/dotBunny/GDX/commit/1899ae18c2a491c72aaf50d12a4ec072f0837377"><strong>1899ae1</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
