@@ -15,6 +15,7 @@
     <IssueType Id="ClassNeverInstantiated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ClassNeverInstantiated.Global" />
     <IssueType Id="ClassNeverInstantiated.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Private accessibility" Severity="SUGGESTION" />
     <IssueType Id="CollectionNeverUpdated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Collection is never updated" Description="Collection is never updated: Non-private accessibility" Severity="WARNING" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CollectionNeverUpdated.Global" />
+    <IssueType Id="CollectionNeverUpdated.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Collection is never updated" Description="Collection is never updated: Private accessibility" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CollectionNeverUpdated.Local" />
     <IssueType Id="CompareOfFloatsByEqualityOperator" Category="Potential Code Quality Issues" CategoryId="CodeSmell" Description="Equality comparison of floating point numbers" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=CompareOfFloatsByEqualityOperator" />
     <IssueType Id="FieldCanBeMadeReadOnly.Global" Category="Common Practices and Code Improvements" CategoryId="BestPractice" SubCategory="Field can be made readonly" Description="Field can be made readonly: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=FieldCanBeMadeReadOnly.Global" />
     <IssueType Id="ForCanBeConvertedToForeach" Category="Language Usage Opportunities" CategoryId="LanguageUsage" Description="For-loop can be converted into foreach-loop" Severity="SUGGESTION" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ForCanBeConvertedToForeach" />
@@ -28,7 +29,6 @@
     <IssueType Id="PrivateFieldCanBeConvertedToLocalVariable" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Private field can be converted to local variable" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=PrivateFieldCanBeConvertedToLocalVariable" />
     <IssueType Id="RedundantArgumentDefaultValue" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant argument with default value" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantArgumentDefaultValue" />
     <IssueType Id="RedundantExplicitArraySize" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant explicit size specification in array creation" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantExplicitArraySize" />
-    <IssueType Id="RedundantJumpStatement" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant control flow jump statement" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantJumpStatement" />
     <IssueType Id="RedundantNameQualifier" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant name qualifier" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantNameQualifier" />
     <IssueType Id="RedundantUsingDirective" Category="Redundancies in Code" CategoryId="CodeRedundancy" Description="Redundant using directive" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=RedundantUsingDirective" />
     <IssueType Id="SuggestVarOrType_BuiltInTypes" Category="Syntax Style" CategoryId="CodeStyleIssues" SubCategory="Use preferred 'var' style" Description="Use preferred 'var' style: For built-in types" Severity="HINT" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=SuggestVarOrType_BuiltInTypes" />
@@ -215,20 +215,13 @@
       <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Collections\UnsafeSparseSet.cs" Offset="53736-53740" Line="1213" Message="Name 'Data' does not match rule 'instance_fields_should_be_camel_case'. Suggested name is 'm_Data'." />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Collections\UnsafeSparseSet.cs" Offset="53903-53908" Line="1220" Message="Property 'Items' is never used" />
       <Issue TypeId="SuggestVarOrType_BuiltInTypes" Severity="WARNING" File="Packages\com.dotbunny.gdx\GDX\Collections\UnsafeSparseSet.cs" Offset="54063-54066" Line="1226" Message="Use explicit type (built-in types)" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="3964-3970" Line="91" Message="Method 'Copy' can be made private" />
-      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="4061-4078" Line="91" Message="Parameter 'keepWorldPosition' is never used" />
-      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="177-190" Line="5" Message="Using directive is not required by the code and can be safely removed" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="367-373" Line="15" Message="Constant 'GameObjectName' can be made private" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="760-767" Line="26" Message="Enum member 'Spheres' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="926-932" Line="30" Message="Enum member 'Simple' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1101-1109" Line="34" Message="Enum member 'Advanced' is never used" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1202-1208" Line="38" Message="Field 'Colliders' can be made private" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1224-1233" Line="38" Message="Field can be made readonly" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1267-1273" Line="39" Message="Field 'Mappings' can be made private" />
-      <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1317-1325" Line="39" Message="Field can be made readonly" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1529-1535" Line="50" Message="Method 'Create' is never used" />
-      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="1583-1591" Line="50" Message="Parameter 'strategy' is never used" />
-      <Issue TypeId="RedundantJumpStatement" File="Packages\com.dotbunny.gdx\GDX\CompoundCollider.cs" Offset="5478-5487" Line="132" Message="Redundant control flow jump statement" />
+      <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="314-332" Line="11" Message="Class 'ColliderExtensions' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="708-712" Line="20" Message="Method 'Copy' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="2057-2063" Line="47" Message="Method 'Copy' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="2665-2671" Line="62" Message="Method 'Copy' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="3281-3287" Line="76" Message="Method 'Copy' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="4037-4043" Line="93" Message="Method 'Copy' can be made private" />
+      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\ColliderExtensions.cs" Offset="4134-4151" Line="93" Message="Parameter 'keepWorldPosition' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="934-940" Line="28" Message="Field 'MainThreadID' can be made private" />
       <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="952-964" Line="28" Message="Field 'MainThreadID' is assigned but its value is never used" />
       <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="952-964" Line="28" Message="Name 'MainThreadID' does not match rule 'non_private_static_fields_should_be_pascal_case'. Suggested name is 'MainThreadId'." />
@@ -524,6 +517,7 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="2061-2075" Line="49" Message="Method 'IsHDRSupported' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Display.cs" Offset="2908-2920" Line="68" Message="Method 'IsHDREnabled' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="1364-1379" Line="31" Message="Method 'DestroyChildren' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="5066-5083" Line="102" Message="Method 'GetOrAddComponent' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\GameObjectExtensions.cs" Offset="5748-5760" Line="115" Message="Method 'GetScenePath' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\IListExtensions.cs" Offset="2008-2022" Line="44" Message="Method 'AddUniqueRange' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\IListExtensions.cs" Offset="4038-4055" Line="85" Message="Method 'ContainsReference' is never used" />
@@ -577,6 +571,14 @@
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\Memory.cs" Offset="464-470" Line="16" Message="Class 'Memory' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Memory.cs" Offset="1022-1029" Line="30" Message="Method 'CleanUp' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Memory.cs" Offset="1684-1696" Line="49" Message="Method 'CleanUpAsync' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\MeshColliderProxy.cs" Offset="671-678" Line="22" Message="Enum member 'Spheres' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\MeshColliderProxy.cs" Offset="841-847" Line="26" Message="Enum member 'Simple' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\MeshColliderProxy.cs" Offset="1085-1091" Line="34" Message="Field 'TargetMeshCollider' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\MeshColliderProxy.cs" Offset="1134-1140" Line="35" Message="Field 'GeneratedColliders' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\MeshColliderProxy.cs" Offset="1965-1971" Line="63" Message="Method 'Generate' can be made private" />
+      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX\MeshColliderProxy.cs" Offset="2044-2052" Line="63" Message="Parameter 'strategy' is never used" />
+      <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX\MeshColliderProxy.cs" Offset="2111-2125" Line="65" Message="Local variable 'existingBounds' is never used" />
+      <Issue TypeId="CollectionNeverUpdated.Local" File="Packages\com.dotbunny.gdx\GDX\MeshColliderProxy.cs" Offset="2177-2195" Line="66" Message="Content of collection 'generatedColliders' is never updated" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\MeshExtensions.cs" Offset="535-549" Line="17" Message="Class 'MeshExtensions' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\MeshExtensions.cs" Offset="939-954" Line="27" Message="Method 'CalculateVolume' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX\MonoBehaviourExtensions.cs" Offset="598-621" Line="18" Message="Class 'MonoBehaviourExtensions' is never used" />
@@ -669,8 +671,8 @@
       <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="5119-5130" Line="134" Message="Field can be made readonly" />
       <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="5183-5184" Line="135" Message="Field can be made readonly" />
       <Issue TypeId="FieldCanBeMadeReadOnly.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\EditorWindowExtensions.cs" Offset="5210-5211" Line="136" Message="Field can be made readonly" />
-      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Inspectors\CapsuleColliderEditor.cs" Offset="217-246" Line="7" Message="Using directive is not required by the code and can be safely removed" />
-      <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Inspectors\CapsuleColliderEditor.cs" Offset="349-373" Line="12" Message="Class 'CapsuleColliderInspector' is never used" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Inspectors\MeshColliderProxyEditor.cs" Offset="217-246" Line="7" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Inspectors\MeshColliderProxyEditor.cs" Offset="350-373" Line="12" Message="Class 'MeshColliderProxyEditor' is never used" />
       <Issue TypeId="UnassignedField.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ManifestEntry.cs" Offset="516-523" Line="18" Message="Field 'version' is never assigned" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ManifestEntry.cs" Offset="545-550" Line="19" Message="Field 'depth' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ManifestEntry.cs" Offset="575-581" Line="20" Message="Field 'source' is never used" />
