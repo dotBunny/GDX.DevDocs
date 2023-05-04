@@ -124,7 +124,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L66" title="GDX\MeshColliderProxy.cs:66">MeshColliderProxy.cs:66</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L131" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:131">MeshColliderProxyEditor.cs:131</a></td>
 <td>Content of collection <code>generatedColliders</code> is never updated</td>
 </tr>
 </tbody>
@@ -252,6 +252,14 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L45" title="GDX.Editor\EditorTaskDirectorSystem.cs:45">EditorTaskDirectorSystem.cs:45</a></td>
 <td>Name <code>ticked</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>Ticked</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L133" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:133">MeshColliderProxyEditor.cs:133</a></td>
+<td>Name <code>rayCount</code> does not match rule <code>constants_should_be_pascal_case</code>. Suggested name is <code>k_RayCount</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/UIElementsProvider.cs#L11" title="GDX.Editor\UIElementsProvider.cs:11">UIElementsProvider.cs:11</a></td>
+<td>Name <code>UIElementsProvider</code> does not match rule <code>members_should_be_pascal_case</code>. Suggested name is <code>UiElementsProvider</code>.</td>
 </tr>
 </tbody>
 </table>
@@ -420,10 +428,6 @@
 <tbody>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/SerializableDictionary.cs#L10" title="GDX\Collections\Generic\SerializableDictionary.cs:10">SerializableDictionary.cs:10</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L7" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:7">MeshColliderProxyEditor.cs:7</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -634,8 +638,12 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L65" title="GDX\MeshColliderProxy.cs:65">MeshColliderProxy.cs:65</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L128" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:128">MeshColliderProxyEditor.cs:128</a></td>
 <td>Local variable <code>existingBounds</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L133" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:133">MeshColliderProxyEditor.cs:133</a></td>
+<td>Local constant <code>rayCount</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/InputProxyTests.cs#L81" title="GDX.Tests\EditMode\Developer\InputProxyTests.cs:81">InputProxyTests.cs:81</a></td>
@@ -1070,19 +1078,19 @@
 <td>Field <code>Allocator</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L47" title="GDX\ColliderExtensions.cs:47">ColliderExtensions.cs:47</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L49" title="GDX\ColliderExtensions.cs:49">ColliderExtensions.cs:49</a></td>
 <td>Method <code>Copy</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L62" title="GDX\ColliderExtensions.cs:62">ColliderExtensions.cs:62</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L64" title="GDX\ColliderExtensions.cs:64">ColliderExtensions.cs:64</a></td>
 <td>Method <code>Copy</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L76" title="GDX\ColliderExtensions.cs:76">ColliderExtensions.cs:76</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L78" title="GDX\ColliderExtensions.cs:78">ColliderExtensions.cs:78</a></td>
 <td>Method <code>Copy</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L93" title="GDX\ColliderExtensions.cs:93">ColliderExtensions.cs:93</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L95" title="GDX\ColliderExtensions.cs:95">ColliderExtensions.cs:95</a></td>
 <td>Method <code>Copy</code> can be made private</td>
 </tr>
 <tr>
@@ -1470,18 +1478,6 @@
 <td>Method <code>HalfLifeToSmoothingFactor</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L34" title="GDX\MeshColliderProxy.cs:34">MeshColliderProxy.cs:34</a></td>
-<td>Field <code>TargetMeshCollider</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L35" title="GDX\MeshColliderProxy.cs:35">MeshColliderProxy.cs:35</a></td>
-<td>Field <code>GeneratedColliders</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L63" title="GDX\MeshColliderProxy.cs:63">MeshColliderProxy.cs:63</a></td>
-<td>Method <code>Generate</code> can be made private</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/OriginalValueAttribute.cs#L26" title="GDX\OriginalValueAttribute.cs:26">OriginalValueAttribute.cs:26</a></td>
 <td>Method <code>As</code> can be made private</td>
 </tr>
@@ -1540,6 +1536,18 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorWindowExtensions.cs#L20" title="GDX.Editor\EditorWindowExtensions.cs:20">EditorWindowExtensions.cs:20</a></td>
 <td>Method <code>ForceRepaint</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L93" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:93">MeshColliderProxyEditor.cs:93</a></td>
+<td>Method <code>Collapse</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L97" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:97">MeshColliderProxyEditor.cs:97</a></td>
+<td>Method <code>Generate</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L125" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:125">MeshColliderProxyEditor.cs:125</a></td>
+<td>Method <code>GenerateColliders</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L104" title="GDX.Editor\PackageProvider.cs:104">PackageProvider.cs:104</a></td>
@@ -2009,7 +2017,11 @@
 <td>Property <code>Items</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L20" title="GDX\ColliderExtensions.cs:20">ColliderExtensions.cs:20</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L13" title="GDX\ColliderExtensions.cs:13">ColliderExtensions.cs:13</a></td>
+<td>Constant <code>CreatedGameObjectName</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L22" title="GDX\ColliderExtensions.cs:22">ColliderExtensions.cs:22</a></td>
 <td>Method <code>Copy</code> is never used</td>
 </tr>
 <tr>
@@ -2601,12 +2613,8 @@
 <td>Method <code>CleanUpAsync</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L22" title="GDX\MeshColliderProxy.cs:22">MeshColliderProxy.cs:22</a></td>
-<td>Enum member <code>Spheres</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L26" title="GDX\MeshColliderProxy.cs:26">MeshColliderProxy.cs:26</a></td>
-<td>Enum member <code>Simple</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L14" title="GDX\MeshColliderProxy.cs:14">MeshColliderProxy.cs:14</a></td>
+<td>Field <code>ProxyGameObject</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshExtensions.cs#L27" title="GDX\MeshExtensions.cs:27">MeshExtensions.cs:27</a></td>
@@ -2759,6 +2767,18 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorPrefsCache.cs#L236" title="GDX.Editor\EditorPrefsCache.cs:236">EditorPrefsCache.cs:236</a></td>
 <td>Method <code>SetString</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L27" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:27">MeshColliderProxyEditor.cs:27</a></td>
+<td>Enum member <code>Spheres</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L32" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:32">MeshColliderProxyEditor.cs:32</a></td>
+<td>Enum member <code>Simple</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L40" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:40">MeshColliderProxyEditor.cs:40</a></td>
+<td>Method <code>OnPostProcessScene</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ManifestEntry.cs#L19" title="GDX.Editor\ManifestEntry.cs:19">ManifestEntry.cs:19</a></td>
@@ -2934,7 +2954,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L93" title="GDX\ColliderExtensions.cs:93">ColliderExtensions.cs:93</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/ColliderExtensions.cs#L95" title="GDX\ColliderExtensions.cs:95">ColliderExtensions.cs:95</a></td>
 <td>Parameter <code>keepWorldPosition</code> is never used</td>
 </tr>
 <tr>
@@ -2942,12 +2962,16 @@
 <td>Parameter <code>virtualMode</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/MeshColliderProxy.cs#L63" title="GDX\MeshColliderProxy.cs:63">MeshColliderProxy.cs:63</a></td>
-<td>Parameter <code>strategy</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Trace.cs#L72" title="GDX\Trace.cs:72">Trace.cs:72</a></td>
 <td>Parameter <code>memberName</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L93" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:93">MeshColliderProxyEditor.cs:93</a></td>
+<td>Parameter <code>proxy</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L126" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:126">MeshColliderProxyEditor.cs:126</a></td>
+<td>Parameter <code>strategy</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -3081,7 +3105,11 @@
 <td>Class <code>InspectorMessageBoxAttributeDecoratorDrawer</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L12" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:12">MeshColliderProxyEditor.cs:12</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderEditor.cs#L12" title="GDX.Editor\Inspectors\MeshColliderEditor.cs:12">MeshColliderEditor.cs:12</a></td>
+<td>Class <code>MeshColliderEditor</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/MeshColliderProxyEditor.cs#L15" title="GDX.Editor\Inspectors\MeshColliderProxyEditor.cs:15">MeshColliderProxyEditor.cs:15</a></td>
 <td>Class <code>MeshColliderProxyEditor</code> is never used</td>
 </tr>
 <tr>
@@ -3166,6 +3194,18 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1147" title="GDX\Collections\UnsafeSparseSet.cs:1147">UnsafeSparseSet.cs:1147</a></td>
 <td>Use explicit type (simple types)</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/UIElementsProvider.cs#L15" title="GDX.Editor\UIElementsProvider.cs:15">UIElementsProvider.cs:15</a></td>
+<td>Use explicit type (simple types)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/UIElementsProvider.cs#L17" title="GDX.Editor\UIElementsProvider.cs:17">UIElementsProvider.cs:17</a></td>
+<td>Use explicit type (simple types)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/UIElementsProvider.cs#L22" title="GDX.Editor\UIElementsProvider.cs:22">UIElementsProvider.cs:22</a></td>
+<td>Use explicit type (simple types)</td>
+</tr>
 </tbody>
 </table>
 </article>
@@ -3189,7 +3229,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-04-29 against <a href="https://github.com/dotBunny/GDX/commit/1baabf54ebe88bc74f0ce56dd772c6850301d113"><strong>1baabf5</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-05-03 against <a href="https://github.com/dotBunny/GDX/commit/7463d029c89f93da39f008ece3e49c0933508598"><strong>7463d02</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
