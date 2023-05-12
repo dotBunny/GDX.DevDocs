@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-09 - 9:14:04 PM |
+| Generated on: | 5/11/2023 - 9:43:22 PM |
 | Parser: | MultiReportParser (509x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 115 |
-| Files: | 111 |
+| Classes: | 116 |
+| Files: | 112 |
 | Covered lines: | 4369 |
-| Uncovered lines: | 5059 |
-| Coverable lines: | 9428 |
-| Total lines: | 23425 |
-| Line coverage: | 46.3% (4369 of 9428) |
+| Uncovered lines: | 5107 |
+| Coverable lines: | 9476 |
+| Total lines: | 23534 |
+| Line coverage: | 46.1% (4369 of 9476) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 448 |
-| Total methods: | 913 |
-| Method coverage: | 49% (448 of 913) |
+| Total methods: | 923 |
+| Method coverage: | 48.5% (448 of 923) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4369**|**5059**|**9428**|**28369**|**46.3%**|**0**|**0**|****|**448**|**913**|**49%**|
+|**GDX**|**4369**|**5107**|**9476**|**28478**|**46.1%**|**0**|**0**|****|**448**|**923**|**48.5%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
@@ -38,7 +38,7 @@
 |GDX.Collections.DisposeUnsafeSparseSetJob|0|3|3|1236|0%|0|0||0|1|0%|
 |GDX.Collections.DisposeUnsafeVersionArrayJob|0|3|3|1236|0%|0|0||0|1|0%|
 |GDX.Collections.FreeList|79|0|79|174|100%|0|0||7|7|100%|
-|GDX.Collections.Generic.Array2D[T]|0|114|114|270|0%|0|0||0|14|0%|
+|GDX.Collections.Generic.Array2D[T]|0|109|109|264|0%|0|0||0|14|0%|
 |GDX.Collections.Generic.Array3D[T]|0|24|24|119|0%|0|0||0|8|0%|
 |GDX.Collections.Generic.CircularBuffer[T]|0|137|137|315|0%|0|0||0|15|0%|
 |GDX.Collections.Generic.CoalesceArray[T]|0|77|77|156|0%|0|0||0|8|0%|
@@ -57,11 +57,12 @@
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
 |GDX.Collections.Pooling.ManagedPools|28|50|78|221|35.8%|0|0||6|12|50%|
 |GDX.Collections.Pooling.SimpleListManagedPool|81|105|186|428|43.5%|0|0||7|14|50%|
+|GDX.Collections.SimpleTable|0|53|53|116|0%|0|0||0|10|0%|
 |GDX.Collections.SparseSet|365|695|1060|1825|34.4%|0|0||25|51|49%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1236|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1236|0%|0|0||0|2|0%|
 |GDX.Config|29|0|29|235|100%|0|0||1|1|100%|
-|GDX.Core|8|0|8|105|100%|0|0||1|1|100%|
+|GDX.Core|8|0|8|104|100%|0|0||1|1|100%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|
 |GDX.Developer.DebugDrawBuffer|24|248|272|726|8.8%|0|0||2|33|6%|
