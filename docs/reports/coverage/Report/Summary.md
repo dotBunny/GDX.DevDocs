@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-16 - 10:52:47 AM |
+| Generated on: | 2023-05-16 - 12:02:08 PM |
 | Parser: | MultiReportParser (509x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 116 |
@@ -9,7 +9,7 @@
 | Covered lines: | 4372 |
 | Uncovered lines: | 5881 |
 | Coverable lines: | 10253 |
-| Total lines: | 24767 |
+| Total lines: | 24768 |
 | Line coverage: | 42.6% (4372 of 10253) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4372**|**5881**|**10253**|**29711**|**42.6%**|**0**|**0**|****|**449**|**1100**|**40.8%**|
+|**GDX**|**4372**|**5881**|**10253**|**29712**|**42.6%**|**0**|**0**|****|**449**|**1100**|**40.8%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
@@ -123,7 +123,7 @@
 |GDX.RigidbodyExtensions|0|4|4|39|0%|0|0||0|1|0%|
 |GDX.SegmentedString|128|0|128|276|100%|0|0||11|11|100%|
 |GDX.SimpleListExtensions|0|219|219|543|0%|0|0||0|21|0%|
-|GDX.SimpleTable|0|830|830|1349|0%|0|0||0|187|0%|
+|GDX.SimpleTable|0|830|830|1350|0%|0|0||0|187|0%|
 |GDX.Space|0|55|55|134|0%|0|0||0|4|0%|
 |GDX.StringExtensions|264|0|264|739|100%|0|0||22|22|100%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|
