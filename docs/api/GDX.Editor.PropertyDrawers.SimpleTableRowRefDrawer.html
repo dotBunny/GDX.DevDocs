@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>VersionControl
+    <title>SimpleTableRowRefDrawer
    | GDX </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="VersionControl
+    <meta name="title" content="SimpleTableRowRefDrawer
    | GDX ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -88,42 +88,45 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GDX.Editor.VersionControl">
+            <article class="content wrap" id="_content" data-uid="GDX.Editor.PropertyDrawers.SimpleTableRowRefDrawer">
   
   
-  <h1 id="GDX_Editor_VersionControl" data-uid="GDX.Editor.VersionControl" class="text-break"><span class="type" type="class">Class</span> 
-                                                        VersionControl
+  <h1 id="GDX_Editor_PropertyDrawers_SimpleTableRowRefDrawer" data-uid="GDX.Editor.PropertyDrawers.SimpleTableRowRefDrawer" class="text-break"><span class="type" type="class">Class</span> 
+                                                        SimpleTableRowRefDrawer
   </h1>
-  <div class="markdown level0 summary"><p>A collection of version control related helper utilities.</p>
+  <div class="markdown level0 summary"><p>The drawing component of the <span class="xref">GDX.DisableInInspectorAttribute</span>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">VersionControl</span></div>
+    <div class="level1"><span class="xref">UnityEditor.GUIDrawer</span></div>
+    <div class="level2"><span class="xref">UnityEditor.PropertyDrawer</span></div>
+    <div class="level3"><span class="xref">SimpleTableRowRefDrawer</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Editor.html">GDX.Editor</a></h6>
-  <h5 id="GDX_Editor_VersionControl_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Editor.PropertyDrawers.html">GDX.Editor.PropertyDrawers</a></h6>
+  <h5 id="GDX_Editor_PropertyDrawers_SimpleTableRowRefDrawer_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class VersionControl</code></pre>
+    <pre><code class="lang-csharp hljs">[CustomPropertyDrawer(typeof(SimpleTable.SimpleTableRowRef))]
+public class SimpleTableRowRefDrawer : PropertyDrawer</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_VersionControl_CheckoutFolder_System_String_.md&amp;value=---%0Auid%3A%20GDX.Editor.VersionControl.CheckoutFolder(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_PropertyDrawers_SimpleTableRowRefDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_.md&amp;value=---%0Auid%3A%20GDX.Editor.PropertyDrawers.SimpleTableRowRefDrawer.OnGUI(UnityEngine.Rect%2CUnityEditor.SerializedProperty%2CUnityEngine.GUIContent)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VersionControl.cs/#L19">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PropertyDrawers/SimpleTableRowRefDrawer.cs/#L40">View Source</a>
   </span>
-  <a id="GDX_Editor_VersionControl_CheckoutFolder_" data-uid="GDX.Editor.VersionControl.CheckoutFolder*"></a>
-  <h4 id="GDX_Editor_VersionControl_CheckoutFolder_System_String_" data-uid="GDX.Editor.VersionControl.CheckoutFolder(System.String)">CheckoutFolder(String)</h4>
-  <div class="markdown level1 summary"><p>Synchronously checkout the contents of a folder if under source control known to Unity, and with it enabled.</p>
+  <a id="GDX_Editor_PropertyDrawers_SimpleTableRowRefDrawer_OnGUI_" data-uid="GDX.Editor.PropertyDrawers.SimpleTableRowRefDrawer.OnGUI*"></a>
+  <h4 id="GDX_Editor_PropertyDrawers_SimpleTableRowRefDrawer_OnGUI_UnityEngine_Rect_UnityEditor_SerializedProperty_UnityEngine_GUIContent_" data-uid="GDX.Editor.PropertyDrawers.SimpleTableRowRefDrawer.OnGUI(UnityEngine.Rect,UnityEditor.SerializedProperty,UnityEngine.GUIContent)">OnGUI(Rect, SerializedProperty, GUIContent)</h4>
+  <div class="markdown level1 summary"><p>Unity IMGUI Draw Event</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void CheckoutFolder(string folderPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -136,75 +139,27 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">folderPath</span></td>
-        <td><p>The absolute path to the target folder.</p>
+        <td><span class="xref">UnityEngine.Rect</span></td>
+        <td><span class="parametername">position</span></td>
+        <td><p>Rectangle on the screen to use for the property GUI.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEditor.SerializedProperty</span></td>
+        <td><span class="parametername">property</span></td>
+        <td><p>The SerializedProperty to make the custom GUI for.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">UnityEngine.GUIContent</span></td>
+        <td><span class="parametername">label</span></td>
+        <td><p>The label of this property.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_VersionControl_GetAssetListFromFolder_System_String_System_String_System_IO_SearchOption_.md&amp;value=---%0Auid%3A%20GDX.Editor.VersionControl.GetAssetListFromFolder(System.String%2CSystem.String%2CSystem.IO.SearchOption)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VersionControl.cs/#L39">View Source</a>
-  </span>
-  <a id="GDX_Editor_VersionControl_GetAssetListFromFolder_" data-uid="GDX.Editor.VersionControl.GetAssetListFromFolder*"></a>
-  <h4 id="GDX_Editor_VersionControl_GetAssetListFromFolder_System_String_System_String_System_IO_SearchOption_" data-uid="GDX.Editor.VersionControl.GetAssetListFromFolder(System.String,System.String,System.IO.SearchOption)">GetAssetListFromFolder(String, String, SearchOption)</h4>
-  <div class="markdown level1 summary"><p>Get an <span class="xref">UnityEditor.VersionControl.AssetList</span> from an <code data-dev-comment-type="paramref" class="paramref">absoluteDirectoryPath</code>.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static AssetList GetAssetListFromFolder(string absoluteDirectoryPath, string searchPattern = &quot;*.*&quot;, SearchOption searchOption = SearchOption.AllDirectories)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">absoluteDirectoryPath</span></td>
-        <td><p>A fully qualified path on disk to query.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">searchPattern</span></td>
-        <td><p>The search pattern to look for files with.</p>
-</td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.IO.SearchOption</span></td>
-        <td><span class="parametername">searchOption</span></td>
-        <td><p>What level of searching should be done.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">UnityEditor.VersionControl.AssetList</span></td>
-        <td><p>An <span class="xref">UnityEditor.VersionControl.AssetList</span> containing any valid assets under version control.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEditor.PropertyDrawer.OnGUI(UnityEngine.Rect, UnityEditor.SerializedProperty, UnityEngine.GUIContent)</span></div>
 </article>
           </div>
           
@@ -213,10 +168,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_VersionControl.md&amp;value=---%0Auid%3A%20GDX.Editor.VersionControl%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_PropertyDrawers_SimpleTableRowRefDrawer.md&amp;value=---%0Auid%3A%20GDX.Editor.PropertyDrawers.SimpleTableRowRefDrawer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VersionControl.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PropertyDrawers/SimpleTableRowRefDrawer.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

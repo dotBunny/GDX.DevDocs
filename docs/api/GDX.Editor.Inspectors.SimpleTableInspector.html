@@ -101,13 +101,14 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">UnityEngine.Object</span></div>
     <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
-    <div class="level3"><span class="xref">UnityEditor.EditorWindow</span></div>
+    <div class="level3"><span class="xref">UnityEditor.Editor</span></div>
     <div class="level4"><span class="xref">SimpleTableInspector</span></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Editor.Inspectors.html">GDX.Editor.Inspectors</a></h6>
   <h5 id="GDX_Editor_Inspectors_SimpleTableInspector_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class SimpleTableInspector : EditorWindow</code></pre>
+    <pre><code class="lang-csharp hljs">[CustomEditor(typeof(SimpleTable))]
+public class SimpleTableInspector : Editor</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
@@ -116,7 +117,7 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_Inspectors_SimpleTableInspector_CreateAsset.md&amp;value=---%0Auid%3A%20GDX.Editor.Inspectors.SimpleTableInspector.CreateAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/SimpleTableInspector.cs/#L12">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/SimpleTableInspector.cs/#L19">View Source</a>
   </span>
   <a id="GDX_Editor_Inspectors_SimpleTableInspector_CreateAsset_" data-uid="GDX.Editor.Inspectors.SimpleTableInspector.CreateAsset*"></a>
   <h4 id="GDX_Editor_Inspectors_SimpleTableInspector_CreateAsset" data-uid="GDX.Editor.Inspectors.SimpleTableInspector.CreateAsset">CreateAsset()</h4>
@@ -127,15 +128,58 @@
     <pre><code class="lang-csharp hljs">[MenuItem(&quot;Assets/Create/GDX/Simple Table&quot;)]
 public static void CreateAsset()</code></pre>
   </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_Inspectors_SimpleTableInspector_OnInspectorGUI.md&amp;value=---%0Auid%3A%20GDX.Editor.Inspectors.SimpleTableInspector.OnInspectorGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/SimpleTableInspector.cs/#L56">View Source</a>
+  </span>
+  <a id="GDX_Editor_Inspectors_SimpleTableInspector_OnInspectorGUI_" data-uid="GDX.Editor.Inspectors.SimpleTableInspector.OnInspectorGUI*"></a>
+  <h4 id="GDX_Editor_Inspectors_SimpleTableInspector_OnInspectorGUI" data-uid="GDX.Editor.Inspectors.SimpleTableInspector.OnInspectorGUI">OnInspectorGUI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">UnityEditor.Editor.OnInspectorGUI()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_Inspectors_SimpleTableInspector_OpenAsset_GDX_SimpleTable_.md&amp;value=---%0Auid%3A%20GDX.Editor.Inspectors.SimpleTableInspector.OpenAsset(GDX.SimpleTable)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/SimpleTableInspector.cs/#L30">View Source</a>
+  </span>
+  <a id="GDX_Editor_Inspectors_SimpleTableInspector_OpenAsset_" data-uid="GDX.Editor.Inspectors.SimpleTableInspector.OpenAsset*"></a>
+  <h4 id="GDX_Editor_Inspectors_SimpleTableInspector_OpenAsset_GDX_SimpleTable_" data-uid="GDX.Editor.Inspectors.SimpleTableInspector.OpenAsset(GDX.SimpleTable)">OpenAsset(SimpleTable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void OpenAsset(SimpleTable table)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.SimpleTable.html">SimpleTable</a></td>
+        <td><span class="parametername">table</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="extensionmethods">Extension Methods</h3>
   <div>
       <a class="xref" href="GDX.ObjectExtensions.html#GDX_ObjectExtensions_SafeDestroy_UnityEngine_Object_System_Single_">ObjectExtensions.SafeDestroy(Object, Single)</a>
-  </div>
-  <div>
-      <a class="xref" href="GDX.Editor.EditorWindowExtensions.html#GDX_Editor_EditorWindowExtensions_ForceRepaint_UnityEditor_EditorWindow_">EditorWindowExtensions.ForceRepaint(EditorWindow)</a>
-  </div>
-  <div>
-      <a class="xref" href="GDX.Editor.EditorWindowExtensions.html#GDX_Editor_EditorWindowExtensions_ApplySetup_UnityEditor_EditorWindow_GDX_Editor_EditorWindowExtensions_EditorWindowSetup_">EditorWindowExtensions.ApplySetup(EditorWindow, EditorWindowExtensions.EditorWindowSetup)</a>
   </div>
 </article>
           </div>
@@ -148,7 +192,7 @@ public static void CreateAsset()</code></pre>
                     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_Inspectors_SimpleTableInspector.md&amp;value=---%0Auid%3A%20GDX.Editor.Inspectors.SimpleTableInspector%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/SimpleTableInspector.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/SimpleTableInspector.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -168,7 +212,7 @@ public static void CreateAsset()</code></pre>
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-05-16 against <a href="https://github.com/dotBunny/GDX/commit/a873b0841df37370c1037aa902395d21488ded35"><strong>a873b08</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-05-16 against <a href="https://github.com/dotBunny/GDX/commit/de489349d5918195dcaecb3cea10b3289df22153"><strong>de48934</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
