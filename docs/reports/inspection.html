@@ -894,6 +894,22 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L45" title="GDX.Editor\EditorTaskDirectorSystem.cs:45">EditorTaskDirectorSystem.cs:45</a></td>
 <td>Name <code>ticked</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>Ticked</code>.</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L16" title="GDX.Editor\Windows\SimpleTableWindow.cs:16">SimpleTableWindow.cs:16</a></td>
+<td>Name <code>targetTable</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_TargetTable</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L17" title="GDX.Editor\Windows\SimpleTableWindow.cs:17">SimpleTableWindow.cs:17</a></td>
+<td>Name <code>initialized</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_Initialized</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L18" title="GDX.Editor\Windows\SimpleTableWindow.cs:18">SimpleTableWindow.cs:18</a></td>
+<td>Name <code>rowAsset</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_RowAsset</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L21" title="GDX.Editor\Windows\SimpleTableWindow.cs:21">SimpleTableWindow.cs:21</a></td>
+<td>Name <code>instanceID</code> does not match rule <code>locals_should_be_camel_case</code>. Suggested name is <code>instanceId</code>.</td>
+</tr>
 </tbody>
 </table>
 <h3 id="invalid-xml-documentation-comment">Invalid XML documentation comment</h3>
@@ -955,6 +971,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L507" title="GDX\Developer\InputProxy.cs:507">InputProxy.cs:507</a></td>
 <td>Field <code>Data</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L18" title="GDX.Editor\Windows\SimpleTableWindow.cs:18">SimpleTableWindow.cs:18</a></td>
+<td>Field <code>rowAsset</code> is assigned but its value is never used</td>
 </tr>
 </tbody>
 </table>
@@ -1338,7 +1358,7 @@
 <td>Class <code>Property</code> is never instantiated</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L8" title="GDX.Editor\Windows\SimpleTableWindow.cs:8">SimpleTableWindow.cs:8</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L12" title="GDX.Editor\Windows\SimpleTableWindow.cs:12">SimpleTableWindow.cs:12</a></td>
 <td>Class <code>SimpleTableWindow</code> is never instantiated</td>
 </tr>
 </tbody>
@@ -2426,12 +2446,28 @@
 <td>Constant <code>SectionKey</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ResourcesProvider.cs#L128" title="GDX.Editor\ResourcesProvider.cs:128">ResourcesProvider.cs:128</a></td>
+<td>Method <code>GetStyleSheet</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ResourcesProvider.cs#L140" title="GDX.Editor\ResourcesProvider.cs:140">ResourcesProvider.cs:140</a></td>
+<td>Method <code>GetLightThemeStylesheet</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ResourcesProvider.cs#L158" title="GDX.Editor\ResourcesProvider.cs:158">ResourcesProvider.cs:158</a></td>
+<td>Method <code>GetStyleSheetOverride</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/UpdateProvider.cs#L304" title="GDX.Editor\UpdateProvider.cs:304">UpdateProvider.cs:304</a></td>
 <td>Method <code>GetLastNotifiedVersion</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VersionControl.cs#L39" title="GDX.Editor\VersionControl.cs:39">VersionControl.cs:39</a></td>
 <td>Method <code>GetAssetListFromFolder</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L71" title="GDX.Editor\Windows\SimpleTableWindow.cs:71">SimpleTableWindow.cs:71</a></td>
+<td>Method <code>Rebuild</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/TransformExtensionsTests.cs#L25" title="GDX.Tests\EditMode\TransformExtensionsTests.cs:25">TransformExtensionsTests.cs:25</a></td>
@@ -4349,7 +4385,7 @@
 <td>Method <code>Get</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ProjectSettingsProvider.cs#L499" title="GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs:499">ProjectSettingsProvider.cs:499</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ProjectSettings/ProjectSettingsProvider.cs#L476" title="GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs:476">ProjectSettingsProvider.cs:476</a></td>
 <td>Method <code>Reset</code> is never used</td>
 </tr>
 <tr>
@@ -4367,6 +4403,14 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VisualElementsProvider.cs#L11" title="GDX.Editor\VisualElementsProvider.cs:11">VisualElementsProvider.cs:11</a></td>
 <td>Method <code>ActionableHelpBox</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L21" title="GDX.Editor\Windows\SimpleTableWindow.cs:21">SimpleTableWindow.cs:21</a></td>
+<td>Method <code>OpenSimpleTable</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L64" title="GDX.Editor\Windows\SimpleTableWindow.cs:64">SimpleTableWindow.cs:64</a></td>
+<td>Method <code>OnDestroy</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/DomainReloadTests.cs#L67" title="GDX.Editor.Tests\EditMode\DomainReloadTests.cs:67">DomainReloadTests.cs:67</a></td>
@@ -4482,6 +4526,10 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/SimpleListExtensions.cs#L463" title="GDX\SimpleListExtensions.cs:463">SimpleListExtensions.cs:463</a></td>
 <td>Method <code>RemoveReferences</code> return value is never used</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L32" title="GDX.Editor\Windows\SimpleTableWindow.cs:32">SimpleTableWindow.cs:32</a></td>
+<td>Method <code>OpenAsset</code> return value is never used</td>
+</tr>
 </tbody>
 </table>
 <h3 id="unused-parameter-non-private-accessibility">Unused parameter: Non-private accessibility</h3>
@@ -4502,8 +4550,8 @@
 <td>Parameter <code>memberName</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L10" title="GDX.Editor\Windows\SimpleTableWindow.cs:10">SimpleTableWindow.cs:10</a></td>
-<td>Parameter <code>table</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L21" title="GDX.Editor\Windows\SimpleTableWindow.cs:21">SimpleTableWindow.cs:21</a></td>
+<td>Parameter <code>line</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -4667,6 +4715,21 @@
 </tbody>
 </table>
 <h2 id="hints">Hints</h2>
+<h3 id="addremove-this-qualifier">Add/remove 'this.' qualifier</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/SimpleTableWindow.cs#L73" title="GDX.Editor\Windows\SimpleTableWindow.cs:73">SimpleTableWindow.cs:73</a></td>
+<td>Qualifier <code>this.</code> is redundant</td>
+</tr>
+</tbody>
+</table>
 <h3 id="use-explicit-or-implicit-modifier-definition-for-types">Use explicit or implicit modifier definition for types</h3>
 <table>
 <thead>
@@ -4753,7 +4816,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-05-16 against <a href="https://github.com/dotBunny/GDX/commit/0633b1229873fd9c5b92e8ce98067edc7c0b026e"><strong>0633b12</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-05-16 against <a href="https://github.com/dotBunny/GDX/commit/670e3a629da6eac01ebe10634e3fe58fb1daee81"><strong>670e3a6</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>

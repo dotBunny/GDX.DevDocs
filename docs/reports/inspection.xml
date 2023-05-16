@@ -11,6 +11,7 @@
     </InspectionScope>
   </Information>
   <IssueTypes>
+    <IssueType Id="ArrangeThisQualifier" Category="Syntax Style" CategoryId="CodeStyleIssues" Description="Add/remove 'this.' qualifier" Severity="HINT" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ArrangeThisQualifier" />
     <IssueType Id="ArrangeTypeModifiers" Category="Syntax Style" CategoryId="CodeStyleIssues" Description="Use explicit or implicit modifier definition for types" Severity="HINT" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ArrangeTypeModifiers" />
     <IssueType Id="ClassNeverInstantiated.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=ClassNeverInstantiated.Global" />
     <IssueType Id="ClassNeverInstantiated.Local" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Class is never instantiated" Description="Class is never instantiated: Private accessibility" Severity="SUGGESTION" />
@@ -1082,10 +1083,13 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="345-360" Line="12" Message="Method 'GetSectionIndex' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\IConfigSection.cs" Offset="806-823" Line="24" Message="Method 'GetSearchKeywords' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="8905-8908" Line="232" Message="Method 'Get' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="20758-20763" Line="499" Message="Method 'Reset' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ProjectSettings\ProjectSettingsProvider.cs" Offset="19814-19819" Line="476" Message="Method 'Reset' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\DisableInInspectorAttributePropertyDrawer.cs" Offset="564-605" Line="18" Message="Class 'DisableInInspectorAttributePropertyDrawer' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs" Offset="1229-1265" Line="30" Message="Class 'SerializableDictionaryPropertyDrawer' is never used" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\PropertyDrawers\SimpleTableRowRefDrawer.cs" Offset="566-589" Line="18" Message="Class 'SimpleTableRowRefDrawer' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ResourcesProvider.cs" Offset="4758-4764" Line="128" Message="Method 'GetStyleSheet' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ResourcesProvider.cs" Offset="5158-5164" Line="140" Message="Method 'GetLightThemeStylesheet' can be made private" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\ResourcesProvider.cs" Offset="5915-5921" Line="158" Message="Method 'GetStyleSheetOverride' can be made private" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\SerializedStopwatch.cs" Offset="1371-1383" Line="46" Message="Property 'ElapsedTicks' is never used (except inside its declaration)" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\SerializedStopwatch.cs" Offset="1536-1553" Line="54" Message="Property 'SerializationSpan' is never used (except inside its declaration)" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\TestFramework.cs" Offset="557-567" Line="19" Message="Method 'Initialize' is never used" />
@@ -1093,11 +1097,21 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\VersionControl.cs" Offset="1691-1697" Line="39" Message="Method 'GetAssetListFromFolder' can be made private" />
       <Issue TypeId="UnusedType.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\VisualElementsProvider.cs" Offset="259-281" Line="9" Message="Class 'VisualElementsProvider' is never used" />
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\VisualElementsProvider.cs" Offset="326-343" Line="11" Message="Method 'ActionableHelpBox' is never used" />
-      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="0-25" Message="Using directive is not required by the code and can be safely removed" />
-      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="27-60" Line="2" Message="Using directive is not required by the code and can be safely removed" />
-      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="82-100" Line="4" Message="Using directive is not required by the code and can be safely removed" />
-      <Issue TypeId="ClassNeverInstantiated.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="154-171" Line="8" Message="Class 'SimpleTableWindow' is never instantiated" />
-      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="244-249" Line="10" Message="Parameter 'table' is never used" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="0-13" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="15-40" Line="2" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="77-107" Line="4" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="ClassNeverInstantiated.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="262-279" Line="12" Message="Class 'SimpleTableWindow' is never instantiated" />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="455-466" Line="16" Message="Name 'targetTable' does not match rule 'instance_fields_should_be_camel_case'. Suggested name is 'm_TargetTable'." />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="482-493" Line="17" Message="Name 'initialized' does not match rule 'instance_fields_should_be_camel_case'. Suggested name is 'm_Initialized'." />
+      <Issue TypeId="NotAccessedField.Local" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="520-528" Line="18" Message="Field 'rowAsset' is assigned but its value is never used" />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="520-528" Line="18" Message="Name 'rowAsset' does not match rule 'instance_fields_should_be_camel_case'. Suggested name is 'm_RowAsset'." />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="586-601" Line="21" Message="Method 'OpenSimpleTable' is never used" />
+      <Issue TypeId="InconsistentNaming" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="606-616" Line="21" Message="Name 'instanceID' does not match rule 'locals_should_be_camel_case'. Suggested name is 'instanceId'." />
+      <Issue TypeId="UnusedParameter.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="622-626" Line="21" Message="Parameter 'line' is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="940-957" Line="32" Message="Method 'OpenAsset' return value is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="2175-2184" Line="64" Message="Method 'OnDestroy' is never used" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="2324-2330" Line="71" Message="Method 'Rebuild' can be made private" />
+      <Issue TypeId="ArrangeThisQualifier" Severity="WARNING" File="Packages\com.dotbunny.gdx\GDX.Editor\Windows\SimpleTableWindow.cs" Offset="2370-2375" Line="73" Message="Qualifier 'this.' is redundant" />
     </Project>
     <Project Name="GDX.Editor.Tests.EditMode">
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX.Editor.Tests\EditMode\DomainReloadTests.cs" Offset="2644-2649" Line="67" Message="Method 'Setup' is never used" />

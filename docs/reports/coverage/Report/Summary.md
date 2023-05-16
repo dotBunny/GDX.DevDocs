@@ -1,28 +1,28 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-16 - 2:29:10 PM |
-| Parser: | MultiReportParser (509x OpenCoverParser) |
+| Generated on: | 2023-05-16 - 4:47:14 PM |
+| Parser: | MultiReportParser (679x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 116 |
 | Files: | 112 |
-| Covered lines: | 4372 |
-| Uncovered lines: | 5881 |
+| Covered lines: | 5391 |
+| Uncovered lines: | 4862 |
 | Coverable lines: | 10253 |
 | Total lines: | 24768 |
-| Line coverage: | 42.6% (4372 of 10253) |
+| Line coverage: | 52.5% (5391 of 10253) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 449 |
+| Covered methods: | 509 |
 | Total methods: | 1100 |
-| Method coverage: | 40.8% (449 of 1100) |
+| Method coverage: | 46.2% (509 of 1100) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**4372**|**5881**|**10253**|**29712**|**42.6%**|**0**|**0**|****|**449**|**1100**|**40.8%**|
+|**GDX**|**5391**|**4862**|**10253**|**29712**|**52.5%**|**0**|**0**|****|**509**|**1100**|**46.2%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
-|GDX.ArrayExtensions|0|93|93|225|0%|0|0||0|10|0%|
+|GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
 |GDX.ByteExtensions|34|0|34|77|100%|0|0||2|2|100%|
 |GDX.CameraExtensions|0|23|23|78|0%|0|0||0|2|0%|
@@ -57,7 +57,7 @@
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
 |GDX.Collections.Pooling.ManagedPools|28|50|78|221|35.8%|0|0||6|12|50%|
 |GDX.Collections.Pooling.SimpleListManagedPool|81|105|186|428|43.5%|0|0||7|14|50%|
-|GDX.Collections.SparseSet|365|695|1060|1825|34.4%|0|0||25|51|49%|
+|GDX.Collections.SparseSet|1001|59|1060|1825|94.4%|0|0||49|51|96%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1236|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1236|0%|0|0||0|2|0%|
 |GDX.Config|29|0|29|235|100%|0|0||1|1|100%|
@@ -86,15 +86,15 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|56|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|86|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|88|54|142|384|61.9%|0|0||8|10|80%|
+|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|223|90.2%|0|0||3|3|100%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|55|0|55|148|100%|0|0||10|10|100%|
 |GDX.Developer.TransientReference|42|21|63|185|66.6%|0|0||10|12|83.3%|
 |GDX.Display|0|12|12|85|0%|0|0||0|4|0%|
-|GDX.EnumExtensions|0|14|14|54|0%|0|0||0|2|0%|
+|GDX.EnumExtensions|14|0|14|54|100%|0|0||2|2|100%|
 |GDX.GameObjectExtensions|0|18|18|121|0%|0|0||0|2|0%|
-|GDX.IListExtensions|0|84|84|220|0%|0|0||0|9|0%|
+|GDX.IListExtensions|67|17|84|220|79.7%|0|0||7|9|77.7%|
 |GDX.IO.CoalesceStream|47|79|126|314|37.3%|0|0||11|19|57.8%|
 |GDX.IO.Compression.TarFile|0|63|63|131|0%|0|0||0|2|0%|
 |GDX.Jobs.ParallelFor.Color32CompareJob|0|13|13|54|0%|0|0||0|1|0%|
@@ -118,11 +118,11 @@
 |GDX.ObjectExtensions|0|9|9|38|0%|0|0||0|1|0%|
 |GDX.Platform|42|62|104|273|40.3%|0|0||6|11|54.5%|
 |GDX.PlayerLoopSystemExtensions|94|77|171|360|54.9%|0|0||7|10|70%|
-|GDX.Reflection|86|26|112|263|76.7%|0|0||7|9|77.7%|
+|GDX.Reflection|112|0|112|263|100%|0|0||9|9|100%|
 |GDX.Rendering.ShaderProvider|18|0|18|70|100%|0|0||4|4|100%|
 |GDX.RigidbodyExtensions|0|4|4|39|0%|0|0||0|1|0%|
 |GDX.SegmentedString|128|0|128|276|100%|0|0||11|11|100%|
-|GDX.SimpleListExtensions|0|219|219|543|0%|0|0||0|21|0%|
+|GDX.SimpleListExtensions|157|62|219|543|71.6%|0|0||15|21|71.4%|
 |GDX.SimpleTable|0|830|830|1350|0%|0|0||0|187|0%|
 |GDX.Space|0|55|55|134|0%|0|0||0|4|0%|
 |GDX.StringExtensions|264|0|264|739|100%|0|0||22|22|100%|
@@ -133,6 +133,6 @@
 |GDX.Threading.WaitFor|15|0|15|79|100%|0|0||2|2|100%|
 |GDX.Threading.WaitWhile|15|0|15|44|100%|0|0||2|2|100%|
 |GDX.Trace|11|18|29|152|37.9%|0|0||1|1|100%|
-|GDX.TransformExtensions|36|18|54|149|66.6%|0|0||3|4|75%|
+|GDX.TransformExtensions|52|2|54|149|96.2%|0|0||4|4|100%|
 |GDX.Vector2Extensions|50|0|50|152|100%|0|0||5|5|100%|
 |GDX.Vector3Extensions|68|0|68|197|100%|0|0||7|7|100%|
