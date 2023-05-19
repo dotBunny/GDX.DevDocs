@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-19 - 11:59:41 AM |
+| Generated on: | 2023-05-19 - 3:11:00 PM |
 | Parser: | MultiReportParser (679x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 148 |
@@ -9,7 +9,7 @@
 | Covered lines: | 5391 |
 | Uncovered lines: | 5699 |
 | Coverable lines: | 11090 |
-| Total lines: | 26498 |
+| Total lines: | 26521 |
 | Line coverage: | 48.6% (5391 of 11090) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5391**|**5699**|**11090**|**31442**|**48.6%**|**0**|**0**|****|**509**|**1196**|**42.5%**|
+|**GDX**|**5391**|**5699**|**11090**|**31465**|**48.6%**|**0**|**0**|****|**509**|**1196**|**42.5%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
@@ -157,7 +157,7 @@
 |GDX.Tables.CellValues.Vector3CellValue|0|26|26|51|0%|0|0||0|4|0%|
 |GDX.Tables.CellValues.Vector3IntCellValue|0|26|26|51|0%|0|0||0|4|0%|
 |GDX.Tables.CellValues.Vector4CellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.StableTable|0|786|786|1260|0%|0|0||0|135|0%|
+|GDX.Tables.StableTable|0|786|786|1283|0%|0|0||0|135|0%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|
 |GDX.Threading.TaskDirector|213|0|213|465|100%|0|0||15|15|100%|
 |GDX.Threading.TaskDirectorSystem|49|0|49|154|100%|0|0||7|7|100%|
