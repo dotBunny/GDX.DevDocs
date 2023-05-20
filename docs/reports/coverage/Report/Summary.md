@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-19 - 3:11:00 PM |
+| Generated on: | 2023-05-20 - 7:06:39 PM |
 | Parser: | MultiReportParser (679x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 148 |
 | Files: | 144 |
 | Covered lines: | 5391 |
-| Uncovered lines: | 5699 |
-| Coverable lines: | 11090 |
-| Total lines: | 26521 |
-| Line coverage: | 48.6% (5391 of 11090) |
+| Uncovered lines: | 5714 |
+| Coverable lines: | 11105 |
+| Total lines: | 26553 |
+| Line coverage: | 48.5% (5391 of 11105) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 509 |
-| Total methods: | 1196 |
-| Method coverage: | 42.5% (509 of 1196) |
+| Total methods: | 1202 |
+| Method coverage: | 42.3% (509 of 1202) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5391**|**5699**|**11090**|**31465**|**48.6%**|**0**|**0**|****|**509**|**1196**|**42.5%**|
+|**GDX**|**5391**|**5714**|**11105**|**31497**|**48.5%**|**0**|**0**|****|**509**|**1202**|**42.3%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
@@ -98,7 +98,7 @@
 |GDX.IListExtensions|67|17|84|220|79.7%|0|0||7|9|77.7%|
 |GDX.IO.CoalesceStream|47|79|126|314|37.3%|0|0||11|19|57.8%|
 |GDX.IO.Compression.TarFile|0|63|63|131|0%|0|0||0|2|0%|
-|GDX.ITableExtensions|0|87|87|188|0%|0|0||0|29|0%|
+|GDX.ITableExtensions|0|87|87|187|0%|0|0||0|29|0%|
 |GDX.Jobs.ParallelFor.Color32CompareJob|0|13|13|54|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.Color32MatchJob|0|9|9|53|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.ColorCompareJob|0|13|13|51|0%|0|0||0|1|0%|
@@ -157,7 +157,7 @@
 |GDX.Tables.CellValues.Vector3CellValue|0|26|26|51|0%|0|0||0|4|0%|
 |GDX.Tables.CellValues.Vector3IntCellValue|0|26|26|51|0%|0|0||0|4|0%|
 |GDX.Tables.CellValues.Vector4CellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.StableTable|0|786|786|1283|0%|0|0||0|135|0%|
+|GDX.Tables.StableTable|0|801|801|1316|0%|0|0||0|141|0%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|
 |GDX.Threading.TaskDirector|213|0|213|465|100%|0|0||15|15|100%|
 |GDX.Threading.TaskDirectorSystem|49|0|49|154|100%|0|0||7|7|100%|
