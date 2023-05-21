@@ -121,7 +121,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_AddColumn_GDX_Serializable_SerializableTypes_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.AddColumn(GDX.Serializable.SerializableTypes%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L379">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L444">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_AddColumn_" data-uid="GDX.Tables.StableTable.AddColumn*"></a>
   <h4 id="GDX_Tables_StableTable_AddColumn_GDX_Serializable_SerializableTypes_System_String_System_Int32_" data-uid="GDX.Tables.StableTable.AddColumn(GDX.Serializable.SerializableTypes,System.String,System.Int32)">AddColumn(Serializable.SerializableTypes, String, Int32)</h4>
@@ -129,7 +129,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public int AddColumn(Serializable.SerializableTypes columnType, string columnName, int insertAt = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddColumn(Serializable.SerializableTypes columnType, string columnName, int insertAtColumnID = -1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -153,7 +153,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">insertAt</span></td>
+        <td><span class="parametername">insertAtColumnID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -178,7 +178,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_AddRow_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.AddRow(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L165">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L175">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_AddRow_" data-uid="GDX.Tables.StableTable.AddRow*"></a>
   <h4 id="GDX_Tables_StableTable_AddRow_System_String_System_Int32_" data-uid="GDX.Tables.StableTable.AddRow(System.String,System.Int32)">AddRow(String, Int32)</h4>
@@ -186,7 +186,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddRow(string rowName = null, int insertAt = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">public int AddRow(string rowName = null, int insertAtRowID = -1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -205,7 +205,69 @@ public class StableTable : ScriptableObject, ITable</code></pre>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">insertAt</span></td>
+        <td><span class="parametername">insertAtRowID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_AddRows_System_Int32_System_Int32____System_String___System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.AddRows(System.Int32%2CSystem.Int32%5B%5D%40%2CSystem.String%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L325">View Source</a>
+  </span>
+  <a id="GDX_Tables_StableTable_AddRows_" data-uid="GDX.Tables.StableTable.AddRows*"></a>
+  <h4 id="GDX_Tables_StableTable_AddRows_System_Int32_System_Int32____System_String___System_Int32_" data-uid="GDX.Tables.StableTable.AddRows(System.Int32,System.Int32[]@,System.String[],System.Int32)">AddRows(Int32, ref Int32[], String[], Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddRows(int numberOfNewRows, ref int[] rowIDs, string[] rowNames = null, int insertAtRowID = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numberOfNewRows</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span>[]</td>
+        <td><span class="parametername">rowIDs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">rowNames</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">insertAtRowID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -215,7 +277,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_AddRows_System_Int32_System_String___System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.AddRows(System.Int32%2CSystem.String%5B%5D%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L232">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L243">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_AddRows_" data-uid="GDX.Tables.StableTable.AddRows*"></a>
   <h4 id="GDX_Tables_StableTable_AddRows_System_Int32_System_String___System_Int32_" data-uid="GDX.Tables.StableTable.AddRows(System.Int32,System.String[],System.Int32)">AddRows(Int32, String[], Int32)</h4>
@@ -223,7 +285,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void AddRows(int numberOfNewRows, string[] rowNames = null, int insertAt = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">public void AddRows(int numberOfNewRows, string[] rowNames = null, int insertAtRowID = -1)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -247,7 +309,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">insertAt</span></td>
+        <td><span class="parametername">insertAtRowID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -257,7 +319,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetAllColumnDescriptions.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetAllColumnDescriptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L128">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L126">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetAllColumnDescriptions_" data-uid="GDX.Tables.StableTable.GetAllColumnDescriptions*"></a>
   <h4 id="GDX_Tables_StableTable_GetAllColumnDescriptions" data-uid="GDX.Tables.StableTable.GetAllColumnDescriptions">GetAllColumnDescriptions()</h4>
@@ -288,7 +350,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetAllRowDescriptions.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetAllRowDescriptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L98">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L96">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetAllRowDescriptions_" data-uid="GDX.Tables.StableTable.GetAllRowDescriptions*"></a>
   <h4 id="GDX_Tables_StableTable_GetAllRowDescriptions" data-uid="GDX.Tables.StableTable.GetAllRowDescriptions">GetAllRowDescriptions()</h4>
@@ -318,7 +380,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetAnimationCurve_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetAnimationCurve(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L826">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L890">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetAnimationCurve_" data-uid="GDX.Tables.StableTable.GetAnimationCurve*"></a>
   <h4 id="GDX_Tables_StableTable_GetAnimationCurve_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetAnimationCurve(System.Int32,System.Int32)">GetAnimationCurve(Int32, Int32)</h4>
@@ -370,7 +432,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetAnimationCurveColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetAnimationCurveColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1120">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1184">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetAnimationCurveColumn_" data-uid="GDX.Tables.StableTable.GetAnimationCurveColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetAnimationCurveColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetAnimationCurveColumn(System.Int32)">GetAnimationCurveColumn(Int32)</h4>
@@ -417,7 +479,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetAnimationCurveRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetAnimationCurveRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L973">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1037">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetAnimationCurveRef_" data-uid="GDX.Tables.StableTable.GetAnimationCurveRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetAnimationCurveRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetAnimationCurveRef(System.Int32,System.Int32)">GetAnimationCurveRef(Int32, Int32)</h4>
@@ -469,7 +531,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBool_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBool(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L696">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L760">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBool_" data-uid="GDX.Tables.StableTable.GetBool*"></a>
   <h4 id="GDX_Tables_StableTable_GetBool_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetBool(System.Int32,System.Int32)">GetBool(Int32, Int32)</h4>
@@ -521,7 +583,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBoolColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBoolColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L990">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1054">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBoolColumn_" data-uid="GDX.Tables.StableTable.GetBoolColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetBoolColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetBoolColumn(System.Int32)">GetBoolColumn(Int32)</h4>
@@ -568,7 +630,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBoolRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBoolRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L843">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L907">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBoolRef_" data-uid="GDX.Tables.StableTable.GetBoolRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetBoolRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetBoolRef(System.Int32,System.Int32)">GetBoolRef(Int32, Int32)</h4>
@@ -620,7 +682,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBounds_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBounds(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L806">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L870">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBounds_" data-uid="GDX.Tables.StableTable.GetBounds*"></a>
   <h4 id="GDX_Tables_StableTable_GetBounds_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetBounds(System.Int32,System.Int32)">GetBounds(Int32, Int32)</h4>
@@ -672,7 +734,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBoundsColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBoundsColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1100">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1164">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBoundsColumn_" data-uid="GDX.Tables.StableTable.GetBoundsColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetBoundsColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetBoundsColumn(System.Int32)">GetBoundsColumn(Int32)</h4>
@@ -719,7 +781,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBoundsInt_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBoundsInt(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L811">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L875">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBoundsInt_" data-uid="GDX.Tables.StableTable.GetBoundsInt*"></a>
   <h4 id="GDX_Tables_StableTable_GetBoundsInt_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetBoundsInt(System.Int32,System.Int32)">GetBoundsInt(Int32, Int32)</h4>
@@ -771,7 +833,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBoundsIntColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBoundsIntColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1105">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1169">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBoundsIntColumn_" data-uid="GDX.Tables.StableTable.GetBoundsIntColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetBoundsIntColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetBoundsIntColumn(System.Int32)">GetBoundsIntColumn(Int32)</h4>
@@ -818,7 +880,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBoundsIntRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBoundsIntRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L958">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1022">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBoundsIntRef_" data-uid="GDX.Tables.StableTable.GetBoundsIntRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetBoundsIntRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetBoundsIntRef(System.Int32,System.Int32)">GetBoundsIntRef(Int32, Int32)</h4>
@@ -870,7 +932,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetBoundsRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetBoundsRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L953">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1017">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetBoundsRef_" data-uid="GDX.Tables.StableTable.GetBoundsRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetBoundsRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetBoundsRef(System.Int32,System.Int32)">GetBoundsRef(Int32, Int32)</h4>
@@ -922,7 +984,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetByte_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetByte(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L711">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L775">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetByte_" data-uid="GDX.Tables.StableTable.GetByte*"></a>
   <h4 id="GDX_Tables_StableTable_GetByte_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetByte(System.Int32,System.Int32)">GetByte(Int32, Int32)</h4>
@@ -974,7 +1036,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetByteColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetByteColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1005">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1069">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetByteColumn_" data-uid="GDX.Tables.StableTable.GetByteColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetByteColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetByteColumn(System.Int32)">GetByteColumn(Int32)</h4>
@@ -1021,7 +1083,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetByteRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetByteRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L858">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L922">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetByteRef_" data-uid="GDX.Tables.StableTable.GetByteRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetByteRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetByteRef(System.Int32,System.Int32)">GetByteRef(Int32, Int32)</h4>
@@ -1073,7 +1135,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetChar_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetChar(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L701">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L765">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetChar_" data-uid="GDX.Tables.StableTable.GetChar*"></a>
   <h4 id="GDX_Tables_StableTable_GetChar_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetChar(System.Int32,System.Int32)">GetChar(Int32, Int32)</h4>
@@ -1125,7 +1187,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetCharColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetCharColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L995">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1059">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetCharColumn_" data-uid="GDX.Tables.StableTable.GetCharColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetCharColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetCharColumn(System.Int32)">GetCharColumn(Int32)</h4>
@@ -1172,7 +1234,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetCharRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetCharRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L848">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L912">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetCharRef_" data-uid="GDX.Tables.StableTable.GetCharRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetCharRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetCharRef(System.Int32,System.Int32)">GetCharRef(Int32, Int32)</h4>
@@ -1224,7 +1286,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColor_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColor(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L796">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L860">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetColor_" data-uid="GDX.Tables.StableTable.GetColor*"></a>
   <h4 id="GDX_Tables_StableTable_GetColor_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetColor(System.Int32,System.Int32)">GetColor(Int32, Int32)</h4>
@@ -1276,7 +1338,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColorColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColorColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1090">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1154">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetColorColumn_" data-uid="GDX.Tables.StableTable.GetColorColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetColorColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetColorColumn(System.Int32)">GetColorColumn(Int32)</h4>
@@ -1323,7 +1385,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColorRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColorRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L943">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1007">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetColorRef_" data-uid="GDX.Tables.StableTable.GetColorRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetColorRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetColorRef(System.Int32,System.Int32)">GetColorRef(Int32, Int32)</h4>
@@ -1375,7 +1437,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColumnCount.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColumnCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L87">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L85">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetColumnCount_" data-uid="GDX.Tables.StableTable.GetColumnCount*"></a>
   <h4 id="GDX_Tables_StableTable_GetColumnCount" data-uid="GDX.Tables.StableTable.GetColumnCount">GetColumnCount()</h4>
@@ -1407,7 +1469,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColumnDescription_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColumnDescription(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L122">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L120">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetColumnDescription_" data-uid="GDX.Tables.StableTable.GetColumnDescription*"></a>
   <h4 id="GDX_Tables_StableTable_GetColumnDescription_System_Int32_" data-uid="GDX.Tables.StableTable.GetColumnDescription(System.Int32)">GetColumnDescription(Int32)</h4>
@@ -1454,7 +1516,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColumnDescription_System_String_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColumnDescription(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L117">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L115">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetColumnDescription_" data-uid="GDX.Tables.StableTable.GetColumnDescription*"></a>
   <h4 id="GDX_Tables_StableTable_GetColumnDescription_System_String_" data-uid="GDX.Tables.StableTable.GetColumnDescription(System.String)">GetColumnDescription(String)</h4>
@@ -1498,10 +1560,104 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColumnName_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColumnName(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L162">View Source</a>
+  </span>
+  <a id="GDX_Tables_StableTable_GetColumnName_" data-uid="GDX.Tables.StableTable.GetColumnName*"></a>
+  <h4 id="GDX_Tables_StableTable_GetColumnName_System_Int32_" data-uid="GDX.Tables.StableTable.GetColumnName(System.Int32)">GetColumnName(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetColumnName(int columnID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColumnNameRef_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColumnNameRef(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L168">View Source</a>
+  </span>
+  <a id="GDX_Tables_StableTable_GetColumnNameRef_" data-uid="GDX.Tables.StableTable.GetColumnNameRef*"></a>
+  <h4 id="GDX_Tables_StableTable_GetColumnNameRef_System_Int32_" data-uid="GDX.Tables.StableTable.GetColumnNameRef(System.Int32)">GetColumnNameRef(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ref string GetColumnNameRef(int columnID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetDataVersion.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetDataVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L81">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L79">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetDataVersion_" data-uid="GDX.Tables.StableTable.GetDataVersion*"></a>
   <h4 id="GDX_Tables_StableTable_GetDataVersion" data-uid="GDX.Tables.StableTable.GetDataVersion">GetDataVersion()</h4>
@@ -1531,7 +1687,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetDouble_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetDouble(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L751">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L815">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetDouble_" data-uid="GDX.Tables.StableTable.GetDouble*"></a>
   <h4 id="GDX_Tables_StableTable_GetDouble_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetDouble(System.Int32,System.Int32)">GetDouble(Int32, Int32)</h4>
@@ -1583,7 +1739,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetDoubleColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetDoubleColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1045">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1109">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetDoubleColumn_" data-uid="GDX.Tables.StableTable.GetDoubleColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetDoubleColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetDoubleColumn(System.Int32)">GetDoubleColumn(Int32)</h4>
@@ -1630,7 +1786,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetDoubleRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetDoubleRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L898">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L962">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetDoubleRef_" data-uid="GDX.Tables.StableTable.GetDoubleRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetDoubleRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetDoubleRef(System.Int32,System.Int32)">GetDoubleRef(Int32, Int32)</h4>
@@ -1682,7 +1838,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetFloat_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetFloat(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L746">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L810">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetFloat_" data-uid="GDX.Tables.StableTable.GetFloat*"></a>
   <h4 id="GDX_Tables_StableTable_GetFloat_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetFloat(System.Int32,System.Int32)">GetFloat(Int32, Int32)</h4>
@@ -1734,7 +1890,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetFloatColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetFloatColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1040">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1104">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetFloatColumn_" data-uid="GDX.Tables.StableTable.GetFloatColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetFloatColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetFloatColumn(System.Int32)">GetFloatColumn(Int32)</h4>
@@ -1781,7 +1937,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetFloatRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetFloatRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L893">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L957">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetFloatRef_" data-uid="GDX.Tables.StableTable.GetFloatRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetFloatRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetFloatRef(System.Int32,System.Int32)">GetFloatRef(Int32, Int32)</h4>
@@ -1833,7 +1989,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetGradient_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetGradient(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L821">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L885">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetGradient_" data-uid="GDX.Tables.StableTable.GetGradient*"></a>
   <h4 id="GDX_Tables_StableTable_GetGradient_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetGradient(System.Int32,System.Int32)">GetGradient(Int32, Int32)</h4>
@@ -1885,7 +2041,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetGradientColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetGradientColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1115">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1179">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetGradientColumn_" data-uid="GDX.Tables.StableTable.GetGradientColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetGradientColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetGradientColumn(System.Int32)">GetGradientColumn(Int32)</h4>
@@ -1932,7 +2088,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetGradientRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetGradientRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L968">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1032">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetGradientRef_" data-uid="GDX.Tables.StableTable.GetGradientRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetGradientRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetGradientRef(System.Int32,System.Int32)">GetGradientRef(Int32, Int32)</h4>
@@ -1984,7 +2140,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetHash128_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetHash128(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L816">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L880">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetHash128_" data-uid="GDX.Tables.StableTable.GetHash128*"></a>
   <h4 id="GDX_Tables_StableTable_GetHash128_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetHash128(System.Int32,System.Int32)">GetHash128(Int32, Int32)</h4>
@@ -2036,7 +2192,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetHash128Column_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetHash128Column(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1110">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1174">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetHash128Column_" data-uid="GDX.Tables.StableTable.GetHash128Column*"></a>
   <h4 id="GDX_Tables_StableTable_GetHash128Column_System_Int32_" data-uid="GDX.Tables.StableTable.GetHash128Column(System.Int32)">GetHash128Column(Int32)</h4>
@@ -2083,7 +2239,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetHash128Ref_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetHash128Ref(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L963">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1027">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetHash128Ref_" data-uid="GDX.Tables.StableTable.GetHash128Ref*"></a>
   <h4 id="GDX_Tables_StableTable_GetHash128Ref_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetHash128Ref(System.Int32,System.Int32)">GetHash128Ref(Int32, Int32)</h4>
@@ -2135,7 +2291,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetInt_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetInt(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L726">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L790">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetInt_" data-uid="GDX.Tables.StableTable.GetInt*"></a>
   <h4 id="GDX_Tables_StableTable_GetInt_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetInt(System.Int32,System.Int32)">GetInt(Int32, Int32)</h4>
@@ -2187,7 +2343,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetIntColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetIntColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1020">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1084">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetIntColumn_" data-uid="GDX.Tables.StableTable.GetIntColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetIntColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetIntColumn(System.Int32)">GetIntColumn(Int32)</h4>
@@ -2234,7 +2390,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetIntRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetIntRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L873">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L937">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetIntRef_" data-uid="GDX.Tables.StableTable.GetIntRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetIntRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetIntRef(System.Int32,System.Int32)">GetIntRef(Int32, Int32)</h4>
@@ -2286,7 +2442,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetLayerMask_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetLayerMask(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L801">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L865">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetLayerMask_" data-uid="GDX.Tables.StableTable.GetLayerMask*"></a>
   <h4 id="GDX_Tables_StableTable_GetLayerMask_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetLayerMask(System.Int32,System.Int32)">GetLayerMask(Int32, Int32)</h4>
@@ -2338,7 +2494,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetLayerMaskColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetLayerMaskColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1095">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1159">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetLayerMaskColumn_" data-uid="GDX.Tables.StableTable.GetLayerMaskColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetLayerMaskColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetLayerMaskColumn(System.Int32)">GetLayerMaskColumn(Int32)</h4>
@@ -2385,7 +2541,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetLayerMaskRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetLayerMaskRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L948">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1012">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetLayerMaskRef_" data-uid="GDX.Tables.StableTable.GetLayerMaskRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetLayerMaskRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetLayerMaskRef(System.Int32,System.Int32)">GetLayerMaskRef(Int32, Int32)</h4>
@@ -2437,7 +2593,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetLong_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetLong(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L736">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L800">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetLong_" data-uid="GDX.Tables.StableTable.GetLong*"></a>
   <h4 id="GDX_Tables_StableTable_GetLong_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetLong(System.Int32,System.Int32)">GetLong(Int32, Int32)</h4>
@@ -2489,7 +2645,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetLongColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetLongColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1030">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1094">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetLongColumn_" data-uid="GDX.Tables.StableTable.GetLongColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetLongColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetLongColumn(System.Int32)">GetLongColumn(Int32)</h4>
@@ -2536,7 +2692,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetLongRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetLongRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L883">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L947">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetLongRef_" data-uid="GDX.Tables.StableTable.GetLongRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetLongRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetLongRef(System.Int32,System.Int32)">GetLongRef(Int32, Int32)</h4>
@@ -2588,7 +2744,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetObject_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetObject(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L831">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L895">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetObject_" data-uid="GDX.Tables.StableTable.GetObject*"></a>
   <h4 id="GDX_Tables_StableTable_GetObject_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetObject(System.Int32,System.Int32)">GetObject(Int32, Int32)</h4>
@@ -2640,7 +2796,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetObjectColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetObjectColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1125">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1189">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetObjectColumn_" data-uid="GDX.Tables.StableTable.GetObjectColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetObjectColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetObjectColumn(System.Int32)">GetObjectColumn(Int32)</h4>
@@ -2687,7 +2843,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetObjectRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetObjectRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L978">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1042">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetObjectRef_" data-uid="GDX.Tables.StableTable.GetObjectRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetObjectRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetObjectRef(System.Int32,System.Int32)">GetObjectRef(Int32, Int32)</h4>
@@ -2739,7 +2895,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetQuaternion_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetQuaternion(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L781">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L845">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetQuaternion_" data-uid="GDX.Tables.StableTable.GetQuaternion*"></a>
   <h4 id="GDX_Tables_StableTable_GetQuaternion_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetQuaternion(System.Int32,System.Int32)">GetQuaternion(Int32, Int32)</h4>
@@ -2791,7 +2947,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetQuaternionColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetQuaternionColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1075">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1139">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetQuaternionColumn_" data-uid="GDX.Tables.StableTable.GetQuaternionColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetQuaternionColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetQuaternionColumn(System.Int32)">GetQuaternionColumn(Int32)</h4>
@@ -2838,7 +2994,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetQuaternionRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetQuaternionRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L928">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L992">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetQuaternionRef_" data-uid="GDX.Tables.StableTable.GetQuaternionRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetQuaternionRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetQuaternionRef(System.Int32,System.Int32)">GetQuaternionRef(Int32, Int32)</h4>
@@ -2890,7 +3046,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRect_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRect(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L786">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L850">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRect_" data-uid="GDX.Tables.StableTable.GetRect*"></a>
   <h4 id="GDX_Tables_StableTable_GetRect_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetRect(System.Int32,System.Int32)">GetRect(Int32, Int32)</h4>
@@ -2942,7 +3098,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRectColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRectColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1080">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1144">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRectColumn_" data-uid="GDX.Tables.StableTable.GetRectColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetRectColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetRectColumn(System.Int32)">GetRectColumn(Int32)</h4>
@@ -2989,7 +3145,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRectInt_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRectInt(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L791">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L855">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRectInt_" data-uid="GDX.Tables.StableTable.GetRectInt*"></a>
   <h4 id="GDX_Tables_StableTable_GetRectInt_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetRectInt(System.Int32,System.Int32)">GetRectInt(Int32, Int32)</h4>
@@ -3041,7 +3197,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRectIntColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRectIntColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1085">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1149">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRectIntColumn_" data-uid="GDX.Tables.StableTable.GetRectIntColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetRectIntColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetRectIntColumn(System.Int32)">GetRectIntColumn(Int32)</h4>
@@ -3088,7 +3244,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRectIntRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRectIntRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L938">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1002">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRectIntRef_" data-uid="GDX.Tables.StableTable.GetRectIntRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetRectIntRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetRectIntRef(System.Int32,System.Int32)">GetRectIntRef(Int32, Int32)</h4>
@@ -3140,7 +3296,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRectRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRectRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L933">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L997">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRectRef_" data-uid="GDX.Tables.StableTable.GetRectRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetRectRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetRectRef(System.Int32,System.Int32)">GetRectRef(Int32, Int32)</h4>
@@ -3192,7 +3348,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRowCount.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRowCount%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L93">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L91">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRowCount_" data-uid="GDX.Tables.StableTable.GetRowCount*"></a>
   <h4 id="GDX_Tables_StableTable_GetRowCount" data-uid="GDX.Tables.StableTable.GetRowCount">GetRowCount()</h4>
@@ -3224,7 +3380,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRowDescription_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRowDescription(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L112">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L110">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRowDescription_" data-uid="GDX.Tables.StableTable.GetRowDescription*"></a>
   <h4 id="GDX_Tables_StableTable_GetRowDescription_System_Int32_" data-uid="GDX.Tables.StableTable.GetRowDescription(System.Int32)">GetRowDescription(Int32)</h4>
@@ -3271,7 +3427,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRowDescription_System_String_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRowDescription(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L107">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L105">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetRowDescription_" data-uid="GDX.Tables.StableTable.GetRowDescription*"></a>
   <h4 id="GDX_Tables_StableTable_GetRowDescription_System_String_" data-uid="GDX.Tables.StableTable.GetRowDescription(System.String)">GetRowDescription(String)</h4>
@@ -3318,7 +3474,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetSByte_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetSByte(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L706">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L770">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetSByte_" data-uid="GDX.Tables.StableTable.GetSByte*"></a>
   <h4 id="GDX_Tables_StableTable_GetSByte_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetSByte(System.Int32,System.Int32)">GetSByte(Int32, Int32)</h4>
@@ -3370,7 +3526,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetSbyteColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetSbyteColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1000">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1064">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetSbyteColumn_" data-uid="GDX.Tables.StableTable.GetSbyteColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetSbyteColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetSbyteColumn(System.Int32)">GetSbyteColumn(Int32)</h4>
@@ -3417,7 +3573,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetSbyteRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetSbyteRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L853">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L917">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetSbyteRef_" data-uid="GDX.Tables.StableTable.GetSbyteRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetSbyteRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetSbyteRef(System.Int32,System.Int32)">GetSbyteRef(Int32, Int32)</h4>
@@ -3469,7 +3625,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetShort_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetShort(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L716">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L780">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetShort_" data-uid="GDX.Tables.StableTable.GetShort*"></a>
   <h4 id="GDX_Tables_StableTable_GetShort_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetShort(System.Int32,System.Int32)">GetShort(Int32, Int32)</h4>
@@ -3521,7 +3677,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetShortColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetShortColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1010">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1074">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetShortColumn_" data-uid="GDX.Tables.StableTable.GetShortColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetShortColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetShortColumn(System.Int32)">GetShortColumn(Int32)</h4>
@@ -3568,7 +3724,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetShortRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetShortRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L863">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L927">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetShortRef_" data-uid="GDX.Tables.StableTable.GetShortRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetShortRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetShortRef(System.Int32,System.Int32)">GetShortRef(Int32, Int32)</h4>
@@ -3620,7 +3776,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetString_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetString(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L691">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L755">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetString_" data-uid="GDX.Tables.StableTable.GetString*"></a>
   <h4 id="GDX_Tables_StableTable_GetString_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetString(System.Int32,System.Int32)">GetString(Int32, Int32)</h4>
@@ -3672,7 +3828,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetStringColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetStringColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L985">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1049">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetStringColumn_" data-uid="GDX.Tables.StableTable.GetStringColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetStringColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetStringColumn(System.Int32)">GetStringColumn(Int32)</h4>
@@ -3719,7 +3875,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetStringRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetStringRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L838">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L902">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetStringRef_" data-uid="GDX.Tables.StableTable.GetStringRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetStringRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetStringRef(System.Int32,System.Int32)">GetStringRef(Int32, Int32)</h4>
@@ -3771,7 +3927,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetUInt_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetUInt(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L731">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L795">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetUInt_" data-uid="GDX.Tables.StableTable.GetUInt*"></a>
   <h4 id="GDX_Tables_StableTable_GetUInt_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetUInt(System.Int32,System.Int32)">GetUInt(Int32, Int32)</h4>
@@ -3823,7 +3979,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetUintColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetUintColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1025">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1089">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetUintColumn_" data-uid="GDX.Tables.StableTable.GetUintColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetUintColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetUintColumn(System.Int32)">GetUintColumn(Int32)</h4>
@@ -3870,7 +4026,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetUintRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetUintRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L878">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L942">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetUintRef_" data-uid="GDX.Tables.StableTable.GetUintRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetUintRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetUintRef(System.Int32,System.Int32)">GetUintRef(Int32, Int32)</h4>
@@ -3922,7 +4078,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetULong_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetULong(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L741">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L805">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetULong_" data-uid="GDX.Tables.StableTable.GetULong*"></a>
   <h4 id="GDX_Tables_StableTable_GetULong_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetULong(System.Int32,System.Int32)">GetULong(Int32, Int32)</h4>
@@ -3974,7 +4130,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetUlongColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetUlongColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1035">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1099">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetUlongColumn_" data-uid="GDX.Tables.StableTable.GetUlongColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetUlongColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetUlongColumn(System.Int32)">GetUlongColumn(Int32)</h4>
@@ -4021,7 +4177,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetUlongRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetUlongRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L888">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L952">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetUlongRef_" data-uid="GDX.Tables.StableTable.GetUlongRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetUlongRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetUlongRef(System.Int32,System.Int32)">GetUlongRef(Int32, Int32)</h4>
@@ -4073,7 +4229,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetUShort_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetUShort(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L721">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L785">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetUShort_" data-uid="GDX.Tables.StableTable.GetUShort*"></a>
   <h4 id="GDX_Tables_StableTable_GetUShort_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetUShort(System.Int32,System.Int32)">GetUShort(Int32, Int32)</h4>
@@ -4125,7 +4281,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetUshortColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetUshortColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1015">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1079">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetUshortColumn_" data-uid="GDX.Tables.StableTable.GetUshortColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetUshortColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetUshortColumn(System.Int32)">GetUshortColumn(Int32)</h4>
@@ -4172,7 +4328,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetUshortRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetUshortRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L868">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L932">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetUshortRef_" data-uid="GDX.Tables.StableTable.GetUshortRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetUshortRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetUshortRef(System.Int32,System.Int32)">GetUshortRef(Int32, Int32)</h4>
@@ -4224,7 +4380,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector2_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector2(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L756">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L820">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector2_" data-uid="GDX.Tables.StableTable.GetVector2*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector2_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector2(System.Int32,System.Int32)">GetVector2(Int32, Int32)</h4>
@@ -4276,7 +4432,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector2Column_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector2Column(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1050">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1114">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector2Column_" data-uid="GDX.Tables.StableTable.GetVector2Column*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector2Column_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector2Column(System.Int32)">GetVector2Column(Int32)</h4>
@@ -4323,7 +4479,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector2Int_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector2Int(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L771">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L835">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector2Int_" data-uid="GDX.Tables.StableTable.GetVector2Int*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector2Int_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector2Int(System.Int32,System.Int32)">GetVector2Int(Int32, Int32)</h4>
@@ -4375,7 +4531,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector2IntColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector2IntColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1065">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1129">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector2IntColumn_" data-uid="GDX.Tables.StableTable.GetVector2IntColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector2IntColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector2IntColumn(System.Int32)">GetVector2IntColumn(Int32)</h4>
@@ -4422,7 +4578,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector2IntRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector2IntRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L918">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L982">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector2IntRef_" data-uid="GDX.Tables.StableTable.GetVector2IntRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector2IntRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector2IntRef(System.Int32,System.Int32)">GetVector2IntRef(Int32, Int32)</h4>
@@ -4474,7 +4630,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector2Ref_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector2Ref(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L903">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L967">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector2Ref_" data-uid="GDX.Tables.StableTable.GetVector2Ref*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector2Ref_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector2Ref(System.Int32,System.Int32)">GetVector2Ref(Int32, Int32)</h4>
@@ -4526,7 +4682,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector3_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector3(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L761">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L825">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector3_" data-uid="GDX.Tables.StableTable.GetVector3*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector3_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector3(System.Int32,System.Int32)">GetVector3(Int32, Int32)</h4>
@@ -4578,7 +4734,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector3Column_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector3Column(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1055">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1119">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector3Column_" data-uid="GDX.Tables.StableTable.GetVector3Column*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector3Column_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector3Column(System.Int32)">GetVector3Column(Int32)</h4>
@@ -4625,7 +4781,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector3Int_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector3Int(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L776">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L840">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector3Int_" data-uid="GDX.Tables.StableTable.GetVector3Int*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector3Int_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector3Int(System.Int32,System.Int32)">GetVector3Int(Int32, Int32)</h4>
@@ -4677,7 +4833,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector3IntColumn_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector3IntColumn(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1070">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1134">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector3IntColumn_" data-uid="GDX.Tables.StableTable.GetVector3IntColumn*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector3IntColumn_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector3IntColumn(System.Int32)">GetVector3IntColumn(Int32)</h4>
@@ -4724,7 +4880,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector3IntRef_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector3IntRef(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L923">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L987">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector3IntRef_" data-uid="GDX.Tables.StableTable.GetVector3IntRef*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector3IntRef_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector3IntRef(System.Int32,System.Int32)">GetVector3IntRef(Int32, Int32)</h4>
@@ -4776,7 +4932,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector3Ref_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector3Ref(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L908">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L972">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector3Ref_" data-uid="GDX.Tables.StableTable.GetVector3Ref*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector3Ref_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector3Ref(System.Int32,System.Int32)">GetVector3Ref(Int32, Int32)</h4>
@@ -4828,7 +4984,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector4_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector4(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L766">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L830">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector4_" data-uid="GDX.Tables.StableTable.GetVector4*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector4_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector4(System.Int32,System.Int32)">GetVector4(Int32, Int32)</h4>
@@ -4880,7 +5036,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector4Column_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector4Column(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1060">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L1124">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector4Column_" data-uid="GDX.Tables.StableTable.GetVector4Column*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector4Column_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector4Column(System.Int32)">GetVector4Column(Int32)</h4>
@@ -4927,7 +5083,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetVector4Ref_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetVector4Ref(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L913">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L977">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetVector4Ref_" data-uid="GDX.Tables.StableTable.GetVector4Ref*"></a>
   <h4 id="GDX_Tables_StableTable_GetVector4Ref_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.GetVector4Ref(System.Int32,System.Int32)">GetVector4Ref(Int32, Int32)</h4>
@@ -4979,7 +5135,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_RemoveColumn_GDX_Serializable_SerializableTypes_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.RemoveColumn(GDX.Serializable.SerializableTypes%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L446">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L510">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_RemoveColumn_" data-uid="GDX.Tables.StableTable.RemoveColumn*"></a>
   <h4 id="GDX_Tables_StableTable_RemoveColumn_GDX_Serializable_SerializableTypes_System_Int32_" data-uid="GDX.Tables.StableTable.RemoveColumn(GDX.Serializable.SerializableTypes,System.Int32)">RemoveColumn(Serializable.SerializableTypes, Int32)</h4>
@@ -4987,7 +5143,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveColumn(Serializable.SerializableTypes columnType, int removeAt = -1)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RemoveColumn(Serializable.SerializableTypes columnType, int columnID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5006,7 +5162,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">removeAt</span></td>
+        <td><span class="parametername">columnID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -5016,7 +5172,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_RemoveRow_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.RemoveRow(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L289">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L408">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_RemoveRow_" data-uid="GDX.Tables.StableTable.RemoveRow*"></a>
   <h4 id="GDX_Tables_StableTable_RemoveRow_System_Int32_" data-uid="GDX.Tables.StableTable.RemoveRow(System.Int32)">RemoveRow(Int32)</h4>
@@ -5024,7 +5180,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveRow(int removeAt)</code></pre>
+    <pre><code class="lang-csharp hljs">public void RemoveRow(int rowID)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5038,44 +5194,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">removeAt</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_RemoveRows_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.RemoveRows(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L333">View Source</a>
-  </span>
-  <a id="GDX_Tables_StableTable_RemoveRows_" data-uid="GDX.Tables.StableTable.RemoveRows*"></a>
-  <h4 id="GDX_Tables_StableTable_RemoveRows_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.RemoveRows(System.Int32,System.Int32)">RemoveRows(Int32, Int32)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RemoveRows(int removeAt, int numberOfRowsToDelete)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">removeAt</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">numberOfRowsToDelete</span></td>
+        <td><span class="parametername">rowID</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -5085,7 +5204,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetAnimationCurve_System_Int32_System_Int32_UnityEngine_AnimationCurve_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetAnimationCurve(System.Int32%2CSystem.Int32%2CUnityEngine.AnimationCurve)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L680">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L744">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetAnimationCurve_" data-uid="GDX.Tables.StableTable.SetAnimationCurve*"></a>
   <h4 id="GDX_Tables_StableTable_SetAnimationCurve_System_Int32_System_Int32_UnityEngine_AnimationCurve_" data-uid="GDX.Tables.StableTable.SetAnimationCurve(System.Int32,System.Int32,UnityEngine.AnimationCurve)">SetAnimationCurve(Int32, Int32, AnimationCurve)</h4>
@@ -5142,7 +5261,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetBool_System_Int32_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetBool(System.Int32%2CSystem.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L550">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L614">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetBool_" data-uid="GDX.Tables.StableTable.SetBool*"></a>
   <h4 id="GDX_Tables_StableTable_SetBool_System_Int32_System_Int32_System_Boolean_" data-uid="GDX.Tables.StableTable.SetBool(System.Int32,System.Int32,System.Boolean)">SetBool(Int32, Int32, Boolean)</h4>
@@ -5199,7 +5318,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetBounds_System_Int32_System_Int32_UnityEngine_Bounds_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetBounds(System.Int32%2CSystem.Int32%2CUnityEngine.Bounds)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L660">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L724">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetBounds_" data-uid="GDX.Tables.StableTable.SetBounds*"></a>
   <h4 id="GDX_Tables_StableTable_SetBounds_System_Int32_System_Int32_UnityEngine_Bounds_" data-uid="GDX.Tables.StableTable.SetBounds(System.Int32,System.Int32,UnityEngine.Bounds)">SetBounds(Int32, Int32, Bounds)</h4>
@@ -5256,7 +5375,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetBoundsInt_System_Int32_System_Int32_UnityEngine_BoundsInt_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetBoundsInt(System.Int32%2CSystem.Int32%2CUnityEngine.BoundsInt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L665">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L729">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetBoundsInt_" data-uid="GDX.Tables.StableTable.SetBoundsInt*"></a>
   <h4 id="GDX_Tables_StableTable_SetBoundsInt_System_Int32_System_Int32_UnityEngine_BoundsInt_" data-uid="GDX.Tables.StableTable.SetBoundsInt(System.Int32,System.Int32,UnityEngine.BoundsInt)">SetBoundsInt(Int32, Int32, BoundsInt)</h4>
@@ -5313,7 +5432,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetByte_System_Int32_System_Int32_System_Byte_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetByte(System.Int32%2CSystem.Int32%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L565">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L629">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetByte_" data-uid="GDX.Tables.StableTable.SetByte*"></a>
   <h4 id="GDX_Tables_StableTable_SetByte_System_Int32_System_Int32_System_Byte_" data-uid="GDX.Tables.StableTable.SetByte(System.Int32,System.Int32,System.Byte)">SetByte(Int32, Int32, Byte)</h4>
@@ -5370,7 +5489,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetChar_System_Int32_System_Int32_System_Char_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetChar(System.Int32%2CSystem.Int32%2CSystem.Char)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L555">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L619">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetChar_" data-uid="GDX.Tables.StableTable.SetChar*"></a>
   <h4 id="GDX_Tables_StableTable_SetChar_System_Int32_System_Int32_System_Char_" data-uid="GDX.Tables.StableTable.SetChar(System.Int32,System.Int32,System.Char)">SetChar(Int32, Int32, Char)</h4>
@@ -5427,7 +5546,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetColor_System_Int32_System_Int32_UnityEngine_Color_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetColor(System.Int32%2CSystem.Int32%2CUnityEngine.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L650">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L714">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetColor_" data-uid="GDX.Tables.StableTable.SetColor*"></a>
   <h4 id="GDX_Tables_StableTable_SetColor_System_Int32_System_Int32_UnityEngine_Color_" data-uid="GDX.Tables.StableTable.SetColor(System.Int32,System.Int32,UnityEngine.Color)">SetColor(Int32, Int32, Color)</h4>
@@ -5481,10 +5600,47 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetColumnName_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetColumnName(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L156">View Source</a>
+  </span>
+  <a id="GDX_Tables_StableTable_SetColumnName_" data-uid="GDX.Tables.StableTable.SetColumnName*"></a>
+  <h4 id="GDX_Tables_StableTable_SetColumnName_System_Int32_System_String_" data-uid="GDX.Tables.StableTable.SetColumnName(System.Int32,System.String)">SetColumnName(Int32, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetColumnName(int columnID, string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">columnID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetColumnName_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetColumnName(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L155">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L148">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetColumnName_" data-uid="GDX.Tables.StableTable.SetColumnName*"></a>
   <h4 id="GDX_Tables_StableTable_SetColumnName_System_String_System_Int32_" data-uid="GDX.Tables.StableTable.SetColumnName(System.String,System.Int32)">SetColumnName(String, Int32)</h4>
@@ -5521,7 +5677,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetDouble_System_Int32_System_Int32_System_Double_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetDouble(System.Int32%2CSystem.Int32%2CSystem.Double)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L605">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L669">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetDouble_" data-uid="GDX.Tables.StableTable.SetDouble*"></a>
   <h4 id="GDX_Tables_StableTable_SetDouble_System_Int32_System_Int32_System_Double_" data-uid="GDX.Tables.StableTable.SetDouble(System.Int32,System.Int32,System.Double)">SetDouble(Int32, Int32, Double)</h4>
@@ -5578,7 +5734,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetFloat_System_Int32_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetFloat(System.Int32%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L600">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L664">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetFloat_" data-uid="GDX.Tables.StableTable.SetFloat*"></a>
   <h4 id="GDX_Tables_StableTable_SetFloat_System_Int32_System_Int32_System_Single_" data-uid="GDX.Tables.StableTable.SetFloat(System.Int32,System.Int32,System.Single)">SetFloat(Int32, Int32, Single)</h4>
@@ -5635,7 +5791,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetGradient_System_Int32_System_Int32_UnityEngine_Gradient_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetGradient(System.Int32%2CSystem.Int32%2CUnityEngine.Gradient)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L675">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L739">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetGradient_" data-uid="GDX.Tables.StableTable.SetGradient*"></a>
   <h4 id="GDX_Tables_StableTable_SetGradient_System_Int32_System_Int32_UnityEngine_Gradient_" data-uid="GDX.Tables.StableTable.SetGradient(System.Int32,System.Int32,UnityEngine.Gradient)">SetGradient(Int32, Int32, Gradient)</h4>
@@ -5692,7 +5848,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetHash128_System_Int32_System_Int32_UnityEngine_Hash128_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetHash128(System.Int32%2CSystem.Int32%2CUnityEngine.Hash128)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L670">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L734">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetHash128_" data-uid="GDX.Tables.StableTable.SetHash128*"></a>
   <h4 id="GDX_Tables_StableTable_SetHash128_System_Int32_System_Int32_UnityEngine_Hash128_" data-uid="GDX.Tables.StableTable.SetHash128(System.Int32,System.Int32,UnityEngine.Hash128)">SetHash128(Int32, Int32, Hash128)</h4>
@@ -5749,7 +5905,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetInt_System_Int32_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetInt(System.Int32%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L580">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L644">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetInt_" data-uid="GDX.Tables.StableTable.SetInt*"></a>
   <h4 id="GDX_Tables_StableTable_SetInt_System_Int32_System_Int32_System_Int32_" data-uid="GDX.Tables.StableTable.SetInt(System.Int32,System.Int32,System.Int32)">SetInt(Int32, Int32, Int32)</h4>
@@ -5806,7 +5962,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetLayerMask_System_Int32_System_Int32_UnityEngine_LayerMask_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetLayerMask(System.Int32%2CSystem.Int32%2CUnityEngine.LayerMask)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L655">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L719">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetLayerMask_" data-uid="GDX.Tables.StableTable.SetLayerMask*"></a>
   <h4 id="GDX_Tables_StableTable_SetLayerMask_System_Int32_System_Int32_UnityEngine_LayerMask_" data-uid="GDX.Tables.StableTable.SetLayerMask(System.Int32,System.Int32,UnityEngine.LayerMask)">SetLayerMask(Int32, Int32, LayerMask)</h4>
@@ -5863,7 +6019,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetLong_System_Int32_System_Int32_System_Int64_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetLong(System.Int32%2CSystem.Int32%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L590">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L654">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetLong_" data-uid="GDX.Tables.StableTable.SetLong*"></a>
   <h4 id="GDX_Tables_StableTable_SetLong_System_Int32_System_Int32_System_Int64_" data-uid="GDX.Tables.StableTable.SetLong(System.Int32,System.Int32,System.Int64)">SetLong(Int32, Int32, Int64)</h4>
@@ -5920,7 +6076,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetObject_System_Int32_System_Int32_UnityEngine_Object_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetObject(System.Int32%2CSystem.Int32%2CUnityEngine.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L685">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L749">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetObject_" data-uid="GDX.Tables.StableTable.SetObject*"></a>
   <h4 id="GDX_Tables_StableTable_SetObject_System_Int32_System_Int32_UnityEngine_Object_" data-uid="GDX.Tables.StableTable.SetObject(System.Int32,System.Int32,UnityEngine.Object)">SetObject(Int32, Int32, Object)</h4>
@@ -5977,7 +6133,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetQuaternion_System_Int32_System_Int32_UnityEngine_Quaternion_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetQuaternion(System.Int32%2CSystem.Int32%2CUnityEngine.Quaternion)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L635">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L699">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetQuaternion_" data-uid="GDX.Tables.StableTable.SetQuaternion*"></a>
   <h4 id="GDX_Tables_StableTable_SetQuaternion_System_Int32_System_Int32_UnityEngine_Quaternion_" data-uid="GDX.Tables.StableTable.SetQuaternion(System.Int32,System.Int32,UnityEngine.Quaternion)">SetQuaternion(Int32, Int32, Quaternion)</h4>
@@ -6034,7 +6190,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetRect_System_Int32_System_Int32_UnityEngine_Rect_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetRect(System.Int32%2CSystem.Int32%2CUnityEngine.Rect)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L640">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L704">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetRect_" data-uid="GDX.Tables.StableTable.SetRect*"></a>
   <h4 id="GDX_Tables_StableTable_SetRect_System_Int32_System_Int32_UnityEngine_Rect_" data-uid="GDX.Tables.StableTable.SetRect(System.Int32,System.Int32,UnityEngine.Rect)">SetRect(Int32, Int32, Rect)</h4>
@@ -6091,7 +6247,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetRectInt_System_Int32_System_Int32_UnityEngine_RectInt_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetRectInt(System.Int32%2CSystem.Int32%2CUnityEngine.RectInt)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L645">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L709">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetRectInt_" data-uid="GDX.Tables.StableTable.SetRectInt*"></a>
   <h4 id="GDX_Tables_StableTable_SetRectInt_System_Int32_System_Int32_UnityEngine_RectInt_" data-uid="GDX.Tables.StableTable.SetRectInt(System.Int32,System.Int32,UnityEngine.RectInt)">SetRectInt(Int32, Int32, RectInt)</h4>
@@ -6148,7 +6304,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetSByte_System_Int32_System_Int32_System_SByte_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetSByte(System.Int32%2CSystem.Int32%2CSystem.SByte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L560">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L624">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetSByte_" data-uid="GDX.Tables.StableTable.SetSByte*"></a>
   <h4 id="GDX_Tables_StableTable_SetSByte_System_Int32_System_Int32_System_SByte_" data-uid="GDX.Tables.StableTable.SetSByte(System.Int32,System.Int32,System.SByte)">SetSByte(Int32, Int32, SByte)</h4>
@@ -6205,7 +6361,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetShort_System_Int32_System_Int32_System_Int16_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetShort(System.Int32%2CSystem.Int32%2CSystem.Int16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L570">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L634">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetShort_" data-uid="GDX.Tables.StableTable.SetShort*"></a>
   <h4 id="GDX_Tables_StableTable_SetShort_System_Int32_System_Int32_System_Int16_" data-uid="GDX.Tables.StableTable.SetShort(System.Int32,System.Int32,System.Int16)">SetShort(Int32, Int32, Int16)</h4>
@@ -6262,7 +6418,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetString_System_Int32_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetString(System.Int32%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L545">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L609">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetString_" data-uid="GDX.Tables.StableTable.SetString*"></a>
   <h4 id="GDX_Tables_StableTable_SetString_System_Int32_System_Int32_System_String_" data-uid="GDX.Tables.StableTable.SetString(System.Int32,System.Int32,System.String)">SetString(Int32, Int32, String)</h4>
@@ -6319,7 +6475,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetUInt_System_Int32_System_Int32_System_UInt32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetUInt(System.Int32%2CSystem.Int32%2CSystem.UInt32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L585">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L649">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetUInt_" data-uid="GDX.Tables.StableTable.SetUInt*"></a>
   <h4 id="GDX_Tables_StableTable_SetUInt_System_Int32_System_Int32_System_UInt32_" data-uid="GDX.Tables.StableTable.SetUInt(System.Int32,System.Int32,System.UInt32)">SetUInt(Int32, Int32, UInt32)</h4>
@@ -6376,7 +6532,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetULong_System_Int32_System_Int32_System_UInt64_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetULong(System.Int32%2CSystem.Int32%2CSystem.UInt64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L595">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L659">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetULong_" data-uid="GDX.Tables.StableTable.SetULong*"></a>
   <h4 id="GDX_Tables_StableTable_SetULong_System_Int32_System_Int32_System_UInt64_" data-uid="GDX.Tables.StableTable.SetULong(System.Int32,System.Int32,System.UInt64)">SetULong(Int32, Int32, UInt64)</h4>
@@ -6433,7 +6589,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetUShort_System_Int32_System_Int32_System_UInt16_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetUShort(System.Int32%2CSystem.Int32%2CSystem.UInt16)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L575">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L639">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetUShort_" data-uid="GDX.Tables.StableTable.SetUShort*"></a>
   <h4 id="GDX_Tables_StableTable_SetUShort_System_Int32_System_Int32_System_UInt16_" data-uid="GDX.Tables.StableTable.SetUShort(System.Int32,System.Int32,System.UInt16)">SetUShort(Int32, Int32, UInt16)</h4>
@@ -6490,7 +6646,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetVector2_System_Int32_System_Int32_UnityEngine_Vector2_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetVector2(System.Int32%2CSystem.Int32%2CUnityEngine.Vector2)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L610">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L674">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetVector2_" data-uid="GDX.Tables.StableTable.SetVector2*"></a>
   <h4 id="GDX_Tables_StableTable_SetVector2_System_Int32_System_Int32_UnityEngine_Vector2_" data-uid="GDX.Tables.StableTable.SetVector2(System.Int32,System.Int32,UnityEngine.Vector2)">SetVector2(Int32, Int32, Vector2)</h4>
@@ -6547,7 +6703,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetVector2Int_System_Int32_System_Int32_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetVector2Int(System.Int32%2CSystem.Int32%2CUnityEngine.Vector2Int)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L625">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L689">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetVector2Int_" data-uid="GDX.Tables.StableTable.SetVector2Int*"></a>
   <h4 id="GDX_Tables_StableTable_SetVector2Int_System_Int32_System_Int32_UnityEngine_Vector2Int_" data-uid="GDX.Tables.StableTable.SetVector2Int(System.Int32,System.Int32,UnityEngine.Vector2Int)">SetVector2Int(Int32, Int32, Vector2Int)</h4>
@@ -6604,7 +6760,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetVector3_System_Int32_System_Int32_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetVector3(System.Int32%2CSystem.Int32%2CUnityEngine.Vector3)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L615">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L679">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetVector3_" data-uid="GDX.Tables.StableTable.SetVector3*"></a>
   <h4 id="GDX_Tables_StableTable_SetVector3_System_Int32_System_Int32_UnityEngine_Vector3_" data-uid="GDX.Tables.StableTable.SetVector3(System.Int32,System.Int32,UnityEngine.Vector3)">SetVector3(Int32, Int32, Vector3)</h4>
@@ -6661,7 +6817,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetVector3Int_System_Int32_System_Int32_UnityEngine_Vector3Int_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetVector3Int(System.Int32%2CSystem.Int32%2CUnityEngine.Vector3Int)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L630">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L694">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetVector3Int_" data-uid="GDX.Tables.StableTable.SetVector3Int*"></a>
   <h4 id="GDX_Tables_StableTable_SetVector3Int_System_Int32_System_Int32_UnityEngine_Vector3Int_" data-uid="GDX.Tables.StableTable.SetVector3Int(System.Int32,System.Int32,UnityEngine.Vector3Int)">SetVector3Int(Int32, Int32, Vector3Int)</h4>
@@ -6718,7 +6874,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetVector4_System_Int32_System_Int32_UnityEngine_Vector4_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetVector4(System.Int32%2CSystem.Int32%2CUnityEngine.Vector4)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L620">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L684">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetVector4_" data-uid="GDX.Tables.StableTable.SetVector4*"></a>
   <h4 id="GDX_Tables_StableTable_SetVector4_System_Int32_System_Int32_UnityEngine_Vector4_" data-uid="GDX.Tables.StableTable.SetVector4(System.Int32,System.Int32,UnityEngine.Vector4)">SetVector4(Int32, Int32, Vector4)</h4>
@@ -6896,7 +7052,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-05-20 against <a href="https://github.com/dotBunny/GDX/commit/772fabfe5a7e81463a77a31edd59b9d02669b14f"><strong>772fabf</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-05-21 against <a href="https://github.com/dotBunny/GDX/commit/4fde4852512f02176d930b1b1d4734cab9e84e62"><strong>4fde485</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
