@@ -319,7 +319,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetAllColumnDescriptions.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetAllColumnDescriptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L194">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L184">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetAllColumnDescriptions_" data-uid="GDX.Tables.StableTable.GetAllColumnDescriptions*"></a>
   <h4 id="GDX_Tables_StableTable_GetAllColumnDescriptions" data-uid="GDX.Tables.StableTable.GetAllColumnDescriptions">GetAllColumnDescriptions()</h4>
@@ -1563,7 +1563,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetColumnName_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetColumnName(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L222">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L212">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_GetColumnName_" data-uid="GDX.Tables.StableTable.GetColumnName*"></a>
   <h4 id="GDX_Tables_StableTable_GetColumnName_System_Int32_" data-uid="GDX.Tables.StableTable.GetColumnName(System.Int32)">GetColumnName(Int32)</h4>
@@ -1571,7 +1571,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string GetColumnName(int columnID)</code></pre>
+    <pre><code class="lang-csharp hljs">public string GetColumnName(int column)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1585,7 +1585,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">columnID</span></td>
+        <td><span class="parametername">column</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -3471,6 +3471,53 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetRowName_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetRowName(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L223">View Source</a>
+  </span>
+  <a id="GDX_Tables_StableTable_GetRowName_" data-uid="GDX.Tables.StableTable.GetRowName*"></a>
+  <h4 id="GDX_Tables_StableTable_GetRowName_System_Int32_" data-uid="GDX.Tables.StableTable.GetRowName(System.Int32)">GetRowName(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetRowName(int row)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_GetSByte_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.GetSByte(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -5201,80 +5248,6 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_RenameColumn_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.RenameColumn(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L183">View Source</a>
-  </span>
-  <a id="GDX_Tables_StableTable_RenameColumn_" data-uid="GDX.Tables.StableTable.RenameColumn*"></a>
-  <h4 id="GDX_Tables_StableTable_RenameColumn_System_Int32_System_String_" data-uid="GDX.Tables.StableTable.RenameColumn(System.Int32,System.String)">RenameColumn(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RenameColumn(int column, string name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">column</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_RenameRow_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.RenameRow(System.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L188">View Source</a>
-  </span>
-  <a id="GDX_Tables_StableTable_RenameRow_" data-uid="GDX.Tables.StableTable.RenameRow*"></a>
-  <h4 id="GDX_Tables_StableTable_RenameRow_System_Int32_System_String_" data-uid="GDX.Tables.StableTable.RenameRow(System.Int32,System.String)">RenameRow(Int32, String)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void RenameRow(int row, string name)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">row</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetAnimationCurve_System_Int32_System_Int32_UnityEngine_AnimationCurve_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetAnimationCurve(System.Int32%2CSystem.Int32%2CUnityEngine.AnimationCurve)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
@@ -5677,7 +5650,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetColumnName_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetColumnName(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L216">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L206">View Source</a>
   </span>
   <a id="GDX_Tables_StableTable_SetColumnName_" data-uid="GDX.Tables.StableTable.SetColumnName*"></a>
   <h4 id="GDX_Tables_StableTable_SetColumnName_System_String_System_Int32_" data-uid="GDX.Tables.StableTable.SetColumnName(System.String,System.Int32)">SetColumnName(String, Int32)</h4>
@@ -5685,7 +5658,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetColumnName(string name, int columnID)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetColumnName(string columnName, int column)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -5699,12 +5672,12 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">name</span></td>
+        <td><span class="parametername">columnName</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">columnID</span></td>
+        <td><span class="parametername">column</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -6332,6 +6305,43 @@ public class StableTable : ScriptableObject, ITable</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Tables_StableTable_SetRowName_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Tables.StableTable.SetRowName(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Tables/StableTable.cs/#L218">View Source</a>
+  </span>
+  <a id="GDX_Tables_StableTable_SetRowName_" data-uid="GDX.Tables.StableTable.SetRowName*"></a>
+  <h4 id="GDX_Tables_StableTable_SetRowName_System_String_System_Int32_" data-uid="GDX.Tables.StableTable.SetRowName(System.String,System.Int32)">SetRowName(String, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRowName(string rowName, int row)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">rowName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">row</span></td>
         <td></td>
       </tr>
     </tbody>
@@ -7089,7 +7099,7 @@ public class StableTable : ScriptableObject, ITable</code></pre>
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-05-22 against <a href="https://github.com/dotBunny/GDX/commit/7d2aed5a110beb4f7e2b9841e9bbaea97071f59c"><strong>7d2aed5</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-05-22 against <a href="https://github.com/dotBunny/GDX/commit/bb1ce93c5579af973a076e635133c30450efdc83"><strong>bb1ce93</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
