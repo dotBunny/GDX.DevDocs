@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-22 - 4:04:39 PM |
+| Generated on: | 2023-05-23 - 10:11:31 AM |
 | Parser: | MultiReportParser (679x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 148 |
 | Files: | 144 |
 | Covered lines: | 5391 |
-| Uncovered lines: | 5851 |
-| Coverable lines: | 11242 |
-| Total lines: | 26719 |
-| Line coverage: | 47.9% (5391 of 11242) |
+| Uncovered lines: | 5856 |
+| Coverable lines: | 11247 |
+| Total lines: | 26764 |
+| Line coverage: | 47.9% (5391 of 11247) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 509 |
-| Total methods: | 1208 |
-| Method coverage: | 42.1% (509 of 1208) |
+| Total methods: | 1209 |
+| Method coverage: | 42.1% (509 of 1209) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5391**|**5851**|**11242**|**31663**|**47.9%**|**0**|**0**|****|**509**|**1208**|**42.1%**|
+|**GDX**|**5391**|**5856**|**11247**|**31708**|**47.9%**|**0**|**0**|****|**509**|**1209**|**42.1%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
@@ -120,7 +120,7 @@
 |GDX.ObjectExtensions|0|9|9|38|0%|0|0||0|1|0%|
 |GDX.Platform|42|62|104|273|40.3%|0|0||6|11|54.5%|
 |GDX.PlayerLoopSystemExtensions|94|77|171|360|54.9%|0|0||7|10|70%|
-|GDX.Reflection|112|0|112|263|100%|0|0||9|9|100%|
+|GDX.Reflection|112|5|117|279|95.7%|0|0||9|10|90%|
 |GDX.Rendering.ShaderProvider|18|0|18|70|100%|0|0||4|4|100%|
 |GDX.RigidbodyExtensions|0|4|4|39|0%|0|0||0|1|0%|
 |GDX.SegmentedString|128|0|128|276|100%|0|0||11|11|100%|
@@ -128,35 +128,35 @@
 |GDX.SimpleListExtensions|157|62|219|543|71.6%|0|0||15|21|71.4%|
 |GDX.Space|0|55|55|134|0%|0|0||0|4|0%|
 |GDX.StringExtensions|264|0|264|739|100%|0|0||22|22|100%|
-|GDX.Tables.CellValues.AnimationCurveCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.BoolCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.BoundsCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.BoundsIntCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.ByteCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.CharCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.ColorCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.DoubleCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.FloatCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.GradientCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.Hash128CellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.IntCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.LayerMaskCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.LongCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.ObjectCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.QuaternionCellValue|0|32|32|61|0%|0|0||0|6|0%|
-|GDX.Tables.CellValues.RectCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.RectIntCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.SByteCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.ShortCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.StringCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.UIntCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.ULongCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.UShortCellValue|0|26|26|49|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.Vector2CellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.Vector2IntCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.Vector3CellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.Vector3IntCellValue|0|26|26|51|0%|0|0||0|4|0%|
-|GDX.Tables.CellValues.Vector4CellValue|0|26|26|51|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.AnimationCurveCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.BoolCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.BoundsCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.BoundsIntCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.ByteCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.CharCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.ColorCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.DoubleCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.FloatCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.GradientCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.Hash128CellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.IntCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.LayerMaskCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.LongCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.ObjectCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.QuaternionCellValue|0|32|32|62|0%|0|0||0|6|0%|
+|GDX.Tables.CellValues.RectCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.RectIntCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.SByteCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.ShortCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.StringCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.UIntCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.ULongCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.UShortCellValue|0|26|26|50|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.Vector2CellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.Vector2IntCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.Vector3CellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.Vector3IntCellValue|0|26|26|52|0%|0|0||0|4|0%|
+|GDX.Tables.CellValues.Vector4CellValue|0|26|26|52|0%|0|0||0|4|0%|
 |GDX.Tables.StableTable|0|932|932|1472|0%|0|0||0|145|0%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|
 |GDX.Threading.TaskDirector|213|0|213|465|100%|0|0||15|15|100%|
