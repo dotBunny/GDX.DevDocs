@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-26 - 1:03:47 AM |
+| Generated on: | 2023-05-26 - 3:54:14 PM |
 | Parser: | MultiReportParser (679x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 148 |
 | Files: | 144 |
-| Covered lines: | 5385 |
-| Uncovered lines: | 6104 |
-| Coverable lines: | 11489 |
-| Total lines: | 27078 |
-| Line coverage: | 46.8% (5385 of 11489) |
+| Covered lines: | 5388 |
+| Uncovered lines: | 6131 |
+| Coverable lines: | 11519 |
+| Total lines: | 27120 |
+| Line coverage: | 46.7% (5388 of 11519) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 507 |
-| Total methods: | 1228 |
-| Method coverage: | 41.2% (507 of 1228) |
+| Covered methods: | 508 |
+| Total methods: | 1233 |
+| Method coverage: | 41.2% (508 of 1233) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5385**|**6104**|**11489**|**32022**|**46.8%**|**0**|**0**|****|**507**|**1228**|**41.2%**|
+|**GDX**|**5388**|**6131**|**11519**|**32064**|**46.7%**|**0**|**0**|****|**508**|**1233**|**41.2%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
@@ -57,7 +57,7 @@
 |GDX.Collections.Pooling.GameObjectPool|175|35|210|510|83.3%|0|0||15|15|100%|
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
 |GDX.Collections.Pooling.ManagedPools|28|50|78|221|35.8%|0|0||6|12|50%|
-|GDX.Collections.Pooling.SimpleListManagedPool|78|108|186|428|41.9%|0|0||6|14|42.8%|
+|GDX.Collections.Pooling.SimpleListManagedPool|81|105|186|428|43.5%|0|0||7|14|50%|
 |GDX.Collections.SparseSet|1001|59|1060|1825|94.4%|0|0||49|51|96%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1236|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1236|0%|0|0||0|2|0%|
@@ -157,7 +157,7 @@
 |GDX.Tables.CellValues.Vector3CellValue|0|26|26|52|0%|0|0||0|4|0%|
 |GDX.Tables.CellValues.Vector3IntCellValue|0|26|26|52|0%|0|0||0|4|0%|
 |GDX.Tables.CellValues.Vector4CellValue|0|26|26|52|0%|0|0||0|4|0%|
-|GDX.Tables.StableTable|0|1174|1174|1786|0%|0|0||0|164|0%|
+|GDX.Tables.StableTable|0|1204|1204|1828|0%|0|0||0|169|0%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|
 |GDX.Threading.TaskDirector|213|0|213|465|100%|0|0||15|15|100%|
 |GDX.Threading.TaskDirectorSystem|49|0|49|154|100%|0|0||7|7|100%|
