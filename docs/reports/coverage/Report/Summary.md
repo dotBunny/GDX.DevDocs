@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-28 - 3:55:53 PM |
+| Generated on: | 2023-05-28 - 4:45:28 PM |
 | Parser: | MultiReportParser (679x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 148 |
 | Files: | 144 |
 | Covered lines: | 5391 |
-| Uncovered lines: | 6307 |
-| Coverable lines: | 11698 |
-| Total lines: | 27468 |
-| Line coverage: | 46% (5391 of 11698) |
+| Uncovered lines: | 6418 |
+| Coverable lines: | 11809 |
+| Total lines: | 27639 |
+| Line coverage: | 45.6% (5391 of 11809) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 509 |
-| Total methods: | 1264 |
-| Method coverage: | 40.2% (509 of 1264) |
+| Total methods: | 1266 |
+| Method coverage: | 40.2% (509 of 1266) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5391**|**6307**|**11698**|**32412**|**46%**|**0**|**0**|****|**509**|**1264**|**40.2%**|
+|**GDX**|**5391**|**6418**|**11809**|**32583**|**45.6%**|**0**|**0**|****|**509**|**1266**|**40.2%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
@@ -127,7 +127,7 @@
 |GDX.SimpleListExtensions|157|62|219|543|71.6%|0|0||15|21|71.4%|
 |GDX.Space|0|55|55|134|0%|0|0||0|4|0%|
 |GDX.StringExtensions|264|0|264|739|100%|0|0||22|22|100%|
-|GDX.TableExtensions|0|179|179|366|0%|0|0||0|31|0%|
+|GDX.TableExtensions|0|290|290|537|0%|0|0||0|33|0%|
 |GDX.Tables.CellValues.AnimationCurveCellValue|0|29|29|57|0%|0|0||0|5|0%|
 |GDX.Tables.CellValues.BoolCellValue|0|29|29|57|0%|0|0||0|5|0%|
 |GDX.Tables.CellValues.BoundsCellValue|0|29|29|57|0%|0|0||0|5|0%|
