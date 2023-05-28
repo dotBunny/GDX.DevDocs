@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-28 - 2:25:23 PM |
+| Generated on: | 2023-05-28 - 3:55:53 PM |
 | Parser: | MultiReportParser (679x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 148 |
 | Files: | 144 |
-| Covered lines: | 5388 |
-| Uncovered lines: | 6218 |
-| Coverable lines: | 11606 |
-| Total lines: | 27289 |
-| Line coverage: | 46.4% (5388 of 11606) |
+| Covered lines: | 5391 |
+| Uncovered lines: | 6307 |
+| Coverable lines: | 11698 |
+| Total lines: | 27468 |
+| Line coverage: | 46% (5391 of 11698) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 508 |
-| Total methods: | 1262 |
-| Method coverage: | 40.2% (508 of 1262) |
+| Covered methods: | 509 |
+| Total methods: | 1264 |
+| Method coverage: | 40.2% (509 of 1264) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5388**|**6218**|**11606**|**32233**|**46.4%**|**0**|**0**|****|**508**|**1262**|**40.2%**|
+|**GDX**|**5391**|**6307**|**11698**|**32412**|**46%**|**0**|**0**|****|**509**|**1264**|**40.2%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
@@ -87,7 +87,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|56|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|86|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
+|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|223|90.2%|0|0||3|3|100%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|55|0|55|148|100%|0|0||10|10|100%|
@@ -98,7 +98,6 @@
 |GDX.IListExtensions|67|17|84|220|79.7%|0|0||7|9|77.7%|
 |GDX.IO.CoalesceStream|47|79|126|314|37.3%|0|0||11|19|57.8%|
 |GDX.IO.Compression.TarFile|0|63|63|131|0%|0|0||0|2|0%|
-|GDX.ITableExtensions|0|87|87|187|0%|0|0||0|29|0%|
 |GDX.Jobs.ParallelFor.Color32CompareJob|0|13|13|54|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.Color32MatchJob|0|9|9|53|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.ColorCompareJob|0|13|13|51|0%|0|0||0|1|0%|
@@ -128,6 +127,7 @@
 |GDX.SimpleListExtensions|157|62|219|543|71.6%|0|0||15|21|71.4%|
 |GDX.Space|0|55|55|134|0%|0|0||0|4|0%|
 |GDX.StringExtensions|264|0|264|739|100%|0|0||22|22|100%|
+|GDX.TableExtensions|0|179|179|366|0%|0|0||0|31|0%|
 |GDX.Tables.CellValues.AnimationCurveCellValue|0|29|29|57|0%|0|0||0|5|0%|
 |GDX.Tables.CellValues.BoolCellValue|0|29|29|57|0%|0|0||0|5|0%|
 |GDX.Tables.CellValues.BoundsCellValue|0|29|29|57|0%|0|0||0|5|0%|
