@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>TableInspectorBase
+    <title>Array2DExtensions
    | GDX </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="TableInspectorBase
+    <meta name="title" content="Array2DExtensions
    | GDX ">
     <meta name="generator" content="docfx 2.59.4.0">
     
@@ -88,51 +88,86 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="GDX.Editor.Inspectors.TableInspectorBase">
+            <article class="content wrap" id="_content" data-uid="GDX.Collections.Generic.Array2DExtensions">
   
   
-  <h1 id="GDX_Editor_Inspectors_TableInspectorBase" data-uid="GDX.Editor.Inspectors.TableInspectorBase" class="text-break"><span class="type" type="class">Class</span> 
-                                                        TableInspectorBase
+  <h1 id="GDX_Collections_Generic_Array2DExtensions" data-uid="GDX.Collections.Generic.Array2DExtensions" class="text-break"><span class="type" type="class">Class</span> 
+                                                        Array2DExtensions
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Array2D Based Extension Methods</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UnityEngine.Object</span></div>
-    <div class="level2"><span class="xref">UnityEngine.ScriptableObject</span></div>
-    <div class="level3"><span class="xref">UnityEditor.Editor</span></div>
-    <div class="level4"><span class="xref">TableInspectorBase</span></div>
-      <div class="level5"><a class="xref" href="GDX.Editor.Inspectors.StableTableInspector.html">StableTableInspector</a></div>
+    <div class="level1"><span class="xref">Array2DExtensions</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Editor.Inspectors.html">GDX.Editor.Inspectors</a></h6>
-  <h5 id="GDX_Editor_Inspectors_TableInspectorBase_syntax">Syntax</h5>
+  <h6><strong>Namespace</strong>: <a class="xref" href="GDX.Collections.Generic.html">GDX.Collections.Generic</a></h6>
+  <h5 id="GDX_Collections_Generic_Array2DExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TableInspectorBase : Editor</code></pre>
+    <pre><code class="lang-csharp hljs">[VisualScriptingCompatible((short)2)]
+public static class Array2DExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_Inspectors_TableInspectorBase_OnInspectorGUI.md&amp;value=---%0Auid%3A%20GDX.Editor.Inspectors.TableInspectorBase.OnInspectorGUI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Generic_Array2DExtensions_Scale_GDX_Collections_Generic_Array2D_System_Single___System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.Array2DExtensions.Scale(GDX.Collections.Generic.Array2D%7BSystem.Single%7D%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/TableInspectorBase.cs/#L98">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/Array2DExtensions.cs/#L21">View Source</a>
   </span>
-  <a id="GDX_Editor_Inspectors_TableInspectorBase_OnInspectorGUI_" data-uid="GDX.Editor.Inspectors.TableInspectorBase.OnInspectorGUI*"></a>
-  <h4 id="GDX_Editor_Inspectors_TableInspectorBase_OnInspectorGUI" data-uid="GDX.Editor.Inspectors.TableInspectorBase.OnInspectorGUI">OnInspectorGUI()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GDX_Collections_Generic_Array2DExtensions_Scale_" data-uid="GDX.Collections.Generic.Array2DExtensions.Scale*"></a>
+  <h4 id="GDX_Collections_Generic_Array2DExtensions_Scale_GDX_Collections_Generic_Array2D_System_Single___System_Int32_" data-uid="GDX.Collections.Generic.Array2DExtensions.Scale(GDX.Collections.Generic.Array2D{System.Single}@,System.Int32)">Scale(ref Array2D&lt;Single&gt;, Int32)</h4>
+  <div class="markdown level1 summary"><p>Generate an array scaled by bilinear interpolation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void OnInspectorGUI()</code></pre>
+    <pre><code class="lang-csharp hljs">public static Array2D&lt;float&gt; Scale(this ref Array2D&lt;float&gt; inputArray, int scaleFactor = 2)</code></pre>
   </div>
-  <h5 class="overrides">Overrides</h5>
-  <div><span class="xref">UnityEditor.Editor.OnInspectorGUI()</span></div>
-  <h3 id="extensionmethods">Extension Methods</h3>
-  <div>
-      <a class="xref" href="GDX.ObjectExtensions.html#GDX_ObjectExtensions_SafeDestroy_UnityEngine_Object_System_Single_">ObjectExtensions.SafeDestroy(Object, Single)</a>
-  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.Array2D-1.html">Array2D</a>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td><span class="parametername">inputArray</span></td>
+        <td><p>The existing <a class="xref" href="GDX.Collections.Generic.Array2D-1.html">Array2D&lt;T&gt;</a> to scale.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">scaleFactor</span></td>
+        <td><p>The multiple to scale by.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.Collections.Generic.Array2D-1.html">Array2D</a>&lt;<span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="GDX_Collections_Generic_Array2DExtensions_Scale_GDX_Collections_Generic_Array2D_System_Single___System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Works with <span class="xref">System.Single</span> values.</p>
+</div>
 </article>
           </div>
           
@@ -141,10 +176,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Editor_Inspectors_TableInspectorBase.md&amp;value=---%0Auid%3A%20GDX.Editor.Inspectors.TableInspectorBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Collections_Generic_Array2DExtensions.md&amp;value=---%0Auid%3A%20GDX.Collections.Generic.Array2DExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/TableInspectorBase.cs/#L95" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Generic/Array2DExtensions.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -164,7 +199,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-05-31 against <a href="https://github.com/dotBunny/GDX/commit/86fde550b193c6e0603f6c4f8813addff4c66932"><strong>86fde55</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-05-31 against <a href="https://github.com/dotBunny/GDX/commit/3b83e87e10ccab45b1dcee8d72b881ee38e6e447"><strong>3b83e87</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>

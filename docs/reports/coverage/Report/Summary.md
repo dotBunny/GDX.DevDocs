@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-31 - 2:21:16 AM |
+| Generated on: | 2023-05-31 - 6:58:42 PM |
 | Parser: | MultiReportParser (684x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 148 |
@@ -9,7 +9,7 @@
 | Covered lines: | 5893 |
 | Uncovered lines: | 6014 |
 | Coverable lines: | 11907 |
-| Total lines: | 29067 |
+| Total lines: | 29759 |
 | Line coverage: | 49.4% (5893 of 11907) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
@@ -19,9 +19,8 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5893**|**6014**|**11907**|**34011**|**49.4%**|**0**|**0**|****|**618**|**1296**|**47.6%**|
+|**GDX**|**5893**|**6014**|**11907**|**34703**|**49.4%**|**0**|**0**|****|**618**|**1296**|**47.6%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
-|GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
 |GDX.ByteExtensions|34|0|34|77|100%|0|0||2|2|100%|
@@ -40,16 +39,19 @@
 |GDX.Collections.DisposeUnsafeVersionArrayJob|0|3|3|1236|0%|0|0||0|1|0%|
 |GDX.Collections.FreeList|79|0|79|174|100%|0|0||7|7|100%|
 |GDX.Collections.Generic.Array2D[T]|0|109|109|264|0%|0|0||0|14|0%|
+|GDX.Collections.Generic.Array2DExtensions|23|0|23|53|100%|0|0||1|1|100%|
 |GDX.Collections.Generic.Array3D[T]|0|24|24|119|0%|0|0||0|8|0%|
 |GDX.Collections.Generic.CircularBuffer[T]|0|137|137|315|0%|0|0||0|15|0%|
 |GDX.Collections.Generic.CoalesceArray[T]|0|77|77|156|0%|0|0||0|8|0%|
 |GDX.Collections.Generic.DictionaryPrimes|32|5|37|105|86.4%|0|0||5|6|83.3%|
+|GDX.Collections.Generic.IListExtensions|67|17|84|220|79.7%|0|0||7|9|77.7%|
 |GDX.Collections.Generic.IntKeyDictionary[TValue]|0|377|377|658|0%|0|0||0|19|0%|
 |GDX.Collections.Generic.NativeArray2D[T]|0|71|71|190|0%|0|0||0|9|0%|
 |GDX.Collections.Generic.NativeArray3D[T]|0|28|28|129|0%|0|0||0|8|0%|
 |GDX.Collections.Generic.NativeUniformArray3D[T]|0|23|23|111|0%|0|0||0|7|0%|
 |GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|0|63|63|205|0%|0|0||0|8|0%|
 |GDX.Collections.Generic.SimpleList[T]|0|315|315|570|0%|0|0||0|28|0%|
+|GDX.Collections.Generic.SimpleListExtensions|157|62|219|542|71.6%|0|0||15|21|71.4%|
 |GDX.Collections.Generic.StringKeyDictionary[TValue]|0|399|399|683|0%|0|0||0|19|0%|
 |GDX.Collections.Generic.UniformArray3D[T]|0|25|25|117|0%|0|0||0|8|0%|
 |GDX.Collections.NativeArraySparseSet|473|2|475|931|99.5%|0|0||29|29|100%|
@@ -63,35 +65,36 @@
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1236|0%|0|0||0|2|0%|
 |GDX.Config|29|0|29|235|100%|0|0||1|1|100%|
 |GDX.Core|8|0|8|104|100%|0|0||1|1|100%|
-|GDX.DataTables.CellValues.AnimationCurveCellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.BoolCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.BoundsCellValue|0|32|32|103|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.BoundsIntCellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.ByteCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.CharCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.ColorCellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.DoubleCellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.FloatCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.GradientCellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.Hash128CellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.IntCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.LayerMaskCellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.LongCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.ObjectCellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.QuaternionCellValue|0|38|38|124|0%|0|0||0|8|0%|
-|GDX.DataTables.CellValues.RectCellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.RectIntCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.SByteCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.ShortCellValue|0|32|32|100|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.StringCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.UIntCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.ULongCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.UShortCellValue|0|32|32|101|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.Vector2CellValue|0|32|32|102|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.Vector2IntCellValue|0|32|32|103|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.Vector3CellValue|0|32|32|103|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.Vector3IntCellValue|0|32|32|103|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.Vector4CellValue|0|32|32|103|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.AnimationCurveCellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.BoolCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.BoundsCellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.BoundsIntCellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.ByteCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.CharCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.ColorCellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.DoubleCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.FloatCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.GradientCellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.Hash128CellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.IntCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.LayerMaskCellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.LongCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.ObjectCellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.QuaternionCellValue|0|38|38|148|0%|0|0||0|8|0%|
+|GDX.DataTables.CellValues.RectCellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.RectIntCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.SByteCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.ShortCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.StringCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.UIntCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.ULongCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.UShortCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.Vector2CellValue|0|32|32|126|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.Vector2IntCellValue|0|32|32|127|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.Vector3CellValue|0|32|32|127|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.Vector3IntCellValue|0|32|32|127|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.Vector4CellValue|0|32|32|127|0%|0|0||0|6|0%|
+|GDX.DataTables.DataTableExtensions|0|292|292|527|0%|0|0||0|33|0%|
 |GDX.DataTables.StableDataTable|502|711|1213|1950|41.3%|0|0||109|170|64.1%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|
@@ -125,7 +128,6 @@
 |GDX.Display|0|12|12|85|0%|0|0||0|4|0%|
 |GDX.EnumExtensions|14|0|14|54|100%|0|0||2|2|100%|
 |GDX.GameObjectExtensions|0|18|18|121|0%|0|0||0|2|0%|
-|GDX.IListExtensions|67|17|84|220|79.7%|0|0||7|9|77.7%|
 |GDX.IO.CoalesceStream|47|79|126|314|37.3%|0|0||11|19|57.8%|
 |GDX.IO.Compression.TarFile|0|63|63|131|0%|0|0||0|2|0%|
 |GDX.Jobs.ParallelFor.Color32CompareJob|0|13|13|54|0%|0|0||0|1|0%|
@@ -154,10 +156,8 @@
 |GDX.RigidbodyExtensions|0|4|4|39|0%|0|0||0|1|0%|
 |GDX.SegmentedString|128|0|128|276|100%|0|0||11|11|100%|
 |GDX.Serializable|0|37|37|153|0%|0|0||0|2|0%|
-|GDX.SimpleListExtensions|157|62|219|543|71.6%|0|0||15|21|71.4%|
 |GDX.Space|0|55|55|134|0%|0|0||0|4|0%|
 |GDX.StringExtensions|264|0|264|739|100%|0|0||22|22|100%|
-|GDX.TableExtensions|0|292|292|528|0%|0|0||0|33|0%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|
 |GDX.Threading.TaskDirector|213|0|213|465|100%|0|0||15|15|100%|
 |GDX.Threading.TaskDirectorSystem|49|0|49|154|100%|0|0||7|7|100%|
