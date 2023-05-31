@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-05-30 - 8:23:54 PM |
+| Generated on: | 2023-05-30 - 8:51:19 PM |
 | Parser: | MultiReportParser (679x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 148 |
@@ -9,7 +9,7 @@
 | Covered lines: | 5388 |
 | Uncovered lines: | 6519 |
 | Coverable lines: | 11907 |
-| Total lines: | 29074 |
+| Total lines: | 29067 |
 | Line coverage: | 45.2% (5388 of 11907) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5388**|**6519**|**11907**|**34018**|**45.2%**|**0**|**0**|****|**508**|**1296**|**39.1%**|
+|**GDX**|**5388**|**6519**|**11907**|**34011**|**45.2%**|**0**|**0**|****|**508**|**1296**|**39.1%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.Array2DExtensions|23|0|23|54|100%|0|0||1|1|100%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
@@ -48,7 +48,7 @@
 |GDX.Collections.Generic.NativeArray2D[T]|0|71|71|190|0%|0|0||0|9|0%|
 |GDX.Collections.Generic.NativeArray3D[T]|0|28|28|129|0%|0|0||0|8|0%|
 |GDX.Collections.Generic.NativeUniformArray3D[T]|0|23|23|111|0%|0|0||0|7|0%|
-|GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|0|63|63|209|0%|0|0||0|8|0%|
+|GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|0|63|63|205|0%|0|0||0|8|0%|
 |GDX.Collections.Generic.SimpleList[T]|0|315|315|570|0%|0|0||0|28|0%|
 |GDX.Collections.Generic.StringKeyDictionary[TValue]|0|399|399|683|0%|0|0||0|19|0%|
 |GDX.Collections.Generic.UniformArray3D[T]|0|25|25|117|0%|0|0||0|8|0%|
@@ -92,7 +92,7 @@
 |GDX.DataTables.CellValues.Vector3CellValue|0|32|32|103|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector3IntCellValue|0|32|32|103|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector4CellValue|0|32|32|103|0%|0|0||0|6|0%|
-|GDX.DataTables.StableDataTable|0|1213|1213|1953|0%|0|0||0|170|0%|
+|GDX.DataTables.StableDataTable|0|1213|1213|1950|0%|0|0||0|170|0%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|
 |GDX.Developer.DebugDrawBuffer|24|248|272|726|8.8%|0|0||2|33|6%|
