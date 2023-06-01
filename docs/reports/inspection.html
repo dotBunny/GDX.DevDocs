@@ -95,21 +95,6 @@
 <p>A significant portion of the suggestions found by code inspection are based on the exposure of fields that could be marked private or internal. As additional unit tests get implemented, this should start to go down.</p>
 </div>
 <h2 id="warnings">Warnings</h2>
-<h3 id="collections-content-is-never-queried-private-accessibility">Collection's content is never queried: Private accessibility</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L19" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:19">DataTableWindowProvider.cs:19</a></td>
-<td>Content of collection <code>k_TableToTableWindow</code> is only updated but never used</td>
-</tr>
-</tbody>
-</table>
 <h3 id="collection-is-never-updated-non-private-accessibility">Collection is never updated: Non-private accessibility</h3>
 <table>
 <thead>
@@ -278,32 +263,8 @@
 <td>Name <code>ColumnID</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>ColumnId</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L15" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:15">DataTableWindowOverlay.cs:15</a></td>
-<td>Name <code>DefaultObjectType</code> does not match rule <code>constants_should_be_pascal_case</code>. Suggested name is <code>k_DefaultObjectType</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L17" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:17">DataTableWindowOverlay.cs:17</a></td>
-<td>Name <code>ValidClass</code> does not match rule <code>constants_should_be_pascal_case</code>. Suggested name is <code>k_ValidClass</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L18" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:18">DataTableWindowOverlay.cs:18</a></td>
-<td>Name <code>WarningClass</code> does not match rule <code>constants_should_be_pascal_case</code>. Suggested name is <code>k_WarningClass</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L19" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:19">DataTableWindowOverlay.cs:19</a></td>
-<td>Name <code>ErrorClass</code> does not match rule <code>constants_should_be_pascal_case</code>. Suggested name is <code>k_ErrorClass</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L79" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:79">DataTableWindowProvider.cs:79</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L70" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:70">DataTableWindowProvider.cs:70</a></td>
 <td>Name <code>instanceID</code> does not match rule <code>locals_should_be_camel_case</code>. Suggested name is <code>instanceId</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L16" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:16">DataTableWindowView.cs:16</a></td>
-<td>Name <code>m_StyleLength25</code> does not match rule <code>static_fields_should_be_camel_case</code>. Suggested name is <code>s_StyleLength25</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L17" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:17">DataTableWindowView.cs:17</a></td>
-<td>Name <code>m_StyleLength275</code> does not match rule <code>static_fields_should_be_camel_case</code>. Suggested name is <code>s_StyleLength275</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/DataTables/StableTableTests.cs#L51" title="GDX.Tests\EditMode\DataTables\StableTableTests.cs:51">StableTableTests.cs:51</a></td>
@@ -568,27 +529,27 @@
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L49" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:49">DataTableWindowOverlay.cs:49</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L47" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:47">DataTableWindowOverlay.cs:47</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L54" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:54">DataTableWindowOverlay.cs:54</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L52" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:52">DataTableWindowOverlay.cs:52</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L60" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:60">DataTableWindowOverlay.cs:60</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L58" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:58">DataTableWindowOverlay.cs:58</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L61" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:61">DataTableWindowOverlay.cs:61</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L59" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:59">DataTableWindowOverlay.cs:59</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L67" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:67">DataTableWindowOverlay.cs:67</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L65" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:65">DataTableWindowOverlay.cs:65</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L71" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:71">DataTableWindowOverlay.cs:71</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L69" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:69">DataTableWindowOverlay.cs:69</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
@@ -727,10 +688,6 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PropertyDrawers/CellValues/CellValueDrawerBase.cs#L464" title="GDX.Editor\PropertyDrawers\CellValues\CellValueDrawerBase.cs:464">CellValueDrawerBase.cs:464</a></td>
 <td>Initializing field by default value is redundant</td>
 </tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindow.cs#L22" title="GDX.Editor\Windows\DataTables\DataTableWindow.cs:22">DataTableWindow.cs:22</a></td>
-<td>Initializing field by default value is redundant</td>
-</tr>
 </tbody>
 </table>
 <h3 id="redundant-empty-switch-section">Redundant empty switch section</h3>
@@ -836,10 +793,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssetDatabaseReference.cs#L7" title="GDX.Editor\AssetDatabaseReference.cs:7">AssetDatabaseReference.cs:7</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowController.cs#L5" title="GDX.Editor\Windows\DataTables\DataTableWindowController.cs:5">DataTableWindowController.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -1024,7 +977,7 @@
 <td>Method <code>Initialize</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L36" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:36">DataTableInspectorBase.cs:36</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L53" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:53">DataTableInspectorBase.cs:53</a></td>
 <td>Method <code>OnDisable</code> is never used</td>
 </tr>
 <tr>
@@ -1038,14 +991,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindow.cs#L47" title="GDX.Editor\Windows\DataTables\DataTableWindow.cs:47">DataTableWindow.cs:47</a></td>
 <td>Method <code>OnDestroy</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L16" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:16">DataTableWindowView.cs:16</a></td>
-<td>Field <code>m_StyleLength25</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L17" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:17">DataTableWindowView.cs:17</a></td>
-<td>Field <code>m_StyleLength275</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/DataTables/StableTableTests.cs#L344" title="GDX.Tests\EditMode\DataTables\StableTableTests.cs:344">StableTableTests.cs:344</a></td>
@@ -1065,25 +1010,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L585" title="GDX\Developer\DebugDrawBuffer.cs:585">DebugDrawBuffer.cs:585</a></td>
 <td>Method <code>AddLineDrawCommand</code> return value is never used</td>
-</tr>
-</tbody>
-</table>
-<h3 id="unused-parameter-private-accessibility">Unused parameter: Private accessibility</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L436" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:436">DataTableWindowView.cs:436</a></td>
-<td>Parameter <code>a</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L438" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:438">DataTableWindowView.cs:438</a></td>
-<td>Parameter <code>a</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -1296,21 +1222,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorWindowExtensions.cs#L136" title="GDX.Editor\EditorWindowExtensions.cs:136">EditorWindowExtensions.cs:136</a></td>
-<td>Field can be made readonly</td>
-</tr>
-</tbody>
-</table>
-<h3 id="field-can-be-made-readonly-private-accessibility">Field can be made readonly: Private accessibility</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L19" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:19">DataTableInspectorBase.cs:19</a></td>
 <td>Field can be made readonly</td>
 </tr>
 </tbody>
@@ -2137,10 +2048,6 @@
 <td>Method <code>EnsureAlwaysIncludeShaders</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PropertyDrawers/CellValues/CellValueDrawerBase.cs#L45" title="GDX.Editor\PropertyDrawers\CellValues\CellValueDrawerBase.cs:45">CellValueDrawerBase.cs:45</a></td>
-<td>Field <code>m_DataTable</code> can be made private</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PropertyDrawers/CellValues/CellValueDrawerBase.cs#L46" title="GDX.Editor\PropertyDrawers\CellValues\CellValueDrawerBase.cs:46">CellValueDrawerBase.cs:46</a></td>
 <td>Field <code>m_TableTicket</code> can be made private</td>
 </tr>
@@ -2163,10 +2070,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VersionControl.cs#L39" title="GDX.Editor\VersionControl.cs:39">VersionControl.cs:39</a></td>
 <td>Method <code>GetAssetListFromFolder</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L304" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:304">DataTableWindowView.cs:304</a></td>
-<td>Method <code>SetDesiredRowHeightMultiplier</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/ProjectSettings/ConfigSections/AutomaticUpdatesSettings.cs#L17" title="GDX.Editor\Windows\ProjectSettings\ConfigSections\AutomaticUpdatesSettings.cs:17">AutomaticUpdatesSettings.cs:17</a></td>
@@ -2689,10 +2592,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1220" title="GDX\Collections\UnsafeSparseSet.cs:1220">UnsafeSparseSet.cs:1220</a></td>
 <td>Property <code>Items</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L94" title="GDX\DataTables\DataTableExtensions.cs:94">DataTableExtensions.cs:94</a></td>
-<td>Method <code>UpdateFromCommaSeperatedValues</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/DebugDrawBuffer.cs#L252" title="GDX\Developer\DebugDrawBuffer.cs:252">DebugDrawBuffer.cs:252</a></td>
@@ -3455,11 +3354,11 @@
 <td>Method <code>ActionableHelpBox</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L79" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:79">DataTableWindowProvider.cs:79</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L70" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:70">DataTableWindowProvider.cs:70</a></td>
 <td>Method <code>OnOpenAssetTable</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L113" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:113">DataTableWindowProvider.cs:113</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L104" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:104">DataTableWindowProvider.cs:104</a></td>
 <td>Method <code>CreateStableTableExample</code> is never used</td>
 </tr>
 <tr>
@@ -3483,7 +3382,7 @@
 <td>Method <code>RemoveSelectedRowQuick</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L340" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:340">DataTableWindowView.cs:340</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L336" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:336">DataTableWindowView.cs:336</a></td>
 <td>Method <code>Show</code> is never used</td>
 </tr>
 <tr>
@@ -3566,28 +3465,92 @@
 <td>Only implementations of method <code>Get</code> are used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L149" title="GDX\DataTables\DataTableBase.cs:149">DataTableBase.cs:149</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L144" title="GDX\DataTables\DataTableBase.cs:144">DataTableBase.cs:144</a></td>
 <td>Only overrides of method <code>GetRowOrder</code> are used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L156" title="GDX\DataTables\DataTableBase.cs:156">DataTableBase.cs:156</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L151" title="GDX\DataTables\DataTableBase.cs:151">DataTableBase.cs:151</a></td>
 <td>Only overrides of method <code>SetRowOrder</code> are used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L162" title="GDX\DataTables\DataTableBase.cs:162">DataTableBase.cs:162</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L157" title="GDX\DataTables\DataTableBase.cs:157">DataTableBase.cs:157</a></td>
 <td>Only overrides of method <code>SetAllRowOrders</code> are used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L169" title="GDX\DataTables\DataTableBase.cs:169">DataTableBase.cs:169</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L164" title="GDX\DataTables\DataTableBase.cs:164">DataTableBase.cs:164</a></td>
 <td>Only overrides of method <code>GetColumnOrder</code> are used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L176" title="GDX\DataTables\DataTableBase.cs:176">DataTableBase.cs:176</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L171" title="GDX\DataTables\DataTableBase.cs:171">DataTableBase.cs:171</a></td>
 <td>Only overrides of method <code>SetColumnOrder</code> are used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L182" title="GDX\DataTables\DataTableBase.cs:182">DataTableBase.cs:182</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L177" title="GDX\DataTables\DataTableBase.cs:177">DataTableBase.cs:177</a></td>
 <td>Only overrides of method <code>SetAllColumnOrders</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L582" title="GDX\DataTables\DataTableBase.cs:582">DataTableBase.cs:582</a></td>
+<td>Only overrides of method <code>SetVector2</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L591" title="GDX\DataTables\DataTableBase.cs:591">DataTableBase.cs:591</a></td>
+<td>Only overrides of method <code>SetVector3</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L600" title="GDX\DataTables\DataTableBase.cs:600">DataTableBase.cs:600</a></td>
+<td>Only overrides of method <code>SetVector4</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L609" title="GDX\DataTables\DataTableBase.cs:609">DataTableBase.cs:609</a></td>
+<td>Only overrides of method <code>SetVector2Int</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L618" title="GDX\DataTables\DataTableBase.cs:618">DataTableBase.cs:618</a></td>
+<td>Only overrides of method <code>SetVector3Int</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L627" title="GDX\DataTables\DataTableBase.cs:627">DataTableBase.cs:627</a></td>
+<td>Only overrides of method <code>SetQuaternion</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L636" title="GDX\DataTables\DataTableBase.cs:636">DataTableBase.cs:636</a></td>
+<td>Only overrides of method <code>SetRect</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L645" title="GDX\DataTables\DataTableBase.cs:645">DataTableBase.cs:645</a></td>
+<td>Only overrides of method <code>SetRectInt</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L654" title="GDX\DataTables\DataTableBase.cs:654">DataTableBase.cs:654</a></td>
+<td>Only overrides of method <code>SetColor</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L663" title="GDX\DataTables\DataTableBase.cs:663">DataTableBase.cs:663</a></td>
+<td>Only overrides of method <code>SetLayerMask</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L672" title="GDX\DataTables\DataTableBase.cs:672">DataTableBase.cs:672</a></td>
+<td>Only overrides of method <code>SetBounds</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L681" title="GDX\DataTables\DataTableBase.cs:681">DataTableBase.cs:681</a></td>
+<td>Only overrides of method <code>SetBoundsInt</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L690" title="GDX\DataTables\DataTableBase.cs:690">DataTableBase.cs:690</a></td>
+<td>Only overrides of method <code>SetHash128</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L699" title="GDX\DataTables\DataTableBase.cs:699">DataTableBase.cs:699</a></td>
+<td>Only overrides of method <code>SetGradient</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L708" title="GDX\DataTables\DataTableBase.cs:708">DataTableBase.cs:708</a></td>
+<td>Only overrides of method <code>SetAnimationCurve</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L717" title="GDX\DataTables\DataTableBase.cs:717">DataTableBase.cs:717</a></td>
+<td>Only overrides of method <code>SetObject</code> are used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/ITestBehaviour.cs#L14" title="GDX\Developer\Reports\BuildVerification\ITestBehaviour.cs:14">ITestBehaviour.cs:14</a></td>
@@ -3661,7 +3624,7 @@
 <td>Method <code>RemoveSubSystemsOfTypeFromFirstSubSystemOfType</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Reflection.cs#L94" title="GDX\Reflection.cs:94">Reflection.cs:94</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Reflection.cs#L99" title="GDX\Reflection.cs:99">Reflection.cs:99</a></td>
 <td>Method <code>InvokeMethod</code> return value is never used</td>
 </tr>
 </tbody>
@@ -3692,7 +3655,7 @@
 <td>Parameter <code>rowIdentifier</code> is not used in any of the implementations</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L79" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:79">DataTableWindowProvider.cs:79</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L70" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:70">DataTableWindowProvider.cs:70</a></td>
 <td>Parameter <code>line</code> is never used</td>
 </tr>
 </tbody>
@@ -3980,21 +3943,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="use-object-or-collection-initializer-when-possible">Use object or collection initializer when possible</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowView.cs#L271" title="GDX.Editor\Windows\DataTables\DataTableWindowView.cs:271">DataTableWindowView.cs:271</a></td>
-<td>Use object initializer</td>
-</tr>
-</tbody>
-</table>
 <h2 id="hints">Hints</h2>
 <h3 id="use-explicit-or-implicit-modifier-definition-for-types">Use explicit or implicit modifier definition for types</h3>
 <table>
@@ -4105,7 +4053,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-01 against <a href="https://github.com/dotBunny/GDX/commit/e03c11b0053887920d07eccc09d25bcde0e90ee0"><strong>e03c11b</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-01 against <a href="https://github.com/dotBunny/GDX/commit/5b17f17f5b59da7b57e632c3cbb9f93d0e725c4e"><strong>5b17f17</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>

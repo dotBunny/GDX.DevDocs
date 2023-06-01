@@ -1,15 +1,15 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-01 - 6:06:27 PM |
+| Generated on: | 2023-06-01 - 6:26:47 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 151 |
-| Files: | 147 |
+| Classes: | 150 |
+| Files: | 146 |
 | Covered lines: | 5974 |
 | Uncovered lines: | 5834 |
 | Coverable lines: | 11808 |
-| Total lines: | 30441 |
+| Total lines: | 29722 |
 | Line coverage: | 50.5% (5974 of 11808) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5974**|**5834**|**11808**|**35385**|**50.5%**|**0**|**0**|****|**626**|**1268**|**49.3%**|
+|**GDX**|**5974**|**5834**|**11808**|**34666**|**50.5%**|**0**|**0**|****|**626**|**1268**|**49.3%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -95,7 +95,6 @@
 |GDX.DataTables.CellValues.Vector3IntCellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector4CellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.ColumnDescription|0|3|3|39|0%|0|0||0|1|0%|
-|GDX.DataTables.DataTableBase|1|0|1|724|100%|0|0||1|1|100%|
 |GDX.DataTables.DataTableExtensions|0|213|213|423|0%|0|0||0|5|0%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
 |GDX.DataTables.StableDataTable|573|613|1186|1935|48.3%|0|0||114|167|68.2%|
@@ -154,7 +153,7 @@
 |GDX.ObjectExtensions|0|9|9|38|0%|0|0||0|1|0%|
 |GDX.Platform|42|62|104|273|40.3%|0|0||6|11|54.5%|
 |GDX.PlayerLoopSystemExtensions|94|77|171|369|54.9%|0|0||7|10|70%|
-|GDX.Reflection|117|0|117|279|100%|0|0||10|10|100%|
+|GDX.Reflection|118|0|118|284|100%|0|0||11|11|100%|
 |GDX.Rendering.ShaderProvider|18|0|18|70|100%|0|0||4|4|100%|
 |GDX.RigidbodyExtensions|0|4|4|39|0%|0|0||0|1|0%|
 |GDX.SegmentedString|128|0|128|276|100%|0|0||11|11|100%|
