@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-01 - 12:35:52 PM |
+| Generated on: | 2023-06-01 - 1:03:13 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 149 |
@@ -94,8 +94,8 @@
 |GDX.DataTables.CellValues.Vector3CellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector3IntCellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector4CellValue|0|32|32|127|0%|0|0||0|6|0%|
+|GDX.DataTables.DataTableBase|0|6|6|140|0%|0|0||0|2|0%|
 |GDX.DataTables.DataTableExtensions|0|292|292|527|0%|0|0||0|33|0%|
-|GDX.DataTables.DataTableObject|0|6|6|140|0%|0|0||0|2|0%|
 |GDX.DataTables.StableDataTable|573|640|1213|1950|47.2%|0|0||115|170|67.6%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|

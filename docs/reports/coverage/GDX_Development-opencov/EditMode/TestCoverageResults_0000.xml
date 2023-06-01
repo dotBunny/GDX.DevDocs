@@ -87,8 +87,8 @@
         <File uid="78" fullPath="./Packages/com.dotbunny.gdx/GDX/Developer/Reports/BuildVerification/SimpleTestBehaviour.cs" />
         <File uid="79" fullPath="./Packages/com.dotbunny.gdx/GDX/Developer/Reports/BuildVerification/TestRunner.cs" />
         <File uid="80" fullPath="./Packages/com.dotbunny.gdx/GDX/Developer/Reports/BuildVerification/TestScene.cs" />
-        <File uid="81" fullPath="./Packages/com.dotbunny.gdx/GDX/DataTables/DataTableExtensions.cs" />
-        <File uid="82" fullPath="./Packages/com.dotbunny.gdx/GDX/DataTables/DataTableObject.cs" />
+        <File uid="81" fullPath="./Packages/com.dotbunny.gdx/GDX/DataTables/DataTableBase.cs" />
+        <File uid="82" fullPath="./Packages/com.dotbunny.gdx/GDX/DataTables/DataTableExtensions.cs" />
         <File uid="83" fullPath="./Packages/com.dotbunny.gdx/GDX/DataTables/StableDataTable.cs" />
         <File uid="84" fullPath="./Packages/com.dotbunny.gdx/GDX/DataTables/CellValues/AnimationCurveCellValue.cs" />
         <File uid="85" fullPath="./Packages/com.dotbunny.gdx/GDX/DataTables/CellValues/BoolCellValue.cs" />
@@ -10312,647 +10312,647 @@
           </Methods>
         </Class>
         <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0.0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>GDX.DataTables.DataTableBase/ColumnDescription</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100664121</MetadataToken>
+              <Name>System.String GDX.DataTables.DataTableBase/ColumnDescription::ToString()</Name>
+              <FileRef uid="81" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="4761" ordinal="0" offset="0" sl="124" sc="0" el="124" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4762" ordinal="0" offset="1" sl="125" sc="0" el="125" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4763" ordinal="0" offset="36" sl="126" sc="0" el="126" ec="0" bec="0" bev="0" fileid="81" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
+          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0.0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
+          <FullName>GDX.DataTables.DataTableBase/RowDescription</FullName>
+          <Methods>
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
+              <MetadataToken>100664122</MetadataToken>
+              <Name>System.String GDX.DataTables.DataTableBase/RowDescription::ToString()</Name>
+              <FileRef uid="81" />
+              <SequencePoints>
+                <SequencePoint vc="0" uspid="4764" ordinal="0" offset="0" sl="135" sc="0" el="135" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4765" ordinal="0" offset="1" sl="136" sc="0" el="136" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4766" ordinal="0" offset="10" sl="137" sc="0" el="137" ec="0" bec="0" bev="0" fileid="81" />
+              </SequencePoints>
+              <BranchPoints />
+            </Method>
+          </Methods>
+        </Class>
+        <Class>
           <Summary numSequencePoints="308" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0.0" maxCyclomaticComplexity="33" minCyclomaticComplexity="1" maxCrapScore="1122" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="33" />
           <FullName>GDX.DataTables.DataTableExtensions</FullName>
           <Methods>
             <Method visited="false" cyclomaticComplexity="5" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="30" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="10" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" maxCrapScore="30" minCrapScore="30" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664037</MetadataToken>
+              <MetadataToken>100664123</MetadataToken>
               <Name>static System.String GDX.DataTables.DataTableExtensions::MakeCommaSeperatedValue(System.String)</Name>
-              <FileRef uid="81" />
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4761" ordinal="0" offset="0" sl="19" sc="0" el="19" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4762" ordinal="0" offset="1" sl="20" sc="0" el="20" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4763" ordinal="0" offset="9" sl="21" sc="0" el="21" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4764" ordinal="0" offset="10" sl="22" sc="0" el="22" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4765" ordinal="0" offset="18" sl="26" sc="0" el="26" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4766" ordinal="0" offset="36" sl="27" sc="0" el="27" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4767" ordinal="0" offset="37" sl="28" sc="0" el="28" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4768" ordinal="0" offset="55" sl="29" sc="0" el="29" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4769" ordinal="0" offset="56" sl="32" sc="0" el="32" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4770" ordinal="0" offset="89" sl="33" sc="0" el="33" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4767" ordinal="0" offset="0" sl="19" sc="0" el="19" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4768" ordinal="0" offset="1" sl="20" sc="0" el="20" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4769" ordinal="0" offset="9" sl="21" sc="0" el="21" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4770" ordinal="0" offset="10" sl="22" sc="0" el="22" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4771" ordinal="0" offset="18" sl="26" sc="0" el="26" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4772" ordinal="0" offset="36" sl="27" sc="0" el="27" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4773" ordinal="0" offset="37" sl="28" sc="0" el="28" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4774" ordinal="0" offset="55" sl="29" sc="0" el="29" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4775" ordinal="0" offset="56" sl="32" sc="0" el="32" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4776" ordinal="0" offset="89" sl="33" sc="0" el="33" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="6" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="42" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="25" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="6" minCyclomaticComplexity="6" maxCrapScore="42" minCrapScore="42" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664038</MetadataToken>
+              <MetadataToken>100664124</MetadataToken>
               <Name>static System.String[] GDX.DataTables.DataTableExtensions::ParseCommaSeperatedValues(System.String)</Name>
-              <FileRef uid="81" />
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4771" ordinal="0" offset="0" sl="36" sc="0" el="36" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4772" ordinal="0" offset="1" sl="37" sc="0" el="37" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4773" ordinal="0" offset="7" sl="38" sc="0" el="38" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4774" ordinal="0" offset="9" sl="39" sc="0" el="39" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4775" ordinal="0" offset="11" sl="40" sc="0" el="40" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4776" ordinal="0" offset="13" sl="41" sc="0" el="41" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4777" ordinal="0" offset="23" sl="43" sc="0" el="43" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4778" ordinal="0" offset="24" sl="44" sc="0" el="44" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4779" ordinal="0" offset="53" sl="47" sc="0" el="47" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4780" ordinal="0" offset="58" sl="48" sc="0" el="48" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4781" ordinal="0" offset="60" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4782" ordinal="0" offset="70" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4783" ordinal="0" offset="71" sl="52" sc="0" el="52" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4784" ordinal="0" offset="111" sl="53" sc="0" el="53" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4785" ordinal="0" offset="113" sl="54" sc="0" el="54" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4786" ordinal="0" offset="114" sl="55" sc="0" el="55" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4787" ordinal="0" offset="116" sl="57" sc="0" el="57" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4788" ordinal="0" offset="120" sl="58" sc="0" el="58" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4789" ordinal="0" offset="121" sl="42" sc="0" el="42" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4790" ordinal="0" offset="132" sl="59" sc="0" el="59" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4791" ordinal="0" offset="152" sl="60" sc="0" el="60" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4792" ordinal="0" offset="153" sl="61" sc="0" el="61" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4793" ordinal="0" offset="174" sl="62" sc="0" el="62" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4794" ordinal="0" offset="175" sl="63" sc="0" el="63" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4795" ordinal="0" offset="185" sl="64" sc="0" el="64" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4777" ordinal="0" offset="0" sl="36" sc="0" el="36" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4778" ordinal="0" offset="1" sl="37" sc="0" el="37" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4779" ordinal="0" offset="7" sl="38" sc="0" el="38" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4780" ordinal="0" offset="9" sl="39" sc="0" el="39" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4781" ordinal="0" offset="11" sl="40" sc="0" el="40" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4782" ordinal="0" offset="13" sl="41" sc="0" el="41" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4783" ordinal="0" offset="23" sl="43" sc="0" el="43" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4784" ordinal="0" offset="24" sl="44" sc="0" el="44" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4785" ordinal="0" offset="53" sl="47" sc="0" el="47" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4786" ordinal="0" offset="58" sl="48" sc="0" el="48" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4787" ordinal="0" offset="60" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4788" ordinal="0" offset="70" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4789" ordinal="0" offset="71" sl="52" sc="0" el="52" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4790" ordinal="0" offset="111" sl="53" sc="0" el="53" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4791" ordinal="0" offset="113" sl="54" sc="0" el="54" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4792" ordinal="0" offset="114" sl="55" sc="0" el="55" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4793" ordinal="0" offset="116" sl="57" sc="0" el="57" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4794" ordinal="0" offset="120" sl="58" sc="0" el="58" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4795" ordinal="0" offset="121" sl="42" sc="0" el="42" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4796" ordinal="0" offset="132" sl="59" sc="0" el="59" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4797" ordinal="0" offset="152" sl="60" sc="0" el="60" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4798" ordinal="0" offset="153" sl="61" sc="0" el="61" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4799" ordinal="0" offset="174" sl="62" sc="0" el="62" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4800" ordinal="0" offset="175" sl="63" sc="0" el="63" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4801" ordinal="0" offset="185" sl="64" sc="0" el="64" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="24" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="600" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="96" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="24" minCyclomaticComplexity="24" maxCrapScore="600" minCrapScore="600" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664039</MetadataToken>
-              <Name>static System.Boolean GDX.DataTables.DataTableExtensions::UpdateFromCommaSeperatedValues(GDX.DataTables.DataTableObject, System.String)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664125</MetadataToken>
+              <Name>static System.Boolean GDX.DataTables.DataTableExtensions::UpdateFromCommaSeperatedValues(GDX.DataTables.DataTableBase, System.String)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4796" ordinal="0" offset="0" sl="67" sc="0" el="67" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4797" ordinal="0" offset="1" sl="68" sc="0" el="68" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4798" ordinal="0" offset="16" sl="69" sc="0" el="69" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4799" ordinal="0" offset="17" sl="70" sc="0" el="70" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4800" ordinal="0" offset="39" sl="71" sc="0" el="71" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4801" ordinal="0" offset="47" sl="74" sc="0" el="74" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4802" ordinal="0" offset="54" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4803" ordinal="0" offset="61" sl="76" sc="0" el="76" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4804" ordinal="0" offset="68" sl="77" sc="0" el="77" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4805" ordinal="0" offset="75" sl="80" sc="0" el="80" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4806" ordinal="0" offset="85" sl="81" sc="0" el="81" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4807" ordinal="0" offset="103" sl="82" sc="0" el="82" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4808" ordinal="0" offset="104" sl="83" sc="0" el="83" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4809" ordinal="0" offset="137" sl="84" sc="0" el="84" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4810" ordinal="0" offset="145" sl="88" sc="0" el="88" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4811" ordinal="0" offset="153" sl="89" sc="0" el="89" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4812" ordinal="0" offset="161" sl="90" sc="0" el="90" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4813" ordinal="0" offset="167" sl="91" sc="0" el="91" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4814" ordinal="0" offset="172" sl="92" sc="0" el="92" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4815" ordinal="0" offset="173" sl="93" sc="0" el="93" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4816" ordinal="0" offset="195" sl="94" sc="0" el="94" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4817" ordinal="0" offset="196" sl="91" sc="0" el="91" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4818" ordinal="0" offset="202" sl="91" sc="0" el="91" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4819" ordinal="0" offset="214" sl="95" sc="0" el="95" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4820" ordinal="0" offset="222" sl="97" sc="0" el="97" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4821" ordinal="0" offset="230" sl="98" sc="0" el="98" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4822" ordinal="0" offset="231" sl="99" sc="0" el="99" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4823" ordinal="0" offset="234" sl="100" sc="0" el="100" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4824" ordinal="0" offset="245" sl="101" sc="0" el="101" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4825" ordinal="0" offset="260" sl="102" sc="0" el="102" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4826" ordinal="0" offset="261" sl="103" sc="0" el="103" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4827" ordinal="0" offset="267" sl="104" sc="0" el="104" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4828" ordinal="0" offset="280" sl="105" sc="0" el="105" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4829" ordinal="0" offset="281" sl="106" sc="0" el="106" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4830" ordinal="0" offset="288" sl="107" sc="0" el="107" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4831" ordinal="0" offset="289" sl="110" sc="0" el="110" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4832" ordinal="0" offset="300" sl="111" sc="0" el="111" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4833" ordinal="0" offset="303" sl="113" sc="0" el="113" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4834" ordinal="0" offset="304" sl="114" sc="0" el="114" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4835" ordinal="0" offset="315" sl="115" sc="0" el="115" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4836" ordinal="0" offset="316" sl="117" sc="0" el="117" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4837" ordinal="0" offset="326" sl="119" sc="0" el="119" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4838" ordinal="0" offset="334" sl="120" sc="0" el="120" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4839" ordinal="0" offset="335" sl="121" sc="0" el="121" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4840" ordinal="0" offset="344" sl="122" sc="0" el="122" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4841" ordinal="0" offset="427" sl="125" sc="0" el="125" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4842" ordinal="0" offset="451" sl="126" sc="0" el="126" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4843" ordinal="0" offset="456" sl="128" sc="0" el="128" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4844" ordinal="0" offset="486" sl="129" sc="0" el="129" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4845" ordinal="0" offset="491" sl="131" sc="0" el="131" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4846" ordinal="0" offset="520" sl="132" sc="0" el="132" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4847" ordinal="0" offset="525" sl="134" sc="0" el="134" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4848" ordinal="0" offset="554" sl="136" sc="0" el="136" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4849" ordinal="0" offset="559" sl="138" sc="0" el="138" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4850" ordinal="0" offset="588" sl="139" sc="0" el="139" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4851" ordinal="0" offset="593" sl="141" sc="0" el="141" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4852" ordinal="0" offset="622" sl="143" sc="0" el="143" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4853" ordinal="0" offset="627" sl="145" sc="0" el="145" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4854" ordinal="0" offset="656" sl="147" sc="0" el="147" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4855" ordinal="0" offset="661" sl="149" sc="0" el="149" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4856" ordinal="0" offset="690" sl="150" sc="0" el="150" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4857" ordinal="0" offset="695" sl="152" sc="0" el="152" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4858" ordinal="0" offset="724" sl="153" sc="0" el="153" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4859" ordinal="0" offset="726" sl="155" sc="0" el="155" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4860" ordinal="0" offset="755" sl="156" sc="0" el="156" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4861" ordinal="0" offset="757" sl="158" sc="0" el="158" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4862" ordinal="0" offset="786" sl="160" sc="0" el="160" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4863" ordinal="0" offset="788" sl="162" sc="0" el="162" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4864" ordinal="0" offset="817" sl="164" sc="0" el="164" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4865" ordinal="0" offset="819" sl="166" sc="0" el="166" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4866" ordinal="0" offset="848" sl="168" sc="0" el="168" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4867" ordinal="0" offset="850" sl="170" sc="0" el="170" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4868" ordinal="0" offset="851" sl="119" sc="0" el="119" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4869" ordinal="0" offset="857" sl="119" sc="0" el="119" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4870" ordinal="0" offset="871" sl="171" sc="0" el="171" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4871" ordinal="0" offset="872" sl="97" sc="0" el="97" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4872" ordinal="0" offset="878" sl="97" sc="0" el="97" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4873" ordinal="0" offset="894" sl="174" sc="0" el="174" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4874" ordinal="0" offset="903" sl="175" sc="0" el="175" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4875" ordinal="0" offset="908" sl="176" sc="0" el="176" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4876" ordinal="0" offset="909" sl="177" sc="0" el="177" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4877" ordinal="0" offset="931" sl="178" sc="0" el="178" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4878" ordinal="0" offset="932" sl="179" sc="0" el="179" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4879" ordinal="0" offset="949" sl="180" sc="0" el="180" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4880" ordinal="0" offset="950" sl="181" sc="0" el="181" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4881" ordinal="0" offset="951" sl="175" sc="0" el="175" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4882" ordinal="0" offset="957" sl="175" sc="0" el="175" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4883" ordinal="0" offset="969" sl="183" sc="0" el="183" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4884" ordinal="0" offset="978" sl="184" sc="0" el="184" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4885" ordinal="0" offset="983" sl="185" sc="0" el="185" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4886" ordinal="0" offset="984" sl="186" sc="0" el="186" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4887" ordinal="0" offset="1000" sl="187" sc="0" el="187" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4888" ordinal="0" offset="1001" sl="184" sc="0" el="184" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4889" ordinal="0" offset="1007" sl="184" sc="0" el="184" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4890" ordinal="0" offset="1019" sl="189" sc="0" el="189" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4891" ordinal="0" offset="1024" sl="190" sc="0" el="190" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4802" ordinal="0" offset="0" sl="67" sc="0" el="67" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4803" ordinal="0" offset="1" sl="68" sc="0" el="68" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4804" ordinal="0" offset="16" sl="69" sc="0" el="69" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4805" ordinal="0" offset="17" sl="70" sc="0" el="70" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4806" ordinal="0" offset="39" sl="71" sc="0" el="71" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4807" ordinal="0" offset="47" sl="74" sc="0" el="74" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4808" ordinal="0" offset="54" sl="75" sc="0" el="75" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4809" ordinal="0" offset="61" sl="76" sc="0" el="76" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4810" ordinal="0" offset="68" sl="77" sc="0" el="77" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4811" ordinal="0" offset="75" sl="80" sc="0" el="80" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4812" ordinal="0" offset="85" sl="81" sc="0" el="81" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4813" ordinal="0" offset="103" sl="82" sc="0" el="82" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4814" ordinal="0" offset="104" sl="83" sc="0" el="83" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4815" ordinal="0" offset="137" sl="84" sc="0" el="84" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4816" ordinal="0" offset="145" sl="88" sc="0" el="88" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4817" ordinal="0" offset="153" sl="89" sc="0" el="89" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4818" ordinal="0" offset="161" sl="90" sc="0" el="90" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4819" ordinal="0" offset="167" sl="91" sc="0" el="91" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4820" ordinal="0" offset="172" sl="92" sc="0" el="92" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4821" ordinal="0" offset="173" sl="93" sc="0" el="93" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4822" ordinal="0" offset="195" sl="94" sc="0" el="94" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4823" ordinal="0" offset="196" sl="91" sc="0" el="91" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4824" ordinal="0" offset="202" sl="91" sc="0" el="91" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4825" ordinal="0" offset="214" sl="95" sc="0" el="95" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4826" ordinal="0" offset="222" sl="97" sc="0" el="97" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4827" ordinal="0" offset="230" sl="98" sc="0" el="98" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4828" ordinal="0" offset="231" sl="99" sc="0" el="99" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4829" ordinal="0" offset="234" sl="100" sc="0" el="100" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4830" ordinal="0" offset="245" sl="101" sc="0" el="101" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4831" ordinal="0" offset="260" sl="102" sc="0" el="102" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4832" ordinal="0" offset="261" sl="103" sc="0" el="103" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4833" ordinal="0" offset="267" sl="104" sc="0" el="104" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4834" ordinal="0" offset="280" sl="105" sc="0" el="105" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4835" ordinal="0" offset="281" sl="106" sc="0" el="106" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4836" ordinal="0" offset="288" sl="107" sc="0" el="107" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4837" ordinal="0" offset="289" sl="110" sc="0" el="110" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4838" ordinal="0" offset="300" sl="111" sc="0" el="111" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4839" ordinal="0" offset="303" sl="113" sc="0" el="113" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4840" ordinal="0" offset="304" sl="114" sc="0" el="114" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4841" ordinal="0" offset="315" sl="115" sc="0" el="115" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4842" ordinal="0" offset="316" sl="117" sc="0" el="117" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4843" ordinal="0" offset="326" sl="119" sc="0" el="119" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4844" ordinal="0" offset="334" sl="120" sc="0" el="120" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4845" ordinal="0" offset="335" sl="121" sc="0" el="121" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4846" ordinal="0" offset="344" sl="122" sc="0" el="122" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4847" ordinal="0" offset="427" sl="125" sc="0" el="125" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4848" ordinal="0" offset="451" sl="126" sc="0" el="126" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4849" ordinal="0" offset="456" sl="128" sc="0" el="128" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4850" ordinal="0" offset="486" sl="129" sc="0" el="129" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4851" ordinal="0" offset="491" sl="131" sc="0" el="131" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4852" ordinal="0" offset="520" sl="132" sc="0" el="132" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4853" ordinal="0" offset="525" sl="134" sc="0" el="134" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4854" ordinal="0" offset="554" sl="136" sc="0" el="136" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4855" ordinal="0" offset="559" sl="138" sc="0" el="138" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4856" ordinal="0" offset="588" sl="139" sc="0" el="139" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4857" ordinal="0" offset="593" sl="141" sc="0" el="141" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4858" ordinal="0" offset="622" sl="143" sc="0" el="143" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4859" ordinal="0" offset="627" sl="145" sc="0" el="145" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4860" ordinal="0" offset="656" sl="147" sc="0" el="147" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4861" ordinal="0" offset="661" sl="149" sc="0" el="149" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4862" ordinal="0" offset="690" sl="150" sc="0" el="150" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4863" ordinal="0" offset="695" sl="152" sc="0" el="152" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4864" ordinal="0" offset="724" sl="153" sc="0" el="153" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4865" ordinal="0" offset="726" sl="155" sc="0" el="155" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4866" ordinal="0" offset="755" sl="156" sc="0" el="156" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4867" ordinal="0" offset="757" sl="158" sc="0" el="158" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4868" ordinal="0" offset="786" sl="160" sc="0" el="160" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4869" ordinal="0" offset="788" sl="162" sc="0" el="162" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4870" ordinal="0" offset="817" sl="164" sc="0" el="164" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4871" ordinal="0" offset="819" sl="166" sc="0" el="166" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4872" ordinal="0" offset="848" sl="168" sc="0" el="168" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4873" ordinal="0" offset="850" sl="170" sc="0" el="170" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4874" ordinal="0" offset="851" sl="119" sc="0" el="119" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4875" ordinal="0" offset="857" sl="119" sc="0" el="119" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4876" ordinal="0" offset="871" sl="171" sc="0" el="171" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4877" ordinal="0" offset="872" sl="97" sc="0" el="97" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4878" ordinal="0" offset="878" sl="97" sc="0" el="97" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4879" ordinal="0" offset="894" sl="174" sc="0" el="174" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4880" ordinal="0" offset="903" sl="175" sc="0" el="175" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4881" ordinal="0" offset="908" sl="176" sc="0" el="176" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4882" ordinal="0" offset="909" sl="177" sc="0" el="177" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4883" ordinal="0" offset="931" sl="178" sc="0" el="178" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4884" ordinal="0" offset="932" sl="179" sc="0" el="179" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4885" ordinal="0" offset="949" sl="180" sc="0" el="180" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4886" ordinal="0" offset="950" sl="181" sc="0" el="181" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4887" ordinal="0" offset="951" sl="175" sc="0" el="175" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4888" ordinal="0" offset="957" sl="175" sc="0" el="175" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4889" ordinal="0" offset="969" sl="183" sc="0" el="183" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4890" ordinal="0" offset="978" sl="184" sc="0" el="184" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4891" ordinal="0" offset="983" sl="185" sc="0" el="185" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4892" ordinal="0" offset="984" sl="186" sc="0" el="186" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4893" ordinal="0" offset="1000" sl="187" sc="0" el="187" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4894" ordinal="0" offset="1001" sl="184" sc="0" el="184" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4895" ordinal="0" offset="1007" sl="184" sc="0" el="184" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4896" ordinal="0" offset="1019" sl="189" sc="0" el="189" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4897" ordinal="0" offset="1024" sl="190" sc="0" el="190" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="33" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="1122" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="90" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="33" minCyclomaticComplexity="33" maxCrapScore="1122" minCrapScore="1122" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664040</MetadataToken>
-              <Name>static System.Void GDX.DataTables.DataTableExtensions::ExportToCommaSeperatedValues(GDX.DataTables.DataTableObject, System.String)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664126</MetadataToken>
+              <Name>static System.Void GDX.DataTables.DataTableExtensions::ExportToCommaSeperatedValues(GDX.DataTables.DataTableBase, System.String)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4892" ordinal="0" offset="0" sl="193" sc="0" el="193" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4893" ordinal="0" offset="1" sl="194" sc="0" el="194" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4894" ordinal="0" offset="8" sl="195" sc="0" el="195" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4895" ordinal="0" offset="15" sl="196" sc="0" el="196" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4896" ordinal="0" offset="28" sl="199" sc="0" el="199" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4897" ordinal="0" offset="35" sl="200" sc="0" el="200" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4898" ordinal="0" offset="47" sl="201" sc="0" el="201" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4899" ordinal="0" offset="52" sl="202" sc="0" el="202" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4900" ordinal="0" offset="53" sl="203" sc="0" el="203" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4901" ordinal="0" offset="65" sl="204" sc="0" el="204" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4902" ordinal="0" offset="85" sl="205" sc="0" el="205" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4903" ordinal="0" offset="86" sl="201" sc="0" el="201" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4904" ordinal="0" offset="92" sl="201" sc="0" el="201" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4905" ordinal="0" offset="103" sl="207" sc="0" el="207" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4906" ordinal="0" offset="110" sl="210" sc="0" el="210" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4907" ordinal="0" offset="118" sl="211" sc="0" el="211" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4908" ordinal="0" offset="119" sl="212" sc="0" el="212" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4909" ordinal="0" offset="129" sl="213" sc="0" el="213" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4910" ordinal="0" offset="170" sl="214" sc="0" el="214" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4911" ordinal="0" offset="178" sl="215" sc="0" el="215" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4912" ordinal="0" offset="179" sl="216" sc="0" el="216" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4913" ordinal="0" offset="189" sl="217" sc="0" el="217" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4914" ordinal="0" offset="201" sl="218" sc="0" el="218" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4915" ordinal="0" offset="342" sl="221" sc="0" el="221" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4916" ordinal="0" offset="374" sl="223" sc="0" el="223" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4917" ordinal="0" offset="379" sl="225" sc="0" el="225" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4918" ordinal="0" offset="420" sl="227" sc="0" el="227" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4919" ordinal="0" offset="425" sl="229" sc="0" el="229" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4920" ordinal="0" offset="461" sl="231" sc="0" el="231" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4921" ordinal="0" offset="466" sl="233" sc="0" el="233" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4922" ordinal="0" offset="502" sl="235" sc="0" el="235" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4923" ordinal="0" offset="507" sl="237" sc="0" el="237" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4924" ordinal="0" offset="543" sl="239" sc="0" el="239" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4925" ordinal="0" offset="548" sl="241" sc="0" el="241" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4926" ordinal="0" offset="584" sl="243" sc="0" el="243" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4927" ordinal="0" offset="589" sl="245" sc="0" el="245" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4928" ordinal="0" offset="625" sl="247" sc="0" el="247" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4929" ordinal="0" offset="630" sl="249" sc="0" el="249" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4930" ordinal="0" offset="666" sl="251" sc="0" el="251" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4931" ordinal="0" offset="671" sl="253" sc="0" el="253" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4932" ordinal="0" offset="707" sl="255" sc="0" el="255" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4933" ordinal="0" offset="712" sl="257" sc="0" el="257" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4934" ordinal="0" offset="748" sl="259" sc="0" el="259" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4935" ordinal="0" offset="753" sl="261" sc="0" el="261" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4936" ordinal="0" offset="789" sl="263" sc="0" el="263" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4937" ordinal="0" offset="794" sl="265" sc="0" el="265" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4938" ordinal="0" offset="835" sl="268" sc="0" el="268" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4939" ordinal="0" offset="840" sl="270" sc="0" el="270" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4940" ordinal="0" offset="881" sl="273" sc="0" el="273" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4941" ordinal="0" offset="886" sl="275" sc="0" el="275" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4942" ordinal="0" offset="922" sl="277" sc="0" el="277" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4943" ordinal="0" offset="927" sl="279" sc="0" el="279" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4944" ordinal="0" offset="969" sl="281" sc="0" el="281" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4945" ordinal="0" offset="974" sl="283" sc="0" el="283" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4946" ordinal="0" offset="1016" sl="285" sc="0" el="285" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4947" ordinal="0" offset="1021" sl="287" sc="0" el="287" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4948" ordinal="0" offset="1063" sl="290" sc="0" el="290" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4949" ordinal="0" offset="1068" sl="292" sc="0" el="292" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4950" ordinal="0" offset="1110" sl="295" sc="0" el="295" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4951" ordinal="0" offset="1115" sl="297" sc="0" el="297" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4952" ordinal="0" offset="1157" sl="300" sc="0" el="300" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4953" ordinal="0" offset="1162" sl="302" sc="0" el="302" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4954" ordinal="0" offset="1204" sl="304" sc="0" el="304" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4955" ordinal="0" offset="1209" sl="306" sc="0" el="306" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4956" ordinal="0" offset="1251" sl="308" sc="0" el="308" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4957" ordinal="0" offset="1256" sl="310" sc="0" el="310" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4958" ordinal="0" offset="1298" sl="312" sc="0" el="312" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4959" ordinal="0" offset="1303" sl="314" sc="0" el="314" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4960" ordinal="0" offset="1345" sl="317" sc="0" el="317" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4961" ordinal="0" offset="1350" sl="319" sc="0" el="319" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4962" ordinal="0" offset="1392" sl="321" sc="0" el="321" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4963" ordinal="0" offset="1397" sl="323" sc="0" el="323" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4964" ordinal="0" offset="1439" sl="326" sc="0" el="326" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4965" ordinal="0" offset="1444" sl="328" sc="0" el="328" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4966" ordinal="0" offset="1486" sl="330" sc="0" el="330" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4967" ordinal="0" offset="1488" sl="332" sc="0" el="332" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4968" ordinal="0" offset="1520" sl="334" sc="0" el="334" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4969" ordinal="0" offset="1522" sl="336" sc="0" el="336" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4970" ordinal="0" offset="1554" sl="339" sc="0" el="339" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4971" ordinal="0" offset="1556" sl="341" sc="0" el="341" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4972" ordinal="0" offset="1588" sl="343" sc="0" el="343" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4973" ordinal="0" offset="1590" sl="345" sc="0" el="345" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4974" ordinal="0" offset="1591" sl="214" sc="0" el="214" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4975" ordinal="0" offset="1597" sl="214" sc="0" el="214" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4976" ordinal="0" offset="1611" sl="347" sc="0" el="347" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4977" ordinal="0" offset="1618" sl="348" sc="0" el="348" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4978" ordinal="0" offset="1619" sl="210" sc="0" el="210" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4979" ordinal="0" offset="1625" sl="210" sc="0" el="210" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4980" ordinal="0" offset="1639" sl="350" sc="0" el="350" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4981" ordinal="0" offset="1652" sl="351" sc="0" el="351" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4898" ordinal="0" offset="0" sl="193" sc="0" el="193" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4899" ordinal="0" offset="1" sl="194" sc="0" el="194" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4900" ordinal="0" offset="8" sl="195" sc="0" el="195" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4901" ordinal="0" offset="15" sl="196" sc="0" el="196" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4902" ordinal="0" offset="28" sl="199" sc="0" el="199" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4903" ordinal="0" offset="35" sl="200" sc="0" el="200" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4904" ordinal="0" offset="47" sl="201" sc="0" el="201" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4905" ordinal="0" offset="52" sl="202" sc="0" el="202" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4906" ordinal="0" offset="53" sl="203" sc="0" el="203" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4907" ordinal="0" offset="65" sl="204" sc="0" el="204" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4908" ordinal="0" offset="85" sl="205" sc="0" el="205" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4909" ordinal="0" offset="86" sl="201" sc="0" el="201" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4910" ordinal="0" offset="92" sl="201" sc="0" el="201" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4911" ordinal="0" offset="103" sl="207" sc="0" el="207" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4912" ordinal="0" offset="110" sl="210" sc="0" el="210" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4913" ordinal="0" offset="118" sl="211" sc="0" el="211" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4914" ordinal="0" offset="119" sl="212" sc="0" el="212" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4915" ordinal="0" offset="129" sl="213" sc="0" el="213" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4916" ordinal="0" offset="170" sl="214" sc="0" el="214" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4917" ordinal="0" offset="178" sl="215" sc="0" el="215" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4918" ordinal="0" offset="179" sl="216" sc="0" el="216" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4919" ordinal="0" offset="189" sl="217" sc="0" el="217" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4920" ordinal="0" offset="201" sl="218" sc="0" el="218" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4921" ordinal="0" offset="342" sl="221" sc="0" el="221" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4922" ordinal="0" offset="374" sl="223" sc="0" el="223" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4923" ordinal="0" offset="379" sl="225" sc="0" el="225" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4924" ordinal="0" offset="420" sl="227" sc="0" el="227" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4925" ordinal="0" offset="425" sl="229" sc="0" el="229" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4926" ordinal="0" offset="461" sl="231" sc="0" el="231" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4927" ordinal="0" offset="466" sl="233" sc="0" el="233" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4928" ordinal="0" offset="502" sl="235" sc="0" el="235" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4929" ordinal="0" offset="507" sl="237" sc="0" el="237" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4930" ordinal="0" offset="543" sl="239" sc="0" el="239" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4931" ordinal="0" offset="548" sl="241" sc="0" el="241" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4932" ordinal="0" offset="584" sl="243" sc="0" el="243" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4933" ordinal="0" offset="589" sl="245" sc="0" el="245" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4934" ordinal="0" offset="625" sl="247" sc="0" el="247" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4935" ordinal="0" offset="630" sl="249" sc="0" el="249" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4936" ordinal="0" offset="666" sl="251" sc="0" el="251" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4937" ordinal="0" offset="671" sl="253" sc="0" el="253" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4938" ordinal="0" offset="707" sl="255" sc="0" el="255" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4939" ordinal="0" offset="712" sl="257" sc="0" el="257" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4940" ordinal="0" offset="748" sl="259" sc="0" el="259" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4941" ordinal="0" offset="753" sl="261" sc="0" el="261" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4942" ordinal="0" offset="789" sl="263" sc="0" el="263" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4943" ordinal="0" offset="794" sl="265" sc="0" el="265" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4944" ordinal="0" offset="835" sl="268" sc="0" el="268" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4945" ordinal="0" offset="840" sl="270" sc="0" el="270" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4946" ordinal="0" offset="881" sl="273" sc="0" el="273" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4947" ordinal="0" offset="886" sl="275" sc="0" el="275" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4948" ordinal="0" offset="922" sl="277" sc="0" el="277" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4949" ordinal="0" offset="927" sl="279" sc="0" el="279" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4950" ordinal="0" offset="969" sl="281" sc="0" el="281" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4951" ordinal="0" offset="974" sl="283" sc="0" el="283" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4952" ordinal="0" offset="1016" sl="285" sc="0" el="285" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4953" ordinal="0" offset="1021" sl="287" sc="0" el="287" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4954" ordinal="0" offset="1063" sl="290" sc="0" el="290" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4955" ordinal="0" offset="1068" sl="292" sc="0" el="292" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4956" ordinal="0" offset="1110" sl="295" sc="0" el="295" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4957" ordinal="0" offset="1115" sl="297" sc="0" el="297" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4958" ordinal="0" offset="1157" sl="300" sc="0" el="300" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4959" ordinal="0" offset="1162" sl="302" sc="0" el="302" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4960" ordinal="0" offset="1204" sl="304" sc="0" el="304" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4961" ordinal="0" offset="1209" sl="306" sc="0" el="306" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4962" ordinal="0" offset="1251" sl="308" sc="0" el="308" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4963" ordinal="0" offset="1256" sl="310" sc="0" el="310" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4964" ordinal="0" offset="1298" sl="312" sc="0" el="312" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4965" ordinal="0" offset="1303" sl="314" sc="0" el="314" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4966" ordinal="0" offset="1345" sl="317" sc="0" el="317" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4967" ordinal="0" offset="1350" sl="319" sc="0" el="319" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4968" ordinal="0" offset="1392" sl="321" sc="0" el="321" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4969" ordinal="0" offset="1397" sl="323" sc="0" el="323" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4970" ordinal="0" offset="1439" sl="326" sc="0" el="326" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4971" ordinal="0" offset="1444" sl="328" sc="0" el="328" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4972" ordinal="0" offset="1486" sl="330" sc="0" el="330" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4973" ordinal="0" offset="1488" sl="332" sc="0" el="332" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4974" ordinal="0" offset="1520" sl="334" sc="0" el="334" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4975" ordinal="0" offset="1522" sl="336" sc="0" el="336" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4976" ordinal="0" offset="1554" sl="339" sc="0" el="339" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4977" ordinal="0" offset="1556" sl="341" sc="0" el="341" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4978" ordinal="0" offset="1588" sl="343" sc="0" el="343" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4979" ordinal="0" offset="1590" sl="345" sc="0" el="345" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4980" ordinal="0" offset="1591" sl="214" sc="0" el="214" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4981" ordinal="0" offset="1597" sl="214" sc="0" el="214" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4982" ordinal="0" offset="1611" sl="347" sc="0" el="347" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4983" ordinal="0" offset="1618" sl="348" sc="0" el="348" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4984" ordinal="0" offset="1619" sl="210" sc="0" el="210" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4985" ordinal="0" offset="1625" sl="210" sc="0" el="210" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4986" ordinal="0" offset="1639" sl="350" sc="0" el="350" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4987" ordinal="0" offset="1652" sl="351" sc="0" el="351" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664041</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.StringCellValue GDX.DataTables.DataTableExtensions::GetStringCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664127</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.StringCellValue GDX.DataTables.DataTableExtensions::GetStringCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4982" ordinal="0" offset="0" sl="355" sc="0" el="355" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4983" ordinal="0" offset="1" sl="356" sc="0" el="356" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4984" ordinal="0" offset="12" sl="357" sc="0" el="357" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4988" ordinal="0" offset="0" sl="355" sc="0" el="355" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4989" ordinal="0" offset="1" sl="356" sc="0" el="356" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4990" ordinal="0" offset="12" sl="357" sc="0" el="357" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664042</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.BoolCellValue GDX.DataTables.DataTableExtensions::GetBoolCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664128</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.BoolCellValue GDX.DataTables.DataTableExtensions::GetBoolCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4985" ordinal="0" offset="0" sl="361" sc="0" el="361" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4986" ordinal="0" offset="1" sl="362" sc="0" el="362" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4987" ordinal="0" offset="12" sl="363" sc="0" el="363" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4991" ordinal="0" offset="0" sl="361" sc="0" el="361" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4992" ordinal="0" offset="1" sl="362" sc="0" el="362" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4993" ordinal="0" offset="12" sl="363" sc="0" el="363" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664043</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.CharCellValue GDX.DataTables.DataTableExtensions::GetCharCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664129</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.CharCellValue GDX.DataTables.DataTableExtensions::GetCharCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4988" ordinal="0" offset="0" sl="367" sc="0" el="367" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4989" ordinal="0" offset="1" sl="368" sc="0" el="368" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4990" ordinal="0" offset="12" sl="369" sc="0" el="369" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4994" ordinal="0" offset="0" sl="367" sc="0" el="367" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4995" ordinal="0" offset="1" sl="368" sc="0" el="368" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4996" ordinal="0" offset="12" sl="369" sc="0" el="369" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664044</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.SByteCellValue GDX.DataTables.DataTableExtensions::GetSByteCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664130</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.SByteCellValue GDX.DataTables.DataTableExtensions::GetSByteCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4991" ordinal="0" offset="0" sl="373" sc="0" el="373" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4992" ordinal="0" offset="1" sl="374" sc="0" el="374" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4993" ordinal="0" offset="12" sl="375" sc="0" el="375" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="4997" ordinal="0" offset="0" sl="373" sc="0" el="373" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4998" ordinal="0" offset="1" sl="374" sc="0" el="374" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="4999" ordinal="0" offset="12" sl="375" sc="0" el="375" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664045</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.ByteCellValue GDX.DataTables.DataTableExtensions::GetByteCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664131</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.ByteCellValue GDX.DataTables.DataTableExtensions::GetByteCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4994" ordinal="0" offset="0" sl="379" sc="0" el="379" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4995" ordinal="0" offset="1" sl="380" sc="0" el="380" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4996" ordinal="0" offset="12" sl="381" sc="0" el="381" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5000" ordinal="0" offset="0" sl="379" sc="0" el="379" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5001" ordinal="0" offset="1" sl="380" sc="0" el="380" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5002" ordinal="0" offset="12" sl="381" sc="0" el="381" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664046</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.ShortCellValue GDX.DataTables.DataTableExtensions::GetShortCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664132</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.ShortCellValue GDX.DataTables.DataTableExtensions::GetShortCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="4997" ordinal="0" offset="0" sl="385" sc="0" el="385" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4998" ordinal="0" offset="1" sl="386" sc="0" el="386" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="4999" ordinal="0" offset="12" sl="387" sc="0" el="387" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5003" ordinal="0" offset="0" sl="385" sc="0" el="385" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5004" ordinal="0" offset="1" sl="386" sc="0" el="386" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5005" ordinal="0" offset="12" sl="387" sc="0" el="387" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664047</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.UShortCellValue GDX.DataTables.DataTableExtensions::GetUShortCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664133</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.UShortCellValue GDX.DataTables.DataTableExtensions::GetUShortCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5000" ordinal="0" offset="0" sl="391" sc="0" el="391" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5001" ordinal="0" offset="1" sl="392" sc="0" el="392" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5002" ordinal="0" offset="12" sl="393" sc="0" el="393" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5006" ordinal="0" offset="0" sl="391" sc="0" el="391" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5007" ordinal="0" offset="1" sl="392" sc="0" el="392" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5008" ordinal="0" offset="12" sl="393" sc="0" el="393" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664048</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.IntCellValue GDX.DataTables.DataTableExtensions::GetIntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664134</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.IntCellValue GDX.DataTables.DataTableExtensions::GetIntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5003" ordinal="0" offset="0" sl="397" sc="0" el="397" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5004" ordinal="0" offset="1" sl="398" sc="0" el="398" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5005" ordinal="0" offset="12" sl="399" sc="0" el="399" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5009" ordinal="0" offset="0" sl="397" sc="0" el="397" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5010" ordinal="0" offset="1" sl="398" sc="0" el="398" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5011" ordinal="0" offset="12" sl="399" sc="0" el="399" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664049</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.UIntCellValue GDX.DataTables.DataTableExtensions::GetUIntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664135</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.UIntCellValue GDX.DataTables.DataTableExtensions::GetUIntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5006" ordinal="0" offset="0" sl="403" sc="0" el="403" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5007" ordinal="0" offset="1" sl="404" sc="0" el="404" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5008" ordinal="0" offset="12" sl="405" sc="0" el="405" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5012" ordinal="0" offset="0" sl="403" sc="0" el="403" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5013" ordinal="0" offset="1" sl="404" sc="0" el="404" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5014" ordinal="0" offset="12" sl="405" sc="0" el="405" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664050</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.LongCellValue GDX.DataTables.DataTableExtensions::GetLongCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664136</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.LongCellValue GDX.DataTables.DataTableExtensions::GetLongCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5009" ordinal="0" offset="0" sl="409" sc="0" el="409" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5010" ordinal="0" offset="1" sl="410" sc="0" el="410" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5011" ordinal="0" offset="12" sl="411" sc="0" el="411" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5015" ordinal="0" offset="0" sl="409" sc="0" el="409" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5016" ordinal="0" offset="1" sl="410" sc="0" el="410" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5017" ordinal="0" offset="12" sl="411" sc="0" el="411" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664051</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.ULongCellValue GDX.DataTables.DataTableExtensions::GetULongCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664137</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.ULongCellValue GDX.DataTables.DataTableExtensions::GetULongCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5012" ordinal="0" offset="0" sl="415" sc="0" el="415" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5013" ordinal="0" offset="1" sl="416" sc="0" el="416" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5014" ordinal="0" offset="12" sl="417" sc="0" el="417" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5018" ordinal="0" offset="0" sl="415" sc="0" el="415" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5019" ordinal="0" offset="1" sl="416" sc="0" el="416" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5020" ordinal="0" offset="12" sl="417" sc="0" el="417" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664052</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.FloatCellValue GDX.DataTables.DataTableExtensions::GetFloatCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664138</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.FloatCellValue GDX.DataTables.DataTableExtensions::GetFloatCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5015" ordinal="0" offset="0" sl="421" sc="0" el="421" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5016" ordinal="0" offset="1" sl="422" sc="0" el="422" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5017" ordinal="0" offset="12" sl="423" sc="0" el="423" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5021" ordinal="0" offset="0" sl="421" sc="0" el="421" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5022" ordinal="0" offset="1" sl="422" sc="0" el="422" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5023" ordinal="0" offset="12" sl="423" sc="0" el="423" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664053</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.DoubleCellValue GDX.DataTables.DataTableExtensions::GetDoubleCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664139</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.DoubleCellValue GDX.DataTables.DataTableExtensions::GetDoubleCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5018" ordinal="0" offset="0" sl="427" sc="0" el="427" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5019" ordinal="0" offset="1" sl="428" sc="0" el="428" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5020" ordinal="0" offset="12" sl="429" sc="0" el="429" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5024" ordinal="0" offset="0" sl="427" sc="0" el="427" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5025" ordinal="0" offset="1" sl="428" sc="0" el="428" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5026" ordinal="0" offset="12" sl="429" sc="0" el="429" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664054</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.Vector2CellValue GDX.DataTables.DataTableExtensions::GetVector2CellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664140</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.Vector2CellValue GDX.DataTables.DataTableExtensions::GetVector2CellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5021" ordinal="0" offset="0" sl="433" sc="0" el="433" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5022" ordinal="0" offset="1" sl="434" sc="0" el="434" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5023" ordinal="0" offset="12" sl="435" sc="0" el="435" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5027" ordinal="0" offset="0" sl="433" sc="0" el="433" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5028" ordinal="0" offset="1" sl="434" sc="0" el="434" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5029" ordinal="0" offset="12" sl="435" sc="0" el="435" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664055</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.Vector3CellValue GDX.DataTables.DataTableExtensions::GetVector3CellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664141</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.Vector3CellValue GDX.DataTables.DataTableExtensions::GetVector3CellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5024" ordinal="0" offset="0" sl="439" sc="0" el="439" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5025" ordinal="0" offset="1" sl="440" sc="0" el="440" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5026" ordinal="0" offset="12" sl="441" sc="0" el="441" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5030" ordinal="0" offset="0" sl="439" sc="0" el="439" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5031" ordinal="0" offset="1" sl="440" sc="0" el="440" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5032" ordinal="0" offset="12" sl="441" sc="0" el="441" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664056</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.Vector4CellValue GDX.DataTables.DataTableExtensions::GetVector4CellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664142</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.Vector4CellValue GDX.DataTables.DataTableExtensions::GetVector4CellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5027" ordinal="0" offset="0" sl="445" sc="0" el="445" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5028" ordinal="0" offset="1" sl="446" sc="0" el="446" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5029" ordinal="0" offset="12" sl="447" sc="0" el="447" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5033" ordinal="0" offset="0" sl="445" sc="0" el="445" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5034" ordinal="0" offset="1" sl="446" sc="0" el="446" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5035" ordinal="0" offset="12" sl="447" sc="0" el="447" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664057</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.Vector2IntCellValue GDX.DataTables.DataTableExtensions::GetVector2IntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664143</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.Vector2IntCellValue GDX.DataTables.DataTableExtensions::GetVector2IntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5030" ordinal="0" offset="0" sl="451" sc="0" el="451" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5031" ordinal="0" offset="1" sl="452" sc="0" el="452" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5032" ordinal="0" offset="12" sl="453" sc="0" el="453" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5036" ordinal="0" offset="0" sl="451" sc="0" el="451" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5037" ordinal="0" offset="1" sl="452" sc="0" el="452" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5038" ordinal="0" offset="12" sl="453" sc="0" el="453" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664058</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.Vector3IntCellValue GDX.DataTables.DataTableExtensions::GetVector3IntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664144</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.Vector3IntCellValue GDX.DataTables.DataTableExtensions::GetVector3IntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5033" ordinal="0" offset="0" sl="457" sc="0" el="457" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5034" ordinal="0" offset="1" sl="458" sc="0" el="458" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5035" ordinal="0" offset="12" sl="459" sc="0" el="459" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5039" ordinal="0" offset="0" sl="457" sc="0" el="457" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5040" ordinal="0" offset="1" sl="458" sc="0" el="458" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5041" ordinal="0" offset="12" sl="459" sc="0" el="459" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664059</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.QuaternionCellValue GDX.DataTables.DataTableExtensions::GetQuaternionCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664145</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.QuaternionCellValue GDX.DataTables.DataTableExtensions::GetQuaternionCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5036" ordinal="0" offset="0" sl="463" sc="0" el="463" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5037" ordinal="0" offset="1" sl="464" sc="0" el="464" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5038" ordinal="0" offset="12" sl="465" sc="0" el="465" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5042" ordinal="0" offset="0" sl="463" sc="0" el="463" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5043" ordinal="0" offset="1" sl="464" sc="0" el="464" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5044" ordinal="0" offset="12" sl="465" sc="0" el="465" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664060</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.RectCellValue GDX.DataTables.DataTableExtensions::GetRectCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664146</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.RectCellValue GDX.DataTables.DataTableExtensions::GetRectCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5039" ordinal="0" offset="0" sl="469" sc="0" el="469" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5040" ordinal="0" offset="1" sl="470" sc="0" el="470" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5041" ordinal="0" offset="12" sl="471" sc="0" el="471" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5045" ordinal="0" offset="0" sl="469" sc="0" el="469" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5046" ordinal="0" offset="1" sl="470" sc="0" el="470" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5047" ordinal="0" offset="12" sl="471" sc="0" el="471" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664061</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.RectIntCellValue GDX.DataTables.DataTableExtensions::GetRectIntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664147</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.RectIntCellValue GDX.DataTables.DataTableExtensions::GetRectIntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5042" ordinal="0" offset="0" sl="475" sc="0" el="475" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5043" ordinal="0" offset="1" sl="476" sc="0" el="476" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5044" ordinal="0" offset="12" sl="477" sc="0" el="477" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5048" ordinal="0" offset="0" sl="475" sc="0" el="475" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5049" ordinal="0" offset="1" sl="476" sc="0" el="476" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5050" ordinal="0" offset="12" sl="477" sc="0" el="477" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664062</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.ColorCellValue GDX.DataTables.DataTableExtensions::GetColorCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664148</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.ColorCellValue GDX.DataTables.DataTableExtensions::GetColorCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5045" ordinal="0" offset="0" sl="481" sc="0" el="481" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5046" ordinal="0" offset="1" sl="482" sc="0" el="482" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5047" ordinal="0" offset="12" sl="483" sc="0" el="483" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5051" ordinal="0" offset="0" sl="481" sc="0" el="481" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5052" ordinal="0" offset="1" sl="482" sc="0" el="482" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5053" ordinal="0" offset="12" sl="483" sc="0" el="483" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664063</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.LayerMaskCellValue GDX.DataTables.DataTableExtensions::GetLayerMaskCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664149</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.LayerMaskCellValue GDX.DataTables.DataTableExtensions::GetLayerMaskCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5048" ordinal="0" offset="0" sl="487" sc="0" el="487" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5049" ordinal="0" offset="1" sl="488" sc="0" el="488" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5050" ordinal="0" offset="12" sl="489" sc="0" el="489" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5054" ordinal="0" offset="0" sl="487" sc="0" el="487" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5055" ordinal="0" offset="1" sl="488" sc="0" el="488" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5056" ordinal="0" offset="12" sl="489" sc="0" el="489" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664064</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.BoundsCellValue GDX.DataTables.DataTableExtensions::GetBoundsCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664150</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.BoundsCellValue GDX.DataTables.DataTableExtensions::GetBoundsCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5051" ordinal="0" offset="0" sl="493" sc="0" el="493" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5052" ordinal="0" offset="1" sl="494" sc="0" el="494" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5053" ordinal="0" offset="12" sl="495" sc="0" el="495" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5057" ordinal="0" offset="0" sl="493" sc="0" el="493" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5058" ordinal="0" offset="1" sl="494" sc="0" el="494" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5059" ordinal="0" offset="12" sl="495" sc="0" el="495" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664065</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.BoundsIntCellValue GDX.DataTables.DataTableExtensions::GetBoundsIntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664151</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.BoundsIntCellValue GDX.DataTables.DataTableExtensions::GetBoundsIntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5054" ordinal="0" offset="0" sl="499" sc="0" el="499" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5055" ordinal="0" offset="1" sl="500" sc="0" el="500" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5056" ordinal="0" offset="12" sl="501" sc="0" el="501" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5060" ordinal="0" offset="0" sl="499" sc="0" el="499" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5061" ordinal="0" offset="1" sl="500" sc="0" el="500" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5062" ordinal="0" offset="12" sl="501" sc="0" el="501" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664066</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.Hash128CellValue GDX.DataTables.DataTableExtensions::GetHash128CellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664152</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.Hash128CellValue GDX.DataTables.DataTableExtensions::GetHash128CellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5057" ordinal="0" offset="0" sl="505" sc="0" el="505" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5058" ordinal="0" offset="1" sl="506" sc="0" el="506" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5059" ordinal="0" offset="12" sl="507" sc="0" el="507" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5063" ordinal="0" offset="0" sl="505" sc="0" el="505" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5064" ordinal="0" offset="1" sl="506" sc="0" el="506" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5065" ordinal="0" offset="12" sl="507" sc="0" el="507" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664067</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.GradientCellValue GDX.DataTables.DataTableExtensions::GetGradientCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
+              <MetadataToken>100664153</MetadataToken>
+              <Name>static GDX.DataTables.CellValues.GradientCellValue GDX.DataTables.DataTableExtensions::GetGradientCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
+              <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5060" ordinal="0" offset="0" sl="511" sc="0" el="511" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5061" ordinal="0" offset="1" sl="512" sc="0" el="512" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5062" ordinal="0" offset="12" sl="513" sc="0" el="513" ec="0" bec="0" bev="0" fileid="81" />
+                <SequencePoint vc="0" uspid="5066" ordinal="0" offset="0" sl="511" sc="0" el="511" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5067" ordinal="0" offset="1" sl="512" sc="0" el="512" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5068" ordinal="0" offset="12" sl="513" sc="0" el="513" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664068</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.AnimationCurveCellValue GDX.DataTables.DataTableExtensions::GetAnimationCurveCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
-              <SequencePoints>
-                <SequencePoint vc="0" uspid="5063" ordinal="0" offset="0" sl="517" sc="0" el="517" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5064" ordinal="0" offset="1" sl="518" sc="0" el="518" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5065" ordinal="0" offset="12" sl="519" sc="0" el="519" ec="0" bec="0" bev="0" fileid="81" />
-              </SequencePoints>
-              <BranchPoints />
-            </Method>
-            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
-              <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
-              <MetadataToken>100664069</MetadataToken>
-              <Name>static GDX.DataTables.CellValues.ObjectCellValue GDX.DataTables.DataTableExtensions::GetObjectCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
-              <FileRef uid="81" />
-              <SequencePoints>
-                <SequencePoint vc="0" uspid="5066" ordinal="0" offset="0" sl="523" sc="0" el="523" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5067" ordinal="0" offset="1" sl="524" sc="0" el="524" ec="0" bec="0" bev="0" fileid="81" />
-                <SequencePoint vc="0" uspid="5068" ordinal="0" offset="12" sl="525" sc="0" el="525" ec="0" bec="0" bev="0" fileid="81" />
-              </SequencePoints>
-              <BranchPoints />
-            </Method>
-          </Methods>
-        </Class>
-        <Class>
-          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0.0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
-          <FullName>GDX.DataTables.DataTableObject/ColumnDescription</FullName>
-          <Methods>
-            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664154</MetadataToken>
-              <Name>System.String GDX.DataTables.DataTableObject/ColumnDescription::ToString()</Name>
+              <Name>static GDX.DataTables.CellValues.AnimationCurveCellValue GDX.DataTables.DataTableExtensions::GetAnimationCurveCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5069" ordinal="0" offset="0" sl="124" sc="0" el="124" ec="0" bec="0" bev="0" fileid="82" />
-                <SequencePoint vc="0" uspid="5070" ordinal="0" offset="1" sl="125" sc="0" el="125" ec="0" bec="0" bev="0" fileid="82" />
-                <SequencePoint vc="0" uspid="5071" ordinal="0" offset="36" sl="126" sc="0" el="126" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5069" ordinal="0" offset="0" sl="517" sc="0" el="517" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5070" ordinal="0" offset="1" sl="518" sc="0" el="518" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5071" ordinal="0" offset="12" sl="519" sc="0" el="519" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
-          </Methods>
-        </Class>
-        <Class>
-          <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0.0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="1" visitedMethods="0" numMethods="1" />
-          <FullName>GDX.DataTables.DataTableObject/RowDescription</FullName>
-          <Methods>
-            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
+            <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="true" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664155</MetadataToken>
-              <Name>System.String GDX.DataTables.DataTableObject/RowDescription::ToString()</Name>
+              <Name>static GDX.DataTables.CellValues.ObjectCellValue GDX.DataTables.DataTableExtensions::GetObjectCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="82" />
               <SequencePoints>
-                <SequencePoint vc="0" uspid="5072" ordinal="0" offset="0" sl="135" sc="0" el="135" ec="0" bec="0" bev="0" fileid="82" />
-                <SequencePoint vc="0" uspid="5073" ordinal="0" offset="1" sl="136" sc="0" el="136" ec="0" bec="0" bev="0" fileid="82" />
-                <SequencePoint vc="0" uspid="5074" ordinal="0" offset="10" sl="137" sc="0" el="137" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5072" ordinal="0" offset="0" sl="523" sc="0" el="523" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5073" ordinal="0" offset="1" sl="524" sc="0" el="524" ec="0" bec="0" bev="0" fileid="82" />
+                <SequencePoint vc="0" uspid="5074" ordinal="0" offset="12" sl="525" sc="0" el="525" ec="0" bec="0" bev="0" fileid="82" />
               </SequencePoints>
               <BranchPoints />
             </Method>
@@ -11025,7 +11025,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664161</MetadataToken>
-              <Name>System.Boolean GDX.DataTables.StableDataTable::GetFlag(GDX.DataTables.DataTableObject/Settings)</Name>
+              <Name>System.Boolean GDX.DataTables.StableDataTable::GetFlag(GDX.DataTables.DataTableBase/Settings)</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5090" ordinal="0" offset="0" sl="108" sc="0" el="108" ec="0" bec="0" bev="0" fileid="83" />
@@ -11037,7 +11037,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664162</MetadataToken>
-              <Name>System.Void GDX.DataTables.StableDataTable::SetFlag(GDX.DataTables.DataTableObject/Settings, System.Boolean)</Name>
+              <Name>System.Void GDX.DataTables.StableDataTable::SetFlag(GDX.DataTables.DataTableBase/Settings, System.Boolean)</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5093" ordinal="0" offset="0" sl="114" sc="0" el="114" ec="0" bec="0" bev="0" fileid="83" />
@@ -11049,7 +11049,7 @@
             <Method visited="false" cyclomaticComplexity="4" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="20" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="14" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="4" minCyclomaticComplexity="4" maxCrapScore="20" minCrapScore="20" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664163</MetadataToken>
-              <Name>GDX.DataTables.DataTableObject/RowDescription[] GDX.DataTables.StableDataTable::GetAllRowDescriptions()</Name>
+              <Name>GDX.DataTables.DataTableBase/RowDescription[] GDX.DataTables.StableDataTable::GetAllRowDescriptions()</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5096" ordinal="0" offset="0" sl="120" sc="0" el="120" ec="0" bec="0" bev="0" fileid="83" />
@@ -11072,7 +11072,7 @@
             <Method visited="false" cyclomaticComplexity="3" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="12" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="12" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" maxCrapScore="12" minCrapScore="12" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664164</MetadataToken>
-              <Name>GDX.DataTables.DataTableObject/RowDescription GDX.DataTables.StableDataTable::GetRowDescription(System.String)</Name>
+              <Name>GDX.DataTables.DataTableBase/RowDescription GDX.DataTables.StableDataTable::GetRowDescription(System.String)</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5110" ordinal="0" offset="0" sl="138" sc="0" el="138" ec="0" bec="0" bev="0" fileid="83" />
@@ -11093,7 +11093,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="3" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664165</MetadataToken>
-              <Name>GDX.DataTables.DataTableObject/RowDescription GDX.DataTables.StableDataTable::GetRowDescription(System.Int32)</Name>
+              <Name>GDX.DataTables.DataTableBase/RowDescription GDX.DataTables.StableDataTable::GetRowDescription(System.Int32)</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5122" ordinal="0" offset="0" sl="154" sc="0" el="154" ec="0" bec="0" bev="0" fileid="83" />
@@ -11105,7 +11105,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664166</MetadataToken>
-              <Name>System.Void GDX.DataTables.StableDataTable::SetAllRowDescriptionsOrder(GDX.DataTables.DataTableObject/RowDescription[])</Name>
+              <Name>System.Void GDX.DataTables.StableDataTable::SetAllRowDescriptionsOrder(GDX.DataTables.DataTableBase/RowDescription[])</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5125" ordinal="0" offset="0" sl="160" sc="0" el="160" ec="0" bec="0" bev="0" fileid="83" />
@@ -11116,7 +11116,7 @@
             <Method visited="false" cyclomaticComplexity="5" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="30" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="23" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="5" minCyclomaticComplexity="5" maxCrapScore="30" minCrapScore="30" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664167</MetadataToken>
-              <Name>GDX.DataTables.DataTableObject/ColumnDescription GDX.DataTables.StableDataTable::GetColumnDescription(System.String)</Name>
+              <Name>GDX.DataTables.DataTableBase/ColumnDescription GDX.DataTables.StableDataTable::GetColumnDescription(System.String)</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5127" ordinal="0" offset="0" sl="167" sc="0" el="167" ec="0" bec="0" bev="0" fileid="83" />
@@ -11148,7 +11148,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="6" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664168</MetadataToken>
-              <Name>GDX.DataTables.DataTableObject/ColumnDescription GDX.DataTables.StableDataTable::GetColumnDescription(System.Int32)</Name>
+              <Name>GDX.DataTables.DataTableBase/ColumnDescription GDX.DataTables.StableDataTable::GetColumnDescription(System.Int32)</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5150" ordinal="0" offset="0" sl="197" sc="0" el="197" ec="0" bec="0" bev="0" fileid="83" />
@@ -11163,7 +11163,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="2" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664169</MetadataToken>
-              <Name>System.Void GDX.DataTables.StableDataTable::SetAllColumnDescriptionsOrder(GDX.DataTables.DataTableObject/ColumnDescription[])</Name>
+              <Name>System.Void GDX.DataTables.StableDataTable::SetAllColumnDescriptionsOrder(GDX.DataTables.DataTableBase/ColumnDescription[])</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5156" ordinal="0" offset="0" sl="211" sc="0" el="211" ec="0" bec="0" bev="0" fileid="83" />
@@ -11174,7 +11174,7 @@
             <Method visited="false" cyclomaticComplexity="3" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="12" isConstructor="false" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="18" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="3" minCyclomaticComplexity="3" maxCrapScore="12" minCrapScore="12" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664170</MetadataToken>
-              <Name>GDX.DataTables.DataTableObject/ColumnDescription[] GDX.DataTables.StableDataTable::GetAllColumnDescriptions()</Name>
+              <Name>GDX.DataTables.DataTableBase/ColumnDescription[] GDX.DataTables.StableDataTable::GetAllColumnDescriptions()</Name>
               <FileRef uid="83" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="5158" ordinal="0" offset="0" sl="218" sc="0" el="218" ec="0" bec="0" bev="0" fileid="83" />
@@ -13857,7 +13857,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664326</MetadataToken>
-              <Name>GDX.DataTables.CellValues.AnimationCurveCellValue::AnimationCurveCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.AnimationCurveCellValue::AnimationCurveCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="84" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6386" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="84" />
@@ -13949,7 +13949,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664332</MetadataToken>
-              <Name>GDX.DataTables.CellValues.BoolCellValue::BoolCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.BoolCellValue::BoolCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="85" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6418" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="85" />
@@ -14041,7 +14041,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664338</MetadataToken>
-              <Name>GDX.DataTables.CellValues.BoundsCellValue::BoundsCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.BoundsCellValue::BoundsCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="86" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6450" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="86" />
@@ -14133,7 +14133,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664344</MetadataToken>
-              <Name>GDX.DataTables.CellValues.BoundsIntCellValue::BoundsIntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.BoundsIntCellValue::BoundsIntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="87" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6482" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="87" />
@@ -14225,7 +14225,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664350</MetadataToken>
-              <Name>GDX.DataTables.CellValues.ByteCellValue::ByteCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.ByteCellValue::ByteCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="88" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6514" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="88" />
@@ -14317,7 +14317,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664356</MetadataToken>
-              <Name>GDX.DataTables.CellValues.CharCellValue::CharCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.CharCellValue::CharCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="89" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6546" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="89" />
@@ -14409,7 +14409,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664362</MetadataToken>
-              <Name>GDX.DataTables.CellValues.ColorCellValue::ColorCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.ColorCellValue::ColorCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="90" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6578" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="90" />
@@ -14501,7 +14501,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664368</MetadataToken>
-              <Name>GDX.DataTables.CellValues.DoubleCellValue::DoubleCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.DoubleCellValue::DoubleCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="91" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6610" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="91" />
@@ -14593,7 +14593,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664374</MetadataToken>
-              <Name>GDX.DataTables.CellValues.FloatCellValue::FloatCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.FloatCellValue::FloatCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="92" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6642" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="92" />
@@ -14685,7 +14685,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664380</MetadataToken>
-              <Name>GDX.DataTables.CellValues.GradientCellValue::GradientCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.GradientCellValue::GradientCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="93" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6674" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="93" />
@@ -14777,7 +14777,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664386</MetadataToken>
-              <Name>GDX.DataTables.CellValues.Hash128CellValue::Hash128CellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.Hash128CellValue::Hash128CellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="94" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6706" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="94" />
@@ -14869,7 +14869,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664392</MetadataToken>
-              <Name>GDX.DataTables.CellValues.IntCellValue::IntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.IntCellValue::IntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="95" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6738" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="95" />
@@ -14961,7 +14961,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664398</MetadataToken>
-              <Name>GDX.DataTables.CellValues.LayerMaskCellValue::LayerMaskCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.LayerMaskCellValue::LayerMaskCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="96" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6770" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="96" />
@@ -15053,7 +15053,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664404</MetadataToken>
-              <Name>GDX.DataTables.CellValues.LongCellValue::LongCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.LongCellValue::LongCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="97" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6802" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="97" />
@@ -15145,7 +15145,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664410</MetadataToken>
-              <Name>GDX.DataTables.CellValues.ObjectCellValue::ObjectCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.ObjectCellValue::ObjectCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="98" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6834" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="98" />
@@ -15261,7 +15261,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664416</MetadataToken>
-              <Name>GDX.DataTables.CellValues.QuaternionCellValue::QuaternionCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.QuaternionCellValue::QuaternionCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="99" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6872" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="99" />
@@ -15353,7 +15353,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664424</MetadataToken>
-              <Name>GDX.DataTables.CellValues.RectCellValue::RectCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.RectCellValue::RectCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="100" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6904" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="100" />
@@ -15445,7 +15445,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664430</MetadataToken>
-              <Name>GDX.DataTables.CellValues.RectIntCellValue::RectIntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.RectIntCellValue::RectIntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="101" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6936" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="101" />
@@ -15537,7 +15537,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664436</MetadataToken>
-              <Name>GDX.DataTables.CellValues.SByteCellValue::SByteCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.SByteCellValue::SByteCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="102" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="6968" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="102" />
@@ -15629,7 +15629,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664442</MetadataToken>
-              <Name>GDX.DataTables.CellValues.ShortCellValue::ShortCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.ShortCellValue::ShortCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="103" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7000" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="103" />
@@ -15721,7 +15721,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664448</MetadataToken>
-              <Name>GDX.DataTables.CellValues.StringCellValue::StringCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.StringCellValue::StringCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="104" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7032" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="104" />
@@ -15813,7 +15813,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664454</MetadataToken>
-              <Name>GDX.DataTables.CellValues.UIntCellValue::UIntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.UIntCellValue::UIntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="105" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7064" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="105" />
@@ -15905,7 +15905,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664460</MetadataToken>
-              <Name>GDX.DataTables.CellValues.ULongCellValue::ULongCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.ULongCellValue::ULongCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="106" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7096" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="106" />
@@ -15997,7 +15997,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664466</MetadataToken>
-              <Name>GDX.DataTables.CellValues.UShortCellValue::UShortCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.UShortCellValue::UShortCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="107" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7128" ordinal="0" offset="0" sl="50" sc="0" el="50" ec="0" bec="0" bev="0" fileid="107" />
@@ -16089,7 +16089,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664472</MetadataToken>
-              <Name>GDX.DataTables.CellValues.Vector2CellValue::Vector2CellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.Vector2CellValue::Vector2CellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="108" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7160" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="108" />
@@ -16181,7 +16181,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664478</MetadataToken>
-              <Name>GDX.DataTables.CellValues.Vector2IntCellValue::Vector2IntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.Vector2IntCellValue::Vector2IntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="109" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7192" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="109" />
@@ -16273,7 +16273,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664484</MetadataToken>
-              <Name>GDX.DataTables.CellValues.Vector3CellValue::Vector3CellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.Vector3CellValue::Vector3CellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="110" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7224" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="110" />
@@ -16365,7 +16365,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664490</MetadataToken>
-              <Name>GDX.DataTables.CellValues.Vector3IntCellValue::Vector3IntCellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.Vector3IntCellValue::Vector3IntCellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="111" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7256" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="111" />
@@ -16457,7 +16457,7 @@
             <Method visited="false" cyclomaticComplexity="1" nPathComplexity="0" sequenceCoverage="0.0" branchCoverage="0" crapScore="2" isConstructor="true" isStatic="false" isGetter="false" isSetter="false">
               <Summary numSequencePoints="8" visitedSequencePoints="0" numBranchPoints="0" visitedBranchPoints="0" sequenceCoverage="0.0" branchCoverage="0" maxCyclomaticComplexity="1" minCyclomaticComplexity="1" maxCrapScore="2" minCrapScore="2" visitedClasses="0" numClasses="0" visitedMethods="0" numMethods="1" />
               <MetadataToken>100664496</MetadataToken>
-              <Name>GDX.DataTables.CellValues.Vector4CellValue::Vector4CellValue(GDX.DataTables.DataTableObject, System.Int32, System.Int32)</Name>
+              <Name>GDX.DataTables.CellValues.Vector4CellValue::Vector4CellValue(GDX.DataTables.DataTableBase, System.Int32, System.Int32)</Name>
               <FileRef uid="112" />
               <SequencePoints>
                 <SequencePoint vc="0" uspid="7288" ordinal="0" offset="0" sl="51" sc="0" el="51" ec="0" bec="0" bev="0" fileid="112" />
