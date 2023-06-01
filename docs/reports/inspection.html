@@ -2922,6 +2922,26 @@
 <td>Method <code>CaptureEditorWindowToPNG</code> can be made private</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L66" title="GDX.Editor\DataTableTracker.cs:66">DataTableTracker.cs:66</a></td>
+<td>Method <code>RegisterCellValueChanged</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L91" title="GDX.Editor\DataTableTracker.cs:91">DataTableTracker.cs:91</a></td>
+<td>Method <code>UnregisterCellValueChanged</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L134" title="GDX.Editor\DataTableTracker.cs:134">DataTableTracker.cs:134</a></td>
+<td>Method <code>NotifyOfRowChange</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L183" title="GDX.Editor\DataTableTracker.cs:183">DataTableTracker.cs:183</a></td>
+<td>Method <code>NotifyOfColumnChange</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L204" title="GDX.Editor\DataTableTracker.cs:204">DataTableTracker.cs:204</a></td>
+<td>Method <code>NotifyOfCellValueChange</code> can be made private</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorTaskDirectorSystem.cs#L45" title="GDX.Editor\EditorTaskDirectorSystem.cs:45">EditorTaskDirectorSystem.cs:45</a></td>
 <td>Field <code>ticked</code> can be made private</td>
 </tr>
@@ -2956,26 +2976,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ResourcesProvider.cs#L153" title="GDX.Editor\ResourcesProvider.cs:153">ResourcesProvider.cs:153</a></td>
 <td>Method <code>GetStyleSheetOverride</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L34" title="GDX.Editor\TableCache.cs:34">TableCache.cs:34</a></td>
-<td>Method <code>RegisterCellValueChanged</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L58" title="GDX.Editor\TableCache.cs:58">TableCache.cs:58</a></td>
-<td>Method <code>UnregisterCellValueChanged</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L98" title="GDX.Editor\TableCache.cs:98">TableCache.cs:98</a></td>
-<td>Method <code>NotifyOfRowChange</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L145" title="GDX.Editor\TableCache.cs:145">TableCache.cs:145</a></td>
-<td>Method <code>NotifyOfColumnChange</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L165" title="GDX.Editor\TableCache.cs:165">TableCache.cs:165</a></td>
-<td>Method <code>NotifyOfCellValueChange</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/UpdateProvider.cs#L304" title="GDX.Editor\UpdateProvider.cs:304">UpdateProvider.cs:304</a></td>
@@ -3169,6 +3169,22 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Mathematics/Byte2.cs#L775" title="GDX\Mathematics\Byte2.cs:775">Byte2.cs:775</a></td>
 <td>Field <code>Y</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L15" title="GDX.Editor\DataTableTracker.cs:15">DataTableTracker.cs:15</a></td>
+<td>Field <code>CellValueChanged</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L16" title="GDX.Editor\DataTableTracker.cs:16">DataTableTracker.cs:16</a></td>
+<td>Field <code>ColumnDefinitionChange</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L17" title="GDX.Editor\DataTableTracker.cs:17">DataTableTracker.cs:17</a></td>
+<td>Field <code>RowDefinitionChange</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L18" title="GDX.Editor\DataTableTracker.cs:18">DataTableTracker.cs:18</a></td>
+<td>Field <code>Usages</code> is assigned but its value is never used</td>
 </tr>
 </tbody>
 </table>
@@ -4264,10 +4280,6 @@
 <td>Method <code>MomentOfInertia</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L147" title="GDX\Serializable.cs:147">Serializable.cs:147</a></td>
-<td>Method <code>GetSerializableTypesLabel</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Space.cs#L64" title="GDX\Space.cs:64">Space.cs:64</a></td>
 <td>Method <code>GetDirection</code> is never used</td>
 </tr>
@@ -4348,6 +4360,66 @@
 <td>Method <code>ResetEditor</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L37" title="GDX.Editor\DataTableTracker.cs:37">DataTableTracker.cs:37</a></td>
+<td>Method <code>GetStats</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L60" title="GDX.Editor\DataTableTracker.cs:60">DataTableTracker.cs:60</a></td>
+<td>Method <code>RegisterCellValueChanged</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L85" title="GDX.Editor\DataTableTracker.cs:85">DataTableTracker.cs:85</a></td>
+<td>Method <code>UnregisterCellValueChanged</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L100" title="GDX.Editor\DataTableTracker.cs:100">DataTableTracker.cs:100</a></td>
+<td>Method <code>RegisterRowChanged</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L119" title="GDX.Editor\DataTableTracker.cs:119">DataTableTracker.cs:119</a></td>
+<td>Method <code>UnregisterRowChanged</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L128" title="GDX.Editor\DataTableTracker.cs:128">DataTableTracker.cs:128</a></td>
+<td>Method <code>NotifyOfRowChange</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L149" title="GDX.Editor\DataTableTracker.cs:149">DataTableTracker.cs:149</a></td>
+<td>Method <code>RegisterColumnChanged</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L168" title="GDX.Editor\DataTableTracker.cs:168">DataTableTracker.cs:168</a></td>
+<td>Method <code>UnregisterColumnChanged</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L177" title="GDX.Editor\DataTableTracker.cs:177">DataTableTracker.cs:177</a></td>
+<td>Method <code>NotifyOfColumnChange</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L198" title="GDX.Editor\DataTableTracker.cs:198">DataTableTracker.cs:198</a></td>
+<td>Method <code>NotifyOfCellValueChange</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L220" title="GDX.Editor\DataTableTracker.cs:220">DataTableTracker.cs:220</a></td>
+<td>Method <code>FindTables</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L241" title="GDX.Editor\DataTableTracker.cs:241">DataTableTracker.cs:241</a></td>
+<td>Method <code>GetTable</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L256" title="GDX.Editor\DataTableTracker.cs:256">DataTableTracker.cs:256</a></td>
+<td>Method <code>RegisterTable</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L297" title="GDX.Editor\DataTableTracker.cs:297">DataTableTracker.cs:297</a></td>
+<td>Method <code>RegisterUsage</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L302" title="GDX.Editor\DataTableTracker.cs:302">DataTableTracker.cs:302</a></td>
+<td>Method <code>UnregisterUsage</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorPrefsCache.cs#L67" title="GDX.Editor\EditorPrefsCache.cs:67">EditorPrefsCache.cs:67</a></td>
 <td>Method <code>GetColor</code> is never used</td>
 </tr>
@@ -4402,62 +4474,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/SerializedStopwatch.cs#L54" title="GDX.Editor\SerializedStopwatch.cs:54">SerializedStopwatch.cs:54</a></td>
 <td>Property <code>SerializationSpan</code> is never used (except inside its declaration)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L29" title="GDX.Editor\TableCache.cs:29">TableCache.cs:29</a></td>
-<td>Method <code>RegisterCellValueChanged</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L53" title="GDX.Editor\TableCache.cs:53">TableCache.cs:53</a></td>
-<td>Method <code>UnregisterCellValueChanged</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L66" title="GDX.Editor\TableCache.cs:66">TableCache.cs:66</a></td>
-<td>Method <code>RegisterRowChanged</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L85" title="GDX.Editor\TableCache.cs:85">TableCache.cs:85</a></td>
-<td>Method <code>UnregisterRowChanged</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L93" title="GDX.Editor\TableCache.cs:93">TableCache.cs:93</a></td>
-<td>Method <code>NotifyOfRowChange</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L113" title="GDX.Editor\TableCache.cs:113">TableCache.cs:113</a></td>
-<td>Method <code>RegisterColumnChanged</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L132" title="GDX.Editor\TableCache.cs:132">TableCache.cs:132</a></td>
-<td>Method <code>UnregisterColumnChanged</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L140" title="GDX.Editor\TableCache.cs:140">TableCache.cs:140</a></td>
-<td>Method <code>NotifyOfColumnChange</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L160" title="GDX.Editor\TableCache.cs:160">TableCache.cs:160</a></td>
-<td>Method <code>NotifyOfCellValueChange</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L180" title="GDX.Editor\TableCache.cs:180">TableCache.cs:180</a></td>
-<td>Method <code>FindTables</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L201" title="GDX.Editor\TableCache.cs:201">TableCache.cs:201</a></td>
-<td>Method <code>GetTable</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L212" title="GDX.Editor\TableCache.cs:212">TableCache.cs:212</a></td>
-<td>Method <code>RegisterTable</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L253" title="GDX.Editor\TableCache.cs:253">TableCache.cs:253</a></td>
-<td>Method <code>RegisterUsage</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L257" title="GDX.Editor\TableCache.cs:257">TableCache.cs:257</a></td>
-<td>Method <code>UnregisterUsage</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TestFramework.cs#L19" title="GDX.Editor\TestFramework.cs:19">TestFramework.cs:19</a></td>
@@ -4828,6 +4844,10 @@
 <td>Class <code>ScriptingDefinesBuildProcessor</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L11" title="GDX.Editor\DataTableTracker.cs:11">DataTableTracker.cs:11</a></td>
+<td>Class <code>DataTableTracker</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DecoratorDrawers/InspectorMessageBoxAttributeDecoratorDrawer.cs#L15" title="GDX.Editor\DecoratorDrawers\InspectorMessageBoxAttributeDecoratorDrawer.cs:15">InspectorMessageBoxAttributeDecoratorDrawer.cs:15</a></td>
 <td>Class <code>InspectorMessageBoxAttributeDecoratorDrawer</code> is never used</td>
 </tr>
@@ -4850,10 +4870,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PropertyDrawers/SerializableDictionaryPropertyDrawer.cs#L30" title="GDX.Editor\PropertyDrawers\SerializableDictionaryPropertyDrawer.cs:30">SerializableDictionaryPropertyDrawer.cs:30</a></td>
 <td>Class <code>SerializableDictionaryPropertyDrawer</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/TableCache.cs#L11" title="GDX.Editor\TableCache.cs:11">TableCache.cs:11</a></td>
-<td>Class <code>TableCache</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VisualElementsProvider.cs#L9" title="GDX.Editor\VisualElementsProvider.cs:9">VisualElementsProvider.cs:9</a></td>
@@ -4975,7 +4991,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-05-31 against <a href="https://github.com/dotBunny/GDX/commit/3b83e87e10ccab45b1dcee8d72b881ee38e6e447"><strong>3b83e87</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-05-31 against <a href="https://github.com/dotBunny/GDX/commit/3528da82d1ee21363db05bf7814549a261b83773"><strong>3528da8</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
