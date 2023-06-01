@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-01 - 3:13:16 PM |
+| Generated on: | 2023-06-01 - 3:25:53 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 151 |
 | Files: | 147 |
 | Covered lines: | 5977 |
-| Uncovered lines: | 5904 |
-| Coverable lines: | 11881 |
-| Total lines: | 30519 |
-| Line coverage: | 50.3% (5977 of 11881) |
+| Uncovered lines: | 5910 |
+| Coverable lines: | 11887 |
+| Total lines: | 30545 |
+| Line coverage: | 50.2% (5977 of 11887) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 627 |
-| Total methods: | 1294 |
-| Method coverage: | 48.4% (627 of 1294) |
+| Total methods: | 1296 |
+| Method coverage: | 48.3% (627 of 1296) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5977**|**5904**|**11881**|**35463**|**50.3%**|**0**|**0**|****|**627**|**1294**|**48.4%**|
+|**GDX**|**5977**|**5910**|**11887**|**35489**|**50.2%**|**0**|**0**|****|**627**|**1296**|**48.3%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -95,10 +95,10 @@
 |GDX.DataTables.CellValues.Vector3IntCellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector4CellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.ColumnDescription|0|3|3|39|0%|0|0||0|1|0%|
-|GDX.DataTables.DataTableBase|1|0|1|710|100%|0|0||1|1|100%|
+|GDX.DataTables.DataTableBase|1|0|1|724|100%|0|0||1|1|100%|
 |GDX.DataTables.DataTableExtensions|0|292|292|527|0%|0|0||0|33|0%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
-|GDX.DataTables.StableDataTable|573|607|1180|1923|48.5%|0|0||114|165|69%|
+|GDX.DataTables.StableDataTable|573|613|1186|1935|48.3%|0|0||114|167|68.2%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.DebugDraw|15|0|15|95|100%|0|0||4|4|100%|
 |GDX.Developer.DebugDrawBuffer|24|248|272|726|8.8%|0|0||2|33|6%|
