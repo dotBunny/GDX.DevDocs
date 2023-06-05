@@ -259,11 +259,11 @@
 <td>Name <code>GDXShortcutAttribute</code> does not match rule <code>members_should_be_pascal_case</code>. Suggested name is <code>GdxShortcutAttribute</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowCells.cs#L1029" title="GDX.Editor\Windows\DataTables\DataTableWindowCells.cs:1029">DataTableWindowCells.cs:1029</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowCells.cs#L1058" title="GDX.Editor\Windows\DataTables\DataTableWindowCells.cs:1058">DataTableWindowCells.cs:1058</a></td>
 <td>Name <code>ColumnID</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>ColumnId</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L70" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:70">DataTableWindowProvider.cs:70</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L41" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:41">DataTableWindowProvider.cs:41</a></td>
 <td>Name <code>instanceID</code> does not match rule <code>locals_should_be_camel_case</code>. Suggested name is <code>instanceId</code>.</td>
 </tr>
 <tr>
@@ -796,6 +796,10 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L5" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:5">DataTableWindowProvider.cs:5</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/ProjectSettings/ProjectSettingsProvider.cs#L9" title="GDX.Editor\Windows\ProjectSettings\ProjectSettingsProvider.cs:9">ProjectSettingsProvider.cs:9</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
@@ -977,7 +981,7 @@
 <td>Method <code>Initialize</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L53" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:53">DataTableInspectorBase.cs:53</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L52" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:52">DataTableInspectorBase.cs:52</a></td>
 <td>Method <code>OnDisable</code> is never used</td>
 </tr>
 <tr>
@@ -2046,10 +2050,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L195" title="GDX.Editor\PackageProvider.cs:195">PackageProvider.cs:195</a></td>
 <td>Method <code>EnsureAlwaysIncludeShaders</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PropertyDrawers/CellValues/CellValueDrawerBase.cs#L46" title="GDX.Editor\PropertyDrawers\CellValues\CellValueDrawerBase.cs:46">CellValueDrawerBase.cs:46</a></td>
-<td>Field <code>m_TableTicket</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ResourcesProvider.cs#L120" title="GDX.Editor\ResourcesProvider.cs:120">ResourcesProvider.cs:120</a></td>
@@ -3354,11 +3354,11 @@
 <td>Method <code>ActionableHelpBox</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L70" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:70">DataTableWindowProvider.cs:70</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L41" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:41">DataTableWindowProvider.cs:41</a></td>
 <td>Method <code>OnOpenAssetTable</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L104" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:104">DataTableWindowProvider.cs:104</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L75" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:75">DataTableWindowProvider.cs:75</a></td>
 <td>Method <code>CreateStableTableExample</code> is never used</td>
 </tr>
 <tr>
@@ -3647,15 +3647,19 @@
 <td>Parameter <code>memberName</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L458" title="GDX.Editor\DataTableTracker.cs:458">DataTableTracker.cs:458</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L689" title="GDX.Editor\DataTableTracker.cs:689">DataTableTracker.cs:689</a></td>
 <td>Parameter <code>columnIdentifier</code> is not used in any of the implementations</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L471" title="GDX.Editor\DataTableTracker.cs:471">DataTableTracker.cs:471</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/DataTableTracker.cs#L694" title="GDX.Editor\DataTableTracker.cs:694">DataTableTracker.cs:694</a></td>
 <td>Parameter <code>rowIdentifier</code> is not used in any of the implementations</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L70" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:70">DataTableWindowProvider.cs:70</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L27" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:27">DataTableWindowProvider.cs:27</a></td>
+<td>Parameter <code>dataTable</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L41" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:41">DataTableWindowProvider.cs:41</a></td>
 <td>Parameter <code>line</code> is never used</td>
 </tr>
 </tbody>
@@ -4053,7 +4057,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-01 against <a href="https://github.com/dotBunny/GDX/commit/5b17f17f5b59da7b57e632c3cbb9f93d0e725c4e"><strong>5b17f17</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-05 against <a href="https://github.com/dotBunny/GDX/commit/d94dda30e3c2c9c7f0190cdce1d77437785cd762"><strong>d94dda3</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
