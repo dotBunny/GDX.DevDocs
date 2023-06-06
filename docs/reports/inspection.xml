@@ -49,6 +49,7 @@
     <IssueType Id="UnusedMethodReturnValue.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Method return value is never used" Description="Method return value is never used: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnusedMethodReturnValue.Local" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Method return value is never used" Description="Method return value is never used: Private accessibility" Severity="WARNING" />
     <IssueType Id="UnusedParameter.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Unused parameter" Description="Unused parameter: Non-private accessibility" Severity="SUGGESTION" Global="True" />
+    <IssueType Id="UnusedParameter.Local" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Unused parameter" Description="Unused parameter: Private accessibility" Severity="WARNING" />
     <IssueType Id="UnusedType.Global" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" SubCategory="Type is never used" Description="Type is never used: Non-private accessibility" Severity="SUGGESTION" Global="True" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UnusedType.Global" />
     <IssueType Id="UnusedVariable" Category="Redundancies in Symbol Declarations" CategoryId="DeclarationRedundancy" Description="Unused local variable" Severity="WARNING" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=UnusedVariable" />
   </IssueTypes>
@@ -239,8 +240,9 @@
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="1525-1531" Line="42" Message="Field 'StartTicks' can be made private" />
       <Issue TypeId="InvalidXmlDocComment" File="Packages\com.dotbunny.gdx\GDX\Core.cs" Offset="3099-3128" Line="82" Message="Cannot resolve symbol 'RuntimeInitializeOnLoadMethod'" />
       <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\ColumnDescription.cs" Offset="884-893" Line="28" Message="Field 'SortOrder' is assigned but its value is never used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="5438-5455" Line="124" Message="Only overrides of method 'GetRowDescription' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="6497-6517" Line="144" Message="Only overrides of method 'GetColumnDescription' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="7506-7517" Line="165" Message="Only overrides of method 'SetRowOrder' are used" />
-      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="7828-7843" Line="171" Message="Only overrides of method 'SetAllRowOrders' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="8146-8160" Line="178" Message="Only overrides of method 'GetColumnOrder' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="8472-8486" Line="185" Message="Only overrides of method 'SetColumnOrder' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="8809-8827" Line="191" Message="Only overrides of method 'SetAllColumnOrders' are used" />
@@ -260,14 +262,20 @@
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="38237-38248" Line="713" Message="Only overrides of method 'SetGradient' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="38784-38801" Line="722" Message="Only overrides of method 'SetAnimationCurve' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="39347-39356" Line="731" Message="Only overrides of method 'SetObject' are used" />
-      <Issue TypeId="InvalidXmlDocComment" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="534-535" Line="17" Message="'&gt;' expected" />
-      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="4881-4887" Line="119" Message="Method 'UpdateFromCommaSeperatedValues' can be made private" />
-      <Issue TypeId="RedundantAssignment" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="6308-6312" Line="148" Message="Value assigned is not used in any execution path" />
-      <Issue TypeId="RedundantAssignment" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="6420-6427" Line="150" Message="Value assigned is not used in any execution path" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="22737-22742" Line="432" Message="Method 'SortByColumns' return value is never used" />
-      <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="22921-22929" Line="435" Message="Local variable 'rowCount' is never used" />
-      <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="22974-22985" Line="436" Message="Local variable 'columnCount' is never used" />
-      <Issue TypeId="UnusedVariable" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="23033-23050" Line="437" Message="Local variable 'sortedColumnCount' is never used" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="177-190" Line="5" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="InvalidXmlDocComment" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="549-550" Line="18" Message="'&gt;' expected" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="4896-4902" Line="120" Message="Method 'UpdateFromCommaSeperatedValues' can be made private" />
+      <Issue TypeId="RedundantAssignment" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="6323-6327" Line="149" Message="Value assigned is not used in any execution path" />
+      <Issue TypeId="RedundantAssignment" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="6435-6442" Line="151" Message="Value assigned is not used in any execution path" />
+      <Issue TypeId="UnusedParameter.Local" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="22982-22994" Line="440" Message="Parameter 'originalRows' is never used" />
+      <Issue TypeId="UnusedParameter.Local" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="23000-23016" Line="440" Message="Parameter 'originalRowCount' is never used" />
+      <Issue TypeId="UnusedParameter.Local" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="23035-23056" Line="441" Message="Parameter 'originalRowStartIndex' is never used" />
+      <Issue TypeId="UnusedParameter.Local" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="23101-23118" Line="441" Message="Parameter 'columnIdentifiers' is never used" />
+      <Issue TypeId="UnusedParameter.Local" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="23170-23181" Line="442" Message="Parameter 'columnTypes' is never used" />
+      <Issue TypeId="UnusedParameter.Local" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="23189-23199" Line="442" Message="Parameter 'directions' is never used" />
+      <Issue TypeId="UnusedParameter.Local" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="23205-23225" Line="442" Message="Parameter 'columIdentifierIndex' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="23935-23948" Line="455" Message="Method 'SortByColumns' is never used" />
+      <Issue TypeId="RedundantArgumentDefaultValue" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableExtensions.cs" Offset="25418-25419" Line="488" Message="The parameter 'columIdentifierIndex' has the same default value" />
       <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\RowDescription.cs" Offset="718-727" Line="25" Message="Field 'SortOrder' is assigned but its value is never used" />
       <Issue TypeId="LocalVariableHidesMember" File="Packages\com.dotbunny.gdx\GDX\DataTables\StableDataTable.cs" Offset="8775-8779" Line="203" Message="Local variable 'name' hides property 'string UnityEngine.Object.name'" />
       <Issue TypeId="PossibleNullReferenceException" File="Packages\com.dotbunny.gdx\GDX\DataTables\StableDataTable.cs" Offset="13431-13461" Line="319" Message="Possible 'System.NullReferenceException'" />
