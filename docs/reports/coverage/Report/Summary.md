@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-07 - 1:55:14 PM |
+| Generated on: | 2023-06-07 - 4:44:08 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 150 |
-| Files: | 146 |
+| Classes: | 159 |
+| Files: | 155 |
 | Covered lines: | 5974 |
-| Uncovered lines: | 5896 |
-| Coverable lines: | 11870 |
-| Total lines: | 29835 |
-| Line coverage: | 50.3% (5974 of 11870) |
+| Uncovered lines: | 6016 |
+| Coverable lines: | 11990 |
+| Total lines: | 30171 |
+| Line coverage: | 49.8% (5974 of 11990) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 626 |
-| Total methods: | 1273 |
-| Method coverage: | 49.1% (626 of 1273) |
+| Total methods: | 1290 |
+| Method coverage: | 48.5% (626 of 1290) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5974**|**5896**|**11870**|**34779**|**50.3%**|**0**|**0**|****|**626**|**1273**|**49.1%**|
+|**GDX**|**5974**|**6016**|**11990**|**35115**|**49.8%**|**0**|**0**|****|**626**|**1290**|**48.5%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -95,7 +95,16 @@
 |GDX.DataTables.CellValues.Vector3IntCellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector4CellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.ColumnDescription|0|3|3|39|0%|0|0||0|1|0%|
-|GDX.DataTables.DataTableExtensions|0|259|259|508|0%|0|0||0|8|0%|
+|GDX.DataTables.ColumnSorters.BoolColumnSorter|0|14|14|37|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.ColumnSorterBase|0|22|22|51|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.DoubleColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.FloatColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.IntColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.LongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.StringColumnSorter|0|8|8|26|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.UIntColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.ULongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
+|GDX.DataTables.DataTableExtensions|0|269|269|538|0%|0|0||0|7|0%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
 |GDX.DataTables.StableDataTable|573|629|1202|1963|47.6%|0|0||114|169|67.4%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
