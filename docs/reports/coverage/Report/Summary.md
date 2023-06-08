@@ -1,32 +1,32 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-08 - 1:59:22 PM |
+| Generated on: | 2023-06-08 - 2:19:20 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 160 |
 | Files: | 156 |
-| Covered lines: | 5974 |
-| Uncovered lines: | 6078 |
-| Coverable lines: | 12052 |
-| Total lines: | 30268 |
-| Line coverage: | 49.5% (5974 of 12052) |
+| Covered lines: | 7306 |
+| Uncovered lines: | 4747 |
+| Coverable lines: | 12053 |
+| Total lines: | 30269 |
+| Line coverage: | 60.6% (7306 of 12053) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 626 |
+| Covered methods: | 743 |
 | Total methods: | 1292 |
-| Method coverage: | 48.4% (626 of 1292) |
+| Method coverage: | 57.5% (743 of 1292) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5974**|**6078**|**12052**|**35212**|**49.5%**|**0**|**0**|****|**626**|**1292**|**48.4%**|
+|**GDX**|**7306**|**4747**|**12053**|**35213**|**60.6%**|**0**|**0**|****|**743**|**1292**|**57.5%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
 |GDX.ByteExtensions|34|0|34|77|100%|0|0||2|2|100%|
 |GDX.CameraExtensions|0|23|23|78|0%|0|0||0|2|0%|
 |GDX.CapsuleColliderExtensions|0|19|19|67|0%|0|0||0|2|0%|
-|GDX.Collections.ArrayHolder[T]|0|3|3|26|0%|0|0||0|1|0%|
+|GDX.Collections.ArrayHolder[T]|3|0|3|26|100%|0|0||1|1|100%|
 |GDX.Collections.BitArray128|0|15|15|78|0%|0|0||0|2|0%|
 |GDX.Collections.BitArray16|7|6|13|63|53.8%|0|0||2|3|66.6%|
 |GDX.Collections.BitArray256|0|18|18|107|0%|0|0||0|2|0%|
@@ -38,24 +38,24 @@
 |GDX.Collections.DisposeUnsafeSparseSetJob|0|3|3|1236|0%|0|0||0|1|0%|
 |GDX.Collections.DisposeUnsafeVersionArrayJob|0|3|3|1236|0%|0|0||0|1|0%|
 |GDX.Collections.FreeList|79|0|79|174|100%|0|0||7|7|100%|
-|GDX.Collections.Generic.Array2D[T]|0|109|109|264|0%|0|0||0|14|0%|
+|GDX.Collections.Generic.Array2D[T]|101|8|109|264|92.6%|0|0||12|14|85.7%|
 |GDX.Collections.Generic.Array2DExtensions|23|0|23|53|100%|0|0||1|1|100%|
-|GDX.Collections.Generic.Array3D[T]|0|24|24|119|0%|0|0||0|8|0%|
-|GDX.Collections.Generic.CircularBuffer[T]|0|137|137|315|0%|0|0||0|15|0%|
+|GDX.Collections.Generic.Array3D[T]|18|6|24|119|75%|0|0||6|8|75%|
+|GDX.Collections.Generic.CircularBuffer[T]|88|49|137|315|64.2%|0|0||14|15|93.3%|
 |GDX.Collections.Generic.CoalesceArray[T]|0|77|77|156|0%|0|0||0|8|0%|
 |GDX.Collections.Generic.DictionaryPrimes|32|5|37|105|86.4%|0|0||5|6|83.3%|
 |GDX.Collections.Generic.IListExtensions|67|17|84|220|79.7%|0|0||7|9|77.7%|
-|GDX.Collections.Generic.IntKeyDictionary[TValue]|0|377|377|658|0%|0|0||0|19|0%|
+|GDX.Collections.Generic.IntKeyDictionary[TValue]|350|27|377|658|92.8%|0|0||19|19|100%|
 |GDX.Collections.Generic.NativeArray2D[T]|0|71|71|190|0%|0|0||0|9|0%|
-|GDX.Collections.Generic.NativeArray3D[T]|0|28|28|129|0%|0|0||0|8|0%|
-|GDX.Collections.Generic.NativeUniformArray3D[T]|0|23|23|111|0%|0|0||0|7|0%|
-|GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|0|63|63|204|0%|0|0||0|8|0%|
-|GDX.Collections.Generic.SimpleList[T]|0|315|315|570|0%|0|0||0|28|0%|
+|GDX.Collections.Generic.NativeArray3D[T]|23|5|28|129|82.1%|0|0||7|8|87.5%|
+|GDX.Collections.Generic.NativeUniformArray3D[T]|12|11|23|111|52.1%|0|0||3|7|42.8%|
+|GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|45|18|63|204|71.4%|0|0||6|8|75%|
+|GDX.Collections.Generic.SimpleList[T]|308|7|315|570|97.7%|0|0||27|28|96.4%|
 |GDX.Collections.Generic.SimpleListExtensions|157|62|219|542|71.6%|0|0||15|21|71.4%|
-|GDX.Collections.Generic.StringKeyDictionary[TValue]|0|399|399|683|0%|0|0||0|19|0%|
-|GDX.Collections.Generic.UniformArray3D[T]|0|25|25|117|0%|0|0||0|8|0%|
+|GDX.Collections.Generic.StringKeyDictionary[TValue]|317|82|399|683|79.4%|0|0||16|19|84.2%|
+|GDX.Collections.Generic.UniformArray3D[T]|7|18|25|117|28%|0|0||2|8|25%|
 |GDX.Collections.NativeArraySparseSet|473|2|475|931|99.5%|0|0||29|29|100%|
-|GDX.Collections.Pooling.ArrayPool[T]|0|57|57|120|0%|0|0||0|3|0%|
+|GDX.Collections.Pooling.ArrayPool[T]|57|0|57|120|100%|0|0||3|3|100%|
 |GDX.Collections.Pooling.GameObjectPool|175|35|210|510|83.3%|0|0||15|15|100%|
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
 |GDX.Collections.Pooling.ManagedPools|28|50|78|221|35.8%|0|0||6|12|50%|
@@ -107,7 +107,7 @@
 |GDX.DataTables.ColumnSorters.ULongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.DataTableExtensions|0|308|308|589|0%|0|0||0|7|0%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
-|GDX.DataTables.StableDataTable|573|644|1217|1983|47%|0|0||114|169|67.4%|
+|GDX.DataTables.StableDataTable|573|645|1218|1984|47%|0|0||114|169|67.4%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.InputProxy|0|119|119|515|0%|0|0||0|17|0%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
@@ -129,7 +129,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|56|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|86|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
+|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|223|90.2%|0|0||3|3|100%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|55|0|55|148|100%|0|0||10|10|100%|
