@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-07 - 9:31:41 PM |
+| Generated on: | 2023-06-08 - 12:31:53 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 159 |
-| Files: | 155 |
+| Classes: | 160 |
+| Files: | 156 |
 | Covered lines: | 5974 |
-| Uncovered lines: | 6035 |
-| Coverable lines: | 12009 |
-| Total lines: | 30197 |
-| Line coverage: | 49.7% (5974 of 12009) |
+| Uncovered lines: | 6078 |
+| Coverable lines: | 12052 |
+| Total lines: | 30268 |
+| Line coverage: | 49.5% (5974 of 12052) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 626 |
-| Total methods: | 1290 |
-| Method coverage: | 48.5% (626 of 1290) |
+| Total methods: | 1292 |
+| Method coverage: | 48.4% (626 of 1292) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**5974**|**6035**|**12009**|**35141**|**49.7%**|**0**|**0**|****|**626**|**1290**|**48.5%**|
+|**GDX**|**5974**|**6078**|**12052**|**35212**|**49.5%**|**0**|**0**|****|**626**|**1292**|**48.4%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -101,10 +101,11 @@
 |GDX.DataTables.ColumnSorters.FloatColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.IntColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.LongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
+|GDX.DataTables.ColumnSorters.RowNameColumnSorter|0|8|8|26|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.StringColumnSorter|0|8|8|26|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.UIntColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.ULongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
-|GDX.DataTables.DataTableExtensions|0|273|273|544|0%|0|0||0|7|0%|
+|GDX.DataTables.DataTableExtensions|0|308|308|589|0%|0|0||0|7|0%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
 |GDX.DataTables.StableDataTable|573|644|1217|1983|47%|0|0||114|169|67.4%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
