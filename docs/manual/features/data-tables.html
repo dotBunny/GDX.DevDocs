@@ -89,7 +89,11 @@
             <article class="content wrap" id="_content" data-uid="">
 <h1 id="data-tables">Data Tables</h1>
 
-<p>TODO: Add stuff here!</p>
+<p>A robust implementation of a data table type similar to <a href="https://docs.unrealengine.com/5.2/en-US/data-driven-gameplay-elements-in-unreal-engine/">Unreal Engines</a>. <em>It's every game designers dream come true!</em></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>This feature heavily relies on <code>Unity 2022.2</code> or newer functionality. The editing experience is disabled in older versions of Unity. The DataTableBase API is still valid for programmatic generation and manipulation.</p>
+</div>
 <h2 id="column-types">Column Types</h2>
 <p>Type coverage is very much related to how and what Unity will be able to serialize inside the backing <code>ScriptableObject</code>. Out of the box, you can use:</p>
 <table>
@@ -97,14 +101,12 @@
 <tr>
 <th>Values</th>
 <th>Structs</th>
-<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>string</code>, <code>char</code>, <code>bool</code>, <code>sbyte</code>, <code>byte</code>, <code>short</code>, <code>ushort</code>, <code>int</code>, <code>uint</code>, <code>long</code>, <code>ulong</code>, <code>float</code>, <code>double</code></td>
 <td><code>Vector2</code>, <code>Vector3</code>, <code>Vector4</code>,  <code>Vector2Int</code>,  <code>Vector3Int</code>, <code>Quaternion</code>, <code>Rect</code>, <code>RectInt</code>, <code>Color</code>, <code>LayerMask</code>, <code>Bounds</code>, <code>BoundsInt</code>, <code>Hash128</code>, <code>Gradient</code>, <code>AnimationCurve</code></td>
-<td><code>UnityEngine.Object</code></td>
 </tr>
 </tbody>
 </table>
@@ -117,23 +119,32 @@
 <p>This utilizes the <code>CreateAssetMenu</code> attribute on the <code>DataTableBase</code> implementations. If you create an implementation, you must add your own attribute.</p>
 <h2 id="inspector">Inspector</h2>
 <p><img src="/images/manual/features/data-table/inspector.png" alt="Inspector"></p>
-<h3 id="rows">Rows</h3>
-<h3 id="columns">Columns</h3>
+<p>A surface-level display of information about the <code>DataTableBase</code> is made available via the inspector. Names of rows and columns are listed, including the type of column.</p>
+<p>Clicking the <strong>Open</strong> button will open an editing window focused on the selected <code>DataTableBase</code>.</p>
 <h3 id="interchange">Interchange</h3>
+<p>The DataTableBase allows for interchange between formats, export and non-destructive table data import. What this means in practice is that you can export an already-built table and make changes in whatever editing program a user desires. Those changes can then be re-imported back into Unity, maintaining existing references (an example being an object column referencing prefabs).</p>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>It is important to note that the column structure (order and types) cannot change in the imported data. The row identifiers will be used to match up rows, updating where appropriate, creating when necessary, and removing when no longer found.</p>
+</div>
 <h3 id="tracker">Tracker</h3>
+<p>Table information is tracked in the editor via a reference counting mechanism. This information is helpful for developers to identify leaking references that were expected to be removed. This information is updated manually every time the inspector is drawn. While some table-driven events trigger a redraw, this number sometimes needs to be refreshed. The <strong>Refresh</strong> button at the top of the inspector will update the numbers.</p>
 <h2 id="table-window">Table Window</h2>
 <p><img src="/images/manual/features/data-table/window.png" alt="Table Window"></p>
-<p>Bringing a spreadsheet-like editing experience to DataTables, this window allows for a designer or developer to quickly work on the structure or data of a DataTable in a familiar and expected experience. A unique-to-asset window will appear by double-clicking a DataTable asset or clicking the <strong>Open Table</strong> button while inspecting it.</p>
+<p>Bringing a spreadsheet-like editing experience to DataTables, this window allows for a designer or developer to quickly work on the structure or data of a DataTable in a familiar and expected experience. A unique-to-asset window will appear by double-clicking a DataTable asset or clicking the <strong>Open</strong> button while inspecting it.</p>
 <h3 id="table-menu">Table Menu</h3>
+<p>The first item in the menu bar covers table-specific operations and includes some of the functionality found in the individual inspectors (interchange operations, for example).</p>
 <h4 id="write-to-disk">Write To Disk</h4>
 <p>A DataTable is backed by a ScriptableObject; changes reside in memory until they are committed to disk by saving the project and/or asset. This option will execute a <code>SaveAssetIfDirty</code> on the backing object writing the contents to disk.</p>
-<div class="NOTE">
-<h5>Note</h5>
+<div class="TIP">
+<h5>Tip</h5>
 <p>This option will only be available when changes are detected to the currently opened DataTable.</p>
 </div>
-<h4 id="export-to-csv">Export To CSV</h4>
-<h4 id="import-from-csv">Import From CSV</h4>
 <h4 id="settings">Settings</h4>
+<p><code>DataTableBase</code>s have settings which outline the behaviour of the table as well as some nice-to-have features. The <strong>Display Name</strong> is a user-friendly name shown throughout the editor for this table.</p>
+<blockquote>
+<p>The undo functionality is disabled by default, as it can be rather costly to execute across large datasets and is only available in Unity 2022.2 and newer.</p>
+</blockquote>
 <h3 id="columns-menu">Columns Menu</h3>
 <h4 id="add">Add</h4>
 <h4 id="resize-to-fit">Resize To Fit</h4>
@@ -152,8 +163,6 @@
 <h3 id="move-left">Move Left</h3>
 <h3 id="move-right">Move Right</h3>
 <h3 id="reset-order-1">Reset Order</h3>
-<h1 id="undo">Undo</h1>
-<p>Undo is only supported in 2022.2 and newer</p>
 </article>
           </div>
           
@@ -182,7 +191,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-09 against <a href="https://github.com/dotBunny/GDX/commit/c1a95feb27f87105933620bb58d84f57cddc60dc"><strong>c1a95fe</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-09 against <a href="https://github.com/dotBunny/GDX/commit/9e3aee6414ca956271b9a8918a09b76383acb5ca"><strong>9e3aee6</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
