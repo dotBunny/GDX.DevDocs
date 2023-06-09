@@ -132,6 +132,44 @@
 <h2 id="table-window">Table Window</h2>
 <p><img src="/images/manual/features/data-table/window.png" alt="Table Window"></p>
 <p>Bringing a spreadsheet-like editing experience to DataTables, this window allows for a designer or developer to quickly work on the structure or data of a DataTable in a familiar and expected experience. A unique-to-asset window will appear by double-clicking a DataTable asset or clicking the <strong>Open</strong> button while inspecting it.</p>
+<h3 id="shortcuts">Shortcuts</h3>
+<p>Some default shortcuts are bound to the Table Window, modelled after existing expected behaviours.</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add Row</td>
+<td>Ctrl + =</td>
+</tr>
+<tr>
+<td>Add Column</td>
+<td>Ctrl + Shift + -</td>
+</tr>
+<tr>
+<td>Add Row (Default)</td>
+<td>Ctrl + Shift + =</td>
+</tr>
+<tr>
+<td>Remove Selected Rows (Quick)</td>
+<td>Shift + Del</td>
+</tr>
+<tr>
+<td>Remove Selected Row</td>
+<td>Del</td>
+</tr>
+</tbody>
+</table>
+<div class="TIP">
+<h5>Tip</h5>
+<p>Shortcuts can be changed in Unity's Shortcut manager, available in the Edit menu.</p>
+</div>
+<h3 id="sorting--ordering">Sorting &amp; Ordering</h3>
+<p>Clicking on the column headers allows for sorting the rows (ascending/descending); holding CTRL while clicking a column header will allow for multi-levels of sorting to occur. You can also manually click and drag rows up and down to reorder them. This ordering information is virtually managed at this stage and does not get committed to the Data Table without user direction.</p>
 <h3 id="table-menu">Table Menu</h3>
 <p>The first item in the menu bar covers table-specific operations and includes some of the functionality found in the individual inspectors (interchange operations, for example).</p>
 <h4 id="write-to-disk">Write To Disk</h4>
@@ -141,28 +179,55 @@
 <p>This option will only be available when changes are detected to the currently opened DataTable.</p>
 </div>
 <h4 id="settings">Settings</h4>
-<p><code>DataTableBase</code>s have settings which outline the behaviour of the table as well as some nice-to-have features. The <strong>Display Name</strong> is a user-friendly name shown throughout the editor for this table.</p>
+<p>Data Tables have settings which outline the behaviour of the table as well as some nice-to-have features. The <strong>Display Name</strong> is a user-friendly name shown throughout the editor for this table.</p>
 <blockquote>
 <p>The undo functionality is disabled by default, as it can be rather costly to execute across large datasets and is only available in Unity 2022.2 and newer.</p>
 </blockquote>
 <h3 id="columns-menu">Columns Menu</h3>
-<h4 id="add">Add</h4>
-<h4 id="resize-to-fit">Resize To Fit</h4>
+<p>The general Columns menu gives minimal actions that can be taken without specifically selecting a column. Adding a new column, for example, is done from this menu. The <strong>Resize To Fit</strong> action will ensure that the displayed table fills the window's horizontal space without requiring scrolling. Column-specific actions are accessed by right-clicking a column header.</p>
 <h3 id="rows-menu">Rows Menu</h3>
-<h4 id="add-1">Add</h4>
-<h4 id="add-default">Add (Default)</h4>
-<h4 id="rename-selected">Rename Selected</h4>
-<h4 id="remove-selected">Remove Selected</h4>
-<h4 id="commit-order">Commit Order</h4>
-<h4 id="reset-order">Reset Order</h4>
+<table>
+<thead>
+<tr>
+<th>Action</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add</td>
+<td>Presents a dialogue to add a row to the Data Table, asking for a user-friendly name for the row before proceeding.</td>
+</tr>
+<tr>
+<td>Add (Default)</td>
+<td>Adds a row to the Data Table with a default randomly generated name.</td>
+</tr>
+<tr>
+<td>Rename Selected</td>
+<td>Renaming the selected row will update the row's internal user-friendly name stored in the Data Table.</td>
+</tr>
+<tr>
+<td>Remove Selected</td>
+<td>Deletes the selected row, plain and simple.</td>
+</tr>
+<tr>
+<td>Commit Order</td>
+<td>Alters the internal ordering of rows in the Data Table to match the current order of rows in the Table Window.</td>
+</tr>
+<tr>
+<td>Reset Order</td>
+<td>Clears the virtual sorting information and restores the order in the Data Table.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="context-menu">Context Menu</h2>
 <p>Currently, only the column headers have a context menu allowing the user to perform specific operations on that column.</p>
-<h3 id="resize-to-fit-1">Resize To Fit</h3>
 <h3 id="rename">Rename</h3>
+<p>Renaming the column will update the column's internal user-friendly name stored in the Data Table.</p>
 <h3 id="remove">Remove</h3>
-<h3 id="move-left">Move Left</h3>
-<h3 id="move-right">Move Right</h3>
-<h3 id="reset-order-1">Reset Order</h3>
+<p>The name is self-explanatory; however, as a precaution, this will request confirmation that you want to remove the column. Ensure that the name matches the column you intended to remove.</p>
+<h3 id="move-left--right">Move Left / Right</h3>
+<p>While the order of rows in the table window is virtual (until committed), the order of columns is bound to the internal data table. These options will alter the column order one increment at a time.</p>
 <h2 id="referencing-cells">Referencing Cells</h2>
 <p>One of the design pillars for the DataTable feature was ensuring the data consumption was intuitive, both from a designer's standpoint and a developer's. A developer can create a cache-friendly reference to a cell by type:</p>
 <pre><code class="lang-csharp">   public StringCellValue Name;
@@ -179,6 +244,8 @@
 <h5>Tip</h5>
 <p>Clicking the link icon at any time will break all connection information.</p>
 </div>
+<p>All <code>*CellValue</code> structs have <code>Get()</code> and <code>GetUnsafe()</code> methods which return the value stored in the linked Data Table.</p>
+<p>The safer <code>Get()</code> method checks the cached DataTable version number, updating the locally cached value before returning the cached value. The <code>GetUnsafe()</code> method returns the cached value without any checks; thus it is <strong>required</strong> that the first time a value is accessd, the <code>Get()</code> method is used.</p>
 </article>
           </div>
           
@@ -207,7 +274,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-09 against <a href="https://github.com/dotBunny/GDX/commit/ba17d5eea9951c051d8cc8f7c5aba4f6cf7e4692"><strong>ba17d5e</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-09 against <a href="https://github.com/dotBunny/GDX/commit/4cdc8d2833dbef1a43daabbdf2fe2c86c8480145"><strong>4cdc8d2</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
