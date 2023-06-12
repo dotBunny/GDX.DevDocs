@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-12 - 3:22:28 PM |
+| Generated on: | 2023-06-12 - 7:14:09 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 163 |
 | Files: | 159 |
-| Covered lines: | 7343 |
-| Uncovered lines: | 5016 |
-| Coverable lines: | 12359 |
-| Total lines: | 30901 |
-| Line coverage: | 59.4% (7343 of 12359) |
+| Covered lines: | 7341 |
+| Uncovered lines: | 5029 |
+| Coverable lines: | 12370 |
+| Total lines: | 30983 |
+| Line coverage: | 59.3% (7341 of 12370) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 744 |
-| Total methods: | 1311 |
-| Method coverage: | 56.7% (744 of 1311) |
+| Covered methods: | 743 |
+| Total methods: | 1312 |
+| Method coverage: | 56.6% (743 of 1312) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7343**|**5016**|**12359**|**35845**|**59.4%**|**0**|**0**|****|**744**|**1311**|**56.7%**|
+|**GDX**|**7341**|**5029**|**12370**|**35927**|**59.3%**|**0**|**0**|****|**743**|**1312**|**56.6%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -73,7 +73,7 @@
 |GDX.DataTables.CellValues.CharCellValue|0|32|32|125|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.ColorCellValue|0|32|32|126|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.DoubleCellValue|0|32|32|125|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.EnumIntCellValue|0|32|32|125|0%|0|0||0|6|0%|
+|GDX.DataTables.CellValues.EnumIntCellValue|0|40|40|147|0%|0|0||0|7|0%|
 |GDX.DataTables.CellValues.FloatCellValue|0|32|32|125|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.GradientCellValue|0|32|32|126|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Hash128CellValue|0|32|32|126|0%|0|0||0|6|0%|
@@ -107,10 +107,10 @@
 |GDX.DataTables.ColumnSorters.UIntColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.ULongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.DataTableExtensions|0|154|154|337|0%|0|0||0|4|0%|
-|GDX.DataTables.DataTableInterchange|0|147|147|281|0%|0|0||0|6|0%|
-|GDX.DataTables.DataTableJson|0|95|95|163|0%|0|0||0|5|0%|
+|GDX.DataTables.DataTableInterchange|0|147|147|293|0%|0|0||0|6|0%|
+|GDX.DataTables.DataTableJson|0|95|95|207|0%|0|0||0|5|0%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
-|GDX.DataTables.StableDataTable|579|662|1241|2032|46.6%|0|0||114|170|67%|
+|GDX.DataTables.StableDataTable|579|664|1243|2030|46.5%|0|0||114|170|67%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.InputProxy|0|119|119|515|0%|0|0||0|17|0%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
@@ -132,7 +132,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|56|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|86|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
+|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|223|90.2%|0|0||3|3|100%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|55|0|55|148|100%|0|0||10|10|100%|
@@ -166,7 +166,7 @@
 |GDX.ObjectExtensions|0|9|9|38|0%|0|0||0|1|0%|
 |GDX.Platform|42|62|104|273|40.3%|0|0||6|11|54.5%|
 |GDX.PlayerLoopSystemExtensions|94|77|171|369|54.9%|0|0||7|10|70%|
-|GDX.Reflection|118|0|118|284|100%|0|0||11|11|100%|
+|GDX.Reflection|119|0|119|290|100%|0|0||11|11|100%|
 |GDX.Rendering.ShaderProvider|18|0|18|70|100%|0|0||4|4|100%|
 |GDX.RigidbodyExtensions|0|4|4|39|0%|0|0||0|1|0%|
 |GDX.SegmentedString|128|0|128|276|100%|0|0||11|11|100%|
