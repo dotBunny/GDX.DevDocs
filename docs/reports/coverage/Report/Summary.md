@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-12 - 7:14:09 PM |
+| Generated on: | 2023-06-12 - 7:49:31 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 163 |
 | Files: | 159 |
-| Covered lines: | 7341 |
-| Uncovered lines: | 5029 |
-| Coverable lines: | 12370 |
-| Total lines: | 30983 |
-| Line coverage: | 59.3% (7341 of 12370) |
+| Covered lines: | 7342 |
+| Uncovered lines: | 5046 |
+| Coverable lines: | 12388 |
+| Total lines: | 31018 |
+| Line coverage: | 59.2% (7342 of 12388) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 743 |
-| Total methods: | 1312 |
-| Method coverage: | 56.6% (743 of 1312) |
+| Total methods: | 1315 |
+| Method coverage: | 56.5% (743 of 1315) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7341**|**5029**|**12370**|**35927**|**59.3%**|**0**|**0**|****|**743**|**1312**|**56.6%**|
+|**GDX**|**7342**|**5046**|**12388**|**35962**|**59.2%**|**0**|**0**|****|**743**|**1315**|**56.5%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -110,7 +110,7 @@
 |GDX.DataTables.DataTableInterchange|0|147|147|293|0%|0|0||0|6|0%|
 |GDX.DataTables.DataTableJson|0|95|95|207|0%|0|0||0|5|0%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
-|GDX.DataTables.StableDataTable|579|664|1243|2030|46.5%|0|0||114|170|67%|
+|GDX.DataTables.StableDataTable|580|681|1261|2065|45.9%|0|0||114|173|65.8%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.InputProxy|0|119|119|515|0%|0|0||0|17|0%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
