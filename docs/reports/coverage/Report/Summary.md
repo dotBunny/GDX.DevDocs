@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-10 - 10:34:23 PM |
+| Generated on: | 2023-06-12 - 3:22:28 PM |
 | Parser: | MultiReportParser (688x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 161 |
-| Files: | 157 |
-| Covered lines: | 7312 |
-| Uncovered lines: | 4814 |
-| Coverable lines: | 12126 |
-| Total lines: | 30495 |
-| Line coverage: | 60.3% (7312 of 12126) |
+| Classes: | 163 |
+| Files: | 159 |
+| Covered lines: | 7343 |
+| Uncovered lines: | 5016 |
+| Coverable lines: | 12359 |
+| Total lines: | 30901 |
+| Line coverage: | 59.4% (7343 of 12359) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 743 |
-| Total methods: | 1304 |
-| Method coverage: | 56.9% (743 of 1304) |
+| Covered methods: | 744 |
+| Total methods: | 1311 |
+| Method coverage: | 56.7% (744 of 1311) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7312**|**4814**|**12126**|**35439**|**60.3%**|**0**|**0**|****|**743**|**1304**|**56.9%**|
+|**GDX**|**7343**|**5016**|**12359**|**35845**|**59.4%**|**0**|**0**|****|**744**|**1311**|**56.7%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -106,7 +106,9 @@
 |GDX.DataTables.ColumnSorters.StringColumnSorter|0|8|8|26|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.UIntColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.ULongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
-|GDX.DataTables.DataTableExtensions|0|325|325|637|0%|0|0||0|12|0%|
+|GDX.DataTables.DataTableExtensions|0|154|154|337|0%|0|0||0|4|0%|
+|GDX.DataTables.DataTableInterchange|0|147|147|281|0%|0|0||0|6|0%|
+|GDX.DataTables.DataTableJson|0|95|95|163|0%|0|0||0|5|0%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
 |GDX.DataTables.StableDataTable|579|662|1241|2032|46.6%|0|0||114|170|67%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
@@ -168,7 +170,7 @@
 |GDX.Rendering.ShaderProvider|18|0|18|70|100%|0|0||4|4|100%|
 |GDX.RigidbodyExtensions|0|4|4|39|0%|0|0||0|1|0%|
 |GDX.SegmentedString|128|0|128|276|100%|0|0||11|11|100%|
-|GDX.Serializable|7|31|38|158|18.4%|0|0||2|2|100%|
+|GDX.Serializable|38|162|200|420|19%|0|0||3|6|50%|
 |GDX.Space|0|55|55|134|0%|0|0||0|4|0%|
 |GDX.StringExtensions|264|0|264|739|100%|0|0||22|22|100%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|

@@ -153,21 +153,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="expression-is-always-true-or-always-false">Expression is always 'true' or always 'false'</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L576" title="GDX\DataTables\DataTableExtensions.cs:576">DataTableExtensions.cs:576</a></td>
-<td>Expression is always true</td>
-</tr>
-</tbody>
-</table>
 <h3 id="inconsistent-naming">Inconsistent Naming</h3>
 <table>
 <thead>
@@ -200,14 +185,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L31" title="GDX\Core.cs:31">Core.cs:31</a></td>
 <td>Name <code>MainThreadID</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>MainThreadId</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L24" title="GDX\DataTables\DataTableExtensions.cs:24">DataTableExtensions.cs:24</a></td>
-<td>Name <code>CVS</code> does not match rule <code>Enum members</code>. Suggested name is <code>Cvs</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L25" title="GDX\DataTables\DataTableExtensions.cs:25">DataTableExtensions.cs:25</a></td>
-<td>Name <code>JSON</code> does not match rule <code>Enum members</code>. Suggested name is <code>Json</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L506" title="GDX\Developer\InputProxy.cs:506">InputProxy.cs:506</a></td>
@@ -622,11 +599,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L300" title="GDX\DataTables\DataTableExtensions.cs:300">DataTableExtensions.cs:300</a></td>
-<td>Value assigned is not used in any execution path</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L302" title="GDX\DataTables\DataTableExtensions.cs:302">DataTableExtensions.cs:302</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableJson.cs#L108" title="GDX\DataTables\DataTableJson.cs:108">DataTableJson.cs:108</a></td>
 <td>Value assigned is not used in any execution path</td>
 </tr>
 </tbody>
@@ -743,21 +716,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="redundant-control-flow-jump-statement">Redundant control flow jump statement</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L558" title="GDX\DataTables\DataTableExtensions.cs:558">DataTableExtensions.cs:558</a></td>
-<td>Redundant control flow jump statement</td>
-</tr>
-</tbody>
-</table>
 <h3 id="redundant-name-qualifier">Redundant name qualifier</h3>
 <table>
 <thead>
@@ -821,6 +779,14 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableJson.cs#L7" title="GDX\DataTables\DataTableJson.cs:7">DataTableJson.cs:7</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L5" title="GDX\Serializable.cs:5">Serializable.cs:5</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/AssetDatabaseReference.cs#L7" title="GDX.Editor\AssetDatabaseReference.cs:7">AssetDatabaseReference.cs:7</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
@@ -1164,6 +1130,21 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Collections/Pooling/GameObjectPoolTests.cs#L279" title="GDX.Tests\EditMode\Collections\Pooling\GameObjectPoolTests.cs:279">GameObjectPoolTests.cs:279</a></td>
 <td>Class <code>GameObjectPoolItemTest</code> is never instantiated</td>
+</tr>
+</tbody>
+</table>
+<h3 id="if-statement-can-be-re-written-as--expression">'if' statement can be re-written as '?:' expression</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L282" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:282">DataTableInspectorBase.cs:282</a></td>
+<td>Convert to method call with <code>?:</code> expression inside</td>
 </tr>
 </tbody>
 </table>
@@ -1542,14 +1523,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L42" title="GDX\Core.cs:42">Core.cs:42</a></td>
 <td>Field <code>StartTicks</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L271" title="GDX\DataTables\DataTableExtensions.cs:271">DataTableExtensions.cs:271</a></td>
-<td>Method <code>UpdateFromCommaSeperatedValues</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L415" title="GDX\DataTables\DataTableExtensions.cs:415">DataTableExtensions.cs:415</a></td>
-<td>Method <code>UpdateFromJavaScriptObjectNotation</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L151" title="GDX\Developer\InputProxy.cs:151">InputProxy.cs:151</a></td>
@@ -1960,128 +1933,8 @@
 <td>Constant <code>PublicStaticFlags</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L11" title="GDX\Serializable.cs:11">Serializable.cs:11</a></td>
-<td>Constant <code>Invalid</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L12" title="GDX\Serializable.cs:12">Serializable.cs:12</a></td>
-<td>Constant <code>String</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L13" title="GDX\Serializable.cs:13">Serializable.cs:13</a></td>
-<td>Constant <code>Char</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L14" title="GDX\Serializable.cs:14">Serializable.cs:14</a></td>
-<td>Constant <code>Bool</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L15" title="GDX\Serializable.cs:15">Serializable.cs:15</a></td>
-<td>Constant <code>SByte</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L16" title="GDX\Serializable.cs:16">Serializable.cs:16</a></td>
-<td>Constant <code>Byte</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L17" title="GDX\Serializable.cs:17">Serializable.cs:17</a></td>
-<td>Constant <code>Short</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L18" title="GDX\Serializable.cs:18">Serializable.cs:18</a></td>
-<td>Constant <code>UShort</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L19" title="GDX\Serializable.cs:19">Serializable.cs:19</a></td>
-<td>Constant <code>Int</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L20" title="GDX\Serializable.cs:20">Serializable.cs:20</a></td>
-<td>Constant <code>UInt</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L21" title="GDX\Serializable.cs:21">Serializable.cs:21</a></td>
-<td>Constant <code>Long</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L22" title="GDX\Serializable.cs:22">Serializable.cs:22</a></td>
-<td>Constant <code>ULong</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L23" title="GDX\Serializable.cs:23">Serializable.cs:23</a></td>
-<td>Constant <code>Float</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L24" title="GDX\Serializable.cs:24">Serializable.cs:24</a></td>
-<td>Constant <code>Double</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L25" title="GDX\Serializable.cs:25">Serializable.cs:25</a></td>
-<td>Constant <code>Vector2</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L26" title="GDX\Serializable.cs:26">Serializable.cs:26</a></td>
-<td>Constant <code>Vector3</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L27" title="GDX\Serializable.cs:27">Serializable.cs:27</a></td>
-<td>Constant <code>Vector4</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L28" title="GDX\Serializable.cs:28">Serializable.cs:28</a></td>
-<td>Constant <code>Vector2Int</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L29" title="GDX\Serializable.cs:29">Serializable.cs:29</a></td>
-<td>Constant <code>Vector3Int</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L30" title="GDX\Serializable.cs:30">Serializable.cs:30</a></td>
-<td>Constant <code>Quaternion</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L31" title="GDX\Serializable.cs:31">Serializable.cs:31</a></td>
-<td>Constant <code>Rect</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L32" title="GDX\Serializable.cs:32">Serializable.cs:32</a></td>
-<td>Constant <code>RectInt</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L33" title="GDX\Serializable.cs:33">Serializable.cs:33</a></td>
-<td>Constant <code>Color</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L34" title="GDX\Serializable.cs:34">Serializable.cs:34</a></td>
-<td>Constant <code>LayerMask</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L35" title="GDX\Serializable.cs:35">Serializable.cs:35</a></td>
-<td>Constant <code>Bounds</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L36" title="GDX\Serializable.cs:36">Serializable.cs:36</a></td>
-<td>Constant <code>BoundsInt</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L37" title="GDX\Serializable.cs:37">Serializable.cs:37</a></td>
-<td>Constant <code>Hash128</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L38" title="GDX\Serializable.cs:38">Serializable.cs:38</a></td>
-<td>Constant <code>Gradient</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L39" title="GDX\Serializable.cs:39">Serializable.cs:39</a></td>
-<td>Constant <code>AnimationCurve</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L40" title="GDX\Serializable.cs:40">Serializable.cs:40</a></td>
-<td>Constant <code>Object</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L41" title="GDX\Serializable.cs:41">Serializable.cs:41</a></td>
-<td>Constant <code>EnumInt</code> can be made private</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L259" title="GDX\Serializable.cs:259">Serializable.cs:259</a></td>
+<td>Method <code>GetTypeFromHashCode</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/StringExtensions.cs#L41" title="GDX\StringExtensions.cs:41">StringExtensions.cs:41</a></td>
@@ -2172,7 +2025,7 @@
 <td>Method <code>RebindTable</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowToolbar.cs#L94" title="GDX.Editor\Windows\DataTables\DataTableWindowToolbar.cs:94">DataTableWindowToolbar.cs:94</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowToolbar.cs#L100" title="GDX.Editor\Windows\DataTables\DataTableWindowToolbar.cs:100">DataTableWindowToolbar.cs:100</a></td>
 <td>Method <code>CanCommitOrder</code> can be made private</td>
 </tr>
 <tr>
@@ -2410,6 +2263,21 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/SparseSet.cs#L1316" title="GDX\Collections\SparseSet.cs:1316">SparseSet.cs:1316</a></td>
 <td>Parameter <code>lookupIndex</code> output value is always discarded</td>
+</tr>
+</tbody>
+</table>
+<h3 id="redundant-string-interpolation">Redundant string interpolation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L321" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:321">DataTableInspectorBase.cs:321</a></td>
+<td>Redundant string interpolation</td>
 </tr>
 </tbody>
 </table>
@@ -2696,14 +2564,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/UnsafeSparseSet.cs#L1220" title="GDX\Collections\UnsafeSparseSet.cs:1220">UnsafeSparseSet.cs:1220</a></td>
 <td>Property <code>Items</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L28" title="GDX\DataTables\DataTableExtensions.cs:28">DataTableExtensions.cs:28</a></td>
-<td>Method <code>Export</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L221" title="GDX\DataTables\DataTableExtensions.cs:221">DataTableExtensions.cs:221</a></td>
-<td>Method <code>UpdateFrom</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L39" title="GDX\Developer\InputProxy.cs:39">InputProxy.cs:39</a></td>
@@ -3334,6 +3194,14 @@
 <td>Method <code>MomentOfInertia</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L112" title="GDX\Serializable.cs:112">Serializable.cs:112</a></td>
+<td>Method <code>GetHashCode</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Serializable.cs#L414" title="GDX\Serializable.cs:414">Serializable.cs:414</a></td>
+<td>Method <code>GetTypeFromLabel</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Space.cs#L64" title="GDX\Space.cs:64">Space.cs:64</a></td>
 <td>Method <code>GetDirection</code> is never used</td>
 </tr>
@@ -3490,7 +3358,7 @@
 <td>Method <code>RemoveSelectedRowQuick</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowToolbar.cs#L101" title="GDX.Editor\Windows\DataTables\DataTableWindowToolbar.cs:101">DataTableWindowToolbar.cs:101</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowToolbar.cs#L107" title="GDX.Editor\Windows\DataTables\DataTableWindowToolbar.cs:107">DataTableWindowToolbar.cs:107</a></td>
 <td>Method <code>HasSortedColumns</code> is never used</td>
 </tr>
 <tr>
@@ -3585,80 +3453,12 @@
 <td>Only overrides of method <code>GetRowDescription</code> are used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L144" title="GDX\DataTables\DataTableBase.cs:144">DataTableBase.cs:144</a></td>
-<td>Only overrides of method <code>GetColumnDescription</code> are used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L165" title="GDX\DataTables\DataTableBase.cs:165">DataTableBase.cs:165</a></td>
 <td>Only overrides of method <code>SetRowOrder</code> are used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L191" title="GDX\DataTables\DataTableBase.cs:191">DataTableBase.cs:191</a></td>
 <td>Only overrides of method <code>SetAllColumnOrders</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L613" title="GDX\DataTables\DataTableBase.cs:613">DataTableBase.cs:613</a></td>
-<td>Only overrides of method <code>SetVector2</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L622" title="GDX\DataTables\DataTableBase.cs:622">DataTableBase.cs:622</a></td>
-<td>Only overrides of method <code>SetVector3</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L631" title="GDX\DataTables\DataTableBase.cs:631">DataTableBase.cs:631</a></td>
-<td>Only overrides of method <code>SetVector4</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L640" title="GDX\DataTables\DataTableBase.cs:640">DataTableBase.cs:640</a></td>
-<td>Only overrides of method <code>SetVector2Int</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L649" title="GDX\DataTables\DataTableBase.cs:649">DataTableBase.cs:649</a></td>
-<td>Only overrides of method <code>SetVector3Int</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L658" title="GDX\DataTables\DataTableBase.cs:658">DataTableBase.cs:658</a></td>
-<td>Only overrides of method <code>SetQuaternion</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L667" title="GDX\DataTables\DataTableBase.cs:667">DataTableBase.cs:667</a></td>
-<td>Only overrides of method <code>SetRect</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L676" title="GDX\DataTables\DataTableBase.cs:676">DataTableBase.cs:676</a></td>
-<td>Only overrides of method <code>SetRectInt</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L685" title="GDX\DataTables\DataTableBase.cs:685">DataTableBase.cs:685</a></td>
-<td>Only overrides of method <code>SetColor</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L694" title="GDX\DataTables\DataTableBase.cs:694">DataTableBase.cs:694</a></td>
-<td>Only overrides of method <code>SetLayerMask</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L703" title="GDX\DataTables\DataTableBase.cs:703">DataTableBase.cs:703</a></td>
-<td>Only overrides of method <code>SetBounds</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L712" title="GDX\DataTables\DataTableBase.cs:712">DataTableBase.cs:712</a></td>
-<td>Only overrides of method <code>SetBoundsInt</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L721" title="GDX\DataTables\DataTableBase.cs:721">DataTableBase.cs:721</a></td>
-<td>Only overrides of method <code>SetHash128</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L730" title="GDX\DataTables\DataTableBase.cs:730">DataTableBase.cs:730</a></td>
-<td>Only overrides of method <code>SetGradient</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L739" title="GDX\DataTables\DataTableBase.cs:739">DataTableBase.cs:739</a></td>
-<td>Only overrides of method <code>SetAnimationCurve</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L748" title="GDX\DataTables\DataTableBase.cs:748">DataTableBase.cs:748</a></td>
-<td>Only overrides of method <code>SetObject</code> are used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/ITestBehaviour.cs#L14" title="GDX\Developer\Reports\BuildVerification\ITestBehaviour.cs:14">ITestBehaviour.cs:14</a></td>
@@ -3775,26 +3575,6 @@
 <td>Parameter <code>newValue</code> is not used in any of the implementations</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L216" title="GDX\DataTables\DataTableExtensions.cs:216">DataTableExtensions.cs:216</a></td>
-<td>Parameter <code>dataTable</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L216" title="GDX\DataTables\DataTableExtensions.cs:216">DataTableExtensions.cs:216</a></td>
-<td>Parameter <code>filePath</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L415" title="GDX\DataTables\DataTableExtensions.cs:415">DataTableExtensions.cs:415</a></td>
-<td>Parameter <code>dataTable</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L415" title="GDX\DataTables\DataTableExtensions.cs:415">DataTableExtensions.cs:415</a></td>
-<td>Parameter <code>fileContent</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableExtensions.cs#L416" title="GDX\DataTables\DataTableExtensions.cs:416">DataTableExtensions.cs:416</a></td>
-<td>Parameter <code>removeRowIfNotFound</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L309" title="GDX\Developer\InputProxy.cs:309">InputProxy.cs:309</a></td>
 <td>Parameter <code>virtualMode</code> is never used</td>
 </tr>
@@ -3819,7 +3599,7 @@
 <td>Parameter <code>line</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowToolbar.cs#L101" title="GDX.Editor\Windows\DataTables\DataTableWindowToolbar.cs:101">DataTableWindowToolbar.cs:101</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowToolbar.cs#L107" title="GDX.Editor\Windows\DataTables\DataTableWindowToolbar.cs:107">DataTableWindowToolbar.cs:107</a></td>
 <td>Parameter <code>action</code> is never used</td>
 </tr>
 </tbody>
@@ -4221,7 +4001,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-10 against <a href="https://github.com/dotBunny/GDX/commit/220f0b3a249b7f4a5d9bbe9b7200f82d210657c4"><strong>220f0b3</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-12 against <a href="https://github.com/dotBunny/GDX/commit/d471589469323649182ff89ec2af6d96368de4e8"><strong>d471589</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
