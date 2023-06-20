@@ -368,6 +368,10 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/DebugDrawShapes.cs#L302" title="GDX\Experimental\DebugDrawShapes.cs:302">DebugDrawShapes.cs:302</a></td>
 <td>Parameter <code>rotation</code> has no matching param tag in the XML comment for GDX.Experimental.DebugDrawShapes.DrawWireCube (but other parameters do)</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L192" title="GDX.Editor\PackageProvider.cs:192">PackageProvider.cs:192</a></td>
+<td>Cannot resolve symbol <code>DebugDraw</code></td>
+</tr>
 </tbody>
 </table>
 <h3 id="local-variable-hides-member">Local variable hides member</h3>
@@ -401,10 +405,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L507" title="GDX\Developer\InputProxy.cs:507">InputProxy.cs:507</a></td>
 <td>Field <code>Data</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L24" title="GDX.Editor\Windows\DataTables\TypePicker.cs:24">TypePicker.cs:24</a></td>
-<td>Field <code>m_RootElement</code> is assigned but its value is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/TableWindowViewTests.cs#L23" title="GDX.Editor.Tests\EditMode\Windows\TableWindowViewTests.cs:23">TableWindowViewTests.cs:23</a></td>
@@ -548,15 +548,15 @@
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L48" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:48">DataTableWindowOverlay.cs:48</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VisualElements/TypePicker.cs#L21" title="GDX.Editor\VisualElements\TypePicker.cs:21">TypePicker.cs:21</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L53" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:53">DataTableWindowOverlay.cs:53</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L49" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:49">DataTableWindowOverlay.cs:49</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L59" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:59">DataTableWindowOverlay.cs:59</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L54" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:54">DataTableWindowOverlay.cs:54</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
@@ -564,11 +564,15 @@
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L66" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:66">DataTableWindowOverlay.cs:66</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L61" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:61">DataTableWindowOverlay.cs:61</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L70" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:70">DataTableWindowOverlay.cs:70</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L67" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:67">DataTableWindowOverlay.cs:67</a></td>
+<td>The field is always assigned before being used and can be converted to local variable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L71" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:71">DataTableWindowOverlay.cs:71</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 </tbody>
@@ -815,19 +819,11 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L7" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:7">DataTableWindowOverlay.cs:7</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L8" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:8">DataTableWindowOverlay.cs:8</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowProvider.cs#L5" title="GDX.Editor\Windows\DataTables\DataTableWindowProvider.cs:5">DataTableWindowProvider.cs:5</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L8" title="GDX.Editor\Windows\DataTables\TypePicker.cs:8">TypePicker.cs:8</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L10" title="GDX.Editor\Windows\DataTables\TypePicker.cs:10">TypePicker.cs:10</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -1081,7 +1077,7 @@
 <td>Local variable <code>denseIndex</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L160" title="GDX.Editor\Windows\DataTables\TypePicker.cs:160">TypePicker.cs:160</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VisualElements/TypePicker.cs#L191" title="GDX.Editor\VisualElements\TypePicker.cs:191">TypePicker.cs:191</a></td>
 <td>Local variable <code>available</code> is never used</td>
 </tr>
 <tr>
@@ -1139,7 +1135,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L298" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:298">DataTableInspectorBase.cs:298</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L304" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:304">DataTableInspectorBase.cs:304</a></td>
 <td>Convert to method call with <code>?:</code> expression inside</td>
 </tr>
 </tbody>
@@ -1295,37 +1291,6 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorWindowExtensions.cs#L136" title="GDX.Editor\EditorWindowExtensions.cs:136">EditorWindowExtensions.cs:136</a></td>
-<td>Field can be made readonly</td>
-</tr>
-</tbody>
-</table>
-<h3 id="field-can-be-made-readonly-private-accessibility">Field can be made readonly: Private accessibility</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L20" title="GDX.Editor\Windows\DataTables\TypePicker.cs:20">TypePicker.cs:20</a></td>
-<td>Field can be made readonly</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L21" title="GDX.Editor\Windows\DataTables\TypePicker.cs:21">TypePicker.cs:21</a></td>
-<td>Field can be made readonly</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L22" title="GDX.Editor\Windows\DataTables\TypePicker.cs:22">TypePicker.cs:22</a></td>
-<td>Field can be made readonly</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L23" title="GDX.Editor\Windows\DataTables\TypePicker.cs:23">TypePicker.cs:23</a></td>
-<td>Field can be made readonly</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L32" title="GDX.Editor\Windows\DataTables\TypePicker.cs:32">TypePicker.cs:32</a></td>
 <td>Field can be made readonly</td>
 </tr>
 </tbody>
@@ -2048,16 +2013,16 @@
 <td>Method <code>GetAssetListFromFolder</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindow.cs#L181" title="GDX.Editor\Windows\DataTables\DataTableWindow.cs:181">DataTableWindow.cs:181</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/VisualElements/TypePicker.cs#L175" title="GDX.Editor\VisualElements\TypePicker.cs:175">TypePicker.cs:175</a></td>
+<td>Method <code>UpdateSizeAndPosition</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindow.cs#L184" title="GDX.Editor\Windows\DataTables\DataTableWindow.cs:184">DataTableWindow.cs:184</a></td>
 <td>Method <code>RebindTable</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowToolbar.cs#L100" title="GDX.Editor\Windows\DataTables\DataTableWindowToolbar.cs:100">DataTableWindowToolbar.cs:100</a></td>
 <td>Method <code>CanCommitOrder</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/TypePicker.cs#L145" title="GDX.Editor\Windows\DataTables\TypePicker.cs:145">TypePicker.cs:145</a></td>
-<td>Method <code>UpdateSizeAndPosition</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/ProjectSettings/ConfigSections/AutomaticUpdatesSettings.cs#L17" title="GDX.Editor\Windows\ProjectSettings\ConfigSections\AutomaticUpdatesSettings.cs:17">AutomaticUpdatesSettings.cs:17</a></td>
@@ -2307,7 +2272,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L337" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:337">DataTableInspectorBase.cs:337</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/DataTableInspectorBase.cs#L343" title="GDX.Editor\Inspectors\DataTableInspectorBase.cs:343">DataTableInspectorBase.cs:343</a></td>
 <td>Redundant string interpolation</td>
 </tr>
 </tbody>
@@ -4012,7 +3977,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-15 against <a href="https://github.com/dotBunny/GDX/commit/cae37a97dcf7a6c905d2f402ab2d268edb5dd399"><strong>cae37a9</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-20 against <a href="https://github.com/dotBunny/GDX/commit/df2a5cced080149ba88780f2a2a712baf62e2807"><strong>df2a5cc</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
