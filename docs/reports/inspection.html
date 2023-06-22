@@ -274,7 +274,7 @@
 <td>Name <code>GDXShortcutAttribute</code> does not match rule <code>members_should_be_pascal_case</code>. Suggested name is <code>GdxShortcutAttribute</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/StableDataTableInspector.cs#L91" title="GDX.Editor\Inspectors\StableDataTableInspector.cs:91">StableDataTableInspector.cs:91</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/StableDataTableInspector.cs#L96" title="GDX.Editor\Inspectors\StableDataTableInspector.cs:96">StableDataTableInspector.cs:96</a></td>
 <td>Name <code>enumID</code> does not match rule <code>locals_should_be_camel_case</code>. Suggested name is <code>enumId</code>.</td>
 </tr>
 <tr>
@@ -407,11 +407,15 @@
 <td>Field <code>Data</code> is assigned but its value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/TableWindowViewTests.cs#L23" title="GDX.Editor.Tests\EditMode\Windows\TableWindowViewTests.cs:23">TableWindowViewTests.cs:23</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L22" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:22">DataTableWindowTests.cs:22</a></td>
+<td>Field <code>m_DataTableWindowController</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowViewTests.cs#L22" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowViewTests.cs:22">DataTableWindowViewTests.cs:22</a></td>
 <td>Field <code>m_DataTableWindowView</code> is assigned but its value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/TableWindowViewTests.cs#L24" title="GDX.Editor.Tests\EditMode\Windows\TableWindowViewTests.cs:24">TableWindowViewTests.cs:24</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowViewTests.cs#L23" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowViewTests.cs:23">DataTableWindowViewTests.cs:23</a></td>
 <td>Field <code>m_DataTableWindowController</code> is assigned but its value is never used</td>
 </tr>
 </tbody>
@@ -819,6 +823,10 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L9" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:9">DataTableWindowTests.cs:9</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Experimental/DebugDrawBufferTests.cs#L5" title="GDX.Tests\EditMode\Experimental\DebugDrawBufferTests.cs:5">DebugDrawBufferTests.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
@@ -1091,6 +1099,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/NUnit/Property.cs#L10" title="GDX\Developer\Reports\NUnit\Property.cs:10">Property.cs:10</a></td>
 <td>Class <code>Property</code> is never instantiated</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/StableDataTableInspector.cs#L15" title="GDX.Editor\Inspectors\StableDataTableInspector.cs:15">StableDataTableInspector.cs:15</a></td>
+<td>Class <code>StableDataTableInspector</code> is never instantiated</td>
 </tr>
 </tbody>
 </table>
@@ -3278,7 +3290,7 @@
 <td>Method <code>SetString</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/StableDataTableInspector.cs#L22" title="GDX.Editor\Inspectors\StableDataTableInspector.cs:22">StableDataTableInspector.cs:22</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/StableDataTableInspector.cs#L21" title="GDX.Editor\Inspectors\StableDataTableInspector.cs:21">StableDataTableInspector.cs:21</a></td>
 <td>Method <code>CreateStableTableExample</code> is never used</td>
 </tr>
 <tr>
@@ -3386,19 +3398,27 @@
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/TableWindowControllerTests.cs#L25" title="GDX.Editor.Tests\EditMode\Windows\TableWindowControllerTests.cs:25">TableWindowControllerTests.cs:25</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowControllerTests.cs#L24" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowControllerTests.cs:24">DataTableWindowControllerTests.cs:24</a></td>
 <td>Method <code>Setup</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/TableWindowControllerTests.cs#L34" title="GDX.Editor.Tests\EditMode\Windows\TableWindowControllerTests.cs:34">TableWindowControllerTests.cs:34</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowControllerTests.cs#L33" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowControllerTests.cs:33">DataTableWindowControllerTests.cs:33</a></td>
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/TableWindowViewTests.cs#L27" title="GDX.Editor.Tests\EditMode\Windows\TableWindowViewTests.cs:27">TableWindowViewTests.cs:27</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L25" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:25">DataTableWindowTests.cs:25</a></td>
 <td>Method <code>Setup</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/TableWindowViewTests.cs#L37" title="GDX.Editor.Tests\EditMode\Windows\TableWindowViewTests.cs:37">TableWindowViewTests.cs:37</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L35" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:35">DataTableWindowTests.cs:35</a></td>
+<td>Method <code>TearDown</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowViewTests.cs#L26" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowViewTests.cs:26">DataTableWindowViewTests.cs:26</a></td>
+<td>Method <code>Setup</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowViewTests.cs#L36" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowViewTests.cs:36">DataTableWindowViewTests.cs:36</a></td>
 <td>Method <code>TearDown</code> is never used</td>
 </tr>
 <tr>
@@ -3698,10 +3718,6 @@
 <td>Class <code>InspectorMessageBoxAttributeDecoratorDrawer</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Inspectors/StableDataTableInspector.cs#L15" title="GDX.Editor\Inspectors\StableDataTableInspector.cs:15">StableDataTableInspector.cs:15</a></td>
-<td>Class <code>StableDataTableInspector</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/MenuItems.cs#L11" title="GDX.Editor\MenuItems.cs:11">MenuItems.cs:11</a></td>
 <td>Class <code>MenuItems</code> is never used</td>
 </tr>
@@ -3842,8 +3858,12 @@
 <td>Class <code>DataTableWindowShortcuts</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/TableWindowViewTests.cs#L19" title="GDX.Editor.Tests\EditMode\Windows\TableWindowViewTests.cs:19">TableWindowViewTests.cs:19</a></td>
-<td>Class <code>TableWindowViewTests</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L18" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:18">DataTableWindowTests.cs:18</a></td>
+<td>Class <code>DataTableWindowTests</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowViewTests.cs#L18" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowViewTests.cs:18">DataTableWindowViewTests.cs:18</a></td>
+<td>Class <code>DataTableWindowViewTests</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Experimental/DebugDrawBufferTests.cs#L13" title="GDX.Tests\EditMode\Experimental\DebugDrawBufferTests.cs:13">DebugDrawBufferTests.cs:13</a></td>
@@ -3961,7 +3981,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-21 against <a href="https://github.com/dotBunny/GDX/commit/36dea5f3cfc297a7131b07bd9d345967146c33f5"><strong>36dea5f</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-21 against <a href="https://github.com/dotBunny/GDX/commit/956f88c79b4227f7a225eec039222b1288a675ee"><strong>956f88c</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
