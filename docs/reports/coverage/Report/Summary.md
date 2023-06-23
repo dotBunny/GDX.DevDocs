@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-22 - 10:55:20 PM |
+| Generated on: | 2023-06-23 - 8:00:27 AM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 166 |
 | Files: | 162 |
 | Covered lines: | 7373 |
-| Uncovered lines: | 5050 |
-| Coverable lines: | 12423 |
-| Total lines: | 31868 |
-| Line coverage: | 59.3% (7373 of 12423) |
+| Uncovered lines: | 5046 |
+| Coverable lines: | 12419 |
+| Total lines: | 31905 |
+| Line coverage: | 59.3% (7373 of 12419) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 743 |
+| Covered methods: | 744 |
 | Total methods: | 1317 |
-| Method coverage: | 56.4% (743 of 1317) |
+| Method coverage: | 56.4% (744 of 1317) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7373**|**5050**|**12423**|**36812**|**59.3%**|**0**|**0**|****|**743**|**1317**|**56.4%**|
+|**GDX**|**7373**|**5046**|**12419**|**36849**|**59.3%**|**0**|**0**|****|**744**|**1317**|**56.4%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -59,7 +59,7 @@
 |GDX.Collections.Pooling.GameObjectPool|175|35|210|510|83.3%|0|0||15|15|100%|
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
 |GDX.Collections.Pooling.ManagedPools|28|50|78|221|35.8%|0|0||6|12|50%|
-|GDX.Collections.Pooling.SimpleListManagedPool|78|108|186|428|41.9%|0|0||6|14|42.8%|
+|GDX.Collections.Pooling.SimpleListManagedPool|81|105|186|428|43.5%|0|0||7|14|50%|
 |GDX.Collections.SparseSet|1001|59|1060|1825|94.4%|0|0||49|51|96%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1236|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1236|0%|0|0||0|2|0%|
@@ -73,7 +73,7 @@
 |GDX.DataTables.CellValues.CharCellValue|0|32|32|125|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.ColorCellValue|0|32|32|126|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.DoubleCellValue|0|32|32|125|0%|0|0||0|6|0%|
-|GDX.DataTables.CellValues.EnumIntCellValue|0|40|40|147|0%|0|0||0|7|0%|
+|GDX.DataTables.CellValues.EnumIntCellValue|0|40|40|151|0%|0|0||0|7|0%|
 |GDX.DataTables.CellValues.FloatCellValue|0|32|32|125|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.GradientCellValue|0|32|32|126|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Hash128CellValue|0|32|32|126|0%|0|0||0|6|0%|
@@ -95,7 +95,7 @@
 |GDX.DataTables.CellValues.Vector3CellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector3IntCellValue|0|32|32|127|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.Vector4CellValue|0|32|32|127|0%|0|0||0|6|0%|
-|GDX.DataTables.ColumnDescription|0|3|3|39|0%|0|0||0|1|0%|
+|GDX.DataTables.ColumnDescription|0|3|3|41|0%|0|0||0|1|0%|
 |GDX.DataTables.ColumnSorters.BoolColumnSorter|0|14|14|37|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.ColumnSorterBase|0|22|22|51|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.DoubleColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
@@ -107,13 +107,13 @@
 |GDX.DataTables.ColumnSorters.StringColumnSorter|0|8|8|26|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.UIntColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.ColumnSorters.ULongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
-|GDX.DataTables.DataTableBase|4|14|18|796|22.2%|0|0||1|1|100%|
+|GDX.DataTables.DataTableBase|4|14|18|787|22.2%|0|0||1|1|100%|
 |GDX.DataTables.DataTableExtensions|0|155|155|339|0%|0|0||0|4|0%|
-|GDX.DataTables.DataTableInterchange|0|147|147|293|0%|0|0||0|6|0%|
-|GDX.DataTables.DataTableJson|0|95|95|207|0%|0|0||0|5|0%|
-|GDX.DataTables.DataTableMetaData|4|0|4|16|100%|0|0||1|1|100%|
+|GDX.DataTables.DataTableInterchange|0|146|146|292|0%|0|0||0|6|0%|
+|GDX.DataTables.DataTableJson|0|95|95|213|0%|0|0||0|5|0%|
+|GDX.DataTables.DataTableMetaData|1|0|1|45|100%|0|0||1|1|100%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
-|GDX.DataTables.StableDataTable|574|680|1254|2046|45.7%|0|0||112|169|66.2%|
+|GDX.DataTables.StableDataTable|574|680|1254|2052|45.7%|0|0||112|169|66.2%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
 |GDX.Developer.InputProxy|0|119|119|515|0%|0|0||0|17|0%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
