@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-23 - 12:50:11 PM |
+| Generated on: | 2023-06-23 - 4:38:08 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 166 |
 | Files: | 162 |
-| Covered lines: | 7370 |
-| Uncovered lines: | 5049 |
-| Coverable lines: | 12419 |
-| Total lines: | 31905 |
-| Line coverage: | 59.3% (7370 of 12419) |
+| Covered lines: | 7375 |
+| Uncovered lines: | 5102 |
+| Coverable lines: | 12477 |
+| Total lines: | 32003 |
+| Line coverage: | 59.1% (7375 of 12477) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 743 |
-| Total methods: | 1317 |
-| Method coverage: | 56.4% (743 of 1317) |
+| Covered methods: | 744 |
+| Total methods: | 1324 |
+| Method coverage: | 56.1% (744 of 1324) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7370**|**5049**|**12419**|**36849**|**59.3%**|**0**|**0**|****|**743**|**1317**|**56.4%**|
+|**GDX**|**7375**|**5102**|**12477**|**36947**|**59.1%**|**0**|**0**|****|**744**|**1324**|**56.1%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -109,9 +109,9 @@
 |GDX.DataTables.ColumnSorters.ULongColumnSorter|0|11|11|32|0%|0|0||0|2|0%|
 |GDX.DataTables.DataTableBase|4|14|18|787|22.2%|0|0||1|1|100%|
 |GDX.DataTables.DataTableExtensions|0|155|155|339|0%|0|0||0|4|0%|
-|GDX.DataTables.DataTableInterchange|0|146|146|292|0%|0|0||0|6|0%|
+|GDX.DataTables.DataTableInterchange|0|170|170|327|0%|0|0||0|8|0%|
 |GDX.DataTables.DataTableJson|0|95|95|213|0%|0|0||0|5|0%|
-|GDX.DataTables.DataTableMetaData|1|0|1|45|100%|0|0||1|1|100%|
+|GDX.DataTables.DataTableMetaData|6|29|35|108|17.1%|0|0||2|6|33.3%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
 |GDX.DataTables.StableDataTable|574|680|1254|2052|45.7%|0|0||112|169|66.2%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
