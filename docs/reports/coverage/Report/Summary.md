@@ -1,7 +1,7 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-23 - 4:50:25 PM |
+| Generated on: | 2023-06-24 - 6:51:12 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 166 |
@@ -9,7 +9,7 @@
 | Covered lines: | 7375 |
 | Uncovered lines: | 5102 |
 | Coverable lines: | 12477 |
-| Total lines: | 32006 |
+| Total lines: | 32012 |
 | Line coverage: | 59.1% (7375 of 12477) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7375**|**5102**|**12477**|**36950**|**59.1%**|**0**|**0**|****|**744**|**1324**|**56.1%**|
+|**GDX**|**7375**|**5102**|**12477**|**36956**|**59.1%**|**0**|**0**|****|**744**|**1324**|**56.1%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -111,7 +111,7 @@
 |GDX.DataTables.DataTableExtensions|0|155|155|339|0%|0|0||0|4|0%|
 |GDX.DataTables.DataTableInterchange|0|170|170|327|0%|0|0||0|8|0%|
 |GDX.DataTables.DataTableJson|0|95|95|213|0%|0|0||0|5|0%|
-|GDX.DataTables.DataTableMetaData|6|29|35|111|17.1%|0|0||2|6|33.3%|
+|GDX.DataTables.DataTableMetaData|6|29|35|117|17.1%|0|0||2|6|33.3%|
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
 |GDX.DataTables.StableDataTable|574|680|1254|2052|45.7%|0|0||112|169|66.2%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
