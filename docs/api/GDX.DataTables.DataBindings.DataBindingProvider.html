@@ -107,54 +107,23 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public static class DataBindingProvider</code></pre>
   </div>
-  <h3 id="fields">Fields
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_CustomFormat.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.CustomFormat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L16">View Source</a>
-  </span>
-  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_CustomFormat" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.CustomFormat">CustomFormat</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static FormatBase CustomFormat</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="GDX.DataTables.DataBindings.FormatBase.html">FormatBase</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_Export_GDX_DataTables_DataTableBase_GDX_DataTables_DataBindings_DataBindingProvider_Format_System_String_.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.Export(GDX.DataTables.DataTableBase%2CGDX.DataTables.DataBindings.DataBindingProvider.Format%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_Export_GDX_DataTables_DataTableBase_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.Export(GDX.DataTables.DataTableBase%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L35">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L27">View Source</a>
   </span>
   <a id="GDX_DataTables_DataBindings_DataBindingProvider_Export_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.Export*"></a>
-  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_Export_GDX_DataTables_DataTableBase_GDX_DataTables_DataBindings_DataBindingProvider_Format_System_String_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.Export(GDX.DataTables.DataTableBase,GDX.DataTables.DataBindings.DataBindingProvider.Format,System.String)">Export(DataTableBase, DataBindingProvider.Format, String)</h4>
+  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_Export_GDX_DataTables_DataTableBase_System_String_System_Boolean_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.Export(GDX.DataTables.DataTableBase,System.String,System.Boolean)">Export(DataTableBase, String, Boolean)</h4>
   <div class="markdown level1 summary"><p>Export the content of a given <a class="xref" href="GDX.DataTables.DataTableBase.html">DataTableBase</a> to a target format.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void Export(DataTableBase dataTable, DataBindingProvider.Format format, string uri)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void Export(DataTableBase dataTable, string uri, bool jsonFallback = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -173,15 +142,15 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="GDX.DataTables.DataBindings.DataBindingProvider.Format.html">DataBindingProvider.Format</a></td>
-        <td><span class="parametername">format</span></td>
-        <td><p>The desired format to export as.</p>
-</td>
-      </tr>
-      <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">uri</span></td>
         <td><p>The output path/uri where to send the data, absolute if on disk</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">jsonFallback</span></td>
+        <td><p>If the format cannot be determined by the uri, fallback to JSON.</p>
 </td>
       </tr>
     </tbody>
@@ -191,7 +160,7 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_GetFormatFromFile_System_String_.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.GetFormatFromFile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L61">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L43">View Source</a>
   </span>
   <a id="GDX_DataTables_DataBindings_DataBindingProvider_GetFormatFromFile_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.GetFormatFromFile*"></a>
   <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_GetFormatFromFile_System_String_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.GetFormatFromFile(System.String)">GetFormatFromFile(String)</h4>
@@ -199,7 +168,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DataBindingProvider.Format GetFormatFromFile(string filePath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static FormatBase GetFormatFromFile(string filePath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -228,26 +197,133 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="GDX.DataTables.DataBindings.DataBindingProvider.Format.html">DataBindingProvider.Format</a></td>
+        <td><a class="xref" href="GDX.DataTables.DataBindings.FormatBase.html">FormatBase</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_Import_GDX_DataTables_DataTableBase_GDX_DataTables_DataBindings_DataBindingProvider_Format_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.Import(GDX.DataTables.DataTableBase%2CGDX.DataTables.DataBindings.DataBindingProvider.Format%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_GetFormatFromUri_System_String_.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.GetFormatFromUri(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L105">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L67">View Source</a>
+  </span>
+  <a id="GDX_DataTables_DataBindings_DataBindingProvider_GetFormatFromUri_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.GetFormatFromUri*"></a>
+  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_GetFormatFromUri_System_String_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.GetFormatFromUri(System.String)">GetFormatFromUri(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FormatBase GetFormatFromUri(string uri)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">uri</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.DataTables.DataBindings.FormatBase.html">FormatBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_GetFormats.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.GetFormats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L38">View Source</a>
+  </span>
+  <a id="GDX_DataTables_DataBindings_DataBindingProvider_GetFormats_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.GetFormats*"></a>
+  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_GetFormats" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.GetFormats">GetFormats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FormatBase[] GetFormats()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.DataTables.DataBindings.FormatBase.html">FormatBase</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_GetImportDialogExtensions.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.GetImportDialogExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L79">View Source</a>
+  </span>
+  <a id="GDX_DataTables_DataBindings_DataBindingProvider_GetImportDialogExtensions_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.GetImportDialogExtensions*"></a>
+  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_GetImportDialogExtensions" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.GetImportDialogExtensions">GetImportDialogExtensions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string[] GetImportDialogExtensions()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_Import_GDX_DataTables_DataTableBase_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.Import(GDX.DataTables.DataTableBase%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L108">View Source</a>
   </span>
   <a id="GDX_DataTables_DataBindings_DataBindingProvider_Import_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.Import*"></a>
-  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_Import_GDX_DataTables_DataTableBase_GDX_DataTables_DataBindings_DataBindingProvider_Format_System_String_System_Boolean_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.Import(GDX.DataTables.DataTableBase,GDX.DataTables.DataBindings.DataBindingProvider.Format,System.String,System.Boolean)">Import(DataTableBase, DataBindingProvider.Format, String, Boolean)</h4>
+  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_Import_GDX_DataTables_DataTableBase_System_String_System_Boolean_System_Boolean_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.Import(GDX.DataTables.DataTableBase,System.String,System.Boolean,System.Boolean)">Import(DataTableBase, String, Boolean, Boolean)</h4>
   <div class="markdown level1 summary"><p>Update the <a class="xref" href="GDX.DataTables.DataTableBase.html">DataTableBase</a> with the data found in the given file.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool Import(DataTableBase dataTable, DataBindingProvider.Format format, string uri, bool removeRowIfNotFound = true)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool Import(DataTableBase dataTable, string uri, bool removeRowIfNotFound = true, bool jsonFallback = true)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -266,12 +342,6 @@
 </td>
       </tr>
       <tr>
-        <td><a class="xref" href="GDX.DataTables.DataBindings.DataBindingProvider.Format.html">DataBindingProvider.Format</a></td>
-        <td><span class="parametername">format</span></td>
-        <td><p>The file format.</p>
-</td>
-      </tr>
-      <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">uri</span></td>
         <td><p>The resource path to load data from, absolute if on disk.</p>
@@ -281,6 +351,12 @@
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">removeRowIfNotFound</span></td>
         <td><p>Should rows that are not found in the file content be removed?</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">jsonFallback</span></td>
+        <td><p>If the importer is unable to determine the format based on the URI, fallback to assuming its JSON.</p>
 </td>
       </tr>
     </tbody>
@@ -301,11 +377,75 @@
       </tr>
     </tbody>
   </table>
-  <h5 id="GDX_DataTables_DataBindings_DataBindingProvider_Import_GDX_DataTables_DataTableBase_GDX_DataTables_DataBindings_DataBindingProvider_Format_System_String_System_Boolean__remarks">Remarks</h5>
+  <h5 id="GDX_DataTables_DataBindings_DataBindingProvider_Import_GDX_DataTables_DataTableBase_System_String_System_Boolean_System_Boolean__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>It's important that the Row Identifier column remains unchanged, no structural changes have occured, and
 no changes of column order were made. Object references will be maintained during update, only values will
 be updated.</p>
 </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_RegisterFormat_GDX_DataTables_DataBindings_FormatBase_.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.RegisterFormat(GDX.DataTables.DataBindings.FormatBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L124">View Source</a>
+  </span>
+  <a id="GDX_DataTables_DataBindings_DataBindingProvider_RegisterFormat_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.RegisterFormat*"></a>
+  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_RegisterFormat_GDX_DataTables_DataBindings_FormatBase_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.RegisterFormat(GDX.DataTables.DataBindings.FormatBase)">RegisterFormat(FormatBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterFormat(FormatBase format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.DataTables.DataBindings.FormatBase.html">FormatBase</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_DataTables_DataBindings_DataBindingProvider_UnregisterFormat_GDX_DataTables_DataBindings_FormatBase_.md&amp;value=---%0Auid%3A%20GDX.DataTables.DataBindings.DataBindingProvider.UnregisterFormat(GDX.DataTables.DataBindings.FormatBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataBinding/DataBindingProvider.cs/#L132">View Source</a>
+  </span>
+  <a id="GDX_DataTables_DataBindings_DataBindingProvider_UnregisterFormat_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.UnregisterFormat*"></a>
+  <h4 id="GDX_DataTables_DataBindings_DataBindingProvider_UnregisterFormat_GDX_DataTables_DataBindings_FormatBase_" data-uid="GDX.DataTables.DataBindings.DataBindingProvider.UnregisterFormat(GDX.DataTables.DataBindings.FormatBase)">UnregisterFormat(FormatBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterFormat(FormatBase format)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="GDX.DataTables.DataBindings.FormatBase.html">FormatBase</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
 </article>
           </div>
           
@@ -337,7 +477,7 @@ be updated.</p>
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-25 against <a href="https://github.com/dotBunny/GDX/commit/00c7021310c763fde95a8be1339ef01a6791dae5"><strong>00c7021</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-25 against <a href="https://github.com/dotBunny/GDX/commit/54058cd6ebcc5709053f16de20b5fa94a60c1808"><strong>54058cd</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
