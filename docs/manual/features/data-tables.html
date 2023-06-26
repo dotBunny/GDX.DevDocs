@@ -127,14 +127,42 @@
 <p>A surface-level display of information about the <code>DataTableBase</code> is made available via the inspector. Names of rows and columns are listed, including the type of column.</p>
 <p>Clicking the <strong>Open</strong> button will open an editing window focused on the selected <code>DataTableBase</code>.</p>
 <h3 id="interchange">Interchange</h3>
-<p>The DataTableBase allows for interchange between formats (CSV &amp; JSON out-of-the-box); export and non-destructive table data import. What this means in practice is that you can export an already-built table and make changes in whatever editing program a user desires. Those changes can then be re-imported back into Unity, maintaining existing references (an example being an object column referencing prefabs).</p>
+<p>The DataTableBase allows for data-interchange between formats (<a href="https://en.wikipedia.org/wiki/Comma-separated_values">CSV</a> &amp; <a href="https://www.json.org/json-en.html">JSON</a> out-of-the-box), export and non-destructive table data import. What this means in practice is that you can export an already-built table and make changes in whatever editing program a user desires. Those changes can then be re-imported back into Unity, maintaining existing references (an example being an object column referencing prefabs).</p>
 <div class="WARNING">
 <h5>Warning</h5>
 <p>It is important to note that the column structure (order and types) cannot change in the imported data. The row identifiers will be used to match up rows, updating where appropriate, creating when necessary, and removing when no longer found.</p>
 </div>
-<h4 id="what-about-excel-and-google-sheets">What about Excel and Google Sheets?</h4>
+<h4 id="excel--google-sheets">Excel / Google Sheets</h4>
 <p>Yes, absolutely!</p>
-<p>However, you will need to do a bit of legwork to get there. When we ship <code>GDX</code> we try to think about a lean-and-mean approach. Adding the libraries necessary to interact with those types easily would add a certain level of bloat to the package. We have modelled our existing <a href="xref:GDX.DataTables.DataBindings.JavaScriptObjectNotationFormat">JSON</a> and <a href="xref:GDX.DataTables.DataBindings.CommaSeperatedValueFormat">CSV</a> formats to demonstrate how easy it is to add a new format to bind too.</p>
+<p>However, you will need to do a bit of legwork to get there. When we ship <code>GDX</code> we try to think about a lean-and-mean approach. Adding the libraries necessary to interact with those types easily would add a certain level of bloat to the package. We have modelled our existing <a href="xref:GDX.DataTables.DataBindings.JavaScriptObjectNotationFormat">JSON</a> and <a href="xref:GDX.DataTables.DataBindings.CommaSeperatedValueFormat">CSV</a> formats to demonstrate how to build custom formats.</p>
+<pre><code class="lang-csharp">   class ExcelFormat : FormatBase
+   {      
+      #if UNITY_EDITOR        
+      [UnityEditor.InitializeOnLoadMethod]
+      #else
+      [UnityEngine.RuntimeInitializeOnLoadMethod]
+      #endif        
+      static void RegisterFormat()
+      {
+         // Ensure the format is registered for usage
+         DataBindingProvider.RegisterFormat(new ExcelFormat());
+      }
+
+      // Fill out other overrides ...
+
+      public override SerializableTable Pull(string uri, ulong currentDataVersion, int currentStructuralVersion)
+      {                        
+         // Open excel file with OpenXML SDK            
+         // Read cells and put into new             
+      }
+
+      public override bool Push(string uri, SerializableTable serializableTable)
+      {
+         // Open excel file with OpenXML SDK
+         // Itterate through simplified table data and put into cells
+      }
+   }
+</code></pre>
 <h3 id="tracker">Tracker</h3>
 <p>Table information is tracked in the editor via a reference counting mechanism. This information is helpful for developers to identify leaking references that were expected to be removed. This information is updated manually every time the inspector is drawn. While some table-driven events trigger a redraw, this number sometimes needs to be refreshed. The <strong>Refresh</strong> button at the top of the inspector will update the numbers.</p>
 <h2 id="table-window">Table Window</h2>
@@ -242,7 +270,19 @@ A lock icon may be on the toolbar's right side indicating that the Data Table ha
 <p>While the order of rows in the table window is virtual (until committed), the order of columns is bound to the internal data table. These options will alter the column order one increment at a time.</p>
 <h2 id="referencing-cells">Referencing Cells</h2>
 <p>One of the design pillars for the DataTable feature was ensuring the data consumption was intuitive, both from a designer's standpoint and a developer's. A developer can create a cache-friendly reference to a cell by type:</p>
-<pre><code class="lang-csharp">   public StringCellValue Name;
+<pre><code class="lang-csharp">   public FloatCellValue BaseHealth;
+
+   void Awake()
+   {
+      // Check data version and fill
+      Health = BaseHealth.Get();
+   }
+
+   void OnRespawn()
+   {
+      // Reset without checking data version
+      Health = BaseHealth.GetUnsafe();
+   }
 </code></pre>
 <p>Then in the object's inspector, an easy-to-use property drawer is created.</p>
 <p><img src="/images/manual/features/data-table/drawer-process.gif" alt="Drawer Selection"></p>
@@ -289,7 +329,7 @@ Clicking the lock icon will allow editing the data in the table directly. When U
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-25 against <a href="https://github.com/dotBunny/GDX/commit/54058cd6ebcc5709053f16de20b5fa94a60c1808"><strong>54058cd</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-26 against <a href="https://github.com/dotBunny/GDX/commit/63ed798608e78cfe06ed6bdddb5693b486984330"><strong>63ed798</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
