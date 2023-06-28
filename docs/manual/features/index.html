@@ -89,31 +89,28 @@
             <article class="content wrap" id="_content" data-uid="features">
 <h1 id="features">Features</h1>
 
+<p>Over time <code>GDX</code> has grown into a robust set of functionality; with that comes the much larger problem of discoverability. There are too many things to cover in a list on this page (<em>hence we removed it</em>). We are working on this problem by building key <em>feature</em> sub-pages to highlight functionality; thus, this page only encompasses part of the package.</p>
 <div class="TIP">
 <h5>Tip</h5>
-<p>Over time <code>GDX</code> has grown into a robust set of functionality; with that comes the much larger problem of discoverability. There are too many things to cover in the list on this page. We are working on this problem by building key <em>feature</em> sub-pages to highlight functionality. It is in no way meant to be encompassing the entire package. For a more thorough list of functionality, explore the <a href="/api/GDX.html">API documentation</a> directly.</p>
+<p>For a more thorough list of functionality, explore the <a href="/api/GDX.html">API documentation</a> directly.</p>
 </div>
-<h2 id="extending-apis">Extending APIs</h2>
-<p>At the root of the <code>GDX</code> namespace are static extension and utility classes that build the foundation for the framework, providing missing functionality to numerous types inside the Unity API.</p>
-<h3 id="c-sharp">C Sharp</h3>
+<p>Looking at the GDX runtime namespace, we can extract highlights from each area to get you thinking. Not going to dive into the authoring namespace; for now.</p>
+<h2 id="gdx"><a class="xref" href="../../api/GDX.html">GDX</a></h2>
+<p>The root of all <del>evil</del> awesomeness? Numerous extension classes live at the core, matching and extending Unity's types. We also have a standard set of utilities that live here as well.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Extension</th>
+<th style="text-align: left;">Highlight</th>
 <th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.ArrayExtensions.html">Array</a></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.ArrayExtensions.html">ArrayExtensions</a></td>
 <td style="text-align: left;">A bunch of <code>Array</code> operations which are commonly used by other methods. For example getting the last or first index of an item or value in an <code>Array</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.ByteExtensions.html">Byte</a></td>
-<td style="text-align: left;">Contains a simple non-allocating extension method to get a stable hash code from an array of <code>bytes</code> as well as an optimized comparison method.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.EnumExtensions.html">Enum</a></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.EnumExtensions.html">EnumExtensions</a></td>
 <td style="text-align: left;">Useful functionality around <code>Flags</code></td>
 </tr>
 <tr>
@@ -121,300 +118,152 @@
 <td style="text-align: left;">A common set of methods for <code>IList</code> implementing collections allowing for optimized value and item checks, as well as some extras.</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.PlayerLoopSystemExtensions.html">PlayerLoopSystemExtensions</a></td>
+<td style="text-align: left;">A helpful set of tools for manipulating Unity's <code>PlayerLoop</code>.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Reflection.html">Reflection</a></td>
+<td style="text-align: left;">It makes reflection a little less painful to utilize; it still has the same performance problems.</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a class="xref" href="../../api/GDX.StringExtensions.html">String</a></td>
 <td style="text-align: left;">A vast collection of extension methods covering a wide range from encryption to hash codes, to simply finding content an existing <code>string</code>.</td>
 </tr>
-</tbody>
-</table>
-<h3 id="gdx">GDX</h3>
-<table>
-<thead>
 <tr>
-<th style="text-align: left;">Extension</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="xref:GDX.Array2DExtensions">Array2D</a></td>
-<td style="text-align: left;">A small amount of functionality around manipulating data contained within an <code>Array2D</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="xref:GDX.SimpleListExtensions">SimpleList</a></td>
-<td style="text-align: left;">A slightly less performant set of functionality for a <code>SimpleList</code>.</td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Trace.html">Trace</a></td>
+<td style="text-align: left;">Our take on categorized cross-platform logging.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="unity">Unity</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Extension</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.AddressablesExtensions.html">Addressables</a></td>
-<td style="text-align: left;">A collection of useful spawning and management functionality built on top of the <code>com.unity.addressables</code> package. For example identifying if a <code>AssetReference</code> is valid and able to be instantiated.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.BoxColliderExtensions.html">BoxCollider</a></td>
-<td style="text-align: left;">Find out if a position is contained within a <code>BoxCollider</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.CameraExtensions.html">Camera</a></td>
-<td style="text-align: left;">Methods to force a specific <code>Camera</code> to render to specific outputs.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.CapsuleColliderExtensions.html">CapsuleCollider</a></td>
-<td style="text-align: left;">Simple helper for finding out which way a <code>CapsuleCollider</code> is oriented.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.GameObjectExtensions.html">GameObject</a></td>
-<td style="text-align: left;">Numerous methods meant to replace commonly implemented functionality around the component system and scene operations.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.MeshExtensions.html">Mesh</a></td>
-<td style="text-align: left;">A helper to calculate the approximate volume of a mesh.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.MonoBehaviourExtensions.html">MonoBehaviour</a></td>
-<td style="text-align: left;">A small set of wrapped functionality for component based operations.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.NavMeshPathExtensions.html">NavMeshPath</a></td>
-<td style="text-align: left;">Some helpful functions when trying to build out AI logic.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.RigidbodyExtensions.html">Rigidbody</a></td>
-<td style="text-align: left;">A method for determining the moment of inertia.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.TransformExtensions.html">Transform</a></td>
-<td style="text-align: left;">Some useful functionality when it comes to working with <code>Transform</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Vector2Extensions.html">Vector2</a></td>
-<td style="text-align: left;">Additional functionality for common calculations done with <code>Vector2</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Vector3Extensions.html">Vector3</a></td>
-<td style="text-align: left;">Additional functionality for common calculations done with <code>Vector3</code>.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="optimized-collections">Optimized Collections</h2>
-<p>Located in the <code>GDX.Collections</code> namespace is an extensive group of <code>struct</code>s and <code>class</code>es designed for performance-sensitive environments.</p>
+<h2 id="gdxcollections"><a class="xref" href="../../api/GDX.Collections.html">GDX.Collections</a></h2>
+<p>We've found that the collections that ship with Unity and .Net don't live up to our desired performance characteristics. <code>GDX</code> provides various collection types to meet the performance criteria needs of demanding environments.</p>
 <div class="WARNING">
 <h5>Warning</h5>
-<p>It is important to note that many of the structures backing data, indices, counts, etc., are publicly accessible. This is meant for advanced usage; change at runtime at your own risk.</p>
+<p>It is important to note that many structures backing data, indices, counts, etc., are publicly accessible for advanced usage. Change at runtime at your own risk.</p>
 </div>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Highlight</th>
 <th style="text-align: left;">Description</th>
-<th>Base</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Bit Arrays</td>
-<td style="text-align: left;">A selection of sized <a class="xref" href="../../api/GDX.Collections.BitArray8.html">8</a>, <a class="xref" href="../../api/GDX.Collections.BitArray16.html">16</a>, <a class="xref" href="../../api/GDX.Collections.BitArray32.html">32</a>, <a class="xref" href="../../api/GDX.Collections.BitArray64.html">64</a>, <a class="xref" href="../../api/GDX.Collections.BitArray128.html">128</a>, <a class="xref" href="../../api/GDX.Collections.BitArray256.html">256</a> and <a class="xref" href="../../api/GDX.Collections.BitArray512.html">512</a> index accessed bit arrays.</td>
-<td><code>struct</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.FreeList.html">Free List</a></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.FreeList.html">FreeList</a></td>
 <td style="text-align: left;">An array where indices are allocated from and stored in an in-place linked list.</td>
-<td><code>struct</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.NativeArraySparseSet.html">Native Sparse Set</a></td>
-<td style="text-align: left;">A <a class="xref" href="../../api/GDX.Collections.NativeArraySparseSet.html">Sparse Set</a>, backed by two <code>NativeArray</code>.</td>
-<td><code>struct</code></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.IntKeyDictionary-1.html">IntKeyDictionary</a></td>
+<td style="text-align: left;">An optimzed <code>Dictionary&lt;int, T&gt;</code> replacement.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.SparseSet.html">Sparse Set</a></td>
-<td style="text-align: left;">An adapter collection for external data arrays that allows constant-time insertion, deletion, and lookup by handle, as well as array-like iteration.</td>
-<td><code>struct</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="generic">Generic</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
-<th>Base</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.Array2D-1.html">2D Array</a></td>
-<td style="text-align: left;">A 2-dimension array backed by a singular array.</td>
-<td><code>struct</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.CircularBuffer-1.html">Circular Buffer</a></td>
-<td style="text-align: left;">A sized buffer which loops back over itself as elements are filled.</td>
-<td><code>class</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.NativeArray2D-1.html">Native 2D Array</a></td>
-<td style="text-align: left;">A 2-dimension <code>NativeArray</code> with a <code>xy</code> based accessor.</td>
-<td><code>struct</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.NativeUniformArray3D-1.html">Native Uniform 3D Array</a></td>
-<td style="text-align: left;">A 3-dimension <code>NativeArray</code> where all axis are the same length. Numerous accessors available, including a <code>xyz</code> based.</td>
-<td><code>struct</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.SerializableDictionary-2.html">Serializable Dictionary</a></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.SerializableDictionary-2.html">SerializableDictionary</a></td>
 <td style="text-align: left;">A dictionary that can be serialized by Unity into its native YAML format. Usage of the editor side property drawer <strong>requires Unity 2020.1+</strong>.</td>
-<td><code>class</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.SimpleList-1.html">Simple List</a></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.SimpleList-1.html">SimpleList</a></td>
 <td style="text-align: left;">An optimized <code>List</code> replacement.</td>
-<td><code>struct</code></td>
 </tr>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.StringKeyDictionary-1.html">String Key Dictionary</a></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Generic.StringKeyDictionary-1.html">StringKeyDictionary</a></td>
 <td style="text-align: left;">An optimzed <code>Dictionary&lt;string, T&gt;</code> replacement.</td>
-<td><code>struct</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.SparseSet.html">SparseSet</a></td>
+<td style="text-align: left;">An adapter collection for external data arrays that allows constant-time insertion, deletion, and lookup by handle, as well as array-like iteration.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="pooling">Pooling</h3>
+<h2 id="gdxdatatables"><a class="xref" href="../../api/GDX.DataTables.html">GDX.DataTables</a></h2>
+<p>A game designer's dream comes true for Unity, plain and simple. We've built an extensive system allowing an expected workflow to fit in with the traditional Unity development pipeline. While we don't ship directly with a Microsoft Excel or Google Sheets integration, the format framework is extensible and can easily have any data source.</p>
+<blockquote>
+<p>[!INFO]
+We are looking into ways to ship Excel support out of the box, but you have to create the new Format for now (<em>hint: use <a href="https://github.com/dotnet/Open-XML-SDK">OpenXML</a></em>).</p>
+</blockquote>
+<h2 id="gdxdeveloper"><a class="xref" href="../../api/GDX.Developer.html">GDX.Developer</a></h2>
+<p>A toolbox of various functionality that developers tend to rely on while making a game but should not show up in a gold master build; however often does.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Description</th>
-<th>Base</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Pooling.ArrayPool-1.html">Array Pool</a></td>
-<td style="text-align: left;">An object pool for arrays with power-of-two lengths.</td>
-<td><code>struct</code></td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Collections.Pooling.SimpleListManagedPool.html">SimpleList Managed Pool</a></td>
-<td style="text-align: left;">A basic implementation of an <a class="xref" href="../../api/GDX.Collections.Pooling.IManagedPool.html">IManagedPool</a> backed by a <code>SimpleList</code>, usable by the <a class="xref" href="../../api/GDX.Collections.Pooling.ManagedPoolBuilder.html">ManagedPoolBuilder</a>.</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="helpful-utilities">Helpful Utilities</h2>
-<p>Everyone loves static utility classes, and naturally <code>GDX</code> has a bunch of them to help fill out some commonly used functionality spread out across its namespace.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Utility</th>
+<th style="text-align: left;">Highlight</th>
 <th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Display.html">Display</a></td>
-<td style="text-align: left;">Simplified querying of display capabilities.</td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.InputProxy.html">InputProxy</a></td>
+<td style="text-align: left;">A way to simulate hardware input on windows based machines, think automated testing.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Localization.html">Localization</a></td>
-<td style="text-align: left;">ISO language based formatting functionality.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Memory.html">Memory</a></td>
-<td style="text-align: left;">Specific functionality to ensure the heap is kept as small as possible.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Platform.html">Platform</a></td>
-<td style="text-align: left;">A bunch of Hardware and I/O related methods.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.Profiling.html">Profiling</a></td>
-<td style="text-align: left;">A wrapper for Unity's builtin profiler with file management.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Mathematics.Range.html">Range</a></td>
-<td style="text-align: left;">Simplified logic for picking values within a range.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Reflection.html">Reflection</a></td>
-<td style="text-align: left;">Collection of methods to help with language level reflection.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Mathematics.Rotate.html">Rotate</a></td>
-<td style="text-align: left;">A set of functionality to extend on Unity's rotation based methods.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Mathematics.Smooth.html">Smooth</a></td>
-<td style="text-align: left;">Some fancy smoothing functions.</td>
-</tr>
-</tbody>
-</table>
-<h2 id="developer-toolbox">Developer Toolbox</h2>
-<p>The missing or upgraded development process functionality.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Feature</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Editor.Build.BuildInfoProvider.html">Build Info Writer</a></td>
-<td style="text-align: left;">A system which latches on to the build pipeline to write a configurable <code>BuildInfo</code> class containing a passed set of parameters from commandline arguments.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.Reports.BuildVerificationReport.html">Build Verification Report</a></td>
-<td style="text-align: left;">A framework for build verification tests without the need for build-specific instrumentation and inclusion of additional libraries.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.CommandLineParser.html">Command Line Parser</a></td>
-<td style="text-align: left;">A configurable command line parameter parsing system which can be queried at runtime (and in special cases during editor automation) for flags and key-value-pair data.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.Reports.ResourcesAuditReport.html">Managed Resource Audit</a></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.Reports.ResourcesAuditReport.html">ResourceAuditReport</a></td>
 <td style="text-align: left;">A reporting mechanism for outputting managed objects at runtime as well as  differences between captures.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.Reports.NUnitReport.html">NUnit Report</a></td>
-<td style="text-align: left;">An abstraction of the NUnit report format allowing for generating of arbitrary reports that can be captured by different systems.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.TextGenerator.html">Text Generator</a></td>
+<td style="text-align: left;"><a class="xref" href="../../api/GDX.Developer.TextGenerator.html">TextGenerator</a></td>
 <td style="text-align: left;">A text file generator allowing for easy formatting and unwinding.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="miscellaneous">Miscellaneous</h2>
-<p>A few other notable inclusions which have been found useful.</p>
+<h2 id="gdxexperimental"><a class="xref" href="../../api/GDX.Experimental.html">GDX.Experimental</a></h2>
+<p>While the purpose of <code>GDX</code> is to provide battle-tested code to developers, this section of the namespace can be considered the battleground where that happens with games in development. Often we work alongside other developers to create new features for <code>GDX</code>; this is where they live and get tested. The API is bound to change, and there are bound to be bugs, yet there is nothing but glory for the adventuresome contributors.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;">Feature</th>
+<th style="text-align: left;">Highlight</th>
 <th style="text-align: left;">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.IO.CoalesceStream.html">Coalesce Stream</a></td>
-<td style="text-align: left;">An infinitely sized <code>Stream</code>.</td>
+<td style="text-align: left;">DebugDraw</td>
+<td style="text-align: left;"></td>
 </tr>
+</tbody>
+</table>
+<h2 id="gdxio"><a class="xref" href="../../api/GDX.IO.html">GDX.IO</a></h2>
+<p>Not the most glorious chunks of code, we fill a gap of some commonly expected operations with different file streams or, more importantly, what to do with massive files.</p>
+<h2 id="gdxjobs"><a href="xref:GDX.Jobs">GDX.Jobs</a></h2>
+<p>We have found a small but mighty group of jobs we repeatedly reuse when building out systems in Unity. While small, they are still titans in their ways.</p>
+<h2 id="gdxmathematics"><a class="xref" href="../../api/GDX.Mathematics.html">GDX.Mathematics</a></h2>
+<p>A series of helper functionality used throughout GDX itself. They are excellent standalone additions when it comes to everyday math operations. Nothing glorious; they provide solutions to repetitively created functions.</p>
+<table>
+<thead>
 <tr>
-<td style="text-align: left;"><a class="xref" href="../../api/GDX.IO.Compression.TarFile.html">Tarball Support</a></td>
-<td style="text-align: left;">A native method to inflate <code>.tar</code> and <code>.tar.gz</code> files. Used internally in the <code>GDX</code> package to handle upgrades from <a href="https://github.com/dotBunny/GDX/releases">GitHub</a>.</td>
+<th style="text-align: left;">Highlight</th>
+<th style="text-align: left;">Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align: left;"><a class="xref" href="../../api/GDX.Mathematics.Random.WELL1024a.html">WELL1024a</a></td>
 <td style="text-align: left;">A deterministic random number generator.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="gdxrendering"><a class="xref" href="../../api/GDX.Rendering.html">GDX.Rendering</a></h2>
+<p>Just ignore this one; honestly, it's got nothing of value outside of a tiny bit of functionality we rely on for other parts of the package. What? We're telling you the truth :)</p>
+<h2 id="gdxthreading"><a class="xref" href="../../api/GDX.Threading.html">GDX.Threading</a></h2>
+<p>Optimizing for concurrency and utilization is complex; GDX provides some exciting systems to move stuff off of the main thread while respecting Unity's main-thread operation. It took a while to bring some of this functionality to GDX; however, it played a heavy role in the initial reasoning for creating GDX as we kept having to make similar systems for numerous titles.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Highlight</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">TaskDirector</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">WaitFor</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">WaitWhile</td>
+<td style="text-align: left;"></td>
 </tr>
 </tbody>
 </table>
@@ -446,7 +295,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-06-27 against <a href="https://github.com/dotBunny/GDX/commit/6ecf34bf4ecd2c56b46c68424b99b0e817018853"><strong>6ecf34b</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-06-28 against <a href="https://github.com/dotBunny/GDX/commit/7ed98aaa811cb056d942f4a88e10e8acc2da5fa8"><strong>7ed98aa</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
