@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-06-28 - 6:51:20 AM |
+| Generated on: | 2023-06-28 - 7:44:39 AM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 169 |
-| Files: | 165 |
+| Classes: | 170 |
+| Files: | 166 |
 | Covered lines: | 7405 |
-| Uncovered lines: | 5156 |
-| Coverable lines: | 12561 |
-| Total lines: | 32211 |
-| Line coverage: | 58.9% (7405 of 12561) |
+| Uncovered lines: | 5172 |
+| Coverable lines: | 12577 |
+| Total lines: | 32285 |
+| Line coverage: | 58.8% (7405 of 12577) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 753 |
-| Total methods: | 1350 |
-| Method coverage: | 55.7% (753 of 1350) |
+| Total methods: | 1358 |
+| Method coverage: | 55.4% (753 of 1358) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7405**|**5156**|**12561**|**37155**|**58.9%**|**0**|**0**|****|**753**|**1350**|**55.7%**|
+|**GDX**|**7405**|**5172**|**12577**|**37229**|**58.8%**|**0**|**0**|****|**753**|**1358**|**55.4%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -49,7 +49,7 @@
 |GDX.Collections.Generic.NativeArray2D[T]|0|71|71|190|0%|0|0||0|9|0%|
 |GDX.Collections.Generic.NativeArray3D[T]|23|5|28|129|82.1%|0|0||7|8|87.5%|
 |GDX.Collections.Generic.NativeUniformArray3D[T]|12|11|23|111|52.1%|0|0||3|7|42.8%|
-|GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|45|18|63|204|71.4%|0|0||6|8|75%|
+|GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|45|18|63|205|71.4%|0|0||6|8|75%|
 |GDX.Collections.Generic.SimpleList[T]|308|7|315|570|97.7%|0|0||27|28|96.4%|
 |GDX.Collections.Generic.SimpleListExtensions|157|62|219|542|71.6%|0|0||15|21|71.4%|
 |GDX.Collections.Generic.StringKeyDictionary[TValue]|317|82|399|683|79.4%|0|0||16|19|84.2%|
@@ -58,8 +58,8 @@
 |GDX.Collections.Pooling.ArrayPool[T]|57|0|57|120|100%|0|0||3|3|100%|
 |GDX.Collections.Pooling.GameObjectPool|175|35|210|510|83.3%|0|0||15|15|100%|
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
-|GDX.Collections.Pooling.ManagedPools|28|50|78|221|35.8%|0|0||6|12|50%|
-|GDX.Collections.Pooling.SimpleListManagedPool|78|108|186|428|41.9%|0|0||6|14|42.8%|
+|GDX.Collections.Pooling.ManagedPools|28|50|78|220|35.8%|0|0||6|12|50%|
+|GDX.Collections.Pooling.SimpleListManagedPool|81|105|186|428|43.5%|0|0||7|14|50%|
 |GDX.Collections.SparseSet|1001|59|1060|1825|94.4%|0|0||49|51|96%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1236|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1236|0%|0|0||0|2|0%|
@@ -121,7 +121,7 @@
 |GDX.Developer.InputProxy|0|119|119|515|0%|0|0||0|17|0%|
 |GDX.Developer.Profiling|0|50|50|129|0%|0|0||0|3|0%|
 |GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|38|38|85|0%|0|0||0|6|0%|
-|GDX.Developer.Reports.BuildVerification.TestRunner|0|114|114|174|0%|0|0||0|7|0%|
+|GDX.Developer.Reports.BuildVerification.TestRunner|0|114|114|172|0%|0|0||0|7|0%|
 |GDX.Developer.Reports.BuildVerification.TestScene|0|10|10|32|0%|0|0||0|2|0%|
 |GDX.Developer.Reports.BuildVerificationReport|0|35|35|58|0%|0|0||0|6|0%|
 |GDX.Developer.Reports.NUnitReport|143|49|192|277|74.4%|0|0||15|17|88.2%|
@@ -138,7 +138,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|56|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|86|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
+|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|223|90.2%|0|0||3|3|100%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|55|0|55|148|100%|0|0||10|10|100%|
@@ -150,7 +150,7 @@
 |GDX.Experimental.DebugDrawShapes|0|197|197|343|0%|0|0||0|12|0%|
 |GDX.GameObjectExtensions|0|18|18|121|0%|0|0||0|2|0%|
 |GDX.IO.CoalesceStream|47|79|126|314|37.3%|0|0||11|19|57.8%|
-|GDX.IO.Compression.TarFile|0|63|63|131|0%|0|0||0|2|0%|
+|GDX.IO.Compression.TarFile|0|63|63|130|0%|0|0||0|2|0%|
 |GDX.Jobs.ParallelFor.Color32CompareJob|0|13|13|54|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.Color32MatchJob|0|9|9|53|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.ColorCompareJob|0|13|13|51|0%|0|0||0|1|0%|
@@ -159,6 +159,7 @@
 |GDX.Jobs.ParallelFor.IntegerBufferFillJob|0|3|3|39|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.IntegerBufferSwapJob|0|3|3|43|0%|0|0||0|1|0%|
 |GDX.Localization|18|42|60|237|30%|0|0||4|7|57.1%|
+|GDX.Log|0|16|16|77|0%|0|0||0|8|0%|
 |GDX.Mathematics.Byte2|120|140|260|1061|46.1%|0|0||35|78|44.8%|
 |GDX.Mathematics.FibonacciHash|0|20|20|65|0%|0|0||0|3|0%|
 |GDX.Mathematics.Random.RandomAdaptor|30|0|30|85|100%|0|0||7|7|100%|
