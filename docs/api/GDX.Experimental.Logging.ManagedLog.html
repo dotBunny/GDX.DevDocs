@@ -94,7 +94,7 @@
   <h1 id="GDX_Experimental_Logging_ManagedLog" data-uid="GDX.Experimental.Logging.ManagedLog" class="text-break"><span class="type" type="class">Class</span> 
                                                         ManagedLog
   </h1>
-  <div class="markdown level0 summary"><p>A logging system that lives in managed-space.</p>
+  <div class="markdown level0 summary"><p>A managed-only categorized hierarchical logging solution.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -111,18 +111,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Assertion_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Assertion(System.Int32%2CSystem.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Assertion_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Assertion(System.Int32%2CSystem.String%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L407">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L642">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Assertion_" data-uid="GDX.Experimental.Logging.ManagedLog.Assertion*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_Assertion_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Assertion(System.Int32,System.Object,System.UInt32,System.String,System.String,System.Int32)">Assertion(Int32, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_Assertion_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Assertion(System.Int32,System.String,System.UInt32,System.String,System.String,System.Int32)">Assertion(Int32, String, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log an assertion failure.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint Assertion(int category, object assertionObject, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint Assertion(int category, string message, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,17 +138,21 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">assertionObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -177,24 +182,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_AssertionWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.AssertionWithContext(System.Int32%2CSystem.Object%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_AssertionWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.AssertionWithContext(System.Int32%2CSystem.String%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L430">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L679">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_AssertionWithContext_" data-uid="GDX.Experimental.Logging.ManagedLog.AssertionWithContext*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_AssertionWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.AssertionWithContext(System.Int32,System.Object,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">AssertionWithContext(Int32, Object, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_AssertionWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.AssertionWithContext(System.Int32,System.String,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">AssertionWithContext(Int32, String, Object, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log an assertion failure with context.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint AssertionWithContext(int category, object assertionObject, Object contextObject = null, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint AssertionWithContext(int category, string message, Object contextObject = null, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -209,22 +216,27 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">assertionObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Object</span></td>
         <td><span class="parametername">contextObject</span></td>
-        <td></td>
+        <td><p>A Unity-based context object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -254,20 +266,25 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GDX_Experimental_Logging_ManagedLog_AssertionWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The context-based versions of logging are slower.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Clear.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L30">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L54">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Clear_" data-uid="GDX.Experimental.Logging.ManagedLog.Clear*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_Clear" data-uid="GDX.Experimental.Logging.ManagedLog.Clear">Clear()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clears the internal buffer of <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>s.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -275,18 +292,19 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Debug_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Debug(System.Int32%2CSystem.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Debug_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Debug(System.Int32%2CSystem.String%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L167">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L273">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Debug_" data-uid="GDX.Experimental.Logging.ManagedLog.Debug*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_Debug_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Debug(System.Int32,System.Object,System.UInt32,System.String,System.String,System.Int32)">Debug(Int32, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_Debug_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Debug(System.Int32,System.String,System.UInt32,System.String,System.String,System.Int32)">Debug(Int32, String, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log a debug message.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint Debug(int category, object debugObject, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint Debug(int category, string message, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -301,17 +319,21 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">debugObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -341,24 +363,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_DebugWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.DebugWithContext(System.Int32%2CSystem.Object%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_DebugWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.DebugWithContext(System.Int32%2CSystem.String%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L190">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L310">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_DebugWithContext_" data-uid="GDX.Experimental.Logging.ManagedLog.DebugWithContext*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_DebugWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.DebugWithContext(System.Int32,System.Object,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">DebugWithContext(Int32, Object, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_DebugWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.DebugWithContext(System.Int32,System.String,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">DebugWithContext(Int32, String, Object, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log a debug message with context.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint DebugWithContext(int category, object debugObject, Object contextObject = null, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint DebugWithContext(int category, string message, Object contextObject = null, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -373,22 +397,27 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">debugObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Object</span></td>
         <td><span class="parametername">contextObject</span></td>
-        <td></td>
+        <td><p>A Unity-based context object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -418,24 +447,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GDX_Experimental_Logging_ManagedLog_DebugWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The context-based versions of logging are slower.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Error_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Error(System.Int32%2CSystem.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Error_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Error(System.Int32%2CSystem.String%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L312">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L496">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Error_" data-uid="GDX.Experimental.Logging.ManagedLog.Error*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_Error_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Error(System.Int32,System.Object,System.UInt32,System.String,System.String,System.Int32)">Error(Int32, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_Error_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Error(System.Int32,System.String,System.UInt32,System.String,System.String,System.Int32)">Error(Int32, String, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log an error.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint Error(int category, object errorObject, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint Error(int category, string message, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -450,17 +484,21 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">errorObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -490,24 +528,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_ErrorWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.ErrorWithContext(System.Int32%2CSystem.Object%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_ErrorWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.ErrorWithContext(System.Int32%2CSystem.String%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L335">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L533">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_ErrorWithContext_" data-uid="GDX.Experimental.Logging.ManagedLog.ErrorWithContext*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_ErrorWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.ErrorWithContext(System.Int32,System.Object,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">ErrorWithContext(Int32, Object, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_ErrorWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.ErrorWithContext(System.Int32,System.String,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">ErrorWithContext(Int32, String, Object, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log an error with context.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint ErrorWithContext(int category, object errorObject, Object contextObject = null, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint ErrorWithContext(int category, string message, Object contextObject = null, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -522,22 +562,27 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">errorObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Object</span></td>
         <td><span class="parametername">contextObject</span></td>
-        <td></td>
+        <td><p>A Unity-based context object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -567,24 +612,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GDX_Experimental_Logging_ManagedLog_ErrorWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The context-based versions of logging are slower.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Exception_System_Int32_System_Exception_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Exception(System.Int32%2CSystem.Exception%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L359">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L569">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Exception_" data-uid="GDX.Experimental.Logging.ManagedLog.Exception*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_Exception_System_Int32_System_Exception_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Exception(System.Int32,System.Exception,System.UInt32,System.String,System.String,System.Int32)">Exception(Int32, Exception, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Log an exception.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint Exception(int category, Exception exceptionObject, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint Exception(int category, Exception exception, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -599,17 +649,21 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Exception</span></td>
-        <td><span class="parametername">exceptionObject</span></td>
-        <td></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -639,7 +693,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -648,15 +703,16 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_ExceptionWithContext_System_Int32_System_Exception_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.ExceptionWithContext(System.Int32%2CSystem.Exception%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L382">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L605">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_ExceptionWithContext_" data-uid="GDX.Experimental.Logging.ManagedLog.ExceptionWithContext*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_ExceptionWithContext_System_Int32_System_Exception_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.ExceptionWithContext(System.Int32,System.Exception,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">ExceptionWithContext(Int32, Exception, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Log an exception with context,</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint ExceptionWithContext(int category, Exception exceptionObject, Object contextObject = null, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint ExceptionWithContext(int category, Exception exception, Object contextObject = null, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -671,22 +727,27 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Exception</span></td>
-        <td><span class="parametername">exceptionObject</span></td>
-        <td></td>
+        <td><span class="parametername">exception</span></td>
+        <td><p>The exception object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Object</span></td>
         <td><span class="parametername">contextObject</span></td>
-        <td></td>
+        <td><p>A Unity-based context object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -716,24 +777,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Fatal_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Fatal(System.Int32%2CSystem.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Fatal_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Fatal(System.Int32%2CSystem.String%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L454">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L719">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Fatal_" data-uid="GDX.Experimental.Logging.ManagedLog.Fatal*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_Fatal_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Fatal(System.Int32,System.Object,System.UInt32,System.String,System.String,System.Int32)">Fatal(Int32, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_Fatal_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Fatal(System.Int32,System.String,System.UInt32,System.String,System.String,System.Int32)">Fatal(Int32, String, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Logs a fatal event and forces Unity to crash.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint Fatal(int category, object fatalObject, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint Fatal(int category, string message, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -748,17 +811,20 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier to associate this event with.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">fatalObject</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -788,24 +854,30 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The newly created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GDX_Experimental_Logging_ManagedLog_Fatal_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The crash ensures that we stop a cascade of problems, allowing for back tracing. The context object based
+methods should no be the preferred method of logging as they require a main-thread lock internally inside of Unity.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_FatalWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.FatalWithContext(System.Int32%2CSystem.Object%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_FatalWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.FatalWithContext(System.Int32%2CSystem.String%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L479">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L761">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_FatalWithContext_" data-uid="GDX.Experimental.Logging.ManagedLog.FatalWithContext*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_FatalWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.FatalWithContext(System.Int32,System.Object,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">FatalWithContext(Int32, Object, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_FatalWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.FatalWithContext(System.Int32,System.String,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">FatalWithContext(Int32, String, Object, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Logs a fatal event and forces Unity to crash.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint FatalWithContext(int category, object fatalObject, Object contextObject = null, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint FatalWithContext(int category, string message, Object contextObject = null, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -820,22 +892,26 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier to associate this event with.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">fatalObject</span></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
         <td></td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Object</span></td>
         <td><span class="parametername">contextObject</span></td>
-        <td></td>
+        <td><p>A unity-based context object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -865,24 +941,30 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The newly created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GDX_Experimental_Logging_ManagedLog_FatalWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The crash ensures that we stop a cascade of problems, allowing for back tracing. The context object based
+methods should no be the preferred method of logging as they require a main-thread lock internally inside of Unity.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_GetCategoryLabel_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.GetCategoryLabel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L110">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L117">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_GetCategoryLabel_" data-uid="GDX.Experimental.Logging.ManagedLog.GetCategoryLabel*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_GetCategoryLabel_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.GetCategoryLabel(System.Int32)">GetCategoryLabel(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the name of a category.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetCategoryLabel(int category)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetCategoryLabel(int categoryIdentifier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -896,8 +978,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><span class="parametername">categoryIdentifier</span></td>
+        <td><p>The category to evaluate.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -912,7 +995,8 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
+        <td><p>The label for the category.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -921,15 +1005,16 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_GetEntriesByCategory_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.GetEntriesByCategory(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L65">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L154">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_GetEntriesByCategory_" data-uid="GDX.Experimental.Logging.ManagedLog.GetEntriesByCategory*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_GetEntriesByCategory_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.GetEntriesByCategory(System.Int32)">GetEntriesByCategory(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets an array of <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> based on category.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LogEntry[] GetEntriesByCategory(int identifier)</code></pre>
+    <pre><code class="lang-csharp hljs">public static LogEntry[] GetEntriesByCategory(int categoryIdentifier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -943,8 +1028,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><span class="parametername">categoryIdentifier</span></td>
+        <td><p>The category identifier to filter by.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -959,7 +1045,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>[]</td>
-        <td></td>
+        <td><p>An array of filtered <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -968,15 +1055,16 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_GetEntriesByParent_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.GetEntriesByParent(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L79">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L175">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_GetEntriesByParent_" data-uid="GDX.Experimental.Logging.ManagedLog.GetEntriesByParent*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_GetEntriesByParent_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.GetEntriesByParent(System.Int32)">GetEntriesByParent(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets an array of <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> based on parent identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LogEntry[] GetEntriesByParent(int identifier)</code></pre>
+    <pre><code class="lang-csharp hljs">public static LogEntry[] GetEntriesByParent(int parentIdentifier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -990,8 +1078,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The parent identifier to filter by.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1006,7 +1095,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>[]</td>
-        <td></td>
+        <td><p>An array of filtered <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1015,15 +1105,16 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_GetEntriesBySearch_System_String_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.GetEntriesBySearch(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L94">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L196">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_GetEntriesBySearch_" data-uid="GDX.Experimental.Logging.ManagedLog.GetEntriesBySearch*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_GetEntriesBySearch_System_String_" data-uid="GDX.Experimental.Logging.ManagedLog.GetEntriesBySearch(System.String)">GetEntriesBySearch(String)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets an array of <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> based on contents.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static LogEntry[] GetEntriesBySearch(string search)</code></pre>
+    <pre><code class="lang-csharp hljs">public static LogEntry[] GetEntriesBySearch(string searchQuery)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1037,8 +1128,9 @@
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">search</span></td>
-        <td></td>
+        <td><span class="parametername">searchQuery</span></td>
+        <td><p>The text query to search for.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1053,7 +1145,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>[]</td>
-        <td></td>
+        <td><p>An array of filtered <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1062,11 +1155,12 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_GetLastEntry.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.GetLastEntry%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L145">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L217">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_GetLastEntry_" data-uid="GDX.Experimental.Logging.ManagedLog.GetLastEntry*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_GetLastEntry" data-uid="GDX.Experimental.Logging.ManagedLog.GetLastEntry">GetLastEntry()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Get the last <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> added to the backing buffer.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -1083,24 +1177,26 @@
     <tbody>
       <tr>
         <td><a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a></td>
-        <td></td>
+        <td><p>The last log entry.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Info_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Info(System.Int32%2CSystem.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Info_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Info(System.Int32%2CSystem.String%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L214">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L346">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Info_" data-uid="GDX.Experimental.Logging.ManagedLog.Info*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_Info_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Info(System.Int32,System.Object,System.UInt32,System.String,System.String,System.Int32)">Info(Int32, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_Info_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Info(System.Int32,System.String,System.UInt32,System.String,System.String,System.Int32)">Info(Int32, String, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log some information.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint Info(int category, object infoObject, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint Info(int category, string message, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1115,17 +1211,21 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">infoObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -1155,24 +1255,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_InfoWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.InfoWithContext(System.Int32%2CSystem.Object%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_InfoWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.InfoWithContext(System.Int32%2CSystem.String%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L239">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L385">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_InfoWithContext_" data-uid="GDX.Experimental.Logging.ManagedLog.InfoWithContext*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_InfoWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.InfoWithContext(System.Int32,System.Object,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">InfoWithContext(Int32, Object, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_InfoWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.InfoWithContext(System.Int32,System.String,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">InfoWithContext(Int32, String, Object, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log some information with context.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint InfoWithContext(int category, object infoObject, Object contextObject = null, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint InfoWithContext(int category, string message, Object contextObject = null, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1187,22 +1289,27 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">infoObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Object</span></td>
         <td><span class="parametername">contextObject</span></td>
-        <td></td>
+        <td><p>A Unity-based context object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -1232,24 +1339,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GDX_Experimental_Logging_ManagedLog_InfoWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The context-based versions of logging are slower.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_RegisterCategory_System_Int32_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.RegisterCategory(System.Int32%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L34">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L69">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_RegisterCategory_" data-uid="GDX.Experimental.Logging.ManagedLog.RegisterCategory*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_RegisterCategory_System_Int32_System_String_System_Boolean_System_Boolean_" data-uid="GDX.Experimental.Logging.ManagedLog.RegisterCategory(System.Int32,System.String,System.Boolean,System.Boolean)">RegisterCategory(Int32, String, Boolean, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Registers a category identifier for logging purposes.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void RegisterCategory(int identifier, string name, bool outputToUnity = true, bool outputToConsole = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void RegisterCategory(int categoryIdentifier, string name, bool outputToUnity = true, bool outputToConsole = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1263,72 +1375,47 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><span class="parametername">categoryIdentifier</span></td>
+        <td><p>The designated identifier, must fall within a valid range. See
+<a class="xref" href="GDX.Experimental.Logging.LogCategory.html#GDX_Experimental_Logging_LogCategory_MinimumIdentifier">MinimumIdentifier</a> and <a class="xref" href="GDX.Experimental.Logging.LogCategory.html#GDX_Experimental_Logging_LogCategory_MaximumIdentifier">MaximumIdentifier</a></p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td></td>
+        <td><p>The category's name.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">outputToUnity</span></td>
-        <td></td>
+        <td><p>Should this category output to Unity's log handler?</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">outputToConsole</span></td>
-        <td></td>
+        <td><p>Should this category output to the Console.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_SetBufferCount_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.SetBufferCount(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_SetBufferSizeByAllocation_System_Int64_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.SetBufferSizeByAllocation(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L161">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L227">View Source</a>
   </span>
-  <a id="GDX_Experimental_Logging_ManagedLog_SetBufferCount_" data-uid="GDX.Experimental.Logging.ManagedLog.SetBufferCount*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_SetBufferCount_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.SetBufferCount(System.Int32)">SetBufferCount(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="GDX_Experimental_Logging_ManagedLog_SetBufferSizeByAllocation_" data-uid="GDX.Experimental.Logging.ManagedLog.SetBufferSizeByAllocation*"></a>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_SetBufferSizeByAllocation_System_Int64_" data-uid="GDX.Experimental.Logging.ManagedLog.SetBufferSizeByAllocation(System.Int64)">SetBufferSizeByAllocation(Int64)</h4>
+  <div class="markdown level1 summary"><p>Sets the size of the internal <a class="xref" href="GDX.Collections.Generic.ConcurrentCircularBuffer-1.html">ConcurrentCircularBuffer&lt;T&gt;</a> based on a specific memory size
+allocation.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetBufferCount(int numberOfLogEntries)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">numberOfLogEntries</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_SetBufferSize_System_Int64_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.SetBufferSize(System.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L154">View Source</a>
-  </span>
-  <a id="GDX_Experimental_Logging_ManagedLog_SetBufferSize_" data-uid="GDX.Experimental.Logging.ManagedLog.SetBufferSize*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_SetBufferSize_System_Int64_" data-uid="GDX.Experimental.Logging.ManagedLog.SetBufferSize(System.Int64)">SetBufferSize(Int64)</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetBufferSize(long byteAllocation)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetBufferSizeByAllocation(long byteAllocation)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1343,7 +1430,42 @@
       <tr>
         <td><span class="xref">System.Int64</span></td>
         <td><span class="parametername">byteAllocation</span></td>
-        <td></td>
+        <td><p>The size in bytes to use for the internal buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_SetBufferSizeByCount_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.SetBufferSizeByCount(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L238">View Source</a>
+  </span>
+  <a id="GDX_Experimental_Logging_ManagedLog_SetBufferSizeByCount_" data-uid="GDX.Experimental.Logging.ManagedLog.SetBufferSizeByCount*"></a>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_SetBufferSizeByCount_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.SetBufferSizeByCount(System.Int32)">SetBufferSizeByCount(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the size of the internal <a class="xref" href="GDX.Collections.Generic.ConcurrentCircularBuffer-1.html">ConcurrentCircularBuffer&lt;T&gt;</a> to be a specific number of entries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetBufferSizeByCount(int numberOfLogEntries)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">numberOfLogEntries</span></td>
+        <td><p>The number of <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> to size the buffer too.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1352,15 +1474,16 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_SetConsoleOutput_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.SetConsoleOutput(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L140">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L248">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_SetConsoleOutput_" data-uid="GDX.Experimental.Logging.ManagedLog.SetConsoleOutput*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_SetConsoleOutput_System_Int32_System_Boolean_" data-uid="GDX.Experimental.Logging.ManagedLog.SetConsoleOutput(System.Int32,System.Boolean)">SetConsoleOutput(Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set if a category should output to the system console.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetConsoleOutput(int identifier, bool output)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetConsoleOutput(int categoryIdentifier, bool output)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1374,13 +1497,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><span class="parametername">categoryIdentifier</span></td>
+        <td><p>The unique category identifier.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">output</span></td>
-        <td></td>
+        <td><p>Should the log entry be outputted to the console?</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1389,15 +1514,16 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_SetUnityOutput_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.SetUnityOutput(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L149">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L258">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_SetUnityOutput_" data-uid="GDX.Experimental.Logging.ManagedLog.SetUnityOutput*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_SetUnityOutput_System_Int32_System_Boolean_" data-uid="GDX.Experimental.Logging.ManagedLog.SetUnityOutput(System.Int32,System.Boolean)">SetUnityOutput(Int32, Boolean)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Set if a category should output to the unity logger.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SetUnityOutput(int identifier, bool output)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void SetUnityOutput(int categoryIdentifier, bool output)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1411,13 +1537,15 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">identifier</span></td>
-        <td></td>
+        <td><span class="parametername">categoryIdentifier</span></td>
+        <td><p>The unique category identifier.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.Boolean</span></td>
         <td><span class="parametername">output</span></td>
-        <td></td>
+        <td><p>Should the log entry be outputted to the unity logger?</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -1426,15 +1554,16 @@
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Trace_System_Int32_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Trace(System.Int32%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L505">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L799">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Trace_" data-uid="GDX.Experimental.Logging.ManagedLog.Trace*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_Trace_System_Int32_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Trace(System.Int32,System.UInt32,System.String,System.String,System.Int32)">Trace(Int32, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Logs the current stack trace.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint Trace(int category = 0, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint Trace(int category = 0, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1449,12 +1578,15 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier to associate this event with.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -1484,24 +1616,29 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The newly created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GDX_Experimental_Logging_ManagedLog_Trace_System_Int32_System_UInt32_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Pulled from <span class="xref">System.Environment.StackTrace</span>.</p>
+</div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_UnregisterCategory_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.UnregisterCategory(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L57">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L100">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_UnregisterCategory_" data-uid="GDX.Experimental.Logging.ManagedLog.UnregisterCategory*"></a>
   <h4 id="GDX_Experimental_Logging_ManagedLog_UnregisterCategory_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.UnregisterCategory(System.Int32)">UnregisterCategory(Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Unregisters a category identifier.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void UnregisterCategory(int identifier)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void UnregisterCategory(int categoryIdentifier)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1515,25 +1652,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">identifier</span></td>
+        <td><span class="parametername">categoryIdentifier</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Warning_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Warning(System.Int32%2CSystem.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_Warning_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.Warning(System.Int32%2CSystem.String%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L265">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L423">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_Warning_" data-uid="GDX.Experimental.Logging.ManagedLog.Warning*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_Warning_System_Int32_System_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Warning(System.Int32,System.Object,System.UInt32,System.String,System.String,System.Int32)">Warning(Int32, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_Warning_System_Int32_System_String_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.Warning(System.Int32,System.String,System.UInt32,System.String,System.String,System.Int32)">Warning(Int32, String, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log a warning.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint Warning(int category, object warningObject, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint Warning(int category, string message, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1548,17 +1686,21 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">warningObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -1588,24 +1730,26 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_WarningWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.WarningWithContext(System.Int32%2CSystem.Object%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog_WarningWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog.WarningWithContext(System.Int32%2CSystem.String%2CUnityEngine.Object%2CSystem.UInt32%2CSystem.String%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L288">View Source</a>
+    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L460">View Source</a>
   </span>
   <a id="GDX_Experimental_Logging_ManagedLog_WarningWithContext_" data-uid="GDX.Experimental.Logging.ManagedLog.WarningWithContext*"></a>
-  <h4 id="GDX_Experimental_Logging_ManagedLog_WarningWithContext_System_Int32_System_Object_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.WarningWithContext(System.Int32,System.Object,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">WarningWithContext(Int32, Object, Object, UInt32, String, String, Int32)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="GDX_Experimental_Logging_ManagedLog_WarningWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32_" data-uid="GDX.Experimental.Logging.ManagedLog.WarningWithContext(System.Int32,System.String,UnityEngine.Object,System.UInt32,System.String,System.String,System.Int32)">WarningWithContext(Int32, String, Object, UInt32, String, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Log a warning with context.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static uint WarningWithContext(int category, object warningObject, Object contextObject = null, uint associativeIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
+    <pre><code class="lang-csharp hljs">public static uint WarningWithContext(int category, string message, Object contextObject = null, uint parentIdentifier = 0U, string memberName = &quot;&quot;, string sourceFilePath = &quot;&quot;, int sourceLineNumber = 0)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1620,22 +1764,27 @@
       <tr>
         <td><span class="xref">System.Int32</span></td>
         <td><span class="parametername">category</span></td>
-        <td></td>
+        <td><p>The category identifier.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">System.Object</span></td>
-        <td><span class="parametername">warningObject</span></td>
-        <td></td>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a> message.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">UnityEngine.Object</span></td>
         <td><span class="parametername">contextObject</span></td>
-        <td></td>
+        <td><p>A Unity-based context object.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td><span class="parametername">associativeIdentifier</span></td>
-        <td></td>
+        <td><span class="parametername">parentIdentifier</span></td>
+        <td><p>The optional parent <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier, if this event is meant to be
+associated with another.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">System.String</span></td>
@@ -1665,10 +1814,14 @@
     <tbody>
       <tr>
         <td><span class="xref">System.UInt32</span></td>
-        <td></td>
+        <td><p>The created <a class="xref" href="GDX.Experimental.Logging.LogEntry.html">LogEntry</a>'s Identifier.</p>
+</td>
       </tr>
     </tbody>
   </table>
+  <h5 id="GDX_Experimental_Logging_ManagedLog_WarningWithContext_System_Int32_System_String_UnityEngine_Object_System_UInt32_System_String_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The context-based versions of logging are slower.</p>
+</div>
 </article>
           </div>
           
@@ -1680,7 +1833,7 @@
                     <a href="https://github.com/dotBunny/GDX/new/main/.docfx/apispec/new?filename=GDX_Experimental_Logging_ManagedLog.md&amp;value=---%0Auid%3A%20GDX.Experimental.Logging.ManagedLog%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L20" class="contribution-link">View Source</a>
+                    <a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/Logging/ManagedLog.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -1700,7 +1853,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-07-01 against <a href="https://github.com/dotBunny/GDX/commit/2a9c8302732c678251145f2300a19c79f50358d7"><strong>2a9c830</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-07-01 against <a href="https://github.com/dotBunny/GDX/commit/4669566cd59cf31605d93dfc9dfbe22fa89a92c5"><strong>4669566</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
