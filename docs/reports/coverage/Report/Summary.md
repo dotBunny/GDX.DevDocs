@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-07-01 - 10:21:50 AM |
+| Generated on: | 2023-07-01 - 10:45:18 AM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 171 |
 | Files: | 167 |
-| Covered lines: | 7470 |
-| Uncovered lines: | 5493 |
-| Coverable lines: | 12963 |
-| Total lines: | 32956 |
-| Line coverage: | 57.6% (7470 of 12963) |
+| Covered lines: | 7467 |
+| Uncovered lines: | 5535 |
+| Coverable lines: | 13002 |
+| Total lines: | 32998 |
+| Line coverage: | 57.4% (7467 of 13002) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 768 |
-| Total methods: | 1395 |
-| Method coverage: | 55% (768 of 1395) |
+| Covered methods: | 767 |
+| Total methods: | 1398 |
+| Method coverage: | 54.8% (767 of 1398) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7470**|**5493**|**12963**|**37900**|**57.6%**|**0**|**0**|****|**768**|**1395**|**55%**|
+|**GDX**|**7467**|**5535**|**13002**|**37942**|**57.4%**|**0**|**0**|****|**767**|**1398**|**54.8%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|225|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -139,7 +139,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|56|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|86|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
+|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|223|90.2%|0|0||3|3|100%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|55|0|55|148|100%|0|0||10|10|100%|
@@ -150,7 +150,7 @@
 |GDX.Experimental.DebugDrawBuffer|24|248|272|726|8.8%|0|0||2|33|6%|
 |GDX.Experimental.DebugDrawShapes|0|197|197|343|0%|0|0||0|12|0%|
 |GDX.Experimental.Logging.LogEntry|10|8|18|57|55.5%|0|0||3|3|100%|
-|GDX.Experimental.Logging.ManagedLog|38|223|261|536|14.5%|0|0||6|28|21.4%|
+|GDX.Experimental.Logging.ManagedLog|38|262|300|578|12.6%|0|0||6|31|19.3%|
 |GDX.GameObjectExtensions|0|18|18|121|0%|0|0||0|2|0%|
 |GDX.IO.CoalesceStream|47|79|126|314|37.3%|0|0||11|19|57.8%|
 |GDX.IO.Compression.TarFile|0|63|63|131|0%|0|0||0|2|0%|
