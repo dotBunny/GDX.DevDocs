@@ -95,6 +95,21 @@
 <p>A significant portion of the suggestions found by code inspection are based on the exposure of fields that could be marked private or internal. As additional unit tests get implemented, this should start to go down.</p>
 </div>
 <h2 id="warnings">Warnings</h2>
+<h3 id="possible-null-assignment-to-non-nullable-entity">Possible 'null' assignment to non-nullable entity</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L152" title="GDX.Editor\Build\BuildProvider.cs:152">BuildProvider.cs:152</a></td>
+<td>Possible <code>null</code> assignment to non-nullable entity</td>
+</tr>
+</tbody>
+</table>
 <h3 id="collection-is-never-updated-non-private-accessibility">Collection is never updated: Non-private accessibility</h3>
 <table>
 <thead>
@@ -200,10 +215,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Core.cs#L37" title="GDX\Core.cs:37">Core.cs:37</a></td>
 <td>Name <code>MainThreadID</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>MainThreadId</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L26" title="GDX\Developer\Console.cs:26">Console.cs:26</a></td>
-<td>Name <code>s_CommandBuffer</code> does not match rule <code>private_static_readonly</code>. Suggested name is <code>k_CommandBuffer</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L158" title="GDX\Developer\Console.cs:158">Console.cs:158</a></td>
@@ -421,6 +432,21 @@
 </tr>
 </tbody>
 </table>
+<h3 id="non-accessed-field">Non-accessed field</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L33" title="GDX\Developer\ConsoleVariable.cs:33">ConsoleVariable.cs:33</a></td>
+<td>Field <code>m_Type</code> is assigned but its value is never used</td>
+</tr>
+</tbody>
+</table>
 <h3 id="non-accessed-field-private-accessibility">Non-accessed field: Private accessibility</h3>
 <table>
 <thead>
@@ -430,6 +456,34 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L32" title="GDX\Developer\ConsoleVariable.cs:32">ConsoleVariable.cs:32</a></td>
+<td>Field <code>m_Flags</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L34" title="GDX\Developer\ConsoleVariable.cs:34">ConsoleVariable.cs:34</a></td>
+<td>Field <code>m_Name</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L35" title="GDX\Developer\ConsoleVariable.cs:35">ConsoleVariable.cs:35</a></td>
+<td>Field <code>m_Description</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L38" title="GDX\Developer\ConsoleVariable.cs:38">ConsoleVariable.cs:38</a></td>
+<td>Field <code>m_IntegerValue</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L39" title="GDX\Developer\ConsoleVariable.cs:39">ConsoleVariable.cs:39</a></td>
+<td>Field <code>m_FloatValue</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L40" title="GDX\Developer\ConsoleVariable.cs:40">ConsoleVariable.cs:40</a></td>
+<td>Field <code>m_BooleanValue</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L41" title="GDX\Developer\ConsoleVariable.cs:41">ConsoleVariable.cs:41</a></td>
+<td>Field <code>m_StringValue</code> is assigned but its value is never used</td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L713" title="GDX\Developer\InputProxy.cs:713">InputProxy.cs:713</a></td>
 <td>Field <code>Type</code> is assigned but its value is never used</td>
@@ -666,7 +720,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L54" title="GDX.Editor\Build\BuildProvider.cs:54">BuildProvider.cs:54</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L57" title="GDX.Editor\Build\BuildProvider.cs:57">BuildProvider.cs:57</a></td>
 <td>Value assigned is not used in any execution path</td>
 </tr>
 <tr>
@@ -782,6 +836,10 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleCommands/ExecConsoleCommand.cs#L80" title="GDX\Developer\ConsoleCommands\ExecConsoleCommand.cs:80">ExecConsoleCommand.cs:80</a></td>
+<td>Qualifier is redundant</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/DebugDrawBuffer.cs#L169" title="GDX\Experimental\DebugDrawBuffer.cs:169">DebugDrawBuffer.cs:169</a></td>
 <td>Qualifier is redundant</td>
 </tr>
@@ -843,6 +901,18 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L3" title="GDX.Editor\Build\BuildProvider.cs:3">BuildProvider.cs:3</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L8" title="GDX.Editor\Build\BuildProvider.cs:8">BuildProvider.cs:8</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L9" title="GDX.Editor\Build\BuildProvider.cs:9">BuildProvider.cs:9</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/PackageProvider.cs#L11" title="GDX.Editor\PackageProvider.cs:11">PackageProvider.cs:11</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
@@ -1159,7 +1229,7 @@
 <td>Class <code>Property</code> is never instantiated</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L10" title="GDX.Editor\Build\BuildConfiguration.cs:10">BuildConfiguration.cs:10</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L11" title="GDX.Editor\Build\BuildConfiguration.cs:11">BuildConfiguration.cs:11</a></td>
 <td>Class <code>BuildConfiguration</code> is never instantiated</td>
 </tr>
 <tr>
@@ -1360,6 +1430,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Collections/Pooling/ArrayPool.cs#L16" title="GDX\Collections\Pooling\ArrayPool.cs:16">ArrayPool.cs:16</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildDefinition.cs#L16" title="GDX.Editor\Build\BuildDefinition.cs:16">BuildDefinition.cs:16</a></td>
 <td>Field can be made readonly</td>
 </tr>
 <tr>
@@ -2106,47 +2180,51 @@
 <td>Method <code>CaptureEditorWindowToPNG</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L237" title="GDX.Editor\Build\BuildConfiguration.cs:237">BuildConfiguration.cs:237</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L288" title="GDX.Editor\Build\BuildConfiguration.cs:288">BuildConfiguration.cs:288</a></td>
 <td>Field <code>Dependencies</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L239" title="GDX.Editor\Build\BuildConfiguration.cs:239">BuildConfiguration.cs:239</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L290" title="GDX.Editor\Build\BuildConfiguration.cs:290">BuildConfiguration.cs:290</a></td>
 <td>Field <code>OutputFolder</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L241" title="GDX.Editor\Build\BuildConfiguration.cs:241">BuildConfiguration.cs:241</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L292" title="GDX.Editor\Build\BuildConfiguration.cs:292">BuildConfiguration.cs:292</a></td>
 <td>Field <code>ExecutableName</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L243" title="GDX.Editor\Build\BuildConfiguration.cs:243">BuildConfiguration.cs:243</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L294" title="GDX.Editor\Build\BuildConfiguration.cs:294">BuildConfiguration.cs:294</a></td>
 <td>Field <code>Scenes</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L245" title="GDX.Editor\Build\BuildConfiguration.cs:245">BuildConfiguration.cs:245</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L296" title="GDX.Editor\Build\BuildConfiguration.cs:296">BuildConfiguration.cs:296</a></td>
 <td>Field <code>SceneFolders</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L248" title="GDX.Editor\Build\BuildConfiguration.cs:248">BuildConfiguration.cs:248</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L299" title="GDX.Editor\Build\BuildConfiguration.cs:299">BuildConfiguration.cs:299</a></td>
 <td>Field <code>IgnoreSubsceneFolders</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L250" title="GDX.Editor\Build\BuildConfiguration.cs:250">BuildConfiguration.cs:250</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L301" title="GDX.Editor\Build\BuildConfiguration.cs:301">BuildConfiguration.cs:301</a></td>
 <td>Field <code>AdditionalDefines</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L304" title="GDX.Editor\Build\BuildConfiguration.cs:304">BuildConfiguration.cs:304</a></td>
+<td>Field <code>OverlayFolders</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildEnvironment.cs#L25" title="GDX.Editor\Build\BuildEnvironment.cs:25">BuildEnvironment.cs:25</a></td>
 <td>Method <code>GetBuildConfigFolder</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L15" title="GDX.Editor\Build\BuildProvider.cs:15">BuildProvider.cs:15</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L18" title="GDX.Editor\Build\BuildProvider.cs:18">BuildProvider.cs:18</a></td>
 <td>Field <code>OnExecute</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L17" title="GDX.Editor\Build\BuildProvider.cs:17">BuildProvider.cs:17</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L20" title="GDX.Editor\Build\BuildProvider.cs:20">BuildProvider.cs:20</a></td>
 <td>Field <code>OnException</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L18" title="GDX.Editor\Build\BuildProvider.cs:18">BuildProvider.cs:18</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L21" title="GDX.Editor\Build\BuildProvider.cs:21">BuildProvider.cs:21</a></td>
 <td>Field <code>OnReport</code> can be made private</td>
 </tr>
 <tr>
@@ -2447,6 +2525,21 @@
 </tr>
 </tbody>
 </table>
+<h3 id="redundant-string-interpolation">Redundant string interpolation</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L138" title="GDX.Editor\Build\BuildProvider.cs:138">BuildProvider.cs:138</a></td>
+<td>Redundant string interpolation</td>
+</tr>
+</tbody>
+</table>
 <h3 id="local-variable-has-too-wide-declaration-scope">Local variable has too wide declaration scope</h3>
 <table>
 <thead>
@@ -2457,7 +2550,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L54" title="GDX.Editor\Build\BuildProvider.cs:54">BuildProvider.cs:54</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L57" title="GDX.Editor\Build\BuildProvider.cs:57">BuildProvider.cs:57</a></td>
 <td>Local variable <code>buildReport</code> can be declared in inner scope</td>
 </tr>
 </tbody>
@@ -2476,43 +2569,55 @@
 <td>Field <code>FillValue</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L237" title="GDX.Editor\Build\BuildConfiguration.cs:237">BuildConfiguration.cs:237</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L16" title="GDX.Editor\Build\BuildConfiguration.cs:16">BuildConfiguration.cs:16</a></td>
+<td>Field <code>ProjectRelativePath</code> is never assigned</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L17" title="GDX.Editor\Build\BuildConfiguration.cs:17">BuildConfiguration.cs:17</a></td>
+<td>Field <code>BuildRelativePath</code> is never assigned</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L288" title="GDX.Editor\Build\BuildConfiguration.cs:288">BuildConfiguration.cs:288</a></td>
 <td>Field <code>Dependencies</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L239" title="GDX.Editor\Build\BuildConfiguration.cs:239">BuildConfiguration.cs:239</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L290" title="GDX.Editor\Build\BuildConfiguration.cs:290">BuildConfiguration.cs:290</a></td>
 <td>Field <code>OutputFolder</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L241" title="GDX.Editor\Build\BuildConfiguration.cs:241">BuildConfiguration.cs:241</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L292" title="GDX.Editor\Build\BuildConfiguration.cs:292">BuildConfiguration.cs:292</a></td>
 <td>Field <code>ExecutableName</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L243" title="GDX.Editor\Build\BuildConfiguration.cs:243">BuildConfiguration.cs:243</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L294" title="GDX.Editor\Build\BuildConfiguration.cs:294">BuildConfiguration.cs:294</a></td>
 <td>Field <code>Scenes</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L245" title="GDX.Editor\Build\BuildConfiguration.cs:245">BuildConfiguration.cs:245</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L296" title="GDX.Editor\Build\BuildConfiguration.cs:296">BuildConfiguration.cs:296</a></td>
 <td>Field <code>SceneFolders</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L250" title="GDX.Editor\Build\BuildConfiguration.cs:250">BuildConfiguration.cs:250</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L301" title="GDX.Editor\Build\BuildConfiguration.cs:301">BuildConfiguration.cs:301</a></td>
 <td>Field <code>AdditionalDefines</code> is never assigned</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L304" title="GDX.Editor\Build\BuildConfiguration.cs:304">BuildConfiguration.cs:304</a></td>
+<td>Field <code>OverlayFolders</code> is never assigned</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildDefinition.cs#L13" title="GDX.Editor\Build\BuildDefinition.cs:13">BuildDefinition.cs:13</a></td>
 <td>Field <code>Backend</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L15" title="GDX.Editor\Build\BuildProvider.cs:15">BuildProvider.cs:15</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L18" title="GDX.Editor\Build\BuildProvider.cs:18">BuildProvider.cs:18</a></td>
 <td>Field <code>OnExecute</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L17" title="GDX.Editor\Build\BuildProvider.cs:17">BuildProvider.cs:17</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L20" title="GDX.Editor\Build\BuildProvider.cs:20">BuildProvider.cs:20</a></td>
 <td>Field <code>OnException</code> is never assigned</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L18" title="GDX.Editor\Build\BuildProvider.cs:18">BuildProvider.cs:18</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L21" title="GDX.Editor\Build\BuildProvider.cs:21">BuildProvider.cs:21</a></td>
 <td>Field <code>OnReport</code> is never assigned</td>
 </tr>
 <tr>
@@ -2845,6 +2950,14 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleCommandBase.cs#L50" title="GDX\Developer\ConsoleCommandBase.cs:50">ConsoleCommandBase.cs:50</a></td>
 <td>Method <code>GetArgumentAutoComplete</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L28" title="GDX\Developer\ConsoleVariable.cs:28">ConsoleVariable.cs:28</a></td>
+<td>Enum member <code>Setting</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L29" title="GDX\Developer\ConsoleVariable.cs:29">ConsoleVariable.cs:29</a></td>
+<td>Enum member <code>Cheat</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L24" title="GDX\Developer\InputProxy.cs:24">InputProxy.cs:24</a></td>
@@ -3323,11 +3436,11 @@
 <td>Method <code>ResetEditor</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildDefinition.cs#L17" title="GDX.Editor\Build\BuildDefinition.cs:17">BuildDefinition.cs:17</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildDefinition.cs#L18" title="GDX.Editor\Build\BuildDefinition.cs:18">BuildDefinition.cs:18</a></td>
 <td>Constructor <code>BuildDefinition</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildDefinition.cs#L41" title="GDX.Editor\Build\BuildDefinition.cs:41">BuildDefinition.cs:41</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildDefinition.cs#L42" title="GDX.Editor\Build\BuildDefinition.cs:42">BuildDefinition.cs:42</a></td>
 <td>Constructor <code>BuildDefinition</code> is never used</td>
 </tr>
 <tr>
@@ -3335,7 +3448,7 @@
 <td>Method <code>GetBuildConfiguration</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L20" title="GDX.Editor\Build\BuildProvider.cs:20">BuildProvider.cs:20</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L23" title="GDX.Editor\Build\BuildProvider.cs:23">BuildProvider.cs:23</a></td>
 <td>Method <code>Execute</code> is never used</td>
 </tr>
 <tr>
@@ -3407,7 +3520,7 @@
 <td>Method <code>ActionableHelpBox</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/CommandPalette.cs#L44" title="GDX.Editor\Windows\CommandPalette.cs:44">CommandPalette.cs:44</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/CommandPalette.cs#L43" title="GDX.Editor\Windows\CommandPalette.cs:43">CommandPalette.cs:43</a></td>
 <td>Method <code>Open</code> is never used</td>
 </tr>
 <tr>
@@ -3847,6 +3960,10 @@
 <td>Struct <code>NativeArray2D</code> is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariable.cs#L11" title="GDX\Developer\ConsoleVariable.cs:11">ConsoleVariable.cs:11</a></td>
+<td>Class <code>ConsoleVariable</code> is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Profiling.cs#L25" title="GDX\Developer\Profiling.cs:25">Profiling.cs:25</a></td>
 <td>Class <code>Profiling</code> is never used</td>
 </tr>
@@ -3923,7 +4040,7 @@
 <td>Class <code>BuildInfoBuildProcessor</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L10" title="GDX.Editor\Build\BuildProvider.cs:10">BuildProvider.cs:10</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildProvider.cs#L13" title="GDX.Editor\Build\BuildProvider.cs:13">BuildProvider.cs:13</a></td>
 <td>Class <code>BuildProvider</code> is never used</td>
 </tr>
 <tr>
@@ -4083,7 +4200,7 @@
 <td>Class <code>VisualElementsProvider</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/CommandPalette.cs#L18" title="GDX.Editor\Windows\CommandPalette.cs:18">CommandPalette.cs:18</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/CommandPalette.cs#L17" title="GDX.Editor\Windows\CommandPalette.cs:17">CommandPalette.cs:17</a></td>
 <td>Class <code>CommandPalette</code> is never used (except inside its declaration)</td>
 </tr>
 <tr>
@@ -4244,7 +4361,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-10-02 against <a href="https://github.com/dotBunny/GDX/commit/4f863127bd7beaebca452c96a181759a39db64e0"><strong>4f86312</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-10-02 against <a href="https://github.com/dotBunny/GDX/commit/8047f5dec710108c726fca7caed5c386e5cc380a"><strong>8047f5d</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
