@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/3/2023 - 6:04:26 PM |
+| Generated on: | 2023-10-04 - 6:58:34 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 195 |
 | Files: | 191 |
-| Covered lines: | 7665 |
-| Uncovered lines: | 6587 |
-| Coverable lines: | 14252 |
-| Total lines: | 36342 |
-| Line coverage: | 53.7% (7665 of 14252) |
+| Covered lines: | 7662 |
+| Uncovered lines: | 6596 |
+| Coverable lines: | 14258 |
+| Total lines: | 36351 |
+| Line coverage: | 53.7% (7662 of 14258) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 792 |
+| Covered methods: | 791 |
 | Total methods: | 1571 |
-| Method coverage: | 50.4% (792 of 1571) |
+| Method coverage: | 50.3% (791 of 1571) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7665**|**6587**|**14252**|**41310**|**53.7%**|**0**|**0**|****|**792**|**1571**|**50.4%**|
+|**GDX**|**7662**|**6596**|**14258**|**41319**|**53.7%**|**0**|**0**|****|**791**|**1571**|**50.3%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -159,9 +159,9 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|57|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|87|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
+|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|233|90.2%|0|0||3|3|100%|
-|GDX.Developer.RuntimeConsoleController|0|135|135|277|0%|0|0||0|17|0%|
+|GDX.Developer.RuntimeConsoleController|0|141|141|286|0%|0|0||0|17|0%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|59|0|59|163|100%|0|0||10|10|100%|
 |GDX.Developer.TransientReference|42|21|63|185|66.6%|0|0||10|12|83.3%|
