@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 10/18/2023 - 10:24:57 PM |
+| Generated on: | 2023-10-20 - 1:52:02 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 198 |
 | Files: | 194 |
-| Covered lines: | 7669 |
-| Uncovered lines: | 6868 |
+| Covered lines: | 7672 |
+| Uncovered lines: | 6865 |
 | Coverable lines: | 14537 |
 | Total lines: | 36777 |
-| Line coverage: | 52.7% (7669 of 14537) |
+| Line coverage: | 52.7% (7672 of 14537) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 792 |
+| Covered methods: | 793 |
 | Total methods: | 1598 |
-| Method coverage: | 49.5% (792 of 1598) |
+| Method coverage: | 49.6% (793 of 1598) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7669**|**6868**|**14537**|**41745**|**52.7%**|**0**|**0**|****|**792**|**1598**|**49.5%**|
+|**GDX**|**7672**|**6865**|**14537**|**41745**|**52.7%**|**0**|**0**|****|**793**|**1598**|**49.6%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -162,7 +162,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|57|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|87|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
+|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|233|90.2%|0|0||3|3|100%|
 |GDX.Developer.RuntimeConsoleController|0|181|181|323|0%|0|0||0|21|0%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
