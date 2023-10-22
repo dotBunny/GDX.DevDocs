@@ -591,7 +591,7 @@
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L38" title="GDX\Developer\RuntimeConsoleController.cs:38">RuntimeConsoleController.cs:38</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L39" title="GDX\Developer\RuntimeConsoleController.cs:39">RuntimeConsoleController.cs:39</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
@@ -893,7 +893,7 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L12" title="GDX\Developer\RuntimeConsoleController.cs:12">RuntimeConsoleController.cs:12</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L13" title="GDX\Developer\RuntimeConsoleController.cs:13">RuntimeConsoleController.cs:13</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -1194,6 +1194,25 @@
 </tbody>
 </table>
 <h2 id="suggestions">Suggestions</h2>
+<h3 id="auto-property-can-be-made-get-only-private-accessibility">Auto-property can be made get-only: Private accessibility</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L48" title="GDX\Developer\RuntimeConsoleController.cs:48">RuntimeConsoleController.cs:48</a></td>
+<td>Auto-property can be made get-only</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L49" title="GDX\Developer\RuntimeConsoleController.cs:49">RuntimeConsoleController.cs:49</a></td>
+<td>Auto-property can be made get-only</td>
+</tr>
+</tbody>
+</table>
 <h3 id="class-is-never-instantiated-non-private-accessibility">Class is never instantiated: Non-private accessibility</h3>
 <table>
 <thead>
@@ -2011,15 +2030,23 @@
 <td>Field <code>RemovedObjects</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L65" title="GDX\Developer\RuntimeConsoleController.cs:65">RuntimeConsoleController.cs:65</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L48" title="GDX\Developer\RuntimeConsoleController.cs:48">RuntimeConsoleController.cs:48</a></td>
+<td>Property <code>Document</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L49" title="GDX\Developer\RuntimeConsoleController.cs:49">RuntimeConsoleController.cs:49</a></td>
+<td>Property <code>ConsoleGameObject</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L79" title="GDX\Developer\RuntimeConsoleController.cs:79">RuntimeConsoleController.cs:79</a></td>
 <td>Method <code>UpdateFontSize</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L180" title="GDX\Developer\RuntimeConsoleController.cs:180">RuntimeConsoleController.cs:180</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L194" title="GDX\Developer\RuntimeConsoleController.cs:194">RuntimeConsoleController.cs:194</a></td>
 <td>Method <code>OnInputAutocomplete</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L282" title="GDX\Developer\RuntimeConsoleController.cs:282">RuntimeConsoleController.cs:282</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L296" title="GDX\Developer\RuntimeConsoleController.cs:296">RuntimeConsoleController.cs:296</a></td>
 <td>Method <code>Tick</code> can be made private</td>
 </tr>
 <tr>
@@ -2703,6 +2730,10 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/ShaderContent.cs#L15" title="GDX.RuntimeContent\ShaderContent.cs:15">ShaderContent.cs:15</a></td>
 <td>Field <code>UnlitColor</code> is never assigned</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/UIElementsContent.cs#L9" title="GDX.RuntimeContent\UIElementsContent.cs:9">UIElementsContent.cs:9</a></td>
+<td>Field <code>RuntimeConsole</code> is never assigned</td>
+</tr>
 </tbody>
 </table>
 <h3 id="type-member-is-never-used-non-private-accessibility">Type member is never used: Non-private accessibility</h3>
@@ -3187,51 +3218,51 @@
 <td>Method <code>Remove</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L83" title="GDX\Developer\RuntimeConsoleController.cs:83">RuntimeConsoleController.cs:83</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L97" title="GDX\Developer\RuntimeConsoleController.cs:97">RuntimeConsoleController.cs:97</a></td>
 <td>Method <code>OnInputVerticalScroll</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L92" title="GDX\Developer\RuntimeConsoleController.cs:92">RuntimeConsoleController.cs:92</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L106" title="GDX\Developer\RuntimeConsoleController.cs:106">RuntimeConsoleController.cs:106</a></td>
 <td>Method <code>OnInputUp</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L115" title="GDX\Developer\RuntimeConsoleController.cs:115">RuntimeConsoleController.cs:115</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L129" title="GDX\Developer\RuntimeConsoleController.cs:129">RuntimeConsoleController.cs:129</a></td>
 <td>Method <code>OnInputDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L141" title="GDX\Developer\RuntimeConsoleController.cs:141">RuntimeConsoleController.cs:141</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L155" title="GDX\Developer\RuntimeConsoleController.cs:155">RuntimeConsoleController.cs:155</a></td>
 <td>Method <code>OnInputLeft</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L145" title="GDX\Developer\RuntimeConsoleController.cs:145">RuntimeConsoleController.cs:145</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L159" title="GDX\Developer\RuntimeConsoleController.cs:159">RuntimeConsoleController.cs:159</a></td>
 <td>Method <code>OnInputRight</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L150" title="GDX\Developer\RuntimeConsoleController.cs:150">RuntimeConsoleController.cs:150</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L164" title="GDX\Developer\RuntimeConsoleController.cs:164">RuntimeConsoleController.cs:164</a></td>
 <td>Method <code>OnInputSubmit</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L168" title="GDX\Developer\RuntimeConsoleController.cs:168">RuntimeConsoleController.cs:168</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L182" title="GDX\Developer\RuntimeConsoleController.cs:182">RuntimeConsoleController.cs:182</a></td>
 <td>Method <code>OnInputBackspace</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L201" title="GDX\Developer\RuntimeConsoleController.cs:201">RuntimeConsoleController.cs:201</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L215" title="GDX\Developer\RuntimeConsoleController.cs:215">RuntimeConsoleController.cs:215</a></td>
 <td>Method <code>OnInputPageUp</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L211" title="GDX\Developer\RuntimeConsoleController.cs:211">RuntimeConsoleController.cs:211</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L225" title="GDX\Developer\RuntimeConsoleController.cs:225">RuntimeConsoleController.cs:225</a></td>
 <td>Method <code>OnInputPageDown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L275" title="GDX\Developer\RuntimeConsoleController.cs:275">RuntimeConsoleController.cs:275</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L289" title="GDX\Developer\RuntimeConsoleController.cs:289">RuntimeConsoleController.cs:289</a></td>
 <td>Method <code>ClearInput</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L292" title="GDX\Developer\RuntimeConsoleController.cs:292">RuntimeConsoleController.cs:292</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L306" title="GDX\Developer\RuntimeConsoleController.cs:306">RuntimeConsoleController.cs:306</a></td>
 <td>Method <code>Show</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L305" title="GDX\Developer\RuntimeConsoleController.cs:305">RuntimeConsoleController.cs:305</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L319" title="GDX\Developer\RuntimeConsoleController.cs:319">RuntimeConsoleController.cs:319</a></td>
 <td>Method <code>OnTextInput</code> is never used</td>
 </tr>
 <tr>
@@ -3755,19 +3786,11 @@
 <td>Method <code>GetStyleSheets</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/ResourceProvider.cs#L38" title="GDX.RuntimeContent\ResourceProvider.cs:38">ResourceProvider.cs:38</a></td>
-<td>Method <code>GetUIElements</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/StyleSheetContent.cs#L8" title="GDX.RuntimeContent\StyleSheetContent.cs:8">StyleSheetContent.cs:8</a></td>
 <td>Field <code>Base</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/StyleSheetContent.cs#L9" title="GDX.RuntimeContent\StyleSheetContent.cs:9">StyleSheetContent.cs:9</a></td>
-<td>Field <code>RuntimeConsole</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/UIElementsContent.cs#L9" title="GDX.RuntimeContent\UIElementsContent.cs:9">UIElementsContent.cs:9</a></td>
 <td>Field <code>RuntimeConsole</code> is never used</td>
 </tr>
 <tr>
@@ -3808,70 +3831,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L232" title="GDX\DataTables\DataTableBase.cs:232">DataTableBase.cs:232</a></td>
 <td>Only overrides of method <code>SetAllColumnOrders</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L654" title="GDX\DataTables\DataTableBase.cs:654">DataTableBase.cs:654</a></td>
-<td>Only overrides of method <code>SetVector2</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L663" title="GDX\DataTables\DataTableBase.cs:663">DataTableBase.cs:663</a></td>
-<td>Only overrides of method <code>SetVector3</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L672" title="GDX\DataTables\DataTableBase.cs:672">DataTableBase.cs:672</a></td>
-<td>Only overrides of method <code>SetVector4</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L681" title="GDX\DataTables\DataTableBase.cs:681">DataTableBase.cs:681</a></td>
-<td>Only overrides of method <code>SetVector2Int</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L690" title="GDX\DataTables\DataTableBase.cs:690">DataTableBase.cs:690</a></td>
-<td>Only overrides of method <code>SetVector3Int</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L699" title="GDX\DataTables\DataTableBase.cs:699">DataTableBase.cs:699</a></td>
-<td>Only overrides of method <code>SetQuaternion</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L708" title="GDX\DataTables\DataTableBase.cs:708">DataTableBase.cs:708</a></td>
-<td>Only overrides of method <code>SetRect</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L717" title="GDX\DataTables\DataTableBase.cs:717">DataTableBase.cs:717</a></td>
-<td>Only overrides of method <code>SetRectInt</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L726" title="GDX\DataTables\DataTableBase.cs:726">DataTableBase.cs:726</a></td>
-<td>Only overrides of method <code>SetColor</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L735" title="GDX\DataTables\DataTableBase.cs:735">DataTableBase.cs:735</a></td>
-<td>Only overrides of method <code>SetLayerMask</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L744" title="GDX\DataTables\DataTableBase.cs:744">DataTableBase.cs:744</a></td>
-<td>Only overrides of method <code>SetBounds</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L753" title="GDX\DataTables\DataTableBase.cs:753">DataTableBase.cs:753</a></td>
-<td>Only overrides of method <code>SetBoundsInt</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L762" title="GDX\DataTables\DataTableBase.cs:762">DataTableBase.cs:762</a></td>
-<td>Only overrides of method <code>SetHash128</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L771" title="GDX\DataTables\DataTableBase.cs:771">DataTableBase.cs:771</a></td>
-<td>Only overrides of method <code>SetGradient</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L780" title="GDX\DataTables\DataTableBase.cs:780">DataTableBase.cs:780</a></td>
-<td>Only overrides of method <code>SetAnimationCurve</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L789" title="GDX\DataTables\DataTableBase.cs:789">DataTableBase.cs:789</a></td>
-<td>Only overrides of method <code>SetObject</code> are used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/ITestBehaviour.cs#L14" title="GDX\Developer\Reports\BuildVerification\ITestBehaviour.cs:14">ITestBehaviour.cs:14</a></td>
@@ -4131,7 +4090,7 @@
 <td>Class <code>Profiling</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L19" title="GDX\Developer\RuntimeConsoleController.cs:19">RuntimeConsoleController.cs:19</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L20" title="GDX\Developer\RuntimeConsoleController.cs:20">RuntimeConsoleController.cs:20</a></td>
 <td>Class <code>RuntimeConsoleController</code> is never used</td>
 </tr>
 <tr>
@@ -4528,7 +4487,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-10-20 against <a href="https://github.com/dotBunny/GDX/commit/8fa8edfdf179d3e9f932e4da594aa372c9564f45"><strong>8fa8edf</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-10-21 against <a href="https://github.com/dotBunny/GDX/commit/917f9c347064d3fad9eb271584ccbd1dc1089afb"><strong>917f9c3</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
