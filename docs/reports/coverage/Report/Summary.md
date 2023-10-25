@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-10-21 - 10:17:57 PM |
+| Generated on: | 2023-10-24 - 11:02:44 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 198 |
 | Files: | 194 |
 | Covered lines: | 7672 |
-| Uncovered lines: | 6902 |
-| Coverable lines: | 14574 |
-| Total lines: | 36850 |
-| Line coverage: | 52.6% (7672 of 14574) |
+| Uncovered lines: | 6908 |
+| Coverable lines: | 14580 |
+| Total lines: | 36860 |
+| Line coverage: | 52.6% (7672 of 14580) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 793 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7672**|**6902**|**14574**|**41818**|**52.6%**|**0**|**0**|****|**793**|**1602**|**49.5%**|
+|**GDX**|**7672**|**6908**|**14580**|**41828**|**52.6%**|**0**|**0**|****|**793**|**1602**|**49.5%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -131,7 +131,7 @@
 |GDX.Developer.ConsoleCommands.PlayerLoopConsoleCommand|3|13|16|43|18.7%|0|0||1|4|25%|
 |GDX.Developer.ConsoleCommands.QuitConsoleCommand|3|20|23|64|13%|0|0||1|5|20%|
 |GDX.Developer.ConsoleCommands.SceneListConsoleCommand|3|17|20|44|15%|0|0||1|3|33.3%|
-|GDX.Developer.ConsoleCommands.SceneLoadConsoleCommand|3|71|74|137|4%|0|0||1|6|16.6%|
+|GDX.Developer.ConsoleCommands.SceneLoadConsoleCommand|3|77|80|147|3.7%|0|0||1|6|16.6%|
 |GDX.Developer.ConsoleCommands.SceneWaitConsoleCommand|3|6|9|29|33.3%|0|0||1|3|33.3%|
 |GDX.Developer.ConsoleCommands.VersionConsoleCommand|3|10|13|37|23%|0|0||1|4|25%|
 |GDX.Developer.ConsoleCommands.WaitConsoleCommand|3|16|19|47|15.7%|0|0||1|5|20%|
