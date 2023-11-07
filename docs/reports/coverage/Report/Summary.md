@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-10-24 - 11:02:44 PM |
+| Generated on: | 11/6/2023 - 9:06:17 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 198 |
 | Files: | 194 |
 | Covered lines: | 7672 |
-| Uncovered lines: | 6908 |
-| Coverable lines: | 14580 |
-| Total lines: | 36860 |
-| Line coverage: | 52.6% (7672 of 14580) |
+| Uncovered lines: | 6916 |
+| Coverable lines: | 14588 |
+| Total lines: | 36875 |
+| Line coverage: | 52.5% (7672 of 14588) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 793 |
-| Total methods: | 1602 |
-| Method coverage: | 49.5% (793 of 1602) |
+| Total methods: | 1603 |
+| Method coverage: | 49.4% (793 of 1603) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7672**|**6908**|**14580**|**41828**|**52.6%**|**0**|**0**|****|**793**|**1602**|**49.5%**|
+|**GDX**|**7672**|**6916**|**14588**|**41843**|**52.5%**|**0**|**0**|****|**793**|**1603**|**49.4%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -65,7 +65,7 @@
 |GDX.Collections.UnsafeSparseSet|558|49|607|1242|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1242|0%|0|0||0|2|0%|
 |GDX.Config|26|0|26|204|100%|0|0||1|1|100%|
-|GDX.Core|32|0|32|164|100%|0|0||3|3|100%|
+|GDX.Core|32|3|35|171|91.4%|0|0||3|4|75%|
 |GDX.DataTables.CellValues.AnimationCurveCellValue|0|32|32|126|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.BoolCellValue|0|32|32|125|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.BoundsCellValue|0|32|32|126|0%|0|0||0|6|0%|
@@ -140,7 +140,7 @@
 |GDX.Developer.ConsoleVariables.FloatConsoleVariable|0|42|42|84|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariables.IntegerConsoleVariable|0|42|42|83|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariables.StringConsoleVariable|0|28|28|66|0%|0|0||0|8|0%|
-|GDX.Developer.ConsoleVariableSettings|10|51|61|100|16.3%|0|0||3|5|60%|
+|GDX.Developer.ConsoleVariableSettings|10|56|66|108|15.1%|0|0||3|5|60%|
 |GDX.Developer.ConsoleWatch|0|9|9|30|0%|0|0||0|3|0%|
 |GDX.Developer.InputProxy|0|219|219|723|0%|0|0||0|18|0%|
 |GDX.Developer.Profiling|0|50|50|146|0%|0|0||0|3|0%|
