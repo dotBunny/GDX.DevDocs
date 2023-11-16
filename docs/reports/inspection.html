@@ -217,16 +217,12 @@
 <td>Name <code>MainThreadID</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>MainThreadId</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L346" title="GDX\Developer\Console.cs:346">Console.cs:346</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L309" title="GDX\Developer\Console.cs:309">Console.cs:309</a></td>
 <td>Name <code>parentMessageID</code> does not match rule <code>locals_should_be_camel_case</code>. Suggested name is <code>parentMessageId</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleCommands/QuitConsoleCommand.cs#L16" title="GDX\Developer\ConsoleCommands\QuitConsoleCommand.cs:16">QuitConsoleCommand.cs:16</a></td>
 <td>Name <code>errorCode</code> does not match rule <code>instance_fields_should_be_camel_case</code>. Suggested name is <code>m_ErrorCode</code>.</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleWatch.cs#L12" title="GDX\Developer\ConsoleWatch.cs:12">ConsoleWatch.cs:12</a></td>
-<td>Name <code>WatchID</code> does not match rule <code>non_private_instance_fields_should_be_pascal_case</code>. Suggested name is <code>WatchId</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L713" title="GDX\Developer\InputProxy.cs:713">InputProxy.cs:713</a></td>
@@ -444,6 +440,14 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L714" title="GDX\Developer\InputProxy.cs:714">InputProxy.cs:714</a></td>
 <td>Field <code>Data</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L23" title="GDX\Developer\Watch.cs:23">Watch.cs:23</a></td>
+<td>Field <code>m_DisplayText</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L24" title="GDX\Developer\Watch.cs:24">Watch.cs:24</a></td>
+<td>Field <code>m_GetValue</code> is assigned but its value is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L23" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:23">DataTableWindowTests.cs:23</a></td>
@@ -889,6 +893,10 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L7" title="GDX\Developer\Console.cs:7">Console.cs:7</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L8" title="GDX\Developer\Console.cs:8">Console.cs:8</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
@@ -1058,6 +1066,10 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/NUnit/TestSuite.cs#L34" title="GDX\Developer\Reports\NUnit\TestSuite.cs:34">TestSuite.cs:34</a></td>
 <td>Auto-property accessor <code>Properties.set</code> is never used</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L22" title="GDX\Developer\Watch.cs:22">Watch.cs:22</a></td>
+<td>Auto-property accessor <code>Enabled.get</code> is never used</td>
+</tr>
 </tbody>
 </table>
 <h3 id="type-member-is-never-used-private-accessibility">Type member is never used: Private accessibility</h3>
@@ -1078,11 +1090,15 @@
 <td>Field <code>k_CommaSeperatedValueFormat</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L166" title="GDX\Developer\Console.cs:166">Console.cs:166</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L47" title="GDX\Developer\Console.cs:47">Console.cs:47</a></td>
+<td>Field <code>s_PreviousCommandCountWatch</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L129" title="GDX\Developer\Console.cs:129">Console.cs:129</a></td>
 <td>Method <code>FilterContains</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L385" title="GDX\Developer\Console.cs:385">Console.cs:385</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L324" title="GDX\Developer\Console.cs:324">Console.cs:324</a></td>
 <td>Method <code>Initialize</code> is never used</td>
 </tr>
 <tr>
@@ -1170,6 +1186,21 @@
 </tr>
 </tbody>
 </table>
+<h3 id="unused-parameter-private-accessibility">Unused parameter: Private accessibility</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L26" title="GDX\Developer\Watch.cs:26">Watch.cs:26</a></td>
+<td>Parameter <code>enabled</code> is never used</td>
+</tr>
+</tbody>
+</table>
 <h3 id="unused-local-variable">Unused local variable</h3>
 <table>
 <thead>
@@ -1186,6 +1217,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/StableDataTable.cs#L1083" title="GDX\DataTables\StableDataTable.cs:1083">StableDataTable.cs:1083</a></td>
 <td>Local variable <code>denseIndex</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L49" title="GDX\Developer\Watch.cs:49">Watch.cs:49</a></td>
+<td>Local variable <code>w</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/InputProxyTests.cs#L81" title="GDX.Tests\EditMode\Developer\InputProxyTests.cs:81">InputProxyTests.cs:81</a></td>
@@ -1209,6 +1244,21 @@
 </tbody>
 </table>
 <h2 id="suggestions">Suggestions</h2>
+<h3 id="auto-property-can-be-made-get-only-non-private-accessibility">Auto-property can be made get-only: Non-private accessibility</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L22" title="GDX\Developer\Watch.cs:22">Watch.cs:22</a></td>
+<td>Auto-property can be made get-only</td>
+</tr>
+</tbody>
+</table>
 <h3 id="auto-property-can-be-made-get-only-private-accessibility">Auto-property can be made get-only: Private accessibility</h3>
 <table>
 <thead>
@@ -1741,19 +1791,11 @@
 <td>Field <code>StartTicks</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L80" title="GDX\Developer\Console.cs:80">Console.cs:80</a></td>
-<td>Method <code>RegisterWatch</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L106" title="GDX\Developer\Console.cs:106">Console.cs:106</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L79" title="GDX\Developer\Console.cs:79">Console.cs:79</a></td>
 <td>Method <code>UnregisterVariable</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L118" title="GDX\Developer\Console.cs:118">Console.cs:118</a></td>
-<td>Method <code>UnregisterWatch</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L138" title="GDX\Developer\Console.cs:138">Console.cs:138</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L101" title="GDX\Developer\Console.cs:101">Console.cs:101</a></td>
 <td>Method <code>UnregisterCommand</code> can be made private</td>
 </tr>
 <tr>
@@ -2063,6 +2105,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L316" title="GDX\Developer\RuntimeConsoleController.cs:316">RuntimeConsoleController.cs:316</a></td>
 <td>Method <code>Tick</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L22" title="GDX\Developer\Watch.cs:22">Watch.cs:22</a></td>
+<td>Property <code>Enabled</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/DebugDrawBuffer.cs#L187" title="GDX\Experimental\DebugDrawBuffer.cs:187">DebugDrawBuffer.cs:187</a></td>
@@ -2492,18 +2538,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/RowDescription.cs#L25" title="GDX\DataTables\RowDescription.cs:25">RowDescription.cs:25</a></td>
 <td>Field <code>SortOrder</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleWatch.cs#L12" title="GDX\Developer\ConsoleWatch.cs:12">ConsoleWatch.cs:12</a></td>
-<td>Field <code>WatchID</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleWatch.cs#L13" title="GDX\Developer\ConsoleWatch.cs:13">ConsoleWatch.cs:13</a></td>
-<td>Field <code>DisplayText</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleWatch.cs#L14" title="GDX\Developer\ConsoleWatch.cs:14">ConsoleWatch.cs:14</a></td>
-<td>Field <code>DisplayValue</code> is assigned but its value is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/InputProxy.cs#L547" title="GDX\Developer\InputProxy.cs:547">InputProxy.cs:547</a></td>
@@ -3037,44 +3071,20 @@
 <td>Enum member <code>Superuser</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L71" title="GDX\Developer\Console.cs:71">Console.cs:71</a></td>
-<td>Method <code>RegisterWatch</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L75" title="GDX\Developer\Console.cs:75">Console.cs:75</a></td>
-<td>Method <code>RegisterWatch</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L101" title="GDX\Developer\Console.cs:101">Console.cs:101</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L74" title="GDX\Developer\Console.cs:74">Console.cs:74</a></td>
 <td>Method <code>UnregisterVariable</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L113" title="GDX\Developer\Console.cs:113">Console.cs:113</a></td>
-<td>Method <code>UnregisterWatch</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L133" title="GDX\Developer\Console.cs:133">Console.cs:133</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L96" title="GDX\Developer\Console.cs:96">Console.cs:96</a></td>
 <td>Method <code>UnregisterCommand</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L236" title="GDX\Developer\Console.cs:236">Console.cs:236</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L199" title="GDX\Developer\Console.cs:199">Console.cs:199</a></td>
 <td>Method <code>GetCommandKeywordsEnumerator</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L325" title="GDX\Developer\Console.cs:325">Console.cs:325</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L288" title="GDX\Developer\Console.cs:288">Console.cs:288</a></td>
 <td>Method <code>SetAccessLevel</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L357" title="GDX\Developer\Console.cs:357">Console.cs:357</a></td>
-<td>Method <code>UpdateWatch</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L365" title="GDX\Developer\Console.cs:365">Console.cs:365</a></td>
-<td>Method <code>UpdateWatch</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L373" title="GDX\Developer\Console.cs:373">Console.cs:373</a></td>
-<td>Method <code>UpdateWatch</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariableBase.cs#L25" title="GDX\Developer\ConsoleVariableBase.cs:25">ConsoleVariableBase.cs:25</a></td>
@@ -3283,6 +3293,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/TransientReference.cs#L45" title="GDX\Developer\TransientReference.cs:45">TransientReference.cs:45</a></td>
 <td>Constructor <code>TransientReference</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L41" title="GDX\Developer\Watch.cs:41">Watch.cs:41</a></td>
+<td>Method <code>GetPanelContent</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L24" title="GDX\Display.cs:24">Display.cs:24</a></td>
@@ -3846,70 +3860,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L232" title="GDX\DataTables\DataTableBase.cs:232">DataTableBase.cs:232</a></td>
 <td>Only overrides of method <code>SetAllColumnOrders</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L654" title="GDX\DataTables\DataTableBase.cs:654">DataTableBase.cs:654</a></td>
-<td>Only overrides of method <code>SetVector2</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L663" title="GDX\DataTables\DataTableBase.cs:663">DataTableBase.cs:663</a></td>
-<td>Only overrides of method <code>SetVector3</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L672" title="GDX\DataTables\DataTableBase.cs:672">DataTableBase.cs:672</a></td>
-<td>Only overrides of method <code>SetVector4</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L681" title="GDX\DataTables\DataTableBase.cs:681">DataTableBase.cs:681</a></td>
-<td>Only overrides of method <code>SetVector2Int</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L690" title="GDX\DataTables\DataTableBase.cs:690">DataTableBase.cs:690</a></td>
-<td>Only overrides of method <code>SetVector3Int</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L699" title="GDX\DataTables\DataTableBase.cs:699">DataTableBase.cs:699</a></td>
-<td>Only overrides of method <code>SetQuaternion</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L708" title="GDX\DataTables\DataTableBase.cs:708">DataTableBase.cs:708</a></td>
-<td>Only overrides of method <code>SetRect</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L717" title="GDX\DataTables\DataTableBase.cs:717">DataTableBase.cs:717</a></td>
-<td>Only overrides of method <code>SetRectInt</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L726" title="GDX\DataTables\DataTableBase.cs:726">DataTableBase.cs:726</a></td>
-<td>Only overrides of method <code>SetColor</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L735" title="GDX\DataTables\DataTableBase.cs:735">DataTableBase.cs:735</a></td>
-<td>Only overrides of method <code>SetLayerMask</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L744" title="GDX\DataTables\DataTableBase.cs:744">DataTableBase.cs:744</a></td>
-<td>Only overrides of method <code>SetBounds</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L753" title="GDX\DataTables\DataTableBase.cs:753">DataTableBase.cs:753</a></td>
-<td>Only overrides of method <code>SetBoundsInt</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L762" title="GDX\DataTables\DataTableBase.cs:762">DataTableBase.cs:762</a></td>
-<td>Only overrides of method <code>SetHash128</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L771" title="GDX\DataTables\DataTableBase.cs:771">DataTableBase.cs:771</a></td>
-<td>Only overrides of method <code>SetGradient</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L780" title="GDX\DataTables\DataTableBase.cs:780">DataTableBase.cs:780</a></td>
-<td>Only overrides of method <code>SetAnimationCurve</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L789" title="GDX\DataTables\DataTableBase.cs:789">DataTableBase.cs:789</a></td>
-<td>Only overrides of method <code>SetObject</code> are used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/ITestBehaviour.cs#L14" title="GDX\Developer\Reports\BuildVerification\ITestBehaviour.cs:14">ITestBehaviour.cs:14</a></td>
@@ -4566,7 +4516,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-11-07 against <a href="https://github.com/dotBunny/GDX/commit/7a4357ca65aaca868eb2de3cfd242471cc12290e"><strong>7a4357c</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-11-16 against <a href="https://github.com/dotBunny/GDX/commit/435fc791079465d49c4ed9983ca93221cc3557df"><strong>435fc79</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
