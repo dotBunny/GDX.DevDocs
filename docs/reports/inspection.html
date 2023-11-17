@@ -442,10 +442,6 @@
 <td>Field <code>Data</code> is assigned but its value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L24" title="GDX\Developer\Watch.cs:24">Watch.cs:24</a></td>
-<td>Field <code>m_DisplayText</code> is assigned but its value is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L23" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:23">DataTableWindowTests.cs:23</a></td>
 <td>Field <code>m_DataTableWindowController</code> is assigned but its value is never used</td>
 </tr>
@@ -901,6 +897,10 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L7" title="GDX\Developer\Watch.cs:7">Watch.cs:7</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/ConsoleCommands/ClearConsoleCommand.cs#L8" title="GDX.Editor\ConsoleCommands\ClearConsoleCommand.cs:8">ClearConsoleCommand.cs:8</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
@@ -1178,21 +1178,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="unused-parameter-private-accessibility">Unused parameter: Private accessibility</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L30" title="GDX\Developer\Watch.cs:30">Watch.cs:30</a></td>
-<td>Parameter <code>enabled</code> is never used</td>
-</tr>
-</tbody>
-</table>
 <h3 id="unused-local-variable">Unused local variable</h3>
 <table>
 <thead>
@@ -1209,10 +1194,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/StableDataTable.cs#L1083" title="GDX\DataTables\StableDataTable.cs:1083">StableDataTable.cs:1083</a></td>
 <td>Local variable <code>denseIndex</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L80" title="GDX\Developer\Watch.cs:80">Watch.cs:80</a></td>
-<td>Local variable <code>w</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Developer/InputProxyTests.cs#L81" title="GDX.Tests\EditMode\Developer\InputProxyTests.cs:81">InputProxyTests.cs:81</a></td>
@@ -1236,21 +1217,6 @@
 </tbody>
 </table>
 <h2 id="suggestions">Suggestions</h2>
-<h3 id="auto-property-can-be-made-get-only-non-private-accessibility">Auto-property can be made get-only: Non-private accessibility</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L22" title="GDX\Developer\Watch.cs:22">Watch.cs:22</a></td>
-<td>Auto-property can be made get-only</td>
-</tr>
-</tbody>
-</table>
 <h3 id="auto-property-can-be-made-get-only-private-accessibility">Auto-property can be made get-only: Private accessibility</h3>
 <table>
 <thead>
@@ -2099,8 +2065,12 @@
 <td>Method <code>Tick</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L22" title="GDX\Developer\Watch.cs:22">Watch.cs:22</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L27" title="GDX\Developer\Watch.cs:27">Watch.cs:27</a></td>
 <td>Property <code>Enabled</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L55" title="GDX\Developer\Watch.cs:55">Watch.cs:55</a></td>
+<td>Method <code>Poll</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/DebugDrawBuffer.cs#L187" title="GDX\Experimental\DebugDrawBuffer.cs:187">DebugDrawBuffer.cs:187</a></td>
@@ -3288,11 +3258,15 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L45" title="GDX\Developer\Watch.cs:45">Watch.cs:45</a></td>
+<td>Method <code>SetState</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L64" title="GDX\Developer\Watch.cs:64">Watch.cs:64</a></td>
 <td>Method <code>PollKnown</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L72" title="GDX\Developer\Watch.cs:72">Watch.cs:72</a></td>
-<td>Method <code>GetPanelContent</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L76" title="GDX\Developer\Watch.cs:76">Watch.cs:76</a></td>
+<td>Method <code>GetColumns</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L24" title="GDX\Display.cs:24">Display.cs:24</a></td>
@@ -3856,70 +3830,6 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L232" title="GDX\DataTables\DataTableBase.cs:232">DataTableBase.cs:232</a></td>
 <td>Only overrides of method <code>SetAllColumnOrders</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L654" title="GDX\DataTables\DataTableBase.cs:654">DataTableBase.cs:654</a></td>
-<td>Only overrides of method <code>SetVector2</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L663" title="GDX\DataTables\DataTableBase.cs:663">DataTableBase.cs:663</a></td>
-<td>Only overrides of method <code>SetVector3</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L672" title="GDX\DataTables\DataTableBase.cs:672">DataTableBase.cs:672</a></td>
-<td>Only overrides of method <code>SetVector4</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L681" title="GDX\DataTables\DataTableBase.cs:681">DataTableBase.cs:681</a></td>
-<td>Only overrides of method <code>SetVector2Int</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L690" title="GDX\DataTables\DataTableBase.cs:690">DataTableBase.cs:690</a></td>
-<td>Only overrides of method <code>SetVector3Int</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L699" title="GDX\DataTables\DataTableBase.cs:699">DataTableBase.cs:699</a></td>
-<td>Only overrides of method <code>SetQuaternion</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L708" title="GDX\DataTables\DataTableBase.cs:708">DataTableBase.cs:708</a></td>
-<td>Only overrides of method <code>SetRect</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L717" title="GDX\DataTables\DataTableBase.cs:717">DataTableBase.cs:717</a></td>
-<td>Only overrides of method <code>SetRectInt</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L726" title="GDX\DataTables\DataTableBase.cs:726">DataTableBase.cs:726</a></td>
-<td>Only overrides of method <code>SetColor</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L735" title="GDX\DataTables\DataTableBase.cs:735">DataTableBase.cs:735</a></td>
-<td>Only overrides of method <code>SetLayerMask</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L744" title="GDX\DataTables\DataTableBase.cs:744">DataTableBase.cs:744</a></td>
-<td>Only overrides of method <code>SetBounds</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L753" title="GDX\DataTables\DataTableBase.cs:753">DataTableBase.cs:753</a></td>
-<td>Only overrides of method <code>SetBoundsInt</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L762" title="GDX\DataTables\DataTableBase.cs:762">DataTableBase.cs:762</a></td>
-<td>Only overrides of method <code>SetHash128</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L771" title="GDX\DataTables\DataTableBase.cs:771">DataTableBase.cs:771</a></td>
-<td>Only overrides of method <code>SetGradient</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L780" title="GDX\DataTables\DataTableBase.cs:780">DataTableBase.cs:780</a></td>
-<td>Only overrides of method <code>SetAnimationCurve</code> are used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L789" title="GDX\DataTables\DataTableBase.cs:789">DataTableBase.cs:789</a></td>
-<td>Only overrides of method <code>SetObject</code> are used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/ITestBehaviour.cs#L14" title="GDX\Developer\Reports\BuildVerification\ITestBehaviour.cs:14">ITestBehaviour.cs:14</a></td>
@@ -4576,7 +4486,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-11-16 against <a href="https://github.com/dotBunny/GDX/commit/683421556d627d245aa6a35768a69dc0d0f7ecb0"><strong>6834215</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-11-16 against <a href="https://github.com/dotBunny/GDX/commit/fb2f1aacece5ff482a0bbf5d2f58b3236bf58e3c"><strong>fb2f1aa</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
