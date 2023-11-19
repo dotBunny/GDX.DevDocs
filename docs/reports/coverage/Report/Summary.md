@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-11-17 - 6:13:33 PM |
+| Generated on: | 2023-11-19 - 1:16:07 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 199 |
-| Files: | 195 |
-| Covered lines: | 7692 |
-| Uncovered lines: | 6923 |
-| Coverable lines: | 14615 |
-| Total lines: | 36929 |
-| Line coverage: | 52.6% (7692 of 14615) |
+| Classes: | 201 |
+| Files: | 197 |
+| Covered lines: | 7701 |
+| Uncovered lines: | 6940 |
+| Coverable lines: | 14641 |
+| Total lines: | 37012 |
+| Line coverage: | 52.5% (7701 of 14641) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 798 |
-| Total methods: | 1602 |
-| Method coverage: | 49.8% (798 of 1602) |
+| Total methods: | 1610 |
+| Method coverage: | 49.5% (798 of 1610) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7692**|**6923**|**14615**|**41897**|**52.6%**|**0**|**0**|****|**798**|**1602**|**49.8%**|
+|**GDX**|**7701**|**6940**|**14641**|**41980**|**52.5%**|**0**|**0**|****|**798**|**1610**|**49.5%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -167,8 +167,10 @@
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|59|0|59|163|100%|0|0||10|10|100%|
 |GDX.Developer.TransientReference|42|21|63|185|66.6%|0|0||10|12|83.3%|
-|GDX.Developer.Watch|8|11|19|54|42.1%|0|0||3|5|60%|
-|GDX.Developer.WatchProvider|12|45|57|92|21%|0|0||2|5|40%|
+|GDX.Developer.ValueWatch|8|10|18|55|44.4%|0|0||1|2|50%|
+|GDX.Developer.WatchBase|11|6|17|47|64.7%|0|0||2|4|50%|
+|GDX.Developer.WatchController|0|29|29|63|0%|0|0||0|7|0%|
+|GDX.Developer.WatchProvider|10|28|38|64|26.3%|0|0||2|5|40%|
 |GDX.Display|0|12|12|85|0%|0|0||0|4|0%|
 |GDX.EnumExtensions|14|0|14|54|100%|0|0||2|2|100%|
 |GDX.Experimental.DebugDraw|15|0|15|96|100%|0|0||4|4|100%|

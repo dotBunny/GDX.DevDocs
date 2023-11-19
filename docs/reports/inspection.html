@@ -442,6 +442,10 @@
 <td>Field <code>Data</code> is assigned but its value is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L18" title="GDX\Developer\WatchController.cs:18">WatchController.cs:18</a></td>
+<td>Field <code>m_FontSize</code> is assigned but its value is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L23" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:23">DataTableWindowTests.cs:23</a></td>
 <td>Field <code>m_DataTableWindowController</code> is assigned but its value is never used</td>
 </tr>
@@ -588,6 +592,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L42" title="GDX\Developer\RuntimeConsoleController.cs:42">RuntimeConsoleController.cs:42</a></td>
+<td>The field is always assigned before being used and can be converted to local variable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/ValueWatch.cs#L22" title="GDX\Developer\Watches\ValueWatch.cs:22">ValueWatch.cs:22</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
@@ -758,6 +766,10 @@
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L43" title="GDX\Developer\Console.cs:43">Console.cs:43</a></td>
 <td>Initializing field by default value is redundant</td>
 </tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L15" title="GDX\Developer\WatchProvider.cs:15">WatchProvider.cs:15</a></td>
+<td>Initializing field by default value is redundant</td>
+</tr>
 </tbody>
 </table>
 <h3 id="redundant-empty-switch-section">Redundant empty switch section</h3>
@@ -897,15 +909,19 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L6" title="GDX\Developer\Watch.cs:6">Watch.cs:6</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/ValueWatch.cs#L6" title="GDX\Developer\Watches\ValueWatch.cs:6">ValueWatch.cs:6</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L7" title="GDX\Developer\Watch.cs:7">Watch.cs:7</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/ValueWatch.cs#L7" title="GDX\Developer\Watches\ValueWatch.cs:7">ValueWatch.cs:7</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L8" title="GDX\Developer\Watch.cs:8">Watch.cs:8</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/ValueWatch.cs#L8" title="GDX\Developer\Watches\ValueWatch.cs:8">ValueWatch.cs:8</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L6" title="GDX\Developer\WatchProvider.cs:6">WatchProvider.cs:6</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
@@ -1186,6 +1202,21 @@
 </tr>
 </tbody>
 </table>
+<h3 id="unused-parameter-private-accessibility">Unused parameter: Private accessibility</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L22" title="GDX\Developer\WatchController.cs:22">WatchController.cs:22</a></td>
+<td>Parameter <code>initialFontSize</code> is never used</td>
+</tr>
+</tbody>
+</table>
 <h3 id="unused-local-variable">Unused local variable</h3>
 <table>
 <thead>
@@ -1240,6 +1271,14 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L52" title="GDX\Developer\RuntimeConsoleController.cs:52">RuntimeConsoleController.cs:52</a></td>
+<td>Auto-property can be made get-only</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L15" title="GDX\Developer\WatchController.cs:15">WatchController.cs:15</a></td>
+<td>Auto-property can be made get-only</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L16" title="GDX\Developer\WatchController.cs:16">WatchController.cs:16</a></td>
 <td>Auto-property can be made get-only</td>
 </tr>
 </tbody>
@@ -1474,6 +1513,10 @@
 <td>Field can be made readonly</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchBase.cs#L15" title="GDX\Developer\WatchBase.cs:15">WatchBase.cs:15</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildDefinition.cs#L18" title="GDX.Editor\Build\BuildDefinition.cs:18">BuildDefinition.cs:18</a></td>
 <td>Field can be made readonly</td>
 </tr>
@@ -1511,6 +1554,21 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/EditorWindowExtensions.cs#L143" title="GDX.Editor\EditorWindowExtensions.cs:143">EditorWindowExtensions.cs:143</a></td>
+<td>Field can be made readonly</td>
+</tr>
+</tbody>
+</table>
+<h3 id="field-can-be-made-readonly-private-accessibility">Field can be made readonly: Private accessibility</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L20" title="GDX\Developer\WatchController.cs:20">WatchController.cs:20</a></td>
 <td>Field can be made readonly</td>
 </tr>
 </tbody>
@@ -2073,20 +2131,16 @@
 <td>Method <code>Tick</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L13" title="GDX\Developer\WatchProvider.cs:13">WatchProvider.cs:13</a></td>
-<td>Field <code>HasWatches</code> can be made private</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchBase.cs#L33" title="GDX\Developer\WatchBase.cs:33">WatchBase.cs:33</a></td>
+<td>Method <code>SetState</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L14" title="GDX\Developer\WatchProvider.cs:14">WatchProvider.cs:14</a></td>
-<td>Field <code>DisplayNamesChanged</code> can be made private</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L15" title="GDX\Developer\WatchController.cs:15">WatchController.cs:15</a></td>
+<td>Property <code>Document</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L15" title="GDX\Developer\WatchProvider.cs:15">WatchProvider.cs:15</a></td>
-<td>Field <code>DisplayNames</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L16" title="GDX\Developer\WatchProvider.cs:16">WatchProvider.cs:16</a></td>
-<td>Field <code>DisplayValues</code> can be made private</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L16" title="GDX\Developer\WatchController.cs:16">WatchController.cs:16</a></td>
+<td>Property <code>WatchesGameObject</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/DebugDrawBuffer.cs#L187" title="GDX\Experimental\DebugDrawBuffer.cs:187">DebugDrawBuffer.cs:187</a></td>
@@ -2566,22 +2620,6 @@
 <td>Field <code>ExtraInfo</code> is assigned but its value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L13" title="GDX\Developer\WatchProvider.cs:13">WatchProvider.cs:13</a></td>
-<td>Field <code>HasWatches</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L14" title="GDX\Developer\WatchProvider.cs:14">WatchProvider.cs:14</a></td>
-<td>Field <code>DisplayNamesChanged</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L15" title="GDX\Developer\WatchProvider.cs:15">WatchProvider.cs:15</a></td>
-<td>Field <code>DisplayNames</code> is assigned but its value is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L16" title="GDX\Developer\WatchProvider.cs:16">WatchProvider.cs:16</a></td>
-<td>Field <code>DisplayValues</code> is assigned but its value is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/LogEntry.cs#L20" title="GDX\Logging\LogEntry.cs:20">LogEntry.cs:20</a></td>
 <td>Field <code>MemberName</code> is assigned but its value is never used</td>
 </tr>
@@ -2772,6 +2810,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/ShaderContent.cs#L15" title="GDX.RuntimeContent\ShaderContent.cs:15">ShaderContent.cs:15</a></td>
 <td>Field <code>UnlitColor</code> is never assigned</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/UIElementsContent.cs#L9" title="GDX.RuntimeContent\UIElementsContent.cs:9">UIElementsContent.cs:9</a></td>
+<td>Field <code>Watches</code> is never assigned</td>
 </tr>
 </tbody>
 </table>
@@ -3285,16 +3327,12 @@
 <td>Constructor <code>TransientReference</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watch.cs#L34" title="GDX\Developer\Watch.cs:34">Watch.cs:34</a></td>
-<td>Method <code>SetState</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L36" title="GDX\Developer\WatchController.cs:36">WatchController.cs:36</a></td>
+<td>Method <code>UpdateFontSize</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L42" title="GDX\Developer\WatchProvider.cs:42">WatchProvider.cs:42</a></td>
-<td>Method <code>Poll</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L54" title="GDX\Developer\WatchProvider.cs:54">WatchProvider.cs:54</a></td>
-<td>Method <code>Process</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L41" title="GDX\Developer\WatchController.cs:41">WatchController.cs:41</a></td>
+<td>Method <code>Tick</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L24" title="GDX\Display.cs:24">Display.cs:24</a></td>
@@ -3829,10 +3867,6 @@
 <td>Field <code>RuntimeConsole</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.RuntimeContent/UIElementsContent.cs#L9" title="GDX.RuntimeContent\UIElementsContent.cs:9">UIElementsContent.cs:9</a></td>
-<td>Field <code>Watches</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Tests/EditMode/Threading/TaskDirectorSystemTests.cs#L33" title="GDX.Tests\EditMode\Threading\TaskDirectorSystemTests.cs:33">TaskDirectorSystemTests.cs:33</a></td>
 <td>Method <code>Setup</code> is never used</td>
 </tr>
@@ -4131,6 +4165,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L21" title="GDX\Developer\RuntimeConsoleController.cs:21">RuntimeConsoleController.cs:21</a></td>
 <td>Class <code>RuntimeConsoleController</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchController.cs#L11" title="GDX\Developer\WatchController.cs:11">WatchController.cs:11</a></td>
+<td>Class <code>WatchController</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L14" title="GDX\Display.cs:14">Display.cs:14</a></td>
@@ -4526,7 +4564,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-11-17 against <a href="https://github.com/dotBunny/GDX/commit/d0e874e59c1f28b84b468d3a984aecd1cf821a3b"><strong>d0e874e</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-11-19 against <a href="https://github.com/dotBunny/GDX/commit/6fc621046ca87951591ea31c97fdec90ad963a88"><strong>6fc6210</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
