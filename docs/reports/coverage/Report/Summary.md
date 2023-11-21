@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-11-19 - 1:16:07 PM |
+| Generated on: | 2023-11-20 - 10:47:06 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 201 |
-| Files: | 197 |
+| Classes: | 202 |
+| Files: | 198 |
 | Covered lines: | 7701 |
-| Uncovered lines: | 6940 |
-| Coverable lines: | 14641 |
-| Total lines: | 37012 |
-| Line coverage: | 52.5% (7701 of 14641) |
+| Uncovered lines: | 6988 |
+| Coverable lines: | 14689 |
+| Total lines: | 37111 |
+| Line coverage: | 52.4% (7701 of 14689) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 798 |
-| Total methods: | 1610 |
-| Method coverage: | 49.5% (798 of 1610) |
+| Total methods: | 1616 |
+| Method coverage: | 49.3% (798 of 1616) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7701**|**6940**|**14641**|**41980**|**52.5%**|**0**|**0**|****|**798**|**1610**|**49.5%**|
+|**GDX**|**7701**|**6988**|**14689**|**42079**|**52.4%**|**0**|**0**|****|**798**|**1616**|**49.3%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -164,12 +164,12 @@
 |GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|233|90.2%|0|0||3|3|100%|
 |GDX.Developer.RuntimeConsoleController|0|199|199|357|0%|0|0||0|25|0%|
+|GDX.Developer.RuntimeWatchController|0|35|35|72|0%|0|0||0|8|0%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.TextGenerator|59|0|59|163|100%|0|0||10|10|100%|
 |GDX.Developer.TransientReference|42|21|63|185|66.6%|0|0||10|12|83.3%|
 |GDX.Developer.ValueWatch|8|10|18|55|44.4%|0|0||1|2|50%|
 |GDX.Developer.WatchBase|11|6|17|47|64.7%|0|0||2|4|50%|
-|GDX.Developer.WatchController|0|29|29|63|0%|0|0||0|7|0%|
 |GDX.Developer.WatchProvider|10|28|38|64|26.3%|0|0||2|5|40%|
 |GDX.Display|0|12|12|85|0%|0|0||0|4|0%|
 |GDX.EnumExtensions|14|0|14|54|100%|0|0||2|2|100%|
@@ -221,3 +221,4 @@
 |GDX.TransformExtensions|67|7|74|176|90.5%|0|0||4|4|100%|
 |GDX.Vector2Extensions|50|0|50|153|100%|0|0||5|5|100%|
 |GDX.Vector3Extensions|68|0|68|196|100%|0|0||7|7|100%|
+|GDX.VisualElementStyles|0|42|42|90|0%|0|0||0|5|0%|
