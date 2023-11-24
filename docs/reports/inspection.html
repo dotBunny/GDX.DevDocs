@@ -151,7 +151,7 @@
 <td>Equality comparison of floating point numbers. Possible loss of precision while rounding values</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatWatch.cs#L45" title="GDX\Developer\Watches\FloatWatch.cs:45">FloatWatch.cs:45</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatRangeWatch.cs#L43" title="GDX\Developer\Watches\FloatRangeWatch.cs:43">FloatRangeWatch.cs:43</a></td>
 <td>Equality comparison of floating point numbers. Possible loss of precision while rounding values</td>
 </tr>
 <tr>
@@ -450,6 +450,14 @@
 <td>Field <code>m_FontSize</code> is assigned but its value is never used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatChartWatch.cs#L17" title="GDX\Developer\Watches\FloatChartWatch.cs:17">FloatChartWatch.cs:17</a></td>
+<td>Field <code>m_ValuesCount</code> is assigned but its value is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatChartWatch.cs#L19" title="GDX\Developer\Watches\FloatChartWatch.cs:19">FloatChartWatch.cs:19</a></td>
+<td>Field <code>m_GetSentiment</code> is assigned but its value is never used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor.Tests/EditMode/Windows/DataTables/DataTableWindowTests.cs#L23" title="GDX.Editor.Tests\EditMode\Windows\DataTables\DataTableWindowTests.cs:23">DataTableWindowTests.cs:23</a></td>
 <td>Field <code>m_DataTableWindowController</code> is assigned but its value is never used</td>
 </tr>
@@ -596,6 +604,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L42" title="GDX\Developer\RuntimeConsoleController.cs:42">RuntimeConsoleController.cs:42</a></td>
+<td>The field is always assigned before being used and can be converted to local variable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatChartWatch.cs#L21" title="GDX\Developer\Watches\FloatChartWatch.cs:21">FloatChartWatch.cs:21</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
@@ -913,10 +925,6 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatWatch.cs#L9" title="GDX\Developer\Watches\FloatWatch.cs:9">FloatWatch.cs:9</a></td>
-<td>Using directive is not required by the code and can be safely removed</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/VisualElementStyles.cs#L5" title="GDX\VisualElementStyles.cs:5">VisualElementStyles.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
@@ -956,7 +964,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatWatch.cs#L47" title="GDX\Developer\Watches\FloatWatch.cs:47">FloatWatch.cs:47</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatRangeWatch.cs#L45" title="GDX\Developer\Watches\FloatRangeWatch.cs:45">FloatRangeWatch.cs:45</a></td>
 <td>Specify string culture explicitly</td>
 </tr>
 </tbody>
@@ -1210,6 +1218,21 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Experimental/DebugDrawBuffer.cs#L588" title="GDX\Experimental\DebugDrawBuffer.cs:588">DebugDrawBuffer.cs:588</a></td>
 <td>Method <code>AddLineDrawCommand</code> return value is never used</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unused-parameter-private-accessibility">Unused parameter: Private accessibility</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatChartWatch.cs#L23" title="GDX\Developer\Watches\FloatChartWatch.cs:23">FloatChartWatch.cs:23</a></td>
+<td>Parameter <code>showLatestValue</code> is never used</td>
 </tr>
 </tbody>
 </table>
@@ -1513,10 +1536,6 @@
 <td>Field can be made readonly</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L165" title="GDX\Developer\WatchProvider.cs:165">WatchProvider.cs:165</a></td>
-<td>Field can be made readonly</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L166" title="GDX\Developer\WatchProvider.cs:166">WatchProvider.cs:166</a></td>
 <td>Field can be made readonly</td>
 </tr>
@@ -1526,6 +1545,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L168" title="GDX\Developer\WatchProvider.cs:168">WatchProvider.cs:168</a></td>
+<td>Field can be made readonly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchProvider.cs#L169" title="GDX\Developer\WatchProvider.cs:169">WatchProvider.cs:169</a></td>
 <td>Field can be made readonly</td>
 </tr>
 <tr>
@@ -4039,6 +4062,70 @@
 <td>Only overrides of method <code>SetAllColumnOrders</code> are used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L654" title="GDX\DataTables\DataTableBase.cs:654">DataTableBase.cs:654</a></td>
+<td>Only overrides of method <code>SetVector2</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L663" title="GDX\DataTables\DataTableBase.cs:663">DataTableBase.cs:663</a></td>
+<td>Only overrides of method <code>SetVector3</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L672" title="GDX\DataTables\DataTableBase.cs:672">DataTableBase.cs:672</a></td>
+<td>Only overrides of method <code>SetVector4</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L681" title="GDX\DataTables\DataTableBase.cs:681">DataTableBase.cs:681</a></td>
+<td>Only overrides of method <code>SetVector2Int</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L690" title="GDX\DataTables\DataTableBase.cs:690">DataTableBase.cs:690</a></td>
+<td>Only overrides of method <code>SetVector3Int</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L699" title="GDX\DataTables\DataTableBase.cs:699">DataTableBase.cs:699</a></td>
+<td>Only overrides of method <code>SetQuaternion</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L708" title="GDX\DataTables\DataTableBase.cs:708">DataTableBase.cs:708</a></td>
+<td>Only overrides of method <code>SetRect</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L717" title="GDX\DataTables\DataTableBase.cs:717">DataTableBase.cs:717</a></td>
+<td>Only overrides of method <code>SetRectInt</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L726" title="GDX\DataTables\DataTableBase.cs:726">DataTableBase.cs:726</a></td>
+<td>Only overrides of method <code>SetColor</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L735" title="GDX\DataTables\DataTableBase.cs:735">DataTableBase.cs:735</a></td>
+<td>Only overrides of method <code>SetLayerMask</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L744" title="GDX\DataTables\DataTableBase.cs:744">DataTableBase.cs:744</a></td>
+<td>Only overrides of method <code>SetBounds</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L753" title="GDX\DataTables\DataTableBase.cs:753">DataTableBase.cs:753</a></td>
+<td>Only overrides of method <code>SetBoundsInt</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L762" title="GDX\DataTables\DataTableBase.cs:762">DataTableBase.cs:762</a></td>
+<td>Only overrides of method <code>SetHash128</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L771" title="GDX\DataTables\DataTableBase.cs:771">DataTableBase.cs:771</a></td>
+<td>Only overrides of method <code>SetGradient</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L780" title="GDX\DataTables\DataTableBase.cs:780">DataTableBase.cs:780</a></td>
+<td>Only overrides of method <code>SetAnimationCurve</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L789" title="GDX\DataTables\DataTableBase.cs:789">DataTableBase.cs:789</a></td>
+<td>Only overrides of method <code>SetObject</code> are used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/ITestBehaviour.cs#L14" title="GDX\Developer\Reports\BuildVerification\ITestBehaviour.cs:14">ITestBehaviour.cs:14</a></td>
 <td>Only implementations of method <code>Check</code> are used</td>
 </tr>
@@ -4308,12 +4395,16 @@
 <td>Class <code>RuntimeWatchController</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatWatch.cs#L14" title="GDX\Developer\Watches\FloatWatch.cs:14">FloatWatch.cs:14</a></td>
-<td>Class <code>FloatWatch</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatChartWatch.cs#L13" title="GDX\Developer\Watches\FloatChartWatch.cs:13">FloatChartWatch.cs:13</a></td>
+<td>Class <code>FloatChartWatch</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/IntegerWatch.cs#L12" title="GDX\Developer\Watches\IntegerWatch.cs:12">IntegerWatch.cs:12</a></td>
-<td>Class <code>IntegerWatch</code> is never used</td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatRangeWatch.cs#L13" title="GDX\Developer\Watches\FloatRangeWatch.cs:13">FloatRangeWatch.cs:13</a></td>
+<td>Class <code>FloatRangeWatch</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/IntegerRangeWatch.cs#L12" title="GDX\Developer\Watches\IntegerRangeWatch.cs:12">IntegerRangeWatch.cs:12</a></td>
+<td>Class <code>IntegerRangeWatch</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Display.cs#L14" title="GDX\Display.cs:14">Display.cs:14</a></td>
@@ -4709,7 +4800,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-11-24 against <a href="https://github.com/dotBunny/GDX/commit/e508f2696c46cad72fda86ac958d1d103aec97f4"><strong>e508f26</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-11-24 against <a href="https://github.com/dotBunny/GDX/commit/79f1185638536e606178f4b1b188bfebbd6eda52"><strong>79f1185</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
