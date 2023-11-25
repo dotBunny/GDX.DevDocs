@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-11-24 - 10:50:19 PM |
+| Generated on: | 2023-11-25 - 12:57:57 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 208 |
-| Files: | 204 |
-| Covered lines: | 7738 |
-| Uncovered lines: | 7399 |
-| Coverable lines: | 15137 |
-| Total lines: | 37957 |
-| Line coverage: | 51.1% (7738 of 15137) |
+| Classes: | 210 |
+| Files: | 206 |
+| Covered lines: | 7756 |
+| Uncovered lines: | 7549 |
+| Coverable lines: | 15305 |
+| Total lines: | 38232 |
+| Line coverage: | 50.6% (7756 of 15305) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 806 |
-| Total methods: | 1675 |
-| Method coverage: | 48.1% (806 of 1675) |
+| Covered methods: | 809 |
+| Total methods: | 1683 |
+| Method coverage: | 48% (809 of 1683) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7738**|**7399**|**15137**|**42925**|**51.1%**|**0**|**0**|****|**806**|**1675**|**48.1%**|
+|**GDX**|**7756**|**7549**|**15305**|**43200**|**50.6%**|**0**|**0**|****|**809**|**1683**|**48%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -119,7 +119,7 @@
 |GDX.DataTables.RowDescription|0|3|3|36|0%|0|0||0|1|0%|
 |GDX.DataTables.StableDataTable|574|680|1254|2053|45.7%|0|0||112|169|66.2%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
-|GDX.Developer.Console|41|177|218|359|18.8%|0|0||4|24|16.6%|
+|GDX.Developer.Console|42|177|219|360|19.1%|0|0||4|24|16.6%|
 |GDX.Developer.ConsoleAutoCompleteProvider|0|61|61|108|0%|0|0||0|3|0%|
 |GDX.Developer.ConsoleCommandBase|1|15|16|69|6.2%|0|0||1|6|16.6%|
 |GDX.Developer.ConsoleCommands.BuildVerificationTestConsoleCommand|3|50|53|132|5.6%|0|0||1|5|20%|
@@ -136,16 +136,17 @@
 |GDX.Developer.ConsoleCommands.VersionConsoleCommand|3|10|13|37|23%|0|0||1|4|25%|
 |GDX.Developer.ConsoleCommands.WaitConsoleCommand|3|16|19|47|15.7%|0|0||1|5|20%|
 |GDX.Developer.ConsoleCommands.WatchConsoleCommand|3|19|22|53|13.6%|0|0||1|5|20%|
-|GDX.Developer.ConsoleCommands.WatchesConsoleCommand|4|35|39|74|10.2%|0|0||2|6|33.3%|
+|GDX.Developer.ConsoleCommands.WatchesConsoleCommand|4|33|37|72|10.8%|0|0||2|6|33.3%|
 |GDX.Developer.ConsoleVariableBase|0|24|24|80|0%|0|0||0|6|0%|
 |GDX.Developer.ConsoleVariables.BooleanConsoleVariable|0|40|40|82|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariables.FloatConsoleVariable|0|42|42|84|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariables.IntegerConsoleVariable|0|42|42|83|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariables.StringConsoleVariable|0|28|28|66|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariableSettings|10|56|66|108|15.1%|0|0||3|5|60%|
-|GDX.Developer.FloatChartWatch|0|49|49|97|0%|0|0||0|3|0%|
+|GDX.Developer.FloatChartWatch|0|78|78|134|0%|0|0||0|3|0%|
 |GDX.Developer.FloatRangeWatch|0|27|27|59|0%|0|0||0|2|0%|
 |GDX.Developer.InputProxy|0|219|219|723|0%|0|0||0|18|0%|
+|GDX.Developer.IntegerChartWatch|0|76|76|131|0%|0|0||0|3|0%|
 |GDX.Developer.IntegerRangeWatch|0|27|27|57|0%|0|0||0|2|0%|
 |GDX.Developer.ManagedUpdateSystem|0|147|147|294|0%|0|0||0|25|0%|
 |GDX.Developer.Profiling|0|50|50|146|0%|0|0||0|3|0%|
@@ -167,7 +168,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|57|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|87|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
+|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|233|90.2%|0|0||3|3|100%|
 |GDX.Developer.RuntimeConsoleController|0|199|199|357|0%|0|0||0|25|0%|
 |GDX.Developer.RuntimeWatchController|0|44|44|87|0%|0|0||0|9|0%|
@@ -175,8 +176,9 @@
 |GDX.Developer.SimpleWatch|10|9|19|55|52.6%|0|0||1|2|50%|
 |GDX.Developer.TextGenerator|59|0|59|163|100%|0|0||10|10|100%|
 |GDX.Developer.TransientReference|42|21|63|185|66.6%|0|0||10|12|83.3%|
-|GDX.Developer.WatchBase|11|56|67|127|16.4%|0|0||5|13|38.4%|
+|GDX.Developer.WatchBase|11|56|67|128|16.4%|0|0||5|13|38.4%|
 |GDX.Developer.WatchProvider|30|85|115|181|26%|0|0||3|11|27.2%|
+|GDX.Developer.WatchSettings|20|44|64|107|31.2%|0|0||4|5|80%|
 |GDX.Display|0|12|12|85|0%|0|0||0|4|0%|
 |GDX.EnumExtensions|14|0|14|54|100%|0|0||2|2|100%|
 |GDX.Experimental.DebugDraw|15|0|15|96|100%|0|0||4|4|100%|
