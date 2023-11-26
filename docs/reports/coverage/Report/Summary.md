@@ -1,16 +1,16 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 11/26/2023 - 2:00:14 PM |
+| Generated on: | 2023-11-26 - 2:44:43 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 210 |
 | Files: | 206 |
 | Covered lines: | 7752 |
-| Uncovered lines: | 7592 |
-| Coverable lines: | 15344 |
-| Total lines: | 38294 |
-| Line coverage: | 50.5% (7752 of 15344) |
+| Uncovered lines: | 7596 |
+| Coverable lines: | 15348 |
+| Total lines: | 38299 |
+| Line coverage: | 50.5% (7752 of 15348) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
 | Covered methods: | 809 |
@@ -19,7 +19,7 @@
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7752**|**7592**|**15344**|**43262**|**50.5%**|**0**|**0**|****|**809**|**1687**|**47.9%**|
+|**GDX**|**7752**|**7596**|**15348**|**43267**|**50.5%**|**0**|**0**|****|**809**|**1687**|**47.9%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -143,10 +143,10 @@
 |GDX.Developer.ConsoleVariables.IntegerConsoleVariable|0|42|42|83|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariables.StringConsoleVariable|0|28|28|66|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariableSettings|10|56|66|108|15.1%|0|0||3|5|60%|
-|GDX.Developer.FloatChartWatch|0|78|78|135|0%|0|0||0|3|0%|
+|GDX.Developer.FloatChartWatch|0|80|80|138|0%|0|0||0|3|0%|
 |GDX.Developer.FloatRangeWatch|0|27|27|59|0%|0|0||0|2|0%|
 |GDX.Developer.InputProxy|0|219|219|723|0%|0|0||0|18|0%|
-|GDX.Developer.IntegerChartWatch|0|76|76|132|0%|0|0||0|3|0%|
+|GDX.Developer.IntegerChartWatch|0|78|78|134|0%|0|0||0|3|0%|
 |GDX.Developer.IntegerRangeWatch|0|27|27|57|0%|0|0||0|2|0%|
 |GDX.Developer.ManagedUpdateSystem|0|147|147|294|0%|0|0||0|25|0%|
 |GDX.Developer.Profiling|0|50|50|146|0%|0|0||0|3|0%|
