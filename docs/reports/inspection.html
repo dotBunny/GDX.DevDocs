@@ -225,7 +225,7 @@
 <td>Name <code>MainThreadID</code> does not match rule <code>non_private_static_fields_should_be_pascal_case</code>. Suggested name is <code>MainThreadId</code>.</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L316" title="GDX\Developer\Console.cs:316">Console.cs:316</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L310" title="GDX\Developer\Console.cs:310">Console.cs:310</a></td>
 <td>Name <code>parentMessageID</code> does not match rule <code>locals_should_be_camel_case</code>. Suggested name is <code>parentMessageId</code>.</td>
 </tr>
 <tr>
@@ -469,7 +469,7 @@
 <td>Field <code>Data</code> is assigned but its value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L22" title="GDX\Developer\RuntimeWatchController.cs:22">RuntimeWatchController.cs:22</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L23" title="GDX\Developer\RuntimeWatchController.cs:23">RuntimeWatchController.cs:23</a></td>
 <td>Field <code>m_FontSize</code> is assigned but its value is never used</td>
 </tr>
 <tr>
@@ -634,6 +634,10 @@
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeConsoleController.cs#L42" title="GDX\Developer\RuntimeConsoleController.cs:42">RuntimeConsoleController.cs:42</a></td>
+<td>The field is always assigned before being used and can be converted to local variable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/BooleanWatch.cs#L23" title="GDX\Developer\Watches\BooleanWatch.cs:23">BooleanWatch.cs:23</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
@@ -809,15 +813,15 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L44" title="GDX\Developer\Console.cs:44">Console.cs:44</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L42" title="GDX\Developer\Console.cs:42">Console.cs:42</a></td>
 <td>Initializing field by default value is redundant</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleCommands/WatchesConsoleCommand.cs#L12" title="GDX\Developer\ConsoleCommands\WatchesConsoleCommand.cs:12">WatchesConsoleCommand.cs:12</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleCommands/WatchListConsoleCommand.cs#L12" title="GDX\Developer\ConsoleCommands\WatchListConsoleCommand.cs:12">WatchListConsoleCommand.cs:12</a></td>
 <td>Initializing field by default value is redundant</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L25" title="GDX\Developer\RuntimeWatchController.cs:25">RuntimeWatchController.cs:25</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L26" title="GDX\Developer\RuntimeWatchController.cs:26">RuntimeWatchController.cs:26</a></td>
 <td>Initializing field by default value is redundant</td>
 </tr>
 <tr>
@@ -1175,19 +1179,15 @@
 <td>Field <code>k_CommaSeperatedValueFormat</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L50" title="GDX\Developer\Console.cs:50">Console.cs:50</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L48" title="GDX\Developer\Console.cs:48">Console.cs:48</a></td>
 <td>Field <code>s_BufferCountWatch</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L52" title="GDX\Developer\Console.cs:52">Console.cs:52</a></td>
-<td>Field <code>s_PreviousCountWatch</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L136" title="GDX\Developer\Console.cs:136">Console.cs:136</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L130" title="GDX\Developer\Console.cs:130">Console.cs:130</a></td>
 <td>Method <code>FilterContains</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L331" title="GDX\Developer\Console.cs:331">Console.cs:331</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L325" title="GDX\Developer\Console.cs:325">Console.cs:325</a></td>
 <td>Method <code>Initialize</code> is never used</td>
 </tr>
 <tr>
@@ -1298,25 +1298,6 @@
 </tr>
 </tbody>
 </table>
-<h3 id="unused-local-variable-1">Unused local variable</h3>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th>Message</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariableSettings.cs#L40" title="GDX\Developer\ConsoleVariableSettings.cs:40">ConsoleVariableSettings.cs:40</a></td>
-<td>Local variable <code>e</code> is never used</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/WatchSettings.cs#L38" title="GDX\Developer\WatchSettings.cs:38">WatchSettings.cs:38</a></td>
-<td>Local variable <code>e</code> is never used</td>
-</tr>
-</tbody>
-</table>
 <h2 id="suggestions">Suggestions</h2>
 <h3 id="auto-property-can-be-made-get-only-private-accessibility">Auto-property can be made get-only: Private accessibility</h3>
 <table>
@@ -1336,11 +1317,11 @@
 <td>Auto-property can be made get-only</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L19" title="GDX\Developer\RuntimeWatchController.cs:19">RuntimeWatchController.cs:19</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L20" title="GDX\Developer\RuntimeWatchController.cs:20">RuntimeWatchController.cs:20</a></td>
 <td>Auto-property can be made get-only</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L20" title="GDX\Developer\RuntimeWatchController.cs:20">RuntimeWatchController.cs:20</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L21" title="GDX\Developer\RuntimeWatchController.cs:21">RuntimeWatchController.cs:21</a></td>
 <td>Auto-property can be made get-only</td>
 </tr>
 <tr>
@@ -1933,20 +1914,16 @@
 <td>Field <code>StartTicks</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L47" title="GDX\Developer\Console.cs:47">Console.cs:47</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L45" title="GDX\Developer\Console.cs:45">Console.cs:45</a></td>
 <td>Property <code>CommandBufferCount</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L86" title="GDX\Developer\Console.cs:86">Console.cs:86</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L80" title="GDX\Developer\Console.cs:80">Console.cs:80</a></td>
 <td>Method <code>UnregisterVariable</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L108" title="GDX\Developer\Console.cs:108">Console.cs:108</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L102" title="GDX\Developer\Console.cs:102">Console.cs:102</a></td>
 <td>Method <code>UnregisterCommand</code> can be made private</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariables/BooleanConsoleVariable.cs#L13" title="GDX\Developer\ConsoleVariables\BooleanConsoleVariable.cs:13">BooleanConsoleVariable.cs:13</a></td>
-<td>Field <code>OnValueChanged</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariables/FloatConsoleVariable.cs#L13" title="GDX\Developer\ConsoleVariables\FloatConsoleVariable.cs:13">FloatConsoleVariable.cs:13</a></td>
@@ -2253,23 +2230,23 @@
 <td>Method <code>Tick</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L19" title="GDX\Developer\RuntimeWatchController.cs:19">RuntimeWatchController.cs:19</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L20" title="GDX\Developer\RuntimeWatchController.cs:20">RuntimeWatchController.cs:20</a></td>
 <td>Property <code>Document</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L20" title="GDX\Developer\RuntimeWatchController.cs:20">RuntimeWatchController.cs:20</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L21" title="GDX\Developer\RuntimeWatchController.cs:21">RuntimeWatchController.cs:21</a></td>
 <td>Property <code>WatchesGameObject</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L45" title="GDX\Developer\RuntimeWatchController.cs:45">RuntimeWatchController.cs:45</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L52" title="GDX\Developer\RuntimeWatchController.cs:52">RuntimeWatchController.cs:52</a></td>
 <td>Method <code>UpdateFontSize</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L50" title="GDX\Developer\RuntimeWatchController.cs:50">RuntimeWatchController.cs:50</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L57" title="GDX\Developer\RuntimeWatchController.cs:57">RuntimeWatchController.cs:57</a></td>
 <td>Method <code>UpdatePosition</code> can be made private</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L55" title="GDX\Developer\RuntimeWatchController.cs:55">RuntimeWatchController.cs:55</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L62" title="GDX\Developer\RuntimeWatchController.cs:62">RuntimeWatchController.cs:62</a></td>
 <td>Method <code>UpdateShow</code> can be made private</td>
 </tr>
 <tr>
@@ -2848,7 +2825,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleCommands/WatchConsoleCommand.cs#L43" title="GDX\Developer\ConsoleCommands\WatchConsoleCommand.cs:43">WatchConsoleCommand.cs:43</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleCommands/WatchConsoleCommand.cs#L53" title="GDX\Developer\ConsoleCommands\WatchConsoleCommand.cs:53">WatchConsoleCommand.cs:53</a></td>
 <td>Redundant string interpolation</td>
 </tr>
 <tr>
@@ -2881,10 +2858,6 @@
 </tr>
 </thead>
 <tbody>
-<tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariables/BooleanConsoleVariable.cs#L13" title="GDX\Developer\ConsoleVariables\BooleanConsoleVariable.cs:13">BooleanConsoleVariable.cs:13</a></td>
-<td>Field <code>OnValueChanged</code> is never assigned</td>
-</tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariables/FloatConsoleVariable.cs#L13" title="GDX\Developer\ConsoleVariables\FloatConsoleVariable.cs:13">FloatConsoleVariable.cs:13</a></td>
 <td>Field <code>OnValueChanged</code> is never assigned</td>
@@ -3269,23 +3242,23 @@
 <td>Method <code>InitializeAtRuntime</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L29" title="GDX\Developer\Console.cs:29">Console.cs:29</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L27" title="GDX\Developer\Console.cs:27">Console.cs:27</a></td>
 <td>Enum member <code>Superuser</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L81" title="GDX\Developer\Console.cs:81">Console.cs:81</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L75" title="GDX\Developer\Console.cs:75">Console.cs:75</a></td>
 <td>Method <code>UnregisterVariable</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L103" title="GDX\Developer\Console.cs:103">Console.cs:103</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L97" title="GDX\Developer\Console.cs:97">Console.cs:97</a></td>
 <td>Method <code>UnregisterCommand</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L206" title="GDX\Developer\Console.cs:206">Console.cs:206</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L200" title="GDX\Developer\Console.cs:200">Console.cs:200</a></td>
 <td>Method <code>GetCommandKeywordsEnumerator</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L295" title="GDX\Developer\Console.cs:295">Console.cs:295</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Console.cs#L289" title="GDX\Developer\Console.cs:289">Console.cs:289</a></td>
 <td>Method <code>SetAccessLevel</code> is never used</td>
 </tr>
 <tr>
@@ -3561,7 +3534,7 @@
 <td>Method <code>OnTextInput</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L69" title="GDX\Developer\RuntimeWatchController.cs:69">RuntimeWatchController.cs:69</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L76" title="GDX\Developer\RuntimeWatchController.cs:76">RuntimeWatchController.cs:76</a></td>
 <td>Method <code>Tick</code> is never used</td>
 </tr>
 <tr>
@@ -4465,10 +4438,6 @@
 <td>Struct <code>NativeArray2D</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariables/BooleanConsoleVariable.cs#L10" title="GDX\Developer\ConsoleVariables\BooleanConsoleVariable.cs:10">BooleanConsoleVariable.cs:10</a></td>
-<td>Class <code>BooleanConsoleVariable</code> is never used</td>
-</tr>
-<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/ConsoleVariables/FloatConsoleVariable.cs#L11" title="GDX\Developer\ConsoleVariables\FloatConsoleVariable.cs:11">FloatConsoleVariable.cs:11</a></td>
 <td>Class <code>FloatConsoleVariable</code> is never used</td>
 </tr>
@@ -4493,8 +4462,12 @@
 <td>Class <code>RuntimeConsoleController</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L15" title="GDX\Developer\RuntimeWatchController.cs:15">RuntimeWatchController.cs:15</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/RuntimeWatchController.cs#L16" title="GDX\Developer\RuntimeWatchController.cs:16">RuntimeWatchController.cs:16</a></td>
 <td>Class <code>RuntimeWatchController</code> is never used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/BooleanWatch.cs#L15" title="GDX\Developer\Watches\BooleanWatch.cs:15">BooleanWatch.cs:15</a></td>
+<td>Class <code>BooleanWatch</code> is never used</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatChartWatch.cs#L15" title="GDX\Developer\Watches\FloatChartWatch.cs:15">FloatChartWatch.cs:15</a></td>
@@ -4906,7 +4879,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-11-26 against <a href="https://github.com/dotBunny/GDX/commit/b4a57a3acacde8cd737b0baf6b660bf214328392"><strong>b4a57a3</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-11-27 against <a href="https://github.com/dotBunny/GDX/commit/f9a8f4d3cf326663ddf1b0a9d8f29b178bb51753"><strong>f9a8f4d</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
