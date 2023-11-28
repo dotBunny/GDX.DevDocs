@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-11-27 - 10:48:50 PM |
+| Generated on: | 2023-11-28 - 7:14:00 AM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
 | Classes: | 214 |
 | Files: | 210 |
-| Covered lines: | 7760 |
-| Uncovered lines: | 7663 |
-| Coverable lines: | 15423 |
-| Total lines: | 38498 |
-| Line coverage: | 50.3% (7760 of 15423) |
+| Covered lines: | 7767 |
+| Uncovered lines: | 7672 |
+| Coverable lines: | 15439 |
+| Total lines: | 38539 |
+| Line coverage: | 50.3% (7767 of 15439) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 811 |
-| Total methods: | 1701 |
-| Method coverage: | 47.6% (811 of 1701) |
+| Covered methods: | 814 |
+| Total methods: | 1705 |
+| Method coverage: | 47.7% (814 of 1705) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7760**|**7663**|**15423**|**43466**|**50.3%**|**0**|**0**|****|**811**|**1701**|**47.6%**|
+|**GDX**|**7767**|**7672**|**15439**|**43507**|**50.3%**|**0**|**0**|****|**814**|**1705**|**47.7%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -60,7 +60,7 @@
 |GDX.Collections.Pooling.GameObjectPool|175|37|212|629|82.5%|0|0||15|15|100%|
 |GDX.Collections.Pooling.ManagedPoolBuilder|22|40|62|164|35.4%|0|0||3|5|60%|
 |GDX.Collections.Pooling.ManagedPools|28|50|78|222|35.8%|0|0||6|12|50%|
-|GDX.Collections.Pooling.SimpleListManagedPool|78|108|186|433|41.9%|0|0||6|14|42.8%|
+|GDX.Collections.Pooling.SimpleListManagedPool|81|105|186|433|43.5%|0|0||7|14|50%|
 |GDX.Collections.SparseSet|1001|59|1060|1838|94.4%|0|0||49|51|96%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1242|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1242|0%|0|0||0|2|0%|
@@ -135,7 +135,7 @@
 |GDX.Developer.ConsoleCommands.SceneListConsoleCommand|3|17|20|44|15%|0|0||1|3|33.3%|
 |GDX.Developer.ConsoleCommands.SceneLoadConsoleCommand|3|77|80|146|3.7%|0|0||1|6|16.6%|
 |GDX.Developer.ConsoleCommands.SceneWaitConsoleCommand|3|6|9|29|33.3%|0|0||1|3|33.3%|
-|GDX.Developer.ConsoleCommands.ScreenshotConsoleCommand|3|12|15|37|20%|0|0||1|3|33.3%|
+|GDX.Developer.ConsoleCommands.ScreenCaptureConsoleCommand|4|27|31|78|12.9%|0|0||2|7|28.5%|
 |GDX.Developer.ConsoleCommands.ShowConsoleCommand|3|10|13|40|23%|0|0||1|4|25%|
 |GDX.Developer.ConsoleCommands.VersionConsoleCommand|3|10|13|37|23%|0|0||1|4|25%|
 |GDX.Developer.ConsoleCommands.WaitConsoleCommand|3|16|19|47|15.7%|0|0||1|5|20%|
@@ -172,7 +172,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|57|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|87|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
+|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|233|90.2%|0|0||3|3|100%|
 |GDX.Developer.RuntimeConsoleController|0|199|199|358|0%|0|0||0|25|0%|
 |GDX.Developer.RuntimeWatchController|0|63|63|116|0%|0|0||0|10|0%|
