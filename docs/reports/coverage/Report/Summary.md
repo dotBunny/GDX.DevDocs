@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-11-28 - 7:14:00 AM |
+| Generated on: | 2023-11-28 - 4:33:23 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 214 |
-| Files: | 210 |
-| Covered lines: | 7767 |
-| Uncovered lines: | 7672 |
-| Coverable lines: | 15439 |
-| Total lines: | 38539 |
-| Line coverage: | 50.3% (7767 of 15439) |
+| Classes: | 215 |
+| Files: | 211 |
+| Covered lines: | 7765 |
+| Uncovered lines: | 7722 |
+| Coverable lines: | 15487 |
+| Total lines: | 38651 |
+| Line coverage: | 50.1% (7765 of 15487) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 814 |
-| Total methods: | 1705 |
-| Method coverage: | 47.7% (814 of 1705) |
+| Covered methods: | 813 |
+| Total methods: | 1711 |
+| Method coverage: | 47.5% (813 of 1711) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7767**|**7672**|**15439**|**43507**|**50.3%**|**0**|**0**|****|**814**|**1705**|**47.7%**|
+|**GDX**|**7765**|**7722**|**15487**|**43619**|**50.1%**|**0**|**0**|****|**813**|**1711**|**47.5%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -172,7 +172,7 @@
 |GDX.Developer.Reports.Resource.Sections.ApplicationSection|13|0|13|57|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemoryDiffSection|22|0|22|61|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|87|100%|0|0||3|3|100%|
-|GDX.Developer.Reports.ResourcesAuditReport|118|24|142|384|83%|0|0||9|10|90%|
+|GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|233|90.2%|0|0||3|3|100%|
 |GDX.Developer.RuntimeConsoleController|0|199|199|358|0%|0|0||0|25|0%|
 |GDX.Developer.RuntimeWatchController|0|63|63|116|0%|0|0||0|10|0%|
@@ -200,9 +200,10 @@
 |GDX.Jobs.ParallelFor.IntegerBufferSwapJob|0|3|3|43|0%|0|0||0|1|0%|
 |GDX.Localization|18|42|60|243|30%|0|0||4|7|57.1%|
 |GDX.Logging.LogEntry|10|29|39|97|25.6%|0|0||3|6|50%|
-|GDX.Logging.ManagedLog|61|301|362|1001|16.8%|0|0||9|39|23%|
+|GDX.Logging.ManagedLog|62|302|364|1010|17%|0|0||9|39|23%|
 |GDX.Logging.ManagedLogHandler|20|39|59|109|33.8%|0|0||3|6|50%|
 |GDX.Logging.ManagedLogWrapper|0|58|58|109|0%|0|0||0|16|0%|
+|GDX.Logging.ManagedLogWriter|0|46|46|103|0%|0|0||0|6|0%|
 |GDX.Mathematics.Byte2|120|140|260|1062|46.1%|0|0||35|78|44.8%|
 |GDX.Mathematics.FibonacciHash|0|20|20|69|0%|0|0||0|3|0%|
 |GDX.Mathematics.Random.RandomAdaptor|30|0|30|84|100%|0|0||7|7|100%|

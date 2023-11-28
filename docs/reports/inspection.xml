@@ -54,6 +54,7 @@
     <IssueType Id="SuggestVarOrType_Elsewhere" Category="Syntax Style" CategoryId="CodeStyleIssues" SubCategory="Use preferred 'var' style" Description="Use preferred 'var' style: Elsewhere" Severity="HINT" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=SuggestVarOrType_Elsewhere" />
     <IssueType Id="SuggestVarOrType_SimpleTypes" Category="Syntax Style" CategoryId="CodeStyleIssues" SubCategory="Use preferred 'var' style" Description="Use preferred 'var' style: When type is simple" Severity="HINT" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=SuggestVarOrType_SimpleTypes" />
     <IssueType Id="TooWideLocalVariableScope" Category="Common Practices and Code Improvements" CategoryId="BestPractice" Description="Local variable has too wide declaration scope" Severity="SUGGESTION" WikiUrl="https://www.jetbrains.com/resharperplatform/help?Keyword=TooWideLocalVariableScope" />
+    <IssueType Id="UnassignedField.Compiler" Category="Compiler Warnings" CategoryId="CompilerWarnings" Description="Unassigned field" Severity="WARNING" />
     <IssueType Id="UnassignedField.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Unassigned field" Description="Unassigned field: Non-private accessibility" Severity="SUGGESTION" Global="True" />
     <IssueType Id="UnassignedGetOnlyAutoProperty" Category="Common Practices and Code Improvements" CategoryId="BestPractice" Description="Get-only auto-property is never assigned" Severity="WARNING" />
     <IssueType Id="UnusedAutoPropertyAccessor.Global" Category="Potential Code Quality Issues" CategoryId="CodeSmell" SubCategory="Auto-property accessor is never used" Description="Auto-property accessor is never used: Non-private accessibility" Severity="WARNING" Global="True" />
@@ -276,6 +277,22 @@
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="7189-7206" Line="165" Message="Only overrides of method 'GetRowDescription' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="9257-9268" Line="206" Message="Only overrides of method 'SetRowOrder' are used" />
       <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="10560-10578" Line="232" Message="Only overrides of method 'SetAllColumnOrders' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="33861-33871" Line="654" Message="Only overrides of method 'SetVector2' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="34399-34409" Line="663" Message="Only overrides of method 'SetVector3' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="34937-34947" Line="672" Message="Only overrides of method 'SetVector4' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="35478-35491" Line="681" Message="Only overrides of method 'SetVector2Int' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="36025-36038" Line="690" Message="Only overrides of method 'SetVector3Int' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="36572-36585" Line="699" Message="Only overrides of method 'SetQuaternion' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="37113-37120" Line="708" Message="Only overrides of method 'SetRect' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="37645-37655" Line="717" Message="Only overrides of method 'SetRectInt' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="38181-38189" Line="726" Message="Only overrides of method 'SetColor' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="38717-38729" Line="735" Message="Only overrides of method 'SetLayerMask' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="39258-39267" Line="744" Message="Only overrides of method 'SetBounds' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="39796-39808" Line="753" Message="Only overrides of method 'SetBoundsInt' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="40338-40348" Line="762" Message="Only overrides of method 'SetHash128' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="40877-40888" Line="771" Message="Only overrides of method 'SetGradient' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="41424-41441" Line="780" Message="Only overrides of method 'SetAnimationCurve' are used" />
+      <Issue TypeId="UnusedMemberInSuper.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableBase.cs" Offset="41987-41996" Line="789" Message="Only overrides of method 'SetObject' are used" />
       <Issue TypeId="ClassNeverInstantiated.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableMetaData.cs" Offset="636-653" Line="19" Message="Class 'DataTableMetaData' is never instantiated" />
       <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableMetaData.cs" Offset="1378-1396" Line="40" Message="Field 'BindingDataVersion' is assigned but its value is never used" />
       <Issue TypeId="ConvertIfStatementToConditionalTernaryExpression" File="Packages\com.dotbunny.gdx\GDX\DataTables\DataTableMetaData.cs" Offset="2258-2260" Line="65" Message="Convert to '?:' expression" />
@@ -699,31 +716,37 @@
       <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Localization.cs" Offset="3276-3287" Line="86" Message="Method 'GetISO639_1' is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Localization.cs" Offset="5634-5640" Line="147" Message="Method 'GetSystemLanguage' can be made private" />
       <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\LogEntry.cs" Offset="637-647" Line="20" Message="Field 'MemberName' is assigned but its value is never used" />
-      <Issue TypeId="ConvertIfStatementToNullCoalescingAssignment" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="2357-2359" Line="67" Message="Convert to '??='" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="2848-2853" Line="83" Message="Method 'Clear' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="5557-5575" Line="144" Message="Method 'UnregisterCategory' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="5967-5984" Line="156" Message="Method 'GetBufferCapacity' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="7856-7876" Line="203" Message="Method 'GetEntriesByCategory' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="8681-8699" Line="224" Message="Method 'GetEntriesByParent' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="9486-9504" Line="245" Message="Method 'GetEntriesBySearch' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="10451-10467" Line="267" Message="Method 'GetEntriesByTick' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="11764-11789" Line="307" Message="Method 'SetBufferSizeByAllocation' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="12417-12437" Line="318" Message="Method 'SetBufferSizeByCount' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="12895-12911" Line="328" Message="Method 'SetConsoleOutput' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="14123-14128" Line="354" Message="Method 'Debug' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="15909-15925" Line="391" Message="Method 'DebugWithContext' is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="17589-17593" Line="427" Message="Method 'Info' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="19417-19421" Line="466" Message="Method 'InfoWithContext' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="21136-21140" Line="504" Message="Method 'Warning' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="22924-22928" Line="541" Message="Method 'WarningWithContext' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="26390-26394" Line="614" Message="Method 'ErrorWithContext' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="28060-28064" Line="650" Message="Method 'Exception' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="29769-29773" Line="686" Message="Method 'ExceptionWithContext' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="31496-31500" Line="723" Message="Method 'Assertion' return value is never used" />
-      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="33298-33302" Line="760" Message="Method 'AssertionWithContext' return value is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="35316-35321" Line="800" Message="Method 'Fatal' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="37392-37408" Line="842" Message="Method 'FatalWithContext' is never used" />
-      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="39182-39187" Line="880" Message="Method 'Trace' is never used" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="271-294" Line="8" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="UnassignedField.Compiler" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="2072-2090" Line="57" Message="Field 's_ManagedLogWriter' is never assigned" />
+      <Issue TypeId="ConvertIfStatementToNullCoalescingAssignment" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="2456-2458" Line="70" Message="Convert to '??='" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="2947-2952" Line="86" Message="Method 'Clear' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="5656-5674" Line="147" Message="Method 'UnregisterCategory' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="6066-6083" Line="159" Message="Method 'GetBufferCapacity' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="7955-7975" Line="206" Message="Method 'GetEntriesByCategory' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="8780-8798" Line="227" Message="Method 'GetEntriesByParent' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="9585-9603" Line="248" Message="Method 'GetEntriesBySearch' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="10550-10566" Line="270" Message="Method 'GetEntriesByTick' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="11863-11888" Line="310" Message="Method 'SetBufferSizeByAllocation' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="12516-12536" Line="321" Message="Method 'SetBufferSizeByCount' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="12994-13010" Line="331" Message="Method 'SetConsoleOutput' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="14222-14227" Line="357" Message="Method 'Debug' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="16008-16024" Line="394" Message="Method 'DebugWithContext' is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="17688-17692" Line="430" Message="Method 'Info' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="19516-19520" Line="469" Message="Method 'InfoWithContext' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="21235-21239" Line="507" Message="Method 'Warning' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="23023-23027" Line="544" Message="Method 'WarningWithContext' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="26489-26493" Line="617" Message="Method 'ErrorWithContext' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="28159-28163" Line="653" Message="Method 'Exception' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="29868-29872" Line="689" Message="Method 'ExceptionWithContext' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="31595-31599" Line="726" Message="Method 'Assertion' return value is never used" />
+      <Issue TypeId="UnusedMethodReturnValue.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="33397-33401" Line="763" Message="Method 'AssertionWithContext' return value is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="35415-35420" Line="803" Message="Method 'Fatal' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="37491-37507" Line="845" Message="Method 'FatalWithContext' is never used" />
+      <Issue TypeId="UnusedMember.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLog.cs" Offset="39281-39286" Line="883" Message="Method 'Trace' is never used" />
+      <Issue TypeId="RedundantUsingDirective" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLogWriter.cs" Offset="71-89" Line="4" Message="Using directive is not required by the code and can be safely removed" />
+      <Issue TypeId="ClassNeverInstantiated.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLogWriter.cs" Offset="192-208" Line="10" Message="Class 'ManagedLogWriter' is never instantiated" />
+      <Issue TypeId="PrivateFieldCanBeConvertedToLocalVariable" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLogWriter.cs" Offset="429-435" Line="15" Message="The field is always assigned before being used and can be converted to local variable" />
+      <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Logging\ManagedLogWriter.cs" Offset="1165-1171" Line="40" Message="Method 'Flush' can be made private" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Byte2.cs" Offset="44988-44994" Line="1048" Message="Field 'X' can be made private" />
       <Issue TypeId="NotAccessedField.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Byte2.cs" Offset="45000-45001" Line="1048" Message="Field 'X' is assigned but its value is never used" />
       <Issue TypeId="MemberCanBePrivate.Global" File="Packages\com.dotbunny.gdx\GDX\Mathematics\Byte2.cs" Offset="45117-45123" Line="1053" Message="Field 'Y' can be made private" />

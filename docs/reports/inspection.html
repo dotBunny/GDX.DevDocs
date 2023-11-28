@@ -645,6 +645,10 @@
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLogWriter.cs#L15" title="GDX\Logging\ManagedLogWriter.cs:15">ManagedLogWriter.cs:15</a></td>
+<td>The field is always assigned before being used and can be converted to local variable</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Windows/DataTables/DataTableWindowOverlay.cs#L54" title="GDX.Editor\Windows\DataTables\DataTableWindowOverlay.cs:54">DataTableWindowOverlay.cs:54</a></td>
 <td>The field is always assigned before being used and can be converted to local variable</td>
 </tr>
@@ -983,6 +987,14 @@
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L8" title="GDX\Logging\ManagedLog.cs:8">ManagedLog.cs:8</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLogWriter.cs#L4" title="GDX\Logging\ManagedLogWriter.cs:4">ManagedLogWriter.cs:4</a></td>
+<td>Using directive is not required by the code and can be safely removed</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/VisualElementStyles.cs#L5" title="GDX\VisualElementStyles.cs:5">VisualElementStyles.cs:5</a></td>
 <td>Using directive is not required by the code and can be safely removed</td>
 </tr>
@@ -1024,6 +1036,21 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Watches/FloatRangeWatch.cs#L45" title="GDX\Developer\Watches\FloatRangeWatch.cs:45">FloatRangeWatch.cs:45</a></td>
 <td>Specify string culture explicitly</td>
+</tr>
+</tbody>
+</table>
+<h3 id="unassigned-field">Unassigned field</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">File</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L57" title="GDX\Logging\ManagedLog.cs:57">ManagedLog.cs:57</a></td>
+<td>Field <code>s_ManagedLogWriter</code> is never assigned</td>
 </tr>
 </tbody>
 </table>
@@ -1364,6 +1391,10 @@
 <td>Class <code>Property</code> is never instantiated</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLogWriter.cs#L10" title="GDX\Logging\ManagedLogWriter.cs:10">ManagedLogWriter.cs:10</a></td>
+<td>Class <code>ManagedLogWriter</code> is never instantiated</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX.Editor/Build/BuildConfiguration.cs#L11" title="GDX.Editor\Build\BuildConfiguration.cs:11">BuildConfiguration.cs:11</a></td>
 <td>Class <code>BuildConfiguration</code> is never instantiated</td>
 </tr>
@@ -1445,7 +1476,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L67" title="GDX\Logging\ManagedLog.cs:67">ManagedLog.cs:67</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L70" title="GDX\Logging\ManagedLog.cs:70">ManagedLog.cs:70</a></td>
 <td>Convert to <code>??=</code></td>
 </tr>
 </tbody>
@@ -2364,6 +2395,10 @@
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Localization.cs#L147" title="GDX\Localization.cs:147">Localization.cs:147</a></td>
 <td>Method <code>GetSystemLanguage</code> can be made private</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLogWriter.cs#L40" title="GDX\Logging\ManagedLogWriter.cs:40">ManagedLogWriter.cs:40</a></td>
+<td>Method <code>Flush</code> can be made private</td>
 </tr>
 <tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Mathematics/Byte2.cs#L1048" title="GDX\Mathematics\Byte2.cs:1048">Byte2.cs:1048</a></td>
@@ -3710,63 +3745,63 @@
 <td>Method <code>GetISO639_1</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L83" title="GDX\Logging\ManagedLog.cs:83">ManagedLog.cs:83</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L86" title="GDX\Logging\ManagedLog.cs:86">ManagedLog.cs:86</a></td>
 <td>Method <code>Clear</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L144" title="GDX\Logging\ManagedLog.cs:144">ManagedLog.cs:144</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L147" title="GDX\Logging\ManagedLog.cs:147">ManagedLog.cs:147</a></td>
 <td>Method <code>UnregisterCategory</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L156" title="GDX\Logging\ManagedLog.cs:156">ManagedLog.cs:156</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L159" title="GDX\Logging\ManagedLog.cs:159">ManagedLog.cs:159</a></td>
 <td>Method <code>GetBufferCapacity</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L203" title="GDX\Logging\ManagedLog.cs:203">ManagedLog.cs:203</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L206" title="GDX\Logging\ManagedLog.cs:206">ManagedLog.cs:206</a></td>
 <td>Method <code>GetEntriesByCategory</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L224" title="GDX\Logging\ManagedLog.cs:224">ManagedLog.cs:224</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L227" title="GDX\Logging\ManagedLog.cs:227">ManagedLog.cs:227</a></td>
 <td>Method <code>GetEntriesByParent</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L245" title="GDX\Logging\ManagedLog.cs:245">ManagedLog.cs:245</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L248" title="GDX\Logging\ManagedLog.cs:248">ManagedLog.cs:248</a></td>
 <td>Method <code>GetEntriesBySearch</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L267" title="GDX\Logging\ManagedLog.cs:267">ManagedLog.cs:267</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L270" title="GDX\Logging\ManagedLog.cs:270">ManagedLog.cs:270</a></td>
 <td>Method <code>GetEntriesByTick</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L307" title="GDX\Logging\ManagedLog.cs:307">ManagedLog.cs:307</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L310" title="GDX\Logging\ManagedLog.cs:310">ManagedLog.cs:310</a></td>
 <td>Method <code>SetBufferSizeByAllocation</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L318" title="GDX\Logging\ManagedLog.cs:318">ManagedLog.cs:318</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L321" title="GDX\Logging\ManagedLog.cs:321">ManagedLog.cs:321</a></td>
 <td>Method <code>SetBufferSizeByCount</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L328" title="GDX\Logging\ManagedLog.cs:328">ManagedLog.cs:328</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L331" title="GDX\Logging\ManagedLog.cs:331">ManagedLog.cs:331</a></td>
 <td>Method <code>SetConsoleOutput</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L354" title="GDX\Logging\ManagedLog.cs:354">ManagedLog.cs:354</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L357" title="GDX\Logging\ManagedLog.cs:357">ManagedLog.cs:357</a></td>
 <td>Method <code>Debug</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L391" title="GDX\Logging\ManagedLog.cs:391">ManagedLog.cs:391</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L394" title="GDX\Logging\ManagedLog.cs:394">ManagedLog.cs:394</a></td>
 <td>Method <code>DebugWithContext</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L800" title="GDX\Logging\ManagedLog.cs:800">ManagedLog.cs:800</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L803" title="GDX\Logging\ManagedLog.cs:803">ManagedLog.cs:803</a></td>
 <td>Method <code>Fatal</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L842" title="GDX\Logging\ManagedLog.cs:842">ManagedLog.cs:842</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L845" title="GDX\Logging\ManagedLog.cs:845">ManagedLog.cs:845</a></td>
 <td>Method <code>FatalWithContext</code> is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L880" title="GDX\Logging\ManagedLog.cs:880">ManagedLog.cs:880</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L883" title="GDX\Logging\ManagedLog.cs:883">ManagedLog.cs:883</a></td>
 <td>Method <code>Trace</code> is never used</td>
 </tr>
 <tr>
@@ -4169,6 +4204,70 @@
 <td>Only overrides of method <code>SetAllColumnOrders</code> are used</td>
 </tr>
 <tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L654" title="GDX\DataTables\DataTableBase.cs:654">DataTableBase.cs:654</a></td>
+<td>Only overrides of method <code>SetVector2</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L663" title="GDX\DataTables\DataTableBase.cs:663">DataTableBase.cs:663</a></td>
+<td>Only overrides of method <code>SetVector3</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L672" title="GDX\DataTables\DataTableBase.cs:672">DataTableBase.cs:672</a></td>
+<td>Only overrides of method <code>SetVector4</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L681" title="GDX\DataTables\DataTableBase.cs:681">DataTableBase.cs:681</a></td>
+<td>Only overrides of method <code>SetVector2Int</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L690" title="GDX\DataTables\DataTableBase.cs:690">DataTableBase.cs:690</a></td>
+<td>Only overrides of method <code>SetVector3Int</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L699" title="GDX\DataTables\DataTableBase.cs:699">DataTableBase.cs:699</a></td>
+<td>Only overrides of method <code>SetQuaternion</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L708" title="GDX\DataTables\DataTableBase.cs:708">DataTableBase.cs:708</a></td>
+<td>Only overrides of method <code>SetRect</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L717" title="GDX\DataTables\DataTableBase.cs:717">DataTableBase.cs:717</a></td>
+<td>Only overrides of method <code>SetRectInt</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L726" title="GDX\DataTables\DataTableBase.cs:726">DataTableBase.cs:726</a></td>
+<td>Only overrides of method <code>SetColor</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L735" title="GDX\DataTables\DataTableBase.cs:735">DataTableBase.cs:735</a></td>
+<td>Only overrides of method <code>SetLayerMask</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L744" title="GDX\DataTables\DataTableBase.cs:744">DataTableBase.cs:744</a></td>
+<td>Only overrides of method <code>SetBounds</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L753" title="GDX\DataTables\DataTableBase.cs:753">DataTableBase.cs:753</a></td>
+<td>Only overrides of method <code>SetBoundsInt</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L762" title="GDX\DataTables\DataTableBase.cs:762">DataTableBase.cs:762</a></td>
+<td>Only overrides of method <code>SetHash128</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L771" title="GDX\DataTables\DataTableBase.cs:771">DataTableBase.cs:771</a></td>
+<td>Only overrides of method <code>SetGradient</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L780" title="GDX\DataTables\DataTableBase.cs:780">DataTableBase.cs:780</a></td>
+<td>Only overrides of method <code>SetAnimationCurve</code> are used</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/DataTables/DataTableBase.cs#L789" title="GDX\DataTables\DataTableBase.cs:789">DataTableBase.cs:789</a></td>
+<td>Only overrides of method <code>SetObject</code> are used</td>
+</tr>
+<tr>
 <td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Developer/Reports/BuildVerification/ITestBehaviour.cs#L14" title="GDX\Developer\Reports\BuildVerification\ITestBehaviour.cs:14">ITestBehaviour.cs:14</a></td>
 <td>Only implementations of method <code>Check</code> are used</td>
 </tr>
@@ -4232,39 +4331,39 @@
 <td>Method <code>Output</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L427" title="GDX\Logging\ManagedLog.cs:427">ManagedLog.cs:427</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L430" title="GDX\Logging\ManagedLog.cs:430">ManagedLog.cs:430</a></td>
 <td>Method <code>Info</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L466" title="GDX\Logging\ManagedLog.cs:466">ManagedLog.cs:466</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L469" title="GDX\Logging\ManagedLog.cs:469">ManagedLog.cs:469</a></td>
 <td>Method <code>InfoWithContext</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L504" title="GDX\Logging\ManagedLog.cs:504">ManagedLog.cs:504</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L507" title="GDX\Logging\ManagedLog.cs:507">ManagedLog.cs:507</a></td>
 <td>Method <code>Warning</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L541" title="GDX\Logging\ManagedLog.cs:541">ManagedLog.cs:541</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L544" title="GDX\Logging\ManagedLog.cs:544">ManagedLog.cs:544</a></td>
 <td>Method <code>WarningWithContext</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L614" title="GDX\Logging\ManagedLog.cs:614">ManagedLog.cs:614</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L617" title="GDX\Logging\ManagedLog.cs:617">ManagedLog.cs:617</a></td>
 <td>Method <code>ErrorWithContext</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L650" title="GDX\Logging\ManagedLog.cs:650">ManagedLog.cs:650</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L653" title="GDX\Logging\ManagedLog.cs:653">ManagedLog.cs:653</a></td>
 <td>Method <code>Exception</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L686" title="GDX\Logging\ManagedLog.cs:686">ManagedLog.cs:686</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L689" title="GDX\Logging\ManagedLog.cs:689">ManagedLog.cs:689</a></td>
 <td>Method <code>ExceptionWithContext</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L723" title="GDX\Logging\ManagedLog.cs:723">ManagedLog.cs:723</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L726" title="GDX\Logging\ManagedLog.cs:726">ManagedLog.cs:726</a></td>
 <td>Method <code>Assertion</code> return value is never used</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L760" title="GDX\Logging\ManagedLog.cs:760">ManagedLog.cs:760</a></td>
+<td style="text-align: left;"><a href="https://github.com/dotBunny/GDX/blob/dev/GDX/Logging/ManagedLog.cs#L763" title="GDX\Logging\ManagedLog.cs:763">ManagedLog.cs:763</a></td>
 <td>Method <code>AssertionWithContext</code> return value is never used</td>
 </tr>
 <tr>
@@ -4851,7 +4950,7 @@
       				<a href="#top">Back to top</a>
       			</span>
       			
-      			<span>Built on 2023-11-28 against <a href="https://github.com/dotBunny/GDX/commit/91d9da5c285a189e80939b873e9fcff7a5e0d537"><strong>91d9da5</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
+      			<span>Built on 2023-11-28 against <a href="https://github.com/dotBunny/GDX/commit/9f7aa8d909560db56d990c9448b8e495affff22c"><strong>9f7aa8d</strong></a>.<br>Generated by <a href="https://github.com/dotBunny/GDX.Dox/"><strong>Dox</strong></a>+<a href="https://dotnet.github.io/docfx/"><strong>DocFX</strong></a>.</span>
       		</div>
       	</div>
       </footer></div>
