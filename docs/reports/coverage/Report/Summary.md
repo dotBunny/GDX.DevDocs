@@ -1,25 +1,25 @@
 ﻿# Summary
 |||
 |:---|:---|
-| Generated on: | 2023-11-28 - 4:33:23 PM |
+| Generated on: | 2023-11-30 - 8:38:30 PM |
 | Parser: | MultiReportParser (689x OpenCoverParser) |
 | Assemblies: | 1 |
-| Classes: | 215 |
-| Files: | 211 |
-| Covered lines: | 7765 |
-| Uncovered lines: | 7722 |
-| Coverable lines: | 15487 |
-| Total lines: | 38651 |
-| Line coverage: | 50.1% (7765 of 15487) |
+| Classes: | 213 |
+| Files: | 209 |
+| Covered lines: | 7685 |
+| Uncovered lines: | 7392 |
+| Coverable lines: | 15077 |
+| Total lines: | 37476 |
+| Line coverage: | 50.9% (7685 of 15077) |
 | Covered branches: | 0 |
 | Total branches: | 0 |
-| Covered methods: | 813 |
-| Total methods: | 1711 |
-| Method coverage: | 47.5% (813 of 1711) |
+| Covered methods: | 801 |
+| Total methods: | 1676 |
+| Method coverage: | 47.7% (801 of 1676) |
 
 |**Name**|**Covered**|**Uncovered**|**Coverable**|**Total**|**Line coverage**|**Covered**|**Total**|**Branch coverage**|**Covered**|**Total**|**Method coverage**|
 |:---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-|**GDX**|**7765**|**7722**|**15487**|**43619**|**50.1%**|**0**|**0**|****|**813**|**1711**|**47.5%**|
+|**GDX**|**7685**|**7392**|**15077**|**42444**|**50.9%**|**0**|**0**|****|**801**|**1676**|**47.7%**|
 |GDX.AddressablesExtensions|0|33|33|114|0%|0|0||0|5|0%|
 |GDX.ArrayExtensions|73|20|93|230|78.4%|0|0||8|10|80%|
 |GDX.BoxColliderExtensions|0|8|8|40|0%|0|0||0|1|0%|
@@ -32,7 +32,7 @@
 |GDX.Collections.BitArray256|0|18|18|107|0%|0|0||0|2|0%|
 |GDX.Collections.BitArray32|0|13|13|63|0%|0|0||0|3|0%|
 |GDX.Collections.BitArray512|0|18|18|155|0%|0|0||0|2|0%|
-|GDX.Collections.BitArray64|4|4|8|57|50%|0|0||2|3|66.6%|
+|GDX.Collections.BitArray64|0|8|8|57|0%|0|0||0|3|0%|
 |GDX.Collections.BitArray8|10|3|13|63|76.9%|0|0||2|3|66.6%|
 |GDX.Collections.DisposeUnsafeSparseSetAndVersionArrayJob|0|4|4|1242|0%|0|0||0|1|0%|
 |GDX.Collections.DisposeUnsafeSparseSetJob|0|3|3|1242|0%|0|0||0|1|0%|
@@ -43,14 +43,15 @@
 |GDX.Collections.Generic.Array3D[T]|18|6|24|119|75%|0|0||6|8|75%|
 |GDX.Collections.Generic.CircularBuffer[T]|84|49|133|311|63.1%|0|0||14|15|93.3%|
 |GDX.Collections.Generic.CoalesceArray[T]|0|77|77|156|0%|0|0||0|9|0%|
-|GDX.Collections.Generic.ConcurrentCircularBuffer[T]|26|129|155|341|16.7%|0|0||4|15|26.6%|
+|GDX.Collections.Generic.ConcurrentCircularBuffer[T]|29|126|155|341|18.7%|0|0||4|15|26.6%|
 |GDX.Collections.Generic.DictionaryPrimes|36|5|41|115|87.8%|0|0||5|6|83.3%|
+|GDX.Collections.Generic.ExpandingArray[T]|0|58|58|102|0%|0|0||0|13|0%|
 |GDX.Collections.Generic.IListExtensions|67|17|84|221|79.7%|0|0||7|9|77.7%|
 |GDX.Collections.Generic.IntKeyDictionary[TValue]|350|27|377|667|92.8%|0|0||19|19|100%|
 |GDX.Collections.Generic.NativeArray2D[T]|0|71|71|190|0%|0|0||0|9|0%|
 |GDX.Collections.Generic.NativeArray3D[T]|23|5|28|130|82.1%|0|0||7|8|87.5%|
 |GDX.Collections.Generic.NativeUniformArray3D[T]|12|11|23|111|52.1%|0|0||3|7|42.8%|
-|GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|45|18|63|204|71.4%|0|0||6|8|75%|
+|GDX.Collections.Generic.SerializableDictionary[TKey,TValue]|45|18|63|203|71.4%|0|0||6|8|75%|
 |GDX.Collections.Generic.SimpleList[T]|308|7|315|580|97.7%|0|0||27|28|96.4%|
 |GDX.Collections.Generic.SimpleListExtensions|157|62|219|572|71.6%|0|0||15|21|71.4%|
 |GDX.Collections.Generic.StringKeyDictionary[TValue]|319|102|421|726|75.7%|0|0||16|19|84.2%|
@@ -64,8 +65,8 @@
 |GDX.Collections.SparseSet|1001|59|1060|1838|94.4%|0|0||49|51|96%|
 |GDX.Collections.UnsafeSparseSet|558|49|607|1242|91.9%|0|0||32|37|86.4%|
 |GDX.Collections.UnsafeSparseSetDebugView|0|12|12|1242|0%|0|0||0|2|0%|
-|GDX.Config|26|0|26|204|100%|0|0||1|1|100%|
-|GDX.Core|32|3|35|171|91.4%|0|0||3|4|75%|
+|GDX.Config|24|0|24|187|100%|0|0||1|1|100%|
+|GDX.Core|24|3|27|157|88.8%|0|0||3|4|75%|
 |GDX.DataTables.CellValues.AnimationCurveCellValue|0|32|32|126|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.BoolCellValue|0|32|32|125|0%|0|0||0|6|0%|
 |GDX.DataTables.CellValues.BoundsCellValue|0|32|32|126|0%|0|0||0|6|0%|
@@ -120,27 +121,29 @@
 |GDX.DataTables.StableDataTable|574|680|1254|2053|45.7%|0|0||112|169|66.2%|
 |GDX.Developer.BooleanWatch|0|18|18|56|0%|0|0||0|2|0%|
 |GDX.Developer.CommandLineParser|39|0|39|88|100%|0|0||2|2|100%|
-|GDX.Developer.Console|45|178|223|364|20.1%|0|0||4|25|16%|
+|GDX.Developer.Console|47|177|224|359|20.9%|0|0||4|25|16%|
 |GDX.Developer.ConsoleAutoCompleteProvider|0|61|61|108|0%|0|0||0|3|0%|
 |GDX.Developer.ConsoleCommandBase|1|15|16|69|6.2%|0|0||1|6|16.6%|
-|GDX.Developer.ConsoleCommands.BuildVerificationTestConsoleCommand|3|50|53|132|5.6%|0|0||1|5|20%|
-|GDX.Developer.ConsoleCommands.ConsoleVariablesConsoleCommand|3|23|26|52|11.5%|0|0||1|3|33.3%|
-|GDX.Developer.ConsoleCommands.ExecConsoleCommand|3|55|58|110|5.1%|0|0||1|5|20%|
+|GDX.Developer.ConsoleCommands.BuildVerificationTestConsoleCommand|3|50|53|131|5.6%|0|0||1|5|20%|
+|GDX.Developer.ConsoleCommands.ConsoleVariablesConsoleCommand|3|23|26|51|11.5%|0|0||1|3|33.3%|
+|GDX.Developer.ConsoleCommands.ExecConsoleCommand|3|55|58|109|5.1%|0|0||1|5|20%|
 |GDX.Developer.ConsoleCommands.GarbageCollectionConsoleCommand|3|10|13|36|23%|0|0||1|4|25%|
-|GDX.Developer.ConsoleCommands.HelpConsoleCommand|3|31|34|66|8.8%|0|0||1|4|25%|
+|GDX.Developer.ConsoleCommands.HelpConsoleCommand|3|31|34|65|8.8%|0|0||1|4|25%|
 |GDX.Developer.ConsoleCommands.HideConsoleCommand|3|10|13|40|23%|0|0||1|4|25%|
-|GDX.Developer.ConsoleCommands.InputKeyPressConsoleCommand|3|21|24|61|12.5%|0|0||1|6|16.6%|
-|GDX.Developer.ConsoleCommands.PlayerLoopConsoleCommand|3|13|16|43|18.7%|0|0||1|4|25%|
-|GDX.Developer.ConsoleCommands.QuitConsoleCommand|3|20|23|64|13%|0|0||1|5|20%|
+|GDX.Developer.ConsoleCommands.InputKeyPressConsoleCommand|3|21|24|60|12.5%|0|0||1|6|16.6%|
+|GDX.Developer.ConsoleCommands.PlayerLoopConsoleCommand|3|13|16|42|18.7%|0|0||1|4|25%|
+|GDX.Developer.ConsoleCommands.QuitConsoleCommand|3|20|23|63|13%|0|0||1|5|20%|
 |GDX.Developer.ConsoleCommands.SceneListConsoleCommand|3|17|20|44|15%|0|0||1|3|33.3%|
-|GDX.Developer.ConsoleCommands.SceneLoadConsoleCommand|3|77|80|146|3.7%|0|0||1|6|16.6%|
+|GDX.Developer.ConsoleCommands.SceneLoadConsoleCommand|3|77|80|145|3.7%|0|0||1|6|16.6%|
 |GDX.Developer.ConsoleCommands.SceneWaitConsoleCommand|3|6|9|29|33.3%|0|0||1|3|33.3%|
-|GDX.Developer.ConsoleCommands.ScreenCaptureConsoleCommand|4|27|31|78|12.9%|0|0||2|7|28.5%|
+|GDX.Developer.ConsoleCommands.ScreenCaptureConsoleCommand|4|27|31|77|12.9%|0|0||2|7|28.5%|
 |GDX.Developer.ConsoleCommands.ShowConsoleCommand|3|10|13|40|23%|0|0||1|4|25%|
 |GDX.Developer.ConsoleCommands.VersionConsoleCommand|3|10|13|37|23%|0|0||1|4|25%|
 |GDX.Developer.ConsoleCommands.WaitConsoleCommand|3|16|19|47|15.7%|0|0||1|5|20%|
 |GDX.Developer.ConsoleCommands.WatchConsoleCommand|3|31|34|76|8.8%|0|0||1|5|20%|
-|GDX.Developer.ConsoleCommands.WatchListConsoleCommand|4|33|37|72|10.8%|0|0||2|6|33.3%|
+|GDX.Developer.ConsoleCommands.WatchListConsoleCommand|4|33|37|70|10.8%|0|0||2|6|33.3%|
+|GDX.Developer.ConsoleLog|14|65|79|142|17.7%|0|0||4|21|19%|
+|GDX.Developer.ConsoleLogEntry|7|18|25|59|28%|0|0||1|3|33.3%|
 |GDX.Developer.ConsoleVariableBase|0|24|24|80|0%|0|0||0|6|0%|
 |GDX.Developer.ConsoleVariables.BooleanConsoleVariable|0|40|40|82|0%|0|0||0|8|0%|
 |GDX.Developer.ConsoleVariables.FloatConsoleVariable|0|42|42|84|0%|0|0||0|8|0%|
@@ -153,11 +156,11 @@
 |GDX.Developer.IntegerChartWatch|0|78|78|134|0%|0|0||0|3|0%|
 |GDX.Developer.IntegerRangeWatch|0|27|27|57|0%|0|0||0|2|0%|
 |GDX.Developer.ManagedUpdateSystem|0|147|147|294|0%|0|0||0|25|0%|
-|GDX.Developer.Profiling|0|50|50|146|0%|0|0||0|3|0%|
+|GDX.Developer.Profiling|0|50|50|145|0%|0|0||0|3|0%|
 |GDX.Developer.Reports.BuildVerification.SimpleTestBehaviour|0|40|40|88|0%|0|0||0|6|0%|
-|GDX.Developer.Reports.BuildVerification.TestRunner|0|122|122|191|0%|0|0||0|7|0%|
+|GDX.Developer.Reports.BuildVerification.TestRunner|0|122|122|188|0%|0|0||0|7|0%|
 |GDX.Developer.Reports.BuildVerification.TestScene|0|10|10|32|0%|0|0||0|2|0%|
-|GDX.Developer.Reports.BuildVerificationReport|0|35|35|59|0%|0|0||0|6|0%|
+|GDX.Developer.Reports.BuildVerificationReport|0|35|35|58|0%|0|0||0|6|0%|
 |GDX.Developer.Reports.NUnitReport|149|49|198|297|75.2%|0|0||15|17|88.2%|
 |GDX.Developer.Reports.Resource.IntegerDiff|23|13|36|81|63.8%|0|0||4|4|100%|
 |GDX.Developer.Reports.Resource.LongDiff|34|5|39|89|87.1%|0|0||4|4|100%|
@@ -174,14 +177,14 @@
 |GDX.Developer.Reports.Resource.Sections.MemorySection|22|0|22|87|100%|0|0||3|3|100%|
 |GDX.Developer.Reports.ResourcesAuditReport|115|27|142|384|80.9%|0|0||8|10|80%|
 |GDX.Developer.Reports.ResourcesDiffReport|130|14|144|233|90.2%|0|0||3|3|100%|
-|GDX.Developer.RuntimeConsoleController|0|199|199|358|0%|0|0||0|25|0%|
+|GDX.Developer.RuntimeConsoleController|0|202|202|365|0%|0|0||0|26|0%|
 |GDX.Developer.RuntimeWatchController|0|63|63|116|0%|0|0||0|10|0%|
 |GDX.Developer.SemanticVersion|86|0|86|243|100%|0|0||11|11|100%|
 |GDX.Developer.SimpleWatch|10|9|19|55|52.6%|0|0||1|2|50%|
 |GDX.Developer.TextGenerator|59|0|59|163|100%|0|0||10|10|100%|
 |GDX.Developer.TransientReference|42|21|63|185|66.6%|0|0||10|12|83.3%|
 |GDX.Developer.WatchBase|13|62|75|138|17.3%|0|0||5|13|38.4%|
-|GDX.Developer.WatchProvider|23|101|124|194|18.5%|0|0||3|13|23%|
+|GDX.Developer.WatchProvider|23|101|124|192|18.5%|0|0||3|13|23%|
 |GDX.Developer.WatchSettings|20|44|64|107|31.2%|0|0||4|5|80%|
 |GDX.Display|0|12|12|85|0%|0|0||0|4|0%|
 |GDX.EnumExtensions|14|0|14|54|100%|0|0||2|2|100%|
@@ -190,7 +193,7 @@
 |GDX.Experimental.DebugDrawShapes|0|197|197|370|0%|0|0||0|12|0%|
 |GDX.GameObjectExtensions|0|18|18|121|0%|0|0||0|2|0%|
 |GDX.IO.CoalesceStream|47|79|126|317|37.3%|0|0||11|19|57.8%|
-|GDX.IO.Compression.TarFile|0|63|63|134|0%|0|0||0|2|0%|
+|GDX.IO.Compression.TarFile|0|63|63|133|0%|0|0||0|2|0%|
 |GDX.Jobs.ParallelFor.Color32CompareJob|0|13|13|54|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.Color32MatchJob|0|9|9|54|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.ColorCompareJob|0|13|13|51|0%|0|0||0|1|0%|
@@ -199,11 +202,6 @@
 |GDX.Jobs.ParallelFor.IntegerBufferFillJob|0|3|3|39|0%|0|0||0|1|0%|
 |GDX.Jobs.ParallelFor.IntegerBufferSwapJob|0|3|3|43|0%|0|0||0|1|0%|
 |GDX.Localization|18|42|60|243|30%|0|0||4|7|57.1%|
-|GDX.Logging.LogEntry|10|29|39|97|25.6%|0|0||3|6|50%|
-|GDX.Logging.ManagedLog|62|302|364|1010|17%|0|0||9|39|23%|
-|GDX.Logging.ManagedLogHandler|20|39|59|109|33.8%|0|0||3|6|50%|
-|GDX.Logging.ManagedLogWrapper|0|58|58|109|0%|0|0||0|16|0%|
-|GDX.Logging.ManagedLogWriter|0|46|46|103|0%|0|0||0|6|0%|
 |GDX.Mathematics.Byte2|120|140|260|1062|46.1%|0|0||35|78|44.8%|
 |GDX.Mathematics.FibonacciHash|0|20|20|69|0%|0|0||0|3|0%|
 |GDX.Mathematics.Random.RandomAdaptor|30|0|30|84|100%|0|0||7|7|100%|
@@ -215,7 +213,7 @@
 |GDX.Memory|0|16|16|67|0%|0|0||0|2|0%|
 |GDX.MeshExtensions|0|14|14|46|0%|0|0||0|1|0%|
 |GDX.ObjectExtensions|0|9|9|38|0%|0|0||0|1|0%|
-|GDX.Platform|54|52|106|284|50.9%|0|0||6|11|54.5%|
+|GDX.Platform|54|52|106|285|50.9%|0|0||6|11|54.5%|
 |GDX.PlayerLoopSystemExtensions|106|67|173|395|61.2%|0|0||7|10|70%|
 |GDX.RectExtensions|0|8|8|27|0%|0|0||0|1|0%|
 |GDX.Reflection|120|3|123|333|97.5%|0|0||11|12|91.6%|
@@ -227,7 +225,7 @@
 |GDX.StringExtensions|268|0|268|748|100%|0|0||22|22|100%|
 |GDX.Threading.TaskBase|81|0|81|305|100%|0|0||16|16|100%|
 |GDX.Threading.TaskDirector|213|0|213|469|100%|0|0||15|15|100%|
-|GDX.Threading.TaskDirectorSystem|53|0|53|160|100%|0|0||7|7|100%|
+|GDX.Threading.TaskDirectorSystem|53|0|53|158|100%|0|0||7|7|100%|
 |GDX.Threading.TaskExtensions|6|0|6|29|100%|0|0||1|1|100%|
 |GDX.Threading.WaitFor|15|0|15|80|100%|0|0||2|2|100%|
 |GDX.Threading.WaitWhile|15|0|15|44|100%|0|0||2|2|100%|
